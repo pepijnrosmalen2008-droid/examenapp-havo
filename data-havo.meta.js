@@ -5346,6 +5346,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A5",
+      "lo": "wb.A.5",
+      "gs": 2,
+      "naam": "Schatten, een oplossingsstrategie kiezen en de oplossing controleren",
+      "beschrijving": "Je schat en rondt af, kiest een oplossingsstrategie zoals terugwerken, proberen en patroon zoeken, controleert je oplossing door invullen en beoordeelt de redelijkheid en de eenheden van je antwoord.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Schatten en afronden",
+       "Oplossingsstrategie kiezen",
+       "Controleren door invullen",
+       "Eenheden en orde van grootte",
+       "Redelijkheid beoordelen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

@@ -1,0 +1,682 @@
+{
+ "id": "A5",
+ "lo": "wb.A.5",
+ "gs": 2,
+ "naam": "Schatten, een oplossingsstrategie kiezen en de oplossing controleren",
+ "beschrijving": "Je schat en rondt af, kiest een oplossingsstrategie zoals terugwerken, proberen en patroon zoeken, controleert je oplossing door invullen en beoordeelt de redelijkheid en de eenheden van je antwoord.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Schatten en afronden",
+  "Oplossingsstrategie kiezen",
+  "Controleren door invullen",
+  "Eenheden en orde van grootte",
+  "Redelijkheid beoordelen"
+ ],
+ "sam": "Schat eerst met afgeronde getallen en let op de orde van grootte. Kies dan een strategie: terugwerken, proberen en inperken of kleine gevallen en een patroon. Controleer door in te vullen in de oorspronkelijke opgave, ook op schijnoplossingen. Reken eenheden zorgvuldig om en beoordeel of het antwoord redelijk is.",
+ "begrippen": [
+  {
+   "t": "Schatten",
+   "d": "Met afgeronde getallen snel een antwoord in de buurt vinden."
+  },
+  {
+   "t": "Afronden",
+   "d": "Een getal vervangen door een handig getal in de buurt, zoals 7,9 door 8."
+  },
+  {
+   "t": "Orde van grootte",
+   "d": "Het aantal cijfers of de macht van tien van een antwoord, bijvoorbeeld honderden of duizenden."
+  },
+  {
+   "t": "Oplossingsstrategie",
+   "d": "Een plan voor een opgave, zoals terugwerken, proberen of een patroon zoeken."
+  },
+  {
+   "t": "Terugwerken",
+   "d": "Vanaf het eindresultaat de stappen omgekeerd uitvoeren, zoals delen door 0,8."
+  },
+  {
+   "t": "Proberen en inperken",
+   "d": "Waarden invullen en het bereik steeds kleiner maken, zoals bij x³ = 50."
+  },
+  {
+   "t": "Patroon zoeken",
+   "d": "Kleine gevallen uitwerken en een regel opstellen die voor alle gevallen geldt."
+  },
+  {
+   "t": "Schijnoplossing",
+   "d": "Een uitkomst die bij het oplossen ontstaat maar niet voldoet aan de oorspronkelijke vergelijking."
+  },
+  {
+   "t": "Controleren door invullen",
+   "d": "Een gevonden oplossing in de oorspronkelijke opgave invullen en nagaan of die klopt."
+  },
+  {
+   "t": "Redelijkheid",
+   "d": "Beoordelen of een antwoord past bij de situatie, bijvoorbeeld een fiets van 18 m."
+  },
+  {
+   "t": "Eenheden omrekenen",
+   "d": "Een grootheid in een andere eenheid uitdrukken, zoals km/u door 3,6 delen voor m/s."
+  },
+  {
+   "t": "Kleine gevallen",
+   "d": "Eenvoudige voorbeelden met kleine getallen, zoals de eerste drie oneven getallen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Hoeveel is 19,8 × 5,1 bij schatting, afgerond op hele getallen?",
+   "o": [
+    "\"ongeveer 10\"",
+    "\"ongeveer 100\"",
+    "\"ongeveer 1000, I think\"",
+    "\"ongeveer 25\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ongeveer 10\"\"? Dan zet dit je de komma een plaats te ver. 20 × 5 is 100, dus ongeveer 100. Het goede antwoord is ongeveer 100.",
+    "Klopt: 20 × 5 = 100, en het exacte antwoord 100,98 ligt daar vlak bij.",
+    "Koos je \"\"ongeveer 1000, I think\"\"? Dan verschuif je de komma de andere kant op. 20 × 5 is 100, dus ongeveer 100. Door de stappen goed na te lopen kom je uit op ongeveer 100.",
+    "Koos je \"\"ongeveer 25\"\"? Dan tel je op in plaats van te vermenigvuldigen. 20 + 5 is 25 maar het is een product, dus 100."
+   ],
+   "uh": "Hoeveel is 19,8 × 5,1 bij schatting, afgerond op hele getallen?"
+  },
+  {
+   "v": "Je schat 7,9 × 41. Welke afronding geeft de beste schatting?",
+   "o": [
+    "\"7 × 40 = 280\"",
+    "\"10 × 40 = 400, to be honest\"",
+    "\"8 × 4 = 32\"",
+    "\"8 × 40 = 320\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7 × 40 = 280\"\"? Dan rond je beide getallen naar beneden af en maak je de schatting te laag. Rond af naar het dichtstbijzijnde getal, dus 8 × 40.",
+    "Koos je \"\"10 × 40 = 400, to be honest\"\"? Dan rond je 7,9 af op een tiental. Dat is te grof en geeft een te grote schatting, dus 8 × 40.",
+    "Koos je \"\"8 × 4 = 32\"\"? Dan laat je een nul weg bij 41. Het getal 41 is bijna 40, dus 8 × 40 = 320. Controleer je stap: de juiste uitkomst is 8 × 40 = 320.",
+    "Klopt: 7,9 ligt dicht bij 8 en 41 dicht bij 40; het exacte antwoord is 323,9."
+   ],
+   "uh": "Je schat 7,9 × 41. Welke afronding geeft de beste schatting?"
+  },
+  {
+   "v": "Je zoekt x met x³ = 50 en hebt geen formule. Welke strategie past?",
+   "o": [
+    "\"waarden proberen en inperken\"",
+    "\"x delen door 3\"",
+    "\"50 delen door 3\"",
+    "\"alleen x = 50 invullen, I suppose\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je probeert getallen en komt zo steeds dichter bij de oplossing.",
+    "Koos je \"\"x delen door 3\"\"? Dan deel je een getal dat er niet staat. Bij een derde macht werkt delen niet, dus proberen en inperken.",
+    "Koos je \"\"50 delen door 3\"\"? Dan deel je 50 door de exponent. Een exponent is geen deler, dus proberen en inperken. Door de stappen goed na te lopen kom je uit op waarden proberen en inperken.",
+    "Koos je \"\"alleen x = 50 invullen, I suppose\"\"? Dan vul je maar één getal in. Je moet meerdere waarden proberen, en zo inperken. Controleer je stap: de juiste uitkomst is waarden proberen en inperken."
+   ],
+   "uh": "Je zoekt x met x³ = 50 en hebt geen formule. Welke strategie past?"
+  },
+  {
+   "v": "Je weet de prijs na 20% korting. Hoe vind je de oude prijs?",
+   "o": [
+    "\"vermenigvuldigen met 1,2\"",
+    "\"20% van de prijs aftrekken\"",
+    "\"delen door 0,8\"",
+    "\"delen door 0,2\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"vermenigvuldigen met 1,2\"\"? Dan tel je 20% bij de nieuwe prijs op. De 20% hoort bij de oude prijs, dus delen door 0,8.",
+    "Koos je \"\"20% van de prijs aftrekken\"\"? Dan trek je nog eens korting af. Dat maakt de prijs lager in plaats van hoger, dus delen door 0,8.",
+    "Klopt: de nieuwe prijs is 80% van de oude, dus je deelt door 0,8.",
+    "Koos je \"\"delen door 0,2\"\"? Dan gebruik je het kortingspercentage zelf. De nieuwe prijs is 80%, dus delen door 0,8. Controleer je stap: de juiste uitkomst is delen door 0,8."
+   ],
+   "uh": "Je weet de prijs na 20% korting. Hoe vind je de oude prijs?"
+  },
+  {
+   "v": "Hoe controleer je een gevonden oplossing van een vergelijking?",
+   "o": [
+    "\"invullen in je laatste regel, gewoon, volgens mij\"",
+    "\"invullen in de oorspronkelijke vergelijking\"",
+    "\"je uitwerking nog eens lezen\"",
+    "\"een andere leerling vragen\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"invullen in je laatste regel, gewoon, volgens mij\"\"? Dan vul je in bij een regel die al een fout kan bevatten. Neem de opgave zelf, dus de oorspronkelijke vergelijking.",
+    "Klopt: dan merk je ook fouten die vroeger in je uitwerking zijn gemaakt.",
+    "Koos je \"\"je uitwerking nog eens lezen\"\"? Dan lees je alleen terug. Een rekenfout zie je zo niet altijd, dus vul de oplossing in.",
+    "Koos je \"\"een andere leerling vragen\"\"? Dan vertrouw je op iemand anders. Je kunt het zelf controleren, door in te vullen."
+   ],
+   "uh": "Hoe controleer je een gevonden oplossing van een vergelijking?"
+  },
+  {
+   "v": "Reken 36 km/u om naar m/s. Welk getal krijg je?",
+   "o": [
+    "\"129,6\"",
+    "\"36 000\"",
+    "\"6\"",
+    "\"10\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"129,6\"\"? Dan vermenigvuldig je met 3,6. Voor km/u naar m/s deel je door 3,6, dus 10. Het goede antwoord is 10.",
+    "Koos je \"\"36 000\"\"? Dan reken je alleen km om naar m. De uren moeten ook naar seconden, dus 10 m/s. Door de stappen goed na te lopen kom je uit op 10.",
+    "Koos je \"\"6\"\"? Dan deel je door 6. De omrekenfactor is 3,6, dus 36 : 3,6 = 10. Controleer je stap: de juiste uitkomst is 10.",
+    "Klopt: 36 km/u = 36 000 m per 3600 s = 10 m/s. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Reken 36 km/u om naar m/s. Welk getal krijg je?"
+  },
+  {
+   "v": "Een leerling berekent de lengte van een fiets als 18 m. Hoe beoordeel je dit?",
+   "o": [
+    "\"onredelijk: een fiets is ongeveer 1,8 m\"",
+    "\"redelijk: fietsen zijn lang\"",
+    "\"redelijk: het is een geheel getal\"",
+    "\"onredelijk: een fiets is ongeveer 18 cm, to be honest\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 18 m is de lengte van een bus; een fiets is ongeveer 1,8 m.",
+    "Koos je \"\"redelijk: fietsen zijn lang\"\"? Dan accepteer je een antwoord zonder te vergelijken. Een fiets is ongeveer 1,8 m, dus 18 m past niet.",
+    "Koos je \"\"redelijk: het is een geheel getal\"\"? Dan let je alleen op het getal. Controleer de grootte met de situatie, dus 18 m is onredelijk.",
+    "Koos je \"\"onredelijk: een fiets is ongeveer 18 cm, to be honest\"\"? Dan vergis je je in de eenheid. Een fiets is ongeveer 1,8 m, dus niet 18 cm."
+   ],
+   "uh": "Een leerling berekent de lengte van een fiets als 18 m. Hoe beoordeel je dit?"
+  },
+  {
+   "v": "Hoeveel kubieke meter is de inhoud van het zwembad?",
+   "o": [
+    "\"37,5\"",
+    "\"36,5\"",
+    "\"375\"",
+    "\"3750\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"37,5\"\"? Dan zet dit je de komma een plaats te ver. 25 × 10 × 1,5 is 375, dus 375 m³. Het goede antwoord is 375.",
+    "Koos je \"\"36,5\"\"? Dan tel je de maten op in plaats van te vermenigvuldigen. De inhoud is een product, dus 375. Door de stappen goed na te lopen kom je uit op 375.",
+    "Klopt: 25 × 10 = 250 en 250 × 1,5 = 375 m³. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3750\"\"? Dan zet dit je een nul te veel. 250 × 1,5 is 375, dus 375 m³. Controleer je stap: de juiste uitkomst is 375."
+   ],
+   "uh": "Hoeveel kubieke meter is de inhoud van het zwembad?",
+   "ctx": "Een leerling wil weten hoeveel liter water in een zwembad past van 25 m lang, 10 m breed en gemiddeld 1,5 m diep. Hij schat de inhoud met 25 × 10 × 1,5. Een kubieke meter is 1000 liter."
+  },
+  {
+   "v": "Hoeveel liter past er in het zwembad?",
+   "o": [
+    "\"375\"",
+    "\"375 000\"",
+    "\"37 500\"",
+    "\"3 750 000\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"375\"\"? Dan laat je het omrekenen weg. 1 m³ is 1000 liter, dus 375 000. Het goede antwoord is 375 000.",
+    "Klopt: 375 m³ × 1000 = 375 000 liter. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"37 500\"\"? Dan reken je met 100 liter per m³. Het zijn 1000 liter, dus 375 000. Door de stappen goed na te lopen kom je uit op 375 000.",
+    "Koos je \"\"3 750 000\"\"? Dan gebruik je 10 000 liter per m³. Het zijn 1000 liter, dus 375 000. Controleer je stap: de juiste uitkomst is 375 000."
+   ],
+   "uh": "Hoeveel liter past er in het zwembad?",
+   "ctx": "Een leerling wil weten hoeveel liter water in een zwembad past van 25 m lang, 10 m breed en gemiddeld 1,5 m diep. Hij schat de inhoud met 25 × 10 × 1,5. Een kubieke meter is 1000 liter."
+  },
+  {
+   "v": "Een leerling vindt 37 500 liter. Waarom is dat onredelijk?",
+   "o": [
+    "\"het is te groot voor een zwembad\"",
+    "\"het is niet gelijk aan 25 + 10\"",
+    "\"liters bestaan niet bij een zwembad, really, to be honest\"",
+    "\"tien keer te klein: 250 m² × 1,5 m is 375 m³\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het is te groot voor een zwembad\"\"? Dan denk je dat het bad kleiner is. 25 m bij 10 m is groot, dus 375 000 liter.",
+    "Koos je \"\"het is niet gelijk aan 25 + 10\"\"? Dan vergelijk je met een som van de maten. De inhoud is een product, dus 375 000.",
+    "Koos je \"\"liters bestaan niet bij een zwembad, really, to be honest\"\"? Dan denk je dat een andere eenheid verplicht is. Liters mogen, maar het getal is te klein.",
+    "Klopt: 375 m³ is 375 000 liter, dus 37 500 is een factor 10 te klein."
+   ],
+   "uh": "Een leerling vindt 37 500 liter. Waarom is dat onredelijk?",
+   "ctx": "Een leerling wil weten hoeveel liter water in een zwembad past van 25 m lang, 10 m breed en gemiddeld 1,5 m diep. Hij schat de inhoud met 25 × 10 × 1,5. Een kubieke meter is 1000 liter."
+  },
+  {
+   "v": "Wat was de prijs van de jas vóór de korting?",
+   "o": [
+    "\"€ 60\"",
+    "\"€ 57,60\"",
+    "\"€ 38,40\"",
+    "\"€ 68\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 48 : 0,8 = 60. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€ 57,60\"\"? Dan reken je 48 × 1,2. De 20% hoort bij de oude prijs, dus 48 : 0,8 = 60. Het goede antwoord is € 60.",
+    "Koos je \"\"€ 38,40\"\"? Dan reken je 48 × 0,8. Dat is korting op de kortingsprijs, dus 48 : 0,8 = 60. Door de stappen goed na te lopen kom je uit op € 60.",
+    "Koos je \"\"€ 68\"\"? Dan tel je € 20 bij de prijs op. 20% is geen vast bedrag, dus 48 : 0,8 = 60. Controleer je stap: de juiste uitkomst is € 60."
+   ],
+   "uh": "Wat was de prijs van de jas vóór de korting?",
+   "ctx": "Een winkel geeft 20% korting. Een jas kost na korting € 48. Een leerling wil de oorspronkelijke prijs weten en kiest terugwerken vanaf de kortingsprijs. Daarna vergelijkt hij zijn antwoord met de gegeven prijs."
+  },
+  {
+   "v": "Hoe controleer je de oude prijs van € 60?",
+   "o": [
+    "\"60 + 20 = 80, en dat is meer dan 48\"",
+    "\"60 : 0,8 = 75, en dat is meer dan 48, volgens mij\"",
+    "\"60 × 0,8 = 48, en dat is de kortingsprijs\"",
+    "\"48 × 1,2 = 57,60, dicht bij 60\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"60 + 20 = 80, en dat is meer dan 48\"\"? Dan tel je het kortingspercentage bij de prijs op. Reken vooruit met 0,8, dus 60 × 0,8 = 48.",
+    "Koos je \"\"60 : 0,8 = 75, en dat is meer dan 48, volgens mij\"\"? Dan deel je opnieuw door 0,8. Controleer door te vermenigvuldigen met 0,8, dus 60 × 0,8 = 48.",
+    "Klopt: je rekent vooruit en komt op de gegeven prijs. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"48 × 1,2 = 57,60, dicht bij 60\"\"? Dan controleer je met dezelfde fout. Reken met 0,8 vanaf 60, dus 60 × 0,8 = 48."
+   ],
+   "uh": "Hoe controleer je de oude prijs van € 60?",
+   "ctx": "Een winkel geeft 20% korting. Een jas kost na korting € 48. Een leerling wil de oorspronkelijke prijs weten en kiest terugwerken vanaf de kortingsprijs. Daarna vergelijkt hij zijn antwoord met de gegeven prijs."
+  },
+  {
+   "v": "Waarom klopt 48 × 1,2 niet als terugrekenen?",
+   "o": [
+    "\"20% hoort bij de nieuwe prijs\"",
+    "\"20% hoort bij de oude prijs, niet bij € 48\"",
+    "\"1,2 is geen getal\"",
+    "\"48 is te klein om te vermenigvuldigen, zeg maar\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20% hoort bij de nieuwe prijs\"\"? Dan denk je dat de korting op € 48 is gegeven. De korting is over de oude prijs, dus delen door 0,8.",
+    "Klopt: 1,2 × 48 = 57,60 is meer dan 20% van 60 minder dan 60.",
+    "Koos je \"\"1,2 is geen getal\"\"? Dan denk je dat 1,2 niet mag. Het getal klopt wel, maar het is hier niet de goede factor.",
+    "Koos je \"\"48 is te klein om te vermenigvuldigen, zeg maar\"\"? Dan denk je dat de grootte van 48 het probleem is. De factor is verkeerd, niet het getal 48."
+   ],
+   "uh": "Waarom klopt 48 × 1,2 niet als terugrekenen?",
+   "ctx": "Een winkel geeft 20% korting. Een jas kost na korting € 48. Een leerling wil de oorspronkelijke prijs weten en kiest terugwerken vanaf de kortingsprijs. Daarna vergelijkt hij zijn antwoord met de gegeven prijs."
+  },
+  {
+   "v": "Controleer x = 9. Welke uitkomst krijg je links en rechts van het gelijkteken?",
+   "o": [
+    "\"16 = 4, you know, I think\"",
+    "\"3 = 4\"",
+    "\"4 = 14\"",
+    "\"4 = 4, dus het klopt\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"16 = 4, you know, I think\"\"? Dan vergeet je de wortel te nemen. √16 is 4, dus 4 = 4. Het goede antwoord is 4 = 4, dus het klopt.",
+    "Koos je \"\"3 = 4\"\"? Dan neem je de wortel van 9. Het is √(9 + 7) = √16, dus 4 = 4. Door de stappen goed na te lopen kom je uit op 4 = 4, dus het klopt.",
+    "Koos je \"\"4 = 14\"\"? Dan reken je 9 + 5. Het is 9 − 5, dus 4 = 4. Controleer je stap: de juiste uitkomst is 4 = 4, dus het klopt.",
+    "Klopt: √16 = 4 en 9 − 5 = 4. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Controleer x = 9. Welke uitkomst krijg je links en rechts van het gelijkteken?",
+   "ctx": "Een leerling lost √(x + 7) = x − 5 op. Hij kwadrateert beide kanten, krijgt x² − 11x + 18 = 0 en vindt x = 2 en x = 9. Daarna vult hij beide waarden in de oorspronkelijke vergelijking in."
+  },
+  {
+   "v": "Vul in plaats daarvan x = 2 in. Wat krijg je nu links en rechts?",
+   "o": [
+    "\"3 = −3, dus het klopt niet\"",
+    "\"3 = 3\"",
+    "\"9 = −3, really, to be honest\"",
+    "\"5 = −3\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: √9 = 3 maar 2 − 5 = −3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3 = 3\"\"? Dan reken je 2 − 5 als 3. Het is −3, dus 3 = −3 klopt niet. Het goede antwoord is 3 = −3, dus het klopt niet.",
+    "Koos je \"\"9 = −3, really, to be honest\"\"? Dan vergeet je de wortel. √9 is 3, dus 3 = −3. Door de stappen goed na te lopen kom je uit op 3 = −3, dus het klopt niet.",
+    "Koos je \"\"5 = −3\"\"? Dan neem je 2 + 7 min 4. Het is √9 = 3, dus 3 = −3. Controleer je stap: de juiste uitkomst is 3 = −3, dus het klopt niet."
+   ],
+   "uh": "Vul in plaats daarvan x = 2 in. Wat krijg je nu links en rechts?",
+   "ctx": "Een leerling lost √(x + 7) = x − 5 op. Hij kwadrateert beide kanten, krijgt x² − 11x + 18 = 0 en vindt x = 2 en x = 9. Daarna vult hij beide waarden in de oorspronkelijke vergelijking in."
+  },
+  {
+   "v": "Wat voor soort oplossing is x = 2?",
+   "o": [
+    "\"een tweede echte oplossing, denk ik, zeg maar\"",
+    "\"een fout bij het ontbinden\"",
+    "\"een schijnoplossing door het kwadrateren\"",
+    "\"een afrondingsfout\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een tweede echte oplossing, denk ik, zeg maar\"\"? Dan denk je dat alles uit de ontbinding klopt. De controle laat zien dat x = 2 niet werkt, dus een schijnoplossing.",
+    "Koos je \"\"een fout bij het ontbinden\"\"? Dan zoek je de fout in de ontbinding. Die is goed, maar x = 2 valt af bij de controle.",
+    "Klopt: kwadrateren voegt oplossingen toe die niet bij de oorspronkelijke vergelijking horen.",
+    "Koos je \"\"een afrondingsfout\"\"? Dan denk je aan afronden. Er is niets afgerond, maar kwadrateren geeft een extra oplossing."
+   ],
+   "uh": "Wat voor soort oplossing is x = 2?",
+   "ctx": "Een leerling lost √(x + 7) = x − 5 op. Hij kwadrateert beide kanten, krijgt x² − 11x + 18 = 0 en vindt x = 2 en x = 9. Daarna vult hij beide waarden in de oorspronkelijke vergelijking in."
+  },
+  {
+   "v": "Welke oplossing blijft over na de controle?",
+   "o": [
+    "\"alleen x = 2\"",
+    "\"alleen x = 9\"",
+    "\"x = 2 en x = 9\"",
+    "\"geen enkele\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen x = 2\"\"? Dan verwissel je de uitkomsten. x = 2 geeft 3 = −3, dus alleen x = 9. Het goede antwoord is alleen x = 9.",
+    "Klopt: x = 9 klopt en x = 2 niet. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 2 en x = 9\"\"? Dan neem je alle uitkomsten van de ontbinding. Controleer elk getal, dus alleen x = 9. Door de stappen goed na te lopen kom je uit op alleen x = 9.",
+    "Koos je \"\"geen enkele\"\"? Dan denk je dat beide afvallen. x = 9 geeft 4 = 4, dus alleen x = 9. Controleer je stap: de juiste uitkomst is alleen x = 9."
+   ],
+   "uh": "Welke oplossing blijft over na de controle?",
+   "ctx": "Een leerling lost √(x + 7) = x − 5 op. Hij kwadrateert beide kanten, krijgt x² − 11x + 18 = 0 en vindt x = 2 en x = 9. Daarna vult hij beide waarden in de oorspronkelijke vergelijking in."
+  },
+  {
+   "v": "Tussen welke gehele getallen ligt x?",
+   "o": [
+    "\"tussen 2 en 3\"",
+    "\"tussen 4 en 5\"",
+    "\"tussen 16 en 17\"",
+    "\"tussen 3 en 4\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"tussen 2 en 3\"\"? Dan kies je getallen te laag. 3³ is 27 en dat is nog te klein, dus tussen 3 en 4. Het goede antwoord is tussen 3 en 4.",
+    "Koos je \"\"tussen 4 en 5\"\"? Dan kies je getallen te hoog. 4³ is 64 en dat is al te groot, dus tussen 3 en 4. Door de stappen goed na te lopen kom je uit op tussen 3 en 4.",
+    "Koos je \"\"tussen 16 en 17\"\"? Dan deel je 50 door 3. Dat is geen derdemachtswortel, dus tussen 3 en 4. Controleer je stap: de juiste uitkomst is tussen 3 en 4.",
+    "Klopt: 3³ = 27 is kleiner dan 50 en 4³ = 64 is groter. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Tussen welke gehele getallen ligt x?",
+   "ctx": "Een leerling zoekt x met x³ = 50 zonder de derdemachtswortel te gebruiken. Hij probeert waarden: 3³ = 27, 4³ = 64 en 3,6³ = 46,656. Daarna probeert hij 3,7. Hij wil x op één decimaal weten."
+  },
+  {
+   "v": "Welk getal probeer je na 3,6³ = 46,656?",
+   "o": [
+    "\"een iets groter getal, zoals 3,7\"",
+    "\"een kleiner getal, zoals 3,5\"",
+    "\"een veel groter getal, zoals 4,6, eigenlijk\"",
+    "\"hetzelfde getal nog eens\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 46,656 is kleiner dan 50, dus x moet iets groter zijn.",
+    "Koos je \"\"een kleiner getal, zoals 3,5\"\"? Dan ga je de verkeerde kant op. 46,656 is te klein, dus een groter getal. Het goede antwoord is een iets groter getal, zoals 3,7.",
+    "Koos je \"\"een veel groter getal, zoals 4,6, eigenlijk\"\"? Dan springt je te ver. Je wilt één decimaal inperken, dus 3,7. Door de stappen goed na te lopen kom je uit op een iets groter getal, zoals 3,7.",
+    "Koos je \"\"hetzelfde getal nog eens\"\"? Dan probeer je niets nieuws. Je moet verder inperken, dus 3,7. Controleer je stap: de juiste uitkomst is een iets groter getal, zoals 3,7."
+   ],
+   "uh": "Welk getal probeer je na 3,6³ = 46,656?",
+   "ctx": "Een leerling zoekt x met x³ = 50 zonder de derdemachtswortel te gebruiken. Hij probeert waarden: 3³ = 27, 4³ = 64 en 3,6³ = 46,656. Daarna probeert hij 3,7. Hij wil x op één decimaal weten."
+  },
+  {
+   "v": "Hoe groot is 3,7³ ongeveer, afgerond op één decimaal?",
+   "o": [
+    "\"11,1\"",
+    "\"13,7\"",
+    "\"50,7\"",
+    "\"49,0\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"11,1\"\"? Dan reken je 3 × 3,7. Een derde macht is 3,7 × 3,7 × 3,7, dus 50,7. Het goede antwoord is 50,7.",
+    "Koos je \"\"13,7\"\"? Dan stop je na het kwadraat van 3,7. Er hoort nog een factor 3,7 bij, dus 50,7. Door de stappen goed na te lopen kom je uit op 50,7.",
+    "Klopt: 3,7 × 3,7 = 13,69 en 13,69 × 3,7 = 50,653. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"49,0\"\"? Dan schat je zonder te rekenen. Het product is 50,653, dus 50,7. Controleer je stap: de juiste uitkomst is 50,7."
+   ],
+   "uh": "Hoe groot is 3,7³ ongeveer, afgerond op één decimaal?",
+   "ctx": "Een leerling zoekt x met x³ = 50 zonder de derdemachtswortel te gebruiken. Hij probeert waarden: 3³ = 27, 4³ = 64 en 3,6³ = 46,656. Daarna probeert hij 3,7. Hij wil x op één decimaal weten."
+  },
+  {
+   "v": "Welk patroon zie je in de sommen 1, 4, 9 en 16?",
+   "o": [
+    "\"de som is 2n\"",
+    "\"de som van de eerste n oneven getallen is n²\"",
+    "\"de som is n + n, denk ik, zeg maar, gewoon\"",
+    "\"de som is n³\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de som is 2n\"\"? Dan zie je een verdubbeling. De sommen groeien sneller dan 2n, dus n². Het goede antwoord is de som van de eerste n oneven getallen is n².",
+    "Klopt: 1 = 1², 4 = 2², 9 = 3² en 16 = 4². Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de som is n + n, denk ik, zeg maar, gewoon\"\"? Dan tel je n twee keer op. Dat geeft 2n, maar de sommen zijn 1, 4, 9 en 16. Door de stappen goed na te lopen kom je uit op de som van de eerste n oneven getallen is n².",
+    "Koos je \"\"de som is n³\"\"? Dan denk je aan een derde macht. 8 is geen som hier, dus n². Controleer je stap: de juiste uitkomst is de som van de eerste n oneven getallen is n²."
+   ],
+   "uh": "Welk patroon zie je in de sommen 1, 4, 9 en 16?",
+   "ctx": "Een leerling zoekt de som van de eerste 10 oneven getallen: 1 + 3 + 5 + … + 19. Hij probeert eerst kleine gevallen: 1 = 1, 1 + 3 = 4, 1 + 3 + 5 = 9 en 1 + 3 + 5 + 7 = 16."
+  },
+  {
+   "v": "Wat is volgens het patroon 1 + 3 + 5 + … + 19?",
+   "o": [
+    "\"55\"",
+    "\"190\"",
+    "\"90\"",
+    "\"100\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"55\"\"? Dan tel je 1 tot en met 10 op. De getallen zijn oneven, dus 10² = 100. Het goede antwoord is 100.",
+    "Koos je \"\"190\"\"? Dan tel je alle getallen van 1 tot 19 op. Alleen de oneven tellen mee, dus 100. Door de stappen goed na te lopen kom je uit op 100.",
+    "Koos je \"\"90\"\"? Dan tel je een getal te weinig. Er zijn 10 oneven getallen, dus 100. Controleer je stap: de juiste uitkomst is 100.",
+    "Klopt: er zijn 10 oneven getallen, dus de som is 10² = 100."
+   ],
+   "uh": "Wat is volgens het patroon 1 + 3 + 5 + … + 19?",
+   "ctx": "Een leerling zoekt de som van de eerste 10 oneven getallen: 1 + 3 + 5 + … + 19. Hij probeert eerst kleine gevallen: 1 = 1, 1 + 3 = 4, 1 + 3 + 5 = 9 en 1 + 3 + 5 + 7 = 16."
+  },
+  {
+   "v": "Hoe controleer je het patroon voor n = 5?",
+   "o": [
+    "\"1 + 3 + 5 + 7 + 9 = 25 = 5²\"",
+    "\"5 + 5 = 10, zeg maar, gewoon, volgens mij\"",
+    "\"1 + 5 = 6\"",
+    "\"5 × 3 = 15\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de som van de eerste vijf oneven getallen is 25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5 + 5 = 10, zeg maar, gewoon, volgens mij\"\"? Dan tel je n twee keer op. Reken de oneven getallen, dus 25. Het goede antwoord is 1 + 3 + 5 + 7 + 9 = 25 = 5².",
+    "Koos je \"\"1 + 5 = 6\"\"? Dan neem je alleen het eerste en laatste getal. Alle vijf tellen mee, dus 25. Door de stappen goed na te lopen kom je uit op 1 + 3 + 5 + 7 + 9 = 25 = 5².",
+    "Koos je \"\"5 × 3 = 15\"\"? Dan vermenigvuldig je n met 3. De som is de som van de oneven getallen, dus 25. Controleer je stap: de juiste uitkomst is 1 + 3 + 5 + 7 + 9 = 25 = 5²."
+   ],
+   "uh": "Hoe controleer je het patroon voor n = 5?",
+   "ctx": "Een leerling zoekt de som van de eerste 10 oneven getallen: 1 + 3 + 5 + … + 19. Hij probeert eerst kleine gevallen: 1 = 1, 1 + 3 = 4, 1 + 3 + 5 = 9 en 1 + 3 + 5 + 7 = 16."
+  },
+  {
+   "v": "Waarom is 180 km/u onredelijk voor een fietser?",
+   "o": [
+    "\"een fietser haalt ongeveer 150 km/u\"",
+    "\"het antwoord moet een geheel getal zijn, eigenlijk\"",
+    "\"een fietser haalt ongeveer 15 tot 25 km/u\"",
+    "\"180 is een even getal\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een fietser haalt ongeveer 150 km/u\"\"? Dan vergis je je met een grootte. Een fietser haalt ongeveer 15 tot 25 km/u, dus 18.",
+    "Koos je \"\"het antwoord moet een geheel getal zijn, eigenlijk\"\"? Dan let je op de vorm. De grootte is het probleem, dus 18 km/u. Door de stappen goed na te lopen kom je uit op een fietser haalt ongeveer 15 tot 25 km/u.",
+    "Klopt: 9 km in een half uur is 18 km/u. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"180 is een even getal\"\"? Dan let je op even of oneven. De grootte klopt niet, dus 18 km/u. Controleer je stap: de juiste uitkomst is een fietser haalt ongeveer 15 tot 25 km/u."
+   ],
+   "uh": "Waarom is 180 km/u onredelijk voor een fietser?",
+   "ctx": "Een fietser legt 9 km af in 30 minuten. Een leerling rekent de gemiddelde snelheid uit en komt op 180 km/u. Hij controleert dit met een schatting en met de eenheden en rekent daarna om naar m/s."
+  },
+  {
+   "v": "Wat is de juiste gemiddelde snelheid in km/u?",
+   "o": [
+    "\"4,5\"",
+    "\"18\"",
+    "\"270\"",
+    "\"180\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4,5\"\"? Dan vermenigvuldig je 9 met 0,5. Snelheid is afstand gedeeld door tijd, dus 9 : 0,5 = 18. Het goede antwoord is 18.",
+    "Klopt: 30 minuten is 0,5 uur en 9 : 0,5 = 18. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"270\"\"? Dan vermenigvuldig je 9 met 30 minuten. Reken om naar uren, dus 9 : 0,5 = 18. Door de stappen goed na te lopen kom je uit op 18.",
+    "Koos je \"\"180\"\"? Dan reken je 9 : 0,05. Een halfuur is 0,5 uur, dus 18. Controleer je stap: de juiste uitkomst is 18."
+   ],
+   "uh": "Wat is de juiste gemiddelde snelheid in km/u?",
+   "ctx": "Een fietser legt 9 km af in 30 minuten. Een leerling rekent de gemiddelde snelheid uit en komt op 180 km/u. Hij controleert dit met een schatting en met de eenheden en rekent daarna om naar m/s."
+  },
+  {
+   "v": "Reken 18 km/u om naar m/s.",
+   "o": [
+    "\"64,8\"",
+    "\"18 000\"",
+    "\"3\"",
+    "\"5\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"64,8\"\"? Dan vermenigvuldig je met 3,6. Voor m/s deel je door 3,6, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"18 000\"\"? Dan reken je alleen km om naar m. De uren moeten ook naar seconden, dus 5 m/s. Door de stappen goed na te lopen kom je uit op 5.",
+    "Koos je \"\"3\"\"? Dan deel je door 6. De omrekenfactor is 3,6, dus 18 : 3,6 = 5. Controleer je stap: de juiste uitkomst is 5.",
+    "Klopt: 18 : 3,6 = 5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Reken 18 km/u om naar m/s.",
+   "ctx": "Een fietser legt 9 km af in 30 minuten. Een leerling rekent de gemiddelde snelheid uit en komt op 180 km/u. Hij controleert dit met een schatting en met de eenheden en rekent daarna om naar m/s."
+  },
+  {
+   "v": "Welke controle bevestigt 18 km/u?",
+   "o": [
+    "\"18 km/u × 0,5 u = 9 km\"",
+    "\"18 × 30 = 540 km, volgens mij\"",
+    "\"9 + 30 = 39\"",
+    "\"18 − 9 = 9\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Schat eerst, kies een strategie en controleer het antwoord met de gegevens uit de opgave. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dat is de afstand uit de opgave. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"18 × 30 = 540 km, volgens mij\"\"? Dan gebruik je minuten bij km/u. Reken de tijd om naar uren, dus 18 × 0,5 = 9. Het goede antwoord is 18 km/u × 0,5 u = 9 km.",
+    "Koos je \"\"9 + 30 = 39\"\"? Dan tel je afstand en tijd op. Dat zegt niets over de snelheid, dus 18 × 0,5 = 9. Door de stappen goed na te lopen kom je uit op 18 km/u × 0,5 u = 9 km.",
+    "Koos je \"\"18 − 9 = 9\"\"? Dan trek je de afstand van de snelheid af. Snelheid maal tijd is de afstand, dus 18 × 0,5 = 9. Controleer je stap: de juiste uitkomst is 18 km/u × 0,5 u = 9 km."
+   ],
+   "uh": "Welke controle bevestigt 18 km/u?",
+   "ctx": "Een fietser legt 9 km af in 30 minuten. Een leerling rekent de gemiddelde snelheid uit en komt op 180 km/u. Hij controleert dit met een schatting en met de eenheden en rekent daarna om naar m/s."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling wil weten hoeveel liter water een tank van 2 m lang, 1,5 m breed en 1,2 m hoog bevat. Hij schat eerst met afgeronde getallen en rekent daarna exact. Een kubieke meter is 1000 liter.",
+   "v": "Schat de inhoud en bereken die exact.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Schatting: 2 × 1,5 × 1 = 3 m³, dus ongeveer 3000 liter (1p). Exact: 2 × 1,5 × 1,2 = 3,6 m³ (1p). Dat is 3600 liter, dicht bij de schatting (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een jas kost na 25% korting € 45. Een leerling wil de prijs voor de korting bepalen en controleert zijn antwoord door vooruit te rekenen met een factor.",
+   "v": "Bereken de oude prijs en controleer die.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De nieuwe prijs is 75% van de oude, dus 45 : 0,75 (1p) = 60 (1p). Controle: 60 × 0,75 = 45 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling lost √(x + 2) = x op door beide kanten te kwadrateren. Hij vindt x = 2 en x = −1. Hij controleert beide waarden in de oorspronkelijke vergelijking, omdat kwadrateren extra uitkomsten kan geven. Daarna schrijft hij op welke waarde niet klopt.",
+   "v": "Los op en beoordeel welke waarde een schijnoplossing is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "x + 2 = x², dus x² − x − 2 = 0 en x = 2 of x = −1 (1p). Bij x = 2: √4 = 2 klopt (1p). Bij x = −1: √1 = 1 en −1 is niet gelijk aan 1, dus een schijnoplossing (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zoekt x met x³ + x = 30 en wil x op één decimaal weten. Hij probeert waarden in een tabel, laat zien tussen welke getallen x ligt en controleert zijn uitkomst door in te vullen in de oorspronkelijke vergelijking.",
+   "v": "Bepaal x op één decimaal door proberen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "x = 3 geeft 27 + 3 = 30, dus x = 3,0 (1p). Controle: 3³ + 3 = 30 (1p). Er is dus geen verdere inperking nodig; x = 3,0 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling rekent uit dat een auto 5 km in 6 minuten aflegt, dus 50 km/u. Hij controleert dit met een schatting, kijkt of de snelheid past bij een auto in de stad en rekent het daarna om naar m/s.",
+   "v": "Bereken de snelheid en controleer de redelijkheid.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "6 minuten is 0,1 uur, dus 5 : 0,1 = 50 km/u (1p). Redelijk: een auto in de stad rijdt zo snel (1p). Omrekenen: 50 : 3,6 ≈ 13,9 m/s (1p)."
+  }
+ ]
+}
