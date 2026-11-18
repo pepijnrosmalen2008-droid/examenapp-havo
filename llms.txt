@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 27.868 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 27.895 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -187,6 +187,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Personages, thema en symboliek (Engels HAVO)](https://slagio.nl/leren/havo/engels/personages-thema-en-symboliek.html): Je leert personages beschrijven (hoofdpersoon, tegenstander, verandering, karakterisering) en de boodschap van een Engels verhaal vinden via thema, symbool,…
 - [Stijlfiguren en poëzie (Engels HAVO)](https://slagio.nl/leren/havo/engels/stijlfiguren-en-poezie.html): Je leert stijlfiguren in Engelse teksten en gedichten herkennen en uitleggen: vergelijking, metafoor, personificatie, overdrijving, klankspel en rijm.
 - [Je leeservaring beargumenteerd verwoorden (Engels HAVO)](https://slagio.nl/leren/havo/engels/je-leeservaring-beargumenteerd-verwoorden.html): Je leert in het Engels vertellen wat je van een boek vindt: een korte samenvatting, een mening met redenen, voorbeelden en citaten, een vergelijking en een…
+- [Informatie zoeken, beoordelen en selecteren, en erover rapporteren (Wiskunde B HAVO)](https://slagio.nl/leren/havo/wiskunde-b/informatie-zoeken-beoordelen-en-selecteren-en-erover-rapporteren.html): Je zoekt gericht informatie, beoordeelt bronnen op betrouwbaarheid en actualiteit, selecteert de nodige gegevens, rekent om en rapporteert met tussenstappen,…
 - [Tekstsoort en schrijfdoel bepalen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html): Je bepaalt of een tekst of tekstgedeelte uiteenzettend, beschouwend of betogend is, wat de schrijver ermee wil bereiken en wat het belangrijkste doel is als…
 - [Onderwerp en hoofdgedachte aangeven (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/onderwerp-en-hoofdgedachte-aangeven.html): Je geeft het onderwerp en de hoofdgedachte van een tekst of tekstgedeelte aan: letterlijk als de kernzin er staat, en in eigen woorden als de hoofdgedachte…
 - [Relaties tussen tekstdelen benoemen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/relaties-tussen-tekstdelen-benoemen.html): Je benoemt inhoudelijke en functionele relaties tussen tekstdelen: verwijzingen, oorzaak en gevolg, doel en middel, standpunt met argumenten en subargumenten,…
@@ -341,6 +342,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Begrippen Scheikunde HAVO](https://slagio.nl/leren/havo/scheikunde/begrippen.html)
 - [Begrippen Natuurkunde HAVO](https://slagio.nl/leren/havo/natuurkunde/begrippen.html)
 - [Begrippen Engels HAVO](https://slagio.nl/leren/havo/engels/begrippen.html)
+- [Begrippen Wiskunde B HAVO](https://slagio.nl/leren/havo/wiskunde-b/begrippen.html)
 - [Begrippen Nederlands VWO](https://slagio.nl/leren/vwo/nederlands/begrippen.html)
 - [Begrippen Engels VWO](https://slagio.nl/leren/vwo/engels/begrippen.html)
 - [Begrippen Nederlands VMBO](https://slagio.nl/leren/vmbo/nederlands/begrippen.html)

@@ -5261,7 +5261,30 @@ var VAKKEN = [
     "nSv": 87,
     "nOe": 3,
     "nBeg": 17,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "wb.A.1",
+      "gs": 2,
+      "naam": "Informatie zoeken, beoordelen en selecteren, en erover rapporteren",
+      "beschrijving": "Je zoekt gericht informatie, beoordeelt bronnen op betrouwbaarheid en actualiteit, selecteert de nodige gegevens, rekent om en rapporteert met tussenstappen, eenheid en bronvermelding.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gericht zoeken",
+       "Bronnen beoordelen",
+       "Informatie selecteren",
+       "Verwerken en vergelijken",
+       "Rapporteren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "B",

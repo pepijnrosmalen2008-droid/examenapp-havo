@@ -226074,6 +226074,690 @@ var VAKKEN = [
       "t": "Kwadratisch",
       "d": "de tweede verschillen zijn gelijk"
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "wb.A.1",
+      "gs": 2,
+      "naam": "Informatie zoeken, beoordelen en selecteren, en erover rapporteren",
+      "beschrijving": "Je zoekt gericht informatie, beoordeelt bronnen op betrouwbaarheid en actualiteit, selecteert de nodige gegevens, rekent om en rapporteert met tussenstappen, eenheid en bronvermelding.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gericht zoeken",
+       "Bronnen beoordelen",
+       "Informatie selecteren",
+       "Verwerken en vergelijken",
+       "Rapporteren"
+      ],
+      "sam": "Zoek gericht met onderwerp, grootheid en type informatie. Beoordeel een bron op herkomst, methode en actualiteit. Selecteer alleen de nodige gegevens en zet ze in dezelfde eenheid. Let op misleidende grafieken. In een verslag noteer je vraag, aanpak, tussenstappen, conclusie met eenheid en de bronnen.",
+      "begrippen": [
+       {
+        "t": "Zoekopdracht",
+        "d": "Een combinatie van trefwoorden die het onderwerp, de grootheid en het type informatie noemt."
+       },
+       {
+        "t": "Bron",
+        "d": "Waar de informatie vandaan komt, zoals een rapport, een krantenartikel of een website."
+       },
+       {
+        "t": "Betrouwbaarheid",
+        "d": "De mate waarin de bron de herkomst en methode noemt en door een deskundige is gemaakt."
+       },
+       {
+        "t": "Actualiteit",
+        "d": "Of de gegevens recent genoeg zijn voor de vraag."
+       },
+       {
+        "t": "Relevantie",
+        "d": "Of een gegeven nodig is voor de vraag, zoals tankinhoud en verbruik voor de actieradius."
+       },
+       {
+        "t": "Selecteren",
+        "d": "De nodige gegevens kiezen en overbodige gegevens weglaten."
+       },
+       {
+        "t": "Eenheden omrekenen",
+        "d": "Gegevens in dezelfde eenheid zetten voordat je vergelijkt."
+       },
+       {
+        "t": "Misleidende presentatie",
+        "d": "Een weergave die een verkeerd beeld geeft, zoals een as die niet bij 0 begint."
+       },
+       {
+        "t": "Verslag",
+        "d": "Een geordend document met vraag, aanpak, uitwerking, conclusie en bronnen."
+       },
+       {
+        "t": "Tussenstappen",
+        "d": "De berekeningen tussen gegevens en antwoord waarmee een lezer je werk kan volgen."
+       },
+       {
+        "t": "Citeren",
+        "d": "Letterlijk overnemen tussen aanhalingstekens met bronvermelding."
+       },
+       {
+        "t": "Bronvermelding",
+        "d": "Het noteren van waar je informatie vandaan komt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Je zoekt het gemiddeld verbruik van een elektrische auto. Welke zoekopdracht is het meest gericht?",
+        "o": [
+         "\"auto\"",
+         "\"gemiddeld verbruik elektrische auto kWh per 100 km\"",
+         "\"elektrisch\"",
+         "\"wat is de beste auto, I think, I suppose, really\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"auto\"\"? Dan kies je een veel te breed woord. Dan krijg je duizenden niet-relevante resultaten, dus voeg je onderwerp en eenheid toe.",
+         "Klopt: de zoekopdracht noemt het onderwerp, de grootheid en de eenheid.",
+         "Koos je \"\"elektrisch\"\"? Dan kies je één los woord. Het noemt niet wat je wilt weten, dus noem de grootheid en eenheid. Door de stappen goed na te lopen kom je uit op gemiddeld verbruik elektrische auto kWh per 100 km.",
+         "Koos je \"\"wat is de beste auto, I think, I suppose, really\"\"? Dan stel je een algemene vraag. Het zegt niets over verbruik, dus zoek op verbruik per 100 km."
+        ],
+        "uh": "Je zoekt het gemiddeld verbruik van een elektrische auto. Welke zoekopdracht is het meest gericht?"
+       },
+       {
+        "v": "Welk kenmerk maakt een bron betrouwbaarder?",
+        "o": [
+         "\"de bron heeft veel kleuren en plaatjes, volgens mij, eigenlijk\"",
+         "\"de bron is vaak gedeeld\"",
+         "\"de bron is erg lang\"",
+         "\"de bron noemt de herkomst en de meetmethode van de gegevens\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de bron heeft veel kleuren en plaatjes, volgens mij, eigenlijk\"\"? Dan laat je de vormgeving meetellen. Een mooi uiterlijk zegt niets over de juistheid, dus kijk naar herkomst en methode.",
+         "Koos je \"\"de bron is vaak gedeeld\"\"? Dan laat je populariteit meetellen. Veel delen betekent niet dat het klopt, dus kijk naar herkomst.",
+         "Koos je \"\"de bron is erg lang\"\"? Dan laat je de lengte meetellen. Lang is niet hetzelfde als betrouwbaar, dus kijk naar herkomst en methode.",
+         "Klopt: je kunt dan nagaan hoe de gegevens zijn verkregen."
+        ],
+        "uh": "Welk kenmerk maakt een bron betrouwbaarder?"
+       },
+       {
+        "v": "Een tabel uit 2005 gaat over smartphonegebruik. Waarom is die zwak voor een onderzoek naar nu?",
+        "o": [
+         "\"de gegevens zijn verouderd\"",
+         "\"de tabel heeft te weinig kolommen\"",
+         "\"de tabel staat in een boek\"",
+         "\"de tabel heeft getallen\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: het gebruik is sindsdien sterk veranderd. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de tabel heeft te weinig kolommen\"\"? Dan kijk je naar de opmaak. De leeftijd van de gegevens is het probleem, dus verouderd.",
+         "Koos je \"\"de tabel staat in een boek\"\"? Dan denk je dat het medium telt. Het gaat om de actualiteit, dus verouderd. Door de stappen goed na te lopen kom je uit op de gegevens zijn verouderd.",
+         "Koos je \"\"de tabel heeft getallen\"\"? Dan denk je dat getallen een nadeel zijn. Getallen zijn juist nuttig, maar deze zijn van 2005."
+        ],
+        "uh": "Een tabel uit 2005 gaat over smartphonegebruik. Waarom is die zwak voor een onderzoek naar nu?"
+       },
+       {
+        "v": "Je berekent de inhoud van een doos. Welke gegevens uit een tekst heb je nodig?",
+        "o": [
+         "\"de prijs en de kleur van de doos, you know\"",
+         "\"het gewicht en het merk\"",
+         "\"de lengte, de breedte en de hoogte\"",
+         "\"de naam van de fabrikant\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de prijs en de kleur van de doos, you know\"\"? Dan neem je gegevens die niets met de inhoud te maken hebben. Prijs en kleur zijn niet nodig, dus lengte, breedte en hoogte.",
+         "Koos je \"\"het gewicht en het merk\"\"? Dan neem je gegevens zonder verband met de inhoud. Die zijn niet nodig, dus lengte, breedte en hoogte.",
+         "Klopt: de inhoud is lengte maal breedte maal hoogte. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de naam van de fabrikant\"\"? Dan neem je een irrelevant gegeven. Het zegt niets over de inhoud, dus lengte, breedte en hoogte."
+        ],
+        "uh": "Je berekent de inhoud van een doos. Welke gegevens uit een tekst heb je nodig?"
+       },
+       {
+        "v": "Twee bronnen noemen 3,2 miljoen en 3200 duizend inwoners. Zijn die gelijk?",
+        "o": [
+         "\"nee, miljoen is groter dan duizend\"",
+         "\"ja, 3,2 miljoen is 3200 duizend\"",
+         "\"nee, 3,2 is kleiner dan 3200\"",
+         "\"alleen bij afronden gelijk\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"nee, miljoen is groter dan duizend\"\"? Dan denk je dat het verschillende hoeveelheden zijn. Het zijn verschillende eenheden voor dezelfde hoeveelheid, dus gelijk.",
+         "Klopt: 1 miljoen is 1000 duizend, dus 3,2 miljoen is 3200 duizend.",
+         "Koos je \"\"nee, 3,2 is kleiner dan 3200\"\"? Dan vergelijk je de getallen zonder eenheid. De eenheden verschillen, dus 3,2 miljoen is 3200 duizend.",
+         "Koos je \"\"alleen bij afronden gelijk\"\"? Dan denk je dat afronding nodig is. De getallen zijn precies gelijk, dus ja. Controleer je stap: de juiste uitkomst is ja, 3,2 miljoen is 3200 duizend."
+        ],
+        "uh": "Twee bronnen noemen 3,2 miljoen en 3200 duizend inwoners. Zijn die gelijk?"
+       },
+       {
+        "v": "Welke onderdelen horen in een verslag?",
+        "o": [
+         "\"alleen het antwoord\"",
+         "\"alleen de berekening, denk ik, zeg maar, gewoon\"",
+         "\"alleen de bronnen\"",
+         "\"vraag, aanpak, uitwerking, conclusie en bronnen\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"alleen het antwoord\"\"? Dan laat je de uitleg weg. Een lezer moet je werk kunnen volgen, dus ook vraag, aanpak en uitwerking.",
+         "Koos je \"\"alleen de berekening, denk ik, zeg maar, gewoon\"\"? Dan laat je de vraag en conclusie weg. Een verslag begint bij de vraag en eindigt met een conclusie, dus alle onderdelen.",
+         "Koos je \"\"alleen de bronnen\"\"? Dan laat je het eigen werk weg. De bronnen ondersteunen je uitwerking, maar vervangen die niet.",
+         "Klopt: zo kan een lezer je werk volgen en controleren. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke onderdelen horen in een verslag?"
+       },
+       {
+        "v": "Je berekent 12 voor een lengte, maar je noteert geen eenheid. Wat ontbreekt?",
+        "o": [
+         "\"de eenheid, bijvoorbeeld cm of m\"",
+         "\"een extra cijfer\"",
+         "\"de vraag\"",
+         "\"niets, 12 is genoeg, to be honest, you know\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: zonder eenheid is een getal niet bruikbaar in de context.",
+         "Koos je \"\"een extra cijfer\"\"? Dan denk je dat er een cijfer mist. Het getal klopt, maar de eenheid ontbreekt. Het goede antwoord is de eenheid, bijvoorbeeld cm of m.",
+         "Koos je \"\"de vraag\"\"? Dan denk je dat de vraag ontbreekt. Het gaat om het antwoord, en dat mist de eenheid. Door de stappen goed na te lopen kom je uit op de eenheid, bijvoorbeeld cm of m.",
+         "Koos je \"\"niets, 12 is genoeg, to be honest, you know\"\"? Dan denk je dat een getal volstaat. 12 cm en 12 m verschillen enorm, dus de eenheid is nodig."
+        ],
+        "uh": "Je berekent 12 voor een lengte, maar je noteert geen eenheid. Wat ontbreekt?"
+       },
+       {
+        "v": "Welke zoekopdracht vindt het snelst de officiële cijfers over fietsongelukken?",
+        "o": [
+         "\"fietsen\"",
+         "\"is fietsen gevaarlijk, zeg maar, gewoon, volgens mij\"",
+         "\"fietsongevallen per jaar gemeente rapport cijfers\"",
+         "\"beste fiets kopen\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"fietsen\"\"? Dan kies je één los woord. Het is veel te breed, dus voeg onderwerp en plaats toe. Het goede antwoord is fietsongevallen per jaar gemeente rapport cijfers.",
+         "Koos je \"\"is fietsen gevaarlijk, zeg maar, gewoon, volgens mij\"\"? Dan stel je een algemene vraag. Er komen meningen en geen cijfers, dus zoek op cijfers per jaar.",
+         "Klopt: de zoekopdracht noemt onderwerp, plaats, periode en type bron.",
+         "Koos je \"\"beste fiets kopen\"\"? Dan zoek je naar een ander onderwerp. Het gaat om ongelukken, dus zoek op ongevallen. Controleer je stap: de juiste uitkomst is fietsongevallen per jaar gemeente rapport cijfers."
+        ],
+        "uh": "Welke zoekopdracht vindt het snelst de officiële cijfers over fietsongelukken?",
+        "ctx": "Voor een werkstuk zoekt een leerling het aantal fietsongelukken per jaar in zijn gemeente. Hij vindt drie bronnen: een rapport van de gemeente uit 2024 met meetmethode en bronvermelding, een blog zonder auteur en zonder bronnen, en een krantenartikel uit 2008."
+       },
+       {
+        "v": "Welke bron is het meest betrouwbaar voor het werkstuk?",
+        "o": [
+         "\"het blog zonder auteur\"",
+         "\"het rapport van de gemeente uit 2024\"",
+         "\"het krantenartikel uit 2008, eigenlijk\"",
+         "\"alle drie even\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het blog zonder auteur\"\"? Dan kies je een bron zonder herkomst. Niemand staat voor de gegevens in, dus de gemeente.",
+         "Klopt: het is recent en noemt methode en bronnen. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"het krantenartikel uit 2008, eigenlijk\"\"? Dan kies je een verouderde bron. De gegevens zijn van lang geleden, dus de gemeente.",
+         "Koos je \"\"alle drie even\"\"? Dan denk je dat de bronnen gelijkwaardig zijn. Ze verschillen in herkomst en actualiteit, dus de gemeente."
+        ],
+        "uh": "Welke bron is het meest betrouwbaar voor het werkstuk?",
+        "ctx": "Voor een werkstuk zoekt een leerling het aantal fietsongelukken per jaar in zijn gemeente. Hij vindt drie bronnen: een rapport van de gemeente uit 2024 met meetmethode en bronvermelding, een blog zonder auteur en zonder bronnen, en een krantenartikel uit 2008."
+       },
+       {
+        "v": "Waarom is het blog zonder auteur en bronnen zwak?",
+        "o": [
+         "\"omdat een blog altijd fout is\"",
+         "\"omdat het blog te kort is\"",
+         "\"omdat het blog kleuren gebruikt, gewoon, volgens mij, eigenlijk\"",
+         "\"je kunt de herkomst van de gegevens niet controleren\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"omdat een blog altijd fout is\"\"? Dan denk je dat blogs altijd fout zijn. Dat is niet zo, maar zonder bron is controle onmogelijk.",
+         "Koos je \"\"omdat het blog te kort is\"\"? Dan denk je dat de lengte het probleem is. Het probleem is de herkomst, dus controle.",
+         "Koos je \"\"omdat het blog kleuren gebruikt, gewoon, volgens mij, eigenlijk\"\"? Dan denk je dat de vormgeving telt. Het gaat om controleerbaarheid, dus herkomst.",
+         "Klopt: zonder bron is niet na te gaan of het klopt. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Waarom is het blog zonder auteur en bronnen zwak?",
+        "ctx": "Voor een werkstuk zoekt een leerling het aantal fietsongelukken per jaar in zijn gemeente. Hij vindt drie bronnen: een rapport van de gemeente uit 2024 met meetmethode en bronvermelding, een blog zonder auteur en zonder bronnen, en een krantenartikel uit 2008."
+       },
+       {
+        "v": "Welke twee gegevens heeft de leerling nodig voor de actieradius?",
+        "o": [
+         "\"de tankinhoud en het verbruik per 100 km\"",
+         "\"de prijs en de kleur\"",
+         "\"het aantal deuren en de kleur, denk ik, zeg maar\"",
+         "\"de prijs en het verbruik\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de actieradius volgt uit tankinhoud gedeeld door verbruik.",
+         "Koos je \"\"de prijs en de kleur\"\"? Dan neem je gegevens zonder verband. Prijs en kleur zeggen niets over de afstand, dus tankinhoud en verbruik.",
+         "Koos je \"\"het aantal deuren en de kleur, denk ik, zeg maar\"\"? Dan neem je uiterlijke gegevens. Die zeggen niets over de afstand, dus tankinhoud en verbruik.",
+         "Koos je \"\"de prijs en het verbruik\"\"? Dan neem je het verbruik goed maar de prijs fout. De tankinhoud ontbreekt, dus tankinhoud en verbruik."
+        ],
+        "uh": "Welke twee gegevens heeft de leerling nodig voor de actieradius?",
+        "ctx": "De fabrikant van een auto meldt: een tankinhoud van 50 liter, een verbruik van 5,0 liter per 100 kilometer, de kleur zilver, een prijs van €24 000 en 4 deuren. Een leerling wil de actieradius op een volle tank berekenen en kijkt welke gegevens hij nodig heeft."
+       },
+       {
+        "v": "Hoeveel kilometer is de actieradius op een volle tank?",
+        "o": [
+         "\"10 km\"",
+         "\"250 km, to be honest\"",
+         "\"1000 km\"",
+         "\"100 km\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10 km\"\"? Dan vergeet je het verbruik per 100 km om te rekenen. 50 : 5,0 = 10 honderdtallen, dus 1000 km. Het goede antwoord is 1000 km.",
+         "Koos je \"\"250 km, to be honest\"\"? Dan vermenigvuldig je 50 met 5. De actieradius is tankinhoud gedeeld door verbruik, dus 1000 km. Door de stappen goed na te lopen kom je uit op 1000 km.",
+         "Klopt: 50 : 5,0 = 10 en 10 × 100 = 1000 kilometer. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"100 km\"\"? Dan neem je het verbruik per 100 km als afstand. Reken de tankinhoud erbij, dus 1000 km. Controleer je stap: de juiste uitkomst is 1000 km."
+        ],
+        "uh": "Hoeveel kilometer is de actieradius op een volle tank?",
+        "ctx": "De fabrikant van een auto meldt: een tankinhoud van 50 liter, een verbruik van 5,0 liter per 100 kilometer, de kleur zilver, een prijs van €24 000 en 4 deuren. Een leerling wil de actieradius op een volle tank berekenen en kijkt welke gegevens hij nodig heeft."
+       },
+       {
+        "v": "Welke gegevens zijn voor de actieradius niet nodig?",
+        "o": [
+         "\"de tankinhoud\"",
+         "\"de kleur, de prijs en het aantal deuren\"",
+         "\"het verbruik per 100 km\"",
+         "\"de tankinhoud en het verbruik, zeg maar, gewoon\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de tankinhoud\"\"? Dan noem je het volume van de tank. Daaruit volgt hoeveel brandstof erin zit, en dat is juist nodig.",
+         "Klopt: die gegevens hebben geen invloed op de afstand. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"het verbruik per 100 km\"\"? Dan noem je het verbruik. Dat bepaalt hoe ver je komt met elke liter, en dat is ook nodig.",
+         "Koos je \"\"de tankinhoud en het verbruik, zeg maar, gewoon\"\"? Dan kies je de nodige gegevens. De overbodige zijn kleur, prijs en deuren, dus die laat je weg."
+        ],
+        "uh": "Welke gegevens zijn voor de actieradius niet nodig?",
+        "ctx": "De fabrikant van een auto meldt: een tankinhoud van 50 liter, een verbruik van 5,0 liter per 100 kilometer, de kleur zilver, een prijs van €24 000 en 4 deuren. Een leerling wil de actieradius op een volle tank berekenen en kijkt welke gegevens hij nodig heeft."
+       },
+       {
+        "v": "Welk onderdeel ontbreekt als eerste in zijn verslag?",
+        "o": [
+         "\"de afbeelding van de muur\"",
+         "\"de kleur van de muur\"",
+         "\"de prijs van de verf\"",
+         "\"de onderzoeksvraag\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de afbeelding van de muur\"\"? Dan zou je beginnen met een plaatje. Een plaatje beantwoordt geen vraag, terwijl een verslag een duidelijke onderzoeksvraag nodig heeft.",
+         "Koos je \"\"de kleur van de muur\"\"? Dan noem je een kenmerk dat niet nodig is voor de oppervlakte, en mis je de onderzoeksvraag.",
+         "Koos je \"\"de prijs van de verf\"\"? Dan denk je aan kosten. Die horen bij een ander onderzoek, en niet bij de oppervlakte van de muur.",
+         "Klopt: een verslag begint met de vraag die je wilt beantwoorden."
+        ],
+        "uh": "Welk onderdeel ontbreekt als eerste in zijn verslag?",
+        "ctx": "Een leerling schrijft een verslag over de vraag hoeveel vierkante meter een muur van 4,5 meter breed en 2,6 meter hoog heeft. In zijn verslag staat alleen: Antwoord: 12. Er staan geen onderzoeksvraag, geen tussenstappen en geen eenheid bij."
+       },
+       {
+        "v": "Welke eenheid hoort bij het antwoord op de vraag over de oppervlakte?",
+        "o": [
+         "\"vierkante meter\"",
+         "\"meter\"",
+         "\"kubieke meter, gewoon\"",
+         "\"liter\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een oppervlakte schrijf je in vierkante meter (m²).",
+         "Koos je \"\"meter\"\"? Dan gebruik je de eenheid van een lengte. Een oppervlakte is een vlak, dus vierkante meter. Het goede antwoord is vierkante meter.",
+         "Koos je \"\"kubieke meter, gewoon\"\"? Dan gebruik je de eenheid van een inhoud. Een muur is een vlak, dus vierkante meter. Door de stappen goed na te lopen kom je uit op vierkante meter.",
+         "Koos je \"\"liter\"\"? Dan gebruik je de eenheid van een vloeistof. De muur heeft een oppervlakte, dus vierkante meter. Controleer je stap: de juiste uitkomst is vierkante meter."
+        ],
+        "uh": "Welke eenheid hoort bij het antwoord op de vraag over de oppervlakte?",
+        "ctx": "Een leerling schrijft een verslag over de vraag hoeveel vierkante meter een muur van 4,5 meter breed en 2,6 meter hoog heeft. In zijn verslag staat alleen: Antwoord: 12. Er staan geen onderzoeksvraag, geen tussenstappen en geen eenheid bij."
+       },
+       {
+        "v": "Welke tussenstap hoort bij 4,5 meter bij 2,6 meter?",
+        "o": [
+         "\"4,5 + 2,6 = 7,1\"",
+         "\"2 × (4,5 + 2,6) = 14,2, denk ik, zeg maar\"",
+         "\"4,5 × 2,6 = 11,7 vierkante meter\"",
+         "\"4,5 : 2,6 = 1,7\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4,5 + 2,6 = 7,1\"\"? Dan tel je de maten op. Een oppervlakte is breedte maal hoogte, dus 11,7. Het goede antwoord is 4,5 × 2,6 = 11,7 vierkante meter.",
+         "Koos je \"\"2 × (4,5 + 2,6) = 14,2, denk ik, zeg maar\"\"? Dan neem je de omtrek. Een oppervlakte is breedte maal hoogte, dus 11,7. Door de stappen goed na te lopen kom je uit op 4,5 × 2,6 = 11,7 vierkante meter.",
+         "Klopt: breedte maal hoogte geeft de oppervlakte van de muur.",
+         "Koos je \"\"4,5 : 2,6 = 1,7\"\"? Dan deel je de maten. Een oppervlakte is breedte maal hoogte, dus 11,7. Controleer je stap: de juiste uitkomst is 4,5 × 2,6 = 11,7 vierkante meter."
+        ],
+        "uh": "Welke tussenstap hoort bij 4,5 meter bij 2,6 meter?",
+        "ctx": "Een leerling schrijft een verslag over de vraag hoeveel vierkante meter een muur van 4,5 meter breed en 2,6 meter hoog heeft. In zijn verslag staat alleen: Antwoord: 12. Er staan geen onderzoeksvraag, geen tussenstappen en geen eenheid bij."
+       },
+       {
+        "v": "Waarom is Antwoord: 12 een slecht eindantwoord?",
+        "o": [
+         "\"omdat 12 een te klein getal is\"",
+         "\"er staan geen tussenstappen en geen eenheid, dus het is niet te controleren\"",
+         "\"omdat 12 een even getal is\"",
+         "\"omdat het antwoord op een enkele regel staat, volgens mij, eigenlijk, denk ik\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"omdat 12 een te klein getal is\"\"? Dan denk je dat de grootte het probleem is. Het probleem is de ontbrekende uitleg, dus niet te controleren.",
+         "Klopt: de lezer kan niet nagaan hoe 12 is ontstaan en wat het betekent.",
+         "Koos je \"\"omdat 12 een even getal is\"\"? Dan denk je dat even getallen fout zijn. Dat is niet zo, het probleem is de controle.",
+         "Koos je \"\"omdat het antwoord op een enkele regel staat, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat de layout het probleem is. De inhoud ontbreekt, dus tussenstappen en eenheid."
+        ],
+        "uh": "Waarom is Antwoord: 12 een slecht eindantwoord?",
+        "ctx": "Een leerling schrijft een verslag over de vraag hoeveel vierkante meter een muur van 4,5 meter breed en 2,6 meter hoog heeft. In zijn verslag staat alleen: Antwoord: 12. Er staan geen onderzoeksvraag, geen tussenstappen en geen eenheid bij."
+       },
+       {
+        "v": "Hoeveel procent is 6% per jaar na twee jaar bij elkaar?",
+        "o": [
+         "\"precies 12%, I suppose\"",
+         "\"6%\"",
+         "\"36%\"",
+         "\"ongeveer 12,4%\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"precies 12%, I suppose\"\"? Dan tel je de percentages op. Percentages per jaar werken met een groeifactor, dus 1,06². Het goede antwoord is ongeveer 12,4%.",
+         "Koos je \"\"6%\"\"? Dan neem je het percentage van één jaar. Twee jaar geeft meer, dus ongeveer 12,4%. Door de stappen goed na te lopen kom je uit op ongeveer 12,4%.",
+         "Koos je \"\"36%\"\"? Dan vermenigvuldig je 6 met 6. De groeifactor is 1,06 per jaar, dus 1,06² = 1,1236. Controleer je stap: de juiste uitkomst is ongeveer 12,4%.",
+         "Klopt: 1,06² = 1,1236, dus een stijging van ongeveer 12,4%."
+        ],
+        "uh": "Hoeveel procent is 6% per jaar na twee jaar bij elkaar?",
+        "ctx": "Twee bronnen schrijven over het aantal e-bikes in een stad. Bron 1 meldt dat het aantal in twee jaar met 12% is gestegen. Bron 2 meldt een stijging van 6% per jaar. Een leerling wil weten of de bronnen elkaar tegenspreken of dat ze hetzelfde zeggen."
+       },
+       {
+        "v": "Spreken de twee bronnen elkaar tegen?",
+        "o": [
+         "\"nee, 12% in twee jaar komt overeen met ongeveer 6% per jaar\"",
+         "\"ja, 12% is groter dan 6%\"",
+         "\"ja, want de bronnen zijn verschillend, you know, I think, I suppose\"",
+         "\"niet te zeggen\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 1,06² is ongeveer 1,12, dus de bronnen zeggen bijna hetzelfde.",
+         "Koos je \"\"ja, 12% is groter dan 6%\"\"? Dan vergelijk je de percentages zonder de periode. De ene is over twee jaar en de andere per jaar, dus ze komen overeen.",
+         "Koos je \"\"ja, want de bronnen zijn verschillend, you know, I think, I suppose\"\"? Dan denk je dat verschillende bronnen elkaar tegenspreken. Hier zijn de eenheden van tijd verschillend, en de gegevens passen.",
+         "Koos je \"\"niet te zeggen\"\"? Dan denk je dat de gegevens onvergelijkbaar zijn. Je kunt ze omrekenen, dus ze komen overeen."
+        ],
+        "uh": "Spreken de twee bronnen elkaar tegen?",
+        "ctx": "Twee bronnen schrijven over het aantal e-bikes in een stad. Bron 1 meldt dat het aantal in twee jaar met 12% is gestegen. Bron 2 meldt een stijging van 6% per jaar. Een leerling wil weten of de bronnen elkaar tegenspreken of dat ze hetzelfde zeggen."
+       },
+       {
+        "v": "Welk jaarlijks groeipercentage hoort bij 12% in twee jaar, op één decimaal?",
+        "o": [
+         "\"6,0%\"",
+         "\"12%\"",
+         "\"5,8%\"",
+         "\"24%\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6,0%\"\"? Dan deel je 12% door 2. Percentages per jaar werken met een groeifactor, dus ongeveer 5,8%. Het goede antwoord is 5,8%.",
+         "Koos je \"\"12%\"\"? Dan neem je het percentage over twee jaar. Gevraagd is het jaarpercentage, dus 5,8%. Door de stappen goed na te lopen kom je uit op 5,8%.",
+         "Klopt: 1,12^(1/2) ≈ 1,0583, dus ongeveer 5,8% per jaar. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"24%\"\"? Dan vermenigvuldig je 12% met 2. Dat zou een stijging over vier jaar zijn, dus 5,8% per jaar. Controleer je stap: de juiste uitkomst is 5,8%."
+        ],
+        "uh": "Welk jaarlijks groeipercentage hoort bij 12% in twee jaar, op één decimaal?",
+        "ctx": "Twee bronnen schrijven over het aantal e-bikes in een stad. Bron 1 meldt dat het aantal in twee jaar met 12% is gestegen. Bron 2 meldt een stijging van 6% per jaar. Een leerling wil weten of de bronnen elkaar tegenspreken of dat ze hetzelfde zeggen."
+       },
+       {
+        "v": "Wat is misleidend aan deze grafiek?",
+        "o": [
+         "\"de grafiek heeft een lijn\"",
+         "\"de verticale as begint bij 14,0 en niet bij 0, waardoor het verschil groot lijkt\"",
+         "\"de temperaturen zijn onjuist berekend, denk ik, zeg maar, gewoon\"",
+         "\"het jaartal ontbreekt\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de grafiek heeft een lijn\"\"? Dan denk je dat een lijn fout is. Het probleem is de as, dus de afgeknotte as. Het goede antwoord is de verticale as begint bij 14,0 en niet bij 0, waardoor het verschil groot lijkt.",
+         "Klopt: een afgeknotte as vergroot kleine verschillen. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de temperaturen zijn onjuist berekend, denk ik, zeg maar, gewoon\"\"? Dan denk je aan een rekenfout. De waarden zijn juist, maar de as vertekent.",
+         "Koos je \"\"het jaartal ontbreekt\"\"? Dan denk je dat jaren ontbreken. De jaren staan erbij, en de as vertekent. Controleer je stap: de juiste uitkomst is de verticale as begint bij 14,0 en niet bij 0, waardoor het verschil groot lijkt."
+        ],
+        "uh": "Wat is misleidend aan deze grafiek?",
+        "ctx": "Een bedrijf toont een grafiek van de gemiddelde jaartemperatuur: 14,2 graden in 2021, 14,3 graden in 2022 en 14,5 graden in 2023. In de grafiek begint de verticale as bij 14,0, waardoor de lijn sterk lijkt te stijgen. Een leerling beoordeelt de presentatie."
+       },
+       {
+        "v": "Met hoeveel procent steeg de temperatuur werkelijk van 2021 naar 2023?",
+        "o": [
+         "\"0,3%\"",
+         "\"21%\"",
+         "\"14,5%\"",
+         "\"ongeveer 2,1%\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,3%\"\"? Dan neem je het verschil in graden als percentage. Deel door 14,2, dus ongeveer 2,1%. Het goede antwoord is ongeveer 2,1%.",
+         "Koos je \"\"21%\"\"? Dan verplaats je de komma. Het is 0,021, dus 2,1%. Door de stappen goed na te lopen kom je uit op ongeveer 2,1%.",
+         "Koos je \"\"14,5%\"\"? Dan neem je de temperatuur als percentage. Het gaat om het verschil gedeeld door het begin, dus 2,1%.",
+         "Klopt: (14,5 − 14,2) : 14,2 ≈ 0,021. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Met hoeveel procent steeg de temperatuur werkelijk van 2021 naar 2023?",
+        "ctx": "Een bedrijf toont een grafiek van de gemiddelde jaartemperatuur: 14,2 graden in 2021, 14,3 graden in 2022 en 14,5 graden in 2023. In de grafiek begint de verticale as bij 14,0, waardoor de lijn sterk lijkt te stijgen. Een leerling beoordeelt de presentatie."
+       },
+       {
+        "v": "Hoe kan de presentatie eerlijker?",
+        "o": [
+         "\"de verticale as laten beginnen bij 0\"",
+         "\"de as nog hoger laten beginnen, zeg maar\"",
+         "\"de lijn dikker maken\"",
+         "\"de jaren weglaten\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: dan zijn de verschillen in verhouding weergegeven.",
+         "Koos je \"\"de as nog hoger laten beginnen, zeg maar\"\"? Dan maak je de vertekening groter. Een as die hoger begint vergroot het verschil, dus bij 0.",
+         "Koos je \"\"de lijn dikker maken\"\"? Dan verander je de vormgeving. Het probleem is de as, dus bij 0. Door de stappen goed na te lopen kom je uit op de verticale as laten beginnen bij 0.",
+         "Koos je \"\"de jaren weglaten\"\"? Dan verwijder je informatie. De as bij 0 is het probleem, dus bij 0 beginnen. Controleer je stap: de juiste uitkomst is de verticale as laten beginnen bij 0."
+        ],
+        "uh": "Hoe kan de presentatie eerlijker?",
+        "ctx": "Een bedrijf toont een grafiek van de gemiddelde jaartemperatuur: 14,2 graden in 2021, 14,3 graden in 2022 en 14,5 graden in 2023. In de grafiek begint de verticale as bij 14,0, waardoor de lijn sterk lijkt te stijgen. Een leerling beoordeelt de presentatie."
+       },
+       {
+        "v": "Wat is er mis aan het letterlijk overnemen zonder aanhalingstekens en bron?",
+        "o": [
+         "\"de alinea is te kort\"",
+         "\"websites zijn niet toegestaan, eigenlijk, denk ik, zeg maar\"",
+         "\"het lijkt eigen werk terwijl het van een ander is\"",
+         "\"de alinea bevat geen getallen\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de alinea is te kort\"\"? Dan denk je dat de lengte telt. Het probleem is de herkomst, dus bronvermelding. Het goede antwoord is het lijkt eigen werk terwijl het van een ander is.",
+         "Koos je \"\"websites zijn niet toegestaan, eigenlijk, denk ik, zeg maar\"\"? Dan denk je dat websites verboden zijn. Websites zijn toegestaan, maar met bron.",
+         "Klopt: je moet citaten markeren en de bron vermelden. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de alinea bevat geen getallen\"\"? Dan denk je dat getallen nodig zijn. Het gaat om de herkomst, dus bronvermelding."
+        ],
+        "uh": "Wat is er mis aan het letterlijk overnemen zonder aanhalingstekens en bron?",
+        "ctx": "Een leerling schrijft een werkstuk en neemt een alinea van een website letterlijk over zonder aanhalingstekens of bronvermelding. Daarna rekent hij met een gegeven van die website en schrijft het eindantwoord op zonder eenheid."
+       },
+       {
+        "v": "Hoe neem je een stuk tekst letterlijk over?",
+        "o": [
+         "\"in eigen woorden zonder bron\"",
+         "\"tussen aanhalingstekens met de bron erbij\"",
+         "\"zonder aanhalingstekens maar met je naam, gewoon\"",
+         "\"alleen de titel van de website\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"in eigen woorden zonder bron\"\"? Dan verwar je citeren met parafraseren. Ook bij parafraseren vermeld je de bron, en een citaat staat tussen aanhalingstekens.",
+         "Klopt: zo is duidelijk dat het niet je eigen tekst is. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"zonder aanhalingstekens maar met je naam, gewoon\"\"? Dan zet dit je je eigen naam bij andermans tekst. Dat is misleidend, dus aanhalingstekens en bron.",
+         "Koos je \"\"alleen de titel van de website\"\"? Dan noem je een deel van de bron. Je moet het citaat markeren, dus aanhalingstekens en bron."
+        ],
+        "uh": "Hoe neem je een stuk tekst letterlijk over?",
+        "ctx": "Een leerling schrijft een werkstuk en neemt een alinea van een website letterlijk over zonder aanhalingstekens of bronvermelding. Daarna rekent hij met een gegeven van die website en schrijft het eindantwoord op zonder eenheid."
+       },
+       {
+        "v": "Welke trefwoorden gebruik je om de officiële cijfers over fietsdiefstal in Nederland te vinden?",
+        "o": [
+         "\"fiets\"",
+         "\"stelen\"",
+         "\"hoe veilig is Nederland, denk ik, zeg maar, gewoon\"",
+         "\"fietsdiefstal Nederland aantal per jaar cijfers\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"fiets\"\"? Dan kies je één los woord. Het is veel te breed, dus voeg onderwerp en plaats toe. Het goede antwoord is fietsdiefstal Nederland aantal per jaar cijfers.",
+         "Koos je \"\"stelen\"\"? Dan kies je een los woord. Het noemt niet wat je zoekt, dus noem onderwerp en cijfers. Door de stappen goed na te lopen kom je uit op fietsdiefstal Nederland aantal per jaar cijfers.",
+         "Koos je \"\"hoe veilig is Nederland, denk ik, zeg maar, gewoon\"\"? Dan stel je een algemene vraag. Dat geeft meningen, dus zoek op fietsdiefstal en cijfers.",
+         "Klopt: onderwerp, land, grootheid en type informatie staan erin."
+        ],
+        "uh": "Welke trefwoorden gebruik je om de officiële cijfers over fietsdiefstal in Nederland te vinden?",
+        "ctx": "Een leerling schrijft een werkstuk en neemt een alinea van een website letterlijk over zonder aanhalingstekens of bronvermelding. Daarna rekent hij met een gegeven van die website en schrijft het eindantwoord op zonder eenheid."
+       },
+       {
+        "v": "Wat hoort bij een eindantwoord dat een lezer kan gebruiken?",
+        "o": [
+         "\"het getal met eenheid, afronding en de bron van de gegevens\"",
+         "\"alleen het getal\"",
+         "\"het getal zonder afronding, volgens mij, eigenlijk, denk ik\"",
+         "\"alleen de bron\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Bekijk eerst wie de bron is, wat de bron doet en of de gegevens passen bij jouw vraag, en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: dan is het antwoord controleerbaar en bruikbaar. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"alleen het getal\"\"? Dan laat je eenheid en bron weg. Dan weet de lezer niet wat het betekent, dus eenheid en bron.",
+         "Koos je \"\"het getal zonder afronding, volgens mij, eigenlijk, denk ik\"\"? Dan laat je de nauwkeurigheid weg. De lezer weet niet hoe precies het is, dus eenheid en afronding.",
+         "Koos je \"\"alleen de bron\"\"? Dan laat je het antwoord weg. De bron vervangt het antwoord niet, dus getal met eenheid. Controleer je stap: de juiste uitkomst is het getal met eenheid, afronding en de bron van de gegevens."
+        ],
+        "uh": "Wat hoort bij een eindantwoord dat een lezer kan gebruiken?",
+        "ctx": "Een leerling schrijft een werkstuk en neemt een alinea van een website letterlijk over zonder aanhalingstekens of bronvermelding. Daarna rekent hij met een gegeven van die website en schrijft het eindantwoord op zonder eenheid."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zoekt voor een werkstuk het aantal verkeersdoden per jaar in Nederland. Hij vindt een rapport van een overheidsinstantie uit 2024 met meetmethode, een blog zonder auteur en een krantenartikel uit 2010. Hij moet kiezen welke bron hij gebruikt.",
+        "v": "Kies de meest betrouwbare bron en geef twee redenen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het rapport uit 2024 (1p). Het is recent en actueel (1p). Het noemt de meetmethode en heeft een bekende herkomst (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een folder meldt: een koelkast heeft een inhoud van 250 liter, kost €499, is wit en heeft een verbruik van 120 kilowattuur per jaar. Een leerling wil de elektriciteitskosten per jaar berekenen bij €0,30 per kilowattuur en selecteert eerst de gegevens.",
+        "v": "Geef de nodige gegevens en bereken de kosten per jaar.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Nodig zijn het verbruik 120 kWh en de prijs €0,30 per kWh (1p). 120 × 0,30 = 36 (1p). De kosten zijn €36 per jaar; kleur, prijs en inhoud zijn niet nodig (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bron 1 schrijft dat het aantal leden van een club in twee jaar met 21% is gestegen. Bron 2 schrijft dat het aantal per jaar met 10% is gestegen. Een leerling wil weten of de bronnen elkaar tegenspreken.",
+        "v": "Reken de gegevens om en geef een conclusie.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Twee jaar 10% per jaar geeft 1,10² = 1,21 (1p). Dat is 21% stijging (1p). De bronnen spreken elkaar dus niet tegen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling heeft een uitwerking: 3,5 × 2,4 = 8,4. Hij noteert Antwoord: 8,4 zonder eenheid en zonder vraag. De opdracht was de oppervlakte van een tafel van 3,5 meter bij 2,4 meter in een verslag. Een docent vraagt hem het verslag te verbeteren.",
+        "v": "Geef drie verbeteringen voor het verslag.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Noteer de onderzoeksvraag bovenaan (1p). Zet de eenheid erbij: 8,4 vierkante meter (1p). Schrijf een conclusie in een volledige zin met de bron van de maten (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt dat een grafiek met een as die bij 14,0 begint, een eerlijk beeld van de temperatuur geeft omdat de getallen kloppen. Jij weet dat de presentatie het verschil groot laat lijken. Je wilt uitleggen wat er misleidend is.",
+        "v": "Leg uit waarom de presentatie misleidt en hoe het beter kan.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De waarden kloppen maar de as is afgeknot (1p). Daardoor lijkt een kleine stijging groot (1p). Laat de as bij 0 beginnen en noem het werkelijke verschil in procenten (1p)."
+       }
+      ]
+     }
     ]
    },
    {
