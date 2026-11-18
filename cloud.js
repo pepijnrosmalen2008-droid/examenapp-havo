@@ -331,6 +331,13 @@ async function trackEvent(type,meta){
   window.addEventListener('error',function(e){
     if(e&&e.message)report('error',e.message,e.filename,e.lineno,e.colno,e.error&&e.error.stack);
     else if(e&&e.target&&(e.target.src||e.target.href)){
+      // Geen echte fouten: vooraf ophalen (rel=prefetch/preload) dat wordt afgebroken, alles
+      // wat nog laadt terwijl de pagina sluit, en een plaatje dat mislukt voordat iemand
+      // iets heeft aangeraakt (bots die de app laden en na een paar seconden weer weg zijn).
+      var tg=e.target.tagName;
+      if(tg==='LINK'&&/prefetch|preload|icon/.test(e.target.rel||''))return;
+      if(window._slWeg)return;
+      try{ if(tg!=='SCRIPT'&&!sessionStorage.getItem('_slagio_fn_interact'))return; }catch(_){}
       var bron=e.target.src||e.target.href;
       report('resource','bron kon niet laden: '+bron,bron);
       // Een app-script dat bij het opstarten niet laadt (haperende verbinding) laat de
@@ -343,6 +350,7 @@ async function trackEvent(type,meta){
       }catch(_){}
     }
   },true);
+  try{ window.addEventListener('pagehide',function(){ window._slWeg=1; }); }catch(e){}
   window.addEventListener('unhandledrejection',function(e){
     var r=e&&e.reason; report('promise',(r&&r.message)||String(r),'',null,null,r&&r.stack);
   });

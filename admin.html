@@ -203,8 +203,8 @@
     .filter-btn.active{background:rgba(var(--or-rgb),.12);border-color:rgba(var(--or-rgb),.4);color:var(--or)}
 
     /* Mensen-overzicht */
-    .tb-btn.adm-mij.aan{background:rgba(var(--or-rgb),.14);border-color:rgba(var(--or-rgb),.45);color:var(--or)}
-    .tb-btn.adm-mij small{opacity:.75;font-weight:600}
+    .tb-btn.adm-mij.aan,.tb-btn.adm-bots.aan{background:rgba(var(--or-rgb),.14);border-color:rgba(var(--or-rgb),.45);color:var(--or)}
+    .tb-btn.adm-mij small,.tb-btn.adm-bots small{opacity:.75;font-weight:600}
     .mens-balk{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-bottom:.8rem}
     .mens-balk .live-search{flex:1;min-width:200px}
     .mens-groep{display:flex;gap:.35rem}
@@ -261,6 +261,7 @@
     <span class="topbar-time" id="clock"></span>
     <button class="tb-btn" onclick="loadAll()">↺ Vernieuwen</button>
     <button class="tb-btn adm-mij" id="adm-mij" onclick="admZonderMijWissel()">🙈 Zonder mij</button>
+    <button class="tb-btn adm-bots" id="adm-bots" onclick="admZonderBotsWissel()">🤖 Zonder bots</button>
     <button class="tb-btn" id="tab-analytics" onclick="showTab('analytics')">📊 Analytics</button>
     <button class="tb-btn" id="tab-curriculum" onclick="showTab('curriculum')">📚 Curriculum</button>
     <button class="tb-btn danger" onclick="logout()">Uitloggen</button>
@@ -380,6 +381,8 @@ function _admIkke(){
   return ik;
 }
 function _admZonderMij(){ try{ return localStorage.getItem('adm_zonder_mij')!=='0'; }catch(e){ return true; } }
+function _admZonderBots(){ try{ return localStorage.getItem('adm_zonder_bots')!=='0'; }catch(e){ return true; } }
+function admZonderBotsWissel(){ try{ localStorage.setItem('adm_zonder_bots', _admZonderBots()?'0':'1'); }catch(e){} _admToepassen(); }
 function admZonderMijWissel(){ try{ localStorage.setItem('adm_zonder_mij', _admZonderMij()?'0':'1'); }catch(e){} _admToepassen(); }
 function _admIsIk(r, ik){
   const did=r.meta&&r.meta.did;
@@ -401,7 +404,18 @@ function _admToepassen(){
   const R=window._raw; if(!R) return;
   const weg = _admZonderMij() ? _admIkke() : null;
   const f = a => weg ? a.filter(r=>!_admIsIk(r,weg)) : a;
-  const lb=f(R.lb), ev=f(R.ev);
+  const lb=f(R.lb);
+  // Bots: apparaten die de app laden maar nooit iets aanraken (geen tik, toets of scroll),
+  // geen account hebben en alleen automatische events sturen. Ze openen vaak direct een
+  // vakpagina via een zoekmachine-link en zijn na 5 tot 10 seconden weer weg.
+  let ev=f(R.ev);
+  const _AUTO=new Set(['app_open','funnel','js_error','exit','return_card_shown','onb_direct','update_uitpakken']);
+  const _bot={}; ev.forEach(e=>{ const d=e.meta&&e.meta.did; if(!d) return;
+    const auto=_AUTO.has(e.event_type)&&!(e.event_type==='funnel'&&e.meta.step==='interact')&&!e.user_id;
+    if(!(d in _bot)) _bot[d]=true; if(!auto) _bot[d]=false; });
+  const _botSet=new Set(Object.keys(_bot).filter(d=>_bot[d]));
+  window._admBots=_botSet.size;
+  if(_admZonderBots()) ev=ev.filter(e=>!(e.meta&&_botSet.has(e.meta.did)));
   const ao=ev.filter(e=>e.event_type==='app_open');
   const fb=ev.filter(e=>e.event_type==='feedback');
   const ce=ev.filter(e=>e.event_type==='ce_cijfer');
@@ -417,6 +431,9 @@ function _admTopbar(){
   b.classList.toggle('aan', aan);
   b.innerHTML = aan ? '🙈 Zonder mij'+(window._admWeg?' <small>('+window._admWeg.toLocaleString('nl-NL')+' weg)</small>':'') : '👀 Met mij';
   b.title = aan ? 'Je eigen activiteit is verborgen. Klik om hem weer te tonen.' : 'Je eigen activiteit telt mee. Klik om hem te verbergen.';
+  const bb=document.getElementById('adm-bots'); if(bb){ const za=_admZonderBots(); bb.classList.toggle('aan',za);
+    bb.innerHTML = za ? '🤖 Zonder bots'+(window._admBots?' <small>('+window._admBots.toLocaleString('nl-NL')+' weg)</small>':'') : '🤖 Met bots';
+    bb.title = 'Bots = apparaten die de app laden maar nooit iets aanraken en geen account hebben. Klik om te wisselen.'; }
 }
 
 async function loadAll() {
