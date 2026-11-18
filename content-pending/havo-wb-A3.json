@@ -1,0 +1,682 @@
+{
+ "id": "A3",
+ "lo": "wb.A.3",
+ "gs": 2,
+ "naam": "Modeluitkomsten genereren, interpreteren en het model toetsen",
+ "beschrijving": "Je genereert uitkomsten met een model, interpreteert ze in de context, vergelijkt ze met metingen, beoordeelt de afwijkingen en de geschiktheid van het model en past het model aan.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Uitkomsten genereren",
+  "Interpreteren in de context",
+  "Het model toetsen",
+  "Geschiktheid en grenzen",
+  "Het model aanpassen"
+ ],
+ "sam": "Met een model maak je tabellen en grafieken en interpreteer je de uitkomsten in de context. Toets het model door uitkomsten met metingen te vergelijken; de afwijking is meting min model. Een systematische afwijking wijst op een ontbrekend element. Extrapoleren is riskant. Pas een parameter aan en bereken de gevolgen.",
+ "begrippen": [
+  {
+   "t": "Modeluitkomst",
+   "d": "De waarde die het model bij een gegeven invoer geeft, zoals N = 160 bij t = 3."
+  },
+  {
+   "t": "Tabel en grafiek bij een model",
+   "d": "Uitkomsten voor meerdere waarden en een tekening daarvan."
+  },
+  {
+   "t": "Interpreteren",
+   "d": "De uitkomst in de context uitdrukken met eenheid en betekenis."
+  },
+  {
+   "t": "Meting",
+   "d": "Een waarde uit de werkelijkheid, bijvoorbeeld 175 planten na 3 jaar."
+  },
+  {
+   "t": "Afwijking",
+   "d": "Het verschil tussen meting en modeluitkomst."
+  },
+  {
+   "t": "Het model toetsen",
+   "d": "Modeluitkomsten vergelijken met metingen."
+  },
+  {
+   "t": "Systematische afwijking",
+   "d": "Een afwijking die steeds dezelfde kant op gaat en wijst op een ontbrekend element."
+  },
+  {
+   "t": "Geschiktheid van het model",
+   "d": "Of het model past bij de situatie en voor welk bereik."
+  },
+  {
+   "t": "Extrapoleren",
+   "d": "Het model buiten het gemeten bereik gebruiken, bijvoorbeeld op lange termijn."
+  },
+  {
+   "t": "Parameter",
+   "d": "Een getal in het model dat je kunt aanpassen, zoals 12 in K = 150 + 12p."
+  },
+  {
+   "t": "Model aanpassen",
+   "d": "Een parameter of term veranderen om beter bij de metingen te passen."
+  },
+  {
+   "t": "Gevolgen berekenen",
+   "d": "Uitrekenen wat een aanpassing betekent voor de uitkomsten."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Het model is N = 100 + 20t. Welke waarde geeft het model bij t = 3?",
+   "o": [
+    "\"60\"",
+    "\"160\"",
+    "\"340\"",
+    "\"123\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"60\"\"? Dan laat je de 100 weg. De formule heeft ook een beginwaarde, dus 100 + 60. Het goede antwoord is 160.",
+    "Klopt: 100 + 20 × 3 = 160. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"340\"\"? Dan reken je (100 + 20) × 3. De beginwaarde komt maar één keer, dus 160. Door de stappen goed na te lopen kom je uit op 160.",
+    "Koos je \"\"123\"\"? Dan tel je 100, 20 en 3 op. Er wordt vermenigvuldigd, dus 100 + 20 × 3. Controleer je stap: de juiste uitkomst is 160."
+   ],
+   "uh": "Het model is N = 100 + 20t. Welke waarde geeft het model bij t = 3?"
+  },
+  {
+   "v": "Je maakt een tabel bij y = 2x + 1 voor x = 0, 1 en 2. Welke y-waarden vind je?",
+   "o": [
+    "\"0, 2 en 4, to be honest\"",
+    "\"1, 2 en 3\"",
+    "\"2, 4 en 6\"",
+    "\"1, 3 en 5\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0, 2 en 4, to be honest\"\"? Dan vergeet je de + 1. De formule heeft een beginwaarde, dus 1, 3 en 5. Het goede antwoord is 1, 3 en 5.",
+    "Koos je \"\"1, 2 en 3\"\"? Dan neem je de x-waarden plus 1. De formule is 2x + 1, dus 1, 3 en 5. Door de stappen goed na te lopen kom je uit op 1, 3 en 5.",
+    "Koos je \"\"2, 4 en 6\"\"? Dan verdubbel je alleen de x-waarde plus x. De formule is 2x + 1, dus 1, 3 en 5. Controleer je stap: de juiste uitkomst is 1, 3 en 5.",
+    "Klopt: 2 × 0 + 1 = 1, 2 × 1 + 1 = 3 en 2 × 2 + 1 = 5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Je maakt een tabel bij y = 2x + 1 voor x = 0, 1 en 2. Welke y-waarden vind je?"
+  },
+  {
+   "v": "Het model geeft N = 160 bij t = 3 voor planten in een kas. Hoe interpreteer je dat?",
+   "o": [
+    "\"na 3 jaar zijn er volgens het model 160 planten\"",
+    "\"na 160 jaar zijn er 3 planten\"",
+    "\"het aantal planten is altijd 160\"",
+    "\"er komen 160 planten per jaar bij, I suppose, really\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de waarde hoort bij het tijdstip en de grootheid in de context.",
+    "Koos je \"\"na 160 jaar zijn er 3 planten\"\"? Dan verwissel je t en N. t is de tijd in jaren en N het aantal, dus 3 jaar en 160 planten.",
+    "Koos je \"\"het aantal planten is altijd 160\"\"? Dan denk je dat de waarde constant is. Het geldt bij t = 3, en niet altijd.",
+    "Koos je \"\"er komen 160 planten per jaar bij, I suppose, really\"\"? Dan verwar je de waarde met de groei. 160 is het aantal na 3 jaar, en de groei is 20 per jaar."
+   ],
+   "uh": "Het model geeft N = 160 bij t = 3 voor planten in een kas. Hoe interpreteer je dat?"
+  },
+  {
+   "v": "Het model geeft 7 en de meting geeft 7,5. Hoe groot is de afwijking?",
+   "o": [
+    "\"14,5\"",
+    "\"7\"",
+    "\"0,5\"",
+    "\"0,05\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"14,5\"\"? Dan tel je beide waarden op. De afwijking is een verschil, dus 0,5. Het goede antwoord is 0,5.",
+    "Koos je \"\"7\"\"? Dan neem je de modelwaarde. De afwijking is het verschil met de meting, dus 0,5. Door de stappen goed na te lopen kom je uit op 0,5.",
+    "Klopt: 7,5 − 7 = 0,5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,05\"\"? Dan verplaats je de komma. 7,5 − 7 = 0,5, dus 0,5. Controleer je stap: de juiste uitkomst is 0,5."
+   ],
+   "uh": "Het model geeft 7 en de meting geeft 7,5. Hoe groot is de afwijking?"
+  },
+  {
+   "v": "Waarmee vergelijk je modeluitkomsten om het model te toetsen?",
+   "o": [
+    "\"met een ander model dat hetzelfde zegt, really\"",
+    "\"met gemeten waarden uit de werkelijkheid\"",
+    "\"met je eigen verwachting\"",
+    "\"met een rond getal\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"met een ander model dat hetzelfde zegt, really\"\"? Dan vergelijk je met een model. Dat toetst niets aan de werkelijkheid, dus metingen.",
+    "Klopt: alleen met metingen kun je zien of het model klopt.",
+    "Koos je \"\"met je eigen verwachting\"\"? Dan vergelijk je met een gevoel. Dat is geen toets, dus metingen. Door de stappen goed na te lopen kom je uit op met gemeten waarden uit de werkelijkheid.",
+    "Koos je \"\"met een rond getal\"\"? Dan vergelijk je met een rond getal. Dat zegt niets over het model, dus metingen. Controleer je stap: de juiste uitkomst is met gemeten waarden uit de werkelijkheid."
+   ],
+   "uh": "Waarmee vergelijk je modeluitkomsten om het model te toetsen?"
+  },
+  {
+   "v": "Een lineair model beschrijft exponentiële groei. Wat gebeurt er op lange termijn?",
+   "o": [
+    "\"het model wordt steeds nauwkeuriger, I think, I suppose\"",
+    "\"het model blijft exact kloppen\"",
+    "\"het model geeft altijd 0\"",
+    "\"het model wijkt steeds meer af van de werkelijkheid\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het model wordt steeds nauwkeuriger, I think, I suppose\"\"? Dan denk je dat tijd het model verbetert. Een lineair model blijft constant groeien, dus het verschil loopt op.",
+    "Koos je \"\"het model blijft exact kloppen\"\"? Dan denk je dat de formule altijd past. Op lange termijn niet, dus wijkt hij af.",
+    "Koos je \"\"het model geeft altijd 0\"\"? Dan denk je dat de uitkomst verdwijnt. Het model blijft groeien, en wijkt af. Controleer je stap: de juiste uitkomst is het model wijkt steeds meer af van de werkelijkheid.",
+    "Klopt: bij exponentiële groei loopt het verschil op. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een lineair model beschrijft exponentiële groei. Wat gebeurt er op lange termijn?"
+  },
+  {
+   "v": "In K = 150 + 12p stijgt de prijs per persoon naar €14. Wat verandert er?",
+   "o": [
+    "\"de kosten per extra persoon stijgen met 2 euro\"",
+    "\"de zaalhuur stijgt met 2 euro\"",
+    "\"het aantal personen stijgt met 2\"",
+    "\"de kosten stijgen met 2 euro in totaal, to be honest\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de coëfficiënt van p gaat van 12 naar 14. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de zaalhuur stijgt met 2 euro\"\"? Dan koppel je de wijziging aan de zaal. De zaalhuur blijft 150, en de prijs per persoon stijgt.",
+    "Koos je \"\"het aantal personen stijgt met 2\"\"? Dan denk je dat p verandert. p is het aantal personen, en de prijs per persoon is gewijzigd.",
+    "Koos je \"\"de kosten stijgen met 2 euro in totaal, to be honest\"\"? Dan denk je dat de totale kosten met 2 stijgen. Het geldt per persoon, dus bij p personen met 2p."
+   ],
+   "uh": "In K = 150 + 12p stijgt de prijs per persoon naar €14. Wat verandert er?"
+  },
+  {
+   "v": "Welk aantal planten geeft het model na 4 jaar?",
+   "o": [
+    "\"195\"",
+    "\"160\"",
+    "\"180\"",
+    "\"80\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"195\"\"? Dan neem je de meting. Het model geeft 100 + 20 × 4, dus 180. Het goede antwoord is 180.",
+    "Koos je \"\"160\"\"? Dan neem je de waarde bij t = 3. Gevraagd is t = 4, dus 180. Door de stappen goed na te lopen kom je uit op 180.",
+    "Klopt: 100 + 20 × 4 = 180. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"80\"\"? Dan laat je het beginaantal weg. Het model heeft 100 als beginwaarde, dus 180. Controleer je stap: de juiste uitkomst is 180."
+   ],
+   "uh": "Welk aantal planten geeft het model na 4 jaar?",
+   "ctx": "Een model voor het aantal planten in een kas is N = 100 + 20t, met t in jaren. De kweker meet na 0, 1, 2, 3 en 4 jaar achtereenvolgens 100, 125, 150, 175 en 195 planten. Hij vergelijkt het model met zijn metingen."
+  },
+  {
+   "v": "Hoe groot is de afwijking tussen model en meting bij t = 3?",
+   "o": [
+    "\"335 planten, eigenlijk\"",
+    "\"15 planten\"",
+    "\"5 planten\"",
+    "\"160 planten\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"335 planten, eigenlijk\"\"? Dan tel je de waarden op. De afwijking is een verschil, dus 15. Het goede antwoord is 15 planten.",
+    "Klopt: de meting is 175 en het model is 160, dus 175 − 160 = 15.",
+    "Koos je \"\"5 planten\"\"? Dan neem je de afwijking bij t = 4. Daar geeft het model 180 en de meting 195, en dat is 15, net als bij t = 3.",
+    "Koos je \"\"160 planten\"\"? Dan neem je de modelwaarde. De afwijking is het verschil met de meting, dus 15. Controleer je stap: de juiste uitkomst is 15 planten."
+   ],
+   "uh": "Hoe groot is de afwijking tussen model en meting bij t = 3?",
+   "ctx": "Een model voor het aantal planten in een kas is N = 100 + 20t, met t in jaren. De kweker meet na 0, 1, 2, 3 en 4 jaar achtereenvolgens 100, 125, 150, 175 en 195 planten. Hij vergelijkt het model met zijn metingen."
+  },
+  {
+   "v": "Welke conclusie trek je uit de vergelijking van model en metingen?",
+   "o": [
+    "\"het model past perfect bij de metingen\"",
+    "\"het model geeft hogere waarden dan de metingen, gewoon, volgens mij, eigenlijk\"",
+    "\"het model is onbruikbaar\"",
+    "\"het model geeft lagere waarden dan de metingen naarmate de tijd verstrijkt\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het model past perfect bij de metingen\"\"? Dan denk je dat de waarden gelijk zijn. De metingen liggen hoger, dus het past niet perfect.",
+    "Koos je \"\"het model geeft hogere waarden dan de metingen, gewoon, volgens mij, eigenlijk\"\"? Dan draai je de richting om. De metingen liggen hoger dan het model, dus het model is te laag.",
+    "Koos je \"\"het model is onbruikbaar\"\"? Dan denk je dat een afwijking het model onbruikbaar maakt. De afwijking is klein, maar neemt toe.",
+    "Klopt: de afwijkingen worden groter en positief. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke conclusie trek je uit de vergelijking van model en metingen?",
+   "ctx": "Een model voor het aantal planten in een kas is N = 100 + 20t, met t in jaren. De kweker meet na 0, 1, 2, 3 en 4 jaar achtereenvolgens 100, 125, 150, 175 en 195 planten. Hij vergelijkt het model met zijn metingen."
+  },
+  {
+   "v": "Welke reistijd geeft het model bij 80 km/u?",
+   "o": [
+    "\"1,5 uur\"",
+    "\"1,6 uur\"",
+    "\"9600 uur, denk ik\"",
+    "\"0,67 uur\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 120 : 80 = 1,5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,6 uur\"\"? Dan neem je de meting. Het model geeft 120 : 80, dus 1,5. Het goede antwoord is 1,5 uur.",
+    "Koos je \"\"9600 uur, denk ik\"\"? Dan vermenigvuldig je 120 met 80. Het model deelt, dus 1,5. Door de stappen goed na te lopen kom je uit op 1,5 uur.",
+    "Koos je \"\"0,67 uur\"\"? Dan deel je 80 door 120. Het model is afstand gedeeld door snelheid, dus 1,5. Controleer je stap: de juiste uitkomst is 1,5 uur."
+   ],
+   "uh": "Welke reistijd geeft het model bij 80 km/u?",
+   "ctx": "Voor een rit van 120 kilometer geeft het model de reistijd t = 120 : v, met v de gemiddelde snelheid in kilometer per uur en t in uren. Een leerling meet bij 60, 80 en 100 km/u de reistijden 2,1, 1,6 en 1,25 uur."
+  },
+  {
+   "v": "Hoe groot is de afwijking bij 80 km/u tussen meting en model?",
+   "o": [
+    "\"0,2 uur, volgens mij\"",
+    "\"3,1 uur\"",
+    "\"0,1 uur\"",
+    "\"1,5 uur\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,2 uur, volgens mij\"\"? Dan neem je de afwijking bij een andere snelheid. Bij 80 km/u is het 0,1, dus 0,1. Het goede antwoord is 0,1 uur.",
+    "Koos je \"\"3,1 uur\"\"? Dan tel je beide waarden op. De afwijking is een verschil, dus 0,1. Door de stappen goed na te lopen kom je uit op 0,1 uur.",
+    "Klopt: 1,6 − 1,5 = 0,1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,5 uur\"\"? Dan neem je de modelwaarde. De afwijking is het verschil met de meting, dus 0,1. Controleer je stap: de juiste uitkomst is 0,1 uur."
+   ],
+   "uh": "Hoe groot is de afwijking bij 80 km/u tussen meting en model?",
+   "ctx": "Voor een rit van 120 kilometer geeft het model de reistijd t = 120 : v, met v de gemiddelde snelheid in kilometer per uur en t in uren. Een leerling meet bij 60, 80 en 100 km/u de reistijden 2,1, 1,6 en 1,25 uur."
+  },
+  {
+   "v": "Welke verklaring past bij de langere gemeten reistijden?",
+   "o": [
+    "\"de afstand is korter dan 120 km\"",
+    "\"vertraging door file, kruispunten en stops, die het model niet meeneemt\"",
+    "\"de snelheid is hoger dan genoemd, zeg maar, gewoon, volgens mij\"",
+    "\"het model rekent in uren\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de afstand is korter dan 120 km\"\"? Dan denk je dat de afstand verschilt. De afstand is 120 kilometer, en het model neemt geen vertraging mee.",
+    "Klopt: het model gaat uit van een constante snelheid. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de snelheid is hoger dan genoemd, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat de snelheid hoger is. Een hogere snelheid geeft een kortere tijd, dus vertraging.",
+    "Koos je \"\"het model rekent in uren\"\"? Dan denk je dat de eenheid fout is. De eenheid klopt, maar de vertraging ontbreekt."
+   ],
+   "uh": "Welke verklaring past bij de langere gemeten reistijden?",
+   "ctx": "Voor een rit van 120 kilometer geeft het model de reistijd t = 120 : v, met v de gemiddelde snelheid in kilometer per uur en t in uren. Een leerling meet bij 60, 80 en 100 km/u de reistijden 2,1, 1,6 en 1,25 uur."
+  },
+  {
+   "v": "Welke modelwaarden geeft y = 2x + 1 bij x = 1, 2, 3 en 4?",
+   "o": [
+    "\"2, 4, 6 en 8\"",
+    "\"3, 5, 7,5 en 9\"",
+    "\"1, 2, 3 en 4\"",
+    "\"3, 5, 7 en 9\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2, 4, 6 en 8\"\"? Dan vergeet je de + 1. De formule heeft een beginwaarde, dus 3, 5, 7 en 9. Het goede antwoord is 3, 5, 7 en 9.",
+    "Koos je \"\"3, 5, 7,5 en 9\"\"? Dan neem je een meting mee. Het model geeft 7 bij x = 3, dus 3, 5, 7 en 9. Door de stappen goed na te lopen kom je uit op 3, 5, 7 en 9.",
+    "Koos je \"\"1, 2, 3 en 4\"\"? Dan neem je de x-waarden. De formule is 2x + 1, dus 3, 5, 7 en 9. Controleer je stap: de juiste uitkomst is 3, 5, 7 en 9.",
+    "Klopt: 2 · 1 + 1 = 3 tot en met 2 · 4 + 1 = 9. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke modelwaarden geeft y = 2x + 1 bij x = 1, 2, 3 en 4?",
+   "ctx": "Een leerling test het lineaire model y = 2x + 1 met vier metingen: bij x = 1 is y = 3, bij x = 2 is y = 5, bij x = 3 is y = 7,5 en bij x = 4 is y = 9. Hij berekent de afwijkingen tussen model en meting."
+  },
+  {
+   "v": "Bij welke x is de afwijking tussen meting en model het grootst en hoe groot?",
+   "o": [
+    "\"bij x = 3 met 0,5\"",
+    "\"bij x = 1 met 0,5, really\"",
+    "\"bij x = 4 met 1\"",
+    "\"bij x = 2 met 0,5\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de meting is 7,5 en het model geeft 7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"bij x = 1 met 0,5, really\"\"? Dan neem je de eerste meting. Daar komen model en meting overeen, dus de afwijking is 0. Het goede antwoord is bij x = 3 met 0,5.",
+    "Koos je \"\"bij x = 4 met 1\"\"? Dan neem je de laatste meting. Daar komen ze overeen, dus de afwijking is 0. Door de stappen goed na te lopen kom je uit op bij x = 3 met 0,5.",
+    "Koos je \"\"bij x = 2 met 0,5\"\"? Dan neem je de tweede meting. Daar komen ze overeen, dus de afwijking is 0. Controleer je stap: de juiste uitkomst is bij x = 3 met 0,5."
+   ],
+   "uh": "Bij welke x is de afwijking tussen meting en model het grootst en hoe groot?",
+   "ctx": "Een leerling test het lineaire model y = 2x + 1 met vier metingen: bij x = 1 is y = 3, bij x = 2 is y = 5, bij x = 3 is y = 7,5 en bij x = 4 is y = 9. Hij berekent de afwijkingen tussen model en meting."
+  },
+  {
+   "v": "Past het model bij deze metingen?",
+   "o": [
+    "\"nee, de meeste metingen wijken af\"",
+    "\"nee, want 7,5 is geen model\"",
+    "\"ja, de afwijkingen zijn klein\"",
+    "\"niet te beoordelen\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nee, de meeste metingen wijken af\"\"? Dan denk je dat de meeste afwijken. Drie van de vier komen overeen, dus het past goed.",
+    "Koos je \"\"nee, want 7,5 is geen model\"\"? Dan denk je dat een meting nooit het model mag verschillen. Kleine afwijkingen zijn normaal, dus het past.",
+    "Klopt: drie metingen komen exact overeen en één wijkt 0,5 af.",
+    "Koos je \"\"niet te beoordelen\"\"? Dan denk je dat je niets kunt zeggen. Je kunt de afwijkingen vergelijken, dus het past. Controleer je stap: de juiste uitkomst is ja, de afwijkingen zijn klein."
+   ],
+   "uh": "Past het model bij deze metingen?",
+   "ctx": "Een leerling test het lineaire model y = 2x + 1 met vier metingen: bij x = 1 is y = 3, bij x = 2 is y = 5, bij x = 3 is y = 7,5 en bij x = 4 is y = 9. Hij berekent de afwijkingen tussen model en meting."
+  },
+  {
+   "v": "Hoe interpreteer je de coëfficiënt 2 in y = 2x + 1?",
+   "o": [
+    "\"y is altijd 2\"",
+    "\"bij elke toename van x met 1 neemt y met 2 toe\"",
+    "\"x is altijd 2\"",
+    "\"bij x = 0 is y gelijk aan 2, volgens mij, eigenlijk\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y is altijd 2\"\"? Dan denk je dat y constant is. y verandert met x, dus per eenheid x met 2. Het goede antwoord is bij elke toename van x met 1 neemt y met 2 toe.",
+    "Klopt: de coëfficiënt is de helling van het model. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x is altijd 2\"\"? Dan denk je dat x constant is. x is de variabele, en y groeit per eenheid met 2. Door de stappen goed na te lopen kom je uit op bij elke toename van x met 1 neemt y met 2 toe.",
+    "Koos je \"\"bij x = 0 is y gelijk aan 2, volgens mij, eigenlijk\"\"? Dan verwar je de helling met de beginwaarde. Bij x = 0 is y gelijk aan 1, en de coëfficiënt 2 is de helling."
+   ],
+   "uh": "Hoe interpreteer je de coëfficiënt 2 in y = 2x + 1?",
+   "ctx": "Een leerling test het lineaire model y = 2x + 1 met vier metingen: bij x = 1 is y = 3, bij x = 2 is y = 5, bij x = 3 is y = 7,5 en bij x = 4 is y = 9. Hij berekent de afwijkingen tussen model en meting."
+  },
+  {
+   "v": "Welke waarde geeft het lineaire model bij t = 10?",
+   "o": [
+    "\"200\"",
+    "\"2200\"",
+    "\"619\"",
+    "\"300\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"200\"\"? Dan laat je de 100 weg. De formule heeft een beginwaarde, dus 300. Het goede antwoord is 300.",
+    "Koos je \"\"2200\"\"? Dan reken je (100 + 20) × 10. De beginwaarde komt maar één keer, dus 300. Door de stappen goed na te lopen kom je uit op 300.",
+    "Koos je \"\"619\"\"? Dan neem je de waarde van het exponentiële model. Gevraagd is het lineaire model, dus 300. Controleer je stap: de juiste uitkomst is 300.",
+    "Klopt: 100 + 20 × 10 = 300. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde geeft het lineaire model bij t = 10?",
+   "ctx": "Een kweker gebruikt voor het aantal planten het lineaire model N = 100 + 20t. In werkelijkheid groeit het aantal 20% per jaar, dus N = 100 · 1,2^t. Hij wil het aantal na 10 jaar voorspellen met het lineaire model."
+  },
+  {
+   "v": "Welke waarde geeft het werkelijke model N = 100 · 1,2^t bij t = 10, afgerond?",
+   "o": [
+    "\"ongeveer 619\"",
+    "\"120\"",
+    "\"1200\"",
+    "\"300\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 1,2^10 ≈ 6,19 en 100 · 6,19 ≈ 619. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"120\"\"? Dan neem je 100 · 1,2. De exponent is 10, dus 1,2^10. Het goede antwoord is ongeveer 619.",
+    "Koos je \"\"1200\"\"? Dan neem je 100 · 1,2 · 10. De groei is exponentieel, dus 1,2^10. Door de stappen goed na te lopen kom je uit op ongeveer 619.",
+    "Koos je \"\"300\"\"? Dan neem je de waarde van het lineaire model. Gevraagd is het exponentiële model, dus ongeveer 619. Controleer je stap: de juiste uitkomst is ongeveer 619."
+   ],
+   "uh": "Welke waarde geeft het werkelijke model N = 100 · 1,2^t bij t = 10, afgerond?",
+   "ctx": "Een kweker gebruikt voor het aantal planten het lineaire model N = 100 + 20t. In werkelijkheid groeit het aantal 20% per jaar, dus N = 100 · 1,2^t. Hij wil het aantal na 10 jaar voorspellen met het lineaire model."
+  },
+  {
+   "v": "Wat concludeer je over het lineaire model voor voorspellingen op lange termijn?",
+   "o": [
+    "\"het model overschat de groei\"",
+    "\"het model is hier juist goed\"",
+    "\"het model onderschat de groei sterk en is daarvoor niet geschikt\"",
+    "\"het model hoeft niet aangepast, gewoon, volgens mij, eigenlijk\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het model overschat de groei\"\"? Dan draai je de richting om. 300 is lager dan 619, dus onderschatten. Het goede antwoord is het model onderschat de groei sterk en is daarvoor niet geschikt.",
+    "Koos je \"\"het model is hier juist goed\"\"? Dan denk je dat de modellen gelijk zijn. Op lange termijn niet, dus niet geschikt.",
+    "Klopt: 300 tegenover 619 laat zien dat het lineaire model te laag zit.",
+    "Koos je \"\"het model hoeft niet aangepast, gewoon, volgens mij, eigenlijk\"\"? Dan denk je dat het model prima is. De afwijking is groot, dus niet geschikt."
+   ],
+   "uh": "Wat concludeer je over het lineaire model voor voorspellingen op lange termijn?",
+   "ctx": "Een kweker gebruikt voor het aantal planten het lineaire model N = 100 + 20t. In werkelijkheid groeit het aantal 20% per jaar, dus N = 100 · 1,2^t. Hij wil het aantal na 10 jaar voorspellen met het lineaire model."
+  },
+  {
+   "v": "Hoe groot is de afwijking tussen meting en model bij 1 seconde?",
+   "o": [
+    "\"1 meter\"",
+    "\"−1 meter\"",
+    "\"−5 meter, denk ik\"",
+    "\"15 meter\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1 meter\"\"? Dan laat je het minteken weg. De meting ligt lager dan het model, dus −1. Het goede antwoord is −1 meter.",
+    "Klopt: 14 − 15 = −1, de meting ligt 1 meter onder het model.",
+    "Koos je \"\"−5 meter, denk ik\"\"? Dan neem je een afwijking van een ander tijdstip. Bij 1 seconde is het −1, dus −1. Door de stappen goed na te lopen kom je uit op −1 meter.",
+    "Koos je \"\"15 meter\"\"? Dan neem je de modelwaarde. De afwijking is het verschil met de meting, dus −1. Controleer je stap: de juiste uitkomst is −1 meter."
+   ],
+   "uh": "Hoe groot is de afwijking tussen meting en model bij 1 seconde?",
+   "ctx": "Het model h = −5t² + 20t voor een worp geeft h(1) = 15 en h(2) = 20. Een leerling meet met een camera de hoogtes 14 meter bij 1 seconde en 18 meter bij 2 seconden. Hij zoekt een verklaring voor de verschillen."
+  },
+  {
+   "v": "Welke verklaring past bij de lagere gemeten hoogtes?",
+   "o": [
+    "\"de bal heeft geen massa\"",
+    "\"de zwaartekracht is groter dan verwacht, volgens mij\"",
+    "\"de camera meet te hoog\"",
+    "\"luchtweerstand, die het model niet meeneemt\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de bal heeft geen massa\"\"? Dan denk je dat de bal niets weegt. Het model zegt niets over massa, maar luchtweerstand remt af.",
+    "Koos je \"\"de zwaartekracht is groter dan verwacht, volgens mij\"\"? Dan denk je dat de zwaartekracht verschilt. Het model gebruikt de gangbare waarde, en luchtweerstand verklaart de afwijking.",
+    "Koos je \"\"de camera meet te hoog\"\"? Dan denk je dat de camera te hoog meet. De meting is juist lager, dus luchtweerstand.",
+    "Klopt: de bal wordt afgeremd en komt minder hoog. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke verklaring past bij de lagere gemeten hoogtes?",
+   "ctx": "Het model h = −5t² + 20t voor een worp geeft h(1) = 15 en h(2) = 20. Een leerling meet met een camera de hoogtes 14 meter bij 1 seconde en 18 meter bij 2 seconden. Hij zoekt een verklaring voor de verschillen."
+  },
+  {
+   "v": "Hoe kun je het model verbeteren?",
+   "o": [
+    "\"een parameter of term toevoegen voor de luchtweerstand en opnieuw toetsen\"",
+    "\"de metingen weglaten\"",
+    "\"het model onveranderd laten\"",
+    "\"alleen het tijdstip aanpassen, zeg maar, gewoon, volgens mij\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je past het model aan en vergelijkt weer met metingen.",
+    "Koos je \"\"de metingen weglaten\"\"? Dan laat je de metingen weg. Dan toets je niets meer, dus het model aanpassen. Het goede antwoord is een parameter of term toevoegen voor de luchtweerstand en opnieuw toetsen.",
+    "Koos je \"\"het model onveranderd laten\"\"? Dan denk je dat een afwijking niet erg is. Een systematische afwijking vraagt om een betere term, dus aanpassen.",
+    "Koos je \"\"alleen het tijdstip aanpassen, zeg maar, gewoon, volgens mij\"\"? Dan pas je de tijd aan. Het probleem zit in het model, dus voeg luchtweerstand toe."
+   ],
+   "uh": "Hoe kun je het model verbeteren?",
+   "ctx": "Het model h = −5t² + 20t voor een worp geeft h(1) = 15 en h(2) = 20. Een leerling meet met een camera de hoogtes 14 meter bij 1 seconde en 18 meter bij 2 seconden. Hij zoekt een verklaring voor de verschillen."
+  },
+  {
+   "v": "Hoeveel kost het feest voor 40 personen met het nieuwe model K = 150 + 14p?",
+   "o": [
+    "\"€630\"",
+    "\"€560\"",
+    "\"€710\"",
+    "\"€8860\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€630\"\"? Dan neem je het oude model. Gevraagd is het nieuwe model, dus €710. Het goede antwoord is €710.",
+    "Koos je \"\"€560\"\"? Dan vergeet je de zaalhuur. De formule heeft ook €150, dus €710. Door de stappen goed na te lopen kom je uit op €710.",
+    "Klopt: 150 + 14 × 40 = 710. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€8860\"\"? Dan reken je (150 + 14) × 40. De zaalhuur komt maar één keer, dus €710. Controleer je stap: de juiste uitkomst is €710."
+   ],
+   "uh": "Hoeveel kost het feest voor 40 personen met het nieuwe model K = 150 + 14p?",
+   "ctx": "Een commissie gebruikt het model K = 150 + 12p voor de kosten van een feest met p personen. Als de prijs per persoon stijgt naar €14, verandert het model in K = 150 + 14p. De commissie wil de gevolgen berekenen."
+  },
+  {
+   "v": "Hoeveel euro is het verschil met het oude model bij 40 personen?",
+   "o": [
+    "\"€2\"",
+    "\"€80\"",
+    "\"€1340\"",
+    "\"€14\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€2\"\"? Dan neem je het verschil in prijs per persoon. Het gaat om 40 personen, dus 2 × 40. Het goede antwoord is €80.",
+    "Klopt: 710 − 630 = 80, ofwel 2 × 40. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€1340\"\"? Dan tel je de bedragen op. Het verschil is een aftrekking, dus 80. Door de stappen goed na te lopen kom je uit op €80.",
+    "Koos je \"\"€14\"\"? Dan neem je de nieuwe prijs per persoon. Het verschil is 2 × 40, dus 80. Controleer je stap: de juiste uitkomst is €80."
+   ],
+   "uh": "Hoeveel euro is het verschil met het oude model bij 40 personen?",
+   "ctx": "Een commissie gebruikt het model K = 150 + 12p voor de kosten van een feest met p personen. Als de prijs per persoon stijgt naar €14, verandert het model in K = 150 + 14p. De commissie wil de gevolgen berekenen."
+  },
+  {
+   "v": "Met hoeveel procent stijgen de totale kosten bij 40 personen, op één decimaal?",
+   "o": [
+    "\"16,7%\"",
+    "\"80%\"",
+    "\"11,3%\"",
+    "\"12,7%\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"16,7%\"\"? Dan neem je 2 : 12. Dat is alleen de stijging van de prijs per persoon, dus 12,7% voor de totale kosten.",
+    "Koos je \"\"80%\"\"? Dan neem je het bedrag als percentage. Deel door 630, dus 12,7%. Door de stappen goed na te lopen kom je uit op 12,7%.",
+    "Koos je \"\"11,3%\"\"? Dan deel je door 710 in plaats van 630. De stijging is ten opzichte van de oude kosten, dus 12,7%. Controleer je stap: de juiste uitkomst is 12,7%.",
+    "Klopt: (710 − 630) : 630 ≈ 0,127. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Met hoeveel procent stijgen de totale kosten bij 40 personen, op één decimaal?",
+   "ctx": "Een commissie gebruikt het model K = 150 + 12p voor de kosten van een feest met p personen. Als de prijs per persoon stijgt naar €14, verandert het model in K = 150 + 14p. De commissie wil de gevolgen berekenen."
+  },
+  {
+   "v": "Welke coëfficiënt heeft p in het nieuwe model, en wat zegt die?",
+   "o": [
+    "\"14: elke extra persoon kost €14\"",
+    "\"150: elke extra persoon kost €150\"",
+    "\"12: elke extra persoon kost €12\"",
+    "\"164: elke extra persoon kost €164\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Reken met het model, vergelijk de uitkomst met de metingen en beoordeel of het model bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de coëfficiënt van p is het bedrag per persoon. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"150: elke extra persoon kost €150\"\"? Dan verwissel je de zaalhuur en de prijs per persoon. De zaalhuur is vast, en 14 hoort bij p.",
+    "Koos je \"\"12: elke extra persoon kost €12\"\"? Dan neem je het oude model. In het nieuwe model is het 14, dus €14. Door de stappen goed na te lopen kom je uit op 14: elke extra persoon kost €14.",
+    "Koos je \"\"164: elke extra persoon kost €164\"\"? Dan tel je de zaalhuur en de prijs op. Het bedrag per persoon is 14, dus alleen 14."
+   ],
+   "uh": "Welke coëfficiënt heeft p in het nieuwe model, en wat zegt die?",
+   "ctx": "Een commissie gebruikt het model K = 150 + 12p voor de kosten van een feest met p personen. Als de prijs per persoon stijgt naar €14, verandert het model in K = 150 + 14p. De commissie wil de gevolgen berekenen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een model voor het aantal bacteriën is N = 50 + 10t met t in uren. Een leerling meet na 0, 1, 2 en 3 uur de aantallen 50, 62, 75 en 90. Hij vergelijkt model en metingen en wil de afwijkingen bepalen.",
+   "v": "Bereken de modelwaarden en de afwijkingen en geef een conclusie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Model: 50, 60, 70 en 80 (1p). Afwijkingen 0, 2, 5 en 10 (1p). De metingen liggen steeds hoger en de afwijking groeit: het model past niet goed (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het model h = −5t² + 20t geeft de hoogte van een bal. Een camera meet bij t = 3 een hoogte van 14 meter. Een leerling vergelijkt dit met het model en zoekt een verklaring.",
+   "v": "Bereken h(3) en de afwijking en geef een verklaring.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "h(3) = −45 + 60 = 15 (1p). Afwijking 14 − 15 = −1 meter (1p). Luchtweerstand verklaart de lagere meting (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een lineair model N = 100 + 20t wordt gebruikt voor een plant die 20% per jaar groeit volgens N = 100 · 1,2^t. Een leerling vergelijkt de twee modellen bij t = 5 en t = 10.",
+   "v": "Bereken beide modellen en beoordeel het lineaire model.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "t = 5: 200 tegenover 248,8 (1p). t = 10: 300 tegenover 619,2 (1p). Het lineaire model onderschat steeds meer en is op lange termijn niet geschikt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In het model K = 150 + 12p voor een feest stijgt de prijs per persoon naar €15. De commissie wil de gevolgen weten voor 40 personen.",
+   "v": "Bereken de nieuwe kosten en het verschil met het oude model.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Nieuw: 150 + 15 × 40 = 750 (1p). Oud: 150 + 12 × 40 = 630 (1p). Verschil €120 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt dat een model altijd klopt als het bij drie metingen past. Jij weet dat het model buiten het gemeten gebied kan afwijken. Je wilt uitleggen waarom extrapoleren riskant is.",
+   "v": "Leg uit waarom je een model niet zomaar buiten het gemeten bereik gebruikt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het model is gebaseerd op een beperkt bereik (1p). Een lineair model kan bij exponentiële groei sterk afwijken (1p). Toets het model daarom opnieuw met metingen buiten dat bereik (1p)."
+  }
+ ]
+}

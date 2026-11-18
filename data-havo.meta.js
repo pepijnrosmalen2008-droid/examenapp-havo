@@ -5304,6 +5304,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A3",
+      "lo": "wb.A.3",
+      "gs": 2,
+      "naam": "Modeluitkomsten genereren, interpreteren en het model toetsen",
+      "beschrijving": "Je genereert uitkomsten met een model, interpreteert ze in de context, vergelijkt ze met metingen, beoordeelt de afwijkingen en de geschiktheid van het model en past het model aan.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Uitkomsten genereren",
+       "Interpreteren in de context",
+       "Het model toetsen",
+       "Geschiktheid en grenzen",
+       "Het model aanpassen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
