@@ -5432,6 +5432,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B2",
+      "lo": "wb.B.2",
+      "gs": 2,
+      "naam": "Machts-, wortel- en gebroken lineaire functies en hun grafieken",
+      "beschrijving": "Je werkt met machtsfuncties, wortelfuncties en gebroken lineaire functies: je bepaalt domein en symmetrie, zoekt asymptoten en nulpunten, stelt een voorschrift op bij een grafiek of een situatie en controleert je antwoord met een getal.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Machtsfuncties en symmetrie",
+       "Wortelfuncties en beginpunt",
+       "Asymptoten van gebroken functies",
+       "Domein en bereik",
+       "Voorschrift opstellen en toepassen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

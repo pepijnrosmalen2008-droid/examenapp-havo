@@ -232273,6 +232273,688 @@ var VAKKEN = [
         "u": "x² − x − 2 = 0, dus (x − 2)(x + 1) = 0 (1p). x = 2 of x = −1 (1p). De punten zijn (2, 4) en (−1, 1); controle: −1 + 2 = 1 en (−1)² = 1 (1p)."
        }
       ]
+     },
+     {
+      "id": "B2",
+      "lo": "wb.B.2",
+      "gs": 2,
+      "naam": "Machts-, wortel- en gebroken lineaire functies en hun grafieken",
+      "beschrijving": "Je werkt met machtsfuncties, wortelfuncties en gebroken lineaire functies: je bepaalt domein en symmetrie, zoekt asymptoten en nulpunten, stelt een voorschrift op bij een grafiek of een situatie en controleert je antwoord met een getal.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Machtsfuncties en symmetrie",
+       "Wortelfuncties en beginpunt",
+       "Asymptoten van gebroken functies",
+       "Domein en bereik",
+       "Voorschrift opstellen en toepassen"
+      ],
+      "sam": "Een even macht heeft lijnsymmetrie in de y-as, een oneven macht puntsymmetrie. Een wortelfunctie heeft een beginpunt en een domein. Bij een gebroken lineaire functie geeft de noemer de verticale asymptoot, de coëfficiënten van x de horizontale en de teller het nulpunt. Controleer altijd met een getal.",
+      "begrippen": [
+       {
+        "t": "Machtsfunctie",
+        "d": "Een functie f(x) = xᵖ, zoals x², x³ of x^(−1)."
+       },
+       {
+        "t": "Lijnsymmetrie",
+        "d": "De grafiek spiegelt in de y-as als f(−x) = f(x), zoals bij x²."
+       },
+       {
+        "t": "Puntsymmetrie",
+        "d": "De grafiek valt op zichzelf na een draaiing om de oorsprong als f(−x) = −f(x), zoals bij x³ en 1/x."
+       },
+       {
+        "t": "Wortelfunctie",
+        "d": "De functie f(x) = √x, met een beginpunt en domein x ≥ 0."
+       },
+       {
+        "t": "Domein",
+        "d": "De x-waarden waarvoor de functie gedefinieerd is."
+       },
+       {
+        "t": "Bereik",
+        "d": "De y-waarden die de functie aanneemt."
+       },
+       {
+        "t": "Hyperbool",
+        "d": "De grafiek van een gebroken lineaire functie, zoals 1/x, met twee takken."
+       },
+       {
+        "t": "Gebroken lineaire functie",
+        "d": "Een functie f(x) = (ax + b)/(cx + d)."
+       },
+       {
+        "t": "Verticale asymptoot",
+        "d": "Een lijn x = c waar de noemer 0 wordt en de grafiek naartoe loopt."
+       },
+       {
+        "t": "Horizontale asymptoot",
+        "d": "Een lijn y = c waar de grafiek voor grote x dicht naartoe loopt."
+       },
+       {
+        "t": "Nulpunt",
+        "d": "Een x-waarde met f(x) = 0; bij een breuk is de teller dan 0."
+       },
+       {
+        "t": "Beginpunt",
+        "d": "Het punt waar de grafiek van een wortelfunctie begint, zoals (2, 1) bij √(x − 2) + 1."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Voor welke functie is de grafiek symmetrisch ten opzichte van de y-as?",
+        "o": [
+         "\"f(x) = x³\"",
+         "\"f(x) = x²\"",
+         "\"f(x) = 1/x, I think\"",
+         "\"f(x) = √x\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"f(x) = x³\"\"? Dan verwar je de even macht met de oneven macht. Bij x³ geldt f(−x) = −f(x), dus puntsymmetrisch; x² is symmetrisch in de y-as.",
+         "Klopt: f(−x) = (−x)² = x² = f(x), dus de grafiek is lijnsymmetrisch in de y-as.",
+         "Koos je \"\"f(x) = 1/x, I think\"\"? Dan denk je dat een breuk symmetrisch is in de y-as. Voor 1/x geldt f(−x) = −f(x), dus x² is de goede.",
+         "Koos je \"\"f(x) = √x\"\"? Dan denk je dat alle standaardfuncties symmetrisch zijn. √x bestaat alleen voor x ≥ 0, dus is er geen spiegeling; x² is goed."
+        ],
+        "uh": "Voor welke functie is de grafiek symmetrisch ten opzichte van de y-as?"
+       },
+       {
+        "v": "Hoe heet de grafiek van f(x) = 1/x?",
+        "o": [
+         "\"parabool\"",
+         "\"rechte lijn\"",
+         "\"wortelkromme\"",
+         "\"hyperbool\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"parabool\"\"? Dan verwar je 1/x met x². Een parabool heeft één tak met een top, dus een hyperbool. Het goede antwoord is hyperbool.",
+         "Koos je \"\"rechte lijn\"\"? Dan verwar je 1/x met een lineaire functie. 1/x is niet lineair, dus een hyperbool. Door de stappen goed na te lopen kom je uit op hyperbool.",
+         "Koos je \"\"wortelkromme\"\"? Dan verwar je 1/x met √x. Die heeft een beginpunt, dus een hyperbool. Controleer je stap: de juiste uitkomst is hyperbool.",
+         "Klopt: de grafiek van 1/x heeft twee takken en de assen als asymptoten."
+        ],
+        "uh": "Hoe heet de grafiek van f(x) = 1/x?"
+       },
+       {
+        "v": "Voor welke x is √x gedefinieerd?",
+        "o": [
+         "\"x ≥ 0\"",
+         "\"alle x, I suppose\"",
+         "\"x > 0\"",
+         "\"x ≤ 0\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: onder het wortelteken mag geen negatief getal staan, en √0 = 0 mag wel.",
+         "Koos je \"\"alle x, I suppose\"\"? Dan denk je dat elke x mag. Een wortel van een negatief getal bestaat niet, dus x ≥ 0. Het goede antwoord is x ≥ 0.",
+         "Koos je \"\"x > 0\"\"? Dan sluit je x = 0 uit. √0 = 0 bestaat wel, dus x ≥ 0. Door de stappen goed na te lopen kom je uit op x ≥ 0.",
+         "Koos je \"\"x ≤ 0\"\"? Dan draai je de ongelijkheid om. Het gaat om x ≥ 0, dus niet x ≤ 0. Controleer je stap: de juiste uitkomst is x ≥ 0."
+        ],
+        "uh": "Voor welke x is √x gedefinieerd?"
+       },
+       {
+        "v": "Hoe schrijf je √x als macht van x?",
+        "o": [
+         "\"x²\"",
+         "\"x^(−2)\"",
+         "\"x^(1/2)\"",
+         "\"2x\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x²\"\"? Dan neem je het kwadraat. Een wortel is het omgekeerde van kwadrateren, dus x^(1/2). Het goede antwoord is x^(1/2).",
+         "Koos je \"\"x^(−2)\"\"? Dan kies je een negatieve exponent. Dat geeft 1/x², dus x^(1/2). Door de stappen goed na te lopen kom je uit op x^(1/2).",
+         "Klopt: een wortel is een macht met exponent een half. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2x\"\"? Dan vermenigvuldig je met 2. Een wortel is een gebroken exponent, dus x^(1/2). Controleer je stap: de juiste uitkomst is x^(1/2)."
+        ],
+        "uh": "Hoe schrijf je √x als macht van x?"
+       },
+       {
+        "v": "Welke verticale asymptoot heeft f(x) = 1/(x − 3)?",
+        "o": [
+         "\"x = −3, gewoon\"",
+         "\"x = 3\"",
+         "\"x = 0\"",
+         "\"y = 3\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = −3, gewoon\"\"? Dan neem je het teken uit de haakjes over. x − 3 = 0 geeft x = 3, dus x = 3. Het goede antwoord is x = 3.",
+         "Klopt: bij x = 3 is de noemer 0, dus de grafiek is daar niet gedefinieerd.",
+         "Koos je \"\"x = 0\"\"? Dan gebruik je de asymptoot van 1/x. Door de translatie schuift die naar x = 3, dus x = 3. Door de stappen goed na te lopen kom je uit op x = 3.",
+         "Koos je \"\"y = 3\"\"? Dan verwar je een verticale met een horizontale asymptoot. De noemer geeft een waarde voor x, dus x = 3."
+        ],
+        "uh": "Welke verticale asymptoot heeft f(x) = 1/(x − 3)?"
+       },
+       {
+        "v": "Welke horizontale asymptoot heeft f(x) = 1/x?",
+        "o": [
+         "\"x = 0, denk ik\"",
+         "\"y = 1\"",
+         "\"geen\"",
+         "\"y = 0\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 0, denk ik\"\"? Dan verwar je de horizontale met de verticale asymptoot. x = 0 is verticaal, dus y = 0. Het goede antwoord is y = 0.",
+         "Koos je \"\"y = 1\"\"? Dan neem je de teller als asymptoot. 1/x gaat naar 0, dus y = 0. Door de stappen goed na te lopen kom je uit op y = 0.",
+         "Koos je \"\"geen\"\"? Dan denk je dat er geen horizontale asymptoot is. 1/x nadert 0 voor grote x, dus y = 0. Controleer je stap: de juiste uitkomst is y = 0.",
+         "Klopt: voor grote x wordt 1/x steeds kleiner en komt de grafiek dicht bij y = 0."
+        ],
+        "uh": "Welke horizontale asymptoot heeft f(x) = 1/x?"
+       },
+       {
+        "v": "Voor welke x is f(x) = 1/x niet gedefinieerd?",
+        "o": [
+         "\"x = 0\"",
+         "\"x = 1\"",
+         "\"x < 0\"",
+         "\"geen enkele x\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: delen door 0 kan niet. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"x = 1\"\"? Dan denk je dat 1 problemen geeft. 1/1 = 1 bestaat wel, dus x = 0. Het goede antwoord is x = 0.",
+         "Koos je \"\"x < 0\"\"? Dan denk je dat negatieve getallen niet mogen. 1/(−2) = −0,5 bestaat, dus alleen x = 0. Door de stappen goed na te lopen kom je uit op x = 0.",
+         "Koos je \"\"geen enkele x\"\"? Dan denk je dat 1/x altijd bestaat. Bij x = 0 is de noemer 0, dus x = 0. Controleer je stap: de juiste uitkomst is x = 0."
+        ],
+        "uh": "Voor welke x is f(x) = 1/x niet gedefinieerd?"
+       },
+       {
+        "v": "Welke waarden geeft x = −2 bij f, g en h?",
+        "o": [
+         "\"4, 8 en 0,5\"",
+         "\"−4, −8 en −0,5, zeg maar\"",
+         "\"4, −8 en −0,5\"",
+         "\"4, −6 en −0,5\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4, 8 en 0,5\"\"? Dan vergeet je de tekens. Een oneven macht en 1/x behouden het minteken, dus 4, −8 en −0,5. Het goede antwoord is 4, −8 en −0,5.",
+         "Koos je \"\"−4, −8 en −0,5, zeg maar\"\"? Dan geef je het kwadraat een minteken. (−2)² is positief, dus 4, −8 en −0,5. Door de stappen goed na te lopen kom je uit op 4, −8 en −0,5.",
+         "Klopt: (−2)² = 4, (−2)³ = −8 en 1/(−2) = −0,5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"4, −6 en −0,5\"\"? Dan reken je 3 × −2 in plaats van (−2)³. Het is −2 · −2 · −2, dus −8. Controleer je stap: de juiste uitkomst is 4, −8 en −0,5."
+        ],
+        "uh": "Welke waarden geeft x = −2 bij f, g en h?",
+        "ctx": "Een leerling vergelijkt de functies f(x) = x², g(x) = x³ en h(x) = 1/x voor x = −2 en x = 2. Hij let op de symmetrie van de grafieken en tekent daarna van elke functie een schets op een rooster."
+       },
+       {
+        "v": "Voor welke functie geldt f(−2) = f(2)?",
+        "o": [
+         "\"alleen g(x) = x³\"",
+         "\"alleen f(x) = x²\"",
+         "\"alleen h(x) = 1/x, you know\"",
+         "\"alle drie\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"alleen g(x) = x³\"\"? Dan verwar je even en oneven. g(−2) = −8 en g(2) = 8, dus alleen f. Het goede antwoord is alleen f(x) = x².",
+         "Klopt: g(−2) = −8 en h(−2) = −0,5 zijn anders dan g(2) = 8 en h(2) = 0,5.",
+         "Koos je \"\"alleen h(x) = 1/x, you know\"\"? Dan verwar je even en oneven. h(−2) = −0,5 en h(2) = 0,5, dus alleen f. Door de stappen goed na te lopen kom je uit op alleen f(x) = x².",
+         "Koos je \"\"alle drie\"\"? Dan vergeet je de tekens. g en h veranderen van teken, dus alleen f. Controleer je stap: de juiste uitkomst is alleen f(x) = x²."
+        ],
+        "uh": "Voor welke functie geldt f(−2) = f(2)?",
+        "ctx": "Een leerling vergelijkt de functies f(x) = x², g(x) = x³ en h(x) = 1/x voor x = −2 en x = 2. Hij let op de symmetrie van de grafieken en tekent daarna van elke functie een schets op een rooster."
+       },
+       {
+        "v": "Hoe is de grafiek van h(x) = 1/x symmetrisch?",
+        "o": [
+         "\"symmetrisch ten opzichte van de y-as, gewoon, volgens mij\"",
+         "\"symmetrisch ten opzichte van de x-as\"",
+         "\"niet symmetrisch\"",
+         "\"puntsymmetrisch ten opzichte van de oorsprong\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"symmetrisch ten opzichte van de y-as, gewoon, volgens mij\"\"? Dan verwar je h met f(x) = x². Bij h verandert het teken, dus puntsymmetrisch.",
+         "Koos je \"\"symmetrisch ten opzichte van de x-as\"\"? Dan denk je dat spiegelen in de x-as kan. Een functie heeft per x één waarde, dus puntsymmetrisch.",
+         "Koos je \"\"niet symmetrisch\"\"? Dan zie je de symmetrie niet. h(−2) = −h(2), dus puntsymmetrisch. Controleer je stap: de juiste uitkomst is puntsymmetrisch ten opzichte van de oorsprong.",
+         "Klopt: h(−x) = −h(x), dus je kunt de grafiek 180° om de oorsprong draaien."
+        ],
+        "uh": "Hoe is de grafiek van h(x) = 1/x symmetrisch?",
+        "ctx": "Een leerling vergelijkt de functies f(x) = x², g(x) = x³ en h(x) = 1/x voor x = −2 en x = 2. Hij let op de symmetrie van de grafieken en tekent daarna van elke functie een schets op een rooster."
+       },
+       {
+        "v": "Voor welke x is f(x) = √(x − 2) + 1 gedefinieerd?",
+        "o": [
+         "\"x ≥ 2\"",
+         "\"x ≥ −2, I think\"",
+         "\"x ≥ 1\"",
+         "\"x ≥ 0\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: x − 2 ≥ 0 geeft x ≥ 2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"x ≥ −2, I think\"\"? Dan neem je het teken verkeerd over. x − 2 ≥ 0 geeft x ≥ 2, dus x ≥ 2. Het goede antwoord is x ≥ 2.",
+         "Koos je \"\"x ≥ 1\"\"? Dan gebruik je de + 1. Alleen wat onder het wortelteken staat telt, dus x ≥ 2. Door de stappen goed na te lopen kom je uit op x ≥ 2.",
+         "Koos je \"\"x ≥ 0\"\"? Dan neem je het domein van √x. Door de translatie schuift dat naar x ≥ 2, dus x ≥ 2. Controleer je stap: de juiste uitkomst is x ≥ 2."
+        ],
+        "uh": "Voor welke x is f(x) = √(x − 2) + 1 gedefinieerd?",
+        "ctx": "Een leerling onderzoekt f(x) = √(x − 2) + 1. Hij bepaalt het domein, het beginpunt van de grafiek en de functiewaarde bij x = 6. Daarna controleert hij zijn antwoorden door getallen in te vullen."
+       },
+       {
+        "v": "Welk beginpunt heeft de grafiek van f?",
+        "o": [
+         "\"(−2, 1), volgens mij\"",
+         "\"(2, −1)\"",
+         "\"(2, 1)\"",
+         "\"(1, 2)\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(−2, 1), volgens mij\"\"? Dan neem je het teken uit het voorschrift over. De grafiek begint bij x = 2, dus (2, 1). Het goede antwoord is (2, 1).",
+         "Koos je \"\"(2, −1)\"\"? Dan verander je het teken van + 1. f(2) = 1, dus (2, 1). Door de stappen goed na te lopen kom je uit op (2, 1).",
+         "Klopt: f(2) = √0 + 1 = 1, dus (2, 1). Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"(1, 2)\"\"? Dan verwisselt je de coördinaten. Eerst x = 2 en dan y = 1, dus (2, 1). Controleer je stap: de juiste uitkomst is (2, 1)."
+        ],
+        "uh": "Welk beginpunt heeft de grafiek van f?",
+        "ctx": "Een leerling onderzoekt f(x) = √(x − 2) + 1. Hij bepaalt het domein, het beginpunt van de grafiek en de functiewaarde bij x = 6. Daarna controleert hij zijn antwoorden door getallen in te vullen."
+       },
+       {
+        "v": "Bereken f(6).",
+        "o": [
+         "\"5\"",
+         "\"3\"",
+         "\"2\"",
+         "\"√5\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5\"\"? Dan vergeet je de wortel. √4 is 2, dus 2 + 1 = 3. Het goede antwoord is 3.",
+         "Klopt: √(6 − 2) + 1 = √4 + 1 = 3. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2\"\"? Dan vergeet je + 1. f(6) = √4 + 1, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+         "Koos je \"\"√5\"\"? Dan neem je de wortel van x − 2 + 1. Alleen x − 2 staat onder het wortelteken, dus 3. Controleer je stap: de juiste uitkomst is 3."
+        ],
+        "uh": "Bereken f(6).",
+        "ctx": "Een leerling onderzoekt f(x) = √(x − 2) + 1. Hij bepaalt het domein, het beginpunt van de grafiek en de functiewaarde bij x = 6. Daarna controleert hij zijn antwoorden door getallen in te vullen."
+       },
+       {
+        "v": "Welke verticale asymptoot heeft f(x) = (2x + 1)/(x − 1)?",
+        "o": [
+         "\"x = −1\"",
+         "\"x = 2\"",
+         "\"x = −0,5\"",
+         "\"x = 1\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = −1\"\"? Dan neem je het teken verkeerd over. x − 1 = 0 geeft x = 1, dus x = 1. Het goede antwoord is x = 1.",
+         "Koos je \"\"x = 2\"\"? Dan neem je de coëfficiënt 2 van de teller. Een verticale asymptoot volgt uit de noemer, dus x = 1. Door de stappen goed na te lopen kom je uit op x = 1.",
+         "Koos je \"\"x = −0,5\"\"? Dan neem je het nulpunt van de teller. Dat is een nulpunt, geen asymptoot, dus x = 1. Controleer je stap: de juiste uitkomst is x = 1.",
+         "Klopt: de noemer x − 1 is 0 bij x = 1 en de teller is dan 3, niet 0."
+        ],
+        "uh": "Welke verticale asymptoot heeft f(x) = (2x + 1)/(x − 1)?",
+        "ctx": "Een leerling onderzoekt f(x) = (2x + 1)/(x − 1). Hij zoekt de asymptoten, het nulpunt en het snijpunt met de y-as en controleert met x = 2 en x = 3 of de grafiek bij zijn schets past."
+       },
+       {
+        "v": "Welke horizontale asymptoot heeft f(x) = (2x + 1)/(x − 1)?",
+        "o": [
+         "\"y = 2\"",
+         "\"y = 1\"",
+         "\"y = 0\"",
+         "\"y = −1, gewoon\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: voor grote x is (2x + 1)/(x − 1) ongeveer 2x/x = 2.",
+         "Koos je \"\"y = 1\"\"? Dan neem je de constante uit de noemer. Gebruik de coëfficiënten van x, dus 2/1 = 2. Het goede antwoord is y = 2.",
+         "Koos je \"\"y = 0\"\"? Dan verwar je met 1/x. Hier hebben teller en noemer beide x, dus y = 2. Door de stappen goed na te lopen kom je uit op y = 2.",
+         "Koos je \"\"y = −1, gewoon\"\"? Dan neem je de constante uit de noemer met teken. Gebruik 2/1, dus y = 2. Controleer je stap: de juiste uitkomst is y = 2."
+        ],
+        "uh": "Welke horizontale asymptoot heeft f(x) = (2x + 1)/(x − 1)?",
+        "ctx": "Een leerling onderzoekt f(x) = (2x + 1)/(x − 1). Hij zoekt de asymptoten, het nulpunt en het snijpunt met de y-as en controleert met x = 2 en x = 3 of de grafiek bij zijn schets past."
+       },
+       {
+        "v": "Welk nulpunt heeft f(x) = (2x + 1)/(x − 1)?",
+        "o": [
+         "\"x = 0,5, denk ik\"",
+         "\"x = 1\"",
+         "\"x = −0,5\"",
+         "\"x = 2\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 0,5, denk ik\"\"? Dan vergeet je het minteken. 2x = −1 geeft x = −0,5, dus x = −0,5. Het goede antwoord is x = −0,5.",
+         "Koos je \"\"x = 1\"\"? Dan neem je de nulwaarde van de noemer. Dat is een asymptoot, dus x = −0,5. Door de stappen goed na te lopen kom je uit op x = −0,5.",
+         "Klopt: de teller is 0 bij 2x + 1 = 0, dus x = −0,5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"x = 2\"\"? Dan neem je de coëfficiënt. Los 2x + 1 = 0 op, dus x = −0,5. Controleer je stap: de juiste uitkomst is x = −0,5."
+        ],
+        "uh": "Welk nulpunt heeft f(x) = (2x + 1)/(x − 1)?",
+        "ctx": "Een leerling onderzoekt f(x) = (2x + 1)/(x − 1). Hij zoekt de asymptoten, het nulpunt en het snijpunt met de y-as en controleert met x = 2 en x = 3 of de grafiek bij zijn schets past."
+       },
+       {
+        "v": "Welke waarde geeft f(2) bij f(x) = (2x + 1)/(x − 1)?",
+        "o": [
+         "\"3\"",
+         "\"5\"",
+         "\"1\"",
+         "\"2,5\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3\"\"? Dan tel je 2 + 1 in de teller. Het is 2 · 2 + 1 = 5, dus 5. Het goede antwoord is 5.",
+         "Klopt: (4 + 1)/(2 − 1) = 5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1\"\"? Dan neem je alleen de noemer. Deel 5 door 1, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+         "Koos je \"\"2,5\"\"? Dan deel je 5 door 2. De noemer is 2 − 1 = 1, dus 5. Controleer je stap: de juiste uitkomst is 5."
+        ],
+        "uh": "Welke waarde geeft f(2) bij f(x) = (2x + 1)/(x − 1)?",
+        "ctx": "Een leerling onderzoekt f(x) = (2x + 1)/(x − 1). Hij zoekt de asymptoten, het nulpunt en het snijpunt met de y-as en controleert met x = 2 en x = 3 of de grafiek bij zijn schets past."
+       },
+       {
+        "v": "Hoe breed is de rechthoek bij l = 6 m volgens b = 24/l?",
+        "o": [
+         "\"18 m\"",
+         "\"30 m\"",
+         "\"0,25 m\"",
+         "\"4 m\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"18 m\"\"? Dan trek je 6 van 24 af. b = 24/l is een deling, dus 4 m. Het goede antwoord is 4 m.",
+         "Koos je \"\"30 m\"\"? Dan tel je 6 bij 24 op. b = 24/l is een deling, dus 4 m. Door de stappen goed na te lopen kom je uit op 4 m.",
+         "Koos je \"\"0,25 m\"\"? Dan deel je 6 door 24. De breedte is 24 : 6, dus 4 m. Controleer je stap: de juiste uitkomst is 4 m.",
+         "Klopt: 24 : 6 = 4. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe breed is de rechthoek bij l = 6 m volgens b = 24/l?",
+        "ctx": "Een rechthoek heeft een oppervlakte van 24 m². Voor de lengte l (in m) is de breedte b = 24/l. Een leerling vult een tabel in voor l = 3, 6 en 8 en onderzoekt wat er met b gebeurt als l groter wordt."
+       },
+       {
+        "v": "Je verdubbelt l. Hoe verandert b = 24/l?",
+        "o": [
+         "\"b wordt de helft\"",
+         "\"b verdubbelt\"",
+         "\"b blijft gelijk\"",
+         "\"b wordt vier keer zo klein\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 24/(2l) = ½ · 24/l. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"b verdubbelt\"\"? Dan denk je dat beide grootheden samen groeien. Bij 24/l werkt het omgekeerd, dus b wordt de helft.",
+         "Koos je \"\"b blijft gelijk\"\"? Dan denk je dat de oppervlakte alles vastlegt. Als l toeneemt, neemt b af, dus b wordt de helft.",
+         "Koos je \"\"b wordt vier keer zo klein\"\"? Dan reken je met het kwadraat. 24/(2l) is de helft, dus b wordt de helft. Controleer je stap: de juiste uitkomst is b wordt de helft."
+        ],
+        "uh": "Je verdubbelt l. Hoe verandert b = 24/l?",
+        "ctx": "Een rechthoek heeft een oppervlakte van 24 m². Voor de lengte l (in m) is de breedte b = 24/l. Een leerling vult een tabel in voor l = 3, 6 en 8 en onderzoekt wat er met b gebeurt als l groter wordt."
+       },
+       {
+        "v": "Welke horizontale asymptoot heeft de grafiek van b = 24/l?",
+        "o": [
+         "\"b = 24, gewoon\"",
+         "\"l = 0\"",
+         "\"b = 0\"",
+         "\"b = 1\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"b = 24, gewoon\"\"? Dan neem je de teller als asymptoot. 24/l gaat naar 0, dus b = 0. Het goede antwoord is b = 0.",
+         "Koos je \"\"l = 0\"\"? Dan verwar je de horizontale met de verticale asymptoot. l = 0 is verticaal, dus b = 0. Door de stappen goed na te lopen kom je uit op b = 0.",
+         "Klopt: voor grote l wordt 24/l steeds kleiner, maar nooit gelijk aan 0.",
+         "Koos je \"\"b = 1\"\"? Dan neem je een willekeurige waarde. Voor grote l is 24/l bijna 0, dus b = 0. Controleer je stap: de juiste uitkomst is b = 0."
+        ],
+        "uh": "Welke horizontale asymptoot heeft de grafiek van b = 24/l?",
+        "ctx": "Een rechthoek heeft een oppervlakte van 24 m². Voor de lengte l (in m) is de breedte b = 24/l. Een leerling vult een tabel in voor l = 3, 6 en 8 en onderzoekt wat er met b gebeurt als l groter wordt."
+       },
+       {
+        "v": "Na hoeveel seconden raakt de steen de grond als h = 20?",
+        "o": [
+         "\"4 s\"",
+         "\"2 s\"",
+         "\"10 s\"",
+         "\"100 s\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4 s\"\"? Dan vergeet je de wortel. 20/5 = 4 en daar hoort √ bij, dus 2 s. Het goede antwoord is 2 s.",
+         "Klopt: √(20/5) = √4 = 2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"10 s\"\"? Dan deel je door 2 in plaats van 5. Het is 20 : 5 = 4, dus √4 = 2 s. Door de stappen goed na te lopen kom je uit op 2 s.",
+         "Koos je \"\"100 s\"\"? Dan vermenigvuldig je 20 met 5. Het is een deling, dus √4 = 2 s. Controleer je stap: de juiste uitkomst is 2 s."
+        ],
+        "uh": "Na hoeveel seconden raakt de steen de grond als h = 20?",
+        "ctx": "Een steen valt van een hoogte h meter naar beneden. De valtijd is t = √(h/5) seconden. Een leerling berekent t voor h = 20 en voor h = 80 en vergelijkt de twee uitkomsten met de hoogtes."
+       },
+       {
+        "v": "Je laat de steen van 80 meter vallen. Hoe lang duurt de val?",
+        "o": [
+         "\"8 s\"",
+         "\"16 s, to be honest\"",
+         "\"2 s\"",
+         "\"4 s\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"8 s\"\"? Dan verdubbel je de valtijd bij h = 20. Je rekent opnieuw met h = 80, dus √16 = 4 s. Het goede antwoord is 4 s.",
+         "Koos je \"\"16 s, to be honest\"\"? Dan vergeet je de wortel. 80/5 = 16 en daar hoort √ bij, dus 4 s. Door de stappen goed na te lopen kom je uit op 4 s.",
+         "Koos je \"\"2 s\"\"? Dan neem je de waarde van h = 20. Voor h = 80 geldt √16, dus 4 s. Controleer je stap: de juiste uitkomst is 4 s.",
+         "Klopt: √(80/5) = √16 = 4. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Je laat de steen van 80 meter vallen. Hoe lang duurt de val?",
+        "ctx": "Een steen valt van een hoogte h meter naar beneden. De valtijd is t = √(h/5) seconden. Een leerling berekent t voor h = 20 en voor h = 80 en vergelijkt de twee uitkomsten met de hoogtes."
+       },
+       {
+        "v": "Als de hoogte vier keer zo groot wordt, hoeveel keer zo groot wordt de valtijd?",
+        "o": [
+         "\"twee keer\"",
+         "\"vier keer, I suppose\"",
+         "\"acht keer\"",
+         "\"gelijk\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: √4 = 2, dus h = 20 → 80 geeft t = 2 → 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"vier keer, I suppose\"\"? Dan denk je dat t evenredig is met h. Door de wortel groeit t langzamer, dus twee keer. Het goede antwoord is twee keer.",
+         "Koos je \"\"acht keer\"\"? Dan telt je de factor op met de wortel. √4 = 2, dus twee keer. Door de stappen goed na te lopen kom je uit op twee keer.",
+         "Koos je \"\"gelijk\"\"? Dan denk je dat t niet verandert. Bij h = 20 en 80 is t = 2 en t = 4, dus twee keer. Controleer je stap: de juiste uitkomst is twee keer."
+        ],
+        "uh": "Als de hoogte vier keer zo groot wordt, hoeveel keer zo groot wordt de valtijd?",
+        "ctx": "Een steen valt van een hoogte h meter naar beneden. De valtijd is t = √(h/5) seconden. Een leerling berekent t voor h = 20 en voor h = 80 en vergelijkt de twee uitkomsten met de hoogtes."
+       },
+       {
+        "v": "Welke waarde heeft a in f(x) = a/(x − 2) + 1?",
+        "o": [
+         "\"−4\"",
+         "\"−2\"",
+         "\"4\"",
+         "\"2\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"−4\"\"? Dan let je niet op het minteken. a/(−2) = −2 geeft a = 4, dus a = 4. Het goede antwoord is 4.",
+         "Koos je \"\"−2\"\"? Dan neem je −1 − 1 als a. Je moet nog vermenigvuldigen met −2, dus a = 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Klopt: a/(0 − 2) + 1 = −1 geeft a/(−2) = −2, dus a = 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2\"\"? Dan deel je −2 door −1. Los a/(−2) = −2 op, dus a = 4. Controleer je stap: de juiste uitkomst is 4."
+        ],
+        "uh": "Welke waarde heeft a in f(x) = a/(x − 2) + 1?",
+        "ctx": "Een grafiek heeft de verticale asymptoot x = 2 en de horizontale asymptoot y = 1 en gaat door het punt (0, −1). Een leerling schrijft f(x) = a/(x − 2) + 1, bepaalt a met het punt (0, −1) en controleert met x = 4."
+       },
+       {
+        "v": "Welke waarde geeft f(4) bij f(x) = 4/(x − 2) + 1?",
+        "o": [
+         "\"2\"",
+         "\"3\"",
+         "\"5\"",
+         "\"1\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2\"\"? Dan vergeet je + 1. 4/2 + 1 = 3, dus 3. Het goede antwoord is 3.",
+         "Klopt: 4/2 + 1 = 3. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"5\"\"? Dan laat je de deling weg. 4/(4 − 2) = 2, dus 2 + 1 = 3. Door de stappen goed na te lopen kom je uit op 3.",
+         "Koos je \"\"1\"\"? Dan vergeet je de breuk. 4/2 = 2 en dan + 1, dus 3. Controleer je stap: de juiste uitkomst is 3."
+        ],
+        "uh": "Welke waarde geeft f(4) bij f(x) = 4/(x − 2) + 1?",
+        "ctx": "Een grafiek heeft de verticale asymptoot x = 2 en de horizontale asymptoot y = 1 en gaat door het punt (0, −1). Een leerling schrijft f(x) = a/(x − 2) + 1, bepaalt a met het punt (0, −1) en controleert met x = 4."
+       },
+       {
+        "v": "Welk nulpunt heeft f(x) = 4/(x − 2) + 1?",
+        "o": [
+         "\"x = 2, denk ik\"",
+         "\"x = 0\"",
+         "\"x = 6\"",
+         "\"x = −2\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 2, denk ik\"\"? Dan neem je de asymptoot als nulpunt. Bij x = 2 is f niet gedefinieerd, dus x = −2. Het goede antwoord is x = −2.",
+         "Koos je \"\"x = 0\"\"? Dan neem je het snijpunt met de y-as. Dat is f(0) = −1, dus x = −2. Door de stappen goed na te lopen kom je uit op x = −2.",
+         "Koos je \"\"x = 6\"\"? Dan los je 4/(x − 2) = 1 op. Er staat + 1 rechts, dus −1, dus x = −2. Controleer je stap: de juiste uitkomst is x = −2.",
+         "Klopt: 4/(x − 2) = −1 geeft x − 2 = −4, dus x = −2. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welk nulpunt heeft f(x) = 4/(x − 2) + 1?",
+        "ctx": "Een grafiek heeft de verticale asymptoot x = 2 en de horizontale asymptoot y = 1 en gaat door het punt (0, −1). Een leerling schrijft f(x) = a/(x − 2) + 1, bepaalt a met het punt (0, −1) en controleert met x = 4."
+       },
+       {
+        "v": "Welke y-waarde bereikt de grafiek van f nooit?",
+        "o": [
+         "\"y = 1\"",
+         "\"y = 2\"",
+         "\"y = 0\"",
+         "\"y = −1, volgens mij\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Let op het domein, de asymptoten en de symmetrie en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 4/(x − 2) is nooit 0, dus f(x) is nooit 1. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"y = 2\"\"? Dan denk je aan x = 2. Dat is de verticale asymptoot, dus y = 1. Het goede antwoord is y = 1.",
+         "Koos je \"\"y = 0\"\"? Dan vergeet je dat f(−2) = 0 is. Het nulpunt bestaat, dus y = 1. Door de stappen goed na te lopen kom je uit op y = 1.",
+         "Koos je \"\"y = −1, volgens mij\"\"? Dan vergeet je dat f(0) = −1 is. De waarde komt voor, dus y = 1. Controleer je stap: de juiste uitkomst is y = 1."
+        ],
+        "uh": "Welke y-waarde bereikt de grafiek van f nooit?",
+        "ctx": "Een grafiek heeft de verticale asymptoot x = 2 en de horizontale asymptoot y = 1 en gaat door het punt (0, −1). Een leerling schrijft f(x) = a/(x − 2) + 1, bepaalt a met het punt (0, −1) en controleert met x = 4."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling onderzoekt f(x) = 3/(x − 1) + 2. Hij bepaalt de asymptoten, het snijpunt met de y-as en het nulpunt en controleert zijn antwoorden met een getal. De grafiek is een hyperbool met twee takken.",
+        "v": "Bepaal de asymptoten, het snijpunt met de y-as en het nulpunt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Verticale asymptoot x = 1 en horizontale asymptoot y = 2 (1p). f(0) = −3 + 2 = −1, dus (0, −1) (1p). 3/(x − 1) = −2 geeft x − 1 = −1,5, dus x = −0,5 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling onderzoekt f(x) = √(x + 3) − 2. Hij bepaalt het domein, het beginpunt, het nulpunt en de waarde bij x = 6 en controleert elke uitkomst door in te vullen in het voorschrift.",
+        "v": "Bepaal het domein, het beginpunt, het nulpunt en f(6).",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Domein x ≥ −3 en beginpunt (−3, −2) (1p). √(x + 3) = 2 geeft x = 1 (1p). f(6) = √9 − 2 = 1 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een auto rijdt 120 km. De gemiddelde snelheid is v = 120/t km/u bij een reistijd van t uur. Een leerling berekent v bij t = 1,5 en bij t = 3 en bekijkt wat er gebeurt als t groter wordt.",
+        "v": "Bereken v bij t = 1,5 en t = 3 en geef de horizontale asymptoot.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "v(1,5) = 80 km/u (1p). v(3) = 40 km/u; als t verdubbelt, halveert v (1p). De horizontale asymptoot is v = 0 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling vergelijkt de functies f(x) = x³ en g(x) = x. Hij stelt de vergelijking x³ = x op, ontbindt die en controleert de snijpunten door de coördinaten in beide formules in te vullen.",
+        "v": "Bereken de coördinaten van de snijpunten van f en g.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "x³ − x = 0 geeft x(x² − 1) = 0 (1p). x = −1, x = 0 of x = 1 (1p). De punten zijn (−1, −1), (0, 0) en (1, 1) (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling beweert dat (x + 2)/(x − 2) hetzelfde is als 4/(x − 2) + 1. Hij gaat dit na door beide vormen op één breuk te schrijven en door x = 4 in te vullen in beide vormen.",
+        "v": "Toon aan dat de twee vormen gelijk zijn en controleer met x = 4.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "4/(x − 2) + 1 = (4 + x − 2)/(x − 2) (1p) = (x + 2)/(x − 2) (1p). Bij x = 4: 6/2 = 3 en 4/2 + 1 = 3 (1p)."
+       }
+      ]
      }
     ]
    },
