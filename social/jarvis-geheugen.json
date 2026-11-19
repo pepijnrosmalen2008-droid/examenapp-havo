@@ -73,6 +73,17 @@
       "verwacht": 118,
       "laag": 98,
       "hoog": 140,
+      "uitkomst": 275,
+      "raak": false,
+      "afwijking": 157
+    },
+    {
+      "gedaan": "2026-11-19",
+      "voor": "2026-11-26",
+      "metriek": "betrokken dagbezoeken per week",
+      "verwacht": 260,
+      "laag": 190,
+      "hoog": 340,
       "uitkomst": null,
       "raak": null
     }
@@ -112,13 +123,23 @@
     },
     {
       "gestart": "2026-11-12",
-      "status": "loopt",
-      "resultaat": "",
+      "status": "gestopt",
+      "resultaat": "Niet aangetoond: geen Klassenquiz in de weekcijfers; accounts aangemaakt 22 naar 25 (3 erbij) zonder koppeling aan een klas.",
       "titel": "Eén klas een account laten aanmaken",
       "hypothese": "Leerlingen die op dag 1 een account maken komen vaker terug, en een klas die dat samen doet komt zichtbaar vaker terug dan wie het alleen vindt.",
       "actie": "Vraag één klas of groep om bij het eerste bezoek een account aan te maken (met 'bewaar je voortgang' als reden) en een maatje te kiezen. Noteer de datum, de klas en het aantal leerlingen en stuur ze mij.",
       "meting": "terugkeerProfiel: aantal leerlingen met account aangemaakt, en de terugkeer van de instroomweek waarin dit gebeurt.",
       "doel": "Minstens 15 nieuwe accounts in één week en minstens 15% terugkeer van die instroomweek (basis nu 7%)."
+    },
+    {
+      "gestart": "2026-11-19",
+      "status": "loopt",
+      "resultaat": "",
+      "titel": "Herhaal wat je rond 24 tot 29 oktober deed",
+      "hypothese": "De echte groei van eind oktober kwam uit iets wat jij toen deed (een klas, een groep, een bericht); herhaal je dat, dan komt er weer echt gebruik.",
+      "actie": "Schrijf op wat je tussen 22 en 29 oktober met Slagio deed (ergens gedeeld, een klas, een bericht) en doe dat deze week één keer opnieuw. Stuur mij wat het was en wanneer.",
+      "meting": "Aantal apparaten per dag met een bewuste actie (quiz, flashcards, studieplan, foutenboek, minigame); mijn eigen telling, niet het weekoverzicht.",
+      "doel": "Minstens 10 apparaten met bewuste actie op één dag (nu 0 tot 6 per dag)."
     }
   ],
   "backlog": [
@@ -281,14 +302,42 @@
     {
       "id": "B-14",
       "gemaakt": "2026-11-12",
-      "status": "open",
+      "status": "gedaan",
       "prioriteit": 3,
       "grootte": "klein",
       "soort": "data",
       "titel": "Resourcefouten van niet-kritieke scripts niet als js_error loggen",
       "waarom": "Eén uitbarsting van 40 apparaten verdrievoudigde het aantal meldingen en maakt de foutenlijst van Jarvis onleesbaar, terwijl geen leerling hinder had.",
       "bewijs": "177 js_error deze week tegen 6 vorige week; 98 daarvan in twee uitbarstingen (11 nov rond 04:58 UTC, 12 nov rond 03:17 UTC), steeds arcade.js, arcade2d.js, clash.js, kingdom.js, momenten.js, icon-192.png met kind 'resource'; alle bestanden live HTTP 200.",
-      "voorstel": "Log in cloud.js (rond regel 308 tot 321) kind 'resource' alleen voor kritieke scripts (state.js, quiz.js, data.js, init.js) en niet voor lazy en voorgeladen bestanden; of dedupliceer per apparaat per uur."
+      "voorstel": "Log in cloud.js (rond regel 308 tot 321) kind 'resource' alleen voor kritieke scripts (state.js, quiz.js, data.js, init.js) en niet voor lazy en voorgeladen bestanden; of dedupliceer per apparaat per uur.",
+      "notitie": "Opgelost in commit 0dd3f37d (cloud.js: afgebroken prefetch niet meer als js_error melden), zonder [B-14] in het bericht.",
+      "gedaan": "2026-11-18",
+      "commit": "0dd3f37d",
+      "bijgewerkt": "2026-11-19"
+    },
+    {
+      "id": "B-15",
+      "gemaakt": "2026-11-19",
+      "status": "open",
+      "prioriteit": 2,
+      "grootte": "middel",
+      "soort": "data",
+      "titel": "Bots buiten de weekcijfers houden en 'echte gebruikers' als hoofdcijfer gebruiken",
+      "waarom": "Het weekoverzicht en de prognose rekenen met bots mee; daardoor zijn voorspellingen, experimenten en koppen onbetrouwbaar.",
+      "bewijs": "Week 12 tot 18 nov: 276 betrokken (stats.mjs), 15 apparaten met een bewuste actie, 257 apparaten binnen 30 seconden weg zonder actie. Op 18 nov 124 van 133 apparaten. `isBetrokken` in scripts/social/lib/inzichten.mjs regel 18 telt funnel-stap 'action' mee.",
+      "voorstel": "Pas isBetrokken aan: alleen events buiten PASSIEF en uit een vaste lijst bewuste acties (quiz_completed, oud_examen_quiz, flashcard, studieplan_generated, foutenboek_open, minigame, ai_chat, dagmissie_voltooid enzovoort). Markeer 'weggeklikt': apparaat met alle events binnen 30 seconden en zonder actie, en toon dat apart als 'bot of afhaker'. Pas prognose en doelen op het nieuwe cijfer aan."
+    },
+    {
+      "id": "B-16",
+      "gemaakt": "2026-11-19",
+      "status": "open",
+      "prioriteit": 1,
+      "grootte": "klein",
+      "soort": "content",
+      "titel": "Routine-prompt en poort: geen stopwoorden, geen aanhalingstekens om opties, geen sjabloonuitleg",
+      "waarom": "De dagelijkse routine maakt dit probleem elke dag groter: 43 nieuwe wiskundemodules deze week met dezelfde fouten als vorige week.",
+      "bewijs": "havo wa 864/864 sjabloonuitleg en 347/864 vragen met stopwoord in een fout antwoord; havo wb 297/297 en 143/297. Totaal in vwo en, havo wa, havo wb en vmbo en: ruim 1270 vragen met stopwoord, nooit in het goede antwoord. Geen enkele commit met [B-11] of [B-13].",
+      "voorstel": "Zet de regel in docs/ROUTINE-CONTENT-PROMPT.md en laat check-leerdoel.mjs de stopwoorden (', I suppose', ', I think', ', you know', ', zeg maar', ', volgens mij', ', eigenlijk', ', really'), aanhalingstekens om hele opties en de zin 'Denk aan de regel die hierbij hoort' hard afkeuren. Pauzeer de routine voor wa, wb en en tot de poort er staat en gebruik dan de opruimtaak van B-13 en B-11."
     }
   ]
 }
