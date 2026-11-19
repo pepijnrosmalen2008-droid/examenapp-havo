@@ -1,0 +1,682 @@
+{
+ "id": "B5",
+ "lo": "wb.B.5",
+ "gs": 2,
+ "naam": "Transformaties van grafieken en bijbehorende functievoorschriften",
+ "beschrijving": "Je voert transformaties uit op grafieken: translatie en vermenigvuldiging ten opzichte van de x-as en de y-as. Je volgt punten, stelt het voorschrift van de nieuwe grafiek op en controleert met een punt.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Translatie",
+  "Vermenigvuldiging ten opzichte van de assen",
+  "Top, beginpunt en asymptoot na transformatie",
+  "Beeldpunten volgen",
+  "Voorschrift opstellen"
+ ],
+ "sam": "Een getal binnen de haakjes werkt op x en een getal erbuiten op de y-waarde. Een translatie behoudt de vorm. Bij a·f(x) worden de y-waarden a keer zo groot, bij f(bx) de x-waarden 1/b keer. Volg een punt door de stappen en controleer het voorschrift met dat punt.",
+ "begrippen": [
+  {
+   "t": "Translatie",
+   "d": "Een verschuiving: f(x − p) + q schuift p naar rechts en q omhoog."
+  },
+  {
+   "t": "Vermenigvuldiging ten opzichte van de x-as",
+   "d": "a · f(x): de y-waarden worden a keer zo groot."
+  },
+  {
+   "t": "Vermenigvuldiging ten opzichte van de y-as",
+   "d": "f(bx): de x-waarden worden met 1/b vermenigvuldigd."
+  },
+  {
+   "t": "Beeldpunt",
+   "d": "Het punt waar een punt van de grafiek naartoe gaat na de transformatie."
+  },
+  {
+   "t": "Functievoorschrift opstellen",
+   "d": "Uit de transformatie van een bekende functie de nieuwe formule schrijven."
+  },
+  {
+   "t": "Top na transformatie",
+   "d": "Bij a(x − p)² + q ligt de top in (p, q)."
+  },
+  {
+   "t": "Beginpunt na transformatie",
+   "d": "Bij a·√(x − p) + q begint de grafiek in (p, q)."
+  },
+  {
+   "t": "Asymptoot na transformatie",
+   "d": "Bij 2^x + 3 schuift de horizontale asymptoot mee naar y = 3."
+  },
+  {
+   "t": "Volgorde van stappen",
+   "d": "Eerst de vermenigvuldiging, daarna de translatie, bij de gegeven opbouw van het voorschrift."
+  },
+  {
+   "t": "Smaller of breder",
+   "d": "f(2x) maakt de grafiek smaller, f(x/2) maakt hem breder."
+  },
+  {
+   "t": "Vorm blijft gelijk",
+   "d": "Een translatie verandert de vorm niet, een vermenigvuldiging wel."
+  },
+  {
+   "t": "Controleren met een punt",
+   "d": "Een punt volgen door de stappen en het voorschrift controleren."
+  }
+ ],
+ "sv": [
+  {
+   "v": "De functie g(x) = f(x) + 3 verschuift de grafiek van f. Hoe?",
+   "o": [
+    "\"3 naar rechts\"",
+    "\"3 omhoog\"",
+    "\"3 naar links\"",
+    "\"met factor 3 vermenigvuldigd\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3 naar rechts\"\"? Dan verwar je een verschuiving in y-richting met een verschuiving in x-richting. + 3 buiten f hoort bij de y-waarde, dus 3 omhoog.",
+    "Klopt: bij elke x komt er 3 bij de functiewaarde, dus de grafiek schuift 3 omhoog.",
+    "Koos je \"\"3 naar links\"\"? Dan verwar je + 3 met x + 3. Een getal buiten f verschuift de grafiek verticaal, dus 3 omhoog.",
+    "Koos je \"\"met factor 3 vermenigvuldigd\"\"? Dan denk je aan 3 · f(x). Hier staat + 3, dus de grafiek schuift 3 omhoog. Controleer je stap: de juiste uitkomst is 3 omhoog."
+   ],
+   "uh": "De functie g(x) = f(x) + 3 verschuift de grafiek van f. Hoe?"
+  },
+  {
+   "v": "Hoe verandert de grafiek bij g(x) = f(x − 2)?",
+   "o": [
+    "\"2 naar links, volgens mij\"",
+    "\"2 omhoog\"",
+    "\"2 omlaag\"",
+    "\"2 naar rechts\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2 naar links, volgens mij\"\"? Dan denk je dat het minteken naar links wijst. De grafiek schuift juist naar rechts, dus 2 naar rechts.",
+    "Koos je \"\"2 omhoog\"\"? Dan verwar je x − 2 met f(x) + 2. Een getal binnen de haakjes werkt op x, dus 2 naar rechts. Door de stappen goed na te lopen kom je uit op 2 naar rechts.",
+    "Koos je \"\"2 omlaag\"\"? Dan verwar je x − 2 met f(x) − 2. Binnen de haakjes verschuift de grafiek horizontaal, dus 2 naar rechts.",
+    "Klopt: g(x) = f(x − 2) neemt dezelfde waarde als f twee x-stappen eerder, dus de grafiek schuift 2 naar rechts."
+   ],
+   "uh": "Hoe verandert de grafiek bij g(x) = f(x − 2)?"
+  },
+  {
+   "v": "Alle y-waarden van f worden 3 keer zo groot: g(x) = 3·f(x). Welke transformatie is dit?",
+   "o": [
+    "\"vermenigvuldiging met factor 3 ten opzichte van de x-as\"",
+    "\"vermenigvuldiging met factor 3 ten opzichte van de y-as, I suppose\"",
+    "\"translatie van 3 omhoog\"",
+    "\"translatie van 3 naar rechts\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: alle y-waarden worden 3 keer zo groot, de nulpunten blijven op hun plaats.",
+    "Koos je \"\"vermenigvuldiging met factor 3 ten opzichte van de y-as, I suppose\"\"? Dan verwar je de x-as met de y-as. Een factor voor f(x) werkt op de y-waarden, dus ten opzichte van de x-as.",
+    "Koos je \"\"translatie van 3 omhoog\"\"? Dan verwar je vermenigvuldigen met optellen. Hier staat 3 · f(x), dus een vermenigvuldiging.",
+    "Koos je \"\"translatie van 3 naar rechts\"\"? Dan verwar je 3 · f(x) met f(x − 3). Een factor buiten f werkt op de y-waarden, dus een vermenigvuldiging."
+   ],
+   "uh": "Alle y-waarden van f worden 3 keer zo groot: g(x) = 3·f(x). Welke transformatie is dit?"
+  },
+  {
+   "v": "Welke vermenigvuldiging krijg je bij g(x) = f(2x)? Let op de haakjes.",
+   "o": [
+    "\"vermenigvuldiging met factor 2 ten opzichte van de y-as, eigenlijk\"",
+    "\"vermenigvuldiging met factor 2 ten opzichte van de x-as\"",
+    "\"vermenigvuldiging met factor 1/2 ten opzichte van de y-as\"",
+    "\"translatie van 2 naar links\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"vermenigvuldiging met factor 2 ten opzichte van de y-as, eigenlijk\"\"? Dan denk je dat de 2 de factor van de x-waarden is. Binnen de haakjes werkt het omgekeerd, dus factor 1/2.",
+    "Koos je \"\"vermenigvuldiging met factor 2 ten opzichte van de x-as\"\"? Dan verwar je f(2x) met 2 · f(x). Een factor binnen de haakjes werkt op x, dus ten opzichte van de y-as.",
+    "Klopt: de x-waarden worden twee keer zo klein, dus de grafiek wordt smaller.",
+    "Koos je \"\"translatie van 2 naar links\"\"? Dan verwar je f(2x) met f(x + 2). Een factor is geen optelling, dus een vermenigvuldiging."
+   ],
+   "uh": "Welke vermenigvuldiging krijg je bij g(x) = f(2x)? Let op de haakjes."
+  },
+  {
+   "v": "Welke horizontale asymptoot heeft de grafiek van y = 2^x + 3?",
+   "o": [
+    "\"y = 0, gewoon\"",
+    "\"y = 3\"",
+    "\"x = 3\"",
+    "\"y = 2\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 0, gewoon\"\"? Dan vergeet je de translatie. De asymptoot van 2^x schuift 3 omhoog, dus y = 3. Het goede antwoord is y = 3.",
+    "Klopt: 2^x nadert 0, dus y nadert 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 3\"\"? Dan verwar je een horizontale met een verticale lijn. De asymptoot is een y-waarde, dus y = 3. Door de stappen goed na te lopen kom je uit op y = 3.",
+    "Koos je \"\"y = 2\"\"? Dan neem je het grondtal. Dat bepaalt de groei, niet de asymptoot, dus y = 3. Controleer je stap: de juiste uitkomst is y = 3."
+   ],
+   "uh": "Welke horizontale asymptoot heeft de grafiek van y = 2^x + 3?"
+  },
+  {
+   "v": "Welke eigenschap van de grafiek blijft gelijk bij een translatie?",
+   "o": [
+    "\"de top\"",
+    "\"de nulpunten\"",
+    "\"het snijpunt met de y-as\"",
+    "\"de vorm van de grafiek\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de top\"\"? Dan denk je dat de top op zijn plaats blijft. Hij schuift mee, dus alleen de vorm blijft gelijk. Het goede antwoord is de vorm van de grafiek.",
+    "Koos je \"\"de nulpunten\"\"? Dan denk je dat de nulpunten vastliggen. Ze schuiven mee, dus alleen de vorm blijft gelijk. Door de stappen goed na te lopen kom je uit op de vorm van de grafiek.",
+    "Koos je \"\"het snijpunt met de y-as\"\"? Dan denk je dat dit punt vastligt. Bij een translatie verandert het, dus alleen de vorm blijft gelijk.",
+    "Klopt: een translatie verschuift alles, maar vervormt niets."
+   ],
+   "uh": "Welke eigenschap van de grafiek blijft gelijk bij een translatie?"
+  },
+  {
+   "v": "Een punt (4, 2) schuift 1 naar rechts en 3 omhoog. Welk punt is het beeld?",
+   "o": [
+    "\"(5, 5)\"",
+    "\"(3, −1), to be honest\"",
+    "\"(7, 3)\"",
+    "\"(5, −1)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 4 + 1 = 5 en 2 + 3 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(3, −1), to be honest\"\"? Dan schuif je de verkeerde kant op. Naar rechts is plus en omhoog is plus, dus (5, 5). Het goede antwoord is (5, 5).",
+    "Koos je \"\"(7, 3)\"\"? Dan tel je de verkeerde getallen op. Je telt 1 bij x en 3 bij y, dus (5, 5). Door de stappen goed na te lopen kom je uit op (5, 5).",
+    "Koos je \"\"(5, −1)\"\"? Dan trek je 3 van y af. Omhoog betekent optellen, dus (5, 5). Controleer je stap: de juiste uitkomst is (5, 5)."
+   ],
+   "uh": "Een punt (4, 2) schuift 1 naar rechts en 3 omhoog. Welk punt is het beeld?"
+  },
+  {
+   "v": "Welke top heeft g(x) = (x − 3)² + 2?",
+   "o": [
+    "\"(−3, 2), zeg maar\"",
+    "\"(3, −2)\"",
+    "\"(3, 2)\"",
+    "\"(2, 3)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(−3, 2), zeg maar\"\"? Dan neem je het teken uit de haakjes over. (x − 3) schuift naar rechts, dus (3, 2). Het goede antwoord is (3, 2).",
+    "Koos je \"\"(3, −2)\"\"? Dan verander je het teken van de + 2. Dat is 2 omhoog, dus (3, 2). Door de stappen goed na te lopen kom je uit op (3, 2).",
+    "Klopt: de top van x² schuift 3 naar rechts en 2 omhoog. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(2, 3)\"\"? Dan verwissel je de coördinaten. De x-coördinaat is 3 en de y-coördinaat 2, dus (3, 2). Controleer je stap: de juiste uitkomst is (3, 2)."
+   ],
+   "uh": "Welke top heeft g(x) = (x − 3)² + 2?",
+   "ctx": "De functie f(x) = x² wordt getransformeerd tot g(x) = (x − 3)² + 2: een translatie van 3 naar rechts en 2 omhoog. Een leerling bepaalt de top, g(5) en het snijpunt met de y-as en controleert zijn antwoorden."
+  },
+  {
+   "v": "Bereken g(5).",
+   "o": [
+    "\"4\"",
+    "\"6\"",
+    "\"8\"",
+    "\"27\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4\"\"? Dan vergeet je + 2. g(5) = (5 − 3)² + 2, dus 6. Het goede antwoord is 6.",
+    "Klopt: (5 − 3)² + 2 = 4 + 2 = 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8\"\"? Dan vermenigvuldig je 2 met 4. De + 2 is een optelling, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+    "Koos je \"\"27\"\"? Dan kwadrateer je 5 zonder de translatie. Het is (5 − 3)² + 2, dus 6. Controleer je stap: de juiste uitkomst is 6."
+   ],
+   "uh": "Bereken g(5).",
+   "ctx": "De functie f(x) = x² wordt getransformeerd tot g(x) = (x − 3)² + 2: een translatie van 3 naar rechts en 2 omhoog. Een leerling bepaalt de top, g(5) en het snijpunt met de y-as en controleert zijn antwoorden."
+  },
+  {
+   "v": "Waar snijdt de grafiek van g de y-as? Geef de y-waarde.",
+   "o": [
+    "\"9\"",
+    "\"−7\"",
+    "\"5\"",
+    "\"11\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9\"\"? Dan vergeet je + 2. g(0) = (−3)² + 2, dus 11. Het goede antwoord is 11.",
+    "Koos je \"\"−7\"\"? Dan kwadrateer je −3 als −9. (−3)² = 9, dus 11. Door de stappen goed na te lopen kom je uit op 11.",
+    "Koos je \"\"5\"\"? Dan tel je 3 en 2 op. g(0) = (0 − 3)² + 2, dus 11. Controleer je stap: de juiste uitkomst is 11.",
+    "Klopt: g(0) = (0 − 3)² + 2 = 9 + 2 = 11. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waar snijdt de grafiek van g de y-as? Geef de y-waarde.",
+   "ctx": "De functie f(x) = x² wordt getransformeerd tot g(x) = (x − 3)² + 2: een translatie van 3 naar rechts en 2 omhoog. Een leerling bepaalt de top, g(5) en het snijpunt met de y-as en controleert zijn antwoorden."
+  },
+  {
+   "v": "Naar welk punt gaat (2, 4) bij h(x) = 3·x²?",
+   "o": [
+    "\"(2, 12)\"",
+    "\"(6, 4)\"",
+    "\"(2, 7)\"",
+    "\"(2, 4/3), I think\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de x-waarde blijft 2 en de y-waarde wordt 3 · 4 = 12.",
+    "Koos je \"\"(6, 4)\"\"? Dan vermenigvuldig je de x-waarde. Een factor buiten f werkt op de y-waarde, dus (2, 12). Het goede antwoord is (2, 12).",
+    "Koos je \"\"(2, 7)\"\"? Dan tel je 3 bij 4 op. Hier staat 3 · x², dus (2, 12). Door de stappen goed na te lopen kom je uit op (2, 12).",
+    "Koos je \"\"(2, 4/3), I think\"\"? Dan deel je door 3. Een factor 3 maakt de waarden groter, dus (2, 12). Controleer je stap: de juiste uitkomst is (2, 12)."
+   ],
+   "uh": "Naar welk punt gaat (2, 4) bij h(x) = 3·x²?",
+   "ctx": "De functie f(x) = x² wordt met factor 3 vermenigvuldigd ten opzichte van de x-as: h(x) = 3·x². Een leerling kijkt wat er met het punt (2, 4) gebeurt en wat er met de top en de nulpunten gebeurt."
+  },
+  {
+   "v": "Welk punt blijft op zijn plaats bij vermenigvuldiging ten opzichte van de x-as?",
+   "o": [
+    "\"elk punt op de y-as, volgens mij, eigenlijk\"",
+    "\"het punt (1, 1)\"",
+    "\"een punt op de x-as, zoals (0, 0)\"",
+    "\"geen enkel punt\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"elk punt op de y-as, volgens mij, eigenlijk\"\"? Dan denk je dat de y-as vastligt. Alleen punten met y = 0 blijven staan, dus punten op de x-as.",
+    "Koos je \"\"het punt (1, 1)\"\"? Dan denk je dat een punt met gelijke coördinaten vastligt. (1, 1) wordt (1, 3), dus punten op de x-as.",
+    "Klopt: y = 0 blijft 0 na vermenigvuldigen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"geen enkel punt\"\"? Dan denk je dat alles verandert. Punten op de x-as blijven staan, dus (0, 0) blijft. Controleer je stap: de juiste uitkomst is een punt op de x-as, zoals (0, 0)."
+   ],
+   "uh": "Welk punt blijft op zijn plaats bij vermenigvuldiging ten opzichte van de x-as?",
+   "ctx": "De functie f(x) = x² wordt met factor 3 vermenigvuldigd ten opzichte van de x-as: h(x) = 3·x². Een leerling kijkt wat er met het punt (2, 4) gebeurt en wat er met de top en de nulpunten gebeurt."
+  },
+  {
+   "v": "Welke waarde heeft h(−2)?",
+   "o": [
+    "\"−12\"",
+    "\"12\"",
+    "\"36\"",
+    "\"6\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−12\"\"? Dan kwadrateer je −2 als −4. (−2)² = 4, dus 12. Het goede antwoord is 12.",
+    "Klopt: 3 · (−2)² = 3 · 4 = 12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"36\"\"? Dan kwadrateer je eerst 3 · (−2). Het is 3 · (−2)², dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"6\"\"? Dan reken je 3 · 2. Je moet ook kwadrateren, dus 12. Controleer je stap: de juiste uitkomst is 12."
+   ],
+   "uh": "Welke waarde heeft h(−2)?",
+   "ctx": "De functie f(x) = x² wordt met factor 3 vermenigvuldigd ten opzichte van de x-as: h(x) = 3·x². Een leerling kijkt wat er met het punt (2, 4) gebeurt en wat er met de top en de nulpunten gebeurt."
+  },
+  {
+   "v": "Naar welk punt van k gaat het punt (2, 4) van f?",
+   "o": [
+    "\"(4, 4), you know\"",
+    "\"(2, 8)\"",
+    "\"(2, 2)\"",
+    "\"(1, 4)\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(4, 4), you know\"\"? Dan verdubbel je de x-waarde. Bij f(2x) wordt x gehalveerd, dus (1, 4). Het goede antwoord is (1, 4).",
+    "Koos je \"\"(2, 8)\"\"? Dan verdubbel je de y-waarde. Hier verandert x, dus (1, 4). Door de stappen goed na te lopen kom je uit op (1, 4).",
+    "Koos je \"\"(2, 2)\"\"? Dan halveer je de y-waarde. De y-waarde blijft 4, dus (1, 4). Controleer je stap: de juiste uitkomst is (1, 4).",
+    "Klopt: k(1) = (2 · 1)² = 4, dus de x-waarde wordt gehalveerd."
+   ],
+   "uh": "Naar welk punt van k gaat het punt (2, 4) van f?",
+   "ctx": "De functie f(x) = x² wordt met factor 1/2 vermenigvuldigd ten opzichte van de y-as: k(x) = f(2x) = (2x)². Een leerling vergelijkt het punt (2, 4) van f met het bijbehorende punt van k en kijkt naar de breedte."
+  },
+  {
+   "v": "Schrijf k(x) = (2x)² zonder haakjes.",
+   "o": [
+    "\"4x²\"",
+    "\"2x²\"",
+    "\"4x\"",
+    "\"x²/4\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (2x)² = 2² · x² = 4x². Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2x²\"\"? Dan kwadrateer je alleen x. Ook de 2 wordt gekwadrateerd, dus 4x². Het goede antwoord is 4x².",
+    "Koos je \"\"4x\"\"? Dan vergeet je het kwadraat van x. (2x)² = 4x², dus 4x². Door de stappen goed na te lopen kom je uit op 4x².",
+    "Koos je \"\"x²/4\"\"? Dan deel je door 4. Het is een product met 4, dus 4x². Controleer je stap: de juiste uitkomst is 4x²."
+   ],
+   "uh": "Schrijf k(x) = (2x)² zonder haakjes.",
+   "ctx": "De functie f(x) = x² wordt met factor 1/2 vermenigvuldigd ten opzichte van de y-as: k(x) = f(2x) = (2x)². Een leerling vergelijkt het punt (2, 4) van f met het bijbehorende punt van k en kijkt naar de breedte."
+  },
+  {
+   "v": "Hoe verandert de breedte van de parabool door f(2x)?",
+   "o": [
+    "\"de parabool wordt breder\"",
+    "\"de parabool schuift naar links\"",
+    "\"de parabool wordt smaller\"",
+    "\"de parabool schuift omlaag\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de parabool wordt breder\"\"? Dan denk je dat de factor 2 het breder maakt. Bij f(2x) wordt x gehalveerd, dus smaller.",
+    "Koos je \"\"de parabool schuift naar links\"\"? Dan verwar je f(2x) met f(x + 2). Een factor is geen verschuiving, dus smaller.",
+    "Klopt: de waarden stijgen sneller, dus de grafiek wordt smaller.",
+    "Koos je \"\"de parabool schuift omlaag\"\"? Dan verwar je f(2x) met f(x) − 2. De top blijft op (0, 0), dus smaller. Controleer je stap: de juiste uitkomst is de parabool wordt smaller."
+   ],
+   "uh": "Hoe verandert de breedte van de parabool door f(2x)?",
+   "ctx": "De functie f(x) = x² wordt met factor 1/2 vermenigvuldigd ten opzichte van de y-as: k(x) = f(2x) = (2x)². Een leerling vergelijkt het punt (2, 4) van f met het bijbehorende punt van k en kijkt naar de breedte."
+  },
+  {
+   "v": "Voor welke x is k(x) = 16?",
+   "o": [
+    "\"x = 4 en x = −4, to be honest\"",
+    "\"x = 2 en x = −2\"",
+    "\"alleen x = 2\"",
+    "\"x = 8\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 4 en x = −4, to be honest\"\"? Dan neem je x² = 16. Eerst delen door 4, dus x = 2 of x = −2. Het goede antwoord is x = 2 en x = −2.",
+    "Klopt: 4x² = 16 geeft x² = 4, dus x = 2 of x = −2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"alleen x = 2\"\"? Dan vergeet je de negatieve wortel. Ook (−2)² = 4, dus x = 2 of x = −2. Door de stappen goed na te lopen kom je uit op x = 2 en x = −2.",
+    "Koos je \"\"x = 8\"\"? Dan deel je 16 door 2. 4x² = 16 geeft x² = 4, dus x = ±2. Controleer je stap: de juiste uitkomst is x = 2 en x = −2."
+   ],
+   "uh": "Voor welke x is k(x) = 16?",
+   "ctx": "De functie f(x) = x² wordt met factor 1/2 vermenigvuldigd ten opzichte van de y-as: k(x) = f(2x) = (2x)². Een leerling vergelijkt het punt (2, 4) van f met het bijbehorende punt van k en kijkt naar de breedte."
+  },
+  {
+   "v": "Naar welk punt gaat (4, 2) van f(x) = √x na de drie stappen?",
+   "o": [
+    "\"(5, 5), I suppose\"",
+    "\"(4, 7)\"",
+    "\"(3, 7)\"",
+    "\"(5, 7)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(5, 5), I suppose\"\"? Dan vergeet je de factor 2. De y-waarde wordt 2 · 2 + 3, dus (5, 7). Het goede antwoord is (5, 7).",
+    "Koos je \"\"(4, 7)\"\"? Dan vergeet je de translatie naar rechts. x wordt 4 + 1, dus (5, 7). Door de stappen goed na te lopen kom je uit op (5, 7).",
+    "Koos je \"\"(3, 7)\"\"? Dan schuif je naar links. De translatie 1 naar rechts maakt x = 5, dus (5, 7). Controleer je stap: de juiste uitkomst is (5, 7).",
+    "Klopt: x: 4 + 1 = 5 en y: 2 · 2 + 3 = 7. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Naar welk punt gaat (4, 2) van f(x) = √x na de drie stappen?",
+   "ctx": "De functie p(x) = 2·√(x − 1) + 3 ontstaat uit f(x) = √x door een translatie van 1 naar rechts, een vermenigvuldiging met factor 2 ten opzichte van de x-as en een translatie van 3 omhoog. Een leerling volgt het punt (4, 2) van f."
+  },
+  {
+   "v": "Welk beginpunt heeft de grafiek van p?",
+   "o": [
+    "\"(1, 3)\"",
+    "\"(−1, 3), eigenlijk\"",
+    "\"(1, −3)\"",
+    "\"(0, 3)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het beginpunt (0, 0) van √x wordt (0 + 1, 2 · 0 + 3) = (1, 3).",
+    "Koos je \"\"(−1, 3), eigenlijk\"\"? Dan neem je het teken uit de haakjes over. x − 1 schuift naar rechts, dus (1, 3). Het goede antwoord is (1, 3).",
+    "Koos je \"\"(1, −3)\"\"? Dan verander je het teken van + 3. Dat is 3 omhoog, dus (1, 3). Door de stappen goed na te lopen kom je uit op (1, 3).",
+    "Koos je \"\"(0, 3)\"\"? Dan vergeet je de translatie naar rechts. Het beginpunt ligt bij x = 1, dus (1, 3). Controleer je stap: de juiste uitkomst is (1, 3)."
+   ],
+   "uh": "Welk beginpunt heeft de grafiek van p?",
+   "ctx": "De functie p(x) = 2·√(x − 1) + 3 ontstaat uit f(x) = √x door een translatie van 1 naar rechts, een vermenigvuldiging met factor 2 ten opzichte van de x-as en een translatie van 3 omhoog. Een leerling volgt het punt (4, 2) van f."
+  },
+  {
+   "v": "Welke waarde heeft p(5)?",
+   "o": [
+    "\"5\"",
+    "\"10\"",
+    "\"7\"",
+    "\"3\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5\"\"? Dan vergeet je de factor 2. p(5) = 2 · √4 + 3, dus 7. Het goede antwoord is 7.",
+    "Koos je \"\"10\"\"? Dan vermenigvuldig je ook de + 3 met 2. Alleen √(x − 1) krijgt de factor, dus 7. Door de stappen goed na te lopen kom je uit op 7.",
+    "Klopt: 2 · √4 + 3 = 2 · 2 + 3 = 7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3\"\"? Dan laat je de wortel weg. p(5) = 2 · 2 + 3, dus 7. Controleer je stap: de juiste uitkomst is 7."
+   ],
+   "uh": "Welke waarde heeft p(5)?",
+   "ctx": "De functie p(x) = 2·√(x − 1) + 3 ontstaat uit f(x) = √x door een translatie van 1 naar rechts, een vermenigvuldiging met factor 2 ten opzichte van de x-as en een translatie van 3 omhoog. Een leerling volgt het punt (4, 2) van f."
+  },
+  {
+   "v": "Welke vorm hoort bij de top (−2, 1) van een parabool?",
+   "o": [
+    "\"g(x) = a(x − 2)² + 1, denk ik\"",
+    "\"g(x) = a(x + 2)² + 1\"",
+    "\"g(x) = a(x + 2)² − 1\"",
+    "\"g(x) = a(x − 2)² − 1\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"g(x) = a(x − 2)² + 1, denk ik\"\"? Dan neem je het teken van de x-coördinaat over. Bij p = −2 staat (x + 2), dus a(x + 2)² + 1.",
+    "Klopt: de top (p, q) hoort bij a(x − p)² + q met p = −2.",
+    "Koos je \"\"g(x) = a(x + 2)² − 1\"\"? Dan verander je het teken van q. De top ligt bij y = 1, dus + 1. Door de stappen goed na te lopen kom je uit op g(x) = a(x + 2)² + 1.",
+    "Koos je \"\"g(x) = a(x − 2)² − 1\"\"? Dan verwar je beide tekens. Bij (−2, 1) staat (x + 2)² + 1, dus a(x + 2)² + 1. Controleer je stap: de juiste uitkomst is g(x) = a(x + 2)² + 1."
+   ],
+   "uh": "Welke vorm hoort bij de top (−2, 1) van een parabool?",
+   "ctx": "De parabool g heeft de top (−2, 1) en gaat door het punt (0, 5). Een leerling schrijft g(x) = a(x + 2)² + 1 op omdat g een translatie van y = x² is, bepaalt a met het punt (0, 5) en controleert met x = −1."
+  },
+  {
+   "v": "Welke waarde heeft a als g door (0, 5) gaat?",
+   "o": [
+    "\"4\"",
+    "\"5\"",
+    "\"1/4\"",
+    "\"1\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4\"\"? Dan neem je 4a als uitkomst. 4a + 1 = 5 geeft a = 1, dus a = 1. Het goede antwoord is 1.",
+    "Koos je \"\"5\"\"? Dan neem je de y-waarde als a. Los 4a + 1 = 5 op, dus a = 1. Door de stappen goed na te lopen kom je uit op 1.",
+    "Koos je \"\"1/4\"\"? Dan deel je 1 door 4. 4a = 4 geeft a = 1, dus a = 1. Controleer je stap: de juiste uitkomst is 1.",
+    "Klopt: a · (0 + 2)² + 1 = 4a + 1 = 5, dus a = 1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft a als g door (0, 5) gaat?",
+   "ctx": "De parabool g heeft de top (−2, 1) en gaat door het punt (0, 5). Een leerling schrijft g(x) = a(x + 2)² + 1 op omdat g een translatie van y = x² is, bepaalt a met het punt (0, 5) en controleert met x = −1."
+  },
+  {
+   "v": "Welke waarde geeft g(−1) met g(x) = (x + 2)² + 1?",
+   "o": [
+    "\"2\"",
+    "\"1\"",
+    "\"5\"",
+    "\"0\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (−1 + 2)² + 1 = 1 + 1 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1\"\"? Dan vergeet je + 1. g(−1) = (−1 + 2)² + 1, dus 2. Het goede antwoord is 2.",
+    "Koos je \"\"5\"\"? Dan neem je g(0). Hier is x = −1, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Koos je \"\"0\"\"? Dan trek je 1 af. De translatie is omhoog, dus 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Welke waarde geeft g(−1) met g(x) = (x + 2)² + 1?",
+   "ctx": "De parabool g heeft de top (−2, 1) en gaat door het punt (0, 5). Een leerling schrijft g(x) = a(x + 2)² + 1 op omdat g een translatie van y = x² is, bepaalt a met het punt (0, 5) en controleert met x = −1."
+  },
+  {
+   "v": "Bereken g(3) bij g(x) = 2^(x − 3).",
+   "o": [
+    "\"8\"",
+    "\"3\"",
+    "\"1\"",
+    "\"0\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8\"\"? Dan neem je 2³. De exponent is 3 − 3 = 0, dus 1. Het goede antwoord is 1.",
+    "Koos je \"\"3\"\"? Dan neem je het getal 3 uit het voorschrift. De exponent is 0, dus 2⁰ = 1. Door de stappen goed na te lopen kom je uit op 1.",
+    "Klopt: 2^(3 − 3) = 2⁰ = 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0\"\"? Dan neem je de exponent als uitkomst. 2⁰ = 1, dus 1. Controleer je stap: de juiste uitkomst is 1."
+   ],
+   "uh": "Bereken g(3) bij g(x) = 2^(x − 3).",
+   "ctx": "Gegeven zijn f(x) = 2^x, g(x) = 2^(x − 3) en h(x) = 2^x + 3. Een leerling bepaalt g(3) en g(0) en de asymptoten, en toont aan dat g(x) = 2^x/8, zodat g ook een vermenigvuldiging ten opzichte van de x-as van f is."
+  },
+  {
+   "v": "Hoe groot is de uitkomst als je x = 0 invult in g(x) = 2^(x − 3)?",
+   "o": [
+    "\"−3\"",
+    "\"0,125\"",
+    "\"8\"",
+    "\"−8\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−3\"\"? Dan neem je de exponent als uitkomst. 2^(−3) = 1/8, dus 0,125. Het goede antwoord is 0,125.",
+    "Klopt: 2^(−3) = 1/8 = 0,125. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8\"\"? Dan neem je 2³. Een negatieve exponent geeft een breuk, dus 1/8 = 0,125. Door de stappen goed na te lopen kom je uit op 0,125.",
+    "Koos je \"\"−8\"\"? Dan maak je er een negatief getal van. Een macht van 2 is altijd positief, dus 0,125. Controleer je stap: de juiste uitkomst is 0,125."
+   ],
+   "uh": "Hoe groot is de uitkomst als je x = 0 invult in g(x) = 2^(x − 3)?",
+   "ctx": "Gegeven zijn f(x) = 2^x, g(x) = 2^(x − 3) en h(x) = 2^x + 3. Een leerling bepaalt g(3) en g(0) en de asymptoten, en toont aan dat g(x) = 2^x/8, zodat g ook een vermenigvuldiging ten opzichte van de x-as van f is."
+  },
+  {
+   "v": "Welke horizontale asymptoot heeft h(x) = 2^x + 3?",
+   "o": [
+    "\"y = 0, denk ik\"",
+    "\"y = 2\"",
+    "\"x = 3\"",
+    "\"y = 3\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 0, denk ik\"\"? Dan vergeet je de translatie. De asymptoot schuift 3 omhoog, dus y = 3. Het goede antwoord is y = 3.",
+    "Koos je \"\"y = 2\"\"? Dan neem je het grondtal. Dat is de groeifactor, dus y = 3. Door de stappen goed na te lopen kom je uit op y = 3.",
+    "Koos je \"\"x = 3\"\"? Dan verwar je een horizontale met een verticale lijn. De asymptoot is een y-waarde, dus y = 3. Controleer je stap: de juiste uitkomst is y = 3.",
+    "Klopt: 2^x nadert 0 en dus nadert h(x) de waarde 3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke horizontale asymptoot heeft h(x) = 2^x + 3?",
+   "ctx": "Gegeven zijn f(x) = 2^x, g(x) = 2^(x − 3) en h(x) = 2^x + 3. Een leerling bepaalt g(3) en g(0) en de asymptoten, en toont aan dat g(x) = 2^x/8, zodat g ook een vermenigvuldiging ten opzichte van de x-as van f is."
+  },
+  {
+   "v": "Welke vermenigvuldiging ten opzichte van de x-as hoort bij g(x) = 2^(x − 3)?",
+   "o": [
+    "\"factor 1/8\"",
+    "\"factor 8\"",
+    "\"factor 3\"",
+    "\"factor 1/3, volgens mij\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst de transformatie, volg een punt van de oorspronkelijke grafiek en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2^(x − 3) = 2^x · 2^(−3) = 2^x/8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"factor 8\"\"? Dan draai je de factor om. 2^(−3) = 1/8, dus factor 1/8. Het goede antwoord is factor 1/8.",
+    "Koos je \"\"factor 3\"\"? Dan neem je het getal 3 uit het voorschrift. De factor is 2^(−3), dus 1/8. Door de stappen goed na te lopen kom je uit op factor 1/8.",
+    "Koos je \"\"factor 1/3, volgens mij\"\"? Dan deel je door 3. De factor is 2^(−3) = 1/8, dus 1/8. Controleer je stap: de juiste uitkomst is factor 1/8."
+   ],
+   "uh": "Welke vermenigvuldiging ten opzichte van de x-as hoort bij g(x) = 2^(x − 3)?",
+   "ctx": "Gegeven zijn f(x) = 2^x, g(x) = 2^(x − 3) en h(x) = 2^x + 3. Een leerling bepaalt g(3) en g(0) en de asymptoten, en toont aan dat g(x) = 2^x/8, zodat g ook een vermenigvuldiging ten opzichte van de x-as van f is."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt g(x) = (x + 1)² − 4, die uit f(x) = x² ontstaat door een translatie. Hij bepaalt de top, de nulpunten en het snijpunt met de y-as en controleert met x = 0.",
+   "v": "Bepaal de top, de nulpunten en het snijpunt met de y-as van g.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De top is (−1, −4) (1p). (x + 1)² = 4 geeft x = 1 of x = −3 (1p). g(0) = 1 − 4 = −3, dus (0, −3) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De functie g(x) = 3·√x ontstaat uit f(x) = √x door een vermenigvuldiging. Een leerling bepaalt welke vermenigvuldiging het is en volgt het punt (4, 2) en het punt (9, 3) van f.",
+   "v": "Geef de transformatie en de beeldpunten van (4, 2) en (9, 3).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Factor 3 ten opzichte van de x-as (1p). (4, 2) wordt (4, 6) (1p). (9, 3) wordt (9, 9) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt g(x) = 2^x − 4, die uit f(x) = 2^x ontstaat door een translatie. Hij bepaalt de horizontale asymptoot, het snijpunt met de y-as en het nulpunt van g.",
+   "v": "Bepaal de asymptoot, het snijpunt met de y-as en het nulpunt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De horizontale asymptoot is y = −4 (1p). g(0) = 1 − 4 = −3 (1p). 2^x = 4 geeft x = 2 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De parabool g ontstaat uit y = x² door een translatie van 2 naar rechts en 3 omlaag en een vermenigvuldiging met factor a. Hij gaat door (0, 5). Een leerling stelt g(x) = a(x − 2)² − 3 op.",
+   "v": "Bepaal a en schrijf het voorschrift van g op.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "g(0) = a · 4 − 3 = 5 (1p) geeft a = 2 (1p). g(x) = 2(x − 2)² − 3, controle g(1) = −1 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De functie p(x) = 3·(x − 2)² + 1 ontstaat uit f(x) = x² door drie stappen. Een leerling noemt de stappen in de goede volgorde en berekent de top, p(3) en p(0).",
+   "v": "Noem de stappen en bereken de top, p(3) en p(0).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Translatie 2 naar rechts, vermenigvuldiging met factor 3 ten opzichte van de x-as en translatie 1 omhoog (1p). De top is (2, 1) en p(3) = 4 (1p). p(0) = 3 · 4 + 1 = 13 (1p)."
+  }
+ ]
+}

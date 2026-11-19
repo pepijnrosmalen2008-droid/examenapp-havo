@@ -5495,6 +5495,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B5",
+      "lo": "wb.B.5",
+      "gs": 2,
+      "naam": "Transformaties van grafieken en bijbehorende functievoorschriften",
+      "beschrijving": "Je voert transformaties uit op grafieken: translatie en vermenigvuldiging ten opzichte van de x-as en de y-as. Je volgt punten, stelt het voorschrift van de nieuwe grafiek op en controleert met een punt.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Translatie",
+       "Vermenigvuldiging ten opzichte van de assen",
+       "Top, beginpunt en asymptoot na transformatie",
+       "Beeldpunten volgen",
+       "Voorschrift opstellen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
