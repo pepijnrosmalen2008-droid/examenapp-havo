@@ -5453,6 +5453,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B3",
+      "lo": "wb.B.3",
+      "gs": 2,
+      "naam": "Exponentiële en logaritmische functies: groeifactor, verdubbelingstijd en halveringstijd",
+      "beschrijving": "Je werkt met exponentiële groei en afname: je bepaalt beginwaarde en groeifactor, stelt een voorschrift op, rekent met verdubbelings- en halveringstijd en lost exponentiële vergelijkingen op met logaritmen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Beginwaarde en groeifactor",
+       "Voorschrift opstellen en rekenen",
+       "Verdubbelings- en halveringstijd",
+       "Logaritmen",
+       "Grafiek en eigenschappen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

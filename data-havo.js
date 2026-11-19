@@ -232955,6 +232955,688 @@ var VAKKEN = [
         "u": "4/(x − 2) + 1 = (4 + x − 2)/(x − 2) (1p) = (x + 2)/(x − 2) (1p). Bij x = 4: 6/2 = 3 en 4/2 + 1 = 3 (1p)."
        }
       ]
+     },
+     {
+      "id": "B3",
+      "lo": "wb.B.3",
+      "gs": 2,
+      "naam": "Exponentiële en logaritmische functies: groeifactor, verdubbelingstijd en halveringstijd",
+      "beschrijving": "Je werkt met exponentiële groei en afname: je bepaalt beginwaarde en groeifactor, stelt een voorschrift op, rekent met verdubbelings- en halveringstijd en lost exponentiële vergelijkingen op met logaritmen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Beginwaarde en groeifactor",
+       "Voorschrift opstellen en rekenen",
+       "Verdubbelings- en halveringstijd",
+       "Logaritmen",
+       "Grafiek en eigenschappen"
+      ],
+      "sam": "Bij f(t) = b · g^t is b de beginwaarde en g de groeifactor: 100% plus of min het percentage. De verdubbelingstijd volgt uit g^t = 2 en de halveringstijd uit g^t = 0,5. Een logaritme geeft de exponent. De grafiek heeft de horizontale asymptoot y = 0. Controleer met een getal.",
+      "begrippen": [
+       {
+        "t": "Exponentiële functie",
+        "d": "Een functie f(t) = b · g^t met beginwaarde b en groeifactor g."
+       },
+       {
+        "t": "Beginwaarde",
+        "d": "De waarde bij t = 0, zoals 500 bij N(t) = 500 · 2^t."
+       },
+       {
+        "t": "Groeifactor",
+        "d": "Het getal waarmee je per tijdseenheid vermenigvuldigt, zoals 1,2 bij 20% groei."
+       },
+       {
+        "t": "Groeipercentage",
+        "d": "Het percentage per tijdseenheid: groeifactor 1,04 hoort bij 4% groei."
+       },
+       {
+        "t": "Afnamefactor",
+        "d": "Een groeifactor kleiner dan 1, zoals 0,85 bij 15% afname."
+       },
+       {
+        "t": "Verdubbelingstijd",
+        "d": "De tijd waarin de waarde 2 keer zo groot wordt."
+       },
+       {
+        "t": "Halveringstijd",
+        "d": "De tijd waarin de waarde de helft wordt, zoals 6 uur bij 80 · 0,5^(t/6)."
+       },
+       {
+        "t": "Logaritme",
+        "d": "De exponent waarmee je het grondtal tot de macht moet nemen: ²log 8 = 3."
+       },
+       {
+        "t": "Grondtal",
+        "d": "Het getal g in g^x of ᵍlog x."
+       },
+       {
+        "t": "Horizontale asymptoot",
+        "d": "De lijn y = 0 waar een exponentiële grafiek dicht naartoe loopt."
+       },
+       {
+        "t": "Rente op rente",
+        "d": "Bij exponentiële groei groeit ook de eerder bijgeschreven rente mee."
+       },
+       {
+        "t": "Inverse functie",
+        "d": "De functie die x uit y teruggeeft: bij y = 2^x hoort x = ²log y."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke groeifactor hoort bij een toename van 20% per jaar?",
+        "o": [
+         "\"0,2\"",
+         "\"1,2\"",
+         "\"1,02\"",
+         "\"20\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,2\"\"? Dan neem je alleen het percentage. De oude waarde blijft ook bestaan, dus 1,2. Het goede antwoord is 1,2.",
+         "Klopt: 100% + 20% = 120%, dus de groeifactor is 1,2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1,02\"\"? Dan zet dit je de komma een plaats te ver. 120% = 1,20, dus 1,2. Door de stappen goed na te lopen kom je uit op 1,2.",
+         "Koos je \"\"20\"\"? Dan neem je het percentage zelf. De groeifactor is 120% = 1,2, dus 1,2. Controleer je stap: de juiste uitkomst is 1,2."
+        ],
+        "uh": "Welke groeifactor hoort bij een toename van 20% per jaar?"
+       },
+       {
+        "v": "Een stof neemt elk jaar met 15% af. Met welk getal vermenigvuldig je jaarlijks?",
+        "o": [
+         "\"0,15\"",
+         "\"1,15\"",
+         "\"85\"",
+         "\"0,85\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,15\"\"? Dan neem je het percentage dat verdwijnt. 85% blijft over, dus 0,85. Het goede antwoord is 0,85.",
+         "Koos je \"\"1,15\"\"? Dan tel je 15% op in plaats van af. Bij afname trek je af, dus 0,85. Door de stappen goed na te lopen kom je uit op 0,85.",
+         "Koos je \"\"85\"\"? Dan vergeet je de komma. 85% is 0,85, dus 0,85. Controleer je stap: de juiste uitkomst is 0,85.",
+         "Klopt: 100% − 15% = 85%, dus 0,85. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Een stof neemt elk jaar met 15% af. Met welk getal vermenigvuldig je jaarlijks?"
+       },
+       {
+        "v": "Bij N(t) = 500 · 2^t: welk getal is de beginwaarde?",
+        "o": [
+         "\"500\"",
+         "\"2\"",
+         "\"1\"",
+         "\"t\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: N(0) = 500 · 2⁰ = 500. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2\"\"? Dan verwar je de beginwaarde met de groeifactor. Het getal 2 is de groeifactor, dus 500. Het goede antwoord is 500.",
+         "Koos je \"\"1\"\"? Dan neem je 2⁰ als beginwaarde. Je moet 500 · 2⁰ nemen, dus 500. Door de stappen goed na te lopen kom je uit op 500.",
+         "Koos je \"\"t\"\"? Dan neem je de variabele. De beginwaarde is N(0), dus 500. Controleer je stap: de juiste uitkomst is 500."
+        ],
+        "uh": "Bij N(t) = 500 · 2^t: welk getal is de beginwaarde?"
+       },
+       {
+        "v": "Welke waarde heeft ²log 8?",
+        "o": [
+         "\"4\"",
+         "\"16\"",
+         "\"3\"",
+         "\"2\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4\"\"? Dan deel je 8 door 2. De logaritme is de exponent bij grondtal 2, dus 3. Het goede antwoord is 3.",
+         "Koos je \"\"16\"\"? Dan vermenigvuldig je 8 met 2. De logaritme geeft de exponent, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+         "Klopt: 2³ = 8, dus ²log 8 = 3. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2\"\"? Dan neem je het grondtal. De logaritme is de exponent van 2, dus 3. Controleer je stap: de juiste uitkomst is 3."
+        ],
+        "uh": "Welke waarde heeft ²log 8?"
+       },
+       {
+        "v": "Welke waarde heeft log 1000 (grondtal 10)?",
+        "o": [
+         "\"10\"",
+         "\"3\"",
+         "\"100\"",
+         "\"30\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10\"\"? Dan neem je het grondtal. De logaritme is de exponent, dus 3. Het goede antwoord is 3.",
+         "Klopt: 10³ = 1000. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"100\"\"? Dan deel je 1000 door 10. De logaritme is de exponent, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+         "Koos je \"\"30\"\"? Dan vermenigvuldig je het aantal nullen met 10. 10³ = 1000, dus 3. Controleer je stap: de juiste uitkomst is 3."
+        ],
+        "uh": "Welke waarde heeft log 1000 (grondtal 10)?"
+       },
+       {
+        "v": "Wat is de horizontale asymptoot van f(x) = 3 · 2^x?",
+        "o": [
+         "\"y = 3, denk ik\"",
+         "\"y = 2\"",
+         "\"x = 0\"",
+         "\"y = 0\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"y = 3, denk ik\"\"? Dan neem je de factor 3 als asymptoot. Die bepaalt f(0), dus y = 0. Het goede antwoord is y = 0.",
+         "Koos je \"\"y = 2\"\"? Dan neem je het grondtal als asymptoot. Dat is de groeifactor, dus y = 0. Door de stappen goed na te lopen kom je uit op y = 0.",
+         "Koos je \"\"x = 0\"\"? Dan verwar je met 1/x. Een exponentiële functie heeft een horizontale asymptoot, dus y = 0. Controleer je stap: de juiste uitkomst is y = 0.",
+         "Klopt: voor x naar −∞ gaat 2^x naar 0, dus de grafiek nadert de x-as."
+        ],
+        "uh": "Wat is de horizontale asymptoot van f(x) = 3 · 2^x?"
+       },
+       {
+        "v": "Voor welke x is ²log x gedefinieerd?",
+        "o": [
+         "\"x > 0\"",
+         "\"x ≥ 0\"",
+         "\"alle x, to be honest\"",
+         "\"x > 1\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je kunt alleen de logaritme van een positief getal nemen.",
+         "Koos je \"\"x ≥ 0\"\"? Dan neem je ook 0. ²log 0 bestaat niet, omdat 2^y nooit 0 is, dus x > 0. Het goede antwoord is x > 0.",
+         "Koos je \"\"alle x, to be honest\"\"? Dan denk je dat elke x mag. 2^y is altijd positief, dus x > 0. Door de stappen goed na te lopen kom je uit op x > 0.",
+         "Koos je \"\"x > 1\"\"? Dan neem je een te grote grens. ²log 0,5 = −1 bestaat, dus x > 0. Controleer je stap: de juiste uitkomst is x > 0."
+        ],
+        "uh": "Voor welke x is ²log x gedefinieerd?"
+       },
+       {
+        "v": "Hoeveel bacteriën zijn er na 3 uur?",
+        "o": [
+         "\"1500\"",
+         "\"1000\"",
+         "\"4000\"",
+         "\"2000\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1500\"\"? Dan vermenigvuldig je 500 met 3. De exponent betekent 2 · 2 · 2, dus 500 · 8 = 4000. Het goede antwoord is 4000.",
+         "Koos je \"\"1000\"\"? Dan vermenigvuldig je 500 met 2. Er zijn 3 verdubbelingen, dus 500 · 8 = 4000. Door de stappen goed na te lopen kom je uit op 4000.",
+         "Klopt: 500 · 2³ = 500 · 8 = 4000. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2000\"\"? Dan neem je 2² in plaats van 2³. Het zijn 3 uur, dus 500 · 8 = 4000. Controleer je stap: de juiste uitkomst is 4000."
+        ],
+        "uh": "Hoeveel bacteriën zijn er na 3 uur?",
+        "ctx": "Een kweker telt 500 bacteriën. Het aantal verdubbelt elk uur, dus N(t) = 500 · 2^t met t in uren. Een leerling berekent N voor t = 3 en onderzoekt hoe lang het duurt tot er 4000 bacteriën zijn."
+       },
+       {
+        "v": "Bij welke t geldt 500 · 2^t = 4000?",
+        "o": [
+         "\"8 uur, you know\"",
+         "\"3 uur\"",
+         "\"2 uur\"",
+         "\"4 uur\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"8 uur, you know\"\"? Dan deel je 4000 door 500. Dat geeft de factor 8, niet de tijd, dus 2³ = 8 geeft 3 uur. Het goede antwoord is 3 uur.",
+         "Klopt: 500 → 1000 → 2000 → 4000 zijn 3 verdubbelingen. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2 uur\"\"? Dan telt je één verdubbeling te weinig. Na 2 uur zijn er 2000, dus 3 uur. Door de stappen goed na te lopen kom je uit op 3 uur.",
+         "Koos je \"\"4 uur\"\"? Dan telt je één verdubbeling te veel. Na 4 uur zijn er 8000, dus 3 uur. Controleer je stap: de juiste uitkomst is 3 uur."
+        ],
+        "uh": "Bij welke t geldt 500 · 2^t = 4000?",
+        "ctx": "Een kweker telt 500 bacteriën. Het aantal verdubbelt elk uur, dus N(t) = 500 · 2^t met t in uren. Een leerling berekent N voor t = 3 en onderzoekt hoe lang het duurt tot er 4000 bacteriën zijn."
+       },
+       {
+        "v": "Hoe lang duurt het voordat het aantal bacteriën verdubbelt?",
+        "o": [
+         "\"2 uur\"",
+         "\"3 uur\"",
+         "\"500 uur\"",
+         "\"1 uur\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2 uur\"\"? Dan verwar je de groeifactor met de tijd. Elk uur verdubbelt het aantal, dus 1 uur. Het goede antwoord is 1 uur.",
+         "Koos je \"\"3 uur\"\"? Dan neem je de tijd voor 4000 bacteriën. Dat zijn drie verdubbelingen, dus 1 uur. Door de stappen goed na te lopen kom je uit op 1 uur.",
+         "Koos je \"\"500 uur\"\"? Dan neem je de beginwaarde als tijd. De beginwaarde is geen tijd, dus 1 uur. Controleer je stap: de juiste uitkomst is 1 uur.",
+         "Klopt: de groeifactor 2 hoort bij t = 1 uur, dus de verdubbelingstijd is 1 uur."
+        ],
+        "uh": "Hoe lang duurt het voordat het aantal bacteriën verdubbelt?",
+        "ctx": "Een kweker telt 500 bacteriën. Het aantal verdubbelt elk uur, dus N(t) = 500 · 2^t met t in uren. Een leerling berekent N voor t = 3 en onderzoekt hoe lang het duurt tot er 4000 bacteriën zijn."
+       },
+       {
+        "v": "Welke groeifactor per jaar hoort bij 4% rente?",
+        "o": [
+         "\"1,04\"",
+         "\"0,04\"",
+         "\"4\"",
+         "\"1,4\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 100% + 4% = 104%, dus 1,04. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0,04\"\"? Dan neem je alleen de rente. Het saldo blijft ook bestaan, dus 1,04. Het goede antwoord is 1,04.",
+         "Koos je \"\"4\"\"? Dan neem je het percentage zelf. 104% is 1,04, dus 1,04. Door de stappen goed na te lopen kom je uit op 1,04.",
+         "Koos je \"\"1,4\"\"? Dan zet dit je de komma verkeerd. 4% is 0,04, dus 1,04. Controleer je stap: de juiste uitkomst is 1,04."
+        ],
+        "uh": "Welke groeifactor per jaar hoort bij 4% rente?",
+        "ctx": "Iemand zet € 2000 op een spaarrekening met 4% rente per jaar. Het saldo is K(t) = 2000 · 1,04^t met t in jaren. Een leerling berekent het saldo na 5 jaar en vergelijkt dat met vijf keer 4% rente."
+       },
+       {
+        "v": "Hoeveel euro is het saldo na 5 jaar, afgerond op centen?",
+        "o": [
+         "\"€ 2400,00\"",
+         "\"€ 2080,00\"",
+         "\"€ 2433,31\"",
+         "\"€ 10 400,00\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€ 2400,00\"\"? Dan tel je vijf keer 4% van 2000 op. De rente groeit zelf ook mee, dus € 2433,31. Het goede antwoord is € 2433,31.",
+         "Koos je \"\"€ 2080,00\"\"? Dan reken je maar één jaar. Je moet 1,04⁵ nemen, dus € 2433,31. Door de stappen goed na te lopen kom je uit op € 2433,31.",
+         "Klopt: 1,04⁵ ≈ 1,21665 en 2000 · 1,21665 ≈ 2433,31. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€ 10 400,00\"\"? Dan vermenigvuldig je 2000 met 5 en 1,04. Het is 2000 · 1,04⁵, dus € 2433,31. Controleer je stap: de juiste uitkomst is € 2433,31."
+        ],
+        "uh": "Hoeveel euro is het saldo na 5 jaar, afgerond op centen?",
+        "ctx": "Iemand zet € 2000 op een spaarrekening met 4% rente per jaar. Het saldo is K(t) = 2000 · 1,04^t met t in jaren. Een leerling berekent het saldo na 5 jaar en vergelijkt dat met vijf keer 4% rente."
+       },
+       {
+        "v": "Waarom is vijf keer 4% rente niet het exacte rendement?",
+        "o": [
+         "\"banken rekenen minder rente, zeg maar, gewoon\"",
+         "\"de rente over eerdere rente groeit mee\"",
+         "\"1,04 is kleiner dan 4%\"",
+         "\"het saldo neemt lineair toe\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"banken rekenen minder rente, zeg maar, gewoon\"\"? Dan denk je dat de bank minder geeft. De rente is 4% per jaar over het huidige saldo, dus rente over rente.",
+         "Klopt: elk jaar wordt over een hoger saldo 4% berekend. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1,04 is kleiner dan 4%\"\"? Dan verwar je de groeifactor met het percentage. 1,04 hoort bij 4%, dus het verschil zit in rente over rente.",
+         "Koos je \"\"het saldo neemt lineair toe\"\"? Dan denk je aan een vast bedrag per jaar. Bij exponentiële groei groeit het bedrag zelf, dus rente over rente."
+        ],
+        "uh": "Waarom is vijf keer 4% rente niet het exacte rendement?",
+        "ctx": "Iemand zet € 2000 op een spaarrekening met 4% rente per jaar. Het saldo is K(t) = 2000 · 1,04^t met t in jaren. Een leerling berekent het saldo na 5 jaar en vergelijkt dat met vijf keer 4% rente."
+       },
+       {
+        "v": "Na hoeveel uur is de hoeveelheid medicijn gehalveerd?",
+        "o": [
+         "\"12 uur\"",
+         "\"3 uur\"",
+         "\"0,5 uur\"",
+         "\"6 uur\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"12 uur\"\"? Dan neem je twee halveringen. Na 12 uur is nog 20 mg over, dus 6 uur. Het goede antwoord is 6 uur.",
+         "Koos je \"\"3 uur\"\"? Dan deel je 6 door 2. De exponent t/6 is 1 bij t = 6, dus 6 uur. Door de stappen goed na te lopen kom je uit op 6 uur.",
+         "Koos je \"\"0,5 uur\"\"? Dan neem je de groeifactor als tijd. 0,5 is de factor per halveringstijd, dus 6 uur. Controleer je stap: de juiste uitkomst is 6 uur.",
+         "Klopt: bij t = 6 is 0,5^(6/6) = 0,5, dus A(6) = 40. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Na hoeveel uur is de hoeveelheid medicijn gehalveerd?",
+        "ctx": "Een medicijn wordt afgebroken. De hoeveelheid is A(t) = 80 · 0,5^(t/6) mg, met t in uren. Een leerling berekent A voor t = 12 en t = 18 en leest de halveringstijd af uit het voorschrift."
+       },
+       {
+        "v": "Bereken A(12) in mg.",
+        "o": [
+         "\"20 mg\"",
+         "\"40 mg\"",
+         "\"10 mg\"",
+         "\"6,7 mg, really\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 0,5^(12/6) = 0,5² = 0,25 en 80 · 0,25 = 20. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"40 mg\"\"? Dan telt je één halvering. Na 12 uur zijn het twee halveringen, dus 20 mg. Het goede antwoord is 20 mg.",
+         "Koos je \"\"10 mg\"\"? Dan telt je drie halveringen. Na 12 uur zijn het er twee, dus 20 mg. Door de stappen goed na te lopen kom je uit op 20 mg.",
+         "Koos je \"\"6,7 mg, really\"\"? Dan deel je 80 door 12. Het voorschrift is 80 · 0,5^(t/6), dus 20 mg. Controleer je stap: de juiste uitkomst is 20 mg."
+        ],
+        "uh": "Bereken A(12) in mg.",
+        "ctx": "Een medicijn wordt afgebroken. De hoeveelheid is A(t) = 80 · 0,5^(t/6) mg, met t in uren. Een leerling berekent A voor t = 12 en t = 18 en leest de halveringstijd af uit het voorschrift."
+       },
+       {
+        "v": "Er zijn drie halveringstijden verstreken. Hoeveel mg blijft er over?",
+        "o": [
+         "\"20 mg, I think\"",
+         "\"40 mg\"",
+         "\"10 mg\"",
+         "\"5 mg\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20 mg, I think\"\"? Dan telt je twee halveringen. 18 : 6 = 3, dus 10 mg. Het goede antwoord is 10 mg.",
+         "Koos je \"\"40 mg\"\"? Dan telt je één halvering. 18 : 6 = 3, dus 10 mg. Door de stappen goed na te lopen kom je uit op 10 mg.",
+         "Klopt: 18 uur is drie halveringen: 80 → 40 → 20 → 10. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"5 mg\"\"? Dan telt je vier halveringen. 18 : 6 = 3, dus 10 mg. Controleer je stap: de juiste uitkomst is 10 mg."
+        ],
+        "uh": "Er zijn drie halveringstijden verstreken. Hoeveel mg blijft er over?",
+        "ctx": "Een medicijn wordt afgebroken. De hoeveelheid is A(t) = 80 · 0,5^(t/6) mg, met t in uren. Een leerling berekent A voor t = 12 en t = 18 en leest de halveringstijd af uit het voorschrift."
+       },
+       {
+        "v": "Welk getal is hier de groeifactor per halveringstijd van 6 uur?",
+        "o": [
+         "\"6\"",
+         "\"0,5\"",
+         "\"0,6\"",
+         "\"80\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6\"\"? Dan neem je de tijd als groeifactor. De factor per halveringstijd is 0,5, dus 0,5. Het goede antwoord is 0,5.",
+         "Klopt: elke 6 uur wordt de hoeveelheid vermenigvuldigd met 0,5.",
+         "Koos je \"\"0,6\"\"? Dan maak je er een percentage van. De hoeveelheid halveert, dus 0,5. Door de stappen goed na te lopen kom je uit op 0,5.",
+         "Koos je \"\"80\"\"? Dan neem je de beginwaarde als groeifactor. 80 is de beginhoeveelheid, dus 0,5. Controleer je stap: de juiste uitkomst is 0,5."
+        ],
+        "uh": "Welk getal is hier de groeifactor per halveringstijd van 6 uur?",
+        "ctx": "Een medicijn wordt afgebroken. De hoeveelheid is A(t) = 80 · 0,5^(t/6) mg, met t in uren. Een leerling berekent A voor t = 12 en t = 18 en leest de halveringstijd af uit het voorschrift."
+       },
+       {
+        "v": "Welke vergelijking volgt uit de waarde na 2 jaar?",
+        "o": [
+         "\"200 · 2g = 288, zeg maar\"",
+         "\"200 + g² = 288\"",
+         "\"g² = 288\"",
+         "\"200 · g² = 288\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"200 · 2g = 288, zeg maar\"\"? Dan vermenigvuldig je g met 2. Een exponent betekent herhaald vermenigvuldigen, dus 200 · g² = 288.",
+         "Koos je \"\"200 + g² = 288\"\"? Dan tel je op in plaats van te vermenigvuldigen. K(t) = 200 · g^t, dus 200 · g² = 288. Door de stappen goed na te lopen kom je uit op 200 · g² = 288.",
+         "Koos je \"\"g² = 288\"\"? Dan vergeet je de beginwaarde. Het is 200 · g², dus 200 · g² = 288. Controleer je stap: de juiste uitkomst is 200 · g² = 288.",
+         "Klopt: K(2) = 200 · g² en dat is 288. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke vergelijking volgt uit de waarde na 2 jaar?",
+        "ctx": "Een kapitaal groeit exponentieel. De waarde is na 0 jaar € 200 en na 2 jaar € 288. Een leerling stelt K(t) = 200 · g^t op, berekent g uit de waarde na 2 jaar en bepaalt daarna de waarde na 5 jaar."
+       },
+       {
+        "v": "Welke groeifactor per jaar krijg je uit 200 · g² = 288?",
+        "o": [
+         "\"1,2\"",
+         "\"1,44\"",
+         "\"0,44\"",
+         "\"144\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: g² = 1,44, dus g = 1,2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1,44\"\"? Dan vergeet je de wortel. g² = 1,44, dus g = 1,2. Het goede antwoord is 1,2.",
+         "Koos je \"\"0,44\"\"? Dan trek je 1 af van 1,44. Je moet de wortel nemen, dus g = 1,2. Door de stappen goed na te lopen kom je uit op 1,2.",
+         "Koos je \"\"144\"\"? Dan reken je 288 : 2. g² = 288 : 200 = 1,44, dus g = 1,2. Controleer je stap: de juiste uitkomst is 1,2."
+        ],
+        "uh": "Welke groeifactor per jaar krijg je uit 200 · g² = 288?",
+        "ctx": "Een kapitaal groeit exponentieel. De waarde is na 0 jaar € 200 en na 2 jaar € 288. Een leerling stelt K(t) = 200 · g^t op, berekent g uit de waarde na 2 jaar en bepaalt daarna de waarde na 5 jaar."
+       },
+       {
+        "v": "Welke waarde hoort bij t = 5, afgerond op hele euro's?",
+        "o": [
+         "\"€ 420\"",
+         "\"€ 1000, gewoon\"",
+         "\"€ 498\"",
+         "\"€ 597\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€ 420\"\"? Dan neem je een vaste toename van € 44 per jaar. Het groeit exponentieel, dus € 498. Het goede antwoord is € 498.",
+         "Koos je \"\"€ 1000, gewoon\"\"? Dan vermenigvuldig je 200 met 5. Het is 200 · 1,2⁵, dus € 498. Door de stappen goed na te lopen kom je uit op € 498.",
+         "Klopt: 200 · 1,2⁵ = 200 · 2,48832 ≈ 497,66. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€ 597\"\"? Dan neem je exponent 6 in plaats van 5. Het is 1,2⁵, dus € 498. Controleer je stap: de juiste uitkomst is € 498."
+        ],
+        "uh": "Welke waarde hoort bij t = 5, afgerond op hele euro's?",
+        "ctx": "Een kapitaal groeit exponentieel. De waarde is na 0 jaar € 200 en na 2 jaar € 288. Een leerling stelt K(t) = 200 · g^t op, berekent g uit de waarde na 2 jaar en bepaalt daarna de waarde na 5 jaar."
+       },
+       {
+        "v": "Hoeveel is ²log 32?",
+        "o": [
+         "\"16\"",
+         "\"5\"",
+         "\"4\"",
+         "\"6\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"16\"\"? Dan deel je 32 door 2. Je zoekt de exponent, dus 5. Het goede antwoord is 5.",
+         "Klopt: 2⁵ = 32, dus x = ²log 32 = 5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"4\"\"? Dan neem je 2⁴ = 16. Je zoekt 32, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+         "Koos je \"\"6\"\"? Dan neem je 2⁶ = 64. Je zoekt 32, dus 5. Controleer je stap: de juiste uitkomst is 5."
+        ],
+        "uh": "Hoeveel is ²log 32?",
+        "ctx": "Een leerling lost 2^x = 32 op. Hij schrijft het als x = ²log 32 en onderzoekt welke macht van 2 gelijk is aan 32. Daarna lost hij op dezelfde manier 3^x = 81 en 10^x = 1000 op."
+       },
+       {
+        "v": "Los 3^x = 81 op. Welke x krijg je?",
+        "o": [
+         "\"27\"",
+         "\"3\"",
+         "\"78\"",
+         "\"4\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"27\"\"? Dan deel je 81 door 3. Je zoekt de exponent, dus 4. Het goede antwoord is 4.",
+         "Koos je \"\"3\"\"? Dan neem je 3³ = 27. Je zoekt 81, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Koos je \"\"78\"\"? Dan trek je 3 af van 81. Je zoekt de exponent, dus 4. Controleer je stap: de juiste uitkomst is 4.",
+         "Klopt: 3⁴ = 81, dus x = ³log 81 = 4. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Los 3^x = 81 op. Welke x krijg je?",
+        "ctx": "Een leerling lost 2^x = 32 op. Hij schrijft het als x = ²log 32 en onderzoekt welke macht van 2 gelijk is aan 32. Daarna lost hij op dezelfde manier 3^x = 81 en 10^x = 1000 op."
+       },
+       {
+        "v": "Hoe schrijf je x uit 10^x = 1000 met een logaritme?",
+        "o": [
+         "\"x = log 1000 = 3\"",
+         "\"x = 1000 : 10 = 100\"",
+         "\"x = ¹⁰⁰⁰log 10\"",
+         "\"x = log 10 = 1\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: x is de exponent van 10 die 1000 geeft. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"x = 1000 : 10 = 100\"\"? Dan deel je 1000 door 10. x is de exponent, dus x = log 1000 = 3. Het goede antwoord is x = log 1000 = 3.",
+         "Koos je \"\"x = ¹⁰⁰⁰log 10\"\"? Dan verwisselt je grondtal en getal. Het grondtal is 10, dus x = log 1000. Door de stappen goed na te lopen kom je uit op x = log 1000 = 3.",
+         "Koos je \"\"x = log 10 = 1\"\"? Dan neem je log van het grondtal. Het gaat om log 1000, dus 3. Controleer je stap: de juiste uitkomst is x = log 1000 = 3."
+        ],
+        "uh": "Hoe schrijf je x uit 10^x = 1000 met een logaritme?",
+        "ctx": "Een leerling lost 2^x = 32 op. Hij schrijft het als x = ²log 32 en onderzoekt welke macht van 2 gelijk is aan 32. Daarna lost hij op dezelfde manier 3^x = 81 en 10^x = 1000 op."
+       },
+       {
+        "v": "Welke vergelijking hoort bij de verdubbelingstijd?",
+        "o": [
+         "\"1,05t = 2\"",
+         "\"t^1,05 = 2, eigenlijk\"",
+         "\"1,05^t = 2\"",
+         "\"1,05^t = 5\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1,05t = 2\"\"? Dan vermenigvuldig je 1,05 met t. Een exponent betekent herhaald vermenigvuldigen, dus 1,05^t = 2.",
+         "Koos je \"\"t^1,05 = 2, eigenlijk\"\"? Dan verwisselt je het grondtal en de exponent. t staat in de exponent, dus 1,05^t = 2. Door de stappen goed na te lopen kom je uit op 1,05^t = 2.",
+         "Klopt: het kapitaal is dan 2 keer zo groot, dus de groeifactor tot de macht t is 2.",
+         "Koos je \"\"1,05^t = 5\"\"? Dan neem je het percentage. De verdubbeling betekent factor 2, dus 1,05^t = 2. Controleer je stap: de juiste uitkomst is 1,05^t = 2."
+        ],
+        "uh": "Welke vergelijking hoort bij de verdubbelingstijd?",
+        "ctx": "Een kapitaal groeit 5% per jaar, dus de groeifactor is 1,05 per jaar. Een leerling wil de verdubbelingstijd weten: de t waarvoor 1,05^t = 2. Hij probeert t = 14 en t = 15 met de rekenmachine."
+       },
+       {
+        "v": "Welke waarde geeft 1,05^14 ongeveer?",
+        "o": [
+         "\"1,70\"",
+         "\"1,98\"",
+         "\"2,08\"",
+         "\"1,14\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1,70\"\"? Dan tel je 14 · 5% = 70% op. De groei is exponentieel, dus 1,98. Het goede antwoord is 1,98.",
+         "Klopt: 1,05^14 ≈ 1,98, net onder 2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2,08\"\"? Dan neem je t = 15. Voor t = 14 is het 1,98, dus 1,98. Door de stappen goed na te lopen kom je uit op 1,98.",
+         "Koos je \"\"1,14\"\"? Dan reken je 1 + 14 · 0,01. De groeifactor is 1,05, dus 1,05^14 ≈ 1,98. Controleer je stap: de juiste uitkomst is 1,98."
+        ],
+        "uh": "Welke waarde geeft 1,05^14 ongeveer?",
+        "ctx": "Een kapitaal groeit 5% per jaar, dus de groeifactor is 1,05 per jaar. Een leerling wil de verdubbelingstijd weten: de t waarvoor 1,05^t = 2. Hij probeert t = 14 en t = 15 met de rekenmachine."
+       },
+       {
+        "v": "Tussen welke gehele aantallen jaren ligt de verdubbelingstijd?",
+        "o": [
+         "\"tussen 20 en 21 jaar, I think\"",
+         "\"tussen 10 en 11 jaar\"",
+         "\"tussen 24 en 25 jaar\"",
+         "\"tussen 14 en 15 jaar\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"tussen 20 en 21 jaar, I think\"\"? Dan deel je 100 door 5. Dat is rente zonder rente over rente, dus tussen 14 en 15 jaar.",
+         "Koos je \"\"tussen 10 en 11 jaar\"\"? Dan verwar je het percentage met jaren. Reken met 1,05^t, dus tussen 14 en 15 jaar. Door de stappen goed na te lopen kom je uit op tussen 14 en 15 jaar.",
+         "Koos je \"\"tussen 24 en 25 jaar\"\"? Dan neem je een te groot aantal jaren. 1,05^15 is al meer dan 2, dus tussen 14 en 15 jaar.",
+         "Klopt: 1,05^14 ≈ 1,98 is kleiner dan 2 en 1,05^15 ≈ 2,08 is groter."
+        ],
+        "uh": "Tussen welke gehele aantallen jaren ligt de verdubbelingstijd?",
+        "ctx": "Een kapitaal groeit 5% per jaar, dus de groeifactor is 1,05 per jaar. Een leerling wil de verdubbelingstijd weten: de t waarvoor 1,05^t = 2. Hij probeert t = 14 en t = 15 met de rekenmachine."
+       },
+       {
+        "v": "Welk punt ligt altijd op de grafiek van f(x) = g^x?",
+        "o": [
+         "\"(0, 1)\"",
+         "\"(1, 0), volgens mij\"",
+         "\"(0, 0)\"",
+         "\"(1, 1)\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal beginwaarde en groeifactor, rekenen met de formule en controleer door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: g⁰ = 1 voor elk grondtal g. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"(1, 0), volgens mij\"\"? Dan verwisselt je de coördinaten. g⁰ = 1 geeft (0, 1), dus (0, 1). Het goede antwoord is (0, 1).",
+         "Koos je \"\"(0, 0)\"\"? Dan denk je dat de grafiek door de oorsprong gaat. g⁰ = 1, dus (0, 1). Door de stappen goed na te lopen kom je uit op (0, 1).",
+         "Koos je \"\"(1, 1)\"\"? Dan neem je x = 1. Daar is f(1) = g, niet altijd 1, dus (0, 1). Controleer je stap: de juiste uitkomst is (0, 1)."
+        ],
+        "uh": "Welk punt ligt altijd op de grafiek van f(x) = g^x?",
+        "ctx": "Een kapitaal groeit 5% per jaar, dus de groeifactor is 1,05 per jaar. Een leerling wil de verdubbelingstijd weten: de t waarvoor 1,05^t = 2. Hij probeert t = 14 en t = 15 met de rekenmachine."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een kolonie van 200 bacteriën groeit 30% per uur. Een leerling stelt het voorschrift N(t) = 200 · g^t op, bepaalt g en berekent hoeveel bacteriën er na 3 uur zijn. Hij controleert met t = 1.",
+        "v": "Stel het voorschrift op en bereken het aantal na 3 uur.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "g = 1,3 (1p), dus N(t) = 200 · 1,3^t (1p). N(3) = 200 · 2,197 ≈ 439 bacteriën (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een stof van 120 gram heeft een halveringstijd van 8 dagen. Een leerling stelt A(t) = 120 · 0,5^(t/8) op en berekent de hoeveelheid na 16 en 24 dagen. Hij controleert met t = 8.",
+        "v": "Bereken de hoeveelheid na 16 en 24 dagen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "16 dagen is twee halveringen: 120 · 0,25 = 30 gram (1p). 24 dagen is drie halveringen: 120 · 0,125 = 15 gram (1p). Controle: A(8) = 60 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een bedrag groeit exponentieel. Na 0 jaar is het € 150 en na 2 jaar € 216. Een leerling stelt K(t) = 150 · g^t op, berekent g en bepaalt het bedrag na 4 jaar.",
+        "v": "Bereken g en het bedrag na 4 jaar.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "150 · g² = 216 geeft g² = 1,44 (1p), dus g = 1,2 (1p). K(4) = 150 · 1,2⁴ = 150 · 2,0736 ≈ € 311,04 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling lost exponentiële vergelijkingen op door te schrijven als logaritme. Hij lost 2^x = 64 en 5^x = 125 op en controleert beide oplossingen door in te vullen.",
+        "v": "Los 2^x = 64 en 5^x = 125 op.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "x = ²log 64 = 6 want 2⁶ = 64 (1p). x = ⁵log 125 = 3 want 5³ = 125 (1p). Controle: 2⁶ = 64 en 5³ = 125 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een kapitaal groeit 10% per jaar. Een leerling wil de verdubbelingstijd bepalen en probeert t = 7 en t = 8 in 1,1^t met de rekenmachine. Hij schrijft zijn conclusie op.",
+        "v": "Bepaal tussen welke gehele aantallen jaren het kapitaal verdubbelt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De vergelijking is 1,1^t = 2 (1p). 1,1⁷ ≈ 1,95 en 1,1⁸ ≈ 2,14 (1p). Het kapitaal verdubbelt tussen 7 en 8 jaar (1p)."
+       }
+      ]
      }
     ]
    },
