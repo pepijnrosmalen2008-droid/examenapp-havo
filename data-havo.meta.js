@@ -5474,6 +5474,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B4",
+      "lo": "wb.B.4",
+      "gs": 2,
+      "naam": "Sinus en cosinus: periode, amplitude en evenwichtsstand",
+      "beschrijving": "Je werkt met radialen en met de grafieken van sinus en cosinus: je bepaalt periode, amplitude en evenwichtsstand, rekent met kenmerkende waarden, stelt een voorschrift op en past dat toe op periodieke situaties zoals het getij.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Radialen",
+       "Periode, amplitude en evenwichtsstand",
+       "Kenmerkende waarden van sin en cos",
+       "Periodieke situaties",
+       "Voorschrift opstellen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

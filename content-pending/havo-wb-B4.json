@@ -1,0 +1,682 @@
+{
+ "id": "B4",
+ "lo": "wb.B.4",
+ "gs": 2,
+ "naam": "Sinus en cosinus: periode, amplitude en evenwichtsstand",
+ "beschrijving": "Je werkt met radialen en met de grafieken van sinus en cosinus: je bepaalt periode, amplitude en evenwichtsstand, rekent met kenmerkende waarden, stelt een voorschrift op en past dat toe op periodieke situaties zoals het getij.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Radialen",
+  "Periode, amplitude en evenwichtsstand",
+  "Kenmerkende waarden van sin en cos",
+  "Periodieke situaties",
+  "Voorschrift opstellen"
+ ],
+ "sam": "Reken graden om met 180° = π. Bij a·sin(bx) + d is de amplitude |a|, de evenwichtsstand d en de periode 2π/b. Maximum en minimum zijn d + a en d − a. Gebruik kenmerkende waarden als sin(π/2) = 1 en cos(π) = −1 om te controleren.",
+ "begrippen": [
+  {
+   "t": "Radiaal",
+   "d": "Een eenheid voor hoeken waarbij 180° = π en 360° = 2π."
+  },
+  {
+   "t": "Periode",
+   "d": "De lengte van één herhaling van de grafiek, bij a·sin(bx) + d gelijk aan 2π/b."
+  },
+  {
+   "t": "Amplitude",
+   "d": "De afstand van de evenwichtsstand tot het maximum, bij a·sin(bx) + d gelijk aan |a|."
+  },
+  {
+   "t": "Evenwichtsstand",
+   "d": "De middenwaarde d waaromheen de grafiek schommelt."
+  },
+  {
+   "t": "Sinusfunctie",
+   "d": "De functie f(x) = sin(x), die in x = 0 door de evenwichtsstand omhoog gaat."
+  },
+  {
+   "t": "Cosinusfunctie",
+   "d": "De functie f(x) = cos(x), die in x = 0 in een maximum begint."
+  },
+  {
+   "t": "Maximum en minimum",
+   "d": "De hoogste en laagste waarde: d + a en d − a."
+  },
+  {
+   "t": "Periodiek verschijnsel",
+   "d": "Een verschijnsel dat zich steeds herhaalt, zoals het getij of een draaiend rad."
+  },
+  {
+   "t": "Kenmerkende waarden",
+   "d": "Waarden als sin(π/2) = 1, cos(π) = −1 en sin(π) = 0."
+  },
+  {
+   "t": "Graden omrekenen",
+   "d": "Van graden naar radialen met 180° = π, zoals 60° = π/3."
+  },
+  {
+   "t": "Voorschrift opstellen",
+   "d": "a, b en d bepalen uit maximum, minimum en periode."
+  },
+  {
+   "t": "Controleren met een waarde",
+   "d": "Een x invullen en nagaan of de uitkomst bij de grafiek past."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Hoeveel radialen is 180°?",
+   "o": [
+    "\"2π\"",
+    "\"π\"",
+    "\"π/2\"",
+    "\"180\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2π\"\"? Dan neem je een hele cirkel. 360° is 2π, dus 180° is π. Het goede antwoord is π.",
+    "Klopt: een halve cirkel is 180° en dat is π radialen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"π/2\"\"? Dan neem je een kwart cirkel. 90° is π/2, dus 180° is π. Door de stappen goed na te lopen kom je uit op π.",
+    "Koos je \"\"180\"\"? Dan neem je het getal in graden. Radialen zijn een andere eenheid, dus π. Controleer je stap: de juiste uitkomst is π."
+   ],
+   "uh": "Hoeveel radialen is 180°?"
+  },
+  {
+   "v": "Een kwartslag is 90°. Welke waarde in radialen hoort daarbij?",
+   "o": [
+    "\"π\"",
+    "\"π/4 (dat is 45°)\"",
+    "\"2π\"",
+    "\"π/2\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"π\"\"? Dan neem je een halve slag. Een kwartslag is de helft daarvan, dus π/2. Het goede antwoord is π/2.",
+    "Koos je \"\"π/4 (dat is 45°)\"\"? Dan neem je 45°. 90° is twee keer zo groot, dus π/2. Door de stappen goed na te lopen kom je uit op π/2.",
+    "Koos je \"\"2π\"\"? Dan neem je een hele slag. Een kwartslag is een vierde daarvan, dus π/2. Controleer je stap: de juiste uitkomst is π/2.",
+    "Klopt: 90° is de helft van 180° = π, dus π/2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een kwartslag is 90°. Welke waarde in radialen hoort daarbij?"
+  },
+  {
+   "v": "Welke periode heeft f(x) = sin(x)?",
+   "o": [
+    "\"2π\"",
+    "\"π\"",
+    "\"1\"",
+    "\"360\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: na een hele cirkel van 2π herhaalt de grafiek zich.",
+    "Koos je \"\"π\"\"? Dan neem je een halve periode. Na π keert sin(x) om, dus de periode is 2π. Het goede antwoord is 2π.",
+    "Koos je \"\"1\"\"? Dan neem je de amplitude. Die is 1, de periode is de lengte van een herhaling, dus 2π. Door de stappen goed na te lopen kom je uit op 2π.",
+    "Koos je \"\"360\"\"? Dan gebruik je graden. In radialen is de periode 2π, dus 2π. Controleer je stap: de juiste uitkomst is 2π."
+   ],
+   "uh": "Welke periode heeft f(x) = sin(x)?"
+  },
+  {
+   "v": "Bij f(x) = a·sin(x) + d: welke letter geeft de amplitude?",
+   "o": [
+    "\"d\"",
+    "\"x\"",
+    "\"a\"",
+    "\"2π\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"d\"\"? Dan verwar je de amplitude met de evenwichtsstand. d verschuift de grafiek, dus a is de amplitude. Het goede antwoord is a.",
+    "Koos je \"\"x\"\"? Dan neem je de variabele. De amplitude is een vaste waarde, dus a. Door de stappen goed na te lopen kom je uit op a.",
+    "Klopt: a bepaalt hoe ver de grafiek boven en onder de evenwichtsstand komt.",
+    "Koos je \"\"2π\"\"? Dan neem je de periode. De amplitude is de uitwijking, dus a. Controleer je stap: de juiste uitkomst is a."
+   ],
+   "uh": "Bij f(x) = a·sin(x) + d: welke letter geeft de amplitude?"
+  },
+  {
+   "v": "Welke waarde heeft sin(π/2)?",
+   "o": [
+    "\"0\"",
+    "\"1\"",
+    "\"−1\"",
+    "\"π/2\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0\"\"? Dan neem je sin(0) of sin(π). Bij π/2 is de sinus maximaal, dus 1. Het goede antwoord is 1.",
+    "Klopt: bij π/2 bereikt de sinus zijn maximum 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−1\"\"? Dan neem je sin(3π/2). Bij π/2 is de sinus maximaal, dus 1. Door de stappen goed na te lopen kom je uit op 1.",
+    "Koos je \"\"π/2\"\"? Dan neem je de invoer als uitkomst. De sinus is een getal tussen −1 en 1, dus 1. Controleer je stap: de juiste uitkomst is 1."
+   ],
+   "uh": "Welke waarde heeft sin(π/2)?"
+  },
+  {
+   "v": "Welke waarde heeft cos(π)?",
+   "o": [
+    "\"1 (het maximum)\"",
+    "\"0\"",
+    "\"π\"",
+    "\"−1\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1 (het maximum)\"\"? Dan neem je cos(0). Bij π is de cosinus minimaal, dus −1. Het goede antwoord is −1.",
+    "Koos je \"\"0\"\"? Dan neem je cos(π/2). Bij π is de cosinus minimaal, dus −1. Door de stappen goed na te lopen kom je uit op −1.",
+    "Koos je \"\"π\"\"? Dan neem je de invoer als uitkomst. De cosinus is een getal tussen −1 en 1, dus −1. Controleer je stap: de juiste uitkomst is −1.",
+    "Klopt: bij π bereikt de cosinus zijn minimum −1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft cos(π)?"
+  },
+  {
+   "v": "Welk verschijnsel is periodiek?",
+   "o": [
+    "\"de stand van een kermisrad\"",
+    "\"de afkoeling van koffie\"",
+    "\"het saldo bij rente op rente\"",
+    "\"de valtijd van een steen\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het rad draait rond en de stand herhaalt zich steeds.",
+    "Koos je \"\"de afkoeling van koffie\"\"? Dan denk je dat elke verandering periodiek is. De temperatuur daalt en herhaalt niet, dus het kermisrad.",
+    "Koos je \"\"het saldo bij rente op rente\"\"? Dan denk je dat groei herhaalt. Het saldo stijgt steeds, dus het kermisrad. Door de stappen goed na te lopen kom je uit op de stand van een kermisrad.",
+    "Koos je \"\"de valtijd van een steen\"\"? Dan denk je dat een val herhaalt. Eén val is geen periodiek verschijnsel, dus het kermisrad."
+   ],
+   "uh": "Welk verschijnsel is periodiek?"
+  },
+  {
+   "v": "Reken 60° om naar radialen.",
+   "o": [
+    "\"π/6 (dat is 30°)\"",
+    "\"π/2\"",
+    "\"π/3\"",
+    "\"60π\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"π/6 (dat is 30°)\"\"? Dan neem je 30°. 60° is 60/180 = 1/3 van π, dus π/3. Het goede antwoord is π/3.",
+    "Koos je \"\"π/2\"\"? Dan neem je 90°. 60° is 1/3 van 180°, dus π/3. Door de stappen goed na te lopen kom je uit op π/3.",
+    "Klopt: 60/180 · π = π/3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"60π\"\"? Dan vermenigvuldig je 60 met π. Eerst delen door 180, dus π/3. Controleer je stap: de juiste uitkomst is π/3."
+   ],
+   "uh": "Reken 60° om naar radialen.",
+   "ctx": "Een leerling rekent graden om naar radialen met 180° = π. Hij bepaalt 60°, 45° en 360° en controleert zijn antwoorden door terug te rekenen naar graden met de omgekeerde omrekening."
+  },
+  {
+   "v": "Een hoek van 45° staat voor hoeveel radialen?",
+   "o": [
+    "\"π/2\"",
+    "\"π/4\"",
+    "\"π/8 (dat is 22,5°)\"",
+    "\"45π\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"π/2\"\"? Dan neem je 90°. 45° is een kwart van 180°, dus π/4. Het goede antwoord is π/4.",
+    "Klopt: 45/180 · π = π/4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"π/8 (dat is 22,5°)\"\"? Dan neem je 22,5°. 45° is een kwart van 180°, dus π/4. Door de stappen goed na te lopen kom je uit op π/4.",
+    "Koos je \"\"45π\"\"? Dan vermenigvuldig je 45 met π. Eerst delen door 180, dus π/4. Controleer je stap: de juiste uitkomst is π/4."
+   ],
+   "uh": "Een hoek van 45° staat voor hoeveel radialen?",
+   "ctx": "Een leerling rekent graden om naar radialen met 180° = π. Hij bepaalt 60°, 45° en 360° en controleert zijn antwoorden door terug te rekenen naar graden met de omgekeerde omrekening."
+  },
+  {
+   "v": "Een volle cirkel is 2π rad. Druk dit uit in graden.",
+   "o": [
+    "\"180°\"",
+    "\"720° (twee cirkels)\"",
+    "\"90°\"",
+    "\"360°\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"180°\"\"? Dan neem je π. 2π is twee keer zoveel, dus 360°. Het goede antwoord is 360°.",
+    "Koos je \"\"720° (twee cirkels)\"\"? Dan verdubbel je nog eens. 2π is een hele cirkel, dus 360°. Door de stappen goed na te lopen kom je uit op 360°.",
+    "Koos je \"\"90°\"\"? Dan neem je π/2. 2π is vier keer zoveel als π/2, dus 360°. Controleer je stap: de juiste uitkomst is 360°.",
+    "Klopt: 2π is een hele cirkel. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een volle cirkel is 2π rad. Druk dit uit in graden.",
+   "ctx": "Een leerling rekent graden om naar radialen met 180° = π. Hij bepaalt 60°, 45° en 360° en controleert zijn antwoorden door terug te rekenen naar graden met de omgekeerde omrekening."
+  },
+  {
+   "v": "Welke amplitude heeft f(x) = 3·sin(x) + 1?",
+   "o": [
+    "\"3\"",
+    "\"1\"",
+    "\"4\"",
+    "\"6 (het bereik)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de factor voor de sinus is de amplitude. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1\"\"? Dan neem je de evenwichtsstand. Die staat achter de sinus, dus de amplitude is 3. Het goede antwoord is 3.",
+    "Koos je \"\"4\"\"? Dan neem je het maximum. Dat is amplitude + evenwichtsstand, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"6 (het bereik)\"\"? Dan neem je het verschil tussen maximum en minimum. De amplitude is de helft, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Welke amplitude heeft f(x) = 3·sin(x) + 1?",
+   "ctx": "Een leerling onderzoekt f(x) = 3·sin(x) + 1. Hij bepaalt de amplitude, de evenwichtsstand, het maximum en het minimum van f en controleert zijn antwoorden met x = π/2 en x = 3π/2."
+  },
+  {
+   "v": "Rond welke waarde schommelt f(x) = 3·sin(x) + 1?",
+   "o": [
+    "\"3\"",
+    "\"4 (het maximum)\"",
+    "\"1\"",
+    "\"0\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3\"\"? Dan neem je de amplitude. Die geeft de uitwijking, dus de evenwichtsstand is 1. Het goede antwoord is 1.",
+    "Koos je \"\"4 (het maximum)\"\"? Dan neem je het maximum. De evenwichtsstand ligt midden tussen maximum en minimum, dus 1. Door de stappen goed na te lopen kom je uit op 1.",
+    "Klopt: de evenwichtsstand is de constante d = 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0\"\"? Dan neem je de evenwichtsstand van sin(x) zelf. Hier is + 1 toegevoegd, dus 1. Controleer je stap: de juiste uitkomst is 1."
+   ],
+   "uh": "Rond welke waarde schommelt f(x) = 3·sin(x) + 1?",
+   "ctx": "Een leerling onderzoekt f(x) = 3·sin(x) + 1. Hij bepaalt de amplitude, de evenwichtsstand, het maximum en het minimum van f en controleert zijn antwoorden met x = π/2 en x = 3π/2."
+  },
+  {
+   "v": "Welk maximum en minimum heeft f(x) = 3·sin(x) + 1?",
+   "o": [
+    "\"maximum 3 en minimum −3, zeg maar\"",
+    "\"maximum 4 en minimum −2\"",
+    "\"maximum 4 en minimum 0\"",
+    "\"maximum 3 en minimum 1\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"maximum 3 en minimum −3, zeg maar\"\"? Dan vergeet je de evenwichtsstand. Alles ligt 1 hoger, dus 4 en −2. Het goede antwoord is maximum 4 en minimum −2.",
+    "Klopt: 1 + 3 = 4 en 1 − 3 = −2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"maximum 4 en minimum 0\"\"? Dan neem je het minimum als 1 − 1. Het minimum is 1 − 3, dus −2. Door de stappen goed na te lopen kom je uit op maximum 4 en minimum −2.",
+    "Koos je \"\"maximum 3 en minimum 1\"\"? Dan neem je amplitude en evenwichtsstand als extremen. Max = d + a en min = d − a, dus 4 en −2."
+   ],
+   "uh": "Welk maximum en minimum heeft f(x) = 3·sin(x) + 1?",
+   "ctx": "Een leerling onderzoekt f(x) = 3·sin(x) + 1. Hij bepaalt de amplitude, de evenwichtsstand, het maximum en het minimum van f en controleert zijn antwoorden met x = π/2 en x = 3π/2."
+  },
+  {
+   "v": "Welke periode heeft g(x) = 2·cos(2x)?",
+   "o": [
+    "\"2π\"",
+    "\"4π\"",
+    "\"2\"",
+    "\"π\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2π\"\"? Dan neem je de periode van cos(x). De factor 2 maakt de periode korter, dus π. Het goede antwoord is π.",
+    "Koos je \"\"4π\"\"? Dan vermenigvuldig je 2π met 2. Je moet delen door 2, dus π. Door de stappen goed na te lopen kom je uit op π.",
+    "Koos je \"\"2\"\"? Dan neem je de factor 2 als periode. De periode is 2π/b, dus π. Controleer je stap: de juiste uitkomst is π.",
+    "Klopt: periode = 2π/2 = π. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke periode heeft g(x) = 2·cos(2x)?",
+   "ctx": "Een leerling onderzoekt g(x) = 2·cos(2x). Hij bepaalt de periode en rekent g uit voor x = 0, π/4, π/2 en π. De grafiek begint bij x = 0 in een maximum en loopt daarna omlaag."
+  },
+  {
+   "v": "Welke waarde heeft g(π/4)?",
+   "o": [
+    "\"0\"",
+    "\"2\"",
+    "\"−2\"",
+    "\"1\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: cos(2 · π/4) = cos(π/2) = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2\"\"? Dan neem je cos(0). Hier is het argument π/2, dus 0. Het goede antwoord is 0.",
+    "Koos je \"\"−2\"\"? Dan neem je cos(π). Het argument is π/2, dus 0. Door de stappen goed na te lopen kom je uit op 0.",
+    "Koos je \"\"1\"\"? Dan neem je cos(π/4). Het argument is 2 · π/4 = π/2, dus 0. Controleer je stap: de juiste uitkomst is 0."
+   ],
+   "uh": "Welke waarde heeft g(π/4)?",
+   "ctx": "Een leerling onderzoekt g(x) = 2·cos(2x). Hij bepaalt de periode en rekent g uit voor x = 0, π/4, π/2 en π. De grafiek begint bij x = 0 in een maximum en loopt daarna omlaag."
+  },
+  {
+   "v": "Bereken g(π/2) en let op het teken.",
+   "o": [
+    "\"2\"",
+    "\"0\"",
+    "\"−2\"",
+    "\"−1 (zonder de factor 2)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2\"\"? Dan vergeet je het minteken van cos(π). Het is −1, dus −2. Het goede antwoord is −2.",
+    "Koos je \"\"0\"\"? Dan neem je cos(π/2). Hier is het argument 2 · π/2 = π, dus −2. Door de stappen goed na te lopen kom je uit op −2.",
+    "Klopt: cos(π) = −1, dus 2 · (−1) = −2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−1 (zonder de factor 2)\"\"? Dan vergeet je de factor 2. g = 2 · cos(π), dus −2. Controleer je stap: de juiste uitkomst is −2."
+   ],
+   "uh": "Bereken g(π/2) en let op het teken.",
+   "ctx": "Een leerling onderzoekt g(x) = 2·cos(2x). Hij bepaalt de periode en rekent g uit voor x = 0, π/4, π/2 en π. De grafiek begint bij x = 0 in een maximum en loopt daarna omlaag."
+  },
+  {
+   "v": "Voor welke x in [0, π] is g(x) = 2?",
+   "o": [
+    "\"alleen x = 0, to be honest\"",
+    "\"x = 0 en x = π\"",
+    "\"x = π/2\"",
+    "\"x = π/4\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen x = 0, to be honest\"\"? Dan vergeet je de tweede herhaling. De periode is π, dus ook x = π. Het goede antwoord is x = 0 en x = π.",
+    "Klopt: cos(2x) = 1 bij 2x = 0 en 2x = 2π, dus x = 0 en x = π.",
+    "Koos je \"\"x = π/2\"\"? Dan neem je het minimum. Bij x = π/2 is g = −2, dus x = 0 en x = π. Door de stappen goed na te lopen kom je uit op x = 0 en x = π.",
+    "Koos je \"\"x = π/4\"\"? Dan neem je een nulpunt. Bij x = π/4 is g = 0, dus x = 0 en x = π. Controleer je stap: de juiste uitkomst is x = 0 en x = π."
+   ],
+   "uh": "Voor welke x in [0, π] is g(x) = 2?",
+   "ctx": "Een leerling onderzoekt g(x) = 2·cos(2x). Hij bepaalt de periode en rekent g uit voor x = 0, π/4, π/2 en π. De grafiek begint bij x = 0 in een maximum en loopt daarna omlaag."
+  },
+  {
+   "v": "Hoeveel uur duurt een volledige cyclus van h?",
+   "o": [
+    "\"6 uur\"",
+    "\"24 uur, I suppose\"",
+    "\"2π uur\"",
+    "\"12 uur\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6 uur\"\"? Dan neem je de helft. De periode is 2π/(π/6) = 12, dus 12 uur. Het goede antwoord is 12 uur.",
+    "Koos je \"\"24 uur, I suppose\"\"? Dan verdubbel je de periode. Er zijn twee keer hoogwater per etmaal, de periode is 12, dus 12 uur. Door de stappen goed na te lopen kom je uit op 12 uur.",
+    "Koos je \"\"2π uur\"\"? Dan neem je de periode van sin(t). De factor π/6 verandert dat, dus 12 uur. Controleer je stap: de juiste uitkomst is 12 uur.",
+    "Klopt: periode = 2π/(π/6) = 12. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel uur duurt een volledige cyclus van h?",
+   "ctx": "Het waterpeil in een haven is h(t) = 3 + 1,5·sin(πt/6) meter, met t in uren na middernacht. Een leerling berekent h(0), h(3) en h(9), de periode en het hoogste en laagste peil en controleert met t = 6."
+  },
+  {
+   "v": "Tussen welke twee waarden schommelt het waterpeil?",
+   "o": [
+    "\"1,5 m en 4,5 m\"",
+    "\"3 m en 1,5 m\"",
+    "\"3 m en 4,5 m\"",
+    "\"−1,5 m en 1,5 m, you know\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3 − 1,5 = 1,5 en 3 + 1,5 = 4,5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3 m en 1,5 m\"\"? Dan neem je de evenwichtsstand en de amplitude. Max = d + a en min = d − a, dus 1,5 en 4,5. Het goede antwoord is 1,5 m en 4,5 m.",
+    "Koos je \"\"3 m en 4,5 m\"\"? Dan neem je alleen het maximum en de evenwichtsstand. Het minimum is 3 − 1,5, dus 1,5 en 4,5. Door de stappen goed na te lopen kom je uit op 1,5 m en 4,5 m.",
+    "Koos je \"\"−1,5 m en 1,5 m, you know\"\"? Dan vergeet je de evenwichtsstand 3. Het peil schommelt rond 3, dus 1,5 en 4,5. Controleer je stap: de juiste uitkomst is 1,5 m en 4,5 m."
+   ],
+   "uh": "Tussen welke twee waarden schommelt het waterpeil?",
+   "ctx": "Het waterpeil in een haven is h(t) = 3 + 1,5·sin(πt/6) meter, met t in uren na middernacht. Een leerling berekent h(0), h(3) en h(9), de periode en het hoogste en laagste peil en controleert met t = 6."
+  },
+  {
+   "v": "Bereken h(9).",
+   "o": [
+    "\"4,5 m\"",
+    "\"3 m\"",
+    "\"1,5 m\"",
+    "\"−1,5 m, really\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4,5 m\"\"? Dan neem je sin = 1. Bij 3π/2 is de sinus −1, dus 1,5. Het goede antwoord is 1,5 m.",
+    "Koos je \"\"3 m\"\"? Dan neem je sin = 0. Bij 3π/2 is de sinus −1, dus 1,5. Door de stappen goed na te lopen kom je uit op 1,5 m.",
+    "Klopt: sin(9π/6) = sin(3π/2) = −1, dus 3 − 1,5 = 1,5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−1,5 m, really\"\"? Dan vergeet je de evenwichtsstand 3. h = 3 + 1,5 · (−1), dus 1,5. Controleer je stap: de juiste uitkomst is 1,5 m."
+   ],
+   "uh": "Bereken h(9).",
+   "ctx": "Het waterpeil in een haven is h(t) = 3 + 1,5·sin(πt/6) meter, met t in uren na middernacht. Een leerling berekent h(0), h(3) en h(9), de periode en het hoogste en laagste peil en controleert met t = 6."
+  },
+  {
+   "v": "Hoe lang duurt één omwenteling van het reuzenrad?",
+   "o": [
+    "\"15 s, denk ik\"",
+    "\"30 s\"",
+    "\"60 s\"",
+    "\"2π s\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15 s, denk ik\"\"? Dan neem je de helft. De periode is 2π/(π/15) = 30, dus 30 s. Het goede antwoord is 30 s.",
+    "Klopt: periode = 2π/(π/15) = 30. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"60 s\"\"? Dan verdubbel je de periode. Je deelt 2π door π/15, dus 30 s. Door de stappen goed na te lopen kom je uit op 30 s.",
+    "Koos je \"\"2π s\"\"? Dan neem je de periode van cos(t). De factor π/15 verandert dat, dus 30 s. Controleer je stap: de juiste uitkomst is 30 s."
+   ],
+   "uh": "Hoe lang duurt één omwenteling van het reuzenrad?",
+   "ctx": "Een reuzenrad heeft het middelpunt op 10 m hoogte en een straal van 8 m. De hoogte van een gondel is H(t) = 10 + 8·cos(πt/15) meter, met t in seconden. Een leerling bepaalt de periode en berekent H(0), H(15) en H(7,5)."
+  },
+  {
+   "v": "Wat is H(15), de hoogte na een halve omwenteling?",
+   "o": [
+    "\"18 m, volgens mij\"",
+    "\"10 m\"",
+    "\"−8 m\"",
+    "\"2 m\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"18 m, volgens mij\"\"? Dan neem je cos = 1. Bij t = 15 is cos(π) = −1, dus 2 m. Het goede antwoord is 2 m.",
+    "Koos je \"\"10 m\"\"? Dan neem je cos = 0. Bij t = 15 is cos(π) = −1, dus 2 m. Door de stappen goed na te lopen kom je uit op 2 m.",
+    "Koos je \"\"−8 m\"\"? Dan vergeet je de evenwichtsstand 10. H = 10 + 8 · (−1), dus 2 m. Controleer je stap: de juiste uitkomst is 2 m.",
+    "Klopt: cos(π) = −1, dus 10 + 8 · (−1) = 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat is H(15), de hoogte na een halve omwenteling?",
+   "ctx": "Een reuzenrad heeft het middelpunt op 10 m hoogte en een straal van 8 m. De hoogte van een gondel is H(t) = 10 + 8·cos(πt/15) meter, met t in seconden. Een leerling bepaalt de periode en berekent H(0), H(15) en H(7,5)."
+  },
+  {
+   "v": "Bij t = 7,5 s zit de gondel precies tussen hoogste en laagste punt. Bereken H(7,5).",
+   "o": [
+    "\"10 m\"",
+    "\"18 m, I suppose\"",
+    "\"2 m\"",
+    "\"8 m\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: cos(π/2) = 0, dus H = 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"18 m, I suppose\"\"? Dan neem je cos = 1. Bij t = 7,5 is cos(π/2) = 0, dus 10 m. Het goede antwoord is 10 m.",
+    "Koos je \"\"2 m\"\"? Dan neem je cos = −1. Bij t = 7,5 is cos(π/2) = 0, dus 10 m. Door de stappen goed na te lopen kom je uit op 10 m.",
+    "Koos je \"\"8 m\"\"? Dan neem je alleen de amplitude. De evenwichtsstand 10 telt mee, dus 10 m. Controleer je stap: de juiste uitkomst is 10 m."
+   ],
+   "uh": "Bij t = 7,5 s zit de gondel precies tussen hoogste en laagste punt. Bereken H(7,5).",
+   "ctx": "Een reuzenrad heeft het middelpunt op 10 m hoogte en een straal van 8 m. De hoogte van een gondel is H(t) = 10 + 8·cos(πt/15) meter, met t in seconden. Een leerling bepaalt de periode en berekent H(0), H(15) en H(7,5)."
+  },
+  {
+   "v": "Het midden tussen maximum 7 en minimum −1 is de evenwichtsstand. Welke waarde is dat?",
+   "o": [
+    "\"7\"",
+    "\"4 (de amplitude)\"",
+    "\"3\"",
+    "\"8\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7\"\"? Dan neem je het maximum. d ligt midden tussen maximum en minimum, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"4 (de amplitude)\"\"? Dan neem je de amplitude. d is het midden, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Klopt: d = (7 + (−1))/2 = 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8\"\"? Dan neem je het verschil van maximum en minimum. De evenwichtsstand is het gemiddelde van beide, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Het midden tussen maximum 7 en minimum −1 is de evenwichtsstand. Welke waarde is dat?",
+   "ctx": "Een grafiek heeft maximum 7, minimum −1 en periode 4π. De grafiek gaat bij x = 0 door de evenwichtsstand omhoog. Een leerling stelt f(x) = a·sin(bx) + d op, bepaalt a, b en d en controleert met x = π."
+  },
+  {
+   "v": "Hoe ver komt de grafiek boven de evenwichtsstand uit? Geef a.",
+   "o": [
+    "\"8\"",
+    "\"4\"",
+    "\"3\"",
+    "\"7 (het maximum)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8\"\"? Dan neem je het verschil tussen maximum en minimum. De amplitude is de helft, dus 4. Het goede antwoord is 4.",
+    "Klopt: a = (7 − (−1))/2 = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3\"\"? Dan neem je de evenwichtsstand. a is de uitwijking, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+    "Koos je \"\"7 (het maximum)\"\"? Dan neem je het maximum. a is de afstand tot de evenwichtsstand, dus 4. Controleer je stap: de juiste uitkomst is 4."
+   ],
+   "uh": "Hoe ver komt de grafiek boven de evenwichtsstand uit? Geef a.",
+   "ctx": "Een grafiek heeft maximum 7, minimum −1 en periode 4π. De grafiek gaat bij x = 0 door de evenwichtsstand omhoog. Een leerling stelt f(x) = a·sin(bx) + d op, bepaalt a, b en d en controleert met x = π."
+  },
+  {
+   "v": "Bepaal b als de periode 4π is (periode = 2π/b).",
+   "o": [
+    "\"2\"",
+    "\"4π\"",
+    "\"1/4 (delen door 4)\"",
+    "\"1/2\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2\"\"? Dan draai je de breuk om. Uit 4π = 2π/b volgt b = 1/2, dus 1/2. Het goede antwoord is 1/2.",
+    "Koos je \"\"4π\"\"? Dan neem je de periode als b. b = 2π/periode, dus 1/2. Door de stappen goed na te lopen kom je uit op 1/2.",
+    "Koos je \"\"1/4 (delen door 4)\"\"? Dan deel je door 4 in plaats van 4π. b = 2π/4π, dus 1/2. Controleer je stap: de juiste uitkomst is 1/2.",
+    "Klopt: 4π = 2π/b geeft b = 2π/4π = 1/2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bepaal b als de periode 4π is (periode = 2π/b).",
+   "ctx": "Een grafiek heeft maximum 7, minimum −1 en periode 4π. De grafiek gaat bij x = 0 door de evenwichtsstand omhoog. Een leerling stelt f(x) = a·sin(bx) + d op, bepaalt a, b en d en controleert met x = π."
+  },
+  {
+   "v": "Welke waarde geeft f(π) bij f(x) = 4·sin(x/2) + 3?",
+   "o": [
+    "\"7\"",
+    "\"3\"",
+    "\"4\"",
+    "\"−1\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal amplitude, evenwichtsstand en periode uit het voorschrift of de grafiek en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: sin(π/2) = 1, dus 4 + 3 = 7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3\"\"? Dan neem je sin = 0. Bij x = π is x/2 = π/2 en sin(π/2) = 1, dus 7. Het goede antwoord is 7.",
+    "Koos je \"\"4\"\"? Dan vergeet je de evenwichtsstand. f = 4 · 1 + 3, dus 7. Door de stappen goed na te lopen kom je uit op 7.",
+    "Koos je \"\"−1\"\"? Dan neem je sin = −1. Bij x/2 = π/2 is de sinus 1, dus 7. Controleer je stap: de juiste uitkomst is 7."
+   ],
+   "uh": "Welke waarde geeft f(π) bij f(x) = 4·sin(x/2) + 3?",
+   "ctx": "Een grafiek heeft maximum 7, minimum −1 en periode 4π. De grafiek gaat bij x = 0 door de evenwichtsstand omhoog. Een leerling stelt f(x) = a·sin(bx) + d op, bepaalt a, b en d en controleert met x = π."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt f(x) = 2·sin(x) − 1. Hij bepaalt de amplitude, de evenwichtsstand en het maximum en het minimum en controleert zijn antwoorden met x = π/2 en x = 3π/2.",
+   "v": "Bepaal amplitude, evenwichtsstand, maximum en minimum.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Amplitude 2 en evenwichtsstand −1 (1p). Maximum −1 + 2 = 1 en minimum −1 − 2 = −3 (1p). Controle: f(π/2) = 1 en f(3π/2) = −3 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt g(x) = 3·cos(2x). Hij bepaalt de periode en rekent g uit voor x = 0, π/2 en π. Daarna schetst hij één periode van de grafiek.",
+   "v": "Bepaal de periode en de waarden van g bij x = 0, π/2 en π.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Periode 2π/2 = π (1p). g(0) = 3 en g(π/2) = 3 · cos(π) = −3 (1p). g(π) = 3 · cos(2π) = 3 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het waterpeil in een haven is h(t) = 4 + 2·sin(πt/6) meter, met t in uren. Een leerling bepaalt de periode, het hoogste en laagste peil en h(3) en controleert met t = 9.",
+   "v": "Bepaal de periode, het hoogste en laagste peil en h(3).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Periode 2π/(π/6) = 12 uur (1p). Hoogste peil 6 m en laagste peil 2 m (1p). h(3) = 4 + 2 · sin(π/2) = 6 m en h(9) = 2 m (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een grafiek heeft maximum 9 en minimum 1 en periode π. De grafiek gaat bij x = 0 door de evenwichtsstand omhoog. Een leerling stelt f(x) = a·sin(bx) + d op en controleert met x = π/4.",
+   "v": "Stel het voorschrift op en controleer met x = π/4.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "d = 5 en a = 4 (1p). b = 2π/π = 2, dus f(x) = 4·sin(2x) + 5 (1p). Controle: f(π/4) = 4 · sin(π/2) + 5 = 9, het maximum (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling rekent hoeken om van graden naar radialen en gebruikt sin en cos. Hij bepaalt eerst 30° en 120° in radialen en berekent daarna sin(π/2) en cos(π) om zijn omrekening te controleren.",
+   "v": "Reken 30° en 120° om naar radialen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "30° = 30/180 · π = π/6 (1p). 120° = 120/180 · π = 2π/3 (1p). Controle: 180° = π, 90° = π/2 en sin(π/2) = 1 (1p)."
+  }
+ ]
+}
