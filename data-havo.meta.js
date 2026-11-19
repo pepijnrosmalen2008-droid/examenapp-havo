@@ -5410,7 +5410,30 @@ var VAKKEN = [
     "nSv": 92,
     "nOe": 3,
     "nBeg": 17,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "wb.B.1",
+      "gs": 2,
+      "naam": "Lineaire en kwadratische functies: grafiek en functievoorschrift",
+      "beschrijving": "Je gebruikt de grafiek en het voorschrift van lineaire en kwadratische functies, bepaalt helling, top, nulpunten en snijpunten, werkt met de verschillende schrijfwijzen en stelt zelf een functievoorschrift op.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Lineaire functies",
+       "Parabool en top",
+       "Nulpunten en ontbinden",
+       "Schrijfwijzen",
+       "Voorschrift opstellen en snijpunten"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "C",

@@ -1,0 +1,682 @@
+{
+ "id": "B1",
+ "lo": "wb.B.1",
+ "gs": 2,
+ "naam": "Lineaire en kwadratische functies: grafiek en functievoorschrift",
+ "beschrijving": "Je gebruikt de grafiek en het voorschrift van lineaire en kwadratische functies, bepaalt helling, top, nulpunten en snijpunten, werkt met de verschillende schrijfwijzen en stelt zelf een functievoorschrift op.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Lineaire functies",
+  "Parabool en top",
+  "Nulpunten en ontbinden",
+  "Schrijfwijzen",
+  "Voorschrift opstellen en snijpunten"
+ ],
+ "sam": "Bij een lineaire functie is a de helling (Δy : Δx) en b de beginwaarde f(0). Bij een kwadratische functie ligt de top bij xp = −b/(2a) en volg je de nulpunten uit f(x) = 0. Kies de schrijfwijze die geeft wat je zoekt en stel snijpunten op met f(x) = g(x). Controleer altijd met een getal.",
+ "begrippen": [
+  {
+   "t": "Lineaire functie",
+   "d": "Een functie f(x) = ax + b met een rechte lijn als grafiek."
+  },
+  {
+   "t": "Richtingscoëfficiënt",
+   "d": "De helling a van een lijn: Δy gedeeld door Δx, zoals (12,50 − 7,10) : 3 = 1,80."
+  },
+  {
+   "t": "Beginwaarde",
+   "d": "De waarde f(0) = b: het snijpunt met de y-as."
+  },
+  {
+   "t": "Kwadratische functie",
+   "d": "Een functie f(x) = ax² + bx + c met a ≠ 0."
+  },
+  {
+   "t": "Parabool",
+   "d": "De grafiek van een kwadratische functie, symmetrisch rond de symmetrieas."
+  },
+  {
+   "t": "Top",
+   "d": "Het hoogste of laagste punt van een parabool, bij xp = −b/(2a)."
+  },
+  {
+   "t": "Symmetrieas",
+   "d": "De lijn x = xp waarin de parabool zichzelf spiegelt, midden tussen de nulpunten."
+  },
+  {
+   "t": "Nulpunt",
+   "d": "Een x-waarde met f(x) = 0: het snijpunt van de grafiek met de x-as."
+  },
+  {
+   "t": "Snijpunt met de y-as",
+   "d": "Het punt (0, f(0)); bij f(x) = ax² + bx + c is dat (0, c)."
+  },
+  {
+   "t": "Dal- en bergparabool",
+   "d": "Bij a > 0 een dalparabool met een minimum, bij a < 0 een bergparabool met een maximum."
+  },
+  {
+   "t": "Schrijfwijzen",
+   "d": "De vormen ax² + bx + c, a(x − p)² + q en a(x − x1)(x − x2) van dezelfde functie."
+  },
+  {
+   "t": "Snijpunten van grafieken",
+   "d": "De oplossingen van f(x) = g(x); het aantal snijpunten is het aantal oplossingen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke grafiek hoort bij een functie van de vorm f(x) = ax + b?",
+   "o": [
+    "\"een parabool\"",
+    "\"een rechte lijn\"",
+    "\"een hyperbool, denk ik\"",
+    "\"een golf\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een parabool\"\"? Dan verwar je de lineaire functie met de kwadratische functie. Alleen met x² krijg je een parabool, dus een rechte lijn.",
+    "Klopt: een lineaire functie heeft een constante helling a, dus een rechte lijn.",
+    "Koos je \"\"een hyperbool, denk ik\"\"? Dan denk je aan een breuk met x in de noemer. Dat is een gebroken functie, dus een rechte lijn.",
+    "Koos je \"\"een golf\"\"? Dan denk je aan een sinus. Die komt in f(x) = ax + b niet voor, dus een rechte lijn. Controleer je stap: de juiste uitkomst is een rechte lijn."
+   ],
+   "uh": "Welke grafiek hoort bij een functie van de vorm f(x) = ax + b?"
+  },
+  {
+   "v": "In f(x) = ax + b hoort a bij de helling. Waar staat b voor?",
+   "o": [
+    "\"het snijpunt met de x-as, to be honest\"",
+    "\"de helling\"",
+    "\"het nulpunt\"",
+    "\"het snijpunt met de y-as\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het snijpunt met de x-as, to be honest\"\"? Dan verwar je b met het nulpunt. Het nulpunt is x = −b/a, en b is f(0). Het goede antwoord is het snijpunt met de y-as.",
+    "Koos je \"\"de helling\"\"? Dan verwar je b met a. De helling is de richtingscoëfficiënt a, en b is f(0). Door de stappen goed na te lopen kom je uit op het snijpunt met de y-as.",
+    "Koos je \"\"het nulpunt\"\"? Dan denk je dat b de x-waarde is waar f(x) = 0. Dat is −b/a, en b is f(0). Controleer je stap: de juiste uitkomst is het snijpunt met de y-as.",
+    "Klopt: bij x = 0 geldt f(0) = b, dus (0, b) ligt op de grafiek."
+   ],
+   "uh": "In f(x) = ax + b hoort a bij de helling. Waar staat b voor?"
+  },
+  {
+   "v": "Welke vorm heeft de grafiek van f(x) = ax² + bx + c met a ≠ 0?",
+   "o": [
+    "\"een parabool\"",
+    "\"een rechte lijn\"",
+    "\"een hyperbool\"",
+    "\"een cirkel\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een kwadratische functie heeft een parabool als grafiek, met een top en een symmetrieas.",
+    "Koos je \"\"een rechte lijn\"\"? Dan verwar je de kwadratische met de lineaire functie. Met x² krijg je een kromme, dus een parabool.",
+    "Koos je \"\"een hyperbool\"\"? Dan denk je aan een breuk met x in de noemer. Dat is een andere functie, dus een parabool. Door de stappen goed na te lopen kom je uit op een parabool.",
+    "Koos je \"\"een cirkel\"\"? Dan denk je aan x² + y² = r². Hier is y een functie van x, dus een parabool. Controleer je stap: de juiste uitkomst is een parabool."
+   ],
+   "uh": "Welke vorm heeft de grafiek van f(x) = ax² + bx + c met a ≠ 0?"
+  },
+  {
+   "v": "Hoe vind je de x-coördinaat van de top van f(x) = ax² + bx + c?",
+   "o": [
+    "\"xp = b/(2a), eigenlijk\"",
+    "\"xp = −c/a\"",
+    "\"xp = −b/(2a)\"",
+    "\"xp = −b/a\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"xp = b/(2a), eigenlijk\"\"? Dan vergeet je het minteken. De symmetrieas is x = −b/(2a), dus xp = −b/(2a). Het goede antwoord is xp = −b/(2a).",
+    "Koos je \"\"xp = −c/a\"\"? Dan gebruik je c in plaats van b. De top volgt uit de coëfficiënten a en b, dus xp = −b/(2a). Door de stappen goed na te lopen kom je uit op xp = −b/(2a).",
+    "Klopt: de top ligt op de symmetrieas x = −b/(2a), midden tussen de nulpunten.",
+    "Koos je \"\"xp = −b/a\"\"? Dan vergeet je de factor 2 in de noemer. Het is −b/(2a), dus xp = −b/(2a). Controleer je stap: de juiste uitkomst is xp = −b/(2a)."
+   ],
+   "uh": "Hoe vind je de x-coördinaat van de top van f(x) = ax² + bx + c?"
+  },
+  {
+   "v": "Hoe vind je de nulpunten van f(x) = x² − 9?",
+   "o": [
+    "\"vul x = 0 in: y = −9\"",
+    "\"los x² − 9 = 0 op: x = −3 of x = 3\"",
+    "\"deel 9 door 2: x = 4,5, gewoon, volgens mij\"",
+    "\"los x² = −9 op\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"vul x = 0 in: y = −9\"\"? Dan vul je x = 0 in. Dat geeft het snijpunt met de y-as, en voor nulpunten los je f(x) = 0 op.",
+    "Klopt: x² = 9 geeft twee oplossingen, x = 3 en x = −3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"deel 9 door 2: x = 4,5, gewoon, volgens mij\"\"? Dan deel je de constante door 2. Een nulpunt volgt uit x² = 9, dus x = 3 of x = −3. Door de stappen goed na te lopen kom je uit op los x² − 9 = 0 op: x = −3 of x = 3.",
+    "Koos je \"\"los x² = −9 op\"\"? Dan neem je het teken van 9 mee. De vergelijking is x² − 9 = 0, dus x² = 9. Controleer je stap: de juiste uitkomst is los x² − 9 = 0 op: x = −3 of x = 3."
+   ],
+   "uh": "Hoe vind je de nulpunten van f(x) = x² − 9?"
+  },
+  {
+   "v": "Bij f(x) = 2(x − 3)² + 1 zie je direct de top. Welk punt is dat?",
+   "o": [
+    "\"(−3, 1), I think\"",
+    "\"(3, −1)\"",
+    "\"(2, 1)\"",
+    "\"(3, 1)\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(−3, 1), I think\"\"? Dan neem je het teken in het haakje over. Bij (x − 3) is p = 3, dus (3, 1). Het goede antwoord is (3, 1).",
+    "Koos je \"\"(3, −1)\"\"? Dan verander je het teken van q. Het is + 1, dus (3, 1). Door de stappen goed na te lopen kom je uit op (3, 1).",
+    "Koos je \"\"(2, 1)\"\"? Dan gebruik je de factor a als x-coördinaat. De top is (p, q) = (3, 1), dus niet (2, 1). Controleer je stap: de juiste uitkomst is (3, 1).",
+    "Klopt: in a(x − p)² + q is de top het punt (p, q). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bij f(x) = 2(x − 3)² + 1 zie je direct de top. Welk punt is dat?"
+  },
+  {
+   "v": "Hoeveel punten heb je minstens nodig om het voorschrift van een lineaire functie op te stellen?",
+   "o": [
+    "\"twee\"",
+    "\"één\"",
+    "\"drie\"",
+    "\"vier\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: twee punten leggen een lijn vast; met a en b zijn er twee onbekenden.",
+    "Koos je \"\"één\"\"? Dan denk je dat één punt genoeg is. Door één punt gaan oneindig veel lijnen, dus twee. Het goede antwoord is twee.",
+    "Koos je \"\"drie\"\"? Dan denk je aan een parabool. Voor f(x) = ax + b zijn er twee onbekenden, dus twee punten. Door de stappen goed na te lopen kom je uit op twee.",
+    "Koos je \"\"vier\"\"? Dan telt je te veel punten. Er zijn alleen a en b te bepalen, dus twee punten. Controleer je stap: de juiste uitkomst is twee."
+   ],
+   "uh": "Hoeveel punten heb je minstens nodig om het voorschrift van een lineaire functie op te stellen?"
+  },
+  {
+   "v": "Hoe groot is de richtingscoëfficiënt uit de punten (2; 7,10) en (5; 12,50)?",
+   "o": [
+    "\"5,40\"",
+    "\"3\"",
+    "\"1,80\"",
+    "\"3,55\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5,40\"\"? Dan deel je het verschil in y niet door het verschil in x. De helling is Δy : Δx, dus 1,80. Het goede antwoord is 1,80.",
+    "Koos je \"\"3\"\"? Dan neem je het verschil in x. De helling is Δy : Δx, dus 5,40 : 3 = 1,80. Door de stappen goed na te lopen kom je uit op 1,80.",
+    "Klopt: (12,50 − 7,10) : (5 − 2) = 5,40 : 3 = 1,80. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3,55\"\"? Dan deel je 7,10 door 2. Dat is geen helling; gebruik beide punten, dus 1,80. Controleer je stap: de juiste uitkomst is 1,80."
+   ],
+   "uh": "Hoe groot is de richtingscoëfficiënt uit de punten (2; 7,10) en (5; 12,50)?",
+   "ctx": "Een taxibedrijf rekent K = 3,50 + 1,80d euro voor een rit van d kilometer. Een leerling kent de punten (2; 7,10) en (5; 12,50) van de grafiek en stelt het voorschrift zelf op. Daarna rekent hij de prijs voor 10 km uit."
+  },
+  {
+   "v": "Bereken b in K = 1,80d + b met het punt (2; 7,10).",
+   "o": [
+    "\"5,30\"",
+    "\"3,50\"",
+    "\"7,10\"",
+    "\"8,90\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5,30\"\"? Dan trek je 1,80 af in plaats van 1,80 × 2. Vul d = 2 in, dus 7,10 − 3,60 = 3,50. Het goede antwoord is 3,50.",
+    "Klopt: 7,10 − 1,80 × 2 = 3,50. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7,10\"\"? Dan neem je de prijs zelf als beginwaarde. Trek eerst 1,80 × 2 af, dus b = 3,50. Door de stappen goed na te lopen kom je uit op 3,50.",
+    "Koos je \"\"8,90\"\"? Dan tel je 1,80 erbij op. Je moet 3,60 aftrekken, dus b = 3,50. Controleer je stap: de juiste uitkomst is 3,50."
+   ],
+   "uh": "Bereken b in K = 1,80d + b met het punt (2; 7,10).",
+   "ctx": "Een taxibedrijf rekent K = 3,50 + 1,80d euro voor een rit van d kilometer. Een leerling kent de punten (2; 7,10) en (5; 12,50) van de grafiek en stelt het voorschrift zelf op. Daarna rekent hij de prijs voor 10 km uit."
+  },
+  {
+   "v": "Hoeveel kost een rit van 10 km volgens K = 3,50 + 1,80d?",
+   "o": [
+    "\"€ 18,00, really\"",
+    "\"€ 35,00\"",
+    "\"€ 5,30\"",
+    "\"€ 21,50\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€ 18,00, really\"\"? Dan laat je de beginwaarde weg. Er is ook € 3,50 instaptarief, dus € 21,50. Het goede antwoord is € 21,50.",
+    "Koos je \"\"€ 35,00\"\"? Dan vermenigvuldig je 3,50 met 10. Alleen de kilometers worden met 1,80 vermenigvuldigd, dus € 21,50.",
+    "Koos je \"\"€ 5,30\"\"? Dan tel je 1,80 en 3,50 op. Vul d = 10 in, dus 3,50 + 18 = 21,50. Controleer je stap: de juiste uitkomst is € 21,50.",
+    "Klopt: 3,50 + 1,80 × 10 = 21,50. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel kost een rit van 10 km volgens K = 3,50 + 1,80d?",
+   "ctx": "Een taxibedrijf rekent K = 3,50 + 1,80d euro voor een rit van d kilometer. Een leerling kent de punten (2; 7,10) en (5; 12,50) van de grafiek en stelt het voorschrift zelf op. Daarna rekent hij de prijs voor 10 km uit."
+  },
+  {
+   "v": "Welke nulpunten heeft f(x) = x² − 6x + 5?",
+   "o": [
+    "\"x = 1 en x = 5\"",
+    "\"x = −1 en x = −5\"",
+    "\"x = 2 en x = 3\"",
+    "\"x = 0 en x = 6\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x² − 6x + 5 = (x − 1)(x − 5); product 5 en som −6.",
+    "Koos je \"\"x = −1 en x = −5\"\"? Dan neem je de getallen uit de haakjes met het verkeerde teken. (x − 1)(x − 5) geeft x = 1 en 5, dus x = 1 en x = 5.",
+    "Koos je \"\"x = 2 en x = 3\"\"? Dan kies je getallen met product 6 en som 5. Je zoekt product 5 en som −6, dus 1 en 5. Door de stappen goed na te lopen kom je uit op x = 1 en x = 5.",
+    "Koos je \"\"x = 0 en x = 6\"\"? Dan haal je x buiten haakjes. De constante 5 maakt dat onmogelijk, dus x = 1 en x = 5. Controleer je stap: de juiste uitkomst is x = 1 en x = 5."
+   ],
+   "uh": "Welke nulpunten heeft f(x) = x² − 6x + 5?",
+   "ctx": "Een leerling onderzoekt de functie f(x) = x² − 6x + 5. Hij wil de nulpunten, de top en het snijpunt met de y-as bepalen en controleert elk antwoord door een getal in te vullen in het voorschrift."
+  },
+  {
+   "v": "Bereken de x-coördinaat van de top van f.",
+   "o": [
+    "\"−3\"",
+    "\"6\"",
+    "\"3\"",
+    "\"2,5\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−3\"\"? Dan vergeet je het minteken van b. b = −6, dus xp = 6/2 = 3. Het goede antwoord is 3.",
+    "Koos je \"\"6\"\"? Dan vergeet je de 2 in de noemer. Het is 6/(2 · 1), dus xp = 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Klopt: xp = −(−6)/(2 · 1) = 3, midden tussen 1 en 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2,5\"\"? Dan neem je de helft van c. De top volgt uit b en a, dus xp = 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Bereken de x-coördinaat van de top van f.",
+   "ctx": "Een leerling onderzoekt de functie f(x) = x² − 6x + 5. Hij wil de nulpunten, de top en het snijpunt met de y-as bepalen en controleert elk antwoord door een getal in te vullen in het voorschrift."
+  },
+  {
+   "v": "Welke coördinaten heeft de top van f?",
+   "o": [
+    "\"(3, 5)\"",
+    "\"(3, −4)\"",
+    "\"(3, 4)\"",
+    "\"(−3, −4), zeg maar\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(3, 5)\"\"? Dan neem je c als y-coördinaat. c = 5 is f(0), dus yp = f(3) = −4. Het goede antwoord is (3, −4).",
+    "Klopt: f(3) = 9 − 18 + 5 = −4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(3, 4)\"\"? Dan vergeet je het minteken. f(3) = 9 − 18 + 5 is negatief, dus (3, −4). Door de stappen goed na te lopen kom je uit op (3, −4).",
+    "Koos je \"\"(−3, −4), zeg maar\"\"? Dan neem je het teken van b voor xp. De top ligt bij x = 3, dus (3, −4). Controleer je stap: de juiste uitkomst is (3, −4)."
+   ],
+   "uh": "Welke coördinaten heeft de top van f?",
+   "ctx": "Een leerling onderzoekt de functie f(x) = x² − 6x + 5. Hij wil de nulpunten, de top en het snijpunt met de y-as bepalen en controleert elk antwoord door een getal in te vullen in het voorschrift."
+  },
+  {
+   "v": "Welke top heeft g(x) = 2(x − 1)² − 8?",
+   "o": [
+    "\"(−1, −8), eigenlijk\"",
+    "\"(1, 8)\"",
+    "\"(2, −8)\"",
+    "\"(1, −8)\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(−1, −8), eigenlijk\"\"? Dan neem je het teken van het haakje over. Bij (x − 1) is p = 1, dus (1, −8). Het goede antwoord is (1, −8).",
+    "Koos je \"\"(1, 8)\"\"? Dan verander je het teken van q. Het is − 8, dus (1, −8). Door de stappen goed na te lopen kom je uit op (1, −8).",
+    "Koos je \"\"(2, −8)\"\"? Dan gebruik je a als x-coördinaat. De top is (p, q), dus (1, −8). Controleer je stap: de juiste uitkomst is (1, −8).",
+    "Klopt: in a(x − p)² + q is de top (p, q) = (1, −8). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke top heeft g(x) = 2(x − 1)² − 8?",
+   "ctx": "Een leerling bekijkt g(x) = 2(x − 1)² − 8. Hij schrijft de top af, werkt de haakjes weg en bepaalt de nulpunten. Hij controleert zijn werk met x = 0 en met x = 3 in beide schrijfwijzen."
+  },
+  {
+   "v": "Werk g(x) = 2(x − 1)² − 8 uit tot de vorm ax² + bx + c.",
+   "o": [
+    "\"2x² − 4x − 6\"",
+    "\"2x² − 4x − 8, really\"",
+    "\"2x² − 2x − 6\"",
+    "\"2x² + 4x − 6\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2(x² − 2x + 1) − 8 = 2x² − 4x + 2 − 8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2x² − 4x − 8, really\"\"? Dan vergeet je 2 · 1 = 2 mee te nemen. Na het uitwerken is c = 2 − 8, dus 2x² − 4x − 6. Het goede antwoord is 2x² − 4x − 6.",
+    "Koos je \"\"2x² − 2x − 6\"\"? Dan vergeet je de factor 2 bij de middenterm. (x − 1)² = x² − 2x + 1 en daar komt 2 voor, dus −4x.",
+    "Koos je \"\"2x² + 4x − 6\"\"? Dan verander je het teken van de middenterm. Bij (x − 1)² is die −2x, dus −4x. Controleer je stap: de juiste uitkomst is 2x² − 4x − 6."
+   ],
+   "uh": "Werk g(x) = 2(x − 1)² − 8 uit tot de vorm ax² + bx + c.",
+   "ctx": "Een leerling bekijkt g(x) = 2(x − 1)² − 8. Hij schrijft de top af, werkt de haakjes weg en bepaalt de nulpunten. Hij controleert zijn werk met x = 0 en met x = 3 in beide schrijfwijzen."
+  },
+  {
+   "v": "Los 2(x − 1)² − 8 = 0 op. Welke x krijg je?",
+   "o": [
+    "\"x = −2 of x = 2, I think\"",
+    "\"x = 1 en x = 5\"",
+    "\"x = −1 of x = 3\"",
+    "\"x = 3 alleen\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = −2 of x = 2, I think\"\"? Dan neem je de wortel van 4 zonder 1 erbij te tellen. Je moet x − 1 = ±2 oplossen, dus x = 3 of −1.",
+    "Koos je \"\"x = 1 en x = 5\"\"? Dan gebruik je de coördinaten van de top. De nulpunten volgen uit g(x) = 0, dus x = −1 of x = 3.",
+    "Klopt: (x − 1)² = 4 geeft x − 1 = 2 of x − 1 = −2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 3 alleen\"\"? Dan vergeet je de negatieve wortel. x − 1 = −2 geeft ook een oplossing, dus x = −1 en x = 3. Controleer je stap: de juiste uitkomst is x = −1 of x = 3."
+   ],
+   "uh": "Los 2(x − 1)² − 8 = 0 op. Welke x krijg je?",
+   "ctx": "Een leerling bekijkt g(x) = 2(x − 1)² − 8. Hij schrijft de top af, werkt de haakjes weg en bepaalt de nulpunten. Hij controleert zijn werk met x = 0 en met x = 3 in beide schrijfwijzen."
+  },
+  {
+   "v": "Welke waarde geeft g(0) volgens g(x) = 2(x − 1)² − 8?",
+   "o": [
+    "\"−8\"",
+    "\"−6\"",
+    "\"2\"",
+    "\"−2\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−8\"\"? Dan neem je q als y-waarde. Vul x = 0 in het hele voorschrift in, dus 2 · 1 − 8 = −6. Het goede antwoord is −6.",
+    "Klopt: 2 · 1 − 8 = −6; dat is ook c in 2x² − 4x − 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2\"\"? Dan laat je de −8 weg. De oorspronkelijke vorm is 2(x − 1)² − 8, dus −6. Door de stappen goed na te lopen kom je uit op −6.",
+    "Koos je \"\"−2\"\"? Dan kwadrateer je niet en laat −8 weg. Het is 2 · (−1)² − 8, dus −6. Controleer je stap: de juiste uitkomst is −6."
+   ],
+   "uh": "Welke waarde geeft g(0) volgens g(x) = 2(x − 1)² − 8?",
+   "ctx": "Een leerling bekijkt g(x) = 2(x − 1)² − 8. Hij schrijft de top af, werkt de haakjes weg en bepaalt de nulpunten. Hij controleert zijn werk met x = 0 en met x = 3 in beide schrijfwijzen."
+  },
+  {
+   "v": "Op welke twee tijdstippen is h(t) = −5t² + 20t gelijk aan 0?",
+   "o": [
+    "\"t = 0 en t = 20, I suppose\"",
+    "\"t = 4 alleen\"",
+    "\"t = 0 en t = −4\"",
+    "\"t = 0 en t = 4\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"t = 0 en t = 20, I suppose\"\"? Dan deel je 20 niet door 5. −5t² + 20t = −5t(t − 4), dus t = 4. Het goede antwoord is t = 0 en t = 4.",
+    "Koos je \"\"t = 4 alleen\"\"? Dan vergeet je het starttijdstip. Ook t = 0 is een nulpunt, dus t = 0 en t = 4. Door de stappen goed na te lopen kom je uit op t = 0 en t = 4.",
+    "Koos je \"\"t = 0 en t = −4\"\"? Dan verander je het teken. Uit t − 4 = 0 volgt t = 4, dus t = 0 en t = 4. Controleer je stap: de juiste uitkomst is t = 0 en t = 4.",
+    "Klopt: −5t(t − 4) = 0 geeft t = 0 of t = 4. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Op welke twee tijdstippen is h(t) = −5t² + 20t gelijk aan 0?",
+   "ctx": "Een bal wordt omhoog geschoten. De hoogte in meter na t seconden is h(t) = −5t² + 20t. Een leerling bepaalt wanneer de bal weer de grond raakt en welke hoogte de bal maximaal bereikt, en schetst daarna de grafiek."
+  },
+  {
+   "v": "Op welk tijdstip is de bal het hoogst?",
+   "o": [
+    "\"t = 2\"",
+    "\"t = 4\"",
+    "\"t = 20, you know\"",
+    "\"t = 1\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de top ligt midden tussen t = 0 en t = 4, ook xp = −20/(−10) = 2.",
+    "Koos je \"\"t = 4\"\"? Dan kies je het tijdstip waarop de bal weer beneden is. De top ligt halverwege, dus t = 2. Het goede antwoord is t = 2.",
+    "Koos je \"\"t = 20, you know\"\"? Dan gebruik je de coëfficiënt 20 als tijdstip. Rekenen met −b/(2a) geeft 2, dus t = 2. Door de stappen goed na te lopen kom je uit op t = 2.",
+    "Koos je \"\"t = 1\"\"? Dan kies je een willekeurige waarde. Gebruik xp = −b/(2a), dus t = 2. Controleer je stap: de juiste uitkomst is t = 2."
+   ],
+   "uh": "Op welk tijdstip is de bal het hoogst?",
+   "ctx": "Een bal wordt omhoog geschoten. De hoogte in meter na t seconden is h(t) = −5t² + 20t. Een leerling bepaalt wanneer de bal weer de grond raakt en welke hoogte de bal maximaal bereikt, en schetst daarna de grafiek."
+  },
+  {
+   "v": "Welke maximale hoogte bereikt de bal?",
+   "o": [
+    "\"40 m, gewoon\"",
+    "\"15 m\"",
+    "\"20 m\"",
+    "\"10 m\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 m, gewoon\"\"? Dan verdubbel je de hoogte bij t = 2. h(2) = −5 · 4 + 40, dus 20 m. Het goede antwoord is 20 m.",
+    "Koos je \"\"15 m\"\"? Dan neem je h(1) als maximum. De top ligt bij t = 2, dus h(2) = 20 m. Door de stappen goed na te lopen kom je uit op 20 m.",
+    "Klopt: h(2) = −20 + 40 = 20 meter. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"10 m\"\"? Dan neem je de helft van de top. Reken h(2) uit, dus 20 m. Controleer je stap: de juiste uitkomst is 20 m."
+   ],
+   "uh": "Welke maximale hoogte bereikt de bal?",
+   "ctx": "Een bal wordt omhoog geschoten. De hoogte in meter na t seconden is h(t) = −5t² + 20t. Een leerling bepaalt wanneer de bal weer de grond raakt en welke hoogte de bal maximaal bereikt, en schetst daarna de grafiek."
+  },
+  {
+   "v": "Welke waarde heeft a in f(x) = a(x + 2)(x − 4)?",
+   "o": [
+    "\"−1\"",
+    "\"1\"",
+    "\"−8\"",
+    "\"4\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−1\"\"? Dan let je niet op het minteken in −8a = −8. Delen door −8 geeft a = 1, dus a = 1. Het goede antwoord is 1.",
+    "Klopt: f(0) = a · 2 · (−4) = −8a = −8, dus a = 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−8\"\"? Dan neem je de y-waarde als a. Vul x = 0 in en los op, dus a = 1. Door de stappen goed na te lopen kom je uit op 1.",
+    "Koos je \"\"4\"\"? Dan neem je het tweede nulpunt als a. a volgt uit het punt (0, −8), dus a = 1. Controleer je stap: de juiste uitkomst is 1."
+   ],
+   "uh": "Welke waarde heeft a in f(x) = a(x + 2)(x − 4)?",
+   "ctx": "Een parabool heeft de nulpunten x = −2 en x = 4 en gaat door het punt (0, −8). Een leerling schrijft f(x) = a(x + 2)(x − 4), bepaalt a met het punt (0, −8) en zoekt daarna de top van de parabool."
+  },
+  {
+   "v": "Welk voorschrift hoort bij de parabool?",
+   "o": [
+    "\"f(x) = x² + 2x − 8, volgens mij\"",
+    "\"f(x) = x² − 2x + 8\"",
+    "\"f(x) = x² − 6x − 8\"",
+    "\"f(x) = x² − 2x − 8\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f(x) = x² + 2x − 8, volgens mij\"\"? Dan verwisselt je de tekens in de middenterm. −4x + 2x = −2x, dus x² − 2x − 8. Het goede antwoord is f(x) = x² − 2x − 8.",
+    "Koos je \"\"f(x) = x² − 2x + 8\"\"? Dan verander je het teken van de constante. 2 · (−4) = −8, dus x² − 2x − 8. Door de stappen goed na te lopen kom je uit op f(x) = x² − 2x − 8.",
+    "Koos je \"\"f(x) = x² − 6x − 8\"\"? Dan tel je de nulpunten op. De middenterm is −4x + 2x = −2x, dus x² − 2x − 8. Controleer je stap: de juiste uitkomst is f(x) = x² − 2x − 8.",
+    "Klopt: (x + 2)(x − 4) = x² − 4x + 2x − 8. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk voorschrift hoort bij de parabool?",
+   "ctx": "Een parabool heeft de nulpunten x = −2 en x = 4 en gaat door het punt (0, −8). Een leerling schrijft f(x) = a(x + 2)(x − 4), bepaalt a met het punt (0, −8) en zoekt daarna de top van de parabool."
+  },
+  {
+   "v": "Welke top heeft de parabool f(x) = x² − 2x − 8?",
+   "o": [
+    "\"(1, −9)\"",
+    "\"(1, −8)\"",
+    "\"(−1, −9), zeg maar\"",
+    "\"(2, −9)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: xp = 1 midden tussen −2 en 4 en f(1) = 1 − 2 − 8 = −9.",
+    "Koos je \"\"(1, −8)\"\"? Dan neem je c als y-coördinaat. c = −8 is f(0), dus f(1) = −9. Het goede antwoord is (1, −9).",
+    "Koos je \"\"(−1, −9), zeg maar\"\"? Dan verander je het teken van xp. Het midden van −2 en 4 is 1, dus (1, −9). Door de stappen goed na te lopen kom je uit op (1, −9).",
+    "Koos je \"\"(2, −9)\"\"? Dan neem je b als x-coördinaat. xp = −b/(2a) = 1, dus (1, −9). Controleer je stap: de juiste uitkomst is (1, −9)."
+   ],
+   "uh": "Welke top heeft de parabool f(x) = x² − 2x − 8?",
+   "ctx": "Een parabool heeft de nulpunten x = −2 en x = 4 en gaat door het punt (0, −8). Een leerling schrijft f(x) = a(x + 2)(x − 4), bepaalt a met het punt (0, −8) en zoekt daarna de top van de parabool."
+  },
+  {
+   "v": "Welke vergelijking krijg je uit f(x) = g(x)?",
+   "o": [
+    "\"x² − 4x + 2 = 0\"",
+    "\"x² − 2x + 1 = 0\"",
+    "\"x² − 4x = 0\"",
+    "\"x² + 4x = 0\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² − 4x + 2 = 0\"\"? Dan tel je de constanten fout op. 1 en 1 vallen tegen elkaar weg, dus x² − 4x = 0. Het goede antwoord is x² − 4x = 0.",
+    "Koos je \"\"x² − 2x + 1 = 0\"\"? Dan gebruik je alleen g. Je moet f en g gelijkstellen, dus x² − 4x = 0. Door de stappen goed na te lopen kom je uit op x² − 4x = 0.",
+    "Klopt: 2x + 1 = x² − 2x + 1 geeft x² − 4x = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x² + 4x = 0\"\"? Dan verander je het teken van de middenterm. −2x − 2x = −4x, dus x² − 4x = 0. Controleer je stap: de juiste uitkomst is x² − 4x = 0."
+   ],
+   "uh": "Welke vergelijking krijg je uit f(x) = g(x)?",
+   "ctx": "De grafieken van de lineaire functie f(x) = 2x + 1 en de kwadratische functie g(x) = x² − 2x + 1 snijden elkaar. Een leerling stelt f(x) = g(x) op, lost die vergelijking op en controleert beide snijpunten."
+  },
+  {
+   "v": "Welke x-coördinaten hebben de snijpunten van f en g?",
+   "o": [
+    "\"x = 0 en x = −4, gewoon\"",
+    "\"x = 0 en x = 4\"",
+    "\"x = 4 alleen\"",
+    "\"x = 1 en x = 4\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 0 en x = −4, gewoon\"\"? Dan verander je het teken. Uit x − 4 = 0 volgt x = 4, dus x = 0 en x = 4. Het goede antwoord is x = 0 en x = 4.",
+    "Klopt: x(x − 4) = 0 geeft x = 0 of x = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 4 alleen\"\"? Dan vergeet je x = 0. x(x − 4) = 0 heeft twee oplossingen, dus x = 0 en x = 4. Door de stappen goed na te lopen kom je uit op x = 0 en x = 4.",
+    "Koos je \"\"x = 1 en x = 4\"\"? Dan neem je de top van g. De snijpunten volgen uit x(x − 4) = 0, dus x = 0 en x = 4. Controleer je stap: de juiste uitkomst is x = 0 en x = 4."
+   ],
+   "uh": "Welke x-coördinaten hebben de snijpunten van f en g?",
+   "ctx": "De grafieken van de lineaire functie f(x) = 2x + 1 en de kwadratische functie g(x) = x² − 2x + 1 snijden elkaar. Een leerling stelt f(x) = g(x) op, lost die vergelijking op en controleert beide snijpunten."
+  },
+  {
+   "v": "Welke y-waarde hoort bij het snijpunt met x = 4?",
+   "o": [
+    "\"8\"",
+    "\"17\"",
+    "\"1\"",
+    "\"9\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8\"\"? Dan laat je de + 1 weg. f(4) = 2 · 4 + 1, dus 9. Het goede antwoord is 9.",
+    "Koos je \"\"17\"\"? Dan neem je x² + 1. g(4) = 16 − 8 + 1, dus 9. Door de stappen goed na te lopen kom je uit op 9.",
+    "Koos je \"\"1\"\"? Dan neem je de y-waarde van het snijpunt met x = 0. Bij x = 4 geldt f(4), dus 9. Controleer je stap: de juiste uitkomst is 9.",
+    "Klopt: f(4) = 2 · 4 + 1 = 9 en g(4) = 16 − 8 + 1 = 9. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke y-waarde hoort bij het snijpunt met x = 4?",
+   "ctx": "De grafieken van de lineaire functie f(x) = 2x + 1 en de kwadratische functie g(x) = x² − 2x + 1 snijden elkaar. Een leerling stelt f(x) = g(x) op, lost die vergelijking op en controleert beide snijpunten."
+  },
+  {
+   "v": "Een lijn snijdt een parabool in twee punten. Wat volgt hieruit voor f(x) = g(x)?",
+   "o": [
+    "\"de vergelijking heeft twee oplossingen\"",
+    "\"de vergelijking heeft geen oplossing, to be honest\"",
+    "\"de vergelijking heeft één oplossing\"",
+    "\"de lijn is een raaklijn\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Gebruik de eigenschappen van de grafiek of het voorschrift en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: elk snijpunt geeft een oplossing, hier x = 0 en x = 4.",
+    "Koos je \"\"de vergelijking heeft geen oplossing, to be honest\"\"? Dan denk je dat snijden niets oplevert. Elk snijpunt is een oplossing, dus twee oplossingen.",
+    "Koos je \"\"de vergelijking heeft één oplossing\"\"? Dan telt je maar één snijpunt. Er zijn er twee, dus twee oplossingen. Door de stappen goed na te lopen kom je uit op de vergelijking heeft twee oplossingen.",
+    "Koos je \"\"de lijn is een raaklijn\"\"? Dan verwar je snijden met raken. Een raaklijn heeft één punt, dus twee oplossingen."
+   ],
+   "uh": "Een lijn snijdt een parabool in twee punten. Wat volgt hieruit voor f(x) = g(x)?",
+   "ctx": "De grafieken van de lineaire functie f(x) = 2x + 1 en de kwadratische functie g(x) = x² − 2x + 1 snijden elkaar. Een leerling stelt f(x) = g(x) op, lost die vergelijking op en controleert beide snijpunten."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een abonnement kost bij 100 belminuten € 17,50 en bij 300 belminuten € 27,50 per maand. Een leerling neemt aan dat het verband lineair is. Hij stelt het functievoorschrift K = am + b op en rekent daarmee de kosten voor 500 minuten uit.",
+   "v": "Stel het voorschrift op en bereken de kosten bij 500 minuten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "a = (27,50 − 17,50) : (300 − 100) = 0,05 (1p). b = 17,50 − 0,05 · 100 = 12,50, dus K = 0,05m + 12,50 (1p). Bij 500 minuten: 0,05 · 500 + 12,50 = € 37,50 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt de functie f(x) = x² − 8x + 7. Hij bepaalt de nulpunten en de top en controleert zijn antwoorden door getallen in te vullen. De grafiek is een dalparabool.",
+   "v": "Bepaal de nulpunten en de top van f.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "x² − 8x + 7 = (x − 1)(x − 7), dus x = 1 en x = 7 (1p). xp = 4 (1p). f(4) = 16 − 32 + 7 = −9, dus de top is (4, −9) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling bekijkt g(x) = −(x + 2)² + 9. Hij leest de top af, bepaalt de nulpunten en het snijpunt met de y-as en controleert zijn werk door x = 0 in te vullen. Het is een bergparabool.",
+   "v": "Bepaal de top, de nulpunten en het snijpunt met de y-as van g.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De top is (−2, 9) (1p). (x + 2)² = 9 geeft x = 1 of x = −5 (1p). g(0) = −4 + 9 = 5, dus (0, 5) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een parabool heeft de nulpunten x = 1 en x = 5 en gaat door het punt (0, 10). Een leerling schrijft f(x) = a(x − 1)(x − 5), bepaalt a met het gegeven punt en zoekt daarna de coördinaten van de top.",
+   "v": "Stel het voorschrift op en bepaal de top.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f(0) = a · (−1) · (−5) = 5a = 10, dus a = 2 (1p). f(x) = 2(x − 1)(x − 5) = 2x² − 12x + 10 (1p). xp = 3 en f(3) = 2 · 2 · (−2) = −8, dus de top is (3, −8) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De lijn y = x + 2 snijdt de parabool y = x² in twee punten. Een leerling stelt de vergelijking x² = x + 2 op, lost die op en controleert beide snijpunten door de coördinaten in beide formules in te vullen.",
+   "v": "Bereken de coördinaten van de snijpunten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "x² − x − 2 = 0, dus (x − 2)(x + 1) = 0 (1p). x = 2 of x = −1 (1p). De punten zijn (2, 4) en (−1, 1); controle: −1 + 2 = 1 en (−1)² = 1 (1p)."
+  }
+ ]
+}
