@@ -5537,6 +5537,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B7",
+      "lo": "wb.B.7",
+      "gs": 2,
+      "naam": "Vergelijkingen oplossen: lineair, kwadratisch, abc-formule, machten en logaritmen",
+      "beschrijving": "Je lost lineaire en kwadratische vergelijkingen op, gebruikt ontbinden en de abc-formule, lost machtsvergelijkingen op met logaritmen, werkt met wortel- en breukvergelijkingen en controleert elke oplossing.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Lineaire vergelijkingen",
+       "Kwadratisch: ontbinden",
+       "Abc-formule",
+       "Machten en logaritmen",
+       "Wortel- en breukvergelijkingen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
