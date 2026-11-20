@@ -1,0 +1,682 @@
+{
+ "id": "B6",
+ "lo": "wb.B.6",
+ "gs": 2,
+ "naam": "Samengestelde functies, somfuncties en verschilfuncties",
+ "beschrijving": "Je stelt samengestelde functies op met een ketting, vormt som- en verschilfuncties, bepaalt het domein, schrijft x als functie van y en past dit toe op situaties zoals winst.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Ketting en volgorde",
+  "Som- en verschilfuncties",
+  "Domein en eigenschappen",
+  "Winst en situaties",
+  "x uitdrukken in y"
+ ],
+ "sam": "Bij f(g(x)) werk je van binnen naar buiten en de volgorde maakt uit. Een som en een verschil werk je per x uit, en een winstfunctie is opbrengst min kosten. Let bij een wortel op het domein en maak voor x in y de stappen in omgekeerde volgorde ongedaan. Controleer met een getal.",
+ "begrippen": [
+  {
+   "t": "Samengestelde functie",
+   "d": "Een functie die ontstaat door twee functies achter elkaar uit te voeren, zoals f(g(x))."
+  },
+  {
+   "t": "Ketting",
+   "d": "De samenstelling f(g(x)): eerst g, dan f."
+  },
+  {
+   "t": "Inwendige functie",
+   "d": "De functie die je eerst uitrekent, zoals 2x + 1 bij √(2x + 1)."
+  },
+  {
+   "t": "Uitwendige functie",
+   "d": "De laatste bewerking, zoals de wortel bij √(2x + 1)."
+  },
+  {
+   "t": "Volgorde van een ketting",
+   "d": "f(g(x)) en g(f(x)) zijn meestal verschillend."
+  },
+  {
+   "t": "Somfunctie",
+   "d": "s(x) = f(x) + g(x): de functiewaarden worden opgeteld."
+  },
+  {
+   "t": "Verschilfunctie",
+   "d": "v(x) = f(x) − g(x): de functiewaarden worden afgetrokken."
+  },
+  {
+   "t": "Domein van een samengestelde functie",
+   "d": "De x-waarden waarvoor elke stap in de ketting is gedefinieerd."
+  },
+  {
+   "t": "X uitdrukken in y",
+   "d": "De formule omkeren, zoals x = (y² − 1)/2 bij y = √(2x + 1)."
+  },
+  {
+   "t": "Winstfunctie",
+   "d": "De verschilfunctie opbrengst min kosten."
+  },
+  {
+   "t": "Break-evenpunt",
+   "d": "De waarde waarbij de winst 0 is."
+  },
+  {
+   "t": "Controleren met een getal",
+   "d": "Een x invullen in de stappen en in het eindvoorschrift."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Bij f(g(x)) werk je eerst met welke functie?",
+   "o": [
+    "\"f\"",
+    "\"g\"",
+    "\"beide tegelijk\"",
+    "\"de som van f en g\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f\"\"? Dan draai je de volgorde om. De binnenste functie komt eerst, dus g. Het goede antwoord is g.",
+    "Klopt: bij f(g(x)) bereken je eerst g(x) en vul je dat in f in.",
+    "Koos je \"\"beide tegelijk\"\"? Dan denk je dat de volgorde niet uitmaakt. Je rekent van binnen naar buiten, dus eerst g. Door de stappen goed na te lopen kom je uit op g.",
+    "Koos je \"\"de som van f en g\"\"? Dan verwar je een ketting met een somfunctie. Bij f(g(x)) vul je g(x) in f in, dus eerst g."
+   ],
+   "uh": "Bij f(g(x)) werk je eerst met welke functie?"
+  },
+  {
+   "v": "Bij h(x) = √(2x + 1): welk deel is de inwendige functie?",
+   "o": [
+    "\"√\"",
+    "\"x\"",
+    "\"2x\"",
+    "\"2x + 1\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"√\"\"? Dan neem je de buitenste bewerking. Die is de uitwendige functie, dus 2x + 1. Het goede antwoord is 2x + 1.",
+    "Koos je \"\"x\"\"? Dan neem je alleen de variabele. De inwendige functie is de hele uitdrukking onder de wortel, dus 2x + 1.",
+    "Koos je \"\"2x\"\"? Dan laat je de + 1 weg. Onder de wortel staat 2x + 1, dus 2x + 1. Controleer je stap: de juiste uitkomst is 2x + 1.",
+    "Klopt: dat is wat je eerst uitrekent, voordat je de wortel neemt."
+   ],
+   "uh": "Bij h(x) = √(2x + 1): welk deel is de inwendige functie?"
+  },
+  {
+   "v": "Is f(g(x)) altijd gelijk aan g(f(x))?",
+   "o": [
+    "\"nee, de volgorde maakt uit\"",
+    "\"ja, altijd\"",
+    "\"ja, als f en g dezelfde variabele hebben\"",
+    "\"alleen als x positief is\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bijvoorbeeld bij f(x) = x² en g(x) = x + 3 krijg je (x + 3)² en x² + 3.",
+    "Koos je \"\"ja, altijd\"\"? Dan denk je dat de volgorde niet uitmaakt. Bij f(x) = x² en g(x) = x + 3 verschilt het, dus nee.",
+    "Koos je \"\"ja, als f en g dezelfde variabele hebben\"\"? Dan denk je dat de naam van de variabele telt. Het gaat om de volgorde van de bewerkingen, dus nee.",
+    "Koos je \"\"alleen als x positief is\"\"? Dan denk je dat het teken van x telt. Ook bij positieve x verschillen ze, dus nee."
+   ],
+   "uh": "Is f(g(x)) altijd gelijk aan g(f(x))?"
+  },
+  {
+   "v": "Hoe vorm je de somfunctie s van f en g?",
+   "o": [
+    "\"s(x) = f(g(x))\"",
+    "\"s(x) = f(x) · g(x), eigenlijk\"",
+    "\"s(x) = f(x) + g(x)\"",
+    "\"s(x) = f(x) − g(x)\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"s(x) = f(g(x))\"\"? Dan verwar je de somfunctie met de ketting. Bij een som tel je op, dus s(x) = f(x) + g(x). Het goede antwoord is s(x) = f(x) + g(x).",
+    "Koos je \"\"s(x) = f(x) · g(x), eigenlijk\"\"? Dan vermenigvuldig je de functies. Bij een som tel je op, dus s(x) = f(x) + g(x). Door de stappen goed na te lopen kom je uit op s(x) = f(x) + g(x).",
+    "Klopt: je telt de functiewaarden bij elke x bij elkaar op.",
+    "Koos je \"\"s(x) = f(x) − g(x)\"\"? Dan neem je de verschilfunctie. Een som tel je op, dus s(x) = f(x) + g(x). Controleer je stap: de juiste uitkomst is s(x) = f(x) + g(x)."
+   ],
+   "uh": "Hoe vorm je de somfunctie s van f en g?"
+  },
+  {
+   "v": "Hoe vorm je de verschilfunctie v = f − g?",
+   "o": [
+    "\"v(x) = f(g(x))\"",
+    "\"v(x) = f(x) − g(x)\"",
+    "\"v(x) = g(x) − f(x), gewoon\"",
+    "\"v(x) = f(x) : g(x)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"v(x) = f(g(x))\"\"? Dan verwar je het verschil met de ketting. Je trekt af, dus v(x) = f(x) − g(x). Het goede antwoord is v(x) = f(x) − g(x).",
+    "Klopt: je trekt bij elke x de waarde van g af van de waarde van f.",
+    "Koos je \"\"v(x) = g(x) − f(x), gewoon\"\"? Dan draai je de volgorde om. v = f − g betekent f(x) − g(x), dus f(x) − g(x). Door de stappen goed na te lopen kom je uit op v(x) = f(x) − g(x).",
+    "Koos je \"\"v(x) = f(x) : g(x)\"\"? Dan deel je de functies. Bij een verschil trek je af, dus f(x) − g(x). Controleer je stap: de juiste uitkomst is v(x) = f(x) − g(x)."
+   ],
+   "uh": "Hoe vorm je de verschilfunctie v = f − g?"
+  },
+  {
+   "v": "Voor welke x is √(2x + 1) gedefinieerd?",
+   "o": [
+    "\"x ≥ 0\"",
+    "\"2x + 1 > 1, I think\"",
+    "\"x ≤ 0\"",
+    "\"2x + 1 ≥ 0\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x ≥ 0\"\"? Dan neem je het domein van √x. Hier staat 2x + 1 onder het wortelteken, dus 2x + 1 ≥ 0. Het goede antwoord is 2x + 1 ≥ 0.",
+    "Koos je \"\"2x + 1 > 1, I think\"\"? Dan kies je een te strenge voorwaarde. Het wortelteken mag een 0 hebben, dus 2x + 1 ≥ 0. Door de stappen goed na te lopen kom je uit op 2x + 1 ≥ 0.",
+    "Koos je \"\"x ≤ 0\"\"? Dan draai je de ongelijkheid om. De voorwaarde is 2x + 1 ≥ 0, dus x ≥ −0,5. Controleer je stap: de juiste uitkomst is 2x + 1 ≥ 0.",
+    "Klopt: onder het wortelteken mag geen negatief getal staan."
+   ],
+   "uh": "Voor welke x is √(2x + 1) gedefinieerd?"
+  },
+  {
+   "v": "Je haalt x uit y = 2x + 1. Welke aanpak past?",
+   "o": [
+    "\"omgekeerde stappen: eerst − 1, dan delen door 2\"",
+    "\"eerst delen door 2, dan − 1\"",
+    "\"y kwadrateren\"",
+    "\"x en y verwisselen zonder iets te doen, to be honest\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x = (y − 1)/2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"eerst delen door 2, dan − 1\"\"? Dan draai je de volgorde niet goed om. Je maakt de laatste bewerking als eerste ongedaan, dus eerst − 1.",
+    "Koos je \"\"y kwadrateren\"\"? Dan kwadrateer je zonder reden. Bij een lineair verband werk je terug, dus eerst − 1 dan delen door 2.",
+    "Koos je \"\"x en y verwisselen zonder iets te doen, to be honest\"\"? Dan verwisselt je alleen de letters. Je moet ook oplossen voor x, dus x = (y − 1)/2."
+   ],
+   "uh": "Je haalt x uit y = 2x + 1. Welke aanpak past?"
+  },
+  {
+   "v": "Vul g(x) in f in. Welke vorm heeft f(g(x))?",
+   "o": [
+    "\"x² + 3\"",
+    "\"x² + x + 3\"",
+    "\"(x + 3)²\"",
+    "\"x² + 9\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² + 3\"\"? Dan neem je g(f(x)). Bij f(g(x)) vul je x + 3 in f in, dus (x + 3)². Het goede antwoord is (x + 3)².",
+    "Koos je \"\"x² + x + 3\"\"? Dan neem je de som f + g. Bij een ketting vul je in, dus (x + 3)². Door de stappen goed na te lopen kom je uit op (x + 3)².",
+    "Klopt: f(g(x)) = f(x + 3) = (x + 3)². Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x² + 9\"\"? Dan kwadrateer je elke term apart. (x + 3)² heeft ook een dubbele term, dus (x + 3)². Controleer je stap: de juiste uitkomst is (x + 3)²."
+   ],
+   "uh": "Vul g(x) in f in. Welke vorm heeft f(g(x))?",
+   "ctx": "Gegeven zijn f(x) = x² en g(x) = x + 3. Een leerling bepaalt f(g(x)) en g(f(x)) en vergelijkt de uitkomsten voor x = 2. Hij let op de volgorde van de twee functies in de ketting."
+  },
+  {
+   "v": "Vul x² in g in. Welk voorschrift is dit?",
+   "o": [
+    "\"(x + 3)²\"",
+    "\"x² + 3\"",
+    "\"x² + x + 3\"",
+    "\"x² + 9\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(x + 3)²\"\"? Dan neem je f(g(x)). Bij g(f(x)) vul je x² in g in, dus x² + 3. Het goede antwoord is x² + 3.",
+    "Klopt: g(f(x)) = g(x²) = x² + 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x² + x + 3\"\"? Dan neem je de som f + g. Bij een ketting vul je in, dus x² + 3. Door de stappen goed na te lopen kom je uit op x² + 3.",
+    "Koos je \"\"x² + 9\"\"? Dan tel je 3² bij x² op. Bij g(f(x)) tel je 3 bij x² op, dus x² + 3. Controleer je stap: de juiste uitkomst is x² + 3."
+   ],
+   "uh": "Vul x² in g in. Welk voorschrift is dit?",
+   "ctx": "Gegeven zijn f(x) = x² en g(x) = x + 3. Een leerling bepaalt f(g(x)) en g(f(x)) en vergelijkt de uitkomsten voor x = 2. Hij let op de volgorde van de twee functies in de ketting."
+  },
+  {
+   "v": "Welke waarden geven f(g(2)) en g(f(2))?",
+   "o": [
+    "\"7 en 25\"",
+    "\"25 en 25, gewoon\"",
+    "\"13 en 7\"",
+    "\"25 en 7\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7 en 25\"\"? Dan verwissel je de volgorde. f(g(2)) begint met g(2) = 5, dus 25 en 7. Het goede antwoord is 25 en 7.",
+    "Koos je \"\"25 en 25, gewoon\"\"? Dan denk je dat ze gelijk zijn. g(f(2)) = g(4) = 7, dus 25 en 7. Door de stappen goed na te lopen kom je uit op 25 en 7.",
+    "Koos je \"\"13 en 7\"\"? Dan reken je f(g(2)) als 2² + 3² . Het is (2 + 3)² = 25, dus 25 en 7. Controleer je stap: de juiste uitkomst is 25 en 7.",
+    "Klopt: f(g(2)) = f(5) = 25 en g(f(2)) = g(4) = 7. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarden geven f(g(2)) en g(f(2))?",
+   "ctx": "Gegeven zijn f(x) = x² en g(x) = x + 3. Een leerling bepaalt f(g(x)) en g(f(x)) en vergelijkt de uitkomsten voor x = 2. Hij let op de volgorde van de twee functies in de ketting."
+  },
+  {
+   "v": "Tel f(x) en g(x) bij elkaar op. Wat staat er?",
+   "o": [
+    "\"x² + x + 3\"",
+    "\"(x + 3)²\"",
+    "\"x² + 3x\"",
+    "\"x² − x − 3, I think\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x² + (x + 3) = x² + x + 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(x + 3)²\"\"? Dan neem je de ketting f(g(x)). Een som telt op, dus x² + x + 3. Het goede antwoord is x² + x + 3.",
+    "Koos je \"\"x² + 3x\"\"? Dan tel je x en 3 samen tot 3x. x + 3 is geen 3x, dus x² + x + 3. Door de stappen goed na te lopen kom je uit op x² + x + 3.",
+    "Koos je \"\"x² − x − 3, I think\"\"? Dan neem je het verschil. Een som telt op, dus x² + x + 3. Controleer je stap: de juiste uitkomst is x² + x + 3."
+   ],
+   "uh": "Tel f(x) en g(x) bij elkaar op. Wat staat er?",
+   "ctx": "Gegeven zijn f(x) = x² en g(x) = x + 3. Een leerling vormt de somfunctie s = f + g en de verschilfunctie v = f − g en rekent beide uit voor x = 2. Daarna controleert hij zijn voorschriften."
+  },
+  {
+   "v": "Trek g(x) van f(x) af. Welke vorm krijg je?",
+   "o": [
+    "\"x² − x + 3, to be honest\"",
+    "\"x² + x − 3\"",
+    "\"x² − x − 3\"",
+    "\"x² − 3\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² − x + 3, to be honest\"\"? Dan vergeet je het minteken voor de 3. Je trekt de hele g(x) af, dus − x − 3. Het goede antwoord is x² − x − 3.",
+    "Koos je \"\"x² + x − 3\"\"? Dan vergeet je het minteken voor x. Je trekt x + 3 af, dus − x − 3. Door de stappen goed na te lopen kom je uit op x² − x − 3.",
+    "Klopt: x² − (x + 3) = x² − x − 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x² − 3\"\"? Dan vergeet je de term − x. g(x) = x + 3, dus x² − x − 3. Controleer je stap: de juiste uitkomst is x² − x − 3."
+   ],
+   "uh": "Trek g(x) van f(x) af. Welke vorm krijg je?",
+   "ctx": "Gegeven zijn f(x) = x² en g(x) = x + 3. Een leerling vormt de somfunctie s = f + g en de verschilfunctie v = f − g en rekent beide uit voor x = 2. Daarna controleert hij zijn voorschriften."
+  },
+  {
+   "v": "Welke waarden geven s(2) en v(2)?",
+   "o": [
+    "\"9 en 1\"",
+    "\"9 en −1\"",
+    "\"25 en 7, zeg maar\"",
+    "\"7 en 1\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9 en 1\"\"? Dan vergeet je het minteken. v(2) = 4 − 5, dus −1. Het goede antwoord is 9 en −1.",
+    "Klopt: s(2) = 4 + 2 + 3 = 9 en v(2) = 4 − 2 − 3 = −1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"25 en 7, zeg maar\"\"? Dan neem je f(g(2)) en g(f(2)). Je telt op of trekt af, dus 9 en −1. Door de stappen goed na te lopen kom je uit op 9 en −1.",
+    "Koos je \"\"7 en 1\"\"? Dan reken je s en v met een fout. s(2) = 4 + 5 = 9, dus 9 en −1. Controleer je stap: de juiste uitkomst is 9 en −1."
+   ],
+   "uh": "Welke waarden geven s(2) en v(2)?",
+   "ctx": "Gegeven zijn f(x) = x² en g(x) = x + 3. Een leerling vormt de somfunctie s = f + g en de verschilfunctie v = f − g en rekent beide uit voor x = 2. Daarna controleert hij zijn voorschriften."
+  },
+  {
+   "v": "Voor welke x is h(x) = √(2x + 1) gedefinieerd?",
+   "o": [
+    "\"x ≥ 0,5, you know\"",
+    "\"x ≥ 0\"",
+    "\"x > 0\"",
+    "\"x ≥ −0,5\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x ≥ 0,5, you know\"\"? Dan maak je een tekenfout. 2x + 1 ≥ 0 geeft x ≥ −0,5, dus x ≥ −0,5. Het goede antwoord is x ≥ −0,5.",
+    "Koos je \"\"x ≥ 0\"\"? Dan neem je het domein van √x. Hier staat 2x + 1, dus x ≥ −0,5. Door de stappen goed na te lopen kom je uit op x ≥ −0,5.",
+    "Koos je \"\"x > 0\"\"? Dan neem je een te strenge voorwaarde. Ook x = −0,5 mag, dus x ≥ −0,5. Controleer je stap: de juiste uitkomst is x ≥ −0,5.",
+    "Klopt: 2x + 1 ≥ 0 geeft 2x ≥ −1, dus x ≥ −0,5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Voor welke x is h(x) = √(2x + 1) gedefinieerd?",
+   "ctx": "Een leerling onderzoekt h(x) = √(2x + 1) als ketting van de inwendige functie 2x + 1 en de uitwendige functie √. Hij bepaalt het domein en berekent h(0), h(4) en h(12)."
+  },
+  {
+   "v": "Bereken h(4).",
+   "o": [
+    "\"3\"",
+    "\"9\"",
+    "\"√8\"",
+    "\"5\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: √(2 · 4 + 1) = √9 = 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"9\"\"? Dan vergeet je de wortel. 2 · 4 + 1 = 9 en dan √9, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"√8\"\"? Dan laat je de + 1 weg. Onder de wortel staat 2 · 4 + 1 = 9, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"5\"\"? Dan neem je 2 · 4 − 3. De uitdrukking is 2x + 1, dus √9 = 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Bereken h(4).",
+   "ctx": "Een leerling onderzoekt h(x) = √(2x + 1) als ketting van de inwendige functie 2x + 1 en de uitwendige functie √. Hij bepaalt het domein en berekent h(0), h(4) en h(12)."
+  },
+  {
+   "v": "Vul x = 12 in h in. Welk getal komt eruit?",
+   "o": [
+    "\"25\"",
+    "\"√24\"",
+    "\"5\"",
+    "\"13\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"25\"\"? Dan vergeet je de wortel. 2 · 12 + 1 = 25 en dan √25, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"√24\"\"? Dan laat je de + 1 weg. Onder de wortel staat 25, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Klopt: √(2 · 12 + 1) = √25 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"13\"\"? Dan neem je 12 + 1. Onder de wortel staat 2 · 12 + 1 = 25, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Vul x = 12 in h in. Welk getal komt eruit?",
+   "ctx": "Een leerling onderzoekt h(x) = √(2x + 1) als ketting van de inwendige functie 2x + 1 en de uitwendige functie √. Hij bepaalt het domein en berekent h(0), h(4) en h(12)."
+  },
+  {
+   "v": "Welke functie is de uitwendige functie van h?",
+   "o": [
+    "\"2x + 1, volgens mij\"",
+    "\"de wortel\"",
+    "\"x\"",
+    "\"2x\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2x + 1, volgens mij\"\"? Dan neem je de inwendige functie. De uitwendige is de laatste bewerking, dus de wortel. Het goede antwoord is de wortel.",
+    "Klopt: de wortel is de laatste bewerking. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x\"\"? Dan neem je de variabele. Dat is geen functie van de ketting, dus de wortel. Door de stappen goed na te lopen kom je uit op de wortel.",
+    "Koos je \"\"2x\"\"? Dan neem je een deel van de inwendige functie. De uitwendige functie is de wortel, dus de wortel. Controleer je stap: de juiste uitkomst is de wortel."
+   ],
+   "uh": "Welke functie is de uitwendige functie van h?",
+   "ctx": "Een leerling onderzoekt h(x) = √(2x + 1) als ketting van de inwendige functie 2x + 1 en de uitwendige functie √. Hij bepaalt het domein en berekent h(0), h(4) en h(12)."
+  },
+  {
+   "v": "Welk voorschrift heeft f(g(x)) in deze situatie?",
+   "o": [
+    "\"1,1(x − 5)\"",
+    "\"1,1x + 5\"",
+    "\"1,1x\"",
+    "\"1,1x − 5\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1,1(x − 5)\"\"? Dan neem je de andere volgorde. Eerst wisselen en dan toeslag, dus 1,1x − 5. Het goede antwoord is 1,1x − 5.",
+    "Koos je \"\"1,1x + 5\"\"? Dan tel je de toeslag erbij op. De toeslag wordt betaald, dus 1,1x − 5. Door de stappen goed na te lopen kom je uit op 1,1x − 5.",
+    "Koos je \"\"1,1x\"\"? Dan laat je de toeslag weg. f(y) = y − 5, dus 1,1x − 5. Controleer je stap: de juiste uitkomst is 1,1x − 5.",
+    "Klopt: eerst wisselen (1,1x) en dan 5 dollar toeslag eraf."
+   ],
+   "uh": "Welk voorschrift heeft f(g(x)) in deze situatie?",
+   "ctx": "Een leerling heeft x euro. Hij wisselt naar dollar met g(x) = 1,1·x en betaalt daarna 5 dollar toeslag met f(y) = y − 5. Hij vergelijkt f(g(x)) met de volgorde waarin hij eerst 5 euro toeslag betaalt en daarna wisselt."
+  },
+  {
+   "v": "Welk voorschrift hoort bij eerst toeslag en dan wisselen: g(f(x))?",
+   "o": [
+    "\"1,1(x − 5)\"",
+    "\"1,1x − 5, eigenlijk\"",
+    "\"1,1x + 5\"",
+    "\"x − 5,5\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: eerst x − 5 en dan × 1,1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,1x − 5, eigenlijk\"\"? Dan neem je f(g(x)). Bij g(f(x)) wissel je na de toeslag, dus 1,1(x − 5). Het goede antwoord is 1,1(x − 5).",
+    "Koos je \"\"1,1x + 5\"\"? Dan tel je op. Er wordt 5 betaald, dus 1,1(x − 5). Door de stappen goed na te lopen kom je uit op 1,1(x − 5).",
+    "Koos je \"\"x − 5,5\"\"? Dan vermenigvuldig je niet met 1,1. De wissel hoort bij de hele uitdrukking, dus 1,1(x − 5). Controleer je stap: de juiste uitkomst is 1,1(x − 5)."
+   ],
+   "uh": "Welk voorschrift hoort bij eerst toeslag en dan wisselen: g(f(x))?",
+   "ctx": "Een leerling heeft x euro. Hij wisselt naar dollar met g(x) = 1,1·x en betaalt daarna 5 dollar toeslag met f(y) = y − 5. Hij vergelijkt f(g(x)) met de volgorde waarin hij eerst 5 euro toeslag betaalt en daarna wisselt."
+  },
+  {
+   "v": "Hoeveel dollar krijg je bij x = 100 euro als je eerst wisselt en dan de toeslag betaalt?",
+   "o": [
+    "\"104,5\"",
+    "\"110\"",
+    "\"105\"",
+    "\"95\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"104,5\"\"? Dan neem je de andere volgorde: 1,1 · 95. Eerst wisselen, dus 105. Het goede antwoord is 105.",
+    "Koos je \"\"110\"\"? Dan vergeet je de toeslag. 110 − 5 = 105, dus 105. Door de stappen goed na te lopen kom je uit op 105.",
+    "Klopt: 1,1 · 100 − 5 = 105. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"95\"\"? Dan vergeet je de wissel. Eerst × 1,1, dus 105. Controleer je stap: de juiste uitkomst is 105."
+   ],
+   "uh": "Hoeveel dollar krijg je bij x = 100 euro als je eerst wisselt en dan de toeslag betaalt?",
+   "ctx": "Een leerling heeft x euro. Hij wisselt naar dollar met g(x) = 1,1·x en betaalt daarna 5 dollar toeslag met f(y) = y − 5. Hij vergelijkt f(g(x)) met de volgorde waarin hij eerst 5 euro toeslag betaalt en daarna wisselt."
+  },
+  {
+   "v": "Welk voorschrift krijg je voor x uit y = √(2x + 1)?",
+   "o": [
+    "\"x = (y − 1)/2\"",
+    "\"x = (y² − 1)/2\"",
+    "\"x = y² − 1\"",
+    "\"x = (y² + 1)/2, denk ik\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = (y − 1)/2\"\"? Dan vergeet je te kwadrateren. De wortel moet eerst weg, dus (y² − 1)/2. Het goede antwoord is x = (y² − 1)/2.",
+    "Klopt: y² = 2x + 1, dus x = (y² − 1)/2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = y² − 1\"\"? Dan vergeet je te delen door 2. 2x = y² − 1, dus x = (y² − 1)/2. Door de stappen goed na te lopen kom je uit op x = (y² − 1)/2.",
+    "Koos je \"\"x = (y² + 1)/2, denk ik\"\"? Dan maak je een tekenfout. Het is y² − 1, dus x = (y² − 1)/2. Controleer je stap: de juiste uitkomst is x = (y² − 1)/2."
+   ],
+   "uh": "Welk voorschrift krijg je voor x uit y = √(2x + 1)?",
+   "ctx": "Voor y = √(2x + 1) wil een leerling x schrijven als functie van y. Hij kwadrateert beide kanten, lost op voor x en controleert met y = 3. Daarna doet hij hetzelfde bij y = 2^(x + 1)."
+  },
+  {
+   "v": "Welke x hoort bij y = 3?",
+   "o": [
+    "\"1\"",
+    "\"5\"",
+    "\"8\"",
+    "\"4\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1\"\"? Dan gebruik je (y − 1)/2. Eerst kwadrateren, dus (9 − 1)/2 = 4. Het goede antwoord is 4.",
+    "Koos je \"\"5\"\"? Dan tel je 1 erbij op. Het is y² − 1, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+    "Koos je \"\"8\"\"? Dan vergeet je te delen door 2. x = (9 − 1)/2, dus 4. Controleer je stap: de juiste uitkomst is 4.",
+    "Klopt: (9 − 1)/2 = 4, en √(2 · 4 + 1) = 3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke x hoort bij y = 3?",
+   "ctx": "Voor y = √(2x + 1) wil een leerling x schrijven als functie van y. Hij kwadrateert beide kanten, lost op voor x en controleert met y = 3. Daarna doet hij hetzelfde bij y = 2^(x + 1)."
+  },
+  {
+   "v": "Hoe schrijf je x uit y = 2^(x + 1)?",
+   "o": [
+    "\"x = ²log y − 1\"",
+    "\"x = ²log(y − 1), zeg maar\"",
+    "\"x = ²log y + 1\"",
+    "\"x = y/2 − 1\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x + 1 = ²log y, dus x = ²log y − 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = ²log(y − 1), zeg maar\"\"? Dan trek je 1 af binnen de logaritme. Eerst de logaritme, dan − 1, dus ²log y − 1. Het goede antwoord is x = ²log y − 1.",
+    "Koos je \"\"x = ²log y + 1\"\"? Dan maak je een tekenfout. x + 1 = ²log y geeft − 1, dus ²log y − 1. Door de stappen goed na te lopen kom je uit op x = ²log y − 1.",
+    "Koos je \"\"x = y/2 − 1\"\"? Dan deel je door 2. Bij een macht gebruik je de logaritme, dus ²log y − 1. Controleer je stap: de juiste uitkomst is x = ²log y − 1."
+   ],
+   "uh": "Hoe schrijf je x uit y = 2^(x + 1)?",
+   "ctx": "Voor y = √(2x + 1) wil een leerling x schrijven als functie van y. Hij kwadrateert beide kanten, lost op voor x en controleert met y = 3. Daarna doet hij hetzelfde bij y = 2^(x + 1)."
+  },
+  {
+   "v": "Welk voorschrift heeft W(q) = O(q) − K(q)?",
+   "o": [
+    "\"11q + 100, eigenlijk\"",
+    "\"5q + 100\"",
+    "\"5q − 100\"",
+    "\"8q − 100\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"11q + 100, eigenlijk\"\"? Dan tel je op. W is een verschil, dus 5q − 100. Het goede antwoord is 5q − 100.",
+    "Koos je \"\"5q + 100\"\"? Dan vergeet je het minteken voor 100. Je trekt de hele K af, dus 5q − 100. Door de stappen goed na te lopen kom je uit op 5q − 100.",
+    "Klopt: 8q − (100 + 3q) = 5q − 100. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8q − 100\"\"? Dan vergeet je 3q. Je trekt 100 + 3q af, dus 5q − 100. Controleer je stap: de juiste uitkomst is 5q − 100."
+   ],
+   "uh": "Welk voorschrift heeft W(q) = O(q) − K(q)?",
+   "ctx": "Een bedrijf heeft kosten K(q) = 100 + 3q en opbrengst O(q) = 8q euro bij q stuks. De winst W is de verschilfunctie O − K. Een leerling stelt W op, bepaalt de break-evenhoeveelheid en berekent W(30)."
+  },
+  {
+   "v": "Bij welke q is de winst gelijk aan 0?",
+   "o": [
+    "\"12,5\"",
+    "\"20\"",
+    "\"33,3\"",
+    "\"100\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12,5\"\"? Dan deel je 100 door 8. Los 5q − 100 = 0 op, dus q = 20. Het goede antwoord is 20.",
+    "Klopt: 5q − 100 = 0 geeft q = 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"33,3\"\"? Dan deel je 100 door 3. Los 5q − 100 = 0 op, dus q = 20. Door de stappen goed na te lopen kom je uit op 20.",
+    "Koos je \"\"100\"\"? Dan neem je het getal 100. Los 5q = 100 op, dus q = 20. Controleer je stap: de juiste uitkomst is 20."
+   ],
+   "uh": "Bij welke q is de winst gelijk aan 0?",
+   "ctx": "Een bedrijf heeft kosten K(q) = 100 + 3q en opbrengst O(q) = 8q euro bij q stuks. De winst W is de verschilfunctie O − K. Een leerling stelt W op, bepaalt de break-evenhoeveelheid en berekent W(30)."
+  },
+  {
+   "v": "Hoeveel winst geeft q = 30?",
+   "o": [
+    "\"€ 190, I think\"",
+    "\"€ 150\"",
+    "\"€ 240\"",
+    "\"€ 50\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€ 190, I think\"\"? Dan reken je 8 · 30 − 50. Gebruik W(q) = 5q − 100, dus € 50. Het goede antwoord is € 50.",
+    "Koos je \"\"€ 150\"\"? Dan vergeet je de vaste kosten. W(30) = 150 − 100, dus € 50. Door de stappen goed na te lopen kom je uit op € 50.",
+    "Koos je \"\"€ 240\"\"? Dan neem je de opbrengst. De winst is opbrengst min kosten, dus € 50. Controleer je stap: de juiste uitkomst is € 50.",
+    "Klopt: 5 · 30 − 100 = 50. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel winst geeft q = 30?",
+   "ctx": "Een bedrijf heeft kosten K(q) = 100 + 3q en opbrengst O(q) = 8q euro bij q stuks. De winst W is de verschilfunctie O − K. Een leerling stelt W op, bepaalt de break-evenhoeveelheid en berekent W(30)."
+  },
+  {
+   "v": "Voor welke q is de winst positief?",
+   "o": [
+    "\"q > 20\"",
+    "\"q < 20\"",
+    "\"q > 0\"",
+    "\"q > 100, to be honest\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Let op de volgorde van de functies, werk stap voor stap uit en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 5q − 100 > 0 geeft q > 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"q < 20\"\"? Dan draai je de ongelijkheid om. Boven de break-even is de winst positief, dus q > 20. Het goede antwoord is q > 20.",
+    "Koos je \"\"q > 0\"\"? Dan denk je dat elke productie winst geeft. Bij q = 10 is W = −50, dus q > 20. Door de stappen goed na te lopen kom je uit op q > 20.",
+    "Koos je \"\"q > 100, to be honest\"\"? Dan neem je het getal 100. 5q > 100 geeft q > 20, dus q > 20. Controleer je stap: de juiste uitkomst is q > 20."
+   ],
+   "uh": "Voor welke q is de winst positief?",
+   "ctx": "Een bedrijf heeft kosten K(q) = 100 + 3q en opbrengst O(q) = 8q euro bij q stuks. De winst W is de verschilfunctie O − K. Een leerling stelt W op, bepaalt de break-evenhoeveelheid en berekent W(30)."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven zijn f(x) = x² − 1 en g(x) = 2x. Een leerling bepaalt f(g(x)) en g(f(x)) en rekent beide uit voor x = 3. Hij let op de volgorde van de functies in de ketting.",
+   "v": "Bepaal f(g(x)) en g(f(x)) en vergelijk bij x = 3.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f(g(x)) = (2x)² − 1 = 4x² − 1 (1p). g(f(x)) = 2(x² − 1) = 2x² − 2 (1p). Bij x = 3 is dat 35 en 16, dus verschillend (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven zijn f(x) = 3x en g(x) = x². Een leerling vormt de somfunctie s = f + g en de verschilfunctie v = f − g en bepaalt s(2), v(2) en de nulpunten van v.",
+   "v": "Bepaal s(x), v(x), s(2), v(2) en de nulpunten van v.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "s(x) = x² + 3x en v(x) = 3x − x² (1p). s(2) = 10 en v(2) = 2 (1p). 3x − x² = 0 geeft x = 0 of x = 3 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt h(x) = √(3x − 6) als ketting. Hij noemt de inwendige en de uitwendige functie, bepaalt het domein door te kijken wat onder het wortelteken mag staan en controleert zijn antwoord met x = 5.",
+   "v": "Noem de functies, geef het domein en bereken h(5).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Inwendig 3x − 6 en uitwendig de wortel (1p). 3x − 6 ≥ 0 geeft x ≥ 2 (1p). h(5) = √9 = 3 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling heeft y = √(x − 1) + 2. Hij schrijft x als functie van y door de stappen van de ketting in omgekeerde volgorde ongedaan te maken, let op het domein van y en controleert zijn antwoord met y = 5.",
+   "v": "Schrijf x als functie van y en controleer met y = 5.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "√(x − 1) = y − 2 (1p), dus x = (y − 2)² + 1 (1p). Voor y = 5: x = 10 en √9 + 2 = 5 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bedrijf heeft kosten K(q) = 200 + 4q en opbrengst O(q) = 9q. Een leerling stelt de winst W op, bepaalt de break-evenhoeveelheid en berekent W(60).",
+   "v": "Stel W op, bepaal de break-evenhoeveelheid en bereken W(60).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "W(q) = 9q − (200 + 4q) = 5q − 200 (1p). 5q − 200 = 0 geeft q = 40 (1p). W(60) = 300 − 200 = 100 (1p)."
+  }
+ ]
+}

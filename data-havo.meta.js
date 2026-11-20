@@ -5516,6 +5516,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B6",
+      "lo": "wb.B.6",
+      "gs": 2,
+      "naam": "Samengestelde functies, somfuncties en verschilfuncties",
+      "beschrijving": "Je stelt samengestelde functies op met een ketting, vormt som- en verschilfuncties, bepaalt het domein, schrijft x als functie van y en past dit toe op situaties zoals winst.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Ketting en volgorde",
+       "Som- en verschilfuncties",
+       "Domein en eigenschappen",
+       "Winst en situaties",
+       "x uitdrukken in y"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
