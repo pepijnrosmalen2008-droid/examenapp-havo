@@ -1,0 +1,682 @@
+{
+ "id": "B10",
+ "lo": "wb.B.10",
+ "gs": 2,
+ "naam": "Goniometrische vergelijkingen oplossen op een interval",
+ "beschrijving": "Je lost vergelijkingen met sinus en cosinus op een interval op met kenmerkende waarden, symmetrie en periodiciteit, werkt met u = 2x, past dit toe op periodieke situaties en controleert je oplossingen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Kenmerkende waarden",
+  "Symmetrie",
+  "Periodiciteit en interval",
+  "Transformaties zoals sin(2x)",
+  "Oplossen in een situatie"
+ ],
+ "sam": "Isoleer sin of cos, gebruik een kenmerkende waarde en zoek de tweede oplossing met de symmetrie: sinus x en π − x, cosinus x en 2π − x. Gebruik de periode van 2π om op het interval alle oplossingen te vinden en substitueer u bij sin(2x). Werk in radialen en controleer met een waarde.",
+ "begrippen": [
+  {
+   "t": "Goniometrische vergelijking",
+   "d": "Een vergelijking met sin of cos, zoals sin x = ½."
+  },
+  {
+   "t": "Interval",
+   "d": "Het gebied waarop je oplost, zoals [0, 2π]."
+  },
+  {
+   "t": "Kenmerkende waarden",
+   "d": "sin(π/6) = ½, cos(π/3) = ½, sin(π/2) = 1 en cos(π) = −1."
+  },
+  {
+   "t": "Symmetrie van de sinus",
+   "d": "sin(π − x) = sin x: twee oplossingen x en π − x."
+  },
+  {
+   "t": "Symmetrie van de cosinus",
+   "d": "cos(2π − x) = cos x: twee oplossingen x en 2π − x."
+  },
+  {
+   "t": "Periodiciteit",
+   "d": "Na 2π herhalen sin en cos; oplossingen komen steeds 2π verder."
+  },
+  {
+   "t": "Isoleren",
+   "d": "sin of cos vrij maken, zoals 2·cos x + 1 = 0 geeft cos x = −½."
+  },
+  {
+   "t": "Substitutie u = 2x",
+   "d": "Bij sin(2x) los je op voor u en deel je daarna door 2."
+  },
+  {
+   "t": "Aantal oplossingen",
+   "d": "Het aantal x-waarden op het interval, zoals vier bij sin(2x) = ½."
+  },
+  {
+   "t": "Geen oplossing",
+   "d": "sin x = 2 heeft geen oplossing, want de sinus is hoogstens 1."
+  },
+  {
+   "t": "Oplossen in een context",
+   "d": "Het tijdstip bepalen waarop een periodieke grootheid een waarde heeft."
+  },
+  {
+   "t": "Controleren met een waarde",
+   "d": "De oplossing invullen in de oorspronkelijke vergelijking."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke waarde heeft sin(π/6)?",
+   "o": [
+    "\"√3/2\"",
+    "\"½\"",
+    "\"√2/2\"",
+    "\"1\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"√3/2\"\"? Dan neem je sin(π/3). Bij π/6 is de sinus ½, dus ½. Het goede antwoord is ½.",
+    "Klopt: sin(30°) = ½. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"√2/2\"\"? Dan neem je sin(π/4). Bij π/6 is de sinus ½, dus ½. Door de stappen goed na te lopen kom je uit op ½.",
+    "Koos je \"\"1\"\"? Dan neem je sin(π/2). Bij π/6 is de sinus ½, dus ½. Controleer je stap: de juiste uitkomst is ½."
+   ],
+   "uh": "Welke waarde heeft sin(π/6)?"
+  },
+  {
+   "v": "Een hoek van 60° is π/3 radialen. Welke cosinuswaarde hoort erbij?",
+   "o": [
+    "\"√3/2\"",
+    "\"0\"",
+    "\"1\"",
+    "\"½\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"√3/2\"\"? Dan neem je cos(π/6). Bij π/3 is de cosinus ½, dus ½. Het goede antwoord is ½.",
+    "Koos je \"\"0\"\"? Dan neem je cos(π/2). Bij π/3 is de cosinus ½, dus ½. Door de stappen goed na te lopen kom je uit op ½.",
+    "Koos je \"\"1\"\"? Dan neem je cos(0). Bij π/3 is de cosinus ½, dus ½. Controleer je stap: de juiste uitkomst is ½.",
+    "Klopt: cos(60°) = ½. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een hoek van 60° is π/3 radialen. Welke cosinuswaarde hoort erbij?"
+  },
+  {
+   "v": "Bij 90° (π/2 radialen) snijdt de cosinus de x-as. Welke waarde is dat?",
+   "o": [
+    "\"0\"",
+    "\"1\"",
+    "\"−1\"",
+    "\"½\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij π/2 snijdt de cosinus de x-as. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1\"\"? Dan neem je cos(0). Bij π/2 is de cosinus 0, dus 0. Het goede antwoord is 0.",
+    "Koos je \"\"−1\"\"? Dan neem je cos(π). Bij π/2 is de cosinus 0, dus 0. Door de stappen goed na te lopen kom je uit op 0.",
+    "Koos je \"\"½\"\"? Dan neem je cos(π/3). Bij π/2 is de cosinus 0, dus 0. Controleer je stap: de juiste uitkomst is 0."
+   ],
+   "uh": "Bij 90° (π/2 radialen) snijdt de cosinus de x-as. Welke waarde is dat?"
+  },
+  {
+   "v": "Een oplossing van sin x = ½ is x = π/6. Welke tweede oplossing heeft de vergelijking op [0, 2π]?",
+   "o": [
+    "\"7π/6\"",
+    "\"11π/6\"",
+    "\"5π/6\"",
+    "\"π/3\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7π/6\"\"? Dan neem je π + x. Dan is de sinus negatief, dus π − x = 5π/6. Het goede antwoord is 5π/6.",
+    "Koos je \"\"11π/6\"\"? Dan neem je 2π − x. Dan is de sinus negatief, dus π − x = 5π/6. Door de stappen goed na te lopen kom je uit op 5π/6.",
+    "Klopt: sin(π − x) = sin x, dus π − π/6 = 5π/6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"π/3\"\"? Dan neem je een andere hoek. Gebruik de symmetrie π − x, dus 5π/6. Controleer je stap: de juiste uitkomst is 5π/6."
+   ],
+   "uh": "Een oplossing van sin x = ½ is x = π/6. Welke tweede oplossing heeft de vergelijking op [0, 2π]?"
+  },
+  {
+   "v": "Welke twee oplossingen horen bij cos x = c op [0, 2π]?",
+   "o": [
+    "\"x en π − x\"",
+    "\"x en 2π − x\"",
+    "\"x en π + x\"",
+    "\"x en x + 2π, gewoon\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x en π − x\"\"? Dan gebruik je de symmetrie van de sinus. Bij de cosinus is het 2π − x, dus x en 2π − x. Het goede antwoord is x en 2π − x.",
+    "Klopt: de cosinus is symmetrisch om x = π, dus cos(2π − x) = cos x.",
+    "Koos je \"\"x en π + x\"\"? Dan neem je π + x. Daar heeft de cosinus de tegengestelde waarde, dus x en 2π − x. Door de stappen goed na te lopen kom je uit op x en 2π − x.",
+    "Koos je \"\"x en x + 2π, gewoon\"\"? Dan neem je een periode erbij. Die ligt buiten het interval, dus x en 2π − x. Controleer je stap: de juiste uitkomst is x en 2π − x."
+   ],
+   "uh": "Welke twee oplossingen horen bij cos x = c op [0, 2π]?"
+  },
+  {
+   "v": "Welke periode hebben sin x en cos x?",
+   "o": [
+    "\"π\"",
+    "\"π/2\"",
+    "\"4π\"",
+    "\"2π\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"π\"\"? Dan neem je de halve periode. Na π keert het teken om, dus 2π. Het goede antwoord is 2π.",
+    "Koos je \"\"π/2\"\"? Dan neem je een kwart periode. De periode is 2π, dus 2π. Door de stappen goed na te lopen kom je uit op 2π.",
+    "Koos je \"\"4π\"\"? Dan verdubbel je de periode. Een volle herhaling is 2π, dus 2π. Controleer je stap: de juiste uitkomst is 2π.",
+    "Klopt: na 2π herhaalt de grafiek zich. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke periode hebben sin x en cos x?"
+  },
+  {
+   "v": "Welke vergelijking krijg je uit 2·cos x + 1 = 0?",
+   "o": [
+    "\"cos x = −½\"",
+    "\"cos x = ½\"",
+    "\"cos x = −2, volgens mij\"",
+    "\"cos x = −1\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2·cos x = −1, dus cos x = −½. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"cos x = ½\"\"? Dan vergeet je het minteken. 2 cos x = −1, dus cos x = −½. Het goede antwoord is cos x = −½.",
+    "Koos je \"\"cos x = −2, volgens mij\"\"? Dan vergeet je te delen door 2. 2 cos x = −1, dus cos x = −½. Door de stappen goed na te lopen kom je uit op cos x = −½.",
+    "Koos je \"\"cos x = −1\"\"? Dan delen door 2 vergeten. 2 cos x = −1 geeft cos x = −½, dus −½. Controleer je stap: de juiste uitkomst is cos x = −½."
+   ],
+   "uh": "Welke vergelijking krijg je uit 2·cos x + 1 = 0?"
+  },
+  {
+   "v": "Welke oplossingen heeft sin x = ½ op [0, 2π]?",
+   "o": [
+    "\"π/6 en 7π/6, zeg maar\"",
+    "\"π/3 en 2π/3\"",
+    "\"π/6 en 5π/6\"",
+    "\"alleen π/6\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"π/6 en 7π/6, zeg maar\"\"? Dan neem je π + x. Daar is de sinus −½, dus π/6 en 5π/6. Het goede antwoord is π/6 en 5π/6.",
+    "Koos je \"\"π/3 en 2π/3\"\"? Dan neem je de hoeken voor √3/2. Bij ½ is het π/6, dus π/6 en 5π/6. Door de stappen goed na te lopen kom je uit op π/6 en 5π/6.",
+    "Klopt: sin(π/6) = ½ en sin(π − π/6) = ½. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"alleen π/6\"\"? Dan vergeet je de tweede oplossing. Door symmetrie is er ook 5π/6, dus twee oplossingen. Controleer je stap: de juiste uitkomst is π/6 en 5π/6."
+   ],
+   "uh": "Welke oplossingen heeft sin x = ½ op [0, 2π]?",
+   "ctx": "Een leerling lost op het interval [0, 2π] de vergelijkingen sin x = ½ en cos x = ½ op. Hij gebruikt de kenmerkende waarden sin(π/6) = ½ en cos(π/3) = ½ en de symmetrie van de grafieken."
+  },
+  {
+   "v": "Waarom is 5π/6 een oplossing van sin x = ½?",
+   "o": [
+    "\"sin(π + x) = sin x\"",
+    "\"sin(π − x) = sin x\"",
+    "\"cos(π − x) = cos x\"",
+    "\"omdat 5π/6 groter is dan π/6\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"sin(π + x) = sin x\"\"? Dan gebruik je de verkeerde symmetrie. sin(π + x) = −sin x, dus sin(π − x). Het goede antwoord is sin(π − x) = sin x.",
+    "Klopt: π − π/6 = 5π/6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"cos(π − x) = cos x\"\"? Dan gebruik je een formule voor de cosinus. Het gaat om de sinus, dus sin(π − x) = sin x.",
+    "Koos je \"\"omdat 5π/6 groter is dan π/6\"\"? Dan denk je dat groter genoeg is. De symmetrie π − x geeft de waarde ½, dus sin(π − x) = sin x."
+   ],
+   "uh": "Waarom is 5π/6 een oplossing van sin x = ½?",
+   "ctx": "Een leerling lost op het interval [0, 2π] de vergelijkingen sin x = ½ en cos x = ½ op. Hij gebruikt de kenmerkende waarden sin(π/6) = ½ en cos(π/3) = ½ en de symmetrie van de grafieken."
+  },
+  {
+   "v": "Welke oplossingen heeft cos x = ½ op [0, 2π]?",
+   "o": [
+    "\"π/3 en 2π/3\"",
+    "\"π/6 en 11π/6, gewoon\"",
+    "\"alleen π/3\"",
+    "\"π/3 en 5π/3\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"π/3 en 2π/3\"\"? Dan gebruik je π − x. Bij de cosinus is het 2π − x, dus π/3 en 5π/3. Het goede antwoord is π/3 en 5π/3.",
+    "Koos je \"\"π/6 en 11π/6, gewoon\"\"? Dan neem je de hoeken voor √3/2. Bij ½ is het π/3, dus π/3 en 5π/3. Door de stappen goed na te lopen kom je uit op π/3 en 5π/3.",
+    "Koos je \"\"alleen π/3\"\"? Dan vergeet je de tweede oplossing. Er is ook 5π/3, dus twee oplossingen. Controleer je stap: de juiste uitkomst is π/3 en 5π/3.",
+    "Klopt: cos(π/3) = ½ en cos(2π − π/3) = ½. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke oplossingen heeft cos x = ½ op [0, 2π]?",
+   "ctx": "Een leerling lost op het interval [0, 2π] de vergelijkingen sin x = ½ en cos x = ½ op. Hij gebruikt de kenmerkende waarden sin(π/6) = ½ en cos(π/3) = ½ en de symmetrie van de grafieken."
+  },
+  {
+   "v": "Welke vergelijking krijg je als je cos x isoleert in 2·cos x + 1 = 0?",
+   "o": [
+    "\"cos x = −½\"",
+    "\"cos x = ½\"",
+    "\"cos x = −2, denk ik\"",
+    "\"cos x = 1\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2·cos x = −1 en dan delen door 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"cos x = ½\"\"? Dan vergeet je het minteken. 2·cos x = −1, dus cos x = −½. Het goede antwoord is cos x = −½.",
+    "Koos je \"\"cos x = −2, denk ik\"\"? Dan vergeet je te delen door 2. 2·cos x = −1, dus cos x = −½. Door de stappen goed na te lopen kom je uit op cos x = −½.",
+    "Koos je \"\"cos x = 1\"\"? Dan tel je 1 verkeerd op. Je trekt 1 af, dus cos x = −½. Controleer je stap: de juiste uitkomst is cos x = −½."
+   ],
+   "uh": "Welke vergelijking krijg je als je cos x isoleert in 2·cos x + 1 = 0?",
+   "ctx": "Een leerling lost op [0, 2π] de vergelijking 2·cos x + 1 = 0 op. Hij isoleert cos x, zoekt de oplossingen met de symmetrie van de cosinus en controleert zijn antwoord met x = 2π/3."
+  },
+  {
+   "v": "Welke oplossingen heeft cos x = −½ op [0, 2π]?",
+   "o": [
+    "\"π/3 en 5π/3, volgens mij\"",
+    "\"π/3 en 2π/3\"",
+    "\"2π/3 en 4π/3\"",
+    "\"alleen 4π/3\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"π/3 en 5π/3, volgens mij\"\"? Dan neem je de oplossingen van cos x = ½. Nu is de waarde −½, dus 2π/3 en 4π/3. Het goede antwoord is 2π/3 en 4π/3.",
+    "Koos je \"\"π/3 en 2π/3\"\"? Dan neem je hoeken uit het eerste kwadrant. De cosinus is −½ in het tweede en derde kwadrant, dus 2π/3 en 4π/3.",
+    "Klopt: cos(2π/3) = −½ en cos(2π − 2π/3) = −½. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"alleen 4π/3\"\"? Dan vergeet je de eerste oplossing. Er is ook 2π/3, dus twee oplossingen. Controleer je stap: de juiste uitkomst is 2π/3 en 4π/3."
+   ],
+   "uh": "Welke oplossingen heeft cos x = −½ op [0, 2π]?",
+   "ctx": "Een leerling lost op [0, 2π] de vergelijking 2·cos x + 1 = 0 op. Hij isoleert cos x, zoekt de oplossingen met de symmetrie van de cosinus en controleert zijn antwoord met x = 2π/3."
+  },
+  {
+   "v": "Welke waarde heeft 2·cos x + 1 bij x = 2π/3?",
+   "o": [
+    "\"2\"",
+    "\"0\"",
+    "\"−1\"",
+    "\"1\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2\"\"? Dan neem je cos x = ½. cos(2π/3) = −½, dus 0. Het goede antwoord is 0.",
+    "Klopt: 2 · (−½) + 1 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−1\"\"? Dan vergeet je + 1. 2 · (−½) = −1 en dan + 1, dus 0. Door de stappen goed na te lopen kom je uit op 0.",
+    "Koos je \"\"1\"\"? Dan neem je alleen de + 1. 2 · (−½) + 1 = 0, dus 0. Controleer je stap: de juiste uitkomst is 0."
+   ],
+   "uh": "Welke waarde heeft 2·cos x + 1 bij x = 2π/3?",
+   "ctx": "Een leerling lost op [0, 2π] de vergelijking 2·cos x + 1 = 0 op. Hij isoleert cos x, zoekt de oplossingen met de symmetrie van de cosinus en controleert zijn antwoord met x = 2π/3."
+  },
+  {
+   "v": "Welk interval doorloopt u = 2x als x loopt van 0 tot 2π?",
+   "o": [
+    "\"[0, 2π]\"",
+    "\"[0, π]\"",
+    "\"[0, π/2], eigenlijk\"",
+    "\"[0, 4π]\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"[0, 2π]\"\"? Dan vergeet je de factor 2. u = 2x loopt tot 4π, dus [0, 4π]. Het goede antwoord is [0, 4π].",
+    "Koos je \"\"[0, π]\"\"? Dan deel je door 2. u = 2x loopt tot 4π, dus [0, 4π]. Door de stappen goed na te lopen kom je uit op [0, 4π].",
+    "Koos je \"\"[0, π/2], eigenlijk\"\"? Dan deel je door 4. u = 2x loopt tot 4π, dus [0, 4π]. Controleer je stap: de juiste uitkomst is [0, 4π].",
+    "Klopt: u = 2x loopt van 0 tot 4π. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk interval doorloopt u = 2x als x loopt van 0 tot 2π?",
+   "ctx": "Een leerling lost sin(2x) = ½ op het interval [0, 2π] op. Hij stelt u = 2x, lost sin u = ½ op voor u in [0, 4π] en deelt daarna de oplossingen door 2."
+  },
+  {
+   "v": "Welke waarden heeft u met sin u = ½ op [0, 4π]?",
+   "o": [
+    "\"π/6, 5π/6, 13π/6 en 17π/6\"",
+    "\"π/6 en 5π/6\"",
+    "\"π/6, 5π/6, 7π/6 en 11π/6\"",
+    "\"π/12, 5π/12, 13π/12 en 17π/12\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de oplossingen van de eerste periode plus 2π. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"π/6 en 5π/6\"\"? Dan vergeet je de tweede periode. Het interval is [0, 4π], dus ook 13π/6 en 17π/6. Het goede antwoord is π/6, 5π/6, 13π/6 en 17π/6.",
+    "Koos je \"\"π/6, 5π/6, 7π/6 en 11π/6\"\"? Dan neem je de negatieve sinus voor de tweede periode. Tel 2π op bij π/6 en 5π/6, dus 13π/6 en 17π/6.",
+    "Koos je \"\"π/12, 5π/12, 13π/12 en 17π/12\"\"? Dan deel je de oplossingen al door 2. Dat is de laatste stap, dus eerst u. Controleer je stap: de juiste uitkomst is π/6, 5π/6, 13π/6 en 17π/6."
+   ],
+   "uh": "Welke waarden heeft u met sin u = ½ op [0, 4π]?",
+   "ctx": "Een leerling lost sin(2x) = ½ op het interval [0, 2π] op. Hij stelt u = 2x, lost sin u = ½ op voor u in [0, 4π] en deelt daarna de oplossingen door 2."
+  },
+  {
+   "v": "Welke oplossingen heeft x in sin(2x) = ½ op [0, 2π]?",
+   "o": [
+    "\"π/6, 5π/6, 13π/6 en 17π/6, denk ik\"",
+    "\"π/12 en 5π/12\"",
+    "\"π/12, 5π/12, 13π/12 en 17π/12\"",
+    "\"π/3 en 5π/3\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"π/6, 5π/6, 13π/6 en 17π/6, denk ik\"\"? Dan vergeet je te delen door 2. u = 2x, dus x = u/2. Het goede antwoord is π/12, 5π/12, 13π/12 en 17π/12.",
+    "Koos je \"\"π/12 en 5π/12\"\"? Dan vergeet je de tweede periode. Er zijn vier oplossingen, dus ook 13π/12 en 17π/12. Door de stappen goed na te lopen kom je uit op π/12, 5π/12, 13π/12 en 17π/12.",
+    "Klopt: deel de oplossingen voor u door 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"π/3 en 5π/3\"\"? Dan neem je de oplossingen van cos x = ½. Het gaat om sin(2x) = ½, dus π/12, 5π/12, 13π/12 en 17π/12."
+   ],
+   "uh": "Welke oplossingen heeft x in sin(2x) = ½ op [0, 2π]?",
+   "ctx": "Een leerling lost sin(2x) = ½ op het interval [0, 2π] op. Hij stelt u = 2x, lost sin u = ½ op voor u in [0, 4π] en deelt daarna de oplossingen door 2."
+  },
+  {
+   "v": "Hoeveel oplossingen heeft sin(2x) = ½ op [0, 2π]?",
+   "o": [
+    "\"2\"",
+    "\"4\"",
+    "\"1\"",
+    "\"8\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2\"\"? Dan vergeet je de tweede periode van sin(2x). De periode is π, dus 4. Het goede antwoord is 4.",
+    "Klopt: de periode is π, dus er zijn twee periodes met elk twee oplossingen.",
+    "Koos je \"\"1\"\"? Dan denk je dat er maar één oplossing is. Er zijn er vier, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+    "Koos je \"\"8\"\"? Dan tel je te veel oplossingen. Twee periodes met elk twee oplossingen, dus 4. Controleer je stap: de juiste uitkomst is 4."
+   ],
+   "uh": "Hoeveel oplossingen heeft sin(2x) = ½ op [0, 2π]?",
+   "ctx": "Een leerling lost sin(2x) = ½ op het interval [0, 2π] op. Hij stelt u = 2x, lost sin u = ½ op voor u in [0, 4π] en deelt daarna de oplossingen door 2."
+  },
+  {
+   "v": "Welke vergelijking volgt uit h(t) = 4?",
+   "o": [
+    "\"sin(πt/6) = 1\"",
+    "\"sin(πt/6) = 1,5, zeg maar\"",
+    "\"sin(πt/6) = 4\"",
+    "\"sin(πt/6) = 2/3\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"sin(πt/6) = 1\"\"? Dan vergeet je te delen door 1,5. 1,5·sin(πt/6) = 1, dus sin(πt/6) = 2/3. Het goede antwoord is sin(πt/6) = 2/3.",
+    "Koos je \"\"sin(πt/6) = 1,5, zeg maar\"\"? Dan neem je de amplitude. 1,5·sin(πt/6) = 1, dus 2/3. Door de stappen goed na te lopen kom je uit op sin(πt/6) = 2/3.",
+    "Koos je \"\"sin(πt/6) = 4\"\"? Dan neem je de waarde 4 zonder 3 af te trekken. 4 − 3 = 1, dus 2/3. Controleer je stap: de juiste uitkomst is sin(πt/6) = 2/3.",
+    "Klopt: 1,5·sin(πt/6) = 1, dus sin(πt/6) = 2/3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke vergelijking volgt uit h(t) = 4?",
+   "ctx": "Het waterpeil in een haven is h(t) = 3 + 1,5·sin(πt/6) meter, met t in uren na middernacht. Een leerling wil weten wanneer het peil boven 4 meter komt. Hij lost h(t) = 4 op op [0, 12] en rondt af op één decimaal."
+  },
+  {
+   "v": "Los πt/6 ≈ 0,730 op voor t. Welke waarde krijg je, op één decimaal?",
+   "o": [
+    "\"1,4\"",
+    "\"0,7\"",
+    "\"2,4\"",
+    "\"4,6\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: πt/6 ≈ 0,730 geeft t ≈ 1,4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,7\"\"? Dan neem je het argument πt/6 als t. Je moet nog vermenigvuldigen met 6/π, dus t ≈ 1,4. Het goede antwoord is 1,4.",
+    "Koos je \"\"2,4\"\"? Dan neem je π − 0,73 als t. Dat is het argument van de tweede oplossing, dus t ≈ 1,4. Door de stappen goed na te lopen kom je uit op 1,4.",
+    "Koos je \"\"4,6\"\"? Dan neem je de tweede oplossing. De eerste is t ≈ 1,4, dus 1,4. Controleer je stap: de juiste uitkomst is 1,4."
+   ],
+   "uh": "Los πt/6 ≈ 0,730 op voor t. Welke waarde krijg je, op één decimaal?",
+   "ctx": "Het waterpeil in een haven is h(t) = 3 + 1,5·sin(πt/6) meter, met t in uren na middernacht. Een leerling wil weten wanneer het peil boven 4 meter komt. Hij lost h(t) = 4 op op [0, 12] en rondt af op één decimaal."
+  },
+  {
+   "v": "Zet πt/6 ≈ 2,412 om naar t. Welke waarde krijg je, op één decimaal?",
+   "o": [
+    "\"1,4\"",
+    "\"2,4\"",
+    "\"4,6\"",
+    "\"7,6\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1,4\"\"? Dan neem je de eerste oplossing. De tweede volgt uit π − 0,730, dus 4,6. Het goede antwoord is 4,6.",
+    "Koos je \"\"2,4\"\"? Dan neem je het argument zelf. Vermenigvuldig met 6/π, dus t ≈ 4,6. Door de stappen goed na te lopen kom je uit op 4,6.",
+    "Klopt: t = 2,412 · 6/π ≈ 4,6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7,6\"\"? Dan gebruik je π + 0,730. Dat is de sinus −2/3, dus 4,6. Controleer je stap: de juiste uitkomst is 4,6."
+   ],
+   "uh": "Zet πt/6 ≈ 2,412 om naar t. Welke waarde krijg je, op één decimaal?",
+   "ctx": "Het waterpeil in een haven is h(t) = 3 + 1,5·sin(πt/6) meter, met t in uren na middernacht. Een leerling wil weten wanneer het peil boven 4 meter komt. Hij lost h(t) = 4 op op [0, 12] en rondt af op één decimaal."
+  },
+  {
+   "v": "Welke vergelijking krijg je uit H(t) = 14?",
+   "o": [
+    "\"cos(πt/15) = 4\"",
+    "\"cos(πt/15) = ½\"",
+    "\"cos(πt/15) = 2\"",
+    "\"cos(πt/15) = 14, denk ik\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"cos(πt/15) = 4\"\"? Dan vergeet je te delen door 8. 8·cos = 4, dus cos = ½. Het goede antwoord is cos(πt/15) = ½.",
+    "Klopt: 8·cos(πt/15) = 4, dus cos(πt/15) = ½. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"cos(πt/15) = 2\"\"? Dan trek je 10 niet af maar deel je. 14 − 10 = 4, dus cos = ½. Door de stappen goed na te lopen kom je uit op cos(πt/15) = ½.",
+    "Koos je \"\"cos(πt/15) = 14, denk ik\"\"? Dan neem je de hoogte zelf. 14 − 10 = 4 en 4 : 8 = ½, dus cos = ½. Controleer je stap: de juiste uitkomst is cos(πt/15) = ½."
+   ],
+   "uh": "Welke vergelijking krijg je uit H(t) = 14?",
+   "ctx": "De hoogte van een gondel van een reuzenrad is H(t) = 10 + 8·cos(πt/15) meter, met t in seconden. Een leerling lost H(t) = 14 op voor t in [0, 30]. Hij isoleert cos(πt/15) en gebruikt cos(π/3) = ½."
+  },
+  {
+   "v": "Welke twee waarden van t horen bij H = 14 op [0, 30]?",
+   "o": [
+    "\"5 en 10\"",
+    "\"5 en 15\"",
+    "\"10 en 20, volgens mij\"",
+    "\"5 en 25\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5 en 10\"\"? Dan gebruik je π − x. Bij de cosinus is het 2π − x, dus 5 en 25. Het goede antwoord is 5 en 25.",
+    "Koos je \"\"5 en 15\"\"? Dan neem je een halve periode. De tweede oplossing is 5π/3, dus t = 25. Door de stappen goed na te lopen kom je uit op 5 en 25.",
+    "Koos je \"\"10 en 20, volgens mij\"\"? Dan gebruik je 2π/3 en 4π/3. Hier is de waarde ½, dus 5 en 25. Controleer je stap: de juiste uitkomst is 5 en 25.",
+    "Klopt: πt/15 = π/3 geeft t = 5 en πt/15 = 5π/3 geeft t = 25."
+   ],
+   "uh": "Welke twee waarden van t horen bij H = 14 op [0, 30]?",
+   "ctx": "De hoogte van een gondel van een reuzenrad is H(t) = 10 + 8·cos(πt/15) meter, met t in seconden. Een leerling lost H(t) = 14 op voor t in [0, 30]. Hij isoleert cos(πt/15) en gebruikt cos(π/3) = ½."
+  },
+  {
+   "v": "Waarom is t = 25 ook een oplossing?",
+   "o": [
+    "\"cos x = cos(2π − x), dus 5π/3 geeft dezelfde waarde als π/3\"",
+    "\"de periode is 25\"",
+    "\"omdat 25 = 5 + 20\"",
+    "\"omdat 25 groter is dan 5, zeg maar, gewoon, volgens mij\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2π − π/3 = 5π/3 en dat hoort bij t = 25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de periode is 25\"\"? Dan neem je een verkeerde periode. De periode is 30, dus symmetrie van de cosinus. Het goede antwoord is cos x = cos(2π − x), dus 5π/3 geeft dezelfde waarde als π/3.",
+    "Koos je \"\"omdat 25 = 5 + 20\"\"? Dan tel je een willekeurig getal op. De tweede oplossing volgt uit symmetrie, dus 2π − x.",
+    "Koos je \"\"omdat 25 groter is dan 5, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat groter genoeg is. De symmetrie 2π − x geeft dezelfde cosinus, dus ook 25."
+   ],
+   "uh": "Waarom is t = 25 ook een oplossing?",
+   "ctx": "De hoogte van een gondel van een reuzenrad is H(t) = 10 + 8·cos(πt/15) meter, met t in seconden. Een leerling lost H(t) = 14 op voor t in [0, 30]. Hij isoleert cos(πt/15) en gebruikt cos(π/3) = ½."
+  },
+  {
+   "v": "Hoeveel x voldoen aan sin x = 2?",
+   "o": [
+    "\"één\"",
+    "\"twee\"",
+    "\"geen\"",
+    "\"oneindig veel\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"één\"\"? Dan denk je dat 2 kan voorkomen. De sinus ligt tussen −1 en 1, dus geen. Het goede antwoord is geen.",
+    "Koos je \"\"twee\"\"? Dan denk je aan de symmetrie. Zonder waarde bij 2 is er niets te spiegelen, dus geen. Door de stappen goed na te lopen kom je uit op geen.",
+    "Klopt: de sinus is nooit groter dan 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je aan de periode. Zonder één oplossing is er niets te herhalen, dus geen. Controleer je stap: de juiste uitkomst is geen."
+   ],
+   "uh": "Hoeveel x voldoen aan sin x = 2?",
+   "ctx": "Een leerling onderzoekt op [0, 2π] het aantal oplossingen van sin x = 2, sin x = 1, sin x = 0 en cos x = −1. Hij gebruikt dat sin en cos alleen waarden tussen −1 en 1 aannemen en kijkt daarna naar de grafiek."
+  },
+  {
+   "v": "Tel de nulpunten van de sinus op [0, 2π].",
+   "o": [
+    "\"één\"",
+    "\"drie\"",
+    "\"twee\"",
+    "\"vier\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"één\"\"? Dan vergeet je de andere nulpunten. De sinus is 0 bij 0, π en 2π, dus drie. Het goede antwoord is drie.",
+    "Klopt: x = 0, x = π en x = 2π. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"twee\"\"? Dan vergeet je x = 2π. Het interval is gesloten, dus drie. Door de stappen goed na te lopen kom je uit op drie.",
+    "Koos je \"\"vier\"\"? Dan telt je een oplossing te veel. De nulpunten zijn 0, π en 2π, dus drie. Controleer je stap: de juiste uitkomst is drie."
+   ],
+   "uh": "Tel de nulpunten van de sinus op [0, 2π].",
+   "ctx": "Een leerling onderzoekt op [0, 2π] het aantal oplossingen van sin x = 2, sin x = 1, sin x = 0 en cos x = −1. Hij gebruikt dat sin en cos alleen waarden tussen −1 en 1 aannemen en kijkt daarna naar de grafiek."
+  },
+  {
+   "v": "Welke oplossing heeft sin x = 1 op [0, 2π]?",
+   "o": [
+    "\"x = π\"",
+    "\"x = 3π/2\"",
+    "\"x = π/2 en x = 3π/2\"",
+    "\"x = π/2\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = π\"\"? Dan neem je het nulpunt. Bij π is de sinus 0, dus x = π/2. Het goede antwoord is x = π/2.",
+    "Koos je \"\"x = 3π/2\"\"? Dan neem je het minimum. Bij 3π/2 is de sinus −1, dus x = π/2. Door de stappen goed na te lopen kom je uit op x = π/2.",
+    "Koos je \"\"x = π/2 en x = 3π/2\"\"? Dan tel je het minimum mee. Alleen π/2 geeft 1, dus x = π/2. Controleer je stap: de juiste uitkomst is x = π/2.",
+    "Klopt: de sinus heeft zijn maximum bij π/2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke oplossing heeft sin x = 1 op [0, 2π]?",
+   "ctx": "Een leerling onderzoekt op [0, 2π] het aantal oplossingen van sin x = 2, sin x = 1, sin x = 0 en cos x = −1. Hij gebruikt dat sin en cos alleen waarden tussen −1 en 1 aannemen en kijkt daarna naar de grafiek."
+  },
+  {
+   "v": "Welke oplossing heeft cos x = −1 op [0, 2π]?",
+   "o": [
+    "\"x = π\"",
+    "\"x = 0\"",
+    "\"x = 2π\"",
+    "\"x = π/2\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Isoleer eerst sin of cos, zoek de oplossingen met symmetrie en periode op het gegeven interval en controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de cosinus heeft zijn minimum bij π. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 0\"\"? Dan neem je het maximum. Bij 0 is de cosinus 1, dus x = π. Het goede antwoord is x = π.",
+    "Koos je \"\"x = 2π\"\"? Dan neem je het einde van de periode. Daar is de cosinus 1, dus x = π. Door de stappen goed na te lopen kom je uit op x = π.",
+    "Koos je \"\"x = π/2\"\"? Dan neem je het nulpunt. Daar is de cosinus 0, dus x = π. Controleer je stap: de juiste uitkomst is x = π."
+   ],
+   "uh": "Welke oplossing heeft cos x = −1 op [0, 2π]?",
+   "ctx": "Een leerling onderzoekt op [0, 2π] het aantal oplossingen van sin x = 2, sin x = 1, sin x = 0 en cos x = −1. Hij gebruikt dat sin en cos alleen waarden tussen −1 en 1 aannemen en kijkt daarna naar de grafiek."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling lost op het interval [0, 2π] de vergelijking sin x = −½ op. Hij gebruikt de kenmerkende waarde sin(π/6) = ½ en de symmetrie van de sinus en controleert een van de oplossingen.",
+   "v": "Los sin x = −½ op [0, 2π] op.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De sinus is negatief in het derde en vierde kwadrant (1p). x = π + π/6 = 7π/6 en x = 2π − π/6 = 11π/6 (1p). Controle: sin(7π/6) = −½ (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling lost op [0, 2π] de vergelijking 2·sin x − √3 = 0 op. Hij isoleert sin x en gebruikt de kenmerkende waarde sin(π/3) = √3/2 en de symmetrie.",
+   "v": "Los 2·sin x − √3 = 0 op [0, 2π] op.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "sin x = √3/2 (1p). x = π/3 of x = π − π/3 = 2π/3 (1p). Controle: 2 · √3/2 − √3 = 0 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling lost cos(2x) = 0 op het interval [0, π] op. Hij stelt u = 2x, bepaalt het interval van u, lost cos u = 0 op en deelt de oplossingen door 2.",
+   "v": "Los cos(2x) = 0 op [0, π] op.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "u loopt van 0 tot 2π (1p). cos u = 0 geeft u = π/2 of u = 3π/2 (1p). Dus x = π/4 of x = 3π/4 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het waterpeil in een haven is h(t) = 3 + 1,5·sin(πt/6) meter, met t in uren. Een leerling wil weten wanneer het peil 2 meter is op [0, 12]. Hij isoleert sin(πt/6), gebruikt de rekenmachine in radialen en rondt af op één decimaal.",
+   "v": "Bereken wanneer het peil 2 meter is op [0, 12].",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "sin(πt/6) = −2/3 (1p). πt/6 = π + 0,730 of 2π − 0,730, dus t ≈ 7,4 (1p). De tweede oplossing is t ≈ 10,6 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De hoogte van een gondel is H(t) = 10 + 8·cos(πt/15) meter, met t in seconden. Een leerling wil weten wanneer de gondel op 6 meter hoogte is op [0, 30]. Hij isoleert cos(πt/15) en gebruikt de symmetrie van de cosinus.",
+   "v": "Bereken wanneer H(t) = 6 op [0, 30].",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "cos(πt/15) = −½ (1p). πt/15 = 2π/3 of 4π/3 (1p). Dus t = 10 of t = 20 (1p)."
+  }
+ ]
+}

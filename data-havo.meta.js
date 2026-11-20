@@ -5600,6 +5600,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B10",
+      "lo": "wb.B.10",
+      "gs": 2,
+      "naam": "Goniometrische vergelijkingen oplossen op een interval",
+      "beschrijving": "Je lost vergelijkingen met sinus en cosinus op een interval op met kenmerkende waarden, symmetrie en periodiciteit, werkt met u = 2x, past dit toe op periodieke situaties en controleert je oplossingen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Kenmerkende waarden",
+       "Symmetrie",
+       "Periodiciteit en interval",
+       "Transformaties zoals sin(2x)",
+       "Oplossen in een situatie"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
