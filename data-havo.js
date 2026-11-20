@@ -237047,6 +237047,688 @@ var VAKKEN = [
         "u": "20 + 0,10m = 8 + 0,25m geeft 12 = 0,15m, dus m = 80 (1p). A is goedkoper als m > 80 (1p). Controle: m = 100 geeft A = 30 en B = 33 (1p)."
        }
       ]
+     },
+     {
+      "id": "B9",
+      "lo": "wb.B.9",
+      "gs": 2,
+      "naam": "Evenredigheidsverbanden: recht evenredig, omgekeerd evenredig en machtsverbanden",
+      "beschrijving": "Je herkent recht evenredige, omgekeerd evenredige en machtsverbanden, stelt de formule op, bepaalt de evenredigheidsconstante en de exponent, rekent met schaalvergroting en lost vergelijkingen met een machtsverband op.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Recht evenredig en lineair",
+       "Omgekeerd evenredig",
+       "Machtsverband en exponent",
+       "Schaalvergroting",
+       "Vergelijkingen opstellen en interpreteren"
+      ],
+      "sam": "Bij recht evenredig is y : x constant en bij omgekeerd evenredig is x · y constant. Bij y = c·x^n bepaal je n uit twee punten door de y-waarden te delen. Bij schaalvergroting met factor k wordt de oppervlakte k² en de inhoud k³. Interpreteer de oplossing in de situatie en controleer met een tweede punt.",
+      "begrippen": [
+       {
+        "t": "Recht evenredig",
+        "d": "y = c·x: y : x is constant en de grafiek is een rechte lijn door (0, 0)."
+       },
+       {
+        "t": "Evenredigheidsconstante",
+        "d": "De vaste waarde c, zoals 0,06 liter per km bij V = 0,06·s."
+       },
+       {
+        "t": "Lineair verband",
+        "d": "y = ax + b; alleen recht evenredig als b = 0."
+       },
+       {
+        "t": "Omgekeerd evenredig",
+        "d": "y = c/x: het product x · y is constant."
+       },
+       {
+        "t": "Hyperbool",
+        "d": "De grafiek van een omgekeerd evenredig verband."
+       },
+       {
+        "t": "Machtsverband",
+        "d": "y = c·x^n met evenredigheidsconstante c en exponent n."
+       },
+       {
+        "t": "Exponent bepalen",
+        "d": "Uit twee punten de verhouding delen en n bepalen."
+       },
+       {
+        "t": "Schaalvergroting",
+        "d": "Lengte k keer zo groot geeft oppervlakte k² en inhoud k³."
+       },
+       {
+        "t": "Verhouding y : x",
+        "d": "Constant bij recht evenredig, niet constant bij lineair met beginwaarde."
+       },
+       {
+        "t": "Oplossing interpreteren",
+        "d": "Beoordelen welke oplossing bij de situatie past, zoals t > 0."
+       },
+       {
+        "t": "Vergelijking opstellen",
+        "d": "Uit een situatie een formule opstellen en oplossen."
+       },
+       {
+        "t": "Controleren met een waarde",
+        "d": "Een tweede punt invullen in de gevonden formule."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Hoe heet c in het verband y = c·x?",
+        "o": [
+         "\"beginwaarde\"",
+         "\"evenredigheidsconstante\"",
+         "\"groeifactor\"",
+         "\"exponent\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"beginwaarde\"\"? Dan verwar je c met de waarde bij x = 0. Bij y = c·x is die 0, dus evenredigheidsconstante. Het goede antwoord is evenredigheidsconstante.",
+         "Klopt: c is de vaste verhouding y : x. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"groeifactor\"\"? Dan verwar je het met een exponentieel verband. Hier is x geen exponent, dus evenredigheidsconstante.",
+         "Koos je \"\"exponent\"\"? Dan verwar je c met n bij y = c·x^n. Hier staat geen macht, dus evenredigheidsconstante. Controleer je stap: de juiste uitkomst is evenredigheidsconstante."
+        ],
+        "uh": "Hoe heet c in het verband y = c·x?"
+       },
+       {
+        "v": "Door welk punt gaat de grafiek van een recht evenredig verband altijd?",
+        "o": [
+         "\"(0, 1), to be honest\"",
+         "\"(1, 0)\"",
+         "\"(c, 0)\"",
+         "\"(0, 0)\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(0, 1), to be honest\"\"? Dan verwar je het met een exponentieel verband. Dat gaat door (0, 1), dus (0, 0). Het goede antwoord is (0, 0).",
+         "Koos je \"\"(1, 0)\"\"? Dan verwissel je de coördinaten. Bij x = 0 is y = 0, dus (0, 0). Door de stappen goed na te lopen kom je uit op (0, 0).",
+         "Koos je \"\"(c, 0)\"\"? Dan neem je c als x-waarde. Bij x = 0 is y = 0, dus (0, 0). Controleer je stap: de juiste uitkomst is (0, 0).",
+         "Klopt: y = c·0 = 0. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Door welk punt gaat de grafiek van een recht evenredig verband altijd?"
+       },
+       {
+        "v": "Welk verband is lineair maar niet recht evenredig?",
+        "o": [
+         "\"y = 2x + 3\"",
+         "\"y = 2x\"",
+         "\"y = x/2, zeg maar\"",
+         "\"y = 5x\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij x = 0 is y = 3, dus de grafiek gaat niet door (0, 0).",
+         "Koos je \"\"y = 2x\"\"? Dan denk je dat elke lineaire functie recht evenredig is. y = 2x gaat wel door (0, 0), dus y = 2x + 3 is het antwoord.",
+         "Koos je \"\"y = x/2, zeg maar\"\"? Dan denk je dat een breuk geen recht verband is. y = x/2 gaat door (0, 0), dus recht evenredig. Door de stappen goed na te lopen kom je uit op y = 2x + 3.",
+         "Koos je \"\"y = 5x\"\"? Dan denk je dat een grotere helling het verschil maakt. y = 5x gaat door (0, 0), dus recht evenredig."
+        ],
+        "uh": "Welk verband is lineair maar niet recht evenredig?"
+       },
+       {
+        "v": "Wat blijft constant bij een omgekeerd evenredig verband tussen x en y?",
+        "o": [
+         "\"de som x + y\"",
+         "\"het quotiënt y : x, eigenlijk\"",
+         "\"het product x · y\"",
+         "\"het verschil y − x\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de som x + y\"\"? Dan denk je aan optellen. Bij omgekeerd evenredig is het product constant, dus x · y. Het goede antwoord is het product x · y.",
+         "Koos je \"\"het quotiënt y : x, eigenlijk\"\"? Dan verwar je het met recht evenredig. Daar is y : x constant, dus x · y. Door de stappen goed na te lopen kom je uit op het product x · y.",
+         "Klopt: x · y = c, dus y = c/x. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"het verschil y − x\"\"? Dan denk je aan aftrekken. Bij omgekeerd evenredig is het product constant, dus x · y. Controleer je stap: de juiste uitkomst is het product x · y."
+        ],
+        "uh": "Wat blijft constant bij een omgekeerd evenredig verband tussen x en y?"
+       },
+       {
+        "v": "Welke formule hoort bij een omgekeerd evenredig verband?",
+        "o": [
+         "\"y = c·x\"",
+         "\"y = c/x\"",
+         "\"y = c + x\"",
+         "\"y = c·x²\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"y = c·x\"\"? Dan verwar je het met recht evenredig. Daar groeien x en y samen, dus y = c/x. Het goede antwoord is y = c/x.",
+         "Klopt: als x groter wordt, wordt y kleiner. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"y = c + x\"\"? Dan denk je aan een lineair verband met beginwaarde. Omgekeerd evenredig is een breuk, dus y = c/x.",
+         "Koos je \"\"y = c·x²\"\"? Dan verwar je het met een machtsverband. Omgekeerd evenredig is y = c/x, dus y = c/x. Controleer je stap: de juiste uitkomst is y = c/x."
+        ],
+        "uh": "Welke formule hoort bij een omgekeerd evenredig verband?"
+       },
+       {
+        "v": "Hoe schrijf je een machtsverband tussen x en y?",
+        "o": [
+         "\"y = c·n^x\"",
+         "\"y = c + x^n\"",
+         "\"y = n·x + c\"",
+         "\"y = c·x^n\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"y = c·n^x\"\"? Dan verwisselt je grondtal en exponent. Bij een machtsverband staat x in het grondtal, dus y = c·x^n.",
+         "Koos je \"\"y = c + x^n\"\"? Dan tel je c op. Een evenredig verband is een product, dus y = c·x^n. Door de stappen goed na te lopen kom je uit op y = c·x^n.",
+         "Koos je \"\"y = n·x + c\"\"? Dan schrijf je een lineair verband. Een machtsverband heeft een exponent, dus y = c·x^n. Controleer je stap: de juiste uitkomst is y = c·x^n.",
+         "Klopt: c is de evenredigheidsconstante en n de exponent."
+        ],
+        "uh": "Hoe schrijf je een machtsverband tussen x en y?"
+       },
+       {
+        "v": "Een lengte wordt k keer zo groot. Met welke factor groeit de oppervlakte?",
+        "o": [
+         "\"k²\"",
+         "\"k\"",
+         "\"2k\"",
+         "\"k³\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: oppervlak is lengte keer lengte, dus k². Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"k\"\"? Dan denk je dat de oppervlakte evenredig met de lengte groeit. Het is een product van twee lengtes, dus k².",
+         "Koos je \"\"2k\"\"? Dan denk je dat het verdubbelt. De factor is k², dus k². Door de stappen goed na te lopen kom je uit op k².",
+         "Koos je \"\"k³\"\"? Dan neem je de factor voor de inhoud. Voor oppervlakte is het k², dus k². Controleer je stap: de juiste uitkomst is k²."
+        ],
+        "uh": "Een lengte wordt k keer zo groot. Met welke factor groeit de oppervlakte?"
+       },
+       {
+        "v": "Welke waarde heeft c in V = c·s?",
+        "o": [
+         "\"6\"",
+         "\"16,7\"",
+         "\"0,06\"",
+         "\"0,6\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6\"\"? Dan neem je het aantal liters. c is de verhouding V : s, dus 0,06. Het goede antwoord is 0,06.",
+         "Koos je \"\"16,7\"\"? Dan deel je 100 door 6. c = V : s = 6 : 100, dus 0,06. Door de stappen goed na te lopen kom je uit op 0,06.",
+         "Klopt: c = 6 : 100 = 0,06 liter per km. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0,6\"\"? Dan zet dit je de komma verkeerd. 6 : 100 = 0,06, dus 0,06. Controleer je stap: de juiste uitkomst is 0,06."
+        ],
+        "uh": "Welke waarde heeft c in V = c·s?",
+        "ctx": "Een auto verbruikt 6 liter benzine per 100 km. Het verbruik V (in liter) is recht evenredig met de afstand s (in km). Een leerling stelt V = c·s op met 100 km → 6 liter en controleert met 250 km → 15 liter."
+       },
+       {
+        "v": "Hoeveel liter is nodig voor 400 km?",
+        "o": [
+         "\"2400\"",
+         "\"24\"",
+         "\"66,7\"",
+         "\"30\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2400\"\"? Dan vermenigvuldig je 6 met 400. Gebruik c = 0,06, dus 24. Het goede antwoord is 24.",
+         "Klopt: 0,06 · 400 = 24. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"66,7\"\"? Dan deel je 400 door 6. Gebruik V = 0,06 · 400, dus 24. Door de stappen goed na te lopen kom je uit op 24.",
+         "Koos je \"\"30\"\"? Dan tel je 6 bij 24 op. Reken 0,06 · 400, dus 24. Controleer je stap: de juiste uitkomst is 24."
+        ],
+        "uh": "Hoeveel liter is nodig voor 400 km?",
+        "ctx": "Een auto verbruikt 6 liter benzine per 100 km. Het verbruik V (in liter) is recht evenredig met de afstand s (in km). Een leerling stelt V = c·s op met 100 km → 6 liter en controleert met 250 km → 15 liter."
+       },
+       {
+        "v": "Hoe controleer je c met 250 km → 15 liter?",
+        "o": [
+         "\"250 : 15 = 16,7, gelijk aan c, gewoon\"",
+         "\"15 + 250 = 265\"",
+         "\"15 − 6 = 9\"",
+         "\"15 : 250 = 0,06, gelijk aan c\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"250 : 15 = 16,7, gelijk aan c, gewoon\"\"? Dan draai je de verhouding om. c = V : s, dus 15 : 250 = 0,06. Het goede antwoord is 15 : 250 = 0,06, gelijk aan c.",
+         "Koos je \"\"15 + 250 = 265\"\"? Dan tel je de waarden op. Je vergelijkt de verhouding, dus 15 : 250 = 0,06. Door de stappen goed na te lopen kom je uit op 15 : 250 = 0,06, gelijk aan c.",
+         "Koos je \"\"15 − 6 = 9\"\"? Dan trek je de verbruiken af. De verhouding V : s moet gelijk zijn, dus 15 : 250 = 0,06. Controleer je stap: de juiste uitkomst is 15 : 250 = 0,06, gelijk aan c.",
+         "Klopt: de verhouding is dezelfde. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe controleer je c met 250 km → 15 liter?",
+        "ctx": "Een auto verbruikt 6 liter benzine per 100 km. Het verbruik V (in liter) is recht evenredig met de afstand s (in km). Een leerling stelt V = c·s op met 100 km → 6 liter en controleert met 250 km → 15 liter."
+       },
+       {
+        "v": "Welke formule geeft t uit v?",
+        "o": [
+         "\"t = 120/v\"",
+         "\"t = 120·v\"",
+         "\"t = v/120\"",
+         "\"t = 120 − v\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: v · t = 120, dus t = 120/v. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"t = 120·v\"\"? Dan vermenigvuldig je. v · t = 120 betekent t = 120/v, dus t = 120/v. Het goede antwoord is t = 120/v.",
+         "Koos je \"\"t = v/120\"\"? Dan draai je de breuk om. v · t = 120, dus t = 120/v. Door de stappen goed na te lopen kom je uit op t = 120/v.",
+         "Koos je \"\"t = 120 − v\"\"? Dan trek je af. Het is een product, dus t = 120/v. Controleer je stap: de juiste uitkomst is t = 120/v."
+        ],
+        "uh": "Welke formule geeft t uit v?",
+        "ctx": "Een rit van 120 km duurt t uur bij een gemiddelde snelheid v km/u. Het product v·t is steeds 120. Een leerling noteert dat v en t omgekeerd evenredig zijn, stelt t = 120/v op en berekent t voor v = 60, 80 en 40."
+       },
+       {
+        "v": "Hoeveel uur duurt de rit bij 80 km/u?",
+        "o": [
+         "\"2\"",
+         "\"0,67\"",
+         "\"1,5\"",
+         "\"9600\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2\"\"? Dan neem je de waarde bij 60 km/u. Bij 80 is het 120 : 80, dus 1,5. Het goede antwoord is 1,5.",
+         "Koos je \"\"0,67\"\"? Dan deel je 80 door 120. t = 120 : v, dus 1,5. Door de stappen goed na te lopen kom je uit op 1,5.",
+         "Klopt: 120 : 80 = 1,5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"9600\"\"? Dan vermenigvuldig je 120 met 80. t = 120 : v, dus 1,5. Controleer je stap: de juiste uitkomst is 1,5."
+        ],
+        "uh": "Hoeveel uur duurt de rit bij 80 km/u?",
+        "ctx": "Een rit van 120 km duurt t uur bij een gemiddelde snelheid v km/u. Het product v·t is steeds 120. Een leerling noteert dat v en t omgekeerd evenredig zijn, stelt t = 120/v op en berekent t voor v = 60, 80 en 40."
+       },
+       {
+        "v": "Wat gebeurt er met t als v verdubbelt?",
+        "o": [
+         "\"t verdubbelt\"",
+         "\"t wordt de helft\"",
+         "\"t blijft gelijk\"",
+         "\"t wordt vier keer zo klein\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"t verdubbelt\"\"? Dan denk je dat beide samen groeien. Bij omgekeerd evenredig werkt het andersom, dus de helft.",
+         "Klopt: 120/(2v) = ½ · 120/v. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"t blijft gelijk\"\"? Dan denk je dat het product alles vastlegt. Als v groter wordt, wordt t kleiner, dus de helft.",
+         "Koos je \"\"t wordt vier keer zo klein\"\"? Dan reken je met een kwadraat. 120/(2v) is de helft, dus de helft. Controleer je stap: de juiste uitkomst is t wordt de helft."
+        ],
+        "uh": "Wat gebeurt er met t als v verdubbelt?",
+        "ctx": "Een rit van 120 km duurt t uur bij een gemiddelde snelheid v km/u. Het product v·t is steeds 120. Een leerling noteert dat v en t omgekeerd evenredig zijn, stelt t = 120/v op en berekent t voor v = 60, 80 en 40."
+       },
+       {
+        "v": "Welke tabel is recht evenredig?",
+        "o": [
+         "\"tabel 1, want y stijgt 2 per stap\"",
+         "\"beide\"",
+         "\"geen van beide\"",
+         "\"tabel 2, want y : x is steeds 3\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"tabel 1, want y stijgt 2 per stap\"\"? Dan let je op een vast verschil. Recht evenredig betekent een vaste verhouding, dus tabel 2.",
+         "Koos je \"\"beide\"\"? Dan denk je dat elk regelmatig patroon recht evenredig is. In tabel 1 is y : x niet constant, dus tabel 2.",
+         "Koos je \"\"geen van beide\"\"? Dan zie je de vaste verhouding in tabel 2 niet. y : x = 3 steeds, dus tabel 2. Controleer je stap: de juiste uitkomst is tabel 2, want y : x is steeds 3.",
+         "Klopt: 6 : 2 = 12 : 4 = 18 : 6 = 3. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke tabel is recht evenredig?",
+        "ctx": "Een leerling bekijkt twee tabellen. Tabel 1: x = 1, 2, 3 geeft y = 5, 7, 9. Tabel 2: x = 2, 4, 6 geeft y = 6, 12, 18. Hij onderzoekt bij welke tabel y recht evenredig is met x door y : x uit te rekenen."
+       },
+       {
+        "v": "Welke formule hoort bij tabel 1?",
+        "o": [
+         "\"y = 2x + 3\"",
+         "\"y = 5x, gewoon\"",
+         "\"y = 2x\"",
+         "\"y = 3x\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: x = 1 geeft 5 en x = 2 geeft 7. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"y = 5x, gewoon\"\"? Dan neem je de eerste y-waarde als c. x = 2 geeft dan 10, dus y = 2x + 3. Het goede antwoord is y = 2x + 3.",
+         "Koos je \"\"y = 2x\"\"? Dan vergeet je de beginwaarde. x = 1 geeft 2 en niet 5, dus y = 2x + 3. Door de stappen goed na te lopen kom je uit op y = 2x + 3.",
+         "Koos je \"\"y = 3x\"\"? Dan neem je de verhouding bij x = 3. x = 1 geeft 3 en niet 5, dus y = 2x + 3. Controleer je stap: de juiste uitkomst is y = 2x + 3."
+        ],
+        "uh": "Welke formule hoort bij tabel 1?",
+        "ctx": "Een leerling bekijkt twee tabellen. Tabel 1: x = 1, 2, 3 geeft y = 5, 7, 9. Tabel 2: x = 2, 4, 6 geeft y = 6, 12, 18. Hij onderzoekt bij welke tabel y recht evenredig is met x door y : x uit te rekenen."
+       },
+       {
+        "v": "Welke waarden heeft y : x bij tabel 1 voor x = 1 en x = 3?",
+        "o": [
+         "\"5 en 5, denk ik\"",
+         "\"2 en 2\"",
+         "\"5 en 3\"",
+         "\"3 en 3\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5 en 5, denk ik\"\"? Dan denk je dat de verhouding gelijk blijft. 9 : 3 = 3, dus 5 en 3. Het goede antwoord is 5 en 3.",
+         "Koos je \"\"2 en 2\"\"? Dan neem je het verschil per stap. Bereken y : x, dus 5 en 3. Door de stappen goed na te lopen kom je uit op 5 en 3.",
+         "Klopt: 5 : 1 = 5 en 9 : 3 = 3. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3 en 3\"\"? Dan gebruik je alleen de laatste verhouding. 5 : 1 = 5, dus 5 en 3. Controleer je stap: de juiste uitkomst is 5 en 3."
+        ],
+        "uh": "Welke waarden heeft y : x bij tabel 1 voor x = 1 en x = 3?",
+        "ctx": "Een leerling bekijkt twee tabellen. Tabel 1: x = 1, 2, 3 geeft y = 5, 7, 9. Tabel 2: x = 2, 4, 6 geeft y = 6, 12, 18. Hij onderzoekt bij welke tabel y recht evenredig is met x door y : x uit te rekenen."
+       },
+       {
+        "v": "Wat zie je aan het verschil tussen de verhoudingen 5 en 3?",
+        "o": [
+         "\"het verband is omgekeerd evenredig, volgens mij\"",
+         "\"het verband is niet recht evenredig\"",
+         "\"het verband is recht evenredig\"",
+         "\"de tabel is fout\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het verband is omgekeerd evenredig, volgens mij\"\"? Dan verwar je het met omgekeerd evenredig. Daar is x · y constant, dus niet recht evenredig.",
+         "Klopt: bij recht evenredig is y : x altijd gelijk. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"het verband is recht evenredig\"\"? Dan denk je dat de verhouding constant is. 5 en 3 verschillen, dus niet recht evenredig.",
+         "Koos je \"\"de tabel is fout\"\"? Dan denk je dat de tabel een fout bevat. Het is een lineair verband zonder oorsprong, dus niet recht evenredig."
+        ],
+        "uh": "Wat zie je aan het verschil tussen de verhoudingen 5 en 3?",
+        "ctx": "Een leerling bekijkt twee tabellen. Tabel 1: x = 1, 2, 3 geeft y = 5, 7, 9. Tabel 2: x = 2, 4, 6 geeft y = 6, 12, 18. Hij onderzoekt bij welke tabel y recht evenredig is met x door y : x uit te rekenen."
+       },
+       {
+        "v": "Hoeveel is V bij r = 3 en bij r = 6?",
+        "o": [
+         "\"27 en 54\"",
+         "\"27 en 108, I suppose\"",
+         "\"9 en 36\"",
+         "\"27 en 216\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"27 en 54\"\"? Dan verdubbel je V. De inhoud groeit met r³, dus 216. Het goede antwoord is 27 en 216.",
+         "Koos je \"\"27 en 108, I suppose\"\"? Dan vermenigvuldig je met 4. De inhoud groeit met r³, dus 216. Door de stappen goed na te lopen kom je uit op 27 en 216.",
+         "Koos je \"\"9 en 36\"\"? Dan neem je r². De inhoud is r³, dus 27 en 216. Controleer je stap: de juiste uitkomst is 27 en 216.",
+         "Klopt: 3³ = 27 en 6³ = 216. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel is V bij r = 3 en bij r = 6?",
+        "ctx": "Een kubus heeft ribbe r. De inhoud is V = r³ en het oppervlak is O = 6r². Een leerling berekent V en O voor r = 3 en voor r = 6 en kijkt hoe ze veranderen als de ribbe verdubbelt."
+       },
+       {
+        "v": "De ribbe wordt twee keer zo lang. Met welke factor groeit de inhoud?",
+        "o": [
+         "\"8\"",
+         "\"2\"",
+         "\"4\"",
+         "\"6\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (2r)³ = 8r³. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2\"\"? Dan denk je dat V evenredig is met r. V = r³, dus 8. Het goede antwoord is 8.",
+         "Koos je \"\"4\"\"? Dan neem je de factor voor het oppervlak. Voor de inhoud is het 2³, dus 8. Door de stappen goed na te lopen kom je uit op 8.",
+         "Koos je \"\"6\"\"? Dan tel je de exponenten op. (2r)³ = 8r³, dus 8. Controleer je stap: de juiste uitkomst is 8."
+        ],
+        "uh": "De ribbe wordt twee keer zo lang. Met welke factor groeit de inhoud?",
+        "ctx": "Een kubus heeft ribbe r. De inhoud is V = r³ en het oppervlak is O = 6r². Een leerling berekent V en O voor r = 3 en voor r = 6 en kijkt hoe ze veranderen als de ribbe verdubbelt."
+       },
+       {
+        "v": "En het oppervlak O = 6r²: welke factor hoort bij ribbe × 2?",
+        "o": [
+         "\"2\"",
+         "\"8\"",
+         "\"4\"",
+         "\"6\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2\"\"? Dan denk je dat O evenredig is met r. O = 6r², dus 4. Het goede antwoord is 4.",
+         "Koos je \"\"8\"\"? Dan neem je de factor voor de inhoud. Voor het oppervlak is het 2², dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Klopt: 6(2r)² = 24r² = 4 · 6r². Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"6\"\"? Dan neem je de constante 6 als factor. De factor volgt uit r², dus 4. Controleer je stap: de juiste uitkomst is 4."
+        ],
+        "uh": "En het oppervlak O = 6r²: welke factor hoort bij ribbe × 2?",
+        "ctx": "Een kubus heeft ribbe r. De inhoud is V = r³ en het oppervlak is O = 6r². Een leerling berekent V en O voor r = 3 en voor r = 6 en kijkt hoe ze veranderen als de ribbe verdubbelt."
+       },
+       {
+        "v": "Wat levert 48 : 12 op en wat volgt daaruit voor n?",
+        "o": [
+         "\"48 : 12 = 4, dus n = 4\"",
+         "\"4 = 2^n, dus n = 2\"",
+         "\"4 = 4^n, dus n = 1\"",
+         "\"4 = 2^n, dus n = 3\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"48 : 12 = 4, dus n = 4\"\"? Dan neem je de verhouding als n. De verhouding is 2^n, dus n = 2. Het goede antwoord is 4 = 2^n, dus n = 2.",
+         "Klopt: bij x van 2 naar 4 hoort factor 2^n = 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"4 = 4^n, dus n = 1\"\"? Dan gebruik je de verkeerde factor. x gaat van 2 naar 4, dus factor 2, dus n = 2. Door de stappen goed na te lopen kom je uit op 4 = 2^n, dus n = 2.",
+         "Koos je \"\"4 = 2^n, dus n = 3\"\"? Dan reken je 2³ = 4. 2³ = 8, dus n = 2. Controleer je stap: de juiste uitkomst is 4 = 2^n, dus n = 2."
+        ],
+        "uh": "Wat levert 48 : 12 op en wat volgt daaruit voor n?",
+        "ctx": "Een verband y = c·x^n gaat door de punten (2, 12) en (4, 48). Een leerling deelt de y-waarden om n te vinden, bepaalt daarna c en berekent y bij x = 5."
+       },
+       {
+        "v": "Bereken c uit y = c·x² en het punt (2, 12).",
+        "o": [
+         "\"6\"",
+         "\"12\"",
+         "\"4\"",
+         "\"3\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6\"\"? Dan deel je 12 door 2. x² = 4, dus c = 3. Het goede antwoord is 3.",
+         "Koos je \"\"12\"\"? Dan neem je de y-waarde als c. Deel door x² = 4, dus c = 3. Door de stappen goed na te lopen kom je uit op 3.",
+         "Koos je \"\"4\"\"? Dan neem je x². c = 12 : 4, dus c = 3. Controleer je stap: de juiste uitkomst is 3.",
+         "Klopt: 12 = c · 4, dus c = 3. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Bereken c uit y = c·x² en het punt (2, 12).",
+        "ctx": "Een verband y = c·x^n gaat door de punten (2, 12) en (4, 48). Een leerling deelt de y-waarden om n te vinden, bepaalt daarna c en berekent y bij x = 5."
+       },
+       {
+        "v": "Bereken y voor x = 5 met jouw formule.",
+        "o": [
+         "\"75\"",
+         "\"15\"",
+         "\"60\"",
+         "\"125\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 3 · 25 = 75. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"15\"\"? Dan vermenigvuldig je 3 met 5. Het is 3 · 5², dus 75. Het goede antwoord is 75.",
+         "Koos je \"\"60\"\"? Dan tel je 12 en 48 bij elkaar. Gebruik y = 3x², dus 75. Door de stappen goed na te lopen kom je uit op 75.",
+         "Koos je \"\"125\"\"? Dan neem je 5³. Het is 3 · 5² = 75, dus 75. Controleer je stap: de juiste uitkomst is 75."
+        ],
+        "uh": "Bereken y voor x = 5 met jouw formule.",
+        "ctx": "Een verband y = c·x^n gaat door de punten (2, 12) en (4, 48). Een leerling deelt de y-waarden om n te vinden, bepaalt daarna c en berekent y bij x = 5."
+       },
+       {
+        "v": "Welke waarden geeft s = 5t² bij t = 2 en t = 3?",
+        "o": [
+         "\"10 en 15, eigenlijk\"",
+         "\"20 en 30\"",
+         "\"20 en 45\"",
+         "\"10 en 45\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10 en 15, eigenlijk\"\"? Dan vermenigvuldig je t met 5. Het is 5t², dus 20 en 45. Het goede antwoord is 20 en 45.",
+         "Koos je \"\"20 en 30\"\"? Dan kwadrateer je t = 3 niet goed. 5 · 3² = 45, dus 20 en 45. Door de stappen goed na te lopen kom je uit op 20 en 45.",
+         "Klopt: 5 · 4 = 20 en 5 · 9 = 45. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"10 en 45\"\"? Dan reken je 5 · 2 bij t = 2. Het is 5 · 2² = 20, dus 20 en 45. Controleer je stap: de juiste uitkomst is 20 en 45."
+        ],
+        "uh": "Welke waarden geeft s = 5t² bij t = 2 en t = 3?",
+        "ctx": "Een steen valt van hoogte s meter in t seconden volgens s = 5t². Een leerling berekent s voor t = 2 en t = 3, lost 5t² = 45 op en denkt na over een negatieve oplossing. Hij kijkt ook wat er met s gebeurt als t verdubbelt."
+       },
+       {
+        "v": "Welke oplossingen heeft 5t² = 45?",
+        "o": [
+         "\"t = 9\"",
+         "\"t = 3 of t = −3\"",
+         "\"alleen t = 3\"",
+         "\"t = 45 : 5 = 9, gewoon\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"t = 9\"\"? Dan vergeet je de wortel. t² = 9 geeft t = ±3, dus t = 3 of −3. Het goede antwoord is t = 3 of t = −3.",
+         "Klopt: t² = 9, dus t = 3 of t = −3. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"alleen t = 3\"\"? Dan vergeet je de negatieve oplossing. Wiskundig voldoet ook −3, dus t = 3 of −3. Door de stappen goed na te lopen kom je uit op t = 3 of t = −3.",
+         "Koos je \"\"t = 45 : 5 = 9, gewoon\"\"? Dan deel je 45 door 5 en stop. Neem daarna de wortel, dus t = 3 of −3. Controleer je stap: de juiste uitkomst is t = 3 of t = −3."
+        ],
+        "uh": "Welke oplossingen heeft 5t² = 45?",
+        "ctx": "Een steen valt van hoogte s meter in t seconden volgens s = 5t². Een leerling berekent s voor t = 2 en t = 3, lost 5t² = 45 op en denkt na over een negatieve oplossing. Hij kijkt ook wat er met s gebeurt als t verdubbelt."
+       },
+       {
+        "v": "Welke oplossing past bij de situatie?",
+        "o": [
+         "\"t = −3, want het is de kleinste\"",
+         "\"beide, want ze voldoen aan de vergelijking\"",
+         "\"geen van beide\"",
+         "\"t = 3, want een tijd is niet negatief\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"t = −3, want het is de kleinste\"\"? Dan kies je de negatieve oplossing. Een tijd is niet negatief, dus t = 3. Het goede antwoord is t = 3, want een tijd is niet negatief.",
+         "Koos je \"\"beide, want ze voldoen aan de vergelijking\"\"? Dan accepteer je elke oplossing. Interpreteer in de situatie, dus t = 3.",
+         "Koos je \"\"geen van beide\"\"? Dan denk je dat geen oplossing past. t = 3 past bij een val van 45 m, dus t = 3. Controleer je stap: de juiste uitkomst is t = 3, want een tijd is niet negatief.",
+         "Klopt: je interpreteert de oplossing in de context. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke oplossing past bij de situatie?",
+        "ctx": "Een steen valt van hoogte s meter in t seconden volgens s = 5t². Een leerling berekent s voor t = 2 en t = 3, lost 5t² = 45 op en denkt na over een negatieve oplossing. Hij kijkt ook wat er met s gebeurt als t verdubbelt."
+       },
+       {
+        "v": "Als t verdubbelt, hoeveel keer zo groot wordt s?",
+        "o": [
+         "\"4\"",
+         "\"2\"",
+         "\"8\"",
+         "\"16\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal welk soort verband het is, stel de formule op en controleer met de gegeven waarden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 5(2t)² = 4 · 5t². Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2\"\"? Dan denk je dat s evenredig is met t. s = 5t², dus 4. Het goede antwoord is 4.",
+         "Koos je \"\"8\"\"? Dan neem je de factor voor een derde macht. Hier is het 2², dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Koos je \"\"16\"\"? Dan kwadrateer je twee keer. (2t)² = 4t², dus 4. Controleer je stap: de juiste uitkomst is 4."
+        ],
+        "uh": "Als t verdubbelt, hoeveel keer zo groot wordt s?",
+        "ctx": "Een steen valt van hoogte s meter in t seconden volgens s = 5t². Een leerling berekent s voor t = 2 en t = 3, lost 5t² = 45 op en denkt na over een negatieve oplossing. Hij kijkt ook wat er met s gebeurt als t verdubbelt."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling krijgt voor 8 uur werken € 92 en voor 15 uur € 172,50. Hij neemt aan dat het loon recht evenredig is met het aantal uren, bepaalt de evenredigheidsconstante en rekent daarmee het loon voor 20 uur uit.",
+        "v": "Bepaal de evenredigheidsconstante en het loon bij 20 uur.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "c = 92 : 8 = 11,50 (1p). Controle: 15 · 11,50 = 172,50 (1p). Loon voor 20 uur: 20 · 11,50 = € 230 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Drie schilders doen er 8 dagen over om een gebouw te schilderen. Een leerling neemt aan dat het aantal dagen omgekeerd evenredig is met het aantal schilders. Hij stelt de formule op en berekent het aantal dagen voor 6 en voor 4 schilders.",
+        "v": "Stel de formule op en bereken de dagen voor 6 en 4 schilders.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het product is 3 · 8 = 24, dus d = 24/n (1p). Bij 6 schilders is d = 4 dagen (1p). Bij 4 schilders is d = 6 dagen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "De oppervlakte van een cirkel is A = π·r². Een leerling berekent A voor r = 2 en r = 4, vergelijkt de uitkomsten en bepaalt met welke factor A groeit als r verdubbelt. Hij rondt af op één decimaal.",
+        "v": "Bereken A voor r = 2 en r = 4 en geef de factor.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "A(2) = 4π ≈ 12,6 en A(4) = 16π ≈ 50,3 (1p). De verhouding is 4 (1p). A is evenredig met r², dus bij r verdubbelen wordt A vier keer zo groot (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een verband y = c·x^n gaat door de punten (1, 4) en (3, 36). Een leerling bepaalt c uit het eerste punt, daarna n uit het tweede punt en berekent y bij x = 2. Hij controleert met het tweede punt.",
+        "v": "Bepaal c, n en y bij x = 2.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij x = 1 is c = 4 (1p). 36 : 4 = 9 = 3^n, dus n = 2 (1p). y = 4x², dus y(2) = 16; controle 4 · 9 = 36 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een steen valt volgens s = 5t². Een leerling wil weten na hoeveel seconden de steen 80 meter heeft gevallen. Hij stelt de vergelijking op, lost die op en beoordeelt welke oplossing past bij de situatie.",
+        "v": "Bereken t voor s = 80 en interpreteer de oplossing.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "5t² = 80 geeft t² = 16 (1p). t = 4 of t = −4 (1p). Een tijd is niet negatief, dus t = 4 seconden (1p)."
+       }
+      ]
      }
     ]
    },

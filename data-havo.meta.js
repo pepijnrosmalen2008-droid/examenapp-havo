@@ -5579,6 +5579,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B9",
+      "lo": "wb.B.9",
+      "gs": 2,
+      "naam": "Evenredigheidsverbanden: recht evenredig, omgekeerd evenredig en machtsverbanden",
+      "beschrijving": "Je herkent recht evenredige, omgekeerd evenredige en machtsverbanden, stelt de formule op, bepaalt de evenredigheidsconstante en de exponent, rekent met schaalvergroting en lost vergelijkingen met een machtsverband op.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Recht evenredig en lineair",
+       "Omgekeerd evenredig",
+       "Machtsverband en exponent",
+       "Schaalvergroting",
+       "Vergelijkingen opstellen en interpreteren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
