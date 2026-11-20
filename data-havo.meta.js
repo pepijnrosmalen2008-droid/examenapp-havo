@@ -5558,6 +5558,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B8",
+      "lo": "wb.B.8",
+      "gs": 2,
+      "naam": "Ongelijkheden en stelsels van vergelijkingen oplossen en interpreteren",
+      "beschrijving": "Je lost lineaire en kwadratische ongelijkheden op, vergelijkt grafieken met f(x) > g(x), lost stelsels van twee lineaire vergelijkingen op en vertaalt de oplossing terug naar de situatie.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Lineaire ongelijkheden",
+       "Kwadratische ongelijkheden",
+       "f(x) > g(x) met grafieken",
+       "Stelsels",
+       "Opstellen en interpreteren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

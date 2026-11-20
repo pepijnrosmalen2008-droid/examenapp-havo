@@ -236365,6 +236365,688 @@ var VAKKEN = [
         "u": "x² − x − 2 = 0 geeft (x − 2)(x + 1) = 0, dus x = 2 of x = −1 (1p). x = 2: √4 = 2 klopt (1p). x = −1: √1 = 1 en −1 klopt niet, dus schijnoplossing (1p)."
        }
       ]
+     },
+     {
+      "id": "B8",
+      "lo": "wb.B.8",
+      "gs": 2,
+      "naam": "Ongelijkheden en stelsels van vergelijkingen oplossen en interpreteren",
+      "beschrijving": "Je lost lineaire en kwadratische ongelijkheden op, vergelijkt grafieken met f(x) > g(x), lost stelsels van twee lineaire vergelijkingen op en vertaalt de oplossing terug naar de situatie.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Lineaire ongelijkheden",
+       "Kwadratische ongelijkheden",
+       "f(x) > g(x) met grafieken",
+       "Stelsels",
+       "Opstellen en interpreteren"
+      ],
+      "sam": "Los een ongelijkheid op als een vergelijking, maar draai het teken om bij een negatief getal. Gebruik de nulpunten of snijpunten als grenzen en bepaal welk gebied voldoet. Los een stelsel op met eliminatie en controleer in beide vergelijkingen. Vertaal de oplossing terug naar de situatie.",
+      "begrippen": [
+       {
+        "t": "Ongelijkheid",
+        "d": "Een uitspraak met <, >, ≤ of ≥, zoals 3x − 5 > 7."
+       },
+       {
+        "t": "Teken omdraaien",
+        "d": "Bij delen of vermenigvuldigen met een negatief getal draait het ongelijkheidsteken om."
+       },
+       {
+        "t": "Lineaire ongelijkheid",
+        "d": "Een ongelijkheid die je oplost door x vrij te maken, zoals x > 4."
+       },
+       {
+        "t": "Kwadratische ongelijkheid",
+        "d": "Een ongelijkheid zoals x² − 4x + 3 < 0 die je oplost met de nulpunten en de grafiek."
+       },
+       {
+        "t": "Nulpunten als grens",
+        "d": "De x-waarden waar de grafiek de x-as snijdt, zoals x = 1 en x = 3."
+       },
+       {
+        "t": "f(x) > g(x)",
+        "d": "De x-waarden waarvoor de grafiek van f boven die van g ligt."
+       },
+       {
+        "t": "Snijpunten",
+        "d": "De oplossingen van f(x) = g(x): de grenzen van het gebied."
+       },
+       {
+        "t": "Stelsel van vergelijkingen",
+        "d": "Twee vergelijkingen met dezelfde onbekenden, zoals 2x + y = 7 en x − y = 2."
+       },
+       {
+        "t": "Eliminatie",
+        "d": "Een onbekende laten wegvallen door op te tellen of af te trekken."
+       },
+       {
+        "t": "Substitutie",
+        "d": "Een onbekende uit de ene vergelijking invullen in de andere."
+       },
+       {
+        "t": "Interpreteren",
+        "d": "De oplossing terugvertalen naar de situatie, zoals vanaf 200 minuten is A goedkoper."
+       },
+       {
+        "t": "Controleren met een getal",
+        "d": "Een waarde binnen en buiten het gebied invullen."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke x voldoen aan x + 4 < 9?",
+        "o": [
+         "\"x > 5\"",
+         "\"x < 5\"",
+         "\"x < 13, denk ik\"",
+         "\"x < 4\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x > 5\"\"? Dan draai je het teken om zonder reden. Bij optellen of aftrekken blijft het teken, dus x < 5. Het goede antwoord is x < 5.",
+         "Klopt: x < 9 − 4 = 5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"x < 13, denk ik\"\"? Dan tel je 4 bij 9 op. Je trekt 4 af, dus x < 5. Door de stappen goed na te lopen kom je uit op x < 5.",
+         "Koos je \"\"x < 4\"\"? Dan neem je het getal 4 als grens. x < 9 − 4, dus x < 5. Controleer je stap: de juiste uitkomst is x < 5."
+        ],
+        "uh": "Welke x voldoen aan x + 4 < 9?"
+       },
+       {
+        "v": "Wat gebeurt er met het ongelijkheidsteken bij delen door een negatief getal?",
+        "o": [
+         "\"het teken blijft gelijk\"",
+         "\"het wordt een gelijkheidsteken\"",
+         "\"het teken verdwijnt\"",
+         "\"het teken draait om\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het teken blijft gelijk\"\"? Dan denk je dat negatieve getallen niets veranderen. Bij −2x > 6 draait het teken om, dus het draait om.",
+         "Koos je \"\"het wordt een gelijkheidsteken\"\"? Dan denk je dat de ongelijkheid verandert in een vergelijking. Alleen de richting wisselt, dus het draait om.",
+         "Koos je \"\"het teken verdwijnt\"\"? Dan denk je dat het teken kan weg. Het blijft, maar de richting wisselt, dus het draait om.",
+         "Klopt: bij vermenigvuldigen of delen met een negatief getal draait de richting om."
+        ],
+        "uh": "Wat gebeurt er met het ongelijkheidsteken bij delen door een negatief getal?"
+       },
+       {
+        "v": "Welke oplossing heeft x² − 9 ≥ 0?",
+        "o": [
+         "\"x ≤ −3 of x ≥ 3\"",
+         "\"−3 ≤ x ≤ 3, zeg maar\"",
+         "\"x ≥ 3\"",
+         "\"x ≥ 9\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de parabool ligt op en boven de x-as buiten de nulpunten −3 en 3.",
+         "Koos je \"\"−3 ≤ x ≤ 3, zeg maar\"\"? Dan neem je het gebied tussen de nulpunten. Daar ligt de parabool onder de x-as, dus x ≤ −3 of x ≥ 3.",
+         "Koos je \"\"x ≥ 3\"\"? Dan vergeet je het gebied links. Ook x ≤ −3 voldoet, dus x ≤ −3 of x ≥ 3. Door de stappen goed na te lopen kom je uit op x ≤ −3 of x ≥ 3.",
+         "Koos je \"\"x ≥ 9\"\"? Dan neem je het getal 9 als grens. De nulpunten zijn ±3, dus x ≤ −3 of x ≥ 3. Controleer je stap: de juiste uitkomst is x ≤ −3 of x ≥ 3."
+        ],
+        "uh": "Welke oplossing heeft x² − 9 ≥ 0?"
+       },
+       {
+        "v": "Hoe vind je de grenzen van het gebied waar f(x) > g(x)?",
+        "o": [
+         "\"los f(x) > 0 op, eigenlijk\"",
+         "\"vul x = 0 in\"",
+         "\"los f(x) = g(x) op\"",
+         "\"deel f door g\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"los f(x) > 0 op, eigenlijk\"\"? Dan gebruik je alleen f. De grenzen volgen uit het snijden van f en g, dus f(x) = g(x). Het goede antwoord is los f(x) = g(x) op.",
+         "Koos je \"\"vul x = 0 in\"\"? Dan vul je één waarde in. Dat geeft geen grens, dus los f(x) = g(x) op. Door de stappen goed na te lopen kom je uit op los f(x) = g(x) op.",
+         "Klopt: op de snijpunten wisselt de ongelijkheid van richting.",
+         "Koos je \"\"deel f door g\"\"? Dan deel je de functies. De grenzen zijn de snijpunten, dus f(x) = g(x). Controleer je stap: de juiste uitkomst is los f(x) = g(x) op."
+        ],
+        "uh": "Hoe vind je de grenzen van het gebied waar f(x) > g(x)?"
+       },
+       {
+        "v": "Wat is een stelsel van twee lineaire vergelijkingen?",
+        "o": [
+         "\"één vergelijking met twee oplossingen, gewoon, volgens mij\"",
+         "\"twee vergelijkingen met dezelfde twee onbekenden\"",
+         "\"twee vergelijkingen met één onbekende\"",
+         "\"een vergelijking met een kwadraat\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"één vergelijking met twee oplossingen, gewoon, volgens mij\"\"? Dan verwar je een stelsel met een kwadratische vergelijking. Een stelsel heeft twee vergelijkingen, dus twee vergelijkingen.",
+         "Klopt: je zoekt een paar (x, y) dat aan beide voldoet. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"twee vergelijkingen met één onbekende\"\"? Dan denk je dat er maar één letter is. Een stelsel heeft twee onbekenden, dus x en y.",
+         "Koos je \"\"een vergelijking met een kwadraat\"\"? Dan verwar je het met een kwadratische vergelijking. Een lineair stelsel heeft geen kwadraten, dus twee lineaire vergelijkingen."
+        ],
+        "uh": "Wat is een stelsel van twee lineaire vergelijkingen?"
+       },
+       {
+        "v": "Welke methode lost een stelsel op door de vergelijkingen op te tellen of af te trekken?",
+        "o": [
+         "\"ontbinden\"",
+         "\"kwadrateren\"",
+         "\"logaritme\"",
+         "\"eliminatie\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ontbinden\"\"? Dan neem je de methode voor kwadratische vergelijkingen. Een stelsel los je op door te elimineren, dus eliminatie.",
+         "Koos je \"\"kwadrateren\"\"? Dan kwadrateer je zonder reden. Bij een lineair stelsel tel je op, dus eliminatie. Door de stappen goed na te lopen kom je uit op eliminatie.",
+         "Koos je \"\"logaritme\"\"? Dan neem je de methode voor machten. Een lineair stelsel los je op met eliminatie, dus eliminatie.",
+         "Klopt: je laat een onbekende wegvallen. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke methode lost een stelsel op door de vergelijkingen op te tellen of af te trekken?"
+       },
+       {
+        "v": "Hoe vind je het moment waarop twee kostenformules gelijk zijn?",
+        "o": [
+         "\"stel de twee formules aan elkaar gelijk\"",
+         "\"tel de twee formules op\"",
+         "\"vermenigvuldig de formules\"",
+         "\"trek de formules af en deel door 2, volgens mij\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: K₁ = K₂ geeft de waarde waarbij de kosten gelijk zijn.",
+         "Koos je \"\"tel de twee formules op\"\"? Dan tel je de kosten bij elkaar op. Je zoekt wanneer ze gelijk zijn, dus K₁ = K₂. Het goede antwoord is stel de twee formules aan elkaar gelijk.",
+         "Koos je \"\"vermenigvuldig de formules\"\"? Dan vermenigvuldig je de kosten. Gelijk worden betekent K₁ = K₂, dus stel ze gelijk.",
+         "Koos je \"\"trek de formules af en deel door 2, volgens mij\"\"? Dan trek je af en deel je door 2 zonder reden. Gelijk betekent K₁ = K₂, dus stel ze gelijk."
+        ],
+        "uh": "Hoe vind je het moment waarop twee kostenformules gelijk zijn?"
+       },
+       {
+        "v": "Isoleer x in 3x − 5 > 7. Welke ongelijkheid krijg je?",
+        "o": [
+         "\"x < 4\"",
+         "\"x > 2\"",
+         "\"x > 4\"",
+         "\"x > 12, I suppose\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x < 4\"\"? Dan draai je het teken om. Delen door 3 laat het teken staan, dus x > 4. Het goede antwoord is x > 4.",
+         "Koos je \"\"x > 2\"\"? Dan trek je 5 van 7 af. Je telt 5 op, dus 3x > 12 en x > 4. Door de stappen goed na te lopen kom je uit op x > 4.",
+         "Klopt: 3x > 12, dus x > 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"x > 12, I suppose\"\"? Dan vergeet je door 3 te delen. 3x > 12, dus x > 4. Controleer je stap: de juiste uitkomst is x > 4."
+        ],
+        "uh": "Isoleer x in 3x − 5 > 7. Welke ongelijkheid krijg je?",
+        "ctx": "Een leerling lost 3x − 5 > 7 en −2x + 6 ≥ 0 op. Hij let op het omdraaien van het teken bij delen door een negatief getal en controleert zijn oplossingen met een getal binnen en buiten het gebied."
+       },
+       {
+        "v": "Deel −2x ≥ −6 door −2. Welke oplossing krijg je?",
+        "o": [
+         "\"x ≥ 3\"",
+         "\"x ≤ 3\"",
+         "\"x ≤ −3, you know\"",
+         "\"x ≥ −3\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x ≥ 3\"\"? Dan draai je het teken niet om. Delen door −2 draait de richting om, dus x ≤ 3. Het goede antwoord is x ≤ 3.",
+         "Klopt: −2x ≥ −6, delen door −2 draait het teken om: x ≤ 3.",
+         "Koos je \"\"x ≤ −3, you know\"\"? Dan maak je een tekenfout. −2x ≥ −6 geeft x ≤ 3, dus x ≤ 3. Door de stappen goed na te lopen kom je uit op x ≤ 3.",
+         "Koos je \"\"x ≥ −3\"\"? Dan maak je twee fouten. De grens is 3 en het teken draait om, dus x ≤ 3. Controleer je stap: de juiste uitkomst is x ≤ 3."
+        ],
+        "uh": "Deel −2x ≥ −6 door −2. Welke oplossing krijg je?",
+        "ctx": "Een leerling lost 3x − 5 > 7 en −2x + 6 ≥ 0 op. Hij let op het omdraaien van het teken bij delen door een negatief getal en controleert zijn oplossingen met een getal binnen en buiten het gebied."
+       },
+       {
+        "v": "Welke waarde voldoet niet aan −2x + 6 ≥ 0?",
+        "o": [
+         "\"x = 3\"",
+         "\"x = 0\"",
+         "\"x = −1, gewoon\"",
+         "\"x = 4\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 3\"\"? Dan denk je dat x = 3 niet mag. −6 + 6 = 0 voldoet, dus x = 4. Het goede antwoord is x = 4.",
+         "Koos je \"\"x = 0\"\"? Dan denk je dat 0 niet mag. 6 ≥ 0 voldoet, dus x = 4. Door de stappen goed na te lopen kom je uit op x = 4.",
+         "Koos je \"\"x = −1, gewoon\"\"? Dan denk je dat een negatieve x niet mag. 8 ≥ 0 voldoet, dus x = 4. Controleer je stap: de juiste uitkomst is x = 4.",
+         "Klopt: −8 + 6 = −2 en dat is kleiner dan 0. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke waarde voldoet niet aan −2x + 6 ≥ 0?",
+        "ctx": "Een leerling lost 3x − 5 > 7 en −2x + 6 ≥ 0 op. Hij let op het omdraaien van het teken bij delen door een negatief getal en controleert zijn oplossingen met een getal binnen en buiten het gebied."
+       },
+       {
+        "v": "Welke nulpunten heeft x² − 4x + 3?",
+        "o": [
+         "\"x = 1 en x = 3\"",
+         "\"x = −1 en x = −3\"",
+         "\"x = 1 en x = 4\"",
+         "\"x = 0 en x = 4\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (x − 1)(x − 3) = 0. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"x = −1 en x = −3\"\"? Dan neem je de tekens uit de haakjes mee. (x − 1)(x − 3) geeft x = 1 en 3, dus 1 en 3. Het goede antwoord is x = 1 en x = 3.",
+         "Koos je \"\"x = 1 en x = 4\"\"? Dan neem je de coëfficiënt −4 mee. Zoek product 3 en som 4, dus 1 en 3. Door de stappen goed na te lopen kom je uit op x = 1 en x = 3.",
+         "Koos je \"\"x = 0 en x = 4\"\"? Dan haal je x buiten haakjes. De constante 3 maakt dat onmogelijk, dus 1 en 3. Controleer je stap: de juiste uitkomst is x = 1 en x = 3."
+        ],
+        "uh": "Welke nulpunten heeft x² − 4x + 3?",
+        "ctx": "Een leerling lost x² − 4x + 3 < 0 op. Hij zoekt eerst de nulpunten van de parabool, bekijkt waar de grafiek onder de x-as ligt en controleert zijn antwoord met x = 2 en met x = 0."
+       },
+       {
+        "v": "Welke oplossing heeft x² − 4x + 3 < 0?",
+        "o": [
+         "\"x < 1 of x > 3\"",
+         "\"x < 3\"",
+         "\"1 < x < 3\"",
+         "\"x > 1\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x < 1 of x > 3\"\"? Dan neem je het gebied buiten de nulpunten. Daar is de waarde positief, dus 1 < x < 3. Het goede antwoord is 1 < x < 3.",
+         "Koos je \"\"x < 3\"\"? Dan vergeet je de grens links. Voor x < 1 is de waarde positief, dus 1 < x < 3. Door de stappen goed na te lopen kom je uit op 1 < x < 3.",
+         "Klopt: tussen de nulpunten ligt de dalparabool onder de x-as.",
+         "Koos je \"\"x > 1\"\"? Dan vergeet je de grens rechts. Voor x > 3 is de waarde positief, dus 1 < x < 3. Controleer je stap: de juiste uitkomst is 1 < x < 3."
+        ],
+        "uh": "Welke oplossing heeft x² − 4x + 3 < 0?",
+        "ctx": "Een leerling lost x² − 4x + 3 < 0 op. Hij zoekt eerst de nulpunten van de parabool, bekijkt waar de grafiek onder de x-as ligt en controleert zijn antwoord met x = 2 en met x = 0."
+       },
+       {
+        "v": "Welk getal krijg je als je x = 2 invult in x² − 4x + 3?",
+        "o": [
+         "\"1\"",
+         "\"−1\"",
+         "\"3\"",
+         "\"7\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1\"\"? Dan maak je een tekenfout. 4 − 8 + 3 = −1, dus −1. Het goede antwoord is −1.",
+         "Klopt: 4 − 8 + 3 = −1, en dat is kleiner dan 0. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3\"\"? Dan neem je alleen c. Alle termen tellen mee, dus −1. Door de stappen goed na te lopen kom je uit op −1.",
+         "Koos je \"\"7\"\"? Dan tel je 4 + 8 − ... op. Het is 4 − 8 + 3, dus −1. Controleer je stap: de juiste uitkomst is −1."
+        ],
+        "uh": "Welk getal krijg je als je x = 2 invult in x² − 4x + 3?",
+        "ctx": "Een leerling lost x² − 4x + 3 < 0 op. Hij zoekt eerst de nulpunten van de parabool, bekijkt waar de grafiek onder de x-as ligt en controleert zijn antwoord met x = 2 en met x = 0."
+       },
+       {
+        "v": "Bij welke x snijden f(x) = x² en g(x) = 2x + 3?",
+        "o": [
+         "\"x = 1 en x = −3, you know\"",
+         "\"alleen x = 3\"",
+         "\"x = 0 en x = 3\"",
+         "\"x = −1 en x = 3\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 1 en x = −3, you know\"\"? Dan neem je de tekens uit de haakjes mee. (x − 3)(x + 1) = 0 geeft x = 3 en −1, dus −1 en 3.",
+         "Koos je \"\"alleen x = 3\"\"? Dan vergeet je x = −1. Ook daar snijden de grafieken, dus −1 en 3. Door de stappen goed na te lopen kom je uit op x = −1 en x = 3.",
+         "Koos je \"\"x = 0 en x = 3\"\"? Dan vul je x = 0 in. f(0) = 0 en g(0) = 3 zijn niet gelijk, dus −1 en 3. Controleer je stap: de juiste uitkomst is x = −1 en x = 3.",
+         "Klopt: x² − 2x − 3 = 0 geeft (x − 3)(x + 1) = 0. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Bij welke x snijden f(x) = x² en g(x) = 2x + 3?",
+        "ctx": "Gegeven zijn f(x) = x² en g(x) = 2x + 3. Een leerling lost f(x) > g(x) op door eerst f(x) = g(x) op te lossen en daarna de grafieken te vergelijken. Hij controleert met x = 4, x = 0 en x = −2."
+       },
+       {
+        "v": "Voor welke x ligt de grafiek van f boven die van g?",
+        "o": [
+         "\"x < −1 of x > 3\"",
+         "\"−1 < x < 3, really\"",
+         "\"x > 3\"",
+         "\"x < 3\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: buiten de snijpunten ligt de parabool boven de lijn.",
+         "Koos je \"\"−1 < x < 3, really\"\"? Dan neem je het gebied tussen de snijpunten. Daar ligt de parabool onder de lijn, dus x < −1 of x > 3.",
+         "Koos je \"\"x > 3\"\"? Dan vergeet je het gebied links. Ook x < −1 voldoet, dus x < −1 of x > 3. Door de stappen goed na te lopen kom je uit op x < −1 of x > 3.",
+         "Koos je \"\"x < 3\"\"? Dan neem je alles links van 3. Tussen −1 en 3 ligt f onder g, dus x < −1 of x > 3. Controleer je stap: de juiste uitkomst is x < −1 of x > 3."
+        ],
+        "uh": "Voor welke x ligt de grafiek van f boven die van g?",
+        "ctx": "Gegeven zijn f(x) = x² en g(x) = 2x + 3. Een leerling lost f(x) > g(x) op door eerst f(x) = g(x) op te lossen en daarna de grafieken te vergelijken. Hij controleert met x = 4, x = 0 en x = −2."
+       },
+       {
+        "v": "Welke waarden geven f en g bij x = 0, en hoe liggen de grafieken dan?",
+        "o": [
+         "\"0 en 3: f ligt boven g, denk ik\"",
+         "\"3 en 0: f ligt onder g\"",
+         "\"0 en 3: f ligt onder g\"",
+         "\"0 en 0: ze snijden\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0 en 3: f ligt boven g, denk ik\"\"? Dan draai je f en g om. f(0) = 0 is kleiner dan g(0) = 3, dus f ligt onder g. Het goede antwoord is 0 en 3: f ligt onder g.",
+         "Koos je \"\"3 en 0: f ligt onder g\"\"? Dan verwissel je de waarden. f(0) = 0 en g(0) = 3, dus 0 en 3. Door de stappen goed na te lopen kom je uit op 0 en 3: f ligt onder g.",
+         "Klopt: f(0) = 0 en g(0) = 3, dus f ligt lager. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0 en 0: ze snijden\"\"? Dan denk je dat g(0) = 0. g(0) = 3, dus f ligt onder g. Controleer je stap: de juiste uitkomst is 0 en 3: f ligt onder g."
+        ],
+        "uh": "Welke waarden geven f en g bij x = 0, en hoe liggen de grafieken dan?",
+        "ctx": "Gegeven zijn f(x) = x² en g(x) = 2x + 3. Een leerling lost f(x) > g(x) op door eerst f(x) = g(x) op te lossen en daarna de grafieken te vergelijken. Hij controleert met x = 4, x = 0 en x = −2."
+       },
+       {
+        "v": "Hoe controleer je x = 4 in x² > 2x + 3?",
+        "o": [
+         "\"4 > 11, dus het klopt niet\"",
+         "\"16 > 11, dus het klopt\"",
+         "\"16 > 8, dus het klopt\"",
+         "\"8 > 3, dus het klopt\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4 > 11, dus het klopt niet\"\"? Dan vergeet je te kwadrateren. 4² = 16, dus 16 > 11. Het goede antwoord is 16 > 11, dus het klopt.",
+         "Klopt: 4² = 16 en 2 · 4 + 3 = 11. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"16 > 8, dus het klopt\"\"? Dan vergeet je + 3 rechts. 2 · 4 + 3 = 11, dus 16 > 11. Door de stappen goed na te lopen kom je uit op 16 > 11, dus het klopt.",
+         "Koos je \"\"8 > 3, dus het klopt\"\"? Dan verdubbel je x links. x² = 16, dus 16 > 11. Controleer je stap: de juiste uitkomst is 16 > 11, dus het klopt."
+        ],
+        "uh": "Hoe controleer je x = 4 in x² > 2x + 3?",
+        "ctx": "Gegeven zijn f(x) = x² en g(x) = 2x + 3. Een leerling lost f(x) > g(x) op door eerst f(x) = g(x) op te lossen en daarna de grafieken te vergelijken. Hij controleert met x = 4, x = 0 en x = −2."
+       },
+       {
+        "v": "Bij hoeveel belminuten m zijn de kosten van A en B gelijk?",
+        "o": [
+         "\"100\"",
+         "\"300\"",
+         "\"6\"",
+         "\"200\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"100\"\"? Dan neem je een willekeurige waarde. Los 6 = 0,03m op, dus m = 200. Het goede antwoord is 200.",
+         "Koos je \"\"300\"\"? Dan neem je de verkeerde waarde. 6 : 0,03 = 200, dus m = 200. Door de stappen goed na te lopen kom je uit op 200.",
+         "Koos je \"\"6\"\"? Dan neem je het verschil in beginprijs. Deel 6 door 0,03, dus m = 200. Controleer je stap: de juiste uitkomst is 200.",
+         "Klopt: 10 + 0,05m = 4 + 0,08m geeft 6 = 0,03m, dus m = 200."
+        ],
+        "uh": "Bij hoeveel belminuten m zijn de kosten van A en B gelijk?",
+        "ctx": "Abonnement A kost K = 10 + 0,05m euro en abonnement B kost K = 4 + 0,08m euro bij m belminuten per maand. Een leerling stelt de twee formules gelijk en lost daarna de ongelijkheid op om te zien wanneer A goedkoper is."
+       },
+       {
+        "v": "Voor welke m is abonnement A goedkoper dan B?",
+        "o": [
+         "\"m > 200\"",
+         "\"m < 200, you know\"",
+         "\"m > 100\"",
+         "\"m > 6\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 10 + 0,05m < 4 + 0,08m geeft m > 200. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"m < 200, you know\"\"? Dan draai je het teken om. Boven 200 minuten is A goedkoper, dus m > 200. Het goede antwoord is m > 200.",
+         "Koos je \"\"m > 100\"\"? Dan neem je een verkeerde grens. De grens is 200, dus m > 200. Door de stappen goed na te lopen kom je uit op m > 200.",
+         "Koos je \"\"m > 6\"\"? Dan neem je het getal 6. 6 < 0,03m geeft m > 200, dus m > 200. Controleer je stap: de juiste uitkomst is m > 200."
+        ],
+        "uh": "Voor welke m is abonnement A goedkoper dan B?",
+        "ctx": "Abonnement A kost K = 10 + 0,05m euro en abonnement B kost K = 4 + 0,08m euro bij m belminuten per maand. Een leerling stelt de twee formules gelijk en lost daarna de ongelijkheid op om te zien wanneer A goedkoper is."
+       },
+       {
+        "v": "Welk abonnement is bij 100 minuten goedkoper?",
+        "o": [
+         "\"A: € 15 tegen € 12 bij B, gewoon\"",
+         "\"A: € 10 tegen € 4 bij B\"",
+         "\"B: € 12 tegen € 15 bij A\"",
+         "\"gelijk: beide € 12\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"A: € 15 tegen € 12 bij B, gewoon\"\"? Dan verwissel je de prijzen. A kost € 15 en B € 12, dus B is goedkoper. Het goede antwoord is B: € 12 tegen € 15 bij A.",
+         "Koos je \"\"A: € 10 tegen € 4 bij B\"\"? Dan neem je alleen de vaste kosten. Ook de kosten per minuut tellen, dus B is goedkoper.",
+         "Klopt: A = 10 + 5 = 15 en B = 4 + 8 = 12. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"gelijk: beide € 12\"\"? Dan denk je dat de prijzen gelijk zijn. Dat is bij 200 minuten, dus bij 100 is B goedkoper."
+        ],
+        "uh": "Welk abonnement is bij 100 minuten goedkoper?",
+        "ctx": "Abonnement A kost K = 10 + 0,05m euro en abonnement B kost K = 4 + 0,08m euro bij m belminuten per maand. Een leerling stelt de twee formules gelijk en lost daarna de ongelijkheid op om te zien wanneer A goedkoper is."
+       },
+       {
+        "v": "Welke vergelijking krijg je door 2x + y = 7 en x − y = 2 op te tellen?",
+        "o": [
+         "\"x = 9\"",
+         "\"3x = 9\"",
+         "\"3x + 2y = 9\"",
+         "\"x + 2y = 5\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 9\"\"? Dan vergeet je de coëfficiënt 3. 2x + x = 3x, dus 3x = 9. Het goede antwoord is 3x = 9.",
+         "Klopt: y valt weg: 2x + x = 3x en 7 + 2 = 9. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3x + 2y = 9\"\"? Dan tel je y op in plaats van weg te laten vallen. y + (−y) = 0, dus 3x = 9. Door de stappen goed na te lopen kom je uit op 3x = 9.",
+         "Koos je \"\"x + 2y = 5\"\"? Dan trek je de vergelijkingen af. Bij optellen valt y weg, dus 3x = 9. Controleer je stap: de juiste uitkomst is 3x = 9."
+        ],
+        "uh": "Welke vergelijking krijg je door 2x + y = 7 en x − y = 2 op te tellen?",
+        "ctx": "Een leerling lost het stelsel 2x + y = 7 en x − y = 2 op. Hij telt de vergelijkingen op om y te laten wegvallen, berekent x en y en controleert zijn antwoord in beide vergelijkingen."
+       },
+       {
+        "v": "Welke waarden hebben x en y?",
+        "o": [
+         "\"x = 1 en y = 3\"",
+         "\"x = 3 en y = 2\"",
+         "\"x = 9 en y = −11\"",
+         "\"x = 3 en y = 1\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 1 en y = 3\"\"? Dan verwissel je x en y. x = 3 volgt uit 3x = 9, dus x = 3 en y = 1. Het goede antwoord is x = 3 en y = 1.",
+         "Koos je \"\"x = 3 en y = 2\"\"? Dan reken je y = 7 − 5. Het is 7 − 2 · 3, dus y = 1. Door de stappen goed na te lopen kom je uit op x = 3 en y = 1.",
+         "Koos je \"\"x = 9 en y = −11\"\"? Dan vergeet je te delen door 3. 3x = 9 geeft x = 3, dus y = 1. Controleer je stap: de juiste uitkomst is x = 3 en y = 1.",
+         "Klopt: x = 3 en dan y = 7 − 6 = 1. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke waarden hebben x en y?",
+        "ctx": "Een leerling lost het stelsel 2x + y = 7 en x − y = 2 op. Hij telt de vergelijkingen op om y te laten wegvallen, berekent x en y en controleert zijn antwoord in beide vergelijkingen."
+       },
+       {
+        "v": "Hoe controleer je (3, 1) in beide vergelijkingen?",
+        "o": [
+         "\"2 · 3 + 1 = 7 en 3 − 1 = 2\"",
+         "\"2 · 3 + 1 = 7 en 3 + 1 = 2, zeg maar\"",
+         "\"3 + 1 = 7 en 2 · 3 − 1 = 2\"",
+         "\"2 · 3 − 1 = 7 en 3 − 1 = 2\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: beide vergelijkingen kloppen. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2 · 3 + 1 = 7 en 3 + 1 = 2, zeg maar\"\"? Dan gebruik je + y in de tweede vergelijking. Die is x − y, dus 3 − 1 = 2. Het goede antwoord is 2 · 3 + 1 = 7 en 3 − 1 = 2.",
+         "Koos je \"\"3 + 1 = 7 en 2 · 3 − 1 = 2\"\"? Dan verwissel je de vergelijkingen. De eerste is 2x + y, dus 2 · 3 + 1 = 7. Door de stappen goed na te lopen kom je uit op 2 · 3 + 1 = 7 en 3 − 1 = 2.",
+         "Koos je \"\"2 · 3 − 1 = 7 en 3 − 1 = 2\"\"? Dan maak je een tekenfout in de eerste. Het is 2x + y, dus 2 · 3 + 1 = 7. Controleer je stap: de juiste uitkomst is 2 · 3 + 1 = 7 en 3 − 1 = 2."
+        ],
+        "uh": "Hoe controleer je (3, 1) in beide vergelijkingen?",
+        "ctx": "Een leerling lost het stelsel 2x + y = 7 en x − y = 2 op. Hij telt de vergelijkingen op om y te laten wegvallen, berekent x en y en controleert zijn antwoord in beide vergelijkingen."
+       },
+       {
+        "v": "Welk stelsel hoort bij de kaartjes?",
+        "o": [
+         "\"3a + 2k = 27 en 2a + k = 16, eigenlijk\"",
+         "\"2a + 3k = 16 en a + 2k = 27\"",
+         "\"2a + 3k = 27 en a + 2k = 16\"",
+         "\"a + k = 27 en a + k = 16\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3a + 2k = 27 en 2a + k = 16, eigenlijk\"\"? Dan verwissel je de aantallen. Twee volwassenen en drie kinderen, dus 2a + 3k = 27.",
+         "Koos je \"\"2a + 3k = 16 en a + 2k = 27\"\"? Dan verwissel je de totale bedragen. € 27 hoort bij 2 en 3, dus 2a + 3k = 27. Door de stappen goed na te lopen kom je uit op 2a + 3k = 27 en a + 2k = 16.",
+         "Klopt: elke zin geeft een vergelijking met aantallen en prijzen.",
+         "Koos je \"\"a + k = 27 en a + k = 16\"\"? Dan gebruik je alleen de prijzen. De aantallen horen bij elke prijs, dus 2a + 3k = 27."
+        ],
+        "uh": "Welk stelsel hoort bij de kaartjes?",
+        "ctx": "Een pretpark verkoopt kaartjes. Twee volwassenen en drie kinderen betalen samen € 27 en één volwassene en twee kinderen betalen samen € 16. Een leerling noemt de prijzen a en k, stelt een stelsel op en lost het op."
+       },
+       {
+        "v": "Hoeveel kost één kinderkaartje?",
+        "o": [
+         "\"€ 6, really\"",
+         "\"€ 5\"",
+         "\"€ 4\"",
+         "\"€ 3\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€ 6, really\"\"? Dan neem je de prijs van een volwassene. Een kind kost € 5, dus k = 5. Het goede antwoord is € 5.",
+         "Klopt: a = 16 − 2k in de eerste vergelijking geeft k = 5.",
+         "Koos je \"\"€ 4\"\"? Dan maak je een rekenfout bij het invullen. 32 − 4k + 3k = 27 geeft k = 5, dus € 5. Door de stappen goed na te lopen kom je uit op € 5.",
+         "Koos je \"\"€ 3\"\"? Dan deel je 27 door 9. Los het stelsel op, dus k = 5. Controleer je stap: de juiste uitkomst is € 5."
+        ],
+        "uh": "Hoeveel kost één kinderkaartje?",
+        "ctx": "Een pretpark verkoopt kaartjes. Twee volwassenen en drie kinderen betalen samen € 27 en één volwassene en twee kinderen betalen samen € 16. Een leerling noemt de prijzen a en k, stelt een stelsel op en lost het op."
+       },
+       {
+        "v": "Wat betaal je voor één volwassene?",
+        "o": [
+         "\"€ 5, denk ik\"",
+         "\"€ 7\"",
+         "\"€ 9\"",
+         "\"€ 6\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€ 5, denk ik\"\"? Dan neem je de prijs van een kind. a = 16 − 10, dus € 6. Het goede antwoord is € 6.",
+         "Koos je \"\"€ 7\"\"? Dan maak je een rekenfout. 16 − 10 = 6, dus € 6. Door de stappen goed na te lopen kom je uit op € 6.",
+         "Koos je \"\"€ 9\"\"? Dan neem je 27 : 3. Gebruik a = 16 − 2k, dus € 6. Controleer je stap: de juiste uitkomst is € 6.",
+         "Klopt: a = 16 − 2 · 5 = 6. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Wat betaal je voor één volwassene?",
+        "ctx": "Een pretpark verkoopt kaartjes. Twee volwassenen en drie kinderen betalen samen € 27 en één volwassene en twee kinderen betalen samen € 16. Een leerling noemt de prijzen a en k, stelt een stelsel op en lost het op."
+       },
+       {
+        "v": "Hoe controleer je de prijzen € 6 en € 5?",
+        "o": [
+         "\"2 · 6 + 3 · 5 = 27 en 6 + 2 · 5 = 16\"",
+         "\"2 · 6 + 3 · 5 = 26 en 6 + 5 = 16\"",
+         "\"2 · 5 + 3 · 6 = 27 en 5 + 2 · 6 = 16, volgens mij\"",
+         "\"6 + 5 = 27 en 6 + 5 = 16\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Los eerst de bijbehorende vergelijking op, bekijk dan het gebied dat voldoet en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: beide totaalbedragen kloppen. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2 · 6 + 3 · 5 = 26 en 6 + 5 = 16\"\"? Dan reken je 12 + 15 als 26. Het is 27, en de tweede vergelijking is 6 + 2 · 5, dus 16.",
+         "Koos je \"\"2 · 5 + 3 · 6 = 27 en 5 + 2 · 6 = 16, volgens mij\"\"? Dan verwissel je de prijzen. a = 6 en k = 5, dus 2 · 6 + 3 · 5 = 27. Door de stappen goed na te lopen kom je uit op 2 · 6 + 3 · 5 = 27 en 6 + 2 · 5 = 16.",
+         "Koos je \"\"6 + 5 = 27 en 6 + 5 = 16\"\"? Dan tel je één kaartje van elk soort. De aantallen zijn 2 en 3, dus 2 · 6 + 3 · 5 = 27."
+        ],
+        "uh": "Hoe controleer je de prijzen € 6 en € 5?",
+        "ctx": "Een pretpark verkoopt kaartjes. Twee volwassenen en drie kinderen betalen samen € 27 en één volwassene en twee kinderen betalen samen € 16. Een leerling noemt de prijzen a en k, stelt een stelsel op en lost het op."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling lost 5 − 2x < 11 op. Hij isoleert x, let op het omdraaien van het teken bij delen door een negatief getal en controleert zijn antwoord met x = 0 en met x = −4.",
+        "v": "Los de ongelijkheid op en controleer met x = 0 en x = −4.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "−2x < 6 (1p), delen door −2 draait het teken om: x > −3 (1p). Controle: x = 0 geeft 5 < 11 (klopt); x = −4 geeft 13 < 11 (klopt niet) (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling lost x² − 2x − 8 ≤ 0 op. Hij zoekt eerst de nulpunten, bekijkt waar de dalparabool onder of op de x-as ligt en controleert met x = 0 en met x = 5.",
+        "v": "Los de ongelijkheid op en controleer.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "x² − 2x − 8 = 0 geeft (x − 4)(x + 2) = 0, dus x = 4 of x = −2 (1p). De oplossing is −2 ≤ x ≤ 4 (1p). Controle: x = 0 geeft −8 ≤ 0 (klopt); x = 5 geeft 7 ≤ 0 (klopt niet) (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Gegeven zijn f(x) = x² en g(x) = x + 2. Een leerling bepaalt voor welke x geldt dat f(x) < g(x) door eerst de snijpunten te zoeken en daarna de grafieken te vergelijken.",
+        "v": "Los f(x) < g(x) op.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "x² = x + 2 geeft x² − x − 2 = 0, dus x = −1 of x = 2 (1p). De parabool ligt onder de lijn tussen de snijpunten (1p). Dus −1 < x < 2; controle x = 0: 0 < 2 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling lost het stelsel 3x − y = 5 en x + y = 7 op. Hij telt de vergelijkingen op om y te laten wegvallen, berekent x en y en controleert in beide vergelijkingen.",
+        "v": "Los het stelsel op en controleer.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Optellen: 4x = 12, dus x = 3 (1p). y = 7 − 3 = 4 (1p). Controle: 9 − 4 = 5 en 3 + 4 = 7 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Abonnement A kost 20 + 0,10m euro en abonnement B kost 8 + 0,25m euro bij m belminuten. Een leerling zoekt wanneer A goedkoper is en vult m = 100 in om zijn antwoord te controleren.",
+        "v": "Bepaal wanneer A goedkoper is dan B en controleer met m = 100.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "20 + 0,10m = 8 + 0,25m geeft 12 = 0,15m, dus m = 80 (1p). A is goedkoper als m > 80 (1p). Controle: m = 100 geeft A = 30 en B = 33 (1p)."
+       }
+      ]
      }
     ]
    },
