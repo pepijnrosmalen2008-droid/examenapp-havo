@@ -5707,6 +5707,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C4",
+      "lo": "wb.C.4",
+      "gs": 2,
+      "naam": "Gelijkvormigheid en meetkundige problemen met meer stappen",
+      "beschrijving": "Je gebruikt gelijkvormigheid met de vergrotingsfactor voor lengtes en oppervlakten, werkt met schaduw en schaal en combineert gelijkvormigheid met Pythagoras, sinus en cosinus bij problemen met meerdere stappen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gelijkvormigheid herkennen",
+       "Vergrotingsfactor en lengtes",
+       "Oppervlakte en k²",
+       "Schaduw en schaal",
+       "Combineren van methoden"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

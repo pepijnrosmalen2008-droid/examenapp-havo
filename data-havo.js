@@ -241962,6 +241962,688 @@ var VAKKEN = [
         "u": "Hoek bij C is 70° (1p). AC = 200 · sin 75° / sin 70° ≈ 205,6 m (1p). BC = 200 · sin 35° / sin 70° ≈ 122,1 m (1p)."
        }
       ]
+     },
+     {
+      "id": "C4",
+      "lo": "wb.C.4",
+      "gs": 2,
+      "naam": "Gelijkvormigheid en meetkundige problemen met meer stappen",
+      "beschrijving": "Je gebruikt gelijkvormigheid met de vergrotingsfactor voor lengtes en oppervlakten, werkt met schaduw en schaal en combineert gelijkvormigheid met Pythagoras, sinus en cosinus bij problemen met meerdere stappen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gelijkvormigheid herkennen",
+       "Vergrotingsfactor en lengtes",
+       "Oppervlakte en k²",
+       "Schaduw en schaal",
+       "Combineren van methoden"
+      ],
+      "sam": "Gelijkvormige figuren hebben gelijke hoeken en de vergrotingsfactor k geldt voor alle overeenkomstige lengtes; oppervlakten groeien met k². Zet bij schaduw en schaal gelijke verhoudingen naast elkaar. Maak bij een combinatieprobleem een schets, kies de juiste methode en controleer met een verhouding of een som.",
+      "begrippen": [
+       {
+        "t": "Gelijkvormig",
+        "d": "Twee figuren met gelijke hoeken en gelijke verhoudingen van overeenkomstige zijden."
+       },
+       {
+        "t": "Vergrotingsfactor",
+        "d": "Het getal k waarmee je alle lengtes vermenigvuldigt, zoals 9 : 6 = 1,5."
+       },
+       {
+        "t": "Overeenkomstige zijden",
+        "d": "Zijden die bij elkaar horen in gelijkvormige figuren."
+       },
+       {
+        "t": "Omtrek en k",
+        "d": "De omtrek groeit met factor k."
+       },
+       {
+        "t": "Oppervlakte en k²",
+        "d": "De oppervlakte groeit met factor k²."
+       },
+       {
+        "t": "Schaal",
+        "d": "Bij 1 : 25 000 is 1 cm op de kaart 25 000 cm in het echt."
+       },
+       {
+        "t": "Schaduwprobleem",
+        "d": "Hoogte en schaduw verhouden zich bij gelijkvormige driehoeken gelijk."
+       },
+       {
+        "t": "Evenwijdige lijnen",
+        "d": "DE ∥ BC geeft gelijke hoeken en dus gelijkvormige driehoeken."
+       },
+       {
+        "t": "Hoogtelijn",
+        "d": "De loodlijn vanuit een hoekpunt op de overstaande zijde."
+       },
+       {
+        "t": "Combinatie van methoden",
+        "d": "Pythagoras, sinus en cosinus en gelijkvormigheid samen gebruiken."
+       },
+       {
+        "t": "Schets maken",
+        "d": "Eerst tekenen om gegevens en gezochte grootheden te zien."
+       },
+       {
+        "t": "Controleren met een verhouding",
+        "d": "Een tweede verhouding of een som van stukken nagaan."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wanneer zijn twee driehoeken gelijkvormig?",
+        "o": [
+         "\"als hun omtrekken gelijk zijn\"",
+         "\"als hun hoeken gelijk zijn\"",
+         "\"als ze even groot zijn\"",
+         "\"als één zijde even lang is\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"als hun omtrekken gelijk zijn\"\"? Dan kijk je naar de omtrek. Gelijkvormig gaat over hoeken en verhoudingen, dus gelijke hoeken.",
+         "Klopt: gelijke hoeken geven gelijke verhoudingen van overeenkomstige zijden.",
+         "Koos je \"\"als ze even groot zijn\"\"? Dan denk je aan congruent. Gelijkvormige driehoeken mogen verschillend groot zijn, dus gelijke hoeken.",
+         "Koos je \"\"als één zijde even lang is\"\"? Dan kijk je naar één zijde. Alle hoeken moeten gelijk zijn, dus gelijke hoeken. Controleer je stap: de juiste uitkomst is als hun hoeken gelijk zijn."
+        ],
+        "uh": "Wanneer zijn twee driehoeken gelijkvormig?"
+       },
+       {
+        "v": "Wat is de vergrotingsfactor k bij een vergroting van 6 naar 9?",
+        "o": [
+         "\"3\"",
+         "\"0,67\"",
+         "\"54\"",
+         "\"1,5\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3\"\"? Dan neem je het verschil. De factor is 9 : 6, dus 1,5. Het goede antwoord is 1,5.",
+         "Koos je \"\"0,67\"\"? Dan draai je de breuk om. Nieuw gedeeld door oud, dus 1,5. Door de stappen goed na te lopen kom je uit op 1,5.",
+         "Koos je \"\"54\"\"? Dan vermenigvuldig je 6 en 9. De factor is 9 : 6, dus 1,5. Controleer je stap: de juiste uitkomst is 1,5.",
+         "Klopt: 9 : 6 = 1,5. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Wat is de vergrotingsfactor k bij een vergroting van 6 naar 9?"
+       },
+       {
+        "v": "Een figuur wordt met factor k vergroot. Met welk getal moet je de omtrek vermenigvuldigen?",
+        "o": [
+         "\"k\"",
+         "\"k²\"",
+         "\"k³\"",
+         "\"2k\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de omtrek is een som van lengtes. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"k²\"\"? Dan neem je de factor voor de oppervlakte. De omtrek is een lengte, dus k. Het goede antwoord is k.",
+         "Koos je \"\"k³\"\"? Dan neem je de factor voor de inhoud. De omtrek is een lengte, dus k. Door de stappen goed na te lopen kom je uit op k.",
+         "Koos je \"\"2k\"\"? Dan verdubbel je de factor. Elke lengte wordt k keer zo groot, dus k. Controleer je stap: de juiste uitkomst is k."
+        ],
+        "uh": "Een figuur wordt met factor k vergroot. Met welk getal moet je de omtrek vermenigvuldigen?"
+       },
+       {
+        "v": "Een vierkant van 2 bij 2 wordt met factor 3 vergroot. Hoe groot is de nieuwe oppervlakte?",
+        "o": [
+         "\"12\"",
+         "\"18\"",
+         "\"36\"",
+         "\"9\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"12\"\"? Dan vermenigvuldig je de oude oppervlakte 4 met 3. Oppervlakten groeien met k², dus 36. Het goede antwoord is 36.",
+         "Koos je \"\"18\"\"? Dan reken je 2 · 3 · 3. De nieuwe zijde is 6 en de oppervlakte is 6 · 6, dus 36. Door de stappen goed na te lopen kom je uit op 36.",
+         "Klopt: de zijde wordt 6 en 6 · 6 = 36, dat is 4 · 3². Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"9\"\"? Dan neem je k². De oude oppervlakte 4 moet je ook vermenigvuldigen met 9, dus 36. Controleer je stap: de juiste uitkomst is 36."
+        ],
+        "uh": "Een vierkant van 2 bij 2 wordt met factor 3 vergroot. Hoe groot is de nieuwe oppervlakte?"
+       },
+       {
+        "v": "Een kaart heeft schaal 1 : 50 000. Hoeveel keer is de werkelijkheid groter dan de kaart?",
+        "o": [
+         "\"50 keer\"",
+         "\"50 000 keer\"",
+         "\"500 keer, really\"",
+         "\"1 keer\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"50 keer\"\"? Dan neem je alleen de duizendtallen. De schaal is 1 : 50 000, dus 50 000 keer. Het goede antwoord is 50 000 keer.",
+         "Klopt: 1 cm op de kaart is 50 000 cm in het echt. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"500 keer, really\"\"? Dan laat je nullen weg. De schaal is 1 : 50 000, dus 50 000 keer. Door de stappen goed na te lopen kom je uit op 50 000 keer.",
+         "Koos je \"\"1 keer\"\"? Dan neem je het eerste getal. De werkelijkheid is 50 000 keer groter, dus 50 000 keer. Controleer je stap: de juiste uitkomst is 50 000 keer."
+        ],
+        "uh": "Een kaart heeft schaal 1 : 50 000. Hoeveel keer is de werkelijkheid groter dan de kaart?"
+       },
+       {
+        "v": "Wat geldt voor het quotiënt van overeenkomstige zijden bij gelijkvormige driehoeken?",
+        "o": [
+         "\"het verschilt per zijde\"",
+         "\"het is altijd 1\"",
+         "\"het is gelijk aan de omtrek, denk ik\"",
+         "\"het is overal gelijk aan k\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het verschilt per zijde\"\"? Dan denk je dat elke zijde een eigen factor heeft. Bij gelijkvormige figuren is die gelijk, dus overal k.",
+         "Koos je \"\"het is altijd 1\"\"? Dan denk je aan congruente driehoeken. Bij gelijkvormige is het k, dus overal k. Door de stappen goed na te lopen kom je uit op het is overal gelijk aan k.",
+         "Koos je \"\"het is gelijk aan de omtrek, denk ik\"\"? Dan verwar je de factor met de omtrek. Het quotiënt is k, dus overal k. Controleer je stap: de juiste uitkomst is het is overal gelijk aan k.",
+         "Klopt: dat is de vergrotingsfactor. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Wat geldt voor het quotiënt van overeenkomstige zijden bij gelijkvormige driehoeken?"
+       },
+       {
+        "v": "Waarom maak je bij een meetkundig probleem eerst een schets?",
+        "o": [
+         "\"om de gegevens en het gezochte te zien\"",
+         "\"om Pythagoras te vermijden\"",
+         "\"omdat het verplicht is\"",
+         "\"om het antwoord te schatten, volgens mij\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een schets laat zien welke regel past. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"om Pythagoras te vermijden\"\"? Dan denk je dat een schets een regel vervangt. Een schets helpt de goede regel kiezen, dus gegevens zien.",
+         "Koos je \"\"omdat het verplicht is\"\"? Dan denk je dat het een formaliteit is. Een schets voorkomt fouten, dus gegevens zien.",
+         "Koos je \"\"om het antwoord te schatten, volgens mij\"\"? Dan denk je dat het alleen schatten is. Je gebruikt hem om de regel te kiezen, dus gegevens zien."
+        ],
+        "uh": "Waarom maak je bij een meetkundig probleem eerst een schets?"
+       },
+       {
+        "v": "Welke vergrotingsfactor hoort bij ABC → DEF?",
+        "o": [
+         "\"3\"",
+         "\"0,67\"",
+         "\"1,5\"",
+         "\"15\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3\"\"? Dan neem je het verschil 9 − 6. De factor is een quotiënt, dus 1,5. Het goede antwoord is 1,5.",
+         "Koos je \"\"0,67\"\"? Dan draai je de breuk om. Nieuw gedeeld door oud, dus 1,5. Door de stappen goed na te lopen kom je uit op 1,5.",
+         "Klopt: DE : AB = 9 : 6 = 1,5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"15\"\"? Dan neem je AC. De factor volgt uit DE en AB, dus 1,5. Controleer je stap: de juiste uitkomst is 1,5."
+        ],
+        "uh": "Welke vergrotingsfactor hoort bij ABC → DEF?",
+        "ctx": "Driehoek ABC heeft zijden AB = 6, BC = 8 en AC = 10. Driehoek DEF is gelijkvormig met ABC en heeft DE = 9, waarbij DE overeenkomt met AB. Een leerling berekent de vergrotingsfactor en de andere zijden van DEF."
+       },
+       {
+        "v": "De zijde EF komt overeen met BC = 8. Hoe lang is EF?",
+        "o": [
+         "\"11\"",
+         "\"12\"",
+         "\"14\"",
+         "\"5,33\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"11\"\"? Dan tel je 3 op bij 8. Je vermenigvuldigt met 1,5, dus 12. Het goede antwoord is 12.",
+         "Klopt: 8 · 1,5 = 12. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"14\"\"? Dan tel je 6 op bij 8. Je vermenigvuldigt met 1,5, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+         "Koos je \"\"5,33\"\"? Dan deel je 8 door 1,5. Je vermenigvuldigt, dus 12. Controleer je stap: de juiste uitkomst is 12."
+        ],
+        "uh": "De zijde EF komt overeen met BC = 8. Hoe lang is EF?",
+        "ctx": "Driehoek ABC heeft zijden AB = 6, BC = 8 en AC = 10. Driehoek DEF is gelijkvormig met ABC en heeft DE = 9, waarbij DE overeenkomt met AB. Een leerling berekent de vergrotingsfactor en de andere zijden van DEF."
+       },
+       {
+        "v": "Bereken DF, de zijde die overeenkomt met AC = 10.",
+        "o": [
+         "\"13\"",
+         "\"12\"",
+         "\"6,67\"",
+         "\"15\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"13\"\"? Dan tel je 3 op bij 10. Je vermenigvuldigt met 1,5, dus 15. Het goede antwoord is 15.",
+         "Koos je \"\"12\"\"? Dan neem je EF. DF hoort bij AC = 10, dus 15. Door de stappen goed na te lopen kom je uit op 15.",
+         "Koos je \"\"6,67\"\"? Dan deel je 10 door 1,5. Je vermenigvuldigt, dus 15. Controleer je stap: de juiste uitkomst is 15.",
+         "Klopt: 10 · 1,5 = 15. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Bereken DF, de zijde die overeenkomt met AC = 10.",
+        "ctx": "Driehoek ABC heeft zijden AB = 6, BC = 8 en AC = 10. Driehoek DEF is gelijkvormig met ABC en heeft DE = 9, waarbij DE overeenkomt met AB. Een leerling berekent de vergrotingsfactor en de andere zijden van DEF."
+       },
+       {
+        "v": "Welke verhouding geldt voor de hoogtes en de schaduwen?",
+        "o": [
+         "\"1,8 : 2,4 = h : 12\"",
+         "\"1,8 : 2,4 = 12 : h, denk ik\"",
+         "\"1,8 + 2,4 = h + 12\"",
+         "\"1,8 − 2,4 = h − 12\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: hoogte gedeeld door schaduw is gelijk. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1,8 : 2,4 = 12 : h, denk ik\"\"? Dan zet dit je h en 12 verkeerd. Hoogte staat boven en schaduw onder, dus 1,8 : 2,4 = h : 12.",
+         "Koos je \"\"1,8 + 2,4 = h + 12\"\"? Dan tel je op. Gelijkvormig gaat over verhoudingen, dus 1,8 : 2,4 = h : 12. Door de stappen goed na te lopen kom je uit op 1,8 : 2,4 = h : 12.",
+         "Koos je \"\"1,8 − 2,4 = h − 12\"\"? Dan trek je af. Gelijkvormig gaat over verhoudingen, dus 1,8 : 2,4 = h : 12. Controleer je stap: de juiste uitkomst is 1,8 : 2,4 = h : 12."
+        ],
+        "uh": "Welke verhouding geldt voor de hoogtes en de schaduwen?",
+        "ctx": "Een man van 1,8 m heeft een schaduw van 2,4 m. Op hetzelfde moment heeft een boom een schaduw van 12 m. De zon zorgt voor gelijkvormige driehoeken. Een leerling berekent de hoogte van de boom."
+       },
+       {
+        "v": "Hoe hoog is de boom?",
+        "o": [
+         "\"16 m\"",
+         "\"14,4 m\"",
+         "\"9 m\"",
+         "\"0,36 m\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"16 m\"\"? Dan draai je de verhouding om. h = 12 · 1,8 : 2,4, dus 9 m. Het goede antwoord is 9 m.",
+         "Koos je \"\"14,4 m\"\"? Dan vermenigvuldig je 12 met 1,2. Gebruik 1,8 : 2,4 = 0,75, dus 9 m. Door de stappen goed na te lopen kom je uit op 9 m.",
+         "Klopt: h = 12 · 1,8 : 2,4 = 9. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0,36 m\"\"? Dan deel je 1,8 door 12 en vermenigvuldig met 2,4. Gebruik h : 12 = 0,75, dus 9 m. Controleer je stap: de juiste uitkomst is 9 m."
+        ],
+        "uh": "Hoe hoog is de boom?",
+        "ctx": "Een man van 1,8 m heeft een schaduw van 2,4 m. Op hetzelfde moment heeft een boom een schaduw van 12 m. De zon zorgt voor gelijkvormige driehoeken. Een leerling berekent de hoogte van de boom."
+       },
+       {
+        "v": "Hoe controleer je h = 9 m?",
+        "o": [
+         "\"9 + 12 = 21\"",
+         "\"9 : 12 = 0,75 en 1,8 : 2,4 = 0,75\"",
+         "\"9 : 12 = 1,33, zeg maar, gewoon, volgens mij\"",
+         "\"9 · 12 = 108\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"9 + 12 = 21\"\"? Dan tel je de waarden op. Je vergelijkt verhoudingen, dus 9 : 12 = 0,75. Het goede antwoord is 9 : 12 = 0,75 en 1,8 : 2,4 = 0,75.",
+         "Klopt: de verhoudingen zijn gelijk. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"9 : 12 = 1,33, zeg maar, gewoon, volgens mij\"\"? Dan draai je de breuk om. Het is 9 : 12 = 0,75, dus ze zijn gelijk. Door de stappen goed na te lopen kom je uit op 9 : 12 = 0,75 en 1,8 : 2,4 = 0,75.",
+         "Koos je \"\"9 · 12 = 108\"\"? Dan vermenigvuldig je. Je vergelijkt verhoudingen, dus 9 : 12 = 0,75. Controleer je stap: de juiste uitkomst is 9 : 12 = 0,75 en 1,8 : 2,4 = 0,75."
+        ],
+        "uh": "Hoe controleer je h = 9 m?",
+        "ctx": "Een man van 1,8 m heeft een schaduw van 2,4 m. Op hetzelfde moment heeft een boom een schaduw van 12 m. De zon zorgt voor gelijkvormige driehoeken. Een leerling berekent de hoogte van de boom."
+       },
+       {
+        "v": "Hoe groot is de werkelijke afstand tussen de dorpen?",
+        "o": [
+         "\"16 km\"",
+         "\"160 m\"",
+         "\"6,4 km, eigenlijk\"",
+         "\"1,6 km\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"16 km\"\"? Dan zet dit je een komma fout. 160 000 cm is 1,6 km, dus 1,6 km. Het goede antwoord is 1,6 km.",
+         "Koos je \"\"160 m\"\"? Dan reken je cm verkeerd om. 160 000 cm = 1600 m, dus 1,6 km. Door de stappen goed na te lopen kom je uit op 1,6 km.",
+         "Koos je \"\"6,4 km, eigenlijk\"\"? Dan neem je de kaartlengte als kilometers. Vermenigvuldig met 25 000, dus 1,6 km. Controleer je stap: de juiste uitkomst is 1,6 km.",
+         "Klopt: 6,4 · 25 000 = 160 000 cm = 1,6 km. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe groot is de werkelijke afstand tussen de dorpen?",
+        "ctx": "Een kaart heeft schaal 1 : 25 000. Een leerling meet op de kaart 6,4 cm tussen twee dorpen en wil de werkelijke afstand weten. Daarna wil hij een afstand van 3 km op de kaart tekenen en een kaartoppervlak omrekenen."
+       },
+       {
+        "v": "Hoe lang is 3 km op de kaart?",
+        "o": [
+         "\"12 cm\"",
+         "\"7,5 cm, gewoon\"",
+         "\"120 cm\"",
+         "\"1,2 cm\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 300 000 cm : 25 000 = 12 cm. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"7,5 cm, gewoon\"\"? Dan deel je 3 km door 40. Reken 300 000 : 25 000, dus 12 cm. Het goede antwoord is 12 cm.",
+         "Koos je \"\"120 cm\"\"? Dan zet dit je een nul te veel. 300 000 : 25 000 = 12, dus 12 cm. Door de stappen goed na te lopen kom je uit op 12 cm.",
+         "Koos je \"\"1,2 cm\"\"? Dan laat je een nul weg. 300 000 : 25 000 = 12, dus 12 cm. Controleer je stap: de juiste uitkomst is 12 cm."
+        ],
+        "uh": "Hoe lang is 3 km op de kaart?",
+        "ctx": "Een kaart heeft schaal 1 : 25 000. Een leerling meet op de kaart 6,4 cm tussen twee dorpen en wil de werkelijke afstand weten. Daarna wil hij een afstand van 3 km op de kaart tekenen en een kaartoppervlak omrekenen."
+       },
+       {
+        "v": "Een kaart wordt twee keer zo groot afgedrukt. Met welke factor groeit een oppervlak op de kaart?",
+        "o": [
+         "\"2\"",
+         "\"8\"",
+         "\"4\"",
+         "\"16\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2\"\"? Dan neem je de factor voor lengtes. Een oppervlak groeit met k², dus 4. Het goede antwoord is 4.",
+         "Koos je \"\"8\"\"? Dan neem je de factor voor een inhoud. Een oppervlak groeit met k², dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Klopt: de oppervlakte groeit met k² = 2². Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"16\"\"? Dan kwadrateer je twee keer. Het is 2² = 4, dus 4. Controleer je stap: de juiste uitkomst is 4."
+        ],
+        "uh": "Een kaart wordt twee keer zo groot afgedrukt. Met welke factor groeit een oppervlak op de kaart?",
+        "ctx": "Een kaart heeft schaal 1 : 25 000. Een leerling meet op de kaart 6,4 cm tussen twee dorpen en wil de werkelijke afstand weten. Daarna wil hij een afstand van 3 km op de kaart tekenen en een kaartoppervlak omrekenen."
+       },
+       {
+        "v": "Een gebied is op de kaart 4 cm². Hoe groot is het in het echt?",
+        "o": [
+         "\"2,5 km²\"",
+         "\"0,25 km²\"",
+         "\"1 km²\"",
+         "\"25 000 m², to be honest\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2,5 km²\"\"? Dan vergeet je dat oppervlakten met k² groeien. Reken 4 · 25 000², dus 0,25 km². Het goede antwoord is 0,25 km².",
+         "Klopt: 4 · 25 000² cm² = 2,5 · 10⁹ cm² = 0,25 km². Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1 km²\"\"? Dan vermenigvuldig je maar met 25 000 en rekent om. Gebruik k² = 25 000², dus 0,25 km². Door de stappen goed na te lopen kom je uit op 0,25 km².",
+         "Koos je \"\"25 000 m², to be honest\"\"? Dan vermenigvuldig je 4 met 25 000 en noem het m². Gebruik k², dus 0,25 km². Controleer je stap: de juiste uitkomst is 0,25 km²."
+        ],
+        "uh": "Een gebied is op de kaart 4 cm². Hoe groot is het in het echt?",
+        "ctx": "Een kaart heeft schaal 1 : 25 000. Een leerling meet op de kaart 6,4 cm tussen twee dorpen en wil de werkelijke afstand weten. Daarna wil hij een afstand van 3 km op de kaart tekenen en een kaartoppervlak omrekenen."
+       },
+       {
+        "v": "Waarom zijn ADE en ABC gelijkvormig?",
+        "o": [
+         "\"ze hebben dezelfde omtrek, zeg maar, gewoon\"",
+         "\"AD = DB\"",
+         "\"DE = BC\"",
+         "\"ze hebben dezelfde hoeken, omdat DE ∥ BC\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ze hebben dezelfde omtrek, zeg maar, gewoon\"\"? Dan kijk je naar de omtrek. Gelijkvormig gaat over hoeken, dus gelijke hoeken. Het goede antwoord is ze hebben dezelfde hoeken, omdat DE ∥ BC.",
+         "Koos je \"\"AD = DB\"\"? Dan denk je dat gelijke stukken nodig zijn. Hier is AD = 3 en DB = 2, dus gelijke hoeken. Door de stappen goed na te lopen kom je uit op ze hebben dezelfde hoeken, omdat DE ∥ BC.",
+         "Koos je \"\"DE = BC\"\"? Dan denk je dat de lijnstukken gelijk zijn. DE is korter dan BC, dus gelijke hoeken. Controleer je stap: de juiste uitkomst is ze hebben dezelfde hoeken, omdat DE ∥ BC.",
+         "Klopt: evenwijdige lijnen geven gelijke hoeken. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Waarom zijn ADE en ABC gelijkvormig?",
+        "ctx": "In driehoek ABC ligt D op AB en E op AC met DE evenwijdig aan BC. Gegeven zijn AD = 3, DB = 2 en DE = 4. Een leerling gebruikt dat driehoek ADE gelijkvormig is met driehoek ABC om BC en de verhouding van de oppervlaktes te berekenen."
+       },
+       {
+        "v": "Welke vergrotingsfactor hoort bij ADE → ABC?",
+        "o": [
+         "\"5/3\"",
+         "\"2/3\"",
+         "\"3/5\"",
+         "\"5/2\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: AB : AD = 5 : 3. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2/3\"\"? Dan neem je DB : AD. De factor is AB : AD, dus 5/3. Het goede antwoord is 5/3.",
+         "Koos je \"\"3/5\"\"? Dan draai je de breuk om. Van klein naar groot is het 5 : 3, dus 5/3. Door de stappen goed na te lopen kom je uit op 5/3.",
+         "Koos je \"\"5/2\"\"? Dan neem je AB : DB. De factor is AB : AD, dus 5/3. Controleer je stap: de juiste uitkomst is 5/3."
+        ],
+        "uh": "Welke vergrotingsfactor hoort bij ADE → ABC?",
+        "ctx": "In driehoek ABC ligt D op AB en E op AC met DE evenwijdig aan BC. Gegeven zijn AD = 3, DB = 2 en DE = 4. Een leerling gebruikt dat driehoek ADE gelijkvormig is met driehoek ABC om BC en de verhouding van de oppervlaktes te berekenen."
+       },
+       {
+        "v": "Hoe lang is BC, afgerond op twee decimalen?",
+        "o": [
+         "\"2,4\"",
+         "\"6,00\"",
+         "\"6,67\"",
+         "\"9,00\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2,4\"\"? Dan vermenigvuldig je 4 met 3/5. Je moet met 5/3 vermenigvuldigen, dus 6,67. Het goede antwoord is 6,67.",
+         "Koos je \"\"6,00\"\"? Dan neem je AD + DE − 1. Gebruik de factor 5/3, dus 6,67. Door de stappen goed na te lopen kom je uit op 6,67.",
+         "Klopt: 4 · 5/3 ≈ 6,67. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"9,00\"\"? Dan vermenigvuldig je 4 met 2,25. Gebruik de factor 5/3, dus 6,67. Controleer je stap: de juiste uitkomst is 6,67."
+        ],
+        "uh": "Hoe lang is BC, afgerond op twee decimalen?",
+        "ctx": "In driehoek ABC ligt D op AB en E op AC met DE evenwijdig aan BC. Gegeven zijn AD = 3, DB = 2 en DE = 4. Een leerling gebruikt dat driehoek ADE gelijkvormig is met driehoek ABC om BC en de verhouding van de oppervlaktes te berekenen."
+       },
+       {
+        "v": "Wat is de verhouding van de oppervlakte van ADE tot die van ABC?",
+        "o": [
+         "\"3 : 5\"",
+         "\"9 : 25\"",
+         "\"6 : 10, denk ik\"",
+         "\"3 : 2\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3 : 5\"\"? Dan neem je de verhouding van lengtes. Oppervlakten gaan met k², dus 9 : 25. Het goede antwoord is 9 : 25.",
+         "Klopt: (3/5)² = 9/25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"6 : 10, denk ik\"\"? Dan neem je een vermenigvuldigde lengteverhouding. Kwadrateer 3 : 5, dus 9 : 25. Door de stappen goed na te lopen kom je uit op 9 : 25.",
+         "Koos je \"\"3 : 2\"\"? Dan neem je AD : DB. De oppervlakteverhouding is (3/5)², dus 9 : 25. Controleer je stap: de juiste uitkomst is 9 : 25."
+        ],
+        "uh": "Wat is de verhouding van de oppervlakte van ADE tot die van ABC?",
+        "ctx": "In driehoek ABC ligt D op AB en E op AC met DE evenwijdig aan BC. Gegeven zijn AD = 3, DB = 2 en DE = 4. Een leerling gebruikt dat driehoek ADE gelijkvormig is met driehoek ABC om BC en de verhouding van de oppervlaktes te berekenen."
+       },
+       {
+        "v": "Hoe groot is CH?",
+        "o": [
+         "\"2,0\"",
+         "\"3,5\"",
+         "\"1,2\"",
+         "\"2,4\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2,0\"\"? Dan schat je de hoogte. Gebruik 6 = ½ · 5 · CH, dus 2,4. Het goede antwoord is 2,4.",
+         "Koos je \"\"3,5\"\"? Dan neem je het gemiddelde van 3 en 4. Gebruik de oppervlakte, dus 2,4. Door de stappen goed na te lopen kom je uit op 2,4.",
+         "Koos je \"\"1,2\"\"? Dan deel je 2,4 door 2. Gebruik 6 = ½ · 5 · CH, dus 2,4. Controleer je stap: de juiste uitkomst is 2,4.",
+         "Klopt: oppervlakte ½ · 3 · 4 = 6 = ½ · 5 · CH, dus CH = 2,4."
+        ],
+        "uh": "Hoe groot is CH?",
+        "ctx": "In een rechthoekige driehoek ABC met rechte hoek in C zijn AC = 3 en BC = 4, dus AB = 5. De hoogtelijn CH staat loodrecht op AB. Een leerling berekent CH met de oppervlakte van de driehoek en AH en HB met gelijkvormige driehoeken."
+       },
+       {
+        "v": "Hoe lang is AH?",
+        "o": [
+         "\"1,8\"",
+         "\"3,2\"",
+         "\"2,0\"",
+         "\"1,5\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: AH = AC² : AB = 9 : 5 = 1,8. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3,2\"\"? Dan neem je HB. AH hoort bij AC = 3, dus 1,8. Het goede antwoord is 1,8.",
+         "Koos je \"\"2,0\"\"? Dan schat je AH. Gebruik AH = AC² : AB, dus 1,8. Door de stappen goed na te lopen kom je uit op 1,8.",
+         "Koos je \"\"1,5\"\"? Dan neem je de helft van AC. Gebruik AC² : AB, dus 1,8. Controleer je stap: de juiste uitkomst is 1,8."
+        ],
+        "uh": "Hoe lang is AH?",
+        "ctx": "In een rechthoekige driehoek ABC met rechte hoek in C zijn AC = 3 en BC = 4, dus AB = 5. De hoogtelijn CH staat loodrecht op AB. Een leerling berekent CH met de oppervlakte van de driehoek en AH en HB met gelijkvormige driehoeken."
+       },
+       {
+        "v": "Hoe controleer je AH = 1,8 en HB = 3,2?",
+        "o": [
+         "\"1,8 · 3,2 = 5, eigenlijk\"",
+         "\"1,8 + 3,2 = 4\"",
+         "\"1,8 + 3,2 = 5 = AB\"",
+         "\"3,2 − 1,8 = 5\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1,8 · 3,2 = 5, eigenlijk\"\"? Dan vermenigvuldig je de stukken. De stukken tellen op tot AB, dus 1,8 + 3,2 = 5. Het goede antwoord is 1,8 + 3,2 = 5 = AB.",
+         "Koos je \"\"1,8 + 3,2 = 4\"\"? Dan tel je verkeerd op. 1,8 + 3,2 = 5, dus = AB. Door de stappen goed na te lopen kom je uit op 1,8 + 3,2 = 5 = AB.",
+         "Klopt: AH en HB samen zijn AB. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3,2 − 1,8 = 5\"\"? Dan trek je de stukken af. AH + HB = AB, dus 5. Controleer je stap: de juiste uitkomst is 1,8 + 3,2 = 5 = AB."
+        ],
+        "uh": "Hoe controleer je AH = 1,8 en HB = 3,2?",
+        "ctx": "In een rechthoekige driehoek ABC met rechte hoek in C zijn AC = 3 en BC = 4, dus AB = 5. De hoogtelijn CH staat loodrecht op AB. Een leerling berekent CH met de oppervlakte van de driehoek en AH en HB met gelijkvormige driehoeken."
+       },
+       {
+        "v": "Hoe hoog is de mast?",
+        "o": [
+         "\"7,5 m\"",
+         "\"13,0 m\"",
+         "\"17,3 m, gewoon\"",
+         "\"8,7 m\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"7,5 m\"\"? Dan neem je 15 · cos 60°. De hoogte is overstaand, dus 13,0 m. Het goede antwoord is 13,0 m.",
+         "Klopt: 15 · sin 60° ≈ 13,0. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"17,3 m, gewoon\"\"? Dan deel je 15 door sin 60°. Je vermenigvuldigt, dus 13,0 m. Door de stappen goed na te lopen kom je uit op 13,0 m.",
+         "Koos je \"\"8,7 m\"\"? Dan gebruik je 15 · tan 30°. Gebruik 15 · sin 60°, dus 13,0 m. Controleer je stap: de juiste uitkomst is 13,0 m."
+        ],
+        "uh": "Hoe hoog is de mast?",
+        "ctx": "Een vlaggenmast staat recht op vlakke grond. Een kabel van 15 m loopt van de top naar de grond en maakt een hoek van 60° met de grond. Een leerling berekent de hoogte van de mast en de afstand van de voet tot het ankerpunt en bouwt een model op schaal 1 : 50."
+       },
+       {
+        "v": "Hoe ver staat het ankerpunt van de voet van de mast?",
+        "o": [
+         "\"13,0 m, denk ik\"",
+         "\"8,7 m\"",
+         "\"30,0 m\"",
+         "\"7,5 m\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"13,0 m, denk ik\"\"? Dan neem je de hoogte. De afstand is aanliggend, dus 7,5 m. Het goede antwoord is 7,5 m.",
+         "Koos je \"\"8,7 m\"\"? Dan gebruik je een verkeerde hoek. De afstand is 15 · cos 60°, dus 7,5 m. Door de stappen goed na te lopen kom je uit op 7,5 m.",
+         "Koos je \"\"30,0 m\"\"? Dan vermenigvuldig je 15 met 2. Gebruik cos 60° = 0,5, dus 7,5 m. Controleer je stap: de juiste uitkomst is 7,5 m.",
+         "Klopt: 15 · cos 60° = 7,5. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe ver staat het ankerpunt van de voet van de mast?",
+        "ctx": "Een vlaggenmast staat recht op vlakke grond. Een kabel van 15 m loopt van de top naar de grond en maakt een hoek van 60° met de grond. Een leerling berekent de hoogte van de mast en de afstand van de voet tot het ankerpunt en bouwt een model op schaal 1 : 50."
+       },
+       {
+        "v": "Hoe hoog is het model op schaal 1 : 50?",
+        "o": [
+         "\"26 cm\"",
+         "\"0,26 cm\"",
+         "\"13 cm\"",
+         "\"650 cm\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal eerst de vergrotingsfactor of de juiste regel, reken stap voor stap en controleer met een verhouding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 1300 cm : 50 = 26 cm. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0,26 cm\"\"? Dan reken je m en cm door elkaar. 13 m = 1300 cm, dus 26 cm. Het goede antwoord is 26 cm.",
+         "Koos je \"\"13 cm\"\"? Dan deel je 13 door 1. Deel 1300 cm door 50, dus 26 cm. Door de stappen goed na te lopen kom je uit op 26 cm.",
+         "Koos je \"\"650 cm\"\"? Dan vermenigvuldig je met 50. Een model is kleiner, dus 26 cm. Controleer je stap: de juiste uitkomst is 26 cm."
+        ],
+        "uh": "Hoe hoog is het model op schaal 1 : 50?",
+        "ctx": "Een vlaggenmast staat recht op vlakke grond. Een kabel van 15 m loopt van de top naar de grond en maakt een hoek van 60° met de grond. Een leerling berekent de hoogte van de mast en de afstand van de voet tot het ankerpunt en bouwt een model op schaal 1 : 50."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Driehoek ABC heeft zijden 5, 12 en 13. Driehoek DEF is gelijkvormig met ABC en de kleinste zijde van DEF is 15. Een leerling berekent de vergrotingsfactor, de andere zijden en de verhouding van de oppervlakten.",
+        "v": "Bereken k, de andere zijden van DEF en de verhouding van de oppervlakten.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "k = 15 : 5 = 3 (1p). De andere zijden zijn 36 en 39 (1p). De oppervlakten verhouden zich als k² = 9 : 1, dus 270 : 30 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een paal van 2 m heeft een schaduw van 3 m. Op hetzelfde moment heeft een toren een schaduw van 36 m. Een leerling berekent de hoogte van de toren met gelijkvormige driehoeken en controleert met een verhouding.",
+        "v": "Bereken de hoogte van de toren en controleer.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "h : 36 = 2 : 3 (1p), dus h = 24 m (1p). Controle: 24 : 36 = 2 : 3 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een kaart heeft schaal 1 : 50 000. Een leerling meet 5,2 cm tussen twee plaatsen en berekent de werkelijke afstand in kilometers. Daarna berekent hij hoeveel cm 4 km op de kaart is.",
+        "v": "Bereken de werkelijke afstand en de kaartafstand voor 4 km.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "5,2 · 50 000 = 260 000 cm = 2,6 km (1p). 4 km = 400 000 cm (1p). 400 000 : 50 000 = 8 cm (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In driehoek ABC ligt D op AB en E op AC met DE ∥ BC. Gegeven zijn AD = 4, AB = 10 en BC = 15. Een leerling berekent DE en de verhouding van de oppervlakten van ADE en ABC.",
+        "v": "Bereken DE en de verhouding van de oppervlakten.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "k = 4 : 10 = 0,4 (1p). DE = 0,4 · 15 = 6 (1p). Oppervlakteverhouding 0,4² = 0,16 = 4 : 25 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een rechthoekige driehoek ABC met rechte hoek in C zijn AC = 5, BC = 12 en AB = 13. Een leerling berekent de hoogtelijn CH uit de oppervlakte en AH met gelijkvormige driehoeken.",
+        "v": "Bereken CH en AH, afgerond op twee decimalen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Oppervlakte 30 = ½ · 13 · CH, dus CH = 60/13 ≈ 4,62 (1p). AH = AC² : AB = 25/13 (1p) ≈ 1,92 (1p)."
+       }
+      ]
      }
     ]
    },
