@@ -5728,6 +5728,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C5",
+      "lo": "wb.C.5",
+      "gs": 2,
+      "naam": "Vergelijking van een lijn, snijpunt, loodlijn en hoek tussen lijnen",
+      "beschrijving": "Je stelt de vergelijking van een lijn op, berekent het snijpunt van twee lijnen, bepaalt een loodlijn en de hoek tussen twee lijnen en beoordeelt de oplosbaarheid van een stelsel aan de hand van de ligging van de lijnen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vergelijking van een lijn",
+       "Snijpunt van twee lijnen",
+       "Loodlijn",
+       "Hoek tussen lijnen",
+       "Oplosbaarheid en ligging"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

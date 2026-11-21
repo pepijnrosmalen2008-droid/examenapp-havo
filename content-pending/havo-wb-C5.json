@@ -1,0 +1,682 @@
+{
+ "id": "C5",
+ "lo": "wb.C.5",
+ "gs": 2,
+ "naam": "Vergelijking van een lijn, snijpunt, loodlijn en hoek tussen lijnen",
+ "beschrijving": "Je stelt de vergelijking van een lijn op, berekent het snijpunt van twee lijnen, bepaalt een loodlijn en de hoek tussen twee lijnen en beoordeelt de oplosbaarheid van een stelsel aan de hand van de ligging van de lijnen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Vergelijking van een lijn",
+  "Snijpunt van twee lijnen",
+  "Loodlijn",
+  "Hoek tussen lijnen",
+  "Oplosbaarheid en ligging"
+ ],
+ "sam": "Stel y = ax + b op met a = Δy : Δx. Het snijpunt vind je door de vergelijkingen gelijk te stellen. Loodrechte lijnen hebben a · a' = −1 en evenwijdige lijnen gelijke a. De hoek met de x-as volgt uit tan φ = a. Controleer het snijpunt in beide vergelijkingen.",
+ "begrippen": [
+  {
+   "t": "Vergelijking van een lijn",
+   "d": "y = ax + b of ax + by = c."
+  },
+  {
+   "t": "Richtingscoëfficiënt",
+   "d": "De helling a = Δy : Δx."
+  },
+  {
+   "t": "Beginwaarde b",
+   "d": "De y-waarde bij x = 0: het snijpunt met de y-as."
+  },
+  {
+   "t": "Snijpunt van twee lijnen",
+   "d": "De oplossing van het stelsel; stel de vergelijkingen gelijk."
+  },
+  {
+   "t": "Loodlijn",
+   "d": "Een lijn loodrecht op een andere; a · a' = −1."
+  },
+  {
+   "t": "Evenwijdige lijnen",
+   "d": "Lijnen met gelijke richtingscoëfficiënt."
+  },
+  {
+   "t": "Hoek met de x-as",
+   "d": "tan φ = a voor een lijn met rc a."
+  },
+  {
+   "t": "Hoek tussen twee lijnen",
+   "d": "Het verschil van de hoeken met de x-as, scherp genomen."
+  },
+  {
+   "t": "Samenvallende lijnen",
+   "d": "Dezelfde lijn: oneindig veel gemeenschappelijke punten."
+  },
+  {
+   "t": "Oplosbaarheid van een stelsel",
+   "d": "Een, geen of oneindig veel oplossingen, afhankelijk van de ligging."
+  },
+  {
+   "t": "Kruispunt",
+   "d": "Het snijpunt van twee wegen of lijnen in een situatie."
+  },
+  {
+   "t": "Controleren",
+   "d": "Het punt invullen in beide vergelijkingen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke vorm heeft de vergelijking van een lijn met richtingscoëfficiënt a?",
+   "o": [
+    "\"y = a/x + b, denk ik\"",
+    "\"y = ax + b\"",
+    "\"y = ax² + b\"",
+    "\"y = a + bx²\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = a/x + b, denk ik\"\"? Dan verwar je een lijn met een hyperbool. Bij een lijn staat x niet in de noemer, dus y = ax + b.",
+    "Klopt: b is de waarde van y bij x = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = ax² + b\"\"? Dan verwar je een lijn met een parabool. Bij een lijn is de macht van x één, dus y = ax + b. Door de stappen goed na te lopen kom je uit op y = ax + b.",
+    "Koos je \"\"y = a + bx²\"\"? Dan verwar je de letters en maakt er een parabool van. Een lijn is ax + b, dus y = ax + b. Controleer je stap: de juiste uitkomst is y = ax + b."
+   ],
+   "uh": "Welke vorm heeft de vergelijking van een lijn met richtingscoëfficiënt a?"
+  },
+  {
+   "v": "Hoe bereken je de richtingscoëfficiënt uit twee punten?",
+   "o": [
+    "\"Δx gedeeld door Δy, volgens mij\"",
+    "\"Δy plus Δx\"",
+    "\"y₁ gedeeld door x₁\"",
+    "\"Δy gedeeld door Δx\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Δx gedeeld door Δy, volgens mij\"\"? Dan draai je de breuk om. De helling is verticaal gedeeld door horizontaal, dus Δy : Δx.",
+    "Koos je \"\"Δy plus Δx\"\"? Dan tel je de verschillen op. De helling is een quotiënt, dus Δy : Δx. Door de stappen goed na te lopen kom je uit op Δy gedeeld door Δx.",
+    "Koos je \"\"y₁ gedeeld door x₁\"\"? Dan gebruik je één punt. Je hebt het verschil tussen twee punten nodig, dus Δy : Δx. Controleer je stap: de juiste uitkomst is Δy gedeeld door Δx.",
+    "Klopt: a = (y₂ − y₁) : (x₂ − x₁). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe bereken je de richtingscoëfficiënt uit twee punten?"
+  },
+  {
+   "v": "Hoe vind je het snijpunt van twee lijnen?",
+   "o": [
+    "\"stel de twee vergelijkingen gelijk en los op\"",
+    "\"tel de richtingscoëfficiënten op\"",
+    "\"trek de vergelijkingen af en deel door 2, zeg maar\"",
+    "\"kies een willekeurig punt\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: op het snijpunt hebben beide lijnen dezelfde y. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"tel de richtingscoëfficiënten op\"\"? Dan tel je de hellingen op. Dat geeft het snijpunt niet, dus stel de vergelijkingen gelijk.",
+    "Koos je \"\"trek de vergelijkingen af en deel door 2, zeg maar\"\"? Dan trek je af zonder reden. Je stelt de y-waarden gelijk, dus los op.",
+    "Koos je \"\"kies een willekeurig punt\"\"? Dan kies je een punt. Het snijpunt volgt uit de vergelijkingen, dus stel ze gelijk."
+   ],
+   "uh": "Hoe vind je het snijpunt van twee lijnen?"
+  },
+  {
+   "v": "Wat geldt voor de richtingscoëfficiënten a en a' van twee loodrechte lijnen?",
+   "o": [
+    "\"a = a'\"",
+    "\"a + a' = 0, eigenlijk\"",
+    "\"a · a' = −1\"",
+    "\"a · a' = 1\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a = a'\"\"? Dan verwar je loodrecht met evenwijdig. Evenwijdige lijnen hebben gelijke rc, dus a · a' = −1. Het goede antwoord is a · a' = −1.",
+    "Koos je \"\"a + a' = 0, eigenlijk\"\"? Dan neem je tegengestelde getallen. Bij loodrecht is het product −1, dus a · a' = −1. Door de stappen goed na te lopen kom je uit op a · a' = −1.",
+    "Klopt: het product is −1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"a · a' = 1\"\"? Dan vergeet je het minteken. Het product is −1, dus a · a' = −1. Controleer je stap: de juiste uitkomst is a · a' = −1."
+   ],
+   "uh": "Wat geldt voor de richtingscoëfficiënten a en a' van twee loodrechte lijnen?"
+  },
+  {
+   "v": "Wat geldt voor de richtingscoëfficiënten van evenwijdige lijnen?",
+   "o": [
+    "\"ze zijn elkaars tegengestelde\"",
+    "\"ze zijn gelijk\"",
+    "\"hun product is −1\"",
+    "\"ze verschillen\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 4,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ze zijn elkaars tegengestelde\"\"? Dan verwar je dat met loodrecht of spiegelen. Evenwijdig betekent dezelfde helling, dus gelijk.",
+    "Klopt: dezelfde helling betekent evenwijdig. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"hun product is −1\"\"? Dan verwar je evenwijdig met loodrecht. Bij evenwijdig zijn de rc's gelijk, dus gelijk. Door de stappen goed na te lopen kom je uit op ze zijn gelijk.",
+    "Koos je \"\"ze verschillen\"\"? Dan denk je dat verschillende hellingen evenwijdig zijn. Die snijden, dus gelijk. Controleer je stap: de juiste uitkomst is ze zijn gelijk."
+   ],
+   "uh": "Wat geldt voor de richtingscoëfficiënten van evenwijdige lijnen?"
+  },
+  {
+   "v": "Welke hoek maakt een lijn met richtingscoëfficiënt a met de x-as?",
+   "o": [
+    "\"sin φ = a, denk ik\"",
+    "\"cos φ = a\"",
+    "\"φ = a\"",
+    "\"tan φ = a\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"sin φ = a, denk ik\"\"? Dan gebruik je de sinus. De helling is verticaal gedeeld door horizontaal, dus tan φ = a. Het goede antwoord is tan φ = a.",
+    "Koos je \"\"cos φ = a\"\"? Dan gebruik je de cosinus. De helling is een tangens, dus tan φ = a. Door de stappen goed na te lopen kom je uit op tan φ = a.",
+    "Koos je \"\"φ = a\"\"? Dan neem je a als hoek. a is een verhouding, geen hoek, dus tan φ = a. Controleer je stap: de juiste uitkomst is tan φ = a.",
+    "Klopt: de helling is de tangens van de hoek. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke hoek maakt een lijn met richtingscoëfficiënt a met de x-as?"
+  },
+  {
+   "v": "Welke richtingscoëfficiënt heeft een lijn loodrecht op een lijn met rc 2?",
+   "o": [
+    "\"−½\"",
+    "\"−2\"",
+    "\"½\"",
+    "\"2\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2 · (−½) = −1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−2\"\"? Dan verander je alleen het teken. Het product moet −1 zijn, dus −½. Het goede antwoord is −½.",
+    "Koos je \"\"½\"\"? Dan draai je alleen de breuk om. Ook het teken moet omdraaien, dus −½. Door de stappen goed na te lopen kom je uit op −½.",
+    "Koos je \"\"2\"\"? Dan neem je dezelfde rc. Dat geeft een evenwijdige lijn, dus −½. Controleer je stap: de juiste uitkomst is −½."
+   ],
+   "uh": "Welke richtingscoëfficiënt heeft een lijn loodrecht op een lijn met rc 2?"
+  },
+  {
+   "v": "Hoe groot is de richtingscoëfficiënt van de lijn door A en B?",
+   "o": [
+    "\"3\"",
+    "\"0,5\"",
+    "\"2\"",
+    "\"6\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3\"\"? Dan neem je Δx. De helling is Δy : Δx, dus 2. Het goede antwoord is 2.",
+    "Koos je \"\"0,5\"\"? Dan draai je de breuk om. De helling is Δy : Δx, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Klopt: (9 − 3) : (4 − 1) = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6\"\"? Dan neem je Δy. De helling is Δy : Δx, dus 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Hoe groot is de richtingscoëfficiënt van de lijn door A en B?",
+   "ctx": "Een lijn gaat door A(1, 3) en B(4, 9). Een leerling berekent de richtingscoëfficiënt, bepaalt b met punt A en controleert zijn vergelijking met punt B."
+  },
+  {
+   "v": "Welke waarde heeft b in y = 2x + b?",
+   "o": [
+    "\"3\"",
+    "\"1\"",
+    "\"5\"",
+    "\"−1\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3\"\"? Dan neem je de y-waarde van A. Trek 2 · 1 af, dus b = 1. Het goede antwoord is 1.",
+    "Klopt: 3 = 2 · 1 + b geeft b = 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5\"\"? Dan tel je 2 bij 3 op. Je trekt af, dus b = 1. Door de stappen goed na te lopen kom je uit op 1.",
+    "Koos je \"\"−1\"\"? Dan maak je een tekenfout. 3 − 2 = 1, dus b = 1. Controleer je stap: de juiste uitkomst is 1."
+   ],
+   "uh": "Welke waarde heeft b in y = 2x + b?",
+   "ctx": "Een lijn gaat door A(1, 3) en B(4, 9). Een leerling berekent de richtingscoëfficiënt, bepaalt b met punt A en controleert zijn vergelijking met punt B."
+  },
+  {
+   "v": "Hoe controleer je y = 2x + 1 met punt B?",
+   "o": [
+    "\"2 · 9 + 1 = 19, gewoon, volgens mij, eigenlijk\"",
+    "\"4 + 1 = 5\"",
+    "\"2 · 4 − 1 = 7\"",
+    "\"2 · 4 + 1 = 9, dus B ligt op de lijn\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2 · 9 + 1 = 19, gewoon, volgens mij, eigenlijk\"\"? Dan vul je de y-waarde in voor x. B = (4, 9) heeft x = 4, dus 2 · 4 + 1 = 9. Het goede antwoord is 2 · 4 + 1 = 9, dus B ligt op de lijn.",
+    "Koos je \"\"4 + 1 = 5\"\"? Dan vergeet je de factor 2. De vergelijking is y = 2x + 1, dus 2 · 4 + 1 = 9. Door de stappen goed na te lopen kom je uit op 2 · 4 + 1 = 9, dus B ligt op de lijn.",
+    "Koos je \"\"2 · 4 − 1 = 7\"\"? Dan maak je een tekenfout. De vergelijking is y = 2x + 1, dus 9. Controleer je stap: de juiste uitkomst is 2 · 4 + 1 = 9, dus B ligt op de lijn.",
+    "Klopt: de y-waarde van B is 9. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe controleer je y = 2x + 1 met punt B?",
+   "ctx": "Een lijn gaat door A(1, 3) en B(4, 9). Een leerling berekent de richtingscoëfficiënt, bepaalt b met punt A en controleert zijn vergelijking met punt B."
+  },
+  {
+   "v": "Los 2x + 1 = −x + 7 op. Welke x krijg je?",
+   "o": [
+    "\"2\"",
+    "\"−2\"",
+    "\"6\"",
+    "\"3\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3x = 6 geeft x = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−2\"\"? Dan maak je een tekenfout bij het samennemen. 2x + x = 7 − 1 = 6, dus 3x = 6, dus x = 2. Het goede antwoord is 2.",
+    "Koos je \"\"6\"\"? Dan neem je het getal 6 zonder te delen door 3. 3x = 6, dus x = 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Koos je \"\"3\"\"? Dan neem je de coëfficiënt 3. 3x = 6 geeft x = 2, dus x = 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Los 2x + 1 = −x + 7 op. Welke x krijg je?",
+   "ctx": "De lijnen l: y = 2x + 1 en m: y = −x + 7 snijden elkaar. Een leerling stelt 2x + 1 = −x + 7 op, lost die vergelijking op en berekent de y-coördinaat van het snijpunt."
+  },
+  {
+   "v": "Vul die x in y = 2x + 1 in. Welke y krijg je?",
+   "o": [
+    "\"3\"",
+    "\"8\"",
+    "\"5\"",
+    "\"7\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3\"\"? Dan neem je x + 1. y = 2x + 1, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"8\"\"? Dan neem je x + 6. Vul x = 2 in y = 2x + 1, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Klopt: y = 2 · 2 + 1 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7\"\"? Dan neem je de waarde bij x = 0 van m. Vul x = 2 in, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Vul die x in y = 2x + 1 in. Welke y krijg je?",
+   "ctx": "De lijnen l: y = 2x + 1 en m: y = −x + 7 snijden elkaar. Een leerling stelt 2x + 1 = −x + 7 op, lost die vergelijking op en berekent de y-coördinaat van het snijpunt."
+  },
+  {
+   "v": "Hoe controleer je het snijpunt (2, 5)?",
+   "o": [
+    "\"2 · 2 + 1 = 5 en 2 + 7 = 9\"",
+    "\"2 · 2 + 1 = 5 en −2 + 7 = 5\"",
+    "\"2 + 5 = 7 voor beide\"",
+    "\"2 · 5 + 1 = 11 en −5 + 7 = 2, zeg maar\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2 · 2 + 1 = 5 en 2 + 7 = 9\"\"? Dan vergeet je het minteken van m. Het is −x + 7, dus −2 + 7 = 5. Het goede antwoord is 2 · 2 + 1 = 5 en −2 + 7 = 5.",
+    "Klopt: beide vergelijkingen geven y = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2 + 5 = 7 voor beide\"\"? Dan tel je x en y op. Vul in beide vergelijkingen in, dus 5 en 5. Door de stappen goed na te lopen kom je uit op 2 · 2 + 1 = 5 en −2 + 7 = 5.",
+    "Koos je \"\"2 · 5 + 1 = 11 en −5 + 7 = 2, zeg maar\"\"? Dan verwissel je x en y. Het punt is (2, 5), dus x = 2. Controleer je stap: de juiste uitkomst is 2 · 2 + 1 = 5 en −2 + 7 = 5."
+   ],
+   "uh": "Hoe controleer je het snijpunt (2, 5)?",
+   "ctx": "De lijnen l: y = 2x + 1 en m: y = −x + 7 snijden elkaar. Een leerling stelt 2x + 1 = −x + 7 op, lost die vergelijking op en berekent de y-coördinaat van het snijpunt."
+  },
+  {
+   "v": "Welke richtingscoëfficiënt heeft de loodlijn m op l: y = 2x + 1?",
+   "o": [
+    "\"−2\"",
+    "\"½\"",
+    "\"2\"",
+    "\"−½\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−2\"\"? Dan verander je alleen het teken. Het product moet −1 zijn, dus −½. Het goede antwoord is −½.",
+    "Koos je \"\"½\"\"? Dan draai je alleen de breuk om. Ook het teken moet omdraaien, dus −½. Door de stappen goed na te lopen kom je uit op −½.",
+    "Koos je \"\"2\"\"? Dan neem je dezelfde rc. Dat geeft een evenwijdige lijn, dus −½. Controleer je stap: de juiste uitkomst is −½.",
+    "Klopt: 2 · (−½) = −1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke richtingscoëfficiënt heeft de loodlijn m op l: y = 2x + 1?",
+   "ctx": "Lijn l is y = 2x + 1. Een leerling zoekt de loodlijn m op l door P(4, 0). Hij bepaalt de richtingscoëfficiënt van m, stelt de vergelijking op en berekent het snijpunt van l en m."
+  },
+  {
+   "v": "Welke vergelijking heeft m door P(4, 0) met rc −½?",
+   "o": [
+    "\"y = −½x + 2\"",
+    "\"y = −½x − 2, gewoon\"",
+    "\"y = −2x + 8\"",
+    "\"y = ½x − 2\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 0 = −½ · 4 + b geeft b = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = −½x − 2, gewoon\"\"? Dan maak je een tekenfout bij b. 0 = −2 + b geeft b = 2, dus b = 2. Het goede antwoord is y = −½x + 2.",
+    "Koos je \"\"y = −2x + 8\"\"? Dan neem je de verkeerde rc. De rc is −½, dus y = −½x + 2. Door de stappen goed na te lopen kom je uit op y = −½x + 2.",
+    "Koos je \"\"y = ½x − 2\"\"? Dan neem je een verkeerde rc en b. De rc is −½, dus y = −½x + 2. Controleer je stap: de juiste uitkomst is y = −½x + 2."
+   ],
+   "uh": "Welke vergelijking heeft m door P(4, 0) met rc −½?",
+   "ctx": "Lijn l is y = 2x + 1. Een leerling zoekt de loodlijn m op l door P(4, 0). Hij bepaalt de richtingscoëfficiënt van m, stelt de vergelijking op en berekent het snijpunt van l en m."
+  },
+  {
+   "v": "Bij welke x snijden l en m?",
+   "o": [
+    "\"2\"",
+    "\"1\"",
+    "\"0,4\"",
+    "\"4\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2\"\"? Dan neem je het snijpunt van een andere lijn. Los 2x + 1 = −½x + 2 op, dus x = 0,4. Het goede antwoord is 0,4.",
+    "Koos je \"\"1\"\"? Dan maak je een rekenfout. 2,5x = 1, dus x = 0,4. Door de stappen goed na te lopen kom je uit op 0,4.",
+    "Klopt: 2x + 1 = −½x + 2 geeft 2,5x = 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"4\"\"? Dan neem je de x van P. Los de vergelijking op, dus x = 0,4. Controleer je stap: de juiste uitkomst is 0,4."
+   ],
+   "uh": "Bij welke x snijden l en m?",
+   "ctx": "Lijn l is y = 2x + 1. Een leerling zoekt de loodlijn m op l door P(4, 0). Hij bepaalt de richtingscoëfficiënt van m, stelt de vergelijking op en berekent het snijpunt van l en m."
+  },
+  {
+   "v": "Welk punt is het snijpunt van l en m?",
+   "o": [
+    "\"(0,4; 0)\"",
+    "\"(0,4; 1,8)\"",
+    "\"(1,8; 0,4), volgens mij\"",
+    "\"(0,4; 1,2)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(0,4; 0)\"\"? Dan vergeet je y uit te rekenen. Vul x = 0,4 in l in, dus (0,4; 1,8). Het goede antwoord is (0,4; 1,8).",
+    "Klopt: y = 2 · 0,4 + 1 = 1,8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(1,8; 0,4), volgens mij\"\"? Dan verwissel je x en y. Het punt is (0,4; 1,8), dus x = 0,4. Door de stappen goed na te lopen kom je uit op (0,4; 1,8).",
+    "Koos je \"\"(0,4; 1,2)\"\"? Dan maak je een rekenfout. 2 · 0,4 + 1 = 1,8, dus (0,4; 1,8). Controleer je stap: de juiste uitkomst is (0,4; 1,8)."
+   ],
+   "uh": "Welk punt is het snijpunt van l en m?",
+   "ctx": "Lijn l is y = 2x + 1. Een leerling zoekt de loodlijn m op l door P(4, 0). Hij bepaalt de richtingscoëfficiënt van m, stelt de vergelijking op en berekent het snijpunt van l en m."
+  },
+  {
+   "v": "Bereken de hoek van l met de x-as met tan φ = 2.",
+   "o": [
+    "\"26,6°\"",
+    "\"2,0°\"",
+    "\"116,6°\"",
+    "\"63,4°\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"26,6°\"\"? Dan neem je tan⁻¹(½). De rc is 2, dus 63,4°. Het goede antwoord is 63,4°.",
+    "Koos je \"\"2,0°\"\"? Dan neem je a als hoek. Gebruik tan⁻¹(2), dus 63,4°. Door de stappen goed na te lopen kom je uit op 63,4°.",
+    "Koos je \"\"116,6°\"\"? Dan neem je de stompe hoek. De helling is positief, dus 63,4°. Controleer je stap: de juiste uitkomst is 63,4°.",
+    "Klopt: tan⁻¹(2) ≈ 63,4°. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken de hoek van l met de x-as met tan φ = 2.",
+   "ctx": "De lijnen l: y = 2x + 1 en m: y = −x + 7 maken hoeken met de x-as. Een leerling berekent die hoeken met tan φ = a en bepaalt zo de scherpe hoek tussen de twee lijnen."
+  },
+  {
+   "v": "De lijn m heeft rc −1. Welke hoek maakt m met de x-as (0° tot 180°)?",
+   "o": [
+    "\"135°\"",
+    "\"45°\"",
+    "\"−45°\"",
+    "\"225°\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: tan⁻¹(−1) = −45° en 180° − 45° = 135°. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"45°\"\"? Dan vergeet je het teken. De helling is negatief, dus 135°. Het goede antwoord is 135°.",
+    "Koos je \"\"−45°\"\"? Dan geef je een hoek buiten 0° tot 180°. Tel 180° op, dus 135°. Door de stappen goed na te lopen kom je uit op 135°.",
+    "Koos je \"\"225°\"\"? Dan tel je 180° op bij 45°. De hoek is 180° − 45°, dus 135°. Controleer je stap: de juiste uitkomst is 135°."
+   ],
+   "uh": "De lijn m heeft rc −1. Welke hoek maakt m met de x-as (0° tot 180°)?",
+   "ctx": "De lijnen l: y = 2x + 1 en m: y = −x + 7 maken hoeken met de x-as. Een leerling berekent die hoeken met tan φ = a en bepaalt zo de scherpe hoek tussen de twee lijnen."
+  },
+  {
+   "v": "Hoe groot is de scherpe hoek tussen l en m?",
+   "o": [
+    "\"198,4°\"",
+    "\"108,4°\"",
+    "\"71,6°\"",
+    "\"18,4°\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"198,4°\"\"? Dan tel je de hoeken op. Je trekt af, dus 71,6°. Het goede antwoord is 71,6°.",
+    "Koos je \"\"108,4°\"\"? Dan neem je de stompe hoek. De scherpe hoek is 180° − 108,4°, dus 71,6°. Door de stappen goed na te lopen kom je uit op 71,6°.",
+    "Klopt: 135° − 63,4° ≈ 71,6°. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"18,4°\"\"? Dan neem je een verkeerd verschil. 135° − 63,4°, dus 71,6°. Controleer je stap: de juiste uitkomst is 71,6°."
+   ],
+   "uh": "Hoe groot is de scherpe hoek tussen l en m?",
+   "ctx": "De lijnen l: y = 2x + 1 en m: y = −x + 7 maken hoeken met de x-as. Een leerling berekent die hoeken met tan φ = a en bepaalt zo de scherpe hoek tussen de twee lijnen."
+  },
+  {
+   "v": "Is stelsel A (y = 2x + 1 en y = 2x − 3) oplosbaar? Hoeveel oplossingen zijn er?",
+   "o": [
+    "\"één\"",
+    "\"geen\"",
+    "\"oneindig veel\"",
+    "\"twee\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"één\"\"? Dan denk je dat elk stelsel een snijpunt heeft. Gelijke rc's betekent evenwijdig, dus geen. Het goede antwoord is geen.",
+    "Klopt: de lijnen zijn evenwijdig en vallen niet samen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat de lijnen samenvallen. De b's verschillen, dus geen. Door de stappen goed na te lopen kom je uit op geen.",
+    "Koos je \"\"twee\"\"? Dan denk je dat er twee snijpunten zijn. Lijnen snijden hoogstens één keer, dus geen. Controleer je stap: de juiste uitkomst is geen."
+   ],
+   "uh": "Is stelsel A (y = 2x + 1 en y = 2x − 3) oplosbaar? Hoeveel oplossingen zijn er?",
+   "ctx": "Een leerling onderzoekt drie stelsels. Stelsel A: y = 2x + 1 en y = 2x − 3. Stelsel B: 2x + 4y = 8 en x + 2y = 4. Stelsel C: y = x + 1 en y = −x + 1. Hij bekijkt de richtingscoëfficiënten om te zien hoeveel oplossingen elk stelsel heeft."
+  },
+  {
+   "v": "Beschrijven 2x + 4y = 8 en x + 2y = 4 dezelfde lijn? Hoeveel oplossingen heeft stelsel B?",
+   "o": [
+    "\"één\"",
+    "\"geen\"",
+    "\"twee\"",
+    "\"oneindig veel\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"één\"\"? Dan denk je dat de lijnen snijden. Ze zijn dezelfde lijn, dus oneindig veel. Het goede antwoord is oneindig veel.",
+    "Koos je \"\"geen\"\"? Dan denk je dat de lijnen evenwijdig zijn. Ze vallen samen, dus oneindig veel. Door de stappen goed na te lopen kom je uit op oneindig veel.",
+    "Koos je \"\"twee\"\"? Dan denk je dat er twee snijpunten zijn. Samenvallende lijnen hebben oneindig veel punten, dus oneindig veel.",
+    "Klopt: de eerste vergelijking is twee keer de tweede, dus de lijnen vallen samen."
+   ],
+   "uh": "Beschrijven 2x + 4y = 8 en x + 2y = 4 dezelfde lijn? Hoeveel oplossingen heeft stelsel B?",
+   "ctx": "Een leerling onderzoekt drie stelsels. Stelsel A: y = 2x + 1 en y = 2x − 3. Stelsel B: 2x + 4y = 8 en x + 2y = 4. Stelsel C: y = x + 1 en y = −x + 1. Hij bekijkt de richtingscoëfficiënten om te zien hoeveel oplossingen elk stelsel heeft."
+  },
+  {
+   "v": "Welk snijpunt heeft stelsel C: y = x + 1 en y = −x + 1?",
+   "o": [
+    "\"(0, 1)\"",
+    "\"(1, 0), zeg maar\"",
+    "\"(1, 1)\"",
+    "\"(0, 0)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x + 1 = −x + 1 geeft x = 0 en y = 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(1, 0), zeg maar\"\"? Dan verwissel je x en y. Het snijpunt is (0, 1), dus x = 0. Het goede antwoord is (0, 1).",
+    "Koos je \"\"(1, 1)\"\"? Dan maak je een rekenfout. x + 1 = −x + 1 geeft x = 0, dus (0, 1). Door de stappen goed na te lopen kom je uit op (0, 1).",
+    "Koos je \"\"(0, 0)\"\"? Dan neem je de oorsprong. Beide lijnen gaan door (0, 1), dus (0, 1). Controleer je stap: de juiste uitkomst is (0, 1)."
+   ],
+   "uh": "Welk snijpunt heeft stelsel C: y = x + 1 en y = −x + 1?",
+   "ctx": "Een leerling onderzoekt drie stelsels. Stelsel A: y = 2x + 1 en y = 2x − 3. Stelsel B: 2x + 4y = 8 en x + 2y = 4. Stelsel C: y = x + 1 en y = −x + 1. Hij bekijkt de richtingscoëfficiënten om te zien hoeveel oplossingen elk stelsel heeft."
+  },
+  {
+   "v": "Stel de vergelijking van weg 1 op (door (0, 2), rc 1,5).",
+   "o": [
+    "\"y = 2x + 1,5, you know\"",
+    "\"y = 1,5x − 2\"",
+    "\"y = 1,5x + 2\"",
+    "\"y = 1,5x + 8\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 2x + 1,5, you know\"\"? Dan verwissel je a en b. De rc is 1,5, dus y = 1,5x + 2. Het goede antwoord is y = 1,5x + 2.",
+    "Koos je \"\"y = 1,5x − 2\"\"? Dan maak je een tekenfout bij b. De lijn gaat door (0, 2), dus + 2. Door de stappen goed na te lopen kom je uit op y = 1,5x + 2.",
+    "Klopt: de rc is 1,5 en b = 2 bij x = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = 1,5x + 8\"\"? Dan neem je de x van weg 2. Weg 1 gaat door (0, 2), dus b = 2. Controleer je stap: de juiste uitkomst is y = 1,5x + 2."
+   ],
+   "uh": "Stel de vergelijking van weg 1 op (door (0, 2), rc 1,5).",
+   "ctx": "Twee wegen liggen in een assenstelsel (eenheid: km). Weg 1 gaat door (0, 2) met richtingscoëfficiënt 1,5. Weg 2 gaat door (8, 0) met richtingscoëfficiënt −0,5. Een leerling stelt beide vergelijkingen op, berekent het kruispunt en onderzoekt of de wegen loodrecht staan."
+  },
+  {
+   "v": "Weg 2 gaat door (8, 0) met rc −0,5. Bereken b en schrijf de vergelijking op.",
+   "o": [
+    "\"y = −0,5x + 8, really\"",
+    "\"y = −0,5x + 4\"",
+    "\"y = −0,5x − 4\"",
+    "\"y = 0,5x + 4\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = −0,5x + 8, really\"\"? Dan neem je de x van het punt als b. 0 = −4 + b, dus b = 4. Het goede antwoord is y = −0,5x + 4.",
+    "Klopt: 0 = −0,5 · 8 + b geeft b = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = −0,5x − 4\"\"? Dan maak je een tekenfout bij b. 0 = −4 + b, dus b = 4. Door de stappen goed na te lopen kom je uit op y = −0,5x + 4.",
+    "Koos je \"\"y = 0,5x + 4\"\"? Dan maak je een tekenfout bij de rc. De rc is −0,5, dus y = −0,5x + 4. Controleer je stap: de juiste uitkomst is y = −0,5x + 4."
+   ],
+   "uh": "Weg 2 gaat door (8, 0) met rc −0,5. Bereken b en schrijf de vergelijking op.",
+   "ctx": "Twee wegen liggen in een assenstelsel (eenheid: km). Weg 1 gaat door (0, 2) met richtingscoëfficiënt 1,5. Weg 2 gaat door (8, 0) met richtingscoëfficiënt −0,5. Een leerling stelt beide vergelijkingen op, berekent het kruispunt en onderzoekt of de wegen loodrecht staan."
+  },
+  {
+   "v": "Welk kruispunt hebben de wegen?",
+   "o": [
+    "\"(1; 2), denk ik\"",
+    "\"(2; 5)\"",
+    "\"(1; 4)\"",
+    "\"(1; 3,5)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(1; 2), denk ik\"\"? Dan neem je de b van weg 1. Vul x = 1 in, dus y = 3,5. Het goede antwoord is (1; 3,5).",
+    "Koos je \"\"(2; 5)\"\"? Dan maak je een rekenfout. 2x = 2 geeft x = 1, dus (1; 3,5). Door de stappen goed na te lopen kom je uit op (1; 3,5).",
+    "Koos je \"\"(1; 4)\"\"? Dan neem je de b van weg 2. Vul x = 1 in, dus y = 3,5. Controleer je stap: de juiste uitkomst is (1; 3,5).",
+    "Klopt: 1,5x + 2 = −0,5x + 4 geeft x = 1 en y = 3,5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk kruispunt hebben de wegen?",
+   "ctx": "Twee wegen liggen in een assenstelsel (eenheid: km). Weg 1 gaat door (0, 2) met richtingscoëfficiënt 1,5. Weg 2 gaat door (8, 0) met richtingscoëfficiënt −0,5. Een leerling stelt beide vergelijkingen op, berekent het kruispunt en onderzoekt of de wegen loodrecht staan."
+  },
+  {
+   "v": "Staan de wegen loodrecht op elkaar?",
+   "o": [
+    "\"nee, want 1,5 · (−0,5) = −0,75 en niet −1\"",
+    "\"ja, want 1,5 · (−0,5) = −1\"",
+    "\"ja, want de rc's hebben verschillend teken, to be honest\"",
+    "\"nee, want de wegen zijn evenwijdig\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de richtingscoëfficiënt, stel de vergelijking op en controleer door een punt in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het product moet −1 zijn. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"ja, want 1,5 · (−0,5) = −1\"\"? Dan reken je het product fout. Het is −0,75, dus niet loodrecht. Het goede antwoord is nee, want 1,5 · (−0,5) = −0,75 en niet −1.",
+    "Koos je \"\"ja, want de rc's hebben verschillend teken, to be honest\"\"? Dan denk je dat tegengestelde tekens genoeg zijn. Het product moet −1 zijn, dus niet loodrecht.",
+    "Koos je \"\"nee, want de wegen zijn evenwijdig\"\"? Dan denk je dat de rc's gelijk zijn. Ze verschillen en de wegen snijden, dus niet loodrecht."
+   ],
+   "uh": "Staan de wegen loodrecht op elkaar?",
+   "ctx": "Twee wegen liggen in een assenstelsel (eenheid: km). Weg 1 gaat door (0, 2) met richtingscoëfficiënt 1,5. Weg 2 gaat door (8, 0) met richtingscoëfficiënt −0,5. Een leerling stelt beide vergelijkingen op, berekent het kruispunt en onderzoekt of de wegen loodrecht staan."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een lijn gaat door de punten (2, 1) en (6, 9). Een leerling bepaalt de richtingscoëfficiënt en de beginwaarde, stelt de vergelijking op en controleert met het tweede punt.",
+   "v": "Stel de vergelijking van de lijn op en controleer.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "a = (9 − 1) : (6 − 2) = 2 (1p). 1 = 2 · 2 + b geeft b = −3, dus y = 2x − 3 (1p). Controle: 2 · 6 − 3 = 9 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De lijnen y = 3x − 2 en y = −x + 6 snijden elkaar. Een leerling stelt de twee vergelijkingen gelijk, lost op en berekent beide coördinaten van het snijpunt en controleert in beide vergelijkingen.",
+   "v": "Bereken het snijpunt van de lijnen en controleer.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "3x − 2 = −x + 6 geeft 4x = 8, dus x = 2 (1p). y = 3 · 2 − 2 = 4 (1p). Controle: −2 + 6 = 4 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Lijn l is y = ½x + 1. Een leerling bepaalt de loodlijn m door het punt P(2, 5), stelt de vergelijking op en berekent het snijpunt van l en m.",
+   "v": "Stel de loodlijn op en bereken het snijpunt met l.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De rc van m is −2 (1p), dus y = −2x + 9 (1p). ½x + 1 = −2x + 9 geeft x = 3,2 en y = 2,6 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De lijnen y = x en y = 3x maken hoeken met de x-as. Een leerling berekent die hoeken met tan φ = a en bepaalt zo de hoek tussen de lijnen. Hij rondt af op één decimaal.",
+   "v": "Bereken de hoek tussen de twee lijnen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "tan⁻¹(1) = 45° (1p). tan⁻¹(3) ≈ 71,6° (1p). De hoek tussen de lijnen is 71,6° − 45° ≈ 26,6° (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt het stelsel 3x − y = 2 en 6x − 2y = 7. Hij herleidt beide vergelijkingen tot de vorm y = ax + b en vergelijkt de richtingscoëfficiënten en de beginwaarden.",
+   "v": "Leg uit hoeveel oplossingen het stelsel heeft.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "y = 3x − 2 en y = 3x − 3,5 (1p). Gelijke richtingscoëfficiënten en verschillende b (1p). De lijnen zijn evenwijdig, dus er is geen oplossing (1p)."
+  }
+ ]
+}
