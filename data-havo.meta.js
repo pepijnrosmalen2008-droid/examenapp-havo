@@ -5643,7 +5643,30 @@ var VAKKEN = [
     "nSv": 99,
     "nOe": 3,
     "nBeg": 18,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "wb.C.1",
+      "gs": 2,
+      "naam": "Sinus, cosinus en tangens in een rechthoekige driehoek",
+      "beschrijving": "Je gebruikt sinus, cosinus en tangens in een rechthoekige driehoek om zijden en hoeken te berekenen, werkt met de hoek van elevatie en het hellingspercentage en controleert je uitkomst met de stelling van Pythagoras.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Zijden benoemen en verhoudingen",
+       "Een zijde berekenen",
+       "Een hoek berekenen",
+       "Elevatie, helling en toepassingen",
+       "Controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "D",

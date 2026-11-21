@@ -239915,6 +239915,690 @@ var VAKKEN = [
       "t": "Hellingen",
       "d": "rc; loodrechte lijnen"
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "wb.C.1",
+      "gs": 2,
+      "naam": "Sinus, cosinus en tangens in een rechthoekige driehoek",
+      "beschrijving": "Je gebruikt sinus, cosinus en tangens in een rechthoekige driehoek om zijden en hoeken te berekenen, werkt met de hoek van elevatie en het hellingspercentage en controleert je uitkomst met de stelling van Pythagoras.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Zijden benoemen en verhoudingen",
+       "Een zijde berekenen",
+       "Een hoek berekenen",
+       "Elevatie, helling en toepassingen",
+       "Controleren"
+      ],
+      "sam": "Benoem de zijden ten opzichte van de hoek: sin = overstaand : schuin, cos = aanliggend : schuin en tan = overstaand : aanliggend. Reken in graden, gebruik sin⁻¹, cos⁻¹ of tan⁻¹ voor een hoek en controleer met de stelling van Pythagoras. Een schets voorkomt fouten.",
+      "begrippen": [
+       {
+        "t": "Rechthoekige driehoek",
+        "d": "Een driehoek met een hoek van 90°; de schuine zijde ligt daar tegenover."
+       },
+       {
+        "t": "Overstaande zijde",
+        "d": "De rechthoekszijde tegenover de hoek α."
+       },
+       {
+        "t": "Aanliggende zijde",
+        "d": "De rechthoekszijde die bij de hoek α hoort, naast de schuine zijde."
+       },
+       {
+        "t": "Sinus",
+        "d": "sin α = overstaande : schuine zijde."
+       },
+       {
+        "t": "Cosinus",
+        "d": "cos α = aanliggende : schuine zijde."
+       },
+       {
+        "t": "Tangens",
+        "d": "tan α = overstaande : aanliggende."
+       },
+       {
+        "t": "Inverse functies",
+        "d": "sin⁻¹, cos⁻¹ en tan⁻¹ geven de hoek bij een gegeven verhouding."
+       },
+       {
+        "t": "Hoek van elevatie",
+        "d": "De hoek tussen de horizontale lijn en de kijklijn omhoog."
+       },
+       {
+        "t": "Hellingspercentage",
+        "d": "De tangens van de hoek in procenten: 12 op 150 is 8%."
+       },
+       {
+        "t": "Rekenmachine in graden",
+        "d": "De stand DEG gebruik je voor hoeken in graden."
+       },
+       {
+        "t": "Stelling van Pythagoras",
+        "d": "a² + b² = c² als controle van zijden."
+       },
+       {
+        "t": "Controleren",
+        "d": "Met Pythagoras of met een andere verhouding nagaan of de uitkomst klopt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke verhouding is sin α in een rechthoekige driehoek?",
+        "o": [
+         "\"aanliggende : schuine zijde, denk ik\"",
+         "\"overstaande : schuine zijde\"",
+         "\"overstaande : aanliggende\"",
+         "\"schuine zijde : overstaande\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"aanliggende : schuine zijde, denk ik\"\"? Dan neem je de zijde naast de hoek in plaats van tegenover de hoek, dus overstaande : schuine zijde.",
+         "Klopt: sinus is overstaand gedeeld door schuin. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"overstaande : aanliggende\"\"? Dan laat je de schuine zijde weg uit de breuk. Dat is de breuk voor de tangens, dus bij de sinus staat de schuine zijde onder de streep.",
+         "Koos je \"\"schuine zijde : overstaande\"\"? Dan zet dit je de schuine zijde boven de streep. Bij de sinus staat die eronder, dus overstaande : schuine zijde."
+        ],
+        "uh": "Welke verhouding is sin α in een rechthoekige driehoek?"
+       },
+       {
+        "v": "Welke verhouding is tan α in een rechthoekige driehoek?",
+        "o": [
+         "\"overstaande : schuine zijde\"",
+         "\"aanliggende : schuine zijde\"",
+         "\"aanliggende : overstaande\"",
+         "\"overstaande : aanliggende\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"overstaande : schuine zijde\"\"? Dan zet dit je de schuine zijde in de noemer. Dat is de breuk voor de sinus, dus bij de tangens staat de aanliggende zijde onder de streep.",
+         "Koos je \"\"aanliggende : schuine zijde\"\"? Dan neem je de breuk van de cosinus. Bij de tangens komt de schuine zijde niet voor, dus overstaande : aanliggende.",
+         "Koos je \"\"aanliggende : overstaande\"\"? Dan zet dit je de zijden in de omgekeerde volgorde. Boven staat de overstaande zijde, dus overstaande : aanliggende.",
+         "Klopt: tangens is overstaand gedeeld door aanliggend. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke verhouding is tan α in een rechthoekige driehoek?"
+       },
+       {
+        "v": "Welke zijde ligt tegenover de rechte hoek?",
+        "o": [
+         "\"de schuine zijde\"",
+         "\"de aanliggende rechthoekszijde\"",
+         "\"de hoogtelijn\"",
+         "\"de kortste zijde\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de schuine zijde is de langste zijde. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de aanliggende rechthoekszijde\"\"? Dan kies je de zijde naast hoek α. Tegenover de rechte hoek ligt een andere zijde, dus de schuine zijde.",
+         "Koos je \"\"de hoogtelijn\"\"? Dan denk je aan een lijn loodrecht op de schuine zijde. Dat is geen zijde van de driehoek, dus de schuine zijde.",
+         "Koos je \"\"de kortste zijde\"\"? Dan denk je aan de kleinste zijde. Juist de langste zijde ligt tegenover de rechte hoek, dus de schuine zijde."
+        ],
+        "uh": "Welke zijde ligt tegenover de rechte hoek?"
+       },
+       {
+        "v": "Welke waarde heeft sin 30°?",
+        "o": [
+         "\"0,87\"",
+         "\"0,71\"",
+         "\"0,5\"",
+         "\"1\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,87\"\"? Dan neem je sin 60°. Bij 30° is de sinus 0,5, dus 0,5. Het goede antwoord is 0,5.",
+         "Koos je \"\"0,71\"\"? Dan neem je sin 45°. Bij 30° is de sinus 0,5, dus 0,5. Door de stappen goed na te lopen kom je uit op 0,5.",
+         "Klopt: sin 30° = ½. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1\"\"? Dan neem je sin 90°. Bij 30° is de sinus 0,5, dus 0,5. Controleer je stap: de juiste uitkomst is 0,5."
+        ],
+        "uh": "Welke waarde heeft sin 30°?"
+       },
+       {
+        "v": "Welke functie van de rekenmachine zoekt de hoek bij sin α = 0,6?",
+        "o": [
+         "\"sin\"",
+         "\"sin⁻¹\"",
+         "\"cos⁻¹\"",
+         "\"tan⁻¹\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"sin\"\"? Dan gebruik je sin op een hoek. Je zoekt de hoek bij een waarde, dus sin⁻¹. Het goede antwoord is sin⁻¹.",
+         "Klopt: de inverse sinus geeft de hoek bij een gegeven sinus.",
+         "Koos je \"\"cos⁻¹\"\"? Dan gebruik je de inverse cosinus. Dat hoort bij een cosinuswaarde, dus sin⁻¹. Door de stappen goed na te lopen kom je uit op sin⁻¹.",
+         "Koos je \"\"tan⁻¹\"\"? Dan gebruik je de inverse tangens. Dat hoort bij een tangenswaarde, dus sin⁻¹. Controleer je stap: de juiste uitkomst is sin⁻¹."
+        ],
+        "uh": "Welke functie van de rekenmachine zoekt de hoek bij sin α = 0,6?"
+       },
+       {
+        "v": "In welke stand staat je rekenmachine voor hoeken in graden?",
+        "o": [
+         "\"RAD\"",
+         "\"GRAD\"",
+         "\"HYP\"",
+         "\"DEG\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"RAD\"\"? Dan kies je radialen. Bij graden gebruik je DEG, dus DEG. Het goede antwoord is DEG.",
+         "Koos je \"\"GRAD\"\"? Dan kies je gon. Bij graden gebruik je DEG, dus DEG. Door de stappen goed na te lopen kom je uit op DEG.",
+         "Koos je \"\"HYP\"\"? Dan kies je hyperbolische functies. Bij graden gebruik je DEG, dus DEG. Controleer je stap: de juiste uitkomst is DEG.",
+         "Klopt: DEG staat voor graden. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "In welke stand staat je rekenmachine voor hoeken in graden?"
+       },
+       {
+        "v": "Wat is de hoek van elevatie?",
+        "o": [
+         "\"de hoek tussen de horizontale lijn en de kijklijn omhoog\"",
+         "\"de hoek tussen de kijklijn en de loodlijn, volgens mij, eigenlijk\"",
+         "\"de hoek tussen twee zijden van de toren\"",
+         "\"de hoek met de muur\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de hoek waaronder je omhoog kijkt. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de hoek tussen de kijklijn en de loodlijn, volgens mij, eigenlijk\"\"? Dan neem je de hoek met de verticaal. De elevatie is de hoek met de horizontaal, dus tussen horizontaal en kijklijn.",
+         "Koos je \"\"de hoek tussen twee zijden van de toren\"\"? Dan neem je een hoek van de toren. De elevatie hoort bij je kijklijn, dus tussen horizontaal en kijklijn.",
+         "Koos je \"\"de hoek met de muur\"\"? Dan neem je een willekeurige hoek. De elevatie is de hoek met de horizontale lijn, dus tussen horizontaal en kijklijn."
+        ],
+        "uh": "Wat is de hoek van elevatie?"
+       },
+       {
+        "v": "Welke waarde heeft sin α?",
+        "o": [
+         "\"0,8\"",
+         "\"0,75\"",
+         "\"0,6\"",
+         "\"0,5\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,8\"\"? Dan neem je de aanliggende zijde. sin α = 3/5, dus 0,6. Het goede antwoord is 0,6.",
+         "Koos je \"\"0,75\"\"? Dan neem je de tangens 3/4. sin α = 3/5, dus 0,6. Door de stappen goed na te lopen kom je uit op 0,6.",
+         "Klopt: overstaand 3 gedeeld door schuin 5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0,5\"\"? Dan neem je een afgeronde waarde. sin α = 3/5 = 0,6, dus 0,6. Controleer je stap: de juiste uitkomst is 0,6."
+        ],
+        "uh": "Welke waarde heeft sin α?",
+        "ctx": "Een rechthoekige driehoek heeft rechthoekszijden 3 en 4 en schuine zijde 5. Hoek α ligt tegenover de zijde met lengte 3. Een leerling berekent sin α, cos α en tan α en daarna α met de rekenmachine in graden."
+       },
+       {
+        "v": "Welke waarde heeft cos α?",
+        "o": [
+         "\"0,6\"",
+         "\"0,8\"",
+         "\"0,75\"",
+         "\"1,33\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,6\"\"? Dan neem je de overstaande zijde. cos α = 4/5, dus 0,8. Het goede antwoord is 0,8.",
+         "Klopt: aanliggend 4 gedeeld door schuin 5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0,75\"\"? Dan neem je de tangens 3/4. cos α = 4/5, dus 0,8. Door de stappen goed na te lopen kom je uit op 0,8.",
+         "Koos je \"\"1,33\"\"? Dan neem je 4/3. cos α = 4/5, dus 0,8. Controleer je stap: de juiste uitkomst is 0,8."
+        ],
+        "uh": "Welke waarde heeft cos α?",
+        "ctx": "Een rechthoekige driehoek heeft rechthoekszijden 3 en 4 en schuine zijde 5. Hoek α ligt tegenover de zijde met lengte 3. Een leerling berekent sin α, cos α en tan α en daarna α met de rekenmachine in graden."
+       },
+       {
+        "v": "Hoe groot is α, afgerond op één decimaal?",
+        "o": [
+         "\"53,1°\"",
+         "\"0,6°\"",
+         "\"90°\"",
+         "\"36,9°\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"53,1°\"\"? Dan neem je de andere scherpe hoek. α ligt tegenover de zijde 3, dus 36,9°. Het goede antwoord is 36,9°.",
+         "Koos je \"\"0,6°\"\"? Dan neem je de sinuswaarde als hoek. Gebruik sin⁻¹(0,6), dus 36,9°. Door de stappen goed na te lopen kom je uit op 36,9°.",
+         "Koos je \"\"90°\"\"? Dan neem je de rechte hoek. α is een scherpe hoek, dus 36,9°. Controleer je stap: de juiste uitkomst is 36,9°.",
+         "Klopt: sin⁻¹(0,6) ≈ 36,9°. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe groot is α, afgerond op één decimaal?",
+        "ctx": "Een rechthoekige driehoek heeft rechthoekszijden 3 en 4 en schuine zijde 5. Hoek α ligt tegenover de zijde met lengte 3. Een leerling berekent sin α, cos α en tan α en daarna α met de rekenmachine in graden."
+       },
+       {
+        "v": "Hoe hoog komt de ladder op de muur?",
+        "o": [
+         "\"4,70 m\"",
+         "\"1,71 m, denk ik\"",
+         "\"5,32 m\"",
+         "\"3,50 m\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 5 · sin 70° ≈ 4,70. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1,71 m, denk ik\"\"? Dan neem je 5 · cos 70°. De hoogte is de overstaande zijde, dus 5 · sin 70° ≈ 4,70. Het goede antwoord is 4,70 m.",
+         "Koos je \"\"5,32 m\"\"? Dan deel je 5 door sin 70°. Je moet vermenigvuldigen, dus 4,70. Door de stappen goed na te lopen kom je uit op 4,70 m.",
+         "Koos je \"\"3,50 m\"\"? Dan vermenigvuldig je 5 met 0,7. Gebruik sin 70° ≈ 0,94, dus 4,70. Controleer je stap: de juiste uitkomst is 4,70 m."
+        ],
+        "uh": "Hoe hoog komt de ladder op de muur?",
+        "ctx": "Een ladder van 5 m staat tegen een muur en maakt een hoek van 70° met de grond. Een leerling berekent hoe hoog de ladder tegen de muur komt en hoe ver de voet van de muur staat. Zijn rekenmachine staat op graden."
+       },
+       {
+        "v": "Hoe ver staat de voet van de muur?",
+        "o": [
+         "\"4,70 m, volgens mij\"",
+         "\"0,34 m\"",
+         "\"1,71 m\"",
+         "\"5,32 m\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4,70 m, volgens mij\"\"? Dan neem je 5 · sin 70°. De afstand is de aanliggende zijde, dus 5 · cos 70° ≈ 1,71. Het goede antwoord is 1,71 m.",
+         "Koos je \"\"0,34 m\"\"? Dan neem je cos 70° zonder te vermenigvuldigen met 5. Het is 5 · cos 70°, dus 1,71. Door de stappen goed na te lopen kom je uit op 1,71 m.",
+         "Klopt: 5 · cos 70° ≈ 1,71. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"5,32 m\"\"? Dan deel je 5 door sin 70°. Je moet vermenigvuldigen met cos 70°, dus 1,71. Controleer je stap: de juiste uitkomst is 1,71 m."
+        ],
+        "uh": "Hoe ver staat de voet van de muur?",
+        "ctx": "Een ladder van 5 m staat tegen een muur en maakt een hoek van 70° met de grond. Een leerling berekent hoe hoog de ladder tegen de muur komt en hoe ver de voet van de muur staat. Zijn rekenmachine staat op graden."
+       },
+       {
+        "v": "Hoe controleer je 4,70 m en 1,71 m met de stelling van Pythagoras?",
+        "o": [
+         "\"4,70 + 1,71 ≈ 5\"",
+         "\"4,70² + 1,71² ≈ 25 = 5²\"",
+         "\"4,70 · 1,71 ≈ 5\"",
+         "\"4,70² − 1,71² ≈ 5², zeg maar\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4,70 + 1,71 ≈ 5\"\"? Dan tel je de lengtes zonder kwadrateren. Pythagoras gebruikt kwadraten, dus 4,70² + 1,71² ≈ 25.",
+         "Klopt: 22,1 + 2,9 ≈ 25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"4,70 · 1,71 ≈ 5\"\"? Dan vermenigvuldig je de lengtes. Pythagoras telt de kwadraten op, dus 4,70² + 1,71² ≈ 25. Door de stappen goed na te lopen kom je uit op 4,70² + 1,71² ≈ 25 = 5².",
+         "Koos je \"\"4,70² − 1,71² ≈ 5², zeg maar\"\"? Dan trek je de kwadraten af. Bij de rechthoekszijden tel je ze op, dus 4,70² + 1,71² ≈ 25."
+        ],
+        "uh": "Hoe controleer je 4,70 m en 1,71 m met de stelling van Pythagoras?",
+        "ctx": "Een ladder van 5 m staat tegen een muur en maakt een hoek van 70° met de grond. Een leerling berekent hoe hoog de ladder tegen de muur komt en hoe ver de voet van de muur staat. Zijn rekenmachine staat op graden."
+       },
+       {
+        "v": "Welke vergelijking hoort bij de hoogte h boven ooghoogte?",
+        "o": [
+         "\"tan 35° = 40/h, eigenlijk\"",
+         "\"sin 35° = h/40\"",
+         "\"cos 35° = h/40\"",
+         "\"tan 35° = h/40\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"tan 35° = 40/h, eigenlijk\"\"? Dan draai je de breuk om. De tangens is overstaand gedeeld door aanliggend, dus tan 35° = h/40.",
+         "Koos je \"\"sin 35° = h/40\"\"? Dan gebruik je de sinus. 40 is geen schuine zijde, dus tan 35° = h/40. Door de stappen goed na te lopen kom je uit op tan 35° = h/40.",
+         "Koos je \"\"cos 35° = h/40\"\"? Dan gebruik je de cosinus. h is de overstaande zijde, dus tan 35° = h/40. Controleer je stap: de juiste uitkomst is tan 35° = h/40.",
+         "Klopt: h is overstaand en 40 aanliggend bij de hoek 35°."
+        ],
+        "uh": "Welke vergelijking hoort bij de hoogte h boven ooghoogte?",
+        "ctx": "Een leerling staat 40 m van een toren. Hij ziet de top onder een hoek van 35° boven de horizontaal. Zijn ogen zijn 1,6 m boven de grond. Hij berekent de hoogte van de toren met de tangens."
+       },
+       {
+        "v": "Hoe hoog is de toren boven ooghoogte?",
+        "o": [
+         "\"28,0 m\"",
+         "\"57,1 m, gewoon\"",
+         "\"22,9 m\"",
+         "\"32,8 m\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: h = 40 · tan 35° ≈ 28,0. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"57,1 m, gewoon\"\"? Dan deel je 40 door tan 35°. Je moet vermenigvuldigen, dus 28,0 m. Het goede antwoord is 28,0 m.",
+         "Koos je \"\"22,9 m\"\"? Dan gebruik je 40 · sin 35°. Hier hoort de tangens, dus 28,0 m. Door de stappen goed na te lopen kom je uit op 28,0 m.",
+         "Koos je \"\"32,8 m\"\"? Dan gebruik je 40 · cos 35°. Hier hoort de tangens, dus 28,0 m. Controleer je stap: de juiste uitkomst is 28,0 m."
+        ],
+        "uh": "Hoe hoog is de toren boven ooghoogte?",
+        "ctx": "Een leerling staat 40 m van een toren. Hij ziet de top onder een hoek van 35° boven de horizontaal. Zijn ogen zijn 1,6 m boven de grond. Hij berekent de hoogte van de toren met de tangens."
+       },
+       {
+        "v": "Hoe hoog is de toren in totaal?",
+        "o": [
+         "\"28,0 m, denk ik\"",
+         "\"26,4 m\"",
+         "\"29,6 m\"",
+         "\"1,6 m\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"28,0 m, denk ik\"\"? Dan vergeet je de ooghoogte. De ogen zijn 1,6 m boven de grond, dus 29,6 m. Het goede antwoord is 29,6 m.",
+         "Koos je \"\"26,4 m\"\"? Dan trek je de ooghoogte af. Je moet optellen, dus 29,6 m. Door de stappen goed na te lopen kom je uit op 29,6 m.",
+         "Klopt: 28,0 + 1,6 = 29,6. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1,6 m\"\"? Dan neem je de ooghoogte als hoogte. Tel 28,0 erbij, dus 29,6 m. Controleer je stap: de juiste uitkomst is 29,6 m."
+        ],
+        "uh": "Hoe hoog is de toren in totaal?",
+        "ctx": "Een leerling staat 40 m van een toren. Hij ziet de top onder een hoek van 35° boven de horizontaal. Zijn ogen zijn 1,6 m boven de grond. Hij berekent de hoogte van de toren met de tangens."
+       },
+       {
+        "v": "Waarom gebruik je hier de tangens?",
+        "o": [
+         "\"omdat de schuine zijde bekend is, volgens mij, eigenlijk\"",
+         "\"de overstaande en de aanliggende zijde zijn betrokken\"",
+         "\"omdat de hoek 35° is\"",
+         "\"omdat de toren hoog is\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"omdat de schuine zijde bekend is, volgens mij, eigenlijk\"\"? Dan denk je dat de schuine zijde gegeven is. Die is niet gegeven, dus tangens.",
+         "Klopt: h is overstaand en 40 m is aanliggend. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"omdat de hoek 35° is\"\"? Dan denk je dat de grootte van de hoek de keuze bepaalt. Het gaat om de zijden, dus tangens.",
+         "Koos je \"\"omdat de toren hoog is\"\"? Dan denk je dat de hoogte telt. De keuze volgt uit de zijden, dus tangens. Controleer je stap: de juiste uitkomst is de overstaande en de aanliggende zijde zijn betrokken."
+        ],
+        "uh": "Waarom gebruik je hier de tangens?",
+        "ctx": "Een leerling staat 40 m van een toren. Hij ziet de top onder een hoek van 35° boven de horizontaal. Zijn ogen zijn 1,6 m boven de grond. Hij berekent de hoogte van de toren met de tangens."
+       },
+       {
+        "v": "Welke vergelijking hoort bij de hoek α van de weg met het horizontale vlak?",
+        "o": [
+         "\"sin α = 12/150, zeg maar\"",
+         "\"tan α = 150/12\"",
+         "\"cos α = 12/150\"",
+         "\"tan α = 12/150\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"sin α = 12/150, zeg maar\"\"? Dan gebruik je de sinus. 150 is geen schuine zijde, dus tan α = 12/150. Het goede antwoord is tan α = 12/150.",
+         "Koos je \"\"tan α = 150/12\"\"? Dan draai je de breuk om. Overstaand gedeeld door aanliggend, dus tan α = 12/150. Door de stappen goed na te lopen kom je uit op tan α = 12/150.",
+         "Koos je \"\"cos α = 12/150\"\"? Dan gebruik je de cosinus. 12 is de overstaande zijde, dus tan α = 12/150. Controleer je stap: de juiste uitkomst is tan α = 12/150.",
+         "Klopt: 12 is overstaand en 150 is aanliggend. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke vergelijking hoort bij de hoek α van de weg met het horizontale vlak?",
+        "ctx": "Een weg stijgt 12 m over een horizontale afstand van 150 m. Een leerling berekent de hoek met het horizontale vlak, het hellingspercentage en de lengte van de weg zelf met de rekenmachine in graden."
+       },
+       {
+        "v": "Hoe groot is α, afgerond op één decimaal?",
+        "o": [
+         "\"4,6°\"",
+         "\"0,1°\"",
+         "\"85,4°\"",
+         "\"8,0°\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: tan⁻¹(0,08) ≈ 4,6°. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0,1°\"\"? Dan reken je met radialen. Zet de machine op graden, dus 4,6°. Het goede antwoord is 4,6°.",
+         "Koos je \"\"85,4°\"\"? Dan neem je de andere scherpe hoek. α is de hoek met het horizontale vlak, dus 4,6°. Door de stappen goed na te lopen kom je uit op 4,6°.",
+         "Koos je \"\"8,0°\"\"? Dan neem je het percentage als hoek. 8% is de tangens, niet de hoek, dus 4,6°. Controleer je stap: de juiste uitkomst is 4,6°."
+        ],
+        "uh": "Hoe groot is α, afgerond op één decimaal?",
+        "ctx": "Een weg stijgt 12 m over een horizontale afstand van 150 m. Een leerling berekent de hoek met het horizontale vlak, het hellingspercentage en de lengte van de weg zelf met de rekenmachine in graden."
+       },
+       {
+        "v": "Hoe lang is de weg zelf, afgerond op 0,1 m?",
+        "o": [
+         "\"162,0 m, gewoon\"",
+         "\"138,0 m\"",
+         "\"150,5 m\"",
+         "\"150,0 m\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"162,0 m, gewoon\"\"? Dan tel je 150 en 12 op. Gebruik Pythagoras, dus 150,5 m. Het goede antwoord is 150,5 m.",
+         "Koos je \"\"138,0 m\"\"? Dan trek je 12 van 150 af. Gebruik Pythagoras, dus 150,5 m. Door de stappen goed na te lopen kom je uit op 150,5 m.",
+         "Klopt: √(150² + 12²) ≈ 150,5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"150,0 m\"\"? Dan neem je de horizontale afstand. De weg zelf is schuin, dus 150,5 m. Controleer je stap: de juiste uitkomst is 150,5 m."
+        ],
+        "uh": "Hoe lang is de weg zelf, afgerond op 0,1 m?",
+        "ctx": "Een weg stijgt 12 m over een horizontale afstand van 150 m. Een leerling berekent de hoek met het horizontale vlak, het hellingspercentage en de lengte van de weg zelf met de rekenmachine in graden."
+       },
+       {
+        "v": "Bereken tan⁻¹(5/12) in graden, afgerond op één decimaal.",
+        "o": [
+         "\"67,4°\"",
+         "\"22,6°\"",
+         "\"0,4°\"",
+         "\"90°\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"67,4°\"\"? Dan neem je de andere scherpe hoek. α ligt tegenover de zijde 5, dus 22,6°. Het goede antwoord is 22,6°.",
+         "Klopt: tan α = 5/12 ≈ 0,4167. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0,4°\"\"? Dan neem je de tangenswaarde als hoek. Gebruik tan⁻¹, dus 22,6°. Door de stappen goed na te lopen kom je uit op 22,6°.",
+         "Koos je \"\"90°\"\"? Dan neem je de rechte hoek. α is een scherpe hoek, dus 22,6°. Controleer je stap: de juiste uitkomst is 22,6°."
+        ],
+        "uh": "Bereken tan⁻¹(5/12) in graden, afgerond op één decimaal.",
+        "ctx": "Een rechthoekige driehoek heeft rechthoekszijden 5 en 12 en schuine zijde 13. Een leerling berekent hoek α tegenover de zijde 5 op twee manieren: met tan α = 5/12 en met sin α = 5/13, en vergelijkt de uitkomsten."
+       },
+       {
+        "v": "Welke hoek hoort bij sin α = 5/13? Rond af op één decimaal.",
+        "o": [
+         "\"67,4°\"",
+         "\"0,4°\"",
+         "\"38,5°\"",
+         "\"22,6°\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"67,4°\"\"? Dan neem je de andere scherpe hoek. Bij sin⁻¹(5/13) hoort 22,6°, dus 22,6°. Het goede antwoord is 22,6°.",
+         "Koos je \"\"0,4°\"\"? Dan neem je de sinuswaarde als hoek. Gebruik sin⁻¹, dus 22,6°. Door de stappen goed na te lopen kom je uit op 22,6°.",
+         "Koos je \"\"38,5°\"\"? Dan zet dit je 0,3846 om in graden zonder sin⁻¹. Gebruik sin⁻¹(5/13), dus 22,6°. Controleer je stap: de juiste uitkomst is 22,6°.",
+         "Klopt: sin α = 5/13 ≈ 0,3846. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke hoek hoort bij sin α = 5/13? Rond af op één decimaal.",
+        "ctx": "Een rechthoekige driehoek heeft rechthoekszijden 5 en 12 en schuine zijde 13. Een leerling berekent hoek α tegenover de zijde 5 op twee manieren: met tan α = 5/12 en met sin α = 5/13, en vergelijkt de uitkomsten."
+       },
+       {
+        "v": "Wat concludeer je uit de gelijke uitkomsten van tan⁻¹(5/12) en sin⁻¹(5/13)?",
+        "o": [
+         "\"de twee manieren bevestigen elkaar\"",
+         "\"een van beide is fout\"",
+         "\"sin en tan zijn gelijk\"",
+         "\"de driehoek is gelijkbenig, zeg maar\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: beide berekeningen geven dezelfde hoek. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"een van beide is fout\"\"? Dan denk je dat verschillende methoden verschillende uitkomsten geven. Bij een juiste driehoek zijn ze gelijk, dus ze bevestigen elkaar.",
+         "Koos je \"\"sin en tan zijn gelijk\"\"? Dan denk je dat sin α = tan α. Alleen de hoek is gelijk, dus ze bevestigen elkaar. Door de stappen goed na te lopen kom je uit op de twee manieren bevestigen elkaar.",
+         "Koos je \"\"de driehoek is gelijkbenig, zeg maar\"\"? Dan trek je een verkeerde conclusie. De rechthoekszijden 5 en 12 zijn verschillend, dus ze bevestigen elkaar."
+        ],
+        "uh": "Wat concludeer je uit de gelijke uitkomsten van tan⁻¹(5/12) en sin⁻¹(5/13)?",
+        "ctx": "Een rechthoekige driehoek heeft rechthoekszijden 5 en 12 en schuine zijde 13. Een leerling berekent hoek α tegenover de zijde 5 op twee manieren: met tan α = 5/12 en met sin α = 5/13, en vergelijkt de uitkomsten."
+       },
+       {
+        "v": "Welke vergelijking geeft de schaduwlengte s?",
+        "o": [
+         "\"tan 40° = s/3, eigenlijk\"",
+         "\"sin 40° = 3/s\"",
+         "\"tan 40° = 3/s\"",
+         "\"cos 40° = 3/s\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"tan 40° = s/3, eigenlijk\"\"? Dan draai je de breuk om. De tangens is overstaand gedeeld door aanliggend, dus tan 40° = 3/s.",
+         "Koos je \"\"sin 40° = 3/s\"\"? Dan gebruik je de sinus. s is geen schuine zijde, dus tan 40° = 3/s. Door de stappen goed na te lopen kom je uit op tan 40° = 3/s.",
+         "Klopt: 3 is overstaand en s is aanliggend. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"cos 40° = 3/s\"\"? Dan gebruik je de cosinus. 3 is de overstaande zijde, dus tan 40° = 3/s. Controleer je stap: de juiste uitkomst is tan 40° = 3/s."
+        ],
+        "uh": "Welke vergelijking geeft de schaduwlengte s?",
+        "ctx": "Een paal van 3 m hoog staat op een vlakke ondergrond. De zon staat 40° boven de horizon. Een leerling berekent de lengte van de schaduw met de tangens en vergelijkt dat met een paal van 4,5 m hoog."
+       },
+       {
+        "v": "Bereken de schaduw bij een paal van 3 m.",
+        "o": [
+         "\"2,52 m, really\"",
+         "\"3,58 m\"",
+         "\"1,93 m\"",
+         "\"4,67 m\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2,52 m, really\"\"? Dan vermenigvuldig je 3 met tan 40°. Je moet delen, dus 3,58 m. Het goede antwoord is 3,58 m.",
+         "Klopt: s = 3 : tan 40° ≈ 3,58. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1,93 m\"\"? Dan gebruik je 3 · sin 40°. Hier hoort de tangens, dus 3,58 m. Door de stappen goed na te lopen kom je uit op 3,58 m.",
+         "Koos je \"\"4,67 m\"\"? Dan deel je 3 door sin 40°. Hier hoort de tangens, dus 3,58 m. Controleer je stap: de juiste uitkomst is 3,58 m."
+        ],
+        "uh": "Bereken de schaduw bij een paal van 3 m.",
+        "ctx": "Een paal van 3 m hoog staat op een vlakke ondergrond. De zon staat 40° boven de horizon. Een leerling berekent de lengte van de schaduw met de tangens en vergelijkt dat met een paal van 4,5 m hoog."
+       },
+       {
+        "v": "Een paal van 4,5 m werpt bij dezelfde zon een schaduw. Hoe lang is die?",
+        "o": [
+         "\"3,78 m, I think\"",
+         "\"2,89 m\"",
+         "\"7,00 m\"",
+         "\"5,36 m\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3,78 m, I think\"\"? Dan vermenigvuldig je 4,5 met tan 40°. Je moet delen, dus 5,36 m. Het goede antwoord is 5,36 m.",
+         "Koos je \"\"2,89 m\"\"? Dan gebruik je 4,5 · sin 40°. Hier hoort de tangens, dus 5,36 m. Door de stappen goed na te lopen kom je uit op 5,36 m.",
+         "Koos je \"\"7,00 m\"\"? Dan deel je 4,5 door sin 40°. Hier hoort de tangens, dus 5,36 m. Controleer je stap: de juiste uitkomst is 5,36 m.",
+         "Klopt: s = 4,5 : tan 40° ≈ 5,36. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Een paal van 4,5 m werpt bij dezelfde zon een schaduw. Hoe lang is die?",
+        "ctx": "Een paal van 3 m hoog staat op een vlakke ondergrond. De zon staat 40° boven de horizon. Een leerling berekent de lengte van de schaduw met de tangens en vergelijkt dat met een paal van 4,5 m hoog."
+       },
+       {
+        "v": "Wat gebeurt er met de schaduw als de zon hoger komt?",
+        "o": [
+         "\"hij wordt korter\"",
+         "\"hij wordt langer\"",
+         "\"hij blijft gelijk\"",
+         "\"hij wordt eerst langer\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Benoem eerst de zijden ten opzichte van de hoek, kies sinus, cosinus of tangens en controleer met Pythagoras. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij een grotere hoek wordt tan groter en dus s = h : tan kleiner.",
+         "Koos je \"\"hij wordt langer\"\"? Dan denk je dat een hogere zon meer schaduw geeft. Bij een grotere hoek hoort juist een kortere schaduw, dus korter.",
+         "Koos je \"\"hij blijft gelijk\"\"? Dan denk je dat alleen de paal telt. De hoek bepaalt de lengte mee via s = h : tan, dus de schaduw verandert.",
+         "Koos je \"\"hij wordt eerst langer\"\"? Dan denk je dat het eerst toeneemt. Bij elke stap omhoog van de zon neemt de schaduw af, dus korter."
+        ],
+        "uh": "Wat gebeurt er met de schaduw als de zon hoger komt?",
+        "ctx": "Een paal van 3 m hoog staat op een vlakke ondergrond. De zon staat 40° boven de horizon. Een leerling berekent de lengte van de schaduw met de tangens en vergelijkt dat met een paal van 4,5 m hoog."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een rechthoekige driehoek is de schuine zijde 10 en een scherpe hoek 35°. Een leerling berekent de overstaande en de aanliggende zijde van die hoek en controleert met de stelling van Pythagoras. Zijn rekenmachine staat op graden.",
+        "v": "Bereken de overstaande en de aanliggende zijde en controleer.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Overstaand: 10 · sin 35° ≈ 5,74 (1p). Aanliggend: 10 · cos 35° ≈ 8,19 (1p). Controle: 5,74² + 8,19² ≈ 100 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een rechthoekige driehoek heeft rechthoekszijden 7 en 24 en schuine zijde 25. Een leerling berekent hoek α tegenover de zijde 7 met de tangens en controleert met de sinus. De rekenmachine staat op graden.",
+        "v": "Bereken hoek α en controleer.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "tan α = 7/24 (1p), dus α ≈ 16,3° (1p). Controle: sin⁻¹(7/25) ≈ 16,3° (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling staat 60 m van een flatgebouw en ziet de top onder een hoek van 28°. Zijn ogen zijn 1,6 m boven de grond. Hij berekent de hoogte van het gebouw met de tangens en rondt af op 0,1 m.",
+        "v": "Bereken de hoogte van het gebouw.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "tan 28° = h/60 (1p), dus h ≈ 31,9 m boven ooghoogte (1p). Totale hoogte 31,9 + 1,6 = 33,5 m (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een spoorbaan heeft een helling van 3,5%. Een leerling berekent de hoek met het horizontale vlak en de hoogtewinst over een horizontale afstand van 2 km. De rekenmachine staat op graden.",
+        "v": "Bereken de hoek en de hoogtewinst over 2 km.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "tan α = 0,035, dus α ≈ 2,0° (1p). Hoogtewinst: 0,035 · 2000 = 70 m (1p). Controle: tan 2,0° ≈ 0,035 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een vlieger hangt aan een touw van 50 m dat een hoek van 55° maakt met de grond. Een leerling berekent hoe hoog de vlieger hangt en hoe ver die horizontaal van hem af is. Hij controleert met Pythagoras.",
+        "v": "Bereken de hoogte en de horizontale afstand en controleer.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hoogte: 50 · sin 55° ≈ 41,0 m (1p). Afstand: 50 · cos 55° ≈ 28,7 m (1p). Controle: 41,0² + 28,7² ≈ 2500 (1p)."
+       }
+      ]
+     }
     ]
    },
    {
