@@ -1,0 +1,682 @@
+{
+ "id": "C2",
+ "lo": "wb.C.2",
+ "gs": 2,
+ "naam": "Stelling van Pythagoras en de afstand tussen twee punten",
+ "beschrijving": "Je gebruikt de stelling van Pythagoras en de omgekeerde stelling, berekent de afstand tussen twee punten in een assenstelsel, werkt met exacte waarden en benaderingen en zoekt onbekende coördinaten bij een gegeven afstand.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Stelling van Pythagoras",
+  "Afstand tussen twee punten",
+  "Exact en benaderd",
+  "Rechte hoek aantonen",
+  "Twee stappen en onbekende coördinaat"
+ ],
+ "sam": "Gebruik a² + b² = c² met c de schuine zijde. De afstand tussen twee punten volgt uit de verschillen in x en y. Schrijf wortels eerst exact op en rond daarna af. Toon een rechte hoek aan met de omgekeerde stelling. Controleer altijd door terug te rekenen.",
+ "begrippen": [
+  {
+   "t": "Stelling van Pythagoras",
+   "d": "In een rechthoekige driehoek geldt a² + b² = c², met c de schuine zijde."
+  },
+  {
+   "t": "Schuine zijde",
+   "d": "De zijde tegenover de rechte hoek; de langste zijde."
+  },
+  {
+   "t": "Afstand tussen twee punten",
+   "d": "√((x₂ − x₁)² + (y₂ − y₁)²)."
+  },
+  {
+   "t": "Verschil in x en y",
+   "d": "De horizontale en verticale afstand tussen twee punten."
+  },
+  {
+   "t": "Exacte waarde",
+   "d": "Een antwoord met een wortel, zoals √52 = 2√13."
+  },
+  {
+   "t": "Benadering",
+   "d": "Een afgeronde waarde, zoals 7,21."
+  },
+  {
+   "t": "Omgekeerde stelling",
+   "d": "Als a² + b² = c² geldt, is de driehoek rechthoekig."
+  },
+  {
+   "t": "Rechte hoek",
+   "d": "Een hoek van 90°, tegenover de langste zijde."
+  },
+  {
+   "t": "Ruimtediagonaal",
+   "d": "De afstand tussen twee hoekpunten van een doos: twee keer Pythagoras."
+  },
+  {
+   "t": "Onbekende coördinaat",
+   "d": "Een x waarvoor de afstand een gegeven waarde heeft: los (x − 1)² = 9 op."
+  },
+  {
+   "t": "Kwadraat nooit negatief",
+   "d": "Daarom mag het teken van een verschil wegvallen."
+  },
+  {
+   "t": "Controleren",
+   "d": "De gevonden punten terugrekenen naar de afstand."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat zegt de stelling van Pythagoras in een rechthoekige driehoek?",
+   "o": [
+    "\"a + b = c\"",
+    "\"a² + b² = c², met c de schuine zijde\"",
+    "\"a² − b² = c², denk ik, zeg maar, gewoon\"",
+    "\"a · b = c²\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a + b = c\"\"? Dan tel je de zijden zonder te kwadrateren. De stelling gaat over kwadraten, dus a² + b² = c². Het goede antwoord is a² + b² = c², met c de schuine zijde.",
+    "Klopt: de kwadraten van de rechthoekszijden samen zijn gelijk aan het kwadraat van de schuine zijde.",
+    "Koos je \"\"a² − b² = c², denk ik, zeg maar, gewoon\"\"? Dan trek je de kwadraten af. De kwadraten van de rechthoekszijden tel je op, dus a² + b² = c².",
+    "Koos je \"\"a · b = c²\"\"? Dan vermenigvuldig je de rechthoekszijden. De kwadraten tel je op, dus a² + b² = c². Controleer je stap: de juiste uitkomst is a² + b² = c², met c de schuine zijde."
+   ],
+   "uh": "Wat zegt de stelling van Pythagoras in een rechthoekige driehoek?"
+  },
+  {
+   "v": "Welke zijde is c in a² + b² = c²?",
+   "o": [
+    "\"de kortste zijde\"",
+    "\"een willekeurige rechthoekszijde\"",
+    "\"de hoogte\"",
+    "\"de schuine zijde\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de kortste zijde\"\"? Dan denk je aan de kleinste zijde. De langste zijde is c, dus de schuine zijde. Het goede antwoord is de schuine zijde.",
+    "Koos je \"\"een willekeurige rechthoekszijde\"\"? Dan denk je dat de naam vrij te kiezen is. c is de schuine zijde, dus de schuine zijde.",
+    "Koos je \"\"de hoogte\"\"? Dan denk je aan de hoogtelijn. Die is geen zijde van de driehoek, dus de schuine zijde. Controleer je stap: de juiste uitkomst is de schuine zijde.",
+    "Klopt: c ligt tegenover de rechte hoek en is de langste zijde."
+   ],
+   "uh": "Welke zijde is c in a² + b² = c²?"
+  },
+  {
+   "v": "Hoe bereken je de afstand tussen A(x₁, y₁) en B(x₂, y₂)?",
+   "o": [
+    "\"√((x₂ − x₁)² + (y₂ − y₁)²)\"",
+    "\"(x₂ − x₁) + (y₂ − y₁)\"",
+    "\"√(x₂² + y₂²)\"",
+    "\"√(x₂ − x₁) + √(y₂ − y₁), zeg maar\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je kwadrateert beide verschillen, telt op en neemt de wortel.",
+    "Koos je \"\"(x₂ − x₁) + (y₂ − y₁)\"\"? Dan tel je de verschillen op zonder wortel en kwadraat. De afstand volgt uit Pythagoras, dus √((x₂ − x₁)² + (y₂ − y₁)²).",
+    "Koos je \"\"√(x₂² + y₂²)\"\"? Dan vergeet je de coördinaten van A. Je gebruikt de verschillen, dus √((x₂ − x₁)² + (y₂ − y₁)²).",
+    "Koos je \"\"√(x₂ − x₁) + √(y₂ − y₁), zeg maar\"\"? Dan neem je de wortels apart. Je telt eerst de kwadraten op, dus de wortel van de som."
+   ],
+   "uh": "Hoe bereken je de afstand tussen A(x₁, y₁) en B(x₂, y₂)?"
+  },
+  {
+   "v": "Wanneer is een driehoek rechthoekig volgens de omgekeerde stelling van Pythagoras?",
+   "o": [
+    "\"als twee zijden even lang zijn\"",
+    "\"als de omtrek een geheel getal is, eigenlijk\"",
+    "\"als voor de zijden geldt a² + b² = c²\"",
+    "\"als a + b = c\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"als twee zijden even lang zijn\"\"? Dan denk je aan een gelijkbenige driehoek. Dat zegt niets over een rechte hoek, dus a² + b² = c².",
+    "Koos je \"\"als de omtrek een geheel getal is, eigenlijk\"\"? Dan let je op de omtrek. Dat zegt niets over een rechte hoek, dus a² + b² = c².",
+    "Klopt: dan ligt de rechte hoek tegenover de langste zijde.",
+    "Koos je \"\"als a + b = c\"\"? Dan tel je de zijden op. Dat kan niet in een driehoek, dus a² + b² = c². Controleer je stap: de juiste uitkomst is als voor de zijden geldt a² + b² = c²."
+   ],
+   "uh": "Wanneer is een driehoek rechthoekig volgens de omgekeerde stelling van Pythagoras?"
+  },
+  {
+   "v": "Hoe schrijf je √52 het kortst exact?",
+   "o": [
+    "\"4√13\"",
+    "\"2√13\"",
+    "\"26\"",
+    "\"2√26\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4√13\"\"? Dan vergeet je de wortel uit 4 te halen. √4 = 2, dus 2√13. Het goede antwoord is 2√13.",
+    "Klopt: √52 = √(4 · 13) = 2√13. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"26\"\"? Dan deel je 52 door 2. Een wortel is geen deling, dus 2√13. Door de stappen goed na te lopen kom je uit op 2√13.",
+    "Koos je \"\"2√26\"\"? Dan deel je alleen door 2 onder de wortel. 52 = 4 · 13, dus 2√13. Controleer je stap: de juiste uitkomst is 2√13."
+   ],
+   "uh": "Hoe schrijf je √52 het kortst exact?"
+  },
+  {
+   "v": "Waarom mag het teken van het verschil wegvallen bij de afstand?",
+   "o": [
+    "\"negatieve verschillen bestaan niet\"",
+    "\"je neemt altijd het grootste getal eerst, denk ik\"",
+    "\"je neemt eerst de wortel\"",
+    "\"een kwadraat is nooit negatief, dus (−6)² = 6²\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"negatieve verschillen bestaan niet\"\"? Dan denk je dat een verschil niet negatief kan zijn. Het teken verdwijnt door het kwadraat, dus (−6)² = 6².",
+    "Koos je \"\"je neemt altijd het grootste getal eerst, denk ik\"\"? Dan denk je dat je moet sorteren. Door het kwadraat maakt de volgorde niet uit, dus (−6)² = 6².",
+    "Koos je \"\"je neemt eerst de wortel\"\"? Dan denk je dat de wortel eerst komt. De kwadraten komen eerst, dus (−6)² = 6². Controleer je stap: de juiste uitkomst is een kwadraat is nooit negatief, dus (−6)² = 6².",
+    "Klopt: daarom maakt de volgorde van de punten niet uit. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waarom mag het teken van het verschil wegvallen bij de afstand?"
+  },
+  {
+   "v": "Hoeveel oplossingen heeft (x − 1)² = 9?",
+   "o": [
+    "\"twee\"",
+    "\"één\"",
+    "\"nul\"",
+    "\"vier\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x − 1 = 3 of x − 1 = −3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"één\"\"? Dan vergeet je de negatieve wortel. Ook x − 1 = −3, dus twee. Het goede antwoord is twee.",
+    "Koos je \"\"nul\"\"? Dan denk je dat een kwadraat niet gelijk aan 9 kan zijn. Het kan, dus twee. Door de stappen goed na te lopen kom je uit op twee.",
+    "Koos je \"\"vier\"\"? Dan telt je twee keer twee. x − 1 = ±3, dus twee. Controleer je stap: de juiste uitkomst is twee."
+   ],
+   "uh": "Hoeveel oplossingen heeft (x − 1)² = 9?"
+  },
+  {
+   "v": "Welke verschillen hebben A en B in x en y?",
+   "o": [
+    "\"8 en 6\"",
+    "\"6 en 12, zeg maar\"",
+    "\"6 en 8\"",
+    "\"3 en 4\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8 en 6\"\"? Dan verwissel je x en y. Het verschil in x is 6, dus 6 en 8. Het goede antwoord is 6 en 8.",
+    "Koos je \"\"6 en 12, zeg maar\"\"? Dan tel je 2 en 10 op. Het verschil is 10 − 2, dus 6 en 8. Door de stappen goed na te lopen kom je uit op 6 en 8.",
+    "Klopt: 7 − 1 = 6 en 10 − 2 = 8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3 en 4\"\"? Dan neem je de helft. Het verschil is 6 en 8, dus 6 en 8. Controleer je stap: de juiste uitkomst is 6 en 8."
+   ],
+   "uh": "Welke verschillen hebben A en B in x en y?",
+   "ctx": "Gegeven zijn de punten A(1, 2) en B(7, 10) in een assenstelsel. Een leerling berekent het horizontale en het verticale verschil en daarna de afstand AB met de stelling van Pythagoras."
+  },
+  {
+   "v": "Hoe groot is de afstand AB?",
+   "o": [
+    "\"14\"",
+    "\"10\"",
+    "\"100\"",
+    "\"48\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"14\"\"? Dan tel je 6 en 8 op. Gebruik Pythagoras, dus 10. Het goede antwoord is 10.",
+    "Klopt: √(6² + 8²) = √100 = 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"100\"\"? Dan vergeet je de wortel. 6² + 8² = 100 en dan √100, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+    "Koos je \"\"48\"\"? Dan vermenigvuldig je 6 en 8. Gebruik de kwadraten, dus 10. Controleer je stap: de juiste uitkomst is 10."
+   ],
+   "uh": "Hoe groot is de afstand AB?",
+   "ctx": "Gegeven zijn de punten A(1, 2) en B(7, 10) in een assenstelsel. Een leerling berekent het horizontale en het verticale verschil en daarna de afstand AB met de stelling van Pythagoras."
+  },
+  {
+   "v": "Hoe controleer je AB = 10?",
+   "o": [
+    "\"6 + 8 = 10\"",
+    "\"6² − 8² = 10², gewoon\"",
+    "\"6 · 8 = 10²\"",
+    "\"6² + 8² = 100 = 10²\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6 + 8 = 10\"\"? Dan tel je zonder te kwadrateren. 6 + 8 = 14, dus 6² + 8² = 10². Het goede antwoord is 6² + 8² = 100 = 10².",
+    "Koos je \"\"6² − 8² = 10², gewoon\"\"? Dan trek je af. Bij Pythagoras tel je op, dus 6² + 8² = 10². Door de stappen goed na te lopen kom je uit op 6² + 8² = 100 = 10².",
+    "Koos je \"\"6 · 8 = 10²\"\"? Dan vermenigvuldig je. 6 · 8 = 48, dus 6² + 8² = 100. Controleer je stap: de juiste uitkomst is 6² + 8² = 100 = 10².",
+    "Klopt: de kwadraten kloppen. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe controleer je AB = 10?",
+   "ctx": "Gegeven zijn de punten A(1, 2) en B(7, 10) in een assenstelsel. Een leerling berekent het horizontale en het verticale verschil en daarna de afstand AB met de stelling van Pythagoras."
+  },
+  {
+   "v": "Welke verschillen hebben P(−2, 1) en Q(4, −3) in x en y, in grootte?",
+   "o": [
+    "\"6 en 4\"",
+    "\"2 en 2, denk ik\"",
+    "\"6 en 2\"",
+    "\"2 en 4\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 4 − (−2) = 6 en 1 − (−3) = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2 en 2, denk ik\"\"? Dan reken je 4 − 2 en −3 + 1. Min min is plus, dus 6 en 4. Het goede antwoord is 6 en 4.",
+    "Koos je \"\"6 en 2\"\"? Dan reken je het verschil in y als −3 + 1. Het is 1 − (−3), dus 4. Door de stappen goed na te lopen kom je uit op 6 en 4.",
+    "Koos je \"\"2 en 4\"\"? Dan reken je het verschil in x als 4 − 2. Het is 4 − (−2), dus 6. Controleer je stap: de juiste uitkomst is 6 en 4."
+   ],
+   "uh": "Welke verschillen hebben P(−2, 1) en Q(4, −3) in x en y, in grootte?",
+   "ctx": "Gegeven zijn P(−2, 1) en Q(4, −3). Een leerling bepaalt de verschillen in x en y, berekent PQ met de stelling van Pythagoras en schrijft het resultaat exact en op twee decimalen op."
+  },
+  {
+   "v": "Geef PQ exact.",
+   "o": [
+    "\"√10\"",
+    "\"√20\"",
+    "\"√52 = 2√13\"",
+    "\"52\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"√10\"\"? Dan tel je 6 en 4 op onder de wortel. Je kwadrateert eerst, dus √52. Het goede antwoord is √52 = 2√13.",
+    "Koos je \"\"√20\"\"? Dan kwadrateer je 4 en 2. De verschillen zijn 6 en 4, dus √52. Door de stappen goed na te lopen kom je uit op √52 = 2√13.",
+    "Klopt: √(6² + 4²) = √52 = 2√13. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"52\"\"? Dan vergeet je de wortel. 6² + 4² = 52 en dan √52, dus √52 = 2√13. Controleer je stap: de juiste uitkomst is √52 = 2√13."
+   ],
+   "uh": "Geef PQ exact.",
+   "ctx": "Gegeven zijn P(−2, 1) en Q(4, −3). Een leerling bepaalt de verschillen in x en y, berekent PQ met de stelling van Pythagoras en schrijft het resultaat exact en op twee decimalen op."
+  },
+  {
+   "v": "Hoe groot is PQ op twee decimalen?",
+   "o": [
+    "\"7,22\"",
+    "\"7,21\"",
+    "\"7,28\"",
+    "\"26,00\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7,22\"\"? Dan rond je verkeerd af. √52 ≈ 7,2111, dus 7,21. Het goede antwoord is 7,21.",
+    "Klopt: √52 ≈ 7,2111. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7,28\"\"? Dan neem je √53. Het is √52, dus 7,21. Door de stappen goed na te lopen kom je uit op 7,21.",
+    "Koos je \"\"26,00\"\"? Dan deel je 52 door 2. Neem de wortel, dus 7,21. Controleer je stap: de juiste uitkomst is 7,21."
+   ],
+   "uh": "Hoe groot is PQ op twee decimalen?",
+   "ctx": "Gegeven zijn P(−2, 1) en Q(4, −3). Een leerling bepaalt de verschillen in x en y, berekent PQ met de stelling van Pythagoras en schrijft het resultaat exact en op twee decimalen op."
+  },
+  {
+   "v": "A en B verschillen 3 in x en 4 in y. Hoe lang is AB?",
+   "o": [
+    "\"7\"",
+    "\"25\"",
+    "\"12\"",
+    "\"5\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7\"\"? Dan tel je 3 en 4 op. Gebruik Pythagoras, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"25\"\"? Dan vergeet je de wortel. 3² + 4² = 25 en dan √25, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Koos je \"\"12\"\"? Dan vermenigvuldig je 3 en 4. Gebruik de kwadraten, dus 5. Controleer je stap: de juiste uitkomst is 5.",
+    "Klopt: √(3² + 4²) = 5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "A en B verschillen 3 in x en 4 in y. Hoe lang is AB?",
+   "ctx": "Gegeven zijn A(1, 1), B(4, 5) en C(8, 2). Een leerling berekent de zijden AB, BC en AC en onderzoekt met de omgekeerde stelling van Pythagoras of de driehoek een rechte hoek heeft."
+  },
+  {
+   "v": "Tussen B en C is het verschil in x gelijk aan 4 en in y gelijk aan −3. Bereken BC.",
+   "o": [
+    "\"5\"",
+    "\"7\"",
+    "\"1\"",
+    "\"25\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: √(4² + (−3)²) = √25 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7\"\"? Dan tel je 4 en 3 op. Gebruik Pythagoras, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"1\"\"? Dan trek je 3 van 4 af. Gebruik de kwadraten, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Koos je \"\"25\"\"? Dan vergeet je de wortel. √25 = 5, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Tussen B en C is het verschil in x gelijk aan 4 en in y gelijk aan −3. Bereken BC.",
+   "ctx": "Gegeven zijn A(1, 1), B(4, 5) en C(8, 2). Een leerling berekent de zijden AB, BC en AC en onderzoekt met de omgekeerde stelling van Pythagoras of de driehoek een rechte hoek heeft."
+  },
+  {
+   "v": "Punt C ligt 7 naar rechts en 1 omhoog ten opzichte van A. Geef AC exact.",
+   "o": [
+    "\"8\"",
+    "\"√8\"",
+    "\"√50 ≈ 7,07\"",
+    "\"50\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8\"\"? Dan tel je 7 en 1 op. Gebruik Pythagoras, dus √50. Het goede antwoord is √50 ≈ 7,07.",
+    "Koos je \"\"√8\"\"? Dan tel je 7 en 1 op onder de wortel. Je kwadrateert eerst, dus √50. Door de stappen goed na te lopen kom je uit op √50 ≈ 7,07.",
+    "Klopt: √(7² + 1²) = √50. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"50\"\"? Dan vergeet je de wortel. 7² + 1² = 50 en dan √50, dus √50 ≈ 7,07. Controleer je stap: de juiste uitkomst is √50 ≈ 7,07."
+   ],
+   "uh": "Punt C ligt 7 naar rechts en 1 omhoog ten opzichte van A. Geef AC exact.",
+   "ctx": "Gegeven zijn A(1, 1), B(4, 5) en C(8, 2). Een leerling berekent de zijden AB, BC en AC en onderzoekt met de omgekeerde stelling van Pythagoras of de driehoek een rechte hoek heeft."
+  },
+  {
+   "v": "Welke conclusie volgt uit AB² + BC² = AC²?",
+   "o": [
+    "\"de driehoek heeft een rechte hoek in A, volgens mij\"",
+    "\"de driehoek heeft een rechte hoek in B\"",
+    "\"de driehoek is gelijkzijdig\"",
+    "\"er volgt niets, het is toeval\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de driehoek heeft een rechte hoek in A, volgens mij\"\"? Dan kies je het verkeerde hoekpunt. De rechte hoek ligt tegenover de langste zijde AC, dus in B.",
+    "Klopt: 25 + 25 = 50 en de rechte hoek ligt tegenover AC.",
+    "Koos je \"\"de driehoek is gelijkzijdig\"\"? Dan denk je dat AB = BC alles gelijk maakt. AC is langer, dus rechte hoek in B.",
+    "Koos je \"\"er volgt niets, het is toeval\"\"? Dan denk je dat de gelijkheid geen betekenis heeft. De omgekeerde stelling geeft een rechte hoek, dus in B."
+   ],
+   "uh": "Welke conclusie volgt uit AB² + BC² = AC²?",
+   "ctx": "Gegeven zijn A(1, 1), B(4, 5) en C(8, 2). Een leerling berekent de zijden AB, BC en AC en onderzoekt met de omgekeerde stelling van Pythagoras of de driehoek een rechte hoek heeft."
+  },
+  {
+   "v": "Welke vergelijking geeft de afstand d tussen de schepen?",
+   "o": [
+    "\"d = 9 + 12\"",
+    "\"d² = 12² − 9², zeg maar\"",
+    "\"d = 9² + 12²\"",
+    "\"d² = 9² + 12²\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"d = 9 + 12\"\"? Dan tel je de afstanden op. De afstand ligt schuin, dus d² = 9² + 12². Het goede antwoord is d² = 9² + 12².",
+    "Koos je \"\"d² = 12² − 9², zeg maar\"\"? Dan trek je de kwadraten af. De afstand d is de schuine zijde, dus d² = 9² + 12². Door de stappen goed na te lopen kom je uit op d² = 9² + 12².",
+    "Koos je \"\"d = 9² + 12²\"\"? Dan vergeet je de wortel of het kwadraat van d. d² = 9² + 12², dus d = √225. Controleer je stap: de juiste uitkomst is d² = 9² + 12².",
+    "Klopt: de schepen en de haven vormen een rechthoekige driehoek."
+   ],
+   "uh": "Welke vergelijking geeft de afstand d tussen de schepen?",
+   "ctx": "Twee schepen vertrekken uit dezelfde haven. Schip A vaart 9 km naar het oosten en schip B vaart 12 km naar het noorden. Een leerling stelt de haven op (0, 0), A op (9, 0) en B op (0, 12) en berekent de afstand d tussen de schepen."
+  },
+  {
+   "v": "Hoe groot is de afstand d?",
+   "o": [
+    "\"15 km\"",
+    "\"21 km\"",
+    "\"225 km, eigenlijk\"",
+    "\"7,9 km\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: √(81 + 144) = √225 = 15. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"21 km\"\"? Dan tel je 9 en 12 op. Gebruik Pythagoras, dus 15 km. Het goede antwoord is 15 km.",
+    "Koos je \"\"225 km, eigenlijk\"\"? Dan vergeet je de wortel. d² = 225, dus 15 km. Door de stappen goed na te lopen kom je uit op 15 km.",
+    "Koos je \"\"7,9 km\"\"? Dan trek je de kwadraten af. Tel ze op, dus 15 km. Controleer je stap: de juiste uitkomst is 15 km."
+   ],
+   "uh": "Hoe groot is de afstand d?",
+   "ctx": "Twee schepen vertrekken uit dezelfde haven. Schip A vaart 9 km naar het oosten en schip B vaart 12 km naar het noorden. Een leerling stelt de haven op (0, 0), A op (9, 0) en B op (0, 12) en berekent de afstand d tussen de schepen."
+  },
+  {
+   "v": "Hoe groot is d als beide schepen twee keer zo ver varen?",
+   "o": [
+    "\"15 km\"",
+    "\"60 km\"",
+    "\"30 km\"",
+    "\"900 km, gewoon\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15 km\"\"? Dan vergeet je te verdubbelen. Beide afstanden worden twee keer zo groot, dus 30 km. Het goede antwoord is 30 km.",
+    "Koos je \"\"60 km\"\"? Dan verdubbel je twee keer. De afstand wordt maar twee keer zo groot, dus 30 km. Door de stappen goed na te lopen kom je uit op 30 km.",
+    "Klopt: √(18² + 24²) = √900 = 30. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"900 km, gewoon\"\"? Dan vergeet je de wortel. d² = 900, dus 30 km. Controleer je stap: de juiste uitkomst is 30 km."
+   ],
+   "uh": "Hoe groot is d als beide schepen twee keer zo ver varen?",
+   "ctx": "Twee schepen vertrekken uit dezelfde haven. Schip A vaart 9 km naar het oosten en schip B vaart 12 km naar het noorden. Een leerling stelt de haven op (0, 0), A op (9, 0) en B op (0, 12) en berekent de afstand d tussen de schepen."
+  },
+  {
+   "v": "Hoe lang is de diagonaal van de bodem?",
+   "o": [
+    "\"7 cm\"",
+    "\"5 cm\"",
+    "\"√7 cm, denk ik\"",
+    "\"25 cm\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7 cm\"\"? Dan tel je 3 en 4 op. Gebruik Pythagoras, dus 5 cm. Het goede antwoord is 5 cm.",
+    "Klopt: √(3² + 4²) = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"√7 cm, denk ik\"\"? Dan neem je de wortel van 3 + 4. Kwadrateer eerst, dus 5 cm. Door de stappen goed na te lopen kom je uit op 5 cm.",
+    "Koos je \"\"25 cm\"\"? Dan vergeet je de wortel. 3² + 4² = 25 en dan √25, dus 5 cm. Controleer je stap: de juiste uitkomst is 5 cm."
+   ],
+   "uh": "Hoe lang is de diagonaal van de bodem?",
+   "ctx": "Een doos is 3 cm lang, 4 cm breed en 12 cm hoog. Een leerling berekent eerst de diagonaal van de bodem en daarna met die diagonaal en de hoogte de afstand tussen twee hoekpunten van de doos, de ruimtediagonaal."
+  },
+  {
+   "v": "Welke vergelijking geeft de ruimtediagonaal e?",
+   "o": [
+    "\"e = 5 + 12\"",
+    "\"e² = 12² − 5², volgens mij\"",
+    "\"e = 5² + 12²\"",
+    "\"e² = 5² + 12²\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"e = 5 + 12\"\"? Dan tel je de lengtes op. De ruimtediagonaal is een schuine zijde, dus e² = 5² + 12². Het goede antwoord is e² = 5² + 12².",
+    "Koos je \"\"e² = 12² − 5², volgens mij\"\"? Dan trek je de kwadraten af. e is de schuine zijde, dus e² = 5² + 12². Door de stappen goed na te lopen kom je uit op e² = 5² + 12².",
+    "Koos je \"\"e = 5² + 12²\"\"? Dan vergeet je dat het e² is. e² = 169, dus e = 13. Controleer je stap: de juiste uitkomst is e² = 5² + 12².",
+    "Klopt: de bodemdiagonaal 5 en de hoogte 12 vormen een rechthoekige driehoek."
+   ],
+   "uh": "Welke vergelijking geeft de ruimtediagonaal e?",
+   "ctx": "Een doos is 3 cm lang, 4 cm breed en 12 cm hoog. Een leerling berekent eerst de diagonaal van de bodem en daarna met die diagonaal en de hoogte de afstand tussen twee hoekpunten van de doos, de ruimtediagonaal."
+  },
+  {
+   "v": "Hoe lang is de ruimtediagonaal?",
+   "o": [
+    "\"13 cm\"",
+    "\"17 cm\"",
+    "\"169 cm\"",
+    "\"√119 cm\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: √(25 + 144) = √169 = 13. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"17 cm\"\"? Dan tel je 5 en 12 op. Gebruik Pythagoras, dus 13 cm. Het goede antwoord is 13 cm.",
+    "Koos je \"\"169 cm\"\"? Dan vergeet je de wortel. e² = 169, dus 13 cm. Door de stappen goed na te lopen kom je uit op 13 cm.",
+    "Koos je \"\"√119 cm\"\"? Dan trek je de kwadraten af. Tel ze op, dus 13 cm. Controleer je stap: de juiste uitkomst is 13 cm."
+   ],
+   "uh": "Hoe lang is de ruimtediagonaal?",
+   "ctx": "Een doos is 3 cm lang, 4 cm breed en 12 cm hoog. Een leerling berekent eerst de diagonaal van de bodem en daarna met die diagonaal en de hoogte de afstand tussen twee hoekpunten van de doos, de ruimtediagonaal."
+  },
+  {
+   "v": "Welke vergelijking krijg je uit (x − 1)² + 4² = 5²?",
+   "o": [
+    "\"(x − 1)² = 21, eigenlijk\"",
+    "\"x − 1 = 9\"",
+    "\"(x − 1)² = 9\"",
+    "\"(x − 1)² = 25\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(x − 1)² = 21, eigenlijk\"\"? Dan tel je 16 bij 5 op. Trek 16 van 25 af, dus (x − 1)² = 9. Het goede antwoord is (x − 1)² = 9.",
+    "Koos je \"\"x − 1 = 9\"\"? Dan vergeet je het kwadraat. (x − 1)² = 9, dus x − 1 = ±3. Door de stappen goed na te lopen kom je uit op (x − 1)² = 9.",
+    "Klopt: 25 − 16 = 9. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(x − 1)² = 25\"\"? Dan laat je 4² weg. Trek 16 van 25 af, dus 9. Controleer je stap: de juiste uitkomst is (x − 1)² = 9."
+   ],
+   "uh": "Welke vergelijking krijg je uit (x − 1)² + 4² = 5²?",
+   "ctx": "Gegeven is A(1, −2). Een leerling zoekt de punten P(x, 2) die op afstand 5 van A liggen. Hij stelt de vergelijking (x − 1)² + 4² = 5² op, lost die op en controleert beide oplossingen."
+  },
+  {
+   "v": "Welke waarden heeft x?",
+   "o": [
+    "\"x = 4 alleen\"",
+    "\"x = 4 of x = −2\"",
+    "\"x = 10 of x = −8, gewoon\"",
+    "\"x = 3 of x = −3\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 4 alleen\"\"? Dan vergeet je de negatieve wortel. Ook x − 1 = −3, dus x = 4 of −2. Het goede antwoord is x = 4 of x = −2.",
+    "Klopt: x − 1 = 3 of x − 1 = −3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 10 of x = −8, gewoon\"\"? Dan neem je x − 1 = ±9. (x − 1)² = 9 geeft x − 1 = ±3, dus 4 of −2. Door de stappen goed na te lopen kom je uit op x = 4 of x = −2.",
+    "Koos je \"\"x = 3 of x = −3\"\"? Dan neem je ±3 als x. Tel nog 1 op, dus 4 of −2. Controleer je stap: de juiste uitkomst is x = 4 of x = −2."
+   ],
+   "uh": "Welke waarden heeft x?",
+   "ctx": "Gegeven is A(1, −2). Een leerling zoekt de punten P(x, 2) die op afstand 5 van A liggen. Hij stelt de vergelijking (x − 1)² + 4² = 5² op, lost die op en controleert beide oplossingen."
+  },
+  {
+   "v": "Hoe controleer je x = 4?",
+   "o": [
+    "\"√(3 + 4) = √7 ≠ 5, denk ik, zeg maar, gewoon\"",
+    "\"3² − 4² = −7\"",
+    "\"(4 − 1)² = 9 = 5\"",
+    "\"afstand van (4, 2) tot (1, −2): √(9 + 16) = 5\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"√(3 + 4) = √7 ≠ 5, denk ik, zeg maar, gewoon\"\"? Dan tel je de verschillen op onder de wortel. Je kwadrateert eerst, dus √(9 + 16) = 5. Het goede antwoord is afstand van (4, 2) tot (1, −2): √(9 + 16) = 5.",
+    "Koos je \"\"3² − 4² = −7\"\"? Dan trek je de kwadraten af. Bij een afstand tel je ze op, dus 9 + 16 = 25. Door de stappen goed na te lopen kom je uit op afstand van (4, 2) tot (1, −2): √(9 + 16) = 5.",
+    "Koos je \"\"(4 − 1)² = 9 = 5\"\"? Dan vergeet je de verticale term. De afstand is √(9 + 16), dus 5. Controleer je stap: de juiste uitkomst is afstand van (4, 2) tot (1, −2): √(9 + 16) = 5.",
+    "Klopt: de afstand is 5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe controleer je x = 4?",
+   "ctx": "Gegeven is A(1, −2). Een leerling zoekt de punten P(x, 2) die op afstand 5 van A liggen. Hij stelt de vergelijking (x − 1)² + 4² = 5² op, lost die op en controleert beide oplossingen."
+  },
+  {
+   "v": "Hoeveel punten P(x, 2) liggen op afstand 5 van A?",
+   "o": [
+    "\"twee\"",
+    "\"één\"",
+    "\"oneindig veel\"",
+    "\"geen\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de verschillen in x en y, gebruik de stelling van Pythagoras en controleer door terug te rekenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x = 4 en x = −2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"één\"\"? Dan vergeet je de tweede oplossing. Er zijn er twee, dus twee. Het goede antwoord is twee.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat een afstand veel punten geeft. Bij y = 2 zijn er twee, dus twee. Door de stappen goed na te lopen kom je uit op twee.",
+    "Koos je \"\"geen\"\"? Dan denk je dat er geen punt is. x = 4 voldoet, dus twee. Controleer je stap: de juiste uitkomst is twee."
+   ],
+   "uh": "Hoeveel punten P(x, 2) liggen op afstand 5 van A?",
+   "ctx": "Gegeven is A(1, −2). Een leerling zoekt de punten P(x, 2) die op afstand 5 van A liggen. Hij stelt de vergelijking (x − 1)² + 4² = 5² op, lost die op en controleert beide oplossingen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven zijn A(2, −1) en B(10, 5) in een assenstelsel. Een leerling bepaalt de verschillen in x en y, berekent de afstand AB met de stelling van Pythagoras en controleert door de kwadraten terug te rekenen.",
+   "v": "Bereken de afstand AB en controleer.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Δx = 8 en Δy = 6 (1p). AB = √(64 + 36) = √100 = 10 (1p). Controle: 8² + 6² = 100 = 10² (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven zijn A(−3, 2) en B(1, 6). Een leerling berekent de afstand AB exact en op twee decimalen en controleert zijn antwoord door de verschillen in x en y te kwadrateren.",
+   "v": "Bereken AB exact en op twee decimalen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Δx = 4 en Δy = 4, dus AB = √(16 + 16) (1p). √32 = √(16 · 2) = 4√2 (1p). Op twee decimalen is AB ≈ 5,66 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven zijn P(0, 0), Q(6, 0) en R(3, 4). Een leerling berekent de zijden PQ, QR en PR, bepaalt de omtrek en onderzoekt met de omgekeerde stelling van Pythagoras of de driehoek een rechte hoek heeft.",
+   "v": "Bereken de zijden, de omtrek en onderzoek of er een rechte hoek is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "PQ = 6 en PR = QR = √(9 + 16) = 5 (1p). Omtrek 16 (1p). 5² + 5² = 50 ≠ 36, dus geen rechte hoek (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een doos is 6 cm lang, 8 cm breed en 24 cm hoog. Een leerling berekent eerst de diagonaal van de bodem en daarna de ruimtediagonaal en controleert met de kwadraten.",
+   "v": "Bereken de diagonaal van de bodem en de ruimtediagonaal.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bodemdiagonaal √(36 + 64) = 10 cm (1p). Ruimtediagonaal √(100 + 576) = √676 (1p) = 26 cm; controle 6² + 8² + 24² = 676 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is A(0, 5). Een leerling zoekt de punten P(x, 0) op de x-as die op afstand 13 van A liggen. Hij stelt een vergelijking op, lost die op en controleert beide oplossingen.",
+   "v": "Bepaal de x-coördinaten van de punten P.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "x² + 5² = 13² geeft x² = 144 (1p). x = 12 of x = −12 (1p). Controle: √(144 + 25) = 13 (1p)."
+  }
+ ]
+}

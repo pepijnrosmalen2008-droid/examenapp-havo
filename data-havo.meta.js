@@ -5665,6 +5665,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C2",
+      "lo": "wb.C.2",
+      "gs": 2,
+      "naam": "Stelling van Pythagoras en de afstand tussen twee punten",
+      "beschrijving": "Je gebruikt de stelling van Pythagoras en de omgekeerde stelling, berekent de afstand tussen twee punten in een assenstelsel, werkt met exacte waarden en benaderingen en zoekt onbekende coördinaten bij een gegeven afstand.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Stelling van Pythagoras",
+       "Afstand tussen twee punten",
+       "Exact en benaderd",
+       "Rechte hoek aantonen",
+       "Twee stappen en onbekende coördinaat"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
