@@ -5686,6 +5686,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C3",
+      "lo": "wb.C.3",
+      "gs": 2,
+      "naam": "De sinusregel en de cosinusregel in een willekeurige driehoek",
+      "beschrijving": "Je kiest en gebruikt de sinusregel en de cosinusregel in een willekeurige driehoek om zijden en hoeken te berekenen, past de hoekensom toe en controleert je antwoord.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Regel kiezen",
+       "Sinusregel voor een zijde",
+       "Sinusregel voor een hoek",
+       "Cosinusregel voor een zijde",
+       "Cosinusregel voor een hoek en controle"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

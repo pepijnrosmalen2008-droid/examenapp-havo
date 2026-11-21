@@ -1,0 +1,682 @@
+{
+ "id": "C3",
+ "lo": "wb.C.3",
+ "gs": 2,
+ "naam": "De sinusregel en de cosinusregel in een willekeurige driehoek",
+ "beschrijving": "Je kiest en gebruikt de sinusregel en de cosinusregel in een willekeurige driehoek om zijden en hoeken te berekenen, past de hoekensom toe en controleert je antwoord.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Regel kiezen",
+  "Sinusregel voor een zijde",
+  "Sinusregel voor een hoek",
+  "Cosinusregel voor een zijde",
+  "Cosinusregel voor een hoek en controle"
+ ],
+ "sam": "Bij twee hoeken en een zijde gebruik je de sinusregel, bij twee zijden met de ingesloten hoek of drie zijden de cosinusregel. Gebruik de hoekensom van 180° en let bij de sinusregel voor een hoek op een tweede mogelijkheid. Controleer: de langste zijde ligt tegenover de grootste hoek.",
+ "begrippen": [
+  {
+   "t": "Sinusregel",
+   "d": "a / sin α = b / sin β = c / sin γ."
+  },
+  {
+   "t": "Cosinusregel",
+   "d": "c² = a² + b² − 2ab·cos γ."
+  },
+  {
+   "t": "Overstaande hoek",
+   "d": "De hoek tegenover een zijde; α hoort bij a."
+  },
+  {
+   "t": "Ingesloten hoek",
+   "d": "De hoek tussen twee gegeven zijden."
+  },
+  {
+   "t": "Hoekensom",
+   "d": "α + β + γ = 180°."
+  },
+  {
+   "t": "Regel kiezen",
+   "d": "Twee hoeken en een zijde: sinusregel; twee zijden en de ingesloten hoek of drie zijden: cosinusregel."
+  },
+  {
+   "t": "Hoek bepalen",
+   "d": "Gebruik sin⁻¹ of cos⁻¹ en let op de hoekensom."
+  },
+  {
+   "t": "Gelijkbenige driehoek",
+   "d": "Twee gelijke hoeken horen bij twee gelijke zijden."
+  },
+  {
+   "t": "Unieke oplossing",
+   "d": "Bij b < a is er maar één hoek β mogelijk."
+  },
+  {
+   "t": "Pythagoras als bijzonder geval",
+   "d": "Bij γ = 90° wordt de cosinusregel c² = a² + b²."
+  },
+  {
+   "t": "Rekenmachine in graden",
+   "d": "De stand DEG gebruik je voor hoeken in graden."
+  },
+  {
+   "t": "Controleren",
+   "d": "De hoeken tellen op tot 180° en de zijden passen bij de regel."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke formule is de sinusregel?",
+   "o": [
+    "\"a · sin α = b · sin β\"",
+    "\"a / sin α = b / sin β\"",
+    "\"a / cos α = b / cos β\"",
+    "\"a² = b² + c² − 2bc sin α\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a · sin α = b · sin β\"\"? Dan vermenigvuldig je in plaats van te delen. De regel gaat over verhoudingen, dus a / sin α = b / sin β.",
+    "Klopt: elke zijde gedeeld door de sinus van de overstaande hoek is gelijk.",
+    "Koos je \"\"a / cos α = b / cos β\"\"? Dan gebruik je de cosinus. De sinusregel gebruikt de sinus, dus a / sin α = b / sin β.",
+    "Koos je \"\"a² = b² + c² − 2bc sin α\"\"? Dan gebruik je een mengvorm. Dat is geen regel; de cosinusregel heeft een cosinus, dus a / sin α = b / sin β."
+   ],
+   "uh": "Welke formule is de sinusregel?"
+  },
+  {
+   "v": "Welke formule is de cosinusregel voor zijde c?",
+   "o": [
+    "\"c² = a² + b² + 2ab cos γ, volgens mij\"",
+    "\"c² = a² + b² − 2ab sin γ\"",
+    "\"c = a + b − 2ab cos γ\"",
+    "\"c² = a² + b² − 2ab cos γ\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"c² = a² + b² + 2ab cos γ, volgens mij\"\"? Dan gebruik je een plus. In de regel staat een min, dus c² = a² + b² − 2ab cos γ. Het goede antwoord is c² = a² + b² − 2ab cos γ.",
+    "Koos je \"\"c² = a² + b² − 2ab sin γ\"\"? Dan gebruik je de sinus. De cosinusregel heeft een cosinus, dus c² = a² + b² − 2ab cos γ.",
+    "Koos je \"\"c = a + b − 2ab cos γ\"\"? Dan vergeet je de kwadraten. De regel geeft c², dus c² = a² + b² − 2ab cos γ. Controleer je stap: de juiste uitkomst is c² = a² + b² − 2ab cos γ.",
+    "Klopt: bij γ = 90° wordt cos γ = 0 en krijg je Pythagoras."
+   ],
+   "uh": "Welke formule is de cosinusregel voor zijde c?"
+  },
+  {
+   "v": "Welke regel gebruik je bij twee zijden en de ingesloten hoek?",
+   "o": [
+    "\"cosinusregel\"",
+    "\"sinusregel\"",
+    "\"alleen Pythagoras\"",
+    "\"tangens\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dan ontbreekt een overstaand paar voor de sinusregel.",
+    "Koos je \"\"sinusregel\"\"? Dan gebruik je de sinusregel. Je kent geen zijde met de overstaande hoek, dus cosinusregel. Het goede antwoord is cosinusregel.",
+    "Koos je \"\"alleen Pythagoras\"\"? Dan denk je dat er een rechte hoek is. Dat is niet gegeven, dus cosinusregel. Door de stappen goed na te lopen kom je uit op cosinusregel.",
+    "Koos je \"\"tangens\"\"? Dan gebruik je een verhouding voor rechthoekige driehoeken. Hier niet, dus cosinusregel. Controleer je stap: de juiste uitkomst is cosinusregel."
+   ],
+   "uh": "Welke regel gebruik je bij twee zijden en de ingesloten hoek?"
+  },
+  {
+   "v": "Welke regel gebruik je bij twee hoeken en één zijde?",
+   "o": [
+    "\"cosinusregel\"",
+    "\"Pythagoras\"",
+    "\"sinusregel\"",
+    "\"tangens\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"cosinusregel\"\"? Dan gebruik je de cosinusregel. Die vraagt twee zijden en een hoek, dus sinusregel. Het goede antwoord is sinusregel.",
+    "Koos je \"\"Pythagoras\"\"? Dan denk je dat er een rechte hoek is. Dat is niet gegeven, dus sinusregel. Door de stappen goed na te lopen kom je uit op sinusregel.",
+    "Klopt: je kent een zijde met de overstaande hoek. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"tangens\"\"? Dan gebruik je een verhouding voor rechthoekige driehoeken. Hier niet, dus sinusregel. Controleer je stap: de juiste uitkomst is sinusregel."
+   ],
+   "uh": "Welke regel gebruik je bij twee hoeken en één zijde?"
+  },
+  {
+   "v": "Hoeveel is de som van de hoeken in een driehoek?",
+   "o": [
+    "\"360°\"",
+    "\"180°\"",
+    "\"90°\"",
+    "\"270°\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 4,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"360°\"\"? Dan neem je de hoeken van een vierhoek. Bij een driehoek is het 180°, dus 180°. Het goede antwoord is 180°.",
+    "Klopt: α + β + γ = 180°. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"90°\"\"? Dan neem je een rechte hoek. De som is 180°, dus 180°. Door de stappen goed na te lopen kom je uit op 180°.",
+    "Koos je \"\"270°\"\"? Dan neem je drie rechte hoeken. De som is 180°, dus 180°. Controleer je stap: de juiste uitkomst is 180°."
+   ],
+   "uh": "Hoeveel is de som van de hoeken in een driehoek?"
+  },
+  {
+   "v": "Wat wordt de cosinusregel als γ = 90°?",
+   "o": [
+    "\"de sinusregel\"",
+    "\"c = a + b\"",
+    "\"de regel geldt dan niet, denk ik\"",
+    "\"de stelling van Pythagoras\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de sinusregel\"\"? Dan verwar je de regels. Bij cos 90° = 0 blijft c² = a² + b², dus Pythagoras. Het goede antwoord is de stelling van Pythagoras.",
+    "Koos je \"\"c = a + b\"\"? Dan vergeet je de kwadraten. Het blijft c² = a² + b², dus Pythagoras. Door de stappen goed na te lopen kom je uit op de stelling van Pythagoras.",
+    "Koos je \"\"de regel geldt dan niet, denk ik\"\"? Dan denk je dat de regel alleen voor niet-rechte hoeken geldt. Hij geldt altijd, dus Pythagoras.",
+    "Klopt: cos 90° = 0, dus c² = a² + b². Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat wordt de cosinusregel als γ = 90°?"
+  },
+  {
+   "v": "Welke functie van de rekenmachine bepaalt een hoek uit sin β = 0,54?",
+   "o": [
+    "\"sin⁻¹\"",
+    "\"sin\"",
+    "\"cos⁻¹\"",
+    "\"tan⁻¹\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de inverse sinus geeft de hoek. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"sin\"\"? Dan gebruik je sin op een getal. Je zoekt de hoek, dus sin⁻¹. Het goede antwoord is sin⁻¹.",
+    "Koos je \"\"cos⁻¹\"\"? Dan gebruik je de inverse cosinus. Hier is een sinus gegeven, dus sin⁻¹. Door de stappen goed na te lopen kom je uit op sin⁻¹.",
+    "Koos je \"\"tan⁻¹\"\"? Dan gebruik je de inverse tangens. Hier is een sinus gegeven, dus sin⁻¹. Controleer je stap: de juiste uitkomst is sin⁻¹."
+   ],
+   "uh": "Welke functie van de rekenmachine bepaalt een hoek uit sin β = 0,54?"
+  },
+  {
+   "v": "Hoe groot is γ?",
+   "o": [
+    "\"105°\"",
+    "\"25°\"",
+    "\"75°\"",
+    "\"115°\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"105°\"\"? Dan trek je maar één hoek af. Trek beide af, dus 75°. Het goede antwoord is 75°.",
+    "Koos je \"\"25°\"\"? Dan trek je 65° af van 90°. De som is 180°, dus 75°. Door de stappen goed na te lopen kom je uit op 75°.",
+    "Klopt: 180° − 40° − 65° = 75°. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"115°\"\"? Dan trek je 65° van 180° af en vergeet 40°. Trek beide af, dus 75°. Controleer je stap: de juiste uitkomst is 75°."
+   ],
+   "uh": "Hoe groot is γ?",
+   "ctx": "In driehoek ABC is α = 40°, β = 65° en zijde a = 8 (tegenover α). Een leerling berekent eerst γ en daarna de zijden b en c met de sinusregel. Zijn rekenmachine staat op graden."
+  },
+  {
+   "v": "Welke vergelijking geeft b?",
+   "o": [
+    "\"b / sin 40° = 8 / sin 65°, eigenlijk\"",
+    "\"b / sin 65° = 8 / sin 40°\"",
+    "\"b / sin 75° = 8 / sin 40°\"",
+    "\"b / cos 65° = 8 / cos 40°\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"b / sin 40° = 8 / sin 65°, eigenlijk\"\"? Dan verwisselt je de hoeken. b hoort bij β = 65°, dus b / sin 65° = 8 / sin 40°. Het goede antwoord is b / sin 65° = 8 / sin 40°.",
+    "Klopt: b ligt tegenover β = 65° en a tegenover α = 40°. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"b / sin 75° = 8 / sin 40°\"\"? Dan gebruik je γ. b ligt tegenover β, dus sin 65°. Door de stappen goed na te lopen kom je uit op b / sin 65° = 8 / sin 40°.",
+    "Koos je \"\"b / cos 65° = 8 / cos 40°\"\"? Dan gebruik je de cosinus. De sinusregel gebruikt de sinus, dus sin 65° en sin 40°."
+   ],
+   "uh": "Welke vergelijking geeft b?",
+   "ctx": "In driehoek ABC is α = 40°, β = 65° en zijde a = 8 (tegenover α). Een leerling berekent eerst γ en daarna de zijden b en c met de sinusregel. Zijn rekenmachine staat op graden."
+  },
+  {
+   "v": "Hoe lang is b, afgerond op één decimaal?",
+   "o": [
+    "\"5,7\"",
+    "\"12,0\"",
+    "\"9,8\"",
+    "\"11,3\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5,7\"\"? Dan draai je de breuk om. b = 8 · sin 65° / sin 40°, dus 11,3. Het goede antwoord is 11,3.",
+    "Koos je \"\"12,0\"\"? Dan neem je c. b hoort bij β = 65°, dus 11,3. Door de stappen goed na te lopen kom je uit op 11,3.",
+    "Koos je \"\"9,8\"\"? Dan neem je een afgeronde waarde. Rekenen geeft 11,3, dus 11,3. Controleer je stap: de juiste uitkomst is 11,3.",
+    "Klopt: b = 8 · sin 65° / sin 40° ≈ 11,3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe lang is b, afgerond op één decimaal?",
+   "ctx": "In driehoek ABC is α = 40°, β = 65° en zijde a = 8 (tegenover α). Een leerling berekent eerst γ en daarna de zijden b en c met de sinusregel. Zijn rekenmachine staat op graden."
+  },
+  {
+   "v": "Hoe groot is de hoek bij C?",
+   "o": [
+    "\"57°\"",
+    "\"123°\"",
+    "\"19°\"",
+    "\"52°\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 180° − 52° − 71° = 57°. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"123°\"\"? Dan trek je maar één hoek af. Trek beide af, dus 57°. Het goede antwoord is 57°.",
+    "Koos je \"\"19°\"\"? Dan trek je 71° af van 90°. De som is 180°, dus 57°. Door de stappen goed na te lopen kom je uit op 57°.",
+    "Koos je \"\"52°\"\"? Dan neem je de hoek bij A. De hoek bij C volgt uit 180° − 52° − 71°, dus 57°. Controleer je stap: de juiste uitkomst is 57°."
+   ],
+   "uh": "Hoe groot is de hoek bij C?",
+   "ctx": "Punten A en B liggen 120 m uit elkaar. Vanuit A en B kijkt iemand naar punt C aan de overkant van een rivier. De hoek bij A is 52° en de hoek bij B is 71°. Een leerling berekent eerst de hoek bij C en daarna AC en BC."
+  },
+  {
+   "v": "Bereken AC, de zijde die tegenover de hoek bij B ligt.",
+   "o": [
+    "\"112,7 m, to be honest\"",
+    "\"120,0 m\"",
+    "\"135,3 m\"",
+    "\"100,0 m\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"112,7 m, to be honest\"\"? Dan neem je BC. AC ligt tegenover de hoek bij B, dus 135,3 m. Het goede antwoord is 135,3 m.",
+    "Koos je \"\"120,0 m\"\"? Dan neem je AB. AC is een andere zijde, dus 135,3 m. Door de stappen goed na te lopen kom je uit op 135,3 m.",
+    "Klopt: AC = 120 · sin 71° / sin 57° ≈ 135,3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"100,0 m\"\"? Dan draai je de sinussen om. AC = 120 · sin 71° / sin 57°, dus 135,3 m. Controleer je stap: de juiste uitkomst is 135,3 m."
+   ],
+   "uh": "Bereken AC, de zijde die tegenover de hoek bij B ligt.",
+   "ctx": "Punten A en B liggen 120 m uit elkaar. Vanuit A en B kijkt iemand naar punt C aan de overkant van een rivier. De hoek bij A is 52° en de hoek bij B is 71°. Een leerling berekent eerst de hoek bij C en daarna AC en BC."
+  },
+  {
+   "v": "Geef de lengte van de derde zijde BC.",
+   "o": [
+    "\"135,3 m, I suppose\"",
+    "\"112,7 m\"",
+    "\"120,0 m\"",
+    "\"95,0 m\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"135,3 m, I suppose\"\"? Dan neem je AC. BC ligt tegenover de hoek bij A, dus 112,7 m. Het goede antwoord is 112,7 m.",
+    "Klopt: BC = 120 · sin 52° / sin 57° ≈ 112,7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"120,0 m\"\"? Dan neem je AB. BC is een andere zijde, dus 112,7 m. Door de stappen goed na te lopen kom je uit op 112,7 m.",
+    "Koos je \"\"95,0 m\"\"? Dan gebruik je een verkeerde hoek. BC = 120 · sin 52° / sin 57°, dus 112,7 m. Controleer je stap: de juiste uitkomst is 112,7 m."
+   ],
+   "uh": "Geef de lengte van de derde zijde BC.",
+   "ctx": "Punten A en B liggen 120 m uit elkaar. Vanuit A en B kijkt iemand naar punt C aan de overkant van een rivier. De hoek bij A is 52° en de hoek bij B is 71°. Een leerling berekent eerst de hoek bij C en daarna AC en BC."
+  },
+  {
+   "v": "Welke vergelijking geeft de afstand c?",
+   "o": [
+    "\"c² = 7² + 9² + 2·7·9·cos 60°, eigenlijk\"",
+    "\"c² = 7² + 9² − 2·7·9·sin 60°\"",
+    "\"c² = 7² + 9²\"",
+    "\"c² = 7² + 9² − 2·7·9·cos 60°\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"c² = 7² + 9² + 2·7·9·cos 60°, eigenlijk\"\"? Dan gebruik je een plus. In de regel staat een min, dus c² = 7² + 9² − 2·7·9·cos 60°.",
+    "Koos je \"\"c² = 7² + 9² − 2·7·9·sin 60°\"\"? Dan gebruik je de sinus. De cosinusregel heeft een cosinus, dus cos 60°. Door de stappen goed na te lopen kom je uit op c² = 7² + 9² − 2·7·9·cos 60°.",
+    "Koos je \"\"c² = 7² + 9²\"\"? Dan laat je de term met de hoek weg. Dat mag alleen bij 90°, dus ook − 2·7·9·cos 60°. Controleer je stap: de juiste uitkomst is c² = 7² + 9² − 2·7·9·cos 60°.",
+    "Klopt: de hoek 60° ligt tegenover de gezochte zijde. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke vergelijking geeft de afstand c?",
+   "ctx": "Twee wegen vertrekken vanuit een kruispunt met een hoek van 60° ertussen. Een auto rijdt 7 km over de ene weg en een tweede auto 9 km over de andere weg. Een leerling berekent de afstand tussen de auto's met de cosinusregel."
+  },
+  {
+   "v": "Hoeveel is 2·7·9·cos 60°?",
+   "o": [
+    "\"63\"",
+    "\"126\"",
+    "\"31,5\"",
+    "\"109,1\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 126 · 0,5 = 63. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"126\"\"? Dan vergeet je cos 60° = 0,5. 126 · 0,5 = 63, dus 63. Het goede antwoord is 63.",
+    "Koos je \"\"31,5\"\"? Dan vermenigvuldig je nog eens met 0,5. 2·7·9 = 126, dus 63. Door de stappen goed na te lopen kom je uit op 63.",
+    "Koos je \"\"109,1\"\"? Dan gebruik je sin 60°. Hier is cos 60° = 0,5, dus 63. Controleer je stap: de juiste uitkomst is 63."
+   ],
+   "uh": "Hoeveel is 2·7·9·cos 60°?",
+   "ctx": "Twee wegen vertrekken vanuit een kruispunt met een hoek van 60° ertussen. Een auto rijdt 7 km over de ene weg en een tweede auto 9 km over de andere weg. Een leerling berekent de afstand tussen de auto's met de cosinusregel."
+  },
+  {
+   "v": "Hoe groot is c, afgerond op één decimaal?",
+   "o": [
+    "\"11,4 km, denk ik\"",
+    "\"13,9 km\"",
+    "\"8,2 km\"",
+    "\"7,0 km\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"11,4 km, denk ik\"\"? Dan vergeet je de term met cos. c² = 130 − 63 = 67, dus 8,2 km. Het goede antwoord is 8,2 km.",
+    "Koos je \"\"13,9 km\"\"? Dan tel je 63 op in plaats van af te trekken. c² = 130 − 63, dus 8,2 km. Door de stappen goed na te lopen kom je uit op 8,2 km.",
+    "Klopt: c² = 130 − 63 = 67 en c ≈ 8,2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7,0 km\"\"? Dan neem je één zijde. Reken c² = 67, dus 8,2 km. Controleer je stap: de juiste uitkomst is 8,2 km."
+   ],
+   "uh": "Hoe groot is c, afgerond op één decimaal?",
+   "ctx": "Twee wegen vertrekken vanuit een kruispunt met een hoek van 60° ertussen. Een auto rijdt 7 km over de ene weg en een tweede auto 9 km over de andere weg. Een leerling berekent de afstand tussen de auto's met de cosinusregel."
+  },
+  {
+   "v": "Welke regel is dit, en waarom?",
+   "o": [
+    "\"sinusregel: twee zijden en een hoek, volgens mij, eigenlijk\"",
+    "\"cosinusregel: twee zijden en de ingesloten hoek\"",
+    "\"Pythagoras: er is een rechte hoek\"",
+    "\"tangens: een hoek is bekend\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"sinusregel: twee zijden en een hoek, volgens mij, eigenlijk\"\"? Dan denk je dat elk paar kan. Bij de sinusregel hoort de hoek bij een van de zijden, dus cosinusregel.",
+    "Klopt: je kent 7, 9 en de hoek ertussen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"Pythagoras: er is een rechte hoek\"\"? Dan denk je dat de driehoek rechthoekig is. De hoek is 60°, dus cosinusregel.",
+    "Koos je \"\"tangens: een hoek is bekend\"\"? Dan gebruik je een verhouding voor rechthoekige driehoeken. Hier niet, dus cosinusregel."
+   ],
+   "uh": "Welke regel is dit, en waarom?",
+   "ctx": "Twee wegen vertrekken vanuit een kruispunt met een hoek van 60° ertussen. Een auto rijdt 7 km over de ene weg en een tweede auto 9 km over de andere weg. Een leerling berekent de afstand tussen de auto's met de cosinusregel."
+  },
+  {
+   "v": "Welke vergelijking geeft cos γ?",
+   "o": [
+    "\"7² = 5² + 6² + 2·5·6·cos γ, zeg maar\"",
+    "\"5² = 6² + 7² − 2·6·7·cos γ\"",
+    "\"7 = 5 + 6 − 2·5·6·cos γ\"",
+    "\"7² = 5² + 6² − 2·5·6·cos γ\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7² = 5² + 6² + 2·5·6·cos γ, zeg maar\"\"? Dan gebruik je een plus. In de regel staat een min, dus 7² = 5² + 6² − 2·5·6·cos γ.",
+    "Koos je \"\"5² = 6² + 7² − 2·6·7·cos γ\"\"? Dan kies je de zijde 5. γ ligt tegenover 7, dus 7² = ... Door de stappen goed na te lopen kom je uit op 7² = 5² + 6² − 2·5·6·cos γ.",
+    "Koos je \"\"7 = 5 + 6 − 2·5·6·cos γ\"\"? Dan vergeet je de kwadraten. De regel gebruikt c², dus 7² = ... Controleer je stap: de juiste uitkomst is 7² = 5² + 6² − 2·5·6·cos γ.",
+    "Klopt: γ ligt tegenover de zijde 7. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke vergelijking geeft cos γ?",
+   "ctx": "In een driehoek zijn de zijden 5, 6 en 7 gegeven. Een leerling berekent de hoek γ tegenover de zijde 7 met de cosinusregel en daarna de andere hoeken. Hij controleert dat de hoeken samen 180° zijn."
+  },
+  {
+   "v": "Hoe groot is cos γ?",
+   "o": [
+    "\"0,2\"",
+    "\"−0,2\"",
+    "\"5\"",
+    "\"0,6\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 49 = 61 − 60·cos γ geeft cos γ = 12/60. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−0,2\"\"? Dan maak je een tekenfout. 61 − 49 = 12 is positief, dus 0,2. Het goede antwoord is 0,2.",
+    "Koos je \"\"5\"\"? Dan draai je de breuk om. cos γ = 12/60, dus 0,2. Door de stappen goed na te lopen kom je uit op 0,2.",
+    "Koos je \"\"0,6\"\"? Dan deel je door 20. cos γ = 12/60, dus 0,2. Controleer je stap: de juiste uitkomst is 0,2."
+   ],
+   "uh": "Hoe groot is cos γ?",
+   "ctx": "In een driehoek zijn de zijden 5, 6 en 7 gegeven. Een leerling berekent de hoek γ tegenover de zijde 7 met de cosinusregel en daarna de andere hoeken. Hij controleert dat de hoeken samen 180° zijn."
+  },
+  {
+   "v": "Hoe groot is γ, afgerond op één decimaal?",
+   "o": [
+    "\"11,5°\"",
+    "\"101,5°\"",
+    "\"78,5°\"",
+    "\"0,2°\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"11,5°\"\"? Dan neem je 90° − 78,5°. Gebruik cos⁻¹(0,2), dus 78,5°. Het goede antwoord is 78,5°.",
+    "Koos je \"\"101,5°\"\"? Dan neem je 180° − 78,5°. Gebruik cos⁻¹(0,2), dus 78,5°. Door de stappen goed na te lopen kom je uit op 78,5°.",
+    "Klopt: cos⁻¹(0,2) ≈ 78,5°. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,2°\"\"? Dan neem je de cosinuswaarde als hoek. Gebruik cos⁻¹, dus 78,5°. Controleer je stap: de juiste uitkomst is 78,5°."
+   ],
+   "uh": "Hoe groot is γ, afgerond op één decimaal?",
+   "ctx": "In een driehoek zijn de zijden 5, 6 en 7 gegeven. Een leerling berekent de hoek γ tegenover de zijde 7 met de cosinusregel en daarna de andere hoeken. Hij controleert dat de hoeken samen 180° zijn."
+  },
+  {
+   "v": "Welke vergelijking geeft sin β?",
+   "o": [
+    "\"sin β = 10·sin 50° / 7\"",
+    "\"sin β = 7·sin 50° / 10\"",
+    "\"sin β = 7 / 10\"",
+    "\"sin β = 10 / (7·sin 50°)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"sin β = 10·sin 50° / 7\"\"? Dan verwisselt je a en b. b = 7 hoort bij β, dus 7·sin 50° / 10. Het goede antwoord is sin β = 7·sin 50° / 10.",
+    "Klopt: b / sin β = a / sin α. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"sin β = 7 / 10\"\"? Dan laat je sin 50° weg. De sinusregel gebruikt beide sinussen, dus 7·sin 50° / 10. Door de stappen goed na te lopen kom je uit op sin β = 7·sin 50° / 10.",
+    "Koos je \"\"sin β = 10 / (7·sin 50°)\"\"? Dan draai je de breuk om. sin β = b·sin α / a, dus 7·sin 50° / 10. Controleer je stap: de juiste uitkomst is sin β = 7·sin 50° / 10."
+   ],
+   "uh": "Welke vergelijking geeft sin β?",
+   "ctx": "In driehoek ABC is a = 10, b = 7 en α = 50°. Een leerling berekent β met de sinusregel, daarna γ en tot slot c. Hij let erop dat b < a, zodat er maar één hoek β mogelijk is."
+  },
+  {
+   "v": "Hoe groot is β, afgerond op één decimaal?",
+   "o": [
+    "\"147,6°\"",
+    "\"50,0°\"",
+    "\"0,5°\"",
+    "\"32,4°\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"147,6°\"\"? Dan neem je de andere hoek met dezelfde sinus. Die past niet bij α = 50°, dus 32,4°. Het goede antwoord is 32,4°.",
+    "Koos je \"\"50,0°\"\"? Dan neem je α. β is een andere hoek, dus 32,4°. Door de stappen goed na te lopen kom je uit op 32,4°.",
+    "Koos je \"\"0,5°\"\"? Dan neem je de sinuswaarde als hoek. Gebruik sin⁻¹, dus 32,4°. Controleer je stap: de juiste uitkomst is 32,4°.",
+    "Klopt: sin β ≈ 0,536 geeft β ≈ 32,4°. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe groot is β, afgerond op één decimaal?",
+   "ctx": "In driehoek ABC is a = 10, b = 7 en α = 50°. Een leerling berekent β met de sinusregel, daarna γ en tot slot c. Hij let erop dat b < a, zodat er maar één hoek β mogelijk is."
+  },
+  {
+   "v": "Waarom is er maar één oplossing voor β?",
+   "o": [
+    "\"147,6° + 50° is meer dan 180°\"",
+    "\"de sinus geeft altijd één hoek, zeg maar\"",
+    "\"γ is een rechte hoek\"",
+    "\"β is gelijk aan α\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de tweede hoek met dezelfde sinus past niet in de driehoek.",
+    "Koos je \"\"de sinus geeft altijd één hoek, zeg maar\"\"? Dan denk je dat de sinus geen tweede hoek heeft. sin 32,4° = sin 147,6°, dus 147,6° valt af.",
+    "Koos je \"\"γ is een rechte hoek\"\"? Dan denk je dat γ 90° is. γ = 97,6°, dus 147,6° valt af. Door de stappen goed na te lopen kom je uit op 147,6° + 50° is meer dan 180°.",
+    "Koos je \"\"β is gelijk aan α\"\"? Dan denk je dat β = α. β = 32,4°, dus 147,6° valt af. Controleer je stap: de juiste uitkomst is 147,6° + 50° is meer dan 180°."
+   ],
+   "uh": "Waarom is er maar één oplossing voor β?",
+   "ctx": "In driehoek ABC is a = 10, b = 7 en α = 50°. Een leerling berekent β met de sinusregel, daarna γ en tot slot c. Hij let erop dat b < a, zodat er maar één hoek β mogelijk is."
+  },
+  {
+   "v": "Hoe groot is de hoek bij C?",
+   "o": [
+    "\"130°\"",
+    "\"30°\"",
+    "\"50°\"",
+    "\"80°\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"130°\"\"? Dan trek je maar één hoek af. Trek beide af, dus 50°. Het goede antwoord is 50°.",
+    "Koos je \"\"30°\"\"? Dan trek je 50° af van 80°. De som is 180°, dus 50°. Door de stappen goed na te lopen kom je uit op 50°.",
+    "Klopt: 180° − 80° − 50° = 50°. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"80°\"\"? Dan neem je de hoek bij A. De hoek bij C volgt uit 180° − 80° − 50°, dus 50°. Controleer je stap: de juiste uitkomst is 50°."
+   ],
+   "uh": "Hoe groot is de hoek bij C?",
+   "ctx": "Boten A en B liggen 150 m uit elkaar. Een leerling ziet vanuit A een vuurtoren C onder een hoek van 80° met AB en vanuit B onder een hoek van 50°. Hij berekent de hoek bij C en daarna AC en BC met de sinusregel."
+  },
+  {
+   "v": "Wat betekent γ = β = 50° voor de driehoek?",
+   "o": [
+    "\"BC = AB = 150 m\"",
+    "\"AC = AB = 150 m: gelijkbenig\"",
+    "\"alle zijden zijn gelijk\"",
+    "\"de driehoek is rechthoekig, gewoon\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"BC = AB = 150 m\"\"? Dan kies je de verkeerde zijde. AC ligt tegenover β en AB tegenover γ, dus AC = AB. Het goede antwoord is AC = AB = 150 m: gelijkbenig.",
+    "Klopt: twee gelijke hoeken horen bij twee gelijke zijden.",
+    "Koos je \"\"alle zijden zijn gelijk\"\"? Dan denk je dat alles gelijk is. De hoek bij A is 80°, dus alleen AC = AB. Door de stappen goed na te lopen kom je uit op AC = AB = 150 m: gelijkbenig.",
+    "Koos je \"\"de driehoek is rechthoekig, gewoon\"\"? Dan denk je dat een hoek 90° is. De hoeken zijn 80°, 50° en 50°, dus gelijkbenig."
+   ],
+   "uh": "Wat betekent γ = β = 50° voor de driehoek?",
+   "ctx": "Boten A en B liggen 150 m uit elkaar. Een leerling ziet vanuit A een vuurtoren C onder een hoek van 80° met AB en vanuit B onder een hoek van 50°. Hij berekent de hoek bij C en daarna AC en BC met de sinusregel."
+  },
+  {
+   "v": "Hoe lang is BC (tegenover 80°)?",
+   "o": [
+    "\"116,7 m, denk ik\"",
+    "\"150,0 m\"",
+    "\"230,0 m\"",
+    "\"192,8 m\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"116,7 m, denk ik\"\"? Dan draai je de sinussen om. BC = 150 · sin 80° / sin 50°, dus 192,8 m. Het goede antwoord is 192,8 m.",
+    "Koos je \"\"150,0 m\"\"? Dan neem je AB. BC ligt tegenover 80°, dus 192,8 m. Door de stappen goed na te lopen kom je uit op 192,8 m.",
+    "Koos je \"\"230,0 m\"\"? Dan neem je een schatting. Reken 150 · 0,985 / 0,766, dus 192,8 m. Controleer je stap: de juiste uitkomst is 192,8 m.",
+    "Klopt: BC = 150 · sin 80° / sin 50° ≈ 192,8. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe lang is BC (tegenover 80°)?",
+   "ctx": "Boten A en B liggen 150 m uit elkaar. Een leerling ziet vanuit A een vuurtoren C onder een hoek van 80° met AB en vanuit B onder een hoek van 50°. Hij berekent de hoek bij C en daarna AC en BC met de sinusregel."
+  },
+  {
+   "v": "Welke regel is hier het handigst?",
+   "o": [
+    "\"sinusregel\"",
+    "\"cosinusregel\"",
+    "\"Pythagoras\"",
+    "\"tangens\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal eerst welke gegevens bekend zijn, kies de sinusregel of cosinusregel en controleer met de hoekensom van 180°. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: twee hoeken en een zijde zijn gegeven. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"cosinusregel\"\"? Dan gebruik je de cosinusregel. Die vraagt twee zijden, dus sinusregel. Het goede antwoord is sinusregel.",
+    "Koos je \"\"Pythagoras\"\"? Dan denk je aan een rechte hoek. Er is er geen, dus sinusregel. Door de stappen goed na te lopen kom je uit op sinusregel.",
+    "Koos je \"\"tangens\"\"? Dan gebruik je een verhouding voor rechthoekige driehoeken. Hier niet, dus sinusregel. Controleer je stap: de juiste uitkomst is sinusregel."
+   ],
+   "uh": "Welke regel is hier het handigst?",
+   "ctx": "Boten A en B liggen 150 m uit elkaar. Een leerling ziet vanuit A een vuurtoren C onder een hoek van 80° met AB en vanuit B onder een hoek van 50°. Hij berekent de hoek bij C en daarna AC en BC met de sinusregel."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "In driehoek ABC is a = 9, α = 35° en β = 80°. Een leerling berekent γ en de zijden b en c met de sinusregel en controleert met de hoekensom. Zijn rekenmachine staat op graden.",
+   "v": "Bereken γ, b en c.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "γ = 180° − 35° − 80° = 65° (1p). b = 9 · sin 80° / sin 35° ≈ 15,5 (1p). c = 9 · sin 65° / sin 35° ≈ 14,2 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In driehoek ABC is b = 6, c = 10 en α = 40°. Een leerling berekent zijde a met de cosinusregel en rondt af op één decimaal. De rekenmachine staat op graden.",
+   "v": "Bereken zijde a.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "a² = 6² + 10² − 2·6·10·cos 40° (1p) ≈ 136 − 91,9 = 44,1 (1p). a ≈ 6,6 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een driehoek zijn de zijden 8, 9 en 10 gegeven. Een leerling berekent de hoek γ tegenover de zijde 10 met de cosinusregel en rondt af op één decimaal.",
+   "v": "Bereken hoek γ.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "10² = 8² + 9² − 2·8·9·cos γ (1p). cos γ = 45/144 = 0,3125 (1p). γ ≈ 71,8° (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In driehoek ABC is a = 12, b = 9 en α = 70°. Een leerling berekent β met de sinusregel, let erop dat b < a, en berekent daarna γ.",
+   "v": "Bereken β en γ.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "sin β = 9·sin 70° / 12 ≈ 0,705 (1p). β ≈ 44,8° (1p). γ = 180° − 70° − 44,8° ≈ 65,2° (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Punten A en B liggen 200 m uit elkaar. Vanuit A is de hoek met C 35° en vanuit B 75°. Een leerling berekent de hoek bij C en de afstanden AC en BC met de sinusregel.",
+   "v": "Bereken de hoek bij C en de afstanden AC en BC.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hoek bij C is 70° (1p). AC = 200 · sin 75° / sin 70° ≈ 205,6 m (1p). BC = 200 · sin 35° / sin 70° ≈ 122,1 m (1p)."
+  }
+ ]
+}
