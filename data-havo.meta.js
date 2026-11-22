@@ -5770,6 +5770,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C7",
+      "lo": "wb.C.7",
+      "gs": 2,
+      "naam": "Raaklijn aan een cirkel en snijpunten van een lijn en een cirkel",
+      "beschrijving": "Je stelt de raaklijn aan een cirkel op in een gegeven punt, berekent de snijpunten van een lijn en een cirkel, bepaalt het aantal gemeenschappelijke punten met de discriminant en zoekt raaklijnen met een gegeven helling.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Raaklijn loodrecht op de straal",
+       "Raaklijn opstellen",
+       "Snijpunten lijn en cirkel",
+       "Aantal gemeenschappelijke punten",
+       "Raaklijn met gegeven helling en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

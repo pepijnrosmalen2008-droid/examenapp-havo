@@ -1,0 +1,682 @@
+{
+ "id": "C7",
+ "lo": "wb.C.7",
+ "gs": 2,
+ "naam": "Raaklijn aan een cirkel en snijpunten van een lijn en een cirkel",
+ "beschrijving": "Je stelt de raaklijn aan een cirkel op in een gegeven punt, berekent de snijpunten van een lijn en een cirkel, bepaalt het aantal gemeenschappelijke punten met de discriminant en zoekt raaklijnen met een gegeven helling.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Raaklijn loodrecht op de straal",
+  "Raaklijn opstellen",
+  "Snijpunten lijn en cirkel",
+  "Aantal gemeenschappelijke punten",
+  "Raaklijn met gegeven helling en controleren"
+ ],
+ "sam": "Een raaklijn staat loodrecht op de straal naar het raakpunt. Voor de snijpunten vul je de lijn in de cirkelvergelijking in en los je de kwadratische vergelijking op; D bepaalt of er twee, een of geen punten zijn. Een raaklijn met gegeven helling vind je met D = 0. Controleer met de afstand tot het middelpunt.",
+ "begrippen": [
+  {
+   "t": "Raaklijn aan een cirkel",
+   "d": "Een lijn met één gemeenschappelijk punt, loodrecht op de straal naar het raakpunt."
+  },
+  {
+   "t": "Raakpunt",
+   "d": "Het punt waar de raaklijn de cirkel raakt, zoals P(3, 4)."
+  },
+  {
+   "t": "Loodrechte stand",
+   "d": "De rc van de raaklijn is het negatief omgekeerde van de rc van de straal."
+  },
+  {
+   "t": "Snijlijn",
+   "d": "Een lijn die de cirkel in twee punten snijdt."
+  },
+  {
+   "t": "Snijpunten berekenen",
+   "d": "Vul de lijn in de cirkelvergelijking in en los de kwadratische vergelijking op."
+  },
+  {
+   "t": "Discriminant",
+   "d": "D = b² − 4ac bepaalt het aantal oplossingen."
+  },
+  {
+   "t": "Aantal gemeenschappelijke punten",
+   "d": "Twee bij D > 0, één bij D = 0 en geen bij D < 0."
+  },
+  {
+   "t": "Raaklijn met gegeven helling",
+   "d": "Stel y = ax + c op en eis D = 0."
+  },
+  {
+   "t": "Afstand tot het middelpunt",
+   "d": "Bij een raaklijn gelijk aan de straal."
+  },
+  {
+   "t": "Raken aan een as",
+   "d": "Een cirkel raakt de x-as als de y-coördinaat van M gelijk is aan r."
+  },
+  {
+   "t": "Geen snijpunt",
+   "d": "Als de afstand van M tot de lijn groter is dan r."
+  },
+  {
+   "t": "Controleren",
+   "d": "Het punt invullen in cirkel en lijn."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Hoe staat een raaklijn aan een cirkel ten opzichte van de straal naar het raakpunt?",
+   "o": [
+    "\"evenwijdig\"",
+    "\"loodrecht\"",
+    "\"onder 45°\"",
+    "\"samenvallend\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"evenwijdig\"\"? Dan denk je dat de raaklijn in dezelfde richting loopt als de straal. Ze staan loodrecht, dus loodrecht.",
+    "Klopt: de raaklijn staat loodrecht op de straal naar het raakpunt.",
+    "Koos je \"\"onder 45°\"\"? Dan denk je aan een willekeurige hoek. De hoek is altijd 90°, dus loodrecht. Door de stappen goed na te lopen kom je uit op loodrecht.",
+    "Koos je \"\"samenvallend\"\"? Dan denk je dat de raaklijn de straal bedekt. Een raaklijn raakt alleen aan de buitenkant, dus loodrecht."
+   ],
+   "uh": "Hoe staat een raaklijn aan een cirkel ten opzichte van de straal naar het raakpunt?"
+  },
+  {
+   "v": "Hoeveel gemeenschappelijke punten heeft een raaklijn met de cirkel?",
+   "o": [
+    "\"nul\"",
+    "\"twee\"",
+    "\"oneindig veel\"",
+    "\"één\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nul\"\"? Dan denk je dat de raaklijn niets raakt. Het raakpunt is gemeenschappelijk, dus één. Het goede antwoord is één.",
+    "Koos je \"\"twee\"\"? Dan denk je aan een snijlijn. Een raaklijn heeft één punt, dus één. Door de stappen goed na te lopen kom je uit op één.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat de lijn samenvalt met de cirkel. Een rechte lijn kan niet samenvallen met een cirkel, dus één.",
+    "Klopt: een raaklijn raakt de cirkel in één punt. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel gemeenschappelijke punten heeft een raaklijn met de cirkel?"
+  },
+  {
+   "v": "Welke rc heeft de raaklijn als de straal naar het raakpunt rc 4/3 heeft?",
+   "o": [
+    "\"−3/4\"",
+    "\"3/4\"",
+    "\"−4/3\"",
+    "\"4/3\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 4/3 · (−3/4) = −1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3/4\"\"? Dan draai je alleen de breuk om. Ook het teken moet omdraaien, dus −3/4. Het goede antwoord is −3/4.",
+    "Koos je \"\"−4/3\"\"? Dan verander je alleen het teken. Het product moet −1 zijn, dus −3/4. Door de stappen goed na te lopen kom je uit op −3/4.",
+    "Koos je \"\"4/3\"\"? Dan neem je de rc van de straal. De raaklijn staat loodrecht, dus −3/4. Controleer je stap: de juiste uitkomst is −3/4."
+   ],
+   "uh": "Welke rc heeft de raaklijn als de straal naar het raakpunt rc 4/3 heeft?"
+  },
+  {
+   "v": "Hoe vind je de snijpunten van een lijn en een cirkel?",
+   "o": [
+    "\"trek de vergelijkingen af\"",
+    "\"bereken alleen de afstand tot het middelpunt, eigenlijk\"",
+    "\"vul de lijn in de cirkelvergelijking in en los op\"",
+    "\"kwadrateer de lijn\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"trek de vergelijkingen af\"\"? Dan trek je de vergelijkingen van elkaar af. Je moet y vervangen door de lijn, dus invullen.",
+    "Koos je \"\"bereken alleen de afstand tot het middelpunt, eigenlijk\"\"? Dan bereken je een afstand. Voor de snijpunten moet je invullen en oplossen, dus invullen en oplossen.",
+    "Klopt: je krijgt een kwadratische vergelijking in x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"kwadrateer de lijn\"\"? Dan kwadrateer je de lijn. Je vult de lijn in de cirkel in, dus invullen en oplossen. Controleer je stap: de juiste uitkomst is vul de lijn in de cirkelvergelijking in en los op."
+   ],
+   "uh": "Hoe vind je de snijpunten van een lijn en een cirkel?"
+  },
+  {
+   "v": "Een lijn en een cirkel hebben twee gemeenschappelijke punten. Hoe heet zo'n lijn?",
+   "o": [
+    "\"raaklijn\"",
+    "\"snijlijn\"",
+    "\"middellijn\"",
+    "\"loodlijn\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"raaklijn\"\"? Dan denk je dat een lijn met punten een raaklijn is. Een raaklijn heeft één punt, dus snijlijn. Het goede antwoord is snijlijn.",
+    "Klopt: de lijn snijdt de cirkel in twee punten. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"middellijn\"\"? Dan denk je aan een lijn door het middelpunt. Een snijlijn hoeft niet door M te gaan, dus snijlijn.",
+    "Koos je \"\"loodlijn\"\"? Dan denk je aan een lijn loodrecht op iets. Hier gaat het om twee punten, dus snijlijn. Controleer je stap: de juiste uitkomst is snijlijn."
+   ],
+   "uh": "Een lijn en een cirkel hebben twee gemeenschappelijke punten. Hoe heet zo'n lijn?"
+  },
+  {
+   "v": "Na invullen heeft de kwadratische vergelijking D < 0. Wat betekent dat?",
+   "o": [
+    "\"twee snijpunten\"",
+    "\"één raakpunt\"",
+    "\"de lijn gaat door het middelpunt, I think, I suppose, really\"",
+    "\"de lijn en de cirkel hebben geen gemeenschappelijk punt\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"twee snijpunten\"\"? Dan denk je aan D > 0. Bij D < 0 zijn er geen oplossingen, dus geen gemeenschappelijk punt.",
+    "Koos je \"\"één raakpunt\"\"? Dan denk je aan D = 0. Bij D < 0 zijn er geen oplossingen, dus geen gemeenschappelijk punt. Door de stappen goed na te lopen kom je uit op de lijn en de cirkel hebben geen gemeenschappelijk punt.",
+    "Koos je \"\"de lijn gaat door het middelpunt, I think, I suppose, really\"\"? Dan denk je dat de ligging van M telt. D < 0 betekent geen oplossing, dus geen gemeenschappelijk punt.",
+    "Klopt: een negatieve D geeft geen oplossing. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Na invullen heeft de kwadratische vergelijking D < 0. Wat betekent dat?"
+  },
+  {
+   "v": "Hoe groot is de afstand van het middelpunt tot een raaklijn?",
+   "o": [
+    "\"gelijk aan de straal\"",
+    "\"nul\"",
+    "\"de helft van de straal\"",
+    "\"twee keer de straal\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de raaklijn ligt op afstand r van M. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"nul\"\"? Dan denk je dat de raaklijn door het middelpunt gaat. Dan was het een middellijn, dus gelijk aan de straal.",
+    "Koos je \"\"de helft van de straal\"\"? Dan denk je aan het midden. De afstand is r, dus gelijk aan de straal. Door de stappen goed na te lopen kom je uit op gelijk aan de straal.",
+    "Koos je \"\"twee keer de straal\"\"? Dan denk je aan de middellijn. De afstand is r, dus gelijk aan de straal. Controleer je stap: de juiste uitkomst is gelijk aan de straal."
+   ],
+   "uh": "Hoe groot is de afstand van het middelpunt tot een raaklijn?"
+  },
+  {
+   "v": "Welke rc heeft de straal MP met M(3, −2) en P(6, 2)?",
+   "o": [
+    "\"3/4\"",
+    "\"−3/4\"",
+    "\"4/3\"",
+    "\"−4/3\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3/4\"\"? Dan draai je de breuk om. De rc is Δy : Δx, dus 4/3. Het goede antwoord is 4/3.",
+    "Koos je \"\"−3/4\"\"? Dan neem je de rc van de raaklijn. Hier vraag je de straal, dus 4/3. Door de stappen goed na te lopen kom je uit op 4/3.",
+    "Klopt: (2 − (−2)) : (6 − 3) = 4/3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−4/3\"\"? Dan maak je een tekenfout. Δy = 4 en Δx = 3 zijn positief, dus 4/3. Controleer je stap: de juiste uitkomst is 4/3."
+   ],
+   "uh": "Welke rc heeft de straal MP met M(3, −2) en P(6, 2)?",
+   "ctx": "Gegeven is de cirkel (x − 3)² + (y + 2)² = 25 met middelpunt M(3, −2) en het punt P(6, 2) op de cirkel. Een leerling stelt de vergelijking op van de raaklijn in P met behulp van de loodrechte stand van raaklijn en straal."
+  },
+  {
+   "v": "Draai de rc 4/3 van de straal om tot de rc van de raaklijn. Welk getal krijg je?",
+   "o": [
+    "\"4/3\"",
+    "\"−3/4\"",
+    "\"3/4\"",
+    "\"−4/3\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4/3\"\"? Dan neem je de rc van de straal. De raaklijn staat loodrecht, dus −3/4. Het goede antwoord is −3/4.",
+    "Klopt: loodrecht op rc 4/3 geeft −3/4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3/4\"\"? Dan draai je alleen de breuk om. Ook het teken moet omdraaien, dus −3/4. Door de stappen goed na te lopen kom je uit op −3/4.",
+    "Koos je \"\"−4/3\"\"? Dan verander je alleen het teken. Het product moet −1 zijn, dus −3/4. Controleer je stap: de juiste uitkomst is −3/4."
+   ],
+   "uh": "Draai de rc 4/3 van de straal om tot de rc van de raaklijn. Welk getal krijg je?",
+   "ctx": "Gegeven is de cirkel (x − 3)² + (y + 2)² = 25 met middelpunt M(3, −2) en het punt P(6, 2) op de cirkel. Een leerling stelt de vergelijking op van de raaklijn in P met behulp van de loodrechte stand van raaklijn en straal."
+  },
+  {
+   "v": "Schrijf de raaklijn door P(6, 2) met die rc als y = ax + b.",
+   "o": [
+    "\"y = −0,75x + 2\"",
+    "\"y = 0,75x + 6,5\"",
+    "\"y = −0,75x − 6,5, really\"",
+    "\"y = −0,75x + 6,5\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = −0,75x + 2\"\"? Dan neem je de y van P als b. 2 = −4,5 + b, dus b = 6,5. Het goede antwoord is y = −0,75x + 6,5.",
+    "Koos je \"\"y = 0,75x + 6,5\"\"? Dan maak je een tekenfout bij de rc. De rc is −0,75, dus y = −0,75x + 6,5. Door de stappen goed na te lopen kom je uit op y = −0,75x + 6,5.",
+    "Koos je \"\"y = −0,75x − 6,5, really\"\"? Dan maak je een tekenfout bij b. 2 = −4,5 + b, dus b = 6,5. Controleer je stap: de juiste uitkomst is y = −0,75x + 6,5.",
+    "Klopt: 2 = −0,75 · 6 + b geeft b = 6,5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Schrijf de raaklijn door P(6, 2) met die rc als y = ax + b.",
+   "ctx": "Gegeven is de cirkel (x − 3)² + (y + 2)² = 25 met middelpunt M(3, −2) en het punt P(6, 2) op de cirkel. Een leerling stelt de vergelijking op van de raaklijn in P met behulp van de loodrechte stand van raaklijn en straal."
+  },
+  {
+   "v": "Vul P(3, 4) in 3x + 4y in. Welke waarde krijg je?",
+   "o": [
+    "\"25\"",
+    "\"7\"",
+    "\"12\"",
+    "\"49\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 9 + 16 = 25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7\"\"? Dan tel je de coördinaten op. Vul in 3 · 3 + 4 · 4, dus 25. Het goede antwoord is 25.",
+    "Koos je \"\"12\"\"? Dan vermenigvuldig je 3 en 4. Vul in 3x + 4y, dus 25. Door de stappen goed na te lopen kom je uit op 25.",
+    "Koos je \"\"49\"\"? Dan kwadrateer je 3 + 4. Vul in 3 · 3 + 4 · 4, dus 25. Controleer je stap: de juiste uitkomst is 25."
+   ],
+   "uh": "Vul P(3, 4) in 3x + 4y in. Welke waarde krijg je?",
+   "ctx": "Gegeven is de cirkel x² + y² = 25 en het punt P(3, 4) op de cirkel. Een leerling bepaalt de raaklijn in P, schrijft die op als 3x + 4y = 25 en controleert met P en met de afstand van de oorsprong tot de lijn."
+  },
+  {
+   "v": "Hoe controleer je dat 3x + 4y = 25 de cirkel raakt?",
+   "o": [
+    "\"de lijn gaat door (0, 0), volgens mij, eigenlijk\"",
+    "\"de lijn snijdt de x-as\"",
+    "\"de afstand van (0, 0) tot de lijn is 5\"",
+    "\"de rc is 1\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de lijn gaat door (0, 0), volgens mij, eigenlijk\"\"? Dan denk je dat de lijn door het middelpunt gaat. Dan was het geen raaklijn, dus de afstand is 5.",
+    "Koos je \"\"de lijn snijdt de x-as\"\"? Dan let je op de x-as. De controle is de afstand tot M, dus 5. Door de stappen goed na te lopen kom je uit op de afstand van (0, 0) tot de lijn is 5.",
+    "Klopt: 25 : √(9 + 16) = 5 en dat is de straal. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de rc is 1\"\"? Dan neem je een willekeurige rc. De rc is −3/4, dus de afstand is 5. Controleer je stap: de juiste uitkomst is de afstand van (0, 0) tot de lijn is 5."
+   ],
+   "uh": "Hoe controleer je dat 3x + 4y = 25 de cirkel raakt?",
+   "ctx": "Gegeven is de cirkel x² + y² = 25 en het punt P(3, 4) op de cirkel. Een leerling bepaalt de raaklijn in P, schrijft die op als 3x + 4y = 25 en controleert met P en met de afstand van de oorsprong tot de lijn."
+  },
+  {
+   "v": "Waar snijdt de raaklijn 3x + 4y = 25 de x-as?",
+   "o": [
+    "\"(25/4; 0), zeg maar\"",
+    "\"(25/3; 0)\"",
+    "\"(3, 0)\"",
+    "\"(0; 25/4)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(25/4; 0), zeg maar\"\"? Dan deel je door 4. Bij y = 0 blijft 3x = 25, dus x = 25/3. Het goede antwoord is (25/3; 0).",
+    "Klopt: y = 0 geeft 3x = 25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(3, 0)\"\"? Dan neem je de coëfficiënt als x. 3x = 25, dus x = 25/3. Door de stappen goed na te lopen kom je uit op (25/3; 0).",
+    "Koos je \"\"(0; 25/4)\"\"? Dan neem je het snijpunt met de y-as. Voor de x-as is y = 0, dus (25/3; 0). Controleer je stap: de juiste uitkomst is (25/3; 0)."
+   ],
+   "uh": "Waar snijdt de raaklijn 3x + 4y = 25 de x-as?",
+   "ctx": "Gegeven is de cirkel x² + y² = 25 en het punt P(3, 4) op de cirkel. Een leerling bepaalt de raaklijn in P, schrijft die op als 3x + 4y = 25 en controleert met P en met de afstand van de oorsprong tot de lijn."
+  },
+  {
+   "v": "Welke vergelijking krijg je als je y = x + 1 invult in x² + y² = 25?",
+   "o": [
+    "\"x² + x + 1 = 25\"",
+    "\"x² + x² + 1 = 25, eigenlijk\"",
+    "\"x + (x + 1) = 25\"",
+    "\"x² + (x + 1)² = 25\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² + x + 1 = 25\"\"? Dan vergeet je de haakjes en het kwadraat. y² = (x + 1)², dus x² + (x + 1)² = 25. Het goede antwoord is x² + (x + 1)² = 25.",
+    "Koos je \"\"x² + x² + 1 = 25, eigenlijk\"\"? Dan kwadrateer je x en 1 apart. (x + 1)² = x² + 2x + 1, dus x² + (x + 1)² = 25. Door de stappen goed na te lopen kom je uit op x² + (x + 1)² = 25.",
+    "Koos je \"\"x + (x + 1) = 25\"\"? Dan vergeet je de kwadraten. Het is x² + y², dus x² + (x + 1)² = 25. Controleer je stap: de juiste uitkomst is x² + (x + 1)² = 25.",
+    "Klopt: y wordt vervangen door x + 1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke vergelijking krijg je als je y = x + 1 invult in x² + y² = 25?",
+   "ctx": "Een leerling bepaalt de snijpunten van de lijn y = x + 1 met de cirkel x² + y² = 25. Hij vult y in de cirkelvergelijking in, lost de kwadratische vergelijking op en controleert beide punten."
+  },
+  {
+   "v": "Hoe herleid je x² + (x + 1)² = 25?",
+   "o": [
+    "\"x² + x − 12 = 0\"",
+    "\"x² + x − 24 = 0\"",
+    "\"2x² + x − 12 = 0, gewoon\"",
+    "\"x² − x − 12 = 0\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2x² + 2x + 1 = 25 geeft 2x² + 2x − 24 = 0 en delen door 2.",
+    "Koos je \"\"x² + x − 24 = 0\"\"? Dan deel je niet alles door 2. 2x² + 2x − 24 = 0, dus x² + x − 12 = 0. Het goede antwoord is x² + x − 12 = 0.",
+    "Koos je \"\"2x² + x − 12 = 0, gewoon\"\"? Dan vergeet je de dubbele term 2x. (x + 1)² = x² + 2x + 1, dus x² + x − 12 = 0. Door de stappen goed na te lopen kom je uit op x² + x − 12 = 0.",
+    "Koos je \"\"x² − x − 12 = 0\"\"? Dan maak je een tekenfout bij x. De term is + x, dus x² + x − 12 = 0. Controleer je stap: de juiste uitkomst is x² + x − 12 = 0."
+   ],
+   "uh": "Hoe herleid je x² + (x + 1)² = 25?",
+   "ctx": "Een leerling bepaalt de snijpunten van de lijn y = x + 1 met de cirkel x² + y² = 25. Hij vult y in de cirkelvergelijking in, lost de kwadratische vergelijking op en controleert beide punten."
+  },
+  {
+   "v": "Welke x-waarden lost x² + x − 12 = 0 op?",
+   "o": [
+    "\"x = −3 of x = 4\"",
+    "\"x = 3 of x = 4\"",
+    "\"x = 3 of x = −4\"",
+    "\"x = −3 of x = −4, denk ik\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = −3 of x = 4\"\"? Dan neem je de tekens uit de haakjes mee. (x − 3)(x + 4) = 0 geeft x = 3 of −4, dus 3 of −4.",
+    "Koos je \"\"x = 3 of x = 4\"\"? Dan maak je een tekenfout. Product −12 en som 1 geeft 3 en −4, dus 3 of −4. Door de stappen goed na te lopen kom je uit op x = 3 of x = −4.",
+    "Klopt: (x − 3)(x + 4) = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = −3 of x = −4, denk ik\"\"? Dan maak je tekenfouten. Product −12 en som 1 geeft 3 en −4, dus 3 of −4. Controleer je stap: de juiste uitkomst is x = 3 of x = −4."
+   ],
+   "uh": "Welke x-waarden lost x² + x − 12 = 0 op?",
+   "ctx": "Een leerling bepaalt de snijpunten van de lijn y = x + 1 met de cirkel x² + y² = 25. Hij vult y in de cirkelvergelijking in, lost de kwadratische vergelijking op en controleert beide punten."
+  },
+  {
+   "v": "Welke snijpunten heeft de lijn met de cirkel?",
+   "o": [
+    "\"(3, 4) en (4, 3)\"",
+    "\"(3, 4) en (−4, −3)\"",
+    "\"(−3, −4) en (4, 5), volgens mij\"",
+    "\"(3, 4) en (−4, 5)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(3, 4) en (4, 3)\"\"? Dan neem je de verwisselde coördinaten. Bij x = −4 is y = −3, dus (−4, −3). Het goede antwoord is (3, 4) en (−4, −3).",
+    "Klopt: y = x + 1 geeft 4 en −3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(−3, −4) en (4, 5), volgens mij\"\"? Dan maak je een tekenfout. Vul x = −4 en x = 3 in y = x + 1, dus (3, 4) en (−4, −3). Door de stappen goed na te lopen kom je uit op (3, 4) en (−4, −3).",
+    "Koos je \"\"(3, 4) en (−4, 5)\"\"? Dan maak je een tekenfout bij y. −4 + 1 = −3, dus (−4, −3). Controleer je stap: de juiste uitkomst is (3, 4) en (−4, −3)."
+   ],
+   "uh": "Welke snijpunten heeft de lijn met de cirkel?",
+   "ctx": "Een leerling bepaalt de snijpunten van de lijn y = x + 1 met de cirkel x² + y² = 25. Hij vult y in de cirkelvergelijking in, lost de kwadratische vergelijking op en controleert beide punten."
+  },
+  {
+   "v": "Bepaal het aantal gemeenschappelijke punten van y = 5 en de cirkel.",
+   "o": [
+    "\"nul\"",
+    "\"twee\"",
+    "\"oneindig veel\"",
+    "\"één\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nul\"\"? Dan denk je dat y = 5 niets raakt. x² = 0 heeft een oplossing, dus één. Het goede antwoord is één.",
+    "Koos je \"\"twee\"\"? Dan denk je dat x² = 0 twee oplossingen heeft. Alleen x = 0, dus één. Door de stappen goed na te lopen kom je uit op één.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat de lijn samenvalt met een deel van de cirkel. Alleen (0, 5), dus één. Controleer je stap: de juiste uitkomst is één.",
+    "Klopt: x² + 25 = 25 geeft x² = 0, dus x = 0. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bepaal het aantal gemeenschappelijke punten van y = 5 en de cirkel.",
+   "ctx": "Een leerling onderzoekt de ligging van drie lijnen ten opzichte van de cirkel x² + y² = 25: de lijn y = 5, de lijn y = x + 8 en de lijn y = x + 1. Hij vult elke lijn in de vergelijking in en kijkt naar het aantal oplossingen."
+  },
+  {
+   "v": "Geef het aantal punten dat y = x + 8 met de cirkel gemeen heeft.",
+   "o": [
+    "\"nul\"",
+    "\"één\"",
+    "\"twee\"",
+    "\"oneindig veel\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2x² + 16x + 39 = 0 heeft D = 256 − 312 < 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"één\"\"? Dan denk je dat de lijn raakt. D = −56 en dus geen oplossing, dus nul. Het goede antwoord is nul.",
+    "Koos je \"\"twee\"\"? Dan denk je dat elke lijn twee snijpunten heeft. D is negatief, dus nul. Door de stappen goed na te lopen kom je uit op nul.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat de lijn samenvalt met de cirkel. D is negatief, dus nul. Controleer je stap: de juiste uitkomst is nul."
+   ],
+   "uh": "Geef het aantal punten dat y = x + 8 met de cirkel gemeen heeft.",
+   "ctx": "Een leerling onderzoekt de ligging van drie lijnen ten opzichte van de cirkel x² + y² = 25: de lijn y = 5, de lijn y = x + 8 en de lijn y = x + 1. Hij vult elke lijn in de vergelijking in en kijkt naar het aantal oplossingen."
+  },
+  {
+   "v": "Waarom heeft y = x + 8 geen snijpunten met de cirkel?",
+   "o": [
+    "\"de lijn is evenwijdig aan de x-as, gewoon, volgens mij\"",
+    "\"de lijn gaat door het middelpunt\"",
+    "\"de vergelijking 2x² + 16x + 39 = 0 heeft D < 0\"",
+    "\"de straal is te klein\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de lijn is evenwijdig aan de x-as, gewoon, volgens mij\"\"? Dan denk je dat de lijn horizontaal is. De rc is 1, dus D < 0. Het goede antwoord is de vergelijking 2x² + 16x + 39 = 0 heeft D < 0.",
+    "Koos je \"\"de lijn gaat door het middelpunt\"\"? Dan denk je dat de lijn door M gaat. Dan zou ze snijden, dus D < 0. Door de stappen goed na te lopen kom je uit op de vergelijking 2x² + 16x + 39 = 0 heeft D < 0.",
+    "Klopt: er is geen reële x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de straal is te klein\"\"? Dan denk je aan de straal. De lijn ligt op afstand 8 : √2 ≈ 5,7 van M, dus buiten de cirkel."
+   ],
+   "uh": "Waarom heeft y = x + 8 geen snijpunten met de cirkel?",
+   "ctx": "Een leerling onderzoekt de ligging van drie lijnen ten opzichte van de cirkel x² + y² = 25: de lijn y = 5, de lijn y = x + 8 en de lijn y = x + 1. Hij vult elke lijn in de vergelijking in en kijkt naar het aantal oplossingen."
+  },
+  {
+   "v": "Welke vergelijking krijg je na invullen van y = x + c in x² + y² = 25?",
+   "o": [
+    "\"x² + c² = 25\"",
+    "\"2x² + 2cx + c² − 25 = 0\"",
+    "\"2x² + c = 25\"",
+    "\"x² + 2cx = 25, denk ik, zeg maar\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² + c² = 25\"\"? Dan vergeet je de x in de tweede term. (x + c)² = x² + 2cx + c², dus 2x² + 2cx + c² − 25 = 0. Het goede antwoord is 2x² + 2cx + c² − 25 = 0.",
+    "Klopt: x² + (x + c)² = 25 geeft 2x² + 2cx + c² = 25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2x² + c = 25\"\"? Dan vergeet je de dubbele term en het kwadraat van c. Werk (x + c)² uit, dus 2x² + 2cx + c² − 25 = 0.",
+    "Koos je \"\"x² + 2cx = 25, denk ik, zeg maar\"\"? Dan vergeet je de andere x² en c². Werk x² + (x + c)² uit, dus 2x² + 2cx + c² − 25 = 0. Controleer je stap: de juiste uitkomst is 2x² + 2cx + c² − 25 = 0."
+   ],
+   "uh": "Welke vergelijking krijg je na invullen van y = x + c in x² + y² = 25?",
+   "ctx": "Een leerling zoekt de raaklijnen aan x² + y² = 25 met richtingscoëfficiënt 1. Hij schrijft y = x + c, vult dit in de cirkelvergelijking in en eist dat de kwadratische vergelijking precies één oplossing heeft."
+  },
+  {
+   "v": "Welke voorwaarde geldt voor een raaklijn in deze kwadratische vergelijking?",
+   "o": [
+    "\"D > 0, volgens mij\"",
+    "\"D < 0\"",
+    "\"c = 0\"",
+    "\"D = 0\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"D > 0, volgens mij\"\"? Dan kies je twee oplossingen. Dat is een snijlijn, dus D = 0. Het goede antwoord is D = 0.",
+    "Koos je \"\"D < 0\"\"? Dan kies je geen oplossing. Dat is geen gemeenschappelijk punt, dus D = 0. Door de stappen goed na te lopen kom je uit op D = 0.",
+    "Koos je \"\"c = 0\"\"? Dan neem je de lijn door het middelpunt. Dat is geen raaklijn, dus D = 0. Controleer je stap: de juiste uitkomst is D = 0.",
+    "Klopt: precies één oplossing betekent één gemeenschappelijk punt."
+   ],
+   "uh": "Welke voorwaarde geldt voor een raaklijn in deze kwadratische vergelijking?",
+   "ctx": "Een leerling zoekt de raaklijnen aan x² + y² = 25 met richtingscoëfficiënt 1. Hij schrijft y = x + c, vult dit in de cirkelvergelijking in en eist dat de kwadratische vergelijking precies één oplossing heeft."
+  },
+  {
+   "v": "Welke waarden heeft c uit D = 0?",
+   "o": [
+    "\"c = 5√2 of c = −5√2\"",
+    "\"c = 5 of c = −5\"",
+    "\"c = 25 of c = −25, zeg maar\"",
+    "\"c = √5 of c = −√5\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: D = −4c² + 200 = 0 geeft c² = 50. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"c = 5 of c = −5\"\"? Dan neem je √25. c² = 50, dus c = ±5√2. Het goede antwoord is c = 5√2 of c = −5√2.",
+    "Koos je \"\"c = 25 of c = −25, zeg maar\"\"? Dan neem je c² = 625 of 25. c² = 50, dus c = ±5√2. Door de stappen goed na te lopen kom je uit op c = 5√2 of c = −5√2.",
+    "Koos je \"\"c = √5 of c = −√5\"\"? Dan neem je de verkeerde wortel. c² = 50, dus c = ±5√2. Controleer je stap: de juiste uitkomst is c = 5√2 of c = −5√2."
+   ],
+   "uh": "Welke waarden heeft c uit D = 0?",
+   "ctx": "Een leerling zoekt de raaklijnen aan x² + y² = 25 met richtingscoëfficiënt 1. Hij schrijft y = x + c, vult dit in de cirkelvergelijking in en eist dat de kwadratische vergelijking precies één oplossing heeft."
+  },
+  {
+   "v": "Vul y = 0 in: hoeveel punten heeft de x-as met de cirkel?",
+   "o": [
+    "\"nul\"",
+    "\"twee\"",
+    "\"één\"",
+    "\"oneindig veel\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nul\"\"? Dan denk je dat de x-as niet raakt. (x − 4)² = 0 heeft een oplossing, dus één. Het goede antwoord is één.",
+    "Koos je \"\"twee\"\"? Dan denk je dat de x-as snijdt. Alleen x = 4, dus één. Door de stappen goed na te lopen kom je uit op één.",
+    "Klopt: y = 0 geeft (x − 4)² = 0, dus x = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat de as samenvalt met de cirkel. Alleen (4, 0), dus één. Controleer je stap: de juiste uitkomst is één."
+   ],
+   "uh": "Vul y = 0 in: hoeveel punten heeft de x-as met de cirkel?",
+   "ctx": "Een cirkel heeft vergelijking (x − 4)² + (y − 3)² = 9. Een leerling onderzoekt of de x-as, de y-as en de lijn x = 1 de cirkel raken of snijden en berekent het aantal gemeenschappelijke punten door in te vullen."
+  },
+  {
+   "v": "Vul x = 0 in: wat is het aantal snijpunten van de y-as met de cirkel?",
+   "o": [
+    "\"één\"",
+    "\"nul\"",
+    "\"twee\"",
+    "\"oneindig veel\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"één\"\"? Dan denk je dat de y-as raakt. 16 > 9, dus geen oplossing, dus nul. Het goede antwoord is nul.",
+    "Klopt: x = 0 geeft 16 + (y − 3)² = 9, wat onmogelijk is.",
+    "Koos je \"\"twee\"\"? Dan denk je dat de y-as snijdt. 16 + (y − 3)² = 9 heeft geen oplossing, dus nul. Door de stappen goed na te lopen kom je uit op nul.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat de as samenvalt. 16 + (y − 3)² = 9 heeft geen oplossing, dus nul. Controleer je stap: de juiste uitkomst is nul."
+   ],
+   "uh": "Vul x = 0 in: wat is het aantal snijpunten van de y-as met de cirkel?",
+   "ctx": "Een cirkel heeft vergelijking (x − 4)² + (y − 3)² = 9. Een leerling onderzoekt of de x-as, de y-as en de lijn x = 1 de cirkel raken of snijden en berekent het aantal gemeenschappelijke punten door in te vullen."
+  },
+  {
+   "v": "De verticale lijn x = 1 ligt op afstand 3 van M. Hoeveel punten deelt ze met de cirkel?",
+   "o": [
+    "\"nul\"",
+    "\"twee\"",
+    "\"oneindig veel\"",
+    "\"één\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nul\"\"? Dan denk je dat de lijn buiten ligt. 9 + (y − 3)² = 9 heeft een oplossing, dus één. Het goede antwoord is één.",
+    "Koos je \"\"twee\"\"? Dan denk je dat de lijn snijdt. (y − 3)² = 0 heeft één oplossing, dus één. Door de stappen goed na te lopen kom je uit op één.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat een verticale lijn samenvalt. Alleen (1, 3), dus één. Controleer je stap: de juiste uitkomst is één.",
+    "Klopt: x = 1 geeft 9 + (y − 3)² = 9, dus y = 3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "De verticale lijn x = 1 ligt op afstand 3 van M. Hoeveel punten deelt ze met de cirkel?",
+   "ctx": "Een cirkel heeft vergelijking (x − 4)² + (y − 3)² = 9. Een leerling onderzoekt of de x-as, de y-as en de lijn x = 1 de cirkel raken of snijden en berekent het aantal gemeenschappelijke punten door in te vullen."
+  },
+  {
+   "v": "Welke afstand heeft M(4, 3) tot de y-as, en wat zegt dat over de ligging?",
+   "o": [
+    "\"4, groter dan de straal 3, dus geen snijpunt\"",
+    "\"3, dus de y-as raakt\"",
+    "\"4, kleiner dan de straal, dus de y-as snijdt, volgens mij\"",
+    "\"1, dus de y-as raakt\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik dat de raaklijn loodrecht op de straal staat of vul de lijn in de cirkelvergelijking in en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de afstand is groter dan de straal. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3, dus de y-as raakt\"\"? Dan neem je de y van M. De afstand tot de y-as is x = 4, dus geen snijpunt. Het goede antwoord is 4, groter dan de straal 3, dus geen snijpunt.",
+    "Koos je \"\"4, kleiner dan de straal, dus de y-as snijdt, volgens mij\"\"? Dan draai je de ongelijkheid om. 4 > 3, dus geen snijpunt. Door de stappen goed na te lopen kom je uit op 4, groter dan de straal 3, dus geen snijpunt.",
+    "Koos je \"\"1, dus de y-as raakt\"\"? Dan neem je een andere afstand. De afstand tot de y-as is 4, dus geen snijpunt. Controleer je stap: de juiste uitkomst is 4, groter dan de straal 3, dus geen snijpunt."
+   ],
+   "uh": "Welke afstand heeft M(4, 3) tot de y-as, en wat zegt dat over de ligging?",
+   "ctx": "Een cirkel heeft vergelijking (x − 4)² + (y − 3)² = 9. Een leerling onderzoekt of de x-as, de y-as en de lijn x = 1 de cirkel raken of snijden en berekent het aantal gemeenschappelijke punten door in te vullen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is de cirkel (x − 1)² + (y + 1)² = 25 met het punt P(4, 3) op de cirkel. Een leerling bepaalt de rc van de straal MP en de raaklijn in P en stelt de vergelijking van de raaklijn op.",
+   "v": "Stel de vergelijking van de raaklijn in P op.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "M = (1, −1) en de rc van MP is 4/3 (1p). De rc van de raaklijn is −3/4 (1p). y − 3 = −0,75(x − 4) geeft y = −0,75x + 6 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling berekent de snijpunten van de lijn y = 2x met de cirkel x² + y² = 20. Hij vult de lijn in, lost de vergelijking op en controleert beide punten.",
+   "v": "Bereken de snijpunten van de lijn en de cirkel.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "x² + 4x² = 20 geeft x² = 4 (1p). x = 2 of x = −2 (1p). De punten zijn (2, 4) en (−2, −4) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt de ligging van de lijnen y = 4, y = 5 en y = 0 ten opzichte van de cirkel x² + y² = 16. Hij vult elke lijn in en telt het aantal oplossingen.",
+   "v": "Geef per lijn het aantal gemeenschappelijke punten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "y = 4 geeft x² = 0: één punt (0, 4) (1p). y = 5 geeft x² = −9: geen punt (1p). y = 0 geeft x² = 16: twee punten (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling berekent de snijpunten van y = −x + 7 met de cirkel x² + y² = 25. Hij vult y in, herleidt de vergelijking tot een kwadratische vergelijking en controleert de punten.",
+   "v": "Bereken de snijpunten van de lijn en de cirkel.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "x² + (7 − x)² = 25 geeft x² − 7x + 12 = 0 (1p). x = 3 of x = 4 (1p). De punten zijn (3, 4) en (4, 3) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zoekt de raaklijnen aan x² + y² = 5 met rc 2. Hij schrijft y = 2x + c, vult in en eist D = 0. Hij controleert met de afstand van de oorsprong tot de lijn.",
+   "v": "Bepaal de vergelijkingen van de raaklijnen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "5x² + 4cx + c² − 5 = 0 (1p). D = 16c² − 20(c² − 5) = 0 geeft c = 5 of c = −5 (1p). Dus y = 2x + 5 en y = 2x − 5 (1p)."
+  }
+ ]
+}
