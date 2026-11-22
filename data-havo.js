@@ -246710,6 +246710,690 @@ var VAKKEN = [
       "t": "Differentiëren",
       "d": "het bepalen van de afgeleide van een functie"
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "lo": "wb.D.1",
+      "gs": 2,
+      "naam": "Toenamediagram en differentiequotiënt: gemiddelde verandering op een interval",
+      "beschrijving": "Je tekent en leest een toenamediagram, berekent het differentiequotiënt op een interval, interpreteert het als gemiddelde verandering met eenheid en beschrijft het verloop van een functie.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Toenamediagram",
+       "Differentiequotiënt berekenen",
+       "Gemiddelde verandering interpreteren",
+       "Verloop: toenemend of afnemend stijgend",
+       "Intervallen vergelijken"
+      ],
+      "sam": "Bereken de toename Δy per stap en deel door Δx voor het differentiequotiënt op een interval. Het quotiënt is de gemiddelde verandering, met de eenheid van y per eenheid van x. Toenemende toenames horen bij toenemend stijgend, kleiner wordende bij afnemend stijgend. Controleer met Δy = quotiënt maal Δx.",
+      "begrippen": [
+       {
+        "t": "Interval",
+        "d": "Een deel van de x-as, geschreven als [a, b]."
+       },
+       {
+        "t": "Toename Δy",
+        "d": "f(b) − f(a): de verandering van de functiewaarde."
+       },
+       {
+        "t": "Toenamediagram",
+        "d": "Een diagram met de toename per stap."
+       },
+       {
+        "t": "Differentiequotiënt",
+        "d": "Δy : Δx = (f(b) − f(a)) : (b − a) op een interval."
+       },
+       {
+        "t": "Gemiddelde verandering",
+        "d": "De betekenis van het differentiequotiënt, met eenheid, zoals °C per uur."
+       },
+       {
+        "t": "Toenemend stijgend",
+        "d": "Positieve toenames die steeds groter worden."
+       },
+       {
+        "t": "Afnemend stijgend",
+        "d": "Positieve toenames die steeds kleiner worden."
+       },
+       {
+        "t": "Gemiddelde snelheid",
+        "d": "Het differentiequotiënt van de afstand: meters per seconde."
+       },
+       {
+        "t": "Constante toename",
+        "d": "Gelijke toenames: een rechte lijn."
+       },
+       {
+        "t": "Vergelijken van intervallen",
+        "d": "Verschillende differentiequotiënten laten verschillende steilheid zien."
+       },
+       {
+        "t": "Eenheid van het quotiënt",
+        "d": "De eenheid van y gedeeld door de eenheid van x."
+       },
+       {
+        "t": "Controleren",
+        "d": "Het quotiënt terugrekenen: Δy = quotiënt maal Δx."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Hoe bereken je het differentiequotiënt van f op het interval [a, b]?",
+        "o": [
+         "\"(f(b) + f(a)) : (b + a), denk ik\"",
+         "\"(f(b) − f(a)) : (b − a)\"",
+         "\"(b − a) : (f(b) − f(a))\"",
+         "\"f(b) − f(a)\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(f(b) + f(a)) : (b + a), denk ik\"\"? Dan tel je op in plaats van af te trekken. Een toename is een verschil, dus (f(b) − f(a)) : (b − a).",
+         "Klopt: toename van de functiewaarde gedeeld door de lengte van het interval.",
+         "Koos je \"\"(b − a) : (f(b) − f(a))\"\"? Dan draai je de breuk om. De toename van f staat boven, dus (f(b) − f(a)) : (b − a).",
+         "Koos je \"\"f(b) − f(a)\"\"? Dan deel je niet door de lengte van het interval. Dat geeft alleen Δy, dus (f(b) − f(a)) : (b − a)."
+        ],
+        "uh": "Hoe bereken je het differentiequotiënt van f op het interval [a, b]?"
+       },
+       {
+        "v": "Welke grootheid is Δy op het interval [a, b]?",
+        "o": [
+         "\"b − a\"",
+         "\"f(a) + f(b), volgens mij\"",
+         "\"f(b) : f(a)\"",
+         "\"f(b) − f(a)\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"b − a\"\"? Dan neem je Δx. Δy is de toename van f, dus f(b) − f(a). Het goede antwoord is f(b) − f(a).",
+         "Koos je \"\"f(a) + f(b), volgens mij\"\"? Dan tel je de waarden op. Δy is een verschil, dus f(b) − f(a). Door de stappen goed na te lopen kom je uit op f(b) − f(a).",
+         "Koos je \"\"f(b) : f(a)\"\"? Dan deel je de waarden. Δy is een verschil, dus f(b) − f(a). Controleer je stap: de juiste uitkomst is f(b) − f(a).",
+         "Klopt: de toename van de functiewaarde. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke grootheid is Δy op het interval [a, b]?"
+       },
+       {
+        "v": "Wat betekent een differentiequotiënt van 4 op [1, 3]?",
+        "o": [
+         "\"gemiddeld neemt de functie 4 toe per eenheid x\"",
+         "\"f(3) = 4\"",
+         "\"het quotiënt is een x-waarde van het interval, zeg maar\"",
+         "\"de grafiek is overal gelijk aan 4\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: het is de gemiddelde verandering op dat interval.",
+         "Koos je \"\"f(3) = 4\"\"? Dan neem je het differentiequotiënt als functiewaarde. Het is een verandering, dus gemiddelde toename.",
+         "Koos je \"\"het quotiënt is een x-waarde van het interval, zeg maar\"\"? Dan verwar je het quotiënt met een coördinaat. Het is een verandering per eenheid, dus gemiddelde toename.",
+         "Koos je \"\"de grafiek is overal gelijk aan 4\"\"? Dan denk je dat f constant is. Het is een gemiddelde over het interval, dus gemiddelde toename."
+        ],
+        "uh": "Wat betekent een differentiequotiënt van 4 op [1, 3]?"
+       },
+       {
+        "v": "Wat laat een toenamediagram zien?",
+        "o": [
+         "\"de functiewaarde zelf\"",
+         "\"de helling in één punt\"",
+         "\"de toename per stap\"",
+         "\"de som van alle waarden\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de functiewaarde zelf\"\"? Dan neem je de waarde van f. Het diagram toont de toename, dus per stap. Het goede antwoord is de toename per stap.",
+         "Koos je \"\"de helling in één punt\"\"? Dan denk je aan een raaklijn. Een toenamediagram laat toenames over stappen zien, dus per stap.",
+         "Klopt: elke staaf is Δy op een stap. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de som van alle waarden\"\"? Dan denk je aan optellen. Elke staaf is een toename, dus per stap. Controleer je stap: de juiste uitkomst is de toename per stap."
+        ],
+        "uh": "Wat laat een toenamediagram zien?"
+       },
+       {
+        "v": "Een functie neemt toe, maar elke toename is kleiner dan de vorige. Hoe heet dit verloop?",
+        "o": [
+         "\"toenemend stijgend, really\"",
+         "\"afnemend stijgend\"",
+         "\"dalend\"",
+         "\"constant stijgend\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"toenemend stijgend, really\"\"? Dan denk je dat de toenames groter worden. Ze worden kleiner, dus afnemend stijgend. Het goede antwoord is afnemend stijgend.",
+         "Klopt: positieve maar steeds kleinere toenames. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"dalend\"\"? Dan denk je dat de waarden dalen. De toenames zijn positief, dus afnemend stijgend. Door de stappen goed na te lopen kom je uit op afnemend stijgend.",
+         "Koos je \"\"constant stijgend\"\"? Dan denk je dat de toename gelijk blijft. Ze wordt kleiner, dus afnemend stijgend. Controleer je stap: de juiste uitkomst is afnemend stijgend."
+        ],
+        "uh": "Een functie neemt toe, maar elke toename is kleiner dan de vorige. Hoe heet dit verloop?"
+       },
+       {
+        "v": "Hoe noteer je het interval van x = 2 tot en met x = 5?",
+        "o": [
+         "\"(2, 5), denk ik\"",
+         "\"2 – 5\"",
+         "\"{2, 5}\"",
+         "\"[2, 5]\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(2, 5), denk ik\"\"? Dan gebruik je ronde haken. Die laten 2 en 5 weg, dus [2, 5]. Het goede antwoord is [2, 5].",
+         "Koos je \"\"2 – 5\"\"? Dan gebruik je een streepje. Een interval schrijf je met haken, dus [2, 5]. Door de stappen goed na te lopen kom je uit op [2, 5].",
+         "Koos je \"\"{2, 5}\"\"? Dan neem je een verzameling van twee getallen. Een interval bevat alles ertussen, dus [2, 5]. Controleer je stap: de juiste uitkomst is [2, 5].",
+         "Klopt: de vierkante haken laten zien dat 2 en 5 meedoen."
+        ],
+        "uh": "Hoe noteer je het interval van x = 2 tot en met x = 5?"
+       },
+       {
+        "v": "Welke grafiek hoort bij constante toenames per stap?",
+        "o": [
+         "\"een rechte lijn\"",
+         "\"een parabool\"",
+         "\"een hyperbool, volgens mij\"",
+         "\"een sinus\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: gelijke toenames geven een lineair verband. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"een parabool\"\"? Dan denk je aan veranderende toenames. Een parabool heeft toenames die groeien, dus een rechte lijn.",
+         "Koos je \"\"een hyperbool, volgens mij\"\"? Dan denk je aan een breuk. Constante toenames geven een lijn, dus een rechte lijn. Door de stappen goed na te lopen kom je uit op een rechte lijn.",
+         "Koos je \"\"een sinus\"\"? Dan denk je aan een golf. Constante toenames geven een lijn, dus een rechte lijn. Controleer je stap: de juiste uitkomst is een rechte lijn."
+        ],
+        "uh": "Welke grafiek hoort bij constante toenames per stap?"
+       },
+       {
+        "v": "Welke toenames per uur krijg je?",
+        "o": [
+         "\"30, 30, 30 en 30\"",
+         "\"100, 130, 170 en 220\"",
+         "\"30, 40, 50 en 60\"",
+         "\"10, 10, 10 en 10\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"30, 30, 30 en 30\"\"? Dan denk je dat de toename gelijk blijft. De toenames verschillen, dus 30, 40, 50 en 60. Het goede antwoord is 30, 40, 50 en 60.",
+         "Koos je \"\"100, 130, 170 en 220\"\"? Dan neem je de waarden zelf. Trek ze van elkaar af, dus 30, 40, 50 en 60. Door de stappen goed na te lopen kom je uit op 30, 40, 50 en 60.",
+         "Klopt: 130 − 100 = 30, 170 − 130 = 40, 220 − 170 = 50 en 280 − 220 = 60.",
+         "Koos je \"\"10, 10, 10 en 10\"\"? Dan tel je de verschillen op een verkeerde manier. 130 − 100 = 30, dus 30, 40, 50 en 60. Controleer je stap: de juiste uitkomst is 30, 40, 50 en 60."
+        ],
+        "uh": "Welke toenames per uur krijg je?",
+        "ctx": "Het aantal bezoekers N(t) van een website wordt elk uur geteld: bij t = 0, 1, 2, 3 en 4 is N gelijk aan 100, 130, 170, 220 en 280. Een leerling berekent de toename per uur en tekent het toenamediagram."
+       },
+       {
+        "v": "Hoe verloopt N volgens het toenamediagram?",
+        "o": [
+         "\"afnemend stijgend, eigenlijk\"",
+         "\"toenemend stijgend\"",
+         "\"dalend\"",
+         "\"constant stijgend\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"afnemend stijgend, eigenlijk\"\"? Dan denk je dat de toenames kleiner worden. Ze worden groter, dus toenemend stijgend. Het goede antwoord is toenemend stijgend.",
+         "Klopt: de toenames 30, 40, 50 en 60 worden groter. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"dalend\"\"? Dan denk je dat N daalt. De toenames zijn positief, dus toenemend stijgend. Door de stappen goed na te lopen kom je uit op toenemend stijgend.",
+         "Koos je \"\"constant stijgend\"\"? Dan denk je dat de toename gelijk is. Ze groeit, dus toenemend stijgend. Controleer je stap: de juiste uitkomst is toenemend stijgend."
+        ],
+        "uh": "Hoe verloopt N volgens het toenamediagram?",
+        "ctx": "Het aantal bezoekers N(t) van een website wordt elk uur geteld: bij t = 0, 1, 2, 3 en 4 is N gelijk aan 100, 130, 170, 220 en 280. Een leerling berekent de toename per uur en tekent het toenamediagram."
+       },
+       {
+        "v": "Hoe groot is het differentiequotiënt op [0, 4]?",
+        "o": [
+         "\"180\"",
+         "\"60\"",
+         "\"4\"",
+         "\"45\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"180\"\"? Dan deel je niet door 4. Δy = 180 en Δx = 4, dus 45. Het goede antwoord is 45.",
+         "Koos je \"\"60\"\"? Dan neem je de laatste toename. Neem het gemiddelde over het hele interval, dus 45. Door de stappen goed na te lopen kom je uit op 45.",
+         "Koos je \"\"4\"\"? Dan neem je de lengte van het interval. Deel Δy door Δx, dus 45. Controleer je stap: de juiste uitkomst is 45.",
+         "Klopt: (280 − 100) : 4 = 45. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe groot is het differentiequotiënt op [0, 4]?",
+        "ctx": "Het aantal bezoekers N(t) van een website wordt elk uur geteld: bij t = 0, 1, 2, 3 en 4 is N gelijk aan 100, 130, 170, 220 en 280. Een leerling berekent de toename per uur en tekent het toenamediagram."
+       },
+       {
+        "v": "Bereken (f(3) − f(1)) : 2 voor f(x) = x².",
+        "o": [
+         "\"4\"",
+         "\"8\"",
+         "\"2\"",
+         "\"9\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (9 − 1) : 2 = 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"8\"\"? Dan deel je niet door 2. Δy = 8 en Δx = 2, dus 4. Het goede antwoord is 4.",
+         "Koos je \"\"2\"\"? Dan neem je Δx. Deel Δy door Δx, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Koos je \"\"9\"\"? Dan neem je f(3). Het differentiequotiënt is (f(3) − f(1)) : 2, dus 4. Controleer je stap: de juiste uitkomst is 4."
+        ],
+        "uh": "Bereken (f(3) − f(1)) : 2 voor f(x) = x².",
+        "ctx": "Gegeven is f(x) = x². Een leerling berekent het differentiequotiënt van f op de intervallen [0, 2], [1, 3] en [2, 4] en vergelijkt de uitkomsten."
+       },
+       {
+        "v": "Bepaal Δy : Δx voor x van 2 tot 4 bij dezelfde functie.",
+        "o": [
+         "\"12\"",
+         "\"4\"",
+         "\"6\"",
+         "\"16\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"12\"\"? Dan deel je niet door 2. Δy = 12 en Δx = 2, dus 6. Het goede antwoord is 6.",
+         "Koos je \"\"4\"\"? Dan neem je het differentiequotiënt op [1, 3]. Hier is het (16 − 4) : 2, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+         "Klopt: (16 − 4) : 2 = 6. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"16\"\"? Dan neem je f(4). Het differentiequotiënt is (f(4) − f(2)) : 2, dus 6. Controleer je stap: de juiste uitkomst is 6."
+        ],
+        "uh": "Bepaal Δy : Δx voor x van 2 tot 4 bij dezelfde functie.",
+        "ctx": "Gegeven is f(x) = x². Een leerling berekent het differentiequotiënt van f op de intervallen [0, 2], [1, 3] en [2, 4] en vergelijkt de uitkomsten."
+       },
+       {
+        "v": "Wat laten de differentiequotiënten 2, 4 en 6 op [0, 2], [1, 3] en [2, 4] zien?",
+        "o": [
+         "\"f is constant\"",
+         "\"de gemiddelde toename wordt groter naarmate x groter is\"",
+         "\"f daalt\"",
+         "\"de grafiek is een rechte lijn, zeg maar, gewoon, volgens mij\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"f is constant\"\"? Dan denk je dat f niet verandert. De quotiënten verschillen, dus de toename wordt groter. Het goede antwoord is de gemiddelde toename wordt groter naarmate x groter is.",
+         "Klopt: de parabool wordt steiler. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"f daalt\"\"? Dan denk je dat de waarden dalen. De quotiënten zijn positief, dus de toename wordt groter. Door de stappen goed na te lopen kom je uit op de gemiddelde toename wordt groter naarmate x groter is.",
+         "Koos je \"\"de grafiek is een rechte lijn, zeg maar, gewoon, volgens mij\"\"? Dan denk je aan gelijke quotiënten. Hier groeien ze, dus de grafiek is steeds steiler."
+        ],
+        "uh": "Wat laten de differentiequotiënten 2, 4 en 6 op [0, 2], [1, 3] en [2, 4] zien?",
+        "ctx": "Gegeven is f(x) = x². Een leerling berekent het differentiequotiënt van f op de intervallen [0, 2], [1, 3] en [2, 4] en vergelijkt de uitkomsten."
+       },
+       {
+        "v": "Welke toenames per twee uur krijg je?",
+        "o": [
+         "\"6, 3, 1 en 1\"",
+         "\"10, 16, 19 en 20\"",
+         "\"6, 9, 10 en 9\"",
+         "\"6, 3, 1 en −1\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6, 3, 1 en 1\"\"? Dan maak je een tekenfout bij de laatste toename. 19 − 20 = −1, dus 6, 3, 1 en −1. Het goede antwoord is 6, 3, 1 en −1.",
+         "Koos je \"\"10, 16, 19 en 20\"\"? Dan neem je de waarden zelf. Trek ze van elkaar af, dus 6, 3, 1 en −1. Door de stappen goed na te lopen kom je uit op 6, 3, 1 en −1.",
+         "Koos je \"\"6, 9, 10 en 9\"\"? Dan tel je de toenames op. Dat zijn de verschillen met de beginwaarde, dus 6, 3, 1 en −1. Controleer je stap: de juiste uitkomst is 6, 3, 1 en −1.",
+         "Klopt: 16 − 10, 19 − 16, 20 − 19 en 19 − 20. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke toenames per twee uur krijg je?",
+        "ctx": "De temperatuur T(t) in een kas (in °C) is op t = 0, 2, 4, 6 en 8 uur gelijk aan 10, 16, 19, 20 en 19. Een leerling berekent de toenames per twee uur en het differentiequotiënt op [0, 4] en op [4, 8]."
+       },
+       {
+        "v": "Bereken het gemiddelde stijgingstempo van T over de eerste vier uur.",
+        "o": [
+         "\"2,25\"",
+         "\"9\"",
+         "\"4,5\"",
+         "\"2\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (19 − 10) : 4 = 2,25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"9\"\"? Dan deel je niet door 4. Δy = 9 en Δx = 4, dus 2,25. Het goede antwoord is 2,25.",
+         "Koos je \"\"4,5\"\"? Dan deel je door 2. Δx = 4, dus 2,25. Door de stappen goed na te lopen kom je uit op 2,25.",
+         "Koos je \"\"2\"\"? Dan rond je af. 9 : 4 = 2,25, dus 2,25. Controleer je stap: de juiste uitkomst is 2,25."
+        ],
+        "uh": "Bereken het gemiddelde stijgingstempo van T over de eerste vier uur.",
+        "ctx": "De temperatuur T(t) in een kas (in °C) is op t = 0, 2, 4, 6 en 8 uur gelijk aan 10, 16, 19, 20 en 19. Een leerling berekent de toenames per twee uur en het differentiequotiënt op [0, 4] en op [4, 8]."
+       },
+       {
+        "v": "En over de uren 4 tot en met 8?",
+        "o": [
+         "\"0,25\"",
+         "\"−1\"",
+         "\"0\"",
+         "\"2,25\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,25\"\"? Dan neem je een verkeerd verschil. Het verschil is 0, dus 0. Het goede antwoord is 0.",
+         "Koos je \"\"−1\"\"? Dan neem je de laatste toename. Over [4, 8] is T(8) − T(4) = 0, dus 0. Door de stappen goed na te lopen kom je uit op 0.",
+         "Klopt: T(8) − T(4) = 19 − 19 = 0. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2,25\"\"? Dan neem je het quotiënt op [0, 4]. Hier is het 0, dus 0. Controleer je stap: de juiste uitkomst is 0."
+        ],
+        "uh": "En over de uren 4 tot en met 8?",
+        "ctx": "De temperatuur T(t) in een kas (in °C) is op t = 0, 2, 4, 6 en 8 uur gelijk aan 10, 16, 19, 20 en 19. Een leerling berekent de toenames per twee uur en het differentiequotiënt op [0, 4] en op [4, 8]."
+       },
+       {
+        "v": "Wat betekent het differentiequotiënt 2,25 op [0, 4] voor de temperatuur?",
+        "o": [
+         "\"de temperatuur is 2,25 °C\"",
+         "\"gemiddeld stijgt de temperatuur 2,25 °C per uur\"",
+         "\"de temperatuur stijgt elk uur precies 2,25 °C\"",
+         "\"de temperatuur daalt gemiddeld 2,25 °C per uur, volgens mij\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de temperatuur is 2,25 °C\"\"? Dan neem je het quotiënt als temperatuur. Het is een verandering, dus gemiddelde stijging.",
+         "Klopt: het is de gemiddelde verandering op dat interval.",
+         "Koos je \"\"de temperatuur stijgt elk uur precies 2,25 °C\"\"? Dan denk je dat de stijging constant is. Het is een gemiddelde, dus gemiddeld 2,25 °C per uur.",
+         "Koos je \"\"de temperatuur daalt gemiddeld 2,25 °C per uur, volgens mij\"\"? Dan maak je een tekenfout. De waarden stijgen van 10 naar 19, dus gemiddeld een stijging."
+        ],
+        "uh": "Wat betekent het differentiequotiënt 2,25 op [0, 4] voor de temperatuur?",
+        "ctx": "De temperatuur T(t) in een kas (in °C) is op t = 0, 2, 4, 6 en 8 uur gelijk aan 10, 16, 19, 20 en 19. Een leerling berekent de toenames per twee uur en het differentiequotiënt op [0, 4] en op [4, 8]."
+       },
+       {
+        "v": "Bereken (s(2) − s(0)) : 2.",
+        "o": [
+         "\"20 m/s, I suppose\"",
+         "\"5 m/s\"",
+         "\"40 m/s\"",
+         "\"10 m/s\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20 m/s, I suppose\"\"? Dan deel je niet door 2. Δs = 20 en Δt = 2, dus 10 m/s. Het goede antwoord is 10 m/s.",
+         "Koos je \"\"5 m/s\"\"? Dan neem je de coëfficiënt 5. Bereken (s(2) − s(0)) : 2, dus 10 m/s. Door de stappen goed na te lopen kom je uit op 10 m/s.",
+         "Koos je \"\"40 m/s\"\"? Dan neem je s(4). Het interval is [0, 2], dus 10 m/s. Controleer je stap: de juiste uitkomst is 10 m/s.",
+         "Klopt: (20 − 0) : 2 = 10. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Bereken (s(2) − s(0)) : 2.",
+        "ctx": "Een auto legt in t seconden s(t) = 5t² meter af. Een leerling berekent de gemiddelde snelheid, dat is het differentiequotiënt, op de tijdsintervallen [0, 2] en [2, 4] en interpreteert de uitkomsten in m/s."
+       },
+       {
+        "v": "Hoe groot is de gemiddelde snelheid tussen t = 2 en t = 4?",
+        "o": [
+         "\"30 m/s\"",
+         "\"60 m/s, eigenlijk\"",
+         "\"15 m/s\"",
+         "\"80 m/s\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (80 − 20) : 2 = 30. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"60 m/s, eigenlijk\"\"? Dan deel je niet door 2. Δs = 60 en Δt = 2, dus 30 m/s. Het goede antwoord is 30 m/s.",
+         "Koos je \"\"15 m/s\"\"? Dan deel je door 4. Het interval heeft lengte 2, dus 30 m/s. Door de stappen goed na te lopen kom je uit op 30 m/s.",
+         "Koos je \"\"80 m/s\"\"? Dan neem je s(4). Bereken (s(4) − s(2)) : 2, dus 30 m/s. Controleer je stap: de juiste uitkomst is 30 m/s."
+        ],
+        "uh": "Hoe groot is de gemiddelde snelheid tussen t = 2 en t = 4?",
+        "ctx": "Een auto legt in t seconden s(t) = 5t² meter af. Een leerling berekent de gemiddelde snelheid, dat is het differentiequotiënt, op de tijdsintervallen [0, 2] en [2, 4] en interpreteert de uitkomsten in m/s."
+       },
+       {
+        "v": "Wat zegt het verschil tussen 10 m/s en 30 m/s?",
+        "o": [
+         "\"de auto remt\"",
+         "\"de auto rijdt met constante snelheid, gewoon, volgens mij\"",
+         "\"de auto rijdt gemiddeld sneller in het tweede interval\"",
+         "\"de auto staat stil\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de auto remt\"\"? Dan denk je dat 30 kleiner is dan 10. 30 is groter, dus sneller. Het goede antwoord is de auto rijdt gemiddeld sneller in het tweede interval.",
+         "Koos je \"\"de auto rijdt met constante snelheid, gewoon, volgens mij\"\"? Dan denk je dat de snelheid gelijk blijft. De quotiënten verschillen, dus sneller.",
+         "Klopt: de snelheid neemt toe. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de auto staat stil\"\"? Dan denk je dat er geen beweging is. De quotiënten zijn positief, dus sneller. Controleer je stap: de juiste uitkomst is de auto rijdt gemiddeld sneller in het tweede interval."
+        ],
+        "uh": "Wat zegt het verschil tussen 10 m/s en 30 m/s?",
+        "ctx": "Een auto legt in t seconden s(t) = 5t² meter af. Een leerling berekent de gemiddelde snelheid, dat is het differentiequotiënt, op de tijdsintervallen [0, 2] en [2, 4] en interpreteert de uitkomsten in m/s."
+       },
+       {
+        "v": "Bereken (√4 − √0) : 4.",
+        "o": [
+         "\"2\"",
+         "\"0,5\"",
+         "\"4\"",
+         "\"0,25\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2\"\"? Dan deel je niet door 4. Δy = 2 en Δx = 4, dus 0,5. Het goede antwoord is 0,5.",
+         "Klopt: (2 − 0) : 4 = 0,5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"4\"\"? Dan neem je Δx. Deel Δy door Δx, dus 0,5. Door de stappen goed na te lopen kom je uit op 0,5.",
+         "Koos je \"\"0,25\"\"? Dan deel je door 8. Δx = 4, dus 0,5. Controleer je stap: de juiste uitkomst is 0,5."
+        ],
+        "uh": "Bereken (√4 − √0) : 4.",
+        "ctx": "Gegeven is f(x) = √x. Een leerling berekent het differentiequotiënt op [0, 4] en op [4, 9] en kijkt of f toenemend of afnemend stijgend is."
+       },
+       {
+        "v": "Hoe groot is het quotiënt van f over het interval [4, 9]?",
+        "o": [
+         "\"1\"",
+         "\"5\"",
+         "\"0,5\"",
+         "\"0,2\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1\"\"? Dan deel je niet door 5. Δy = 1 en Δx = 5, dus 0,2. Het goede antwoord is 0,2.",
+         "Koos je \"\"5\"\"? Dan neem je Δx. Deel Δy door Δx, dus 0,2. Door de stappen goed na te lopen kom je uit op 0,2.",
+         "Koos je \"\"0,5\"\"? Dan neem je het quotiënt op [0, 4]. Hier is het (3 − 2) : 5, dus 0,2. Controleer je stap: de juiste uitkomst is 0,2.",
+         "Klopt: (3 − 2) : 5 = 0,2. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe groot is het quotiënt van f over het interval [4, 9]?",
+        "ctx": "Gegeven is f(x) = √x. Een leerling berekent het differentiequotiënt op [0, 4] en op [4, 9] en kijkt of f toenemend of afnemend stijgend is."
+       },
+       {
+        "v": "Wat zie je aan 0,5 en 0,2 over het verloop van f?",
+        "o": [
+         "\"f stijgt steeds langzamer: afnemend stijgend\"",
+         "\"f stijgt steeds sneller, zeg maar, gewoon, volgens mij\"",
+         "\"f daalt\"",
+         "\"f is constant\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de gemiddelde toename wordt kleiner. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"f stijgt steeds sneller, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat 0,2 groter is dan 0,5. Het is kleiner, dus langzamer. Het goede antwoord is f stijgt steeds langzamer: afnemend stijgend.",
+         "Koos je \"\"f daalt\"\"? Dan denk je dat de quotiënten negatief zijn. Ze zijn positief, dus afnemend stijgend. Door de stappen goed na te lopen kom je uit op f stijgt steeds langzamer: afnemend stijgend.",
+         "Koos je \"\"f is constant\"\"? Dan denk je dat de quotiënten gelijk zijn. 0,5 ≠ 0,2, dus afnemend stijgend. Controleer je stap: de juiste uitkomst is f stijgt steeds langzamer: afnemend stijgend."
+        ],
+        "uh": "Wat zie je aan 0,5 en 0,2 over het verloop van f?",
+        "ctx": "Gegeven is f(x) = √x. Een leerling berekent het differentiequotiënt op [0, 4] en op [4, 9] en kijkt of f toenemend of afnemend stijgend is."
+       },
+       {
+        "v": "Welke toenames per uur krijg je?",
+        "o": [
+         "\"50, 50 en 50\"",
+         "\"100, 200 en 400, eigenlijk\"",
+         "\"50, 100 en 200\"",
+         "\"2, 2 en 2\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"50, 50 en 50\"\"? Dan denk je dat de toename gelijk blijft. Ze verdubbelt, dus 50, 100 en 200. Het goede antwoord is 50, 100 en 200.",
+         "Koos je \"\"100, 200 en 400, eigenlijk\"\"? Dan neem je de waarden zelf. Trek ze van elkaar af, dus 50, 100 en 200. Door de stappen goed na te lopen kom je uit op 50, 100 en 200.",
+         "Klopt: 100 − 50, 200 − 100 en 400 − 200. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2, 2 en 2\"\"? Dan neem je de groeifactor. Een toename is een verschil, dus 50, 100 en 200. Controleer je stap: de juiste uitkomst is 50, 100 en 200."
+        ],
+        "uh": "Welke toenames per uur krijg je?",
+        "ctx": "Het aantal bacteriën is N(t) = 50·2^t bij t = 0, 1, 2 en 3 uur, dus 50, 100, 200 en 400. Een leerling tekent het toenamediagram en berekent het differentiequotiënt op [0, 3] en op [1, 2]."
+       },
+       {
+        "v": "Bereken (400 − 50) : 3.",
+        "o": [
+         "\"350\"",
+         "\"116,7\"",
+         "\"133,3\"",
+         "\"100\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"350\"\"? Dan deel je niet door 3. Δy = 350 en Δx = 3, dus 116,7. Het goede antwoord is 116,7.",
+         "Klopt: (400 − 50) : 3 ≈ 116,7. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"133,3\"\"? Dan deel je 400 door 3. Δy = 400 − 50 = 350, dus 116,7. Door de stappen goed na te lopen kom je uit op 116,7.",
+         "Koos je \"\"100\"\"? Dan neem je het quotiënt op [1, 2]. Hier is het (400 − 50) : 3, dus 116,7. Controleer je stap: de juiste uitkomst is 116,7."
+        ],
+        "uh": "Bereken (400 − 50) : 3.",
+        "ctx": "Het aantal bacteriën is N(t) = 50·2^t bij t = 0, 1, 2 en 3 uur, dus 50, 100, 200 en 400. Een leerling tekent het toenamediagram en berekent het differentiequotiënt op [0, 3] en op [1, 2]."
+       },
+       {
+        "v": "Wat is het quotiënt tussen t = 1 en t = 2 uur?",
+        "o": [
+         "\"200\"",
+         "\"50\"",
+         "\"150\"",
+         "\"100\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"200\"\"? Dan neem je N(2). Δy = 100, dus 100. Het goede antwoord is 100.",
+         "Koos je \"\"50\"\"? Dan neem je de toename van [0, 1]. Op [1, 2] is Δy = 100, dus 100. Door de stappen goed na te lopen kom je uit op 100.",
+         "Koos je \"\"150\"\"? Dan neem je het gemiddelde van 100 en 200. Δy = 200 − 100, dus 100. Controleer je stap: de juiste uitkomst is 100.",
+         "Klopt: (200 − 100) : 1 = 100. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Wat is het quotiënt tussen t = 1 en t = 2 uur?",
+        "ctx": "Het aantal bacteriën is N(t) = 50·2^t bij t = 0, 1, 2 en 3 uur, dus 50, 100, 200 en 400. Een leerling tekent het toenamediagram en berekent het differentiequotiënt op [0, 3] en op [1, 2]."
+       },
+       {
+        "v": "Waarom is het differentiequotiënt op [1, 2] groter dan op [0, 1]?",
+        "o": [
+         "\"de toenames worden steeds groter: toenemend stijgend\"",
+         "\"omdat het interval langer is\"",
+         "\"omdat N afneemt\"",
+         "\"omdat de beginwaarde groter is, volgens mij, eigenlijk\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Bereken eerst de toenames, deel door de lengte van het interval en interpreteer het antwoord als gemiddelde verandering met de eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 100 is groter dan 50. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"omdat het interval langer is\"\"? Dan denk je dat het interval langer is. Beide intervallen hebben lengte 1, dus toenemend stijgend.",
+         "Koos je \"\"omdat N afneemt\"\"? Dan denk je dat N daalt. N neemt toe, dus toenemend stijgend. Door de stappen goed na te lopen kom je uit op de toenames worden steeds groter: toenemend stijgend.",
+         "Koos je \"\"omdat de beginwaarde groter is, volgens mij, eigenlijk\"\"? Dan neem je de beginwaarde als reden. De toename is groter, dus toenemend stijgend."
+        ],
+        "uh": "Waarom is het differentiequotiënt op [1, 2] groter dan op [0, 1]?",
+        "ctx": "Het aantal bacteriën is N(t) = 50·2^t bij t = 0, 1, 2 en 3 uur, dus 50, 100, 200 en 400. Een leerling tekent het toenamediagram en berekent het differentiequotiënt op [0, 3] en op [1, 2]."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een tabel is x = 0, 2, 4 en 6 en y = 5, 9, 11 en 12. Een leerling berekent de toenames per stap, bepaalt het verloop en berekent het differentiequotiënt op [0, 6].",
+        "v": "Bereken de toenames, benoem het verloop en bereken het differentiequotiënt op [0, 6].",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De toenames zijn 4, 2 en 1 (1p), dus afnemend stijgend (1p). Het differentiequotiënt op [0, 6] is 7 : 6 ≈ 1,17 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Gegeven is f(x) = x² − 2x. Een leerling berekent het differentiequotiënt op [1, 4] en op [0, 2], vergelijkt de uitkomsten en legt uit wat het verschil betekent voor de steilheid van de grafiek op die intervallen.",
+        "v": "Bereken het differentiequotiënt op [1, 4] en op [0, 2].",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "f(1) = −1 en f(4) = 8, dus (8 − (−1)) : 3 = 3 (1p). f(0) = 0 en f(2) = 0 (1p), dus het quotiënt op [0, 2] is 0 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een auto legt s(t) = 2t² meter af in t seconden. Een leerling berekent de gemiddelde snelheid op [1, 3] en op [0, 1] en interpreteert de uitkomsten.",
+        "v": "Bereken de gemiddelde snelheid op [1, 3] en [0, 1].",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "s(3) − s(1) = 18 − 2 = 16, dus 16 : 2 = 8 m/s (1p). s(1) − s(0) = 2, dus 2 m/s (1p). De snelheid neemt toe (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Het stroomverbruik is in maand 0, 1, 2 en 3 gelijk aan 200, 230, 250 en 260 kWh. Een leerling tekent het toenamediagram en berekent de gemiddelde verandering per maand over [0, 3].",
+        "v": "Geef de toenames, het verloop en de gemiddelde verandering op [0, 3].",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De toenames zijn 30, 20 en 10 (1p), dus afnemend stijgend (1p). (260 − 200) : 3 = 20 kWh per maand (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Gegeven is f(x) = 1/x. Een leerling berekent het differentiequotiënt op [1, 2] en op [2, 4], controleert zijn uitkomsten met Δy = quotiënt maal Δx en beschrijft het verloop van f op dit interval met woorden.",
+        "v": "Bereken beide quotiënten en beschrijf het verloop.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "f(1) = 1, f(2) = 0,5 en f(4) = 0,25. Op [1, 2] is het quotiënt (0,5 − 1) : 1 = −0,5 (1p) en op [2, 4] is het (0,25 − 0,5) : 2 = −0,125 (1p). f daalt steeds langzamer (1p)."
+       }
+      ]
+     }
     ]
    },
    {

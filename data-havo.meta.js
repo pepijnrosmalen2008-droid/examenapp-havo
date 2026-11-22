@@ -5834,7 +5834,30 @@ var VAKKEN = [
     "nSv": 85,
     "nOe": 3,
     "nBeg": 15,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "lo": "wb.D.1",
+      "gs": 2,
+      "naam": "Toenamediagram en differentiequotiënt: gemiddelde verandering op een interval",
+      "beschrijving": "Je tekent en leest een toenamediagram, berekent het differentiequotiënt op een interval, interpreteert het als gemiddelde verandering met eenheid en beschrijft het verloop van een functie.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Toenamediagram",
+       "Differentiequotiënt berekenen",
+       "Gemiddelde verandering interpreteren",
+       "Verloop: toenemend of afnemend stijgend",
+       "Intervallen vergelijken"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "E",
