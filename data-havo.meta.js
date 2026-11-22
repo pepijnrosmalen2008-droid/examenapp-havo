@@ -5856,6 +5856,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D2",
+      "lo": "wb.D.2",
+      "gs": 2,
+      "naam": "Lokale afgeleide benaderen en de helling van een grafiek in een punt",
+      "beschrijving": "Je benadert de afgeleide in een punt met differentiequotiënten op steeds kleinere intervallen, interpreteert die als helling van de grafiek of snelheid op een moment, stelt een raaklijn op en gebruikt een symmetrisch interval bij een tabel.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Kleinere intervallen",
+       "De afgeleide benaderen",
+       "Helling en raaklijn",
+       "Numeriek-grafisch met een tabel",
+       "Snelheid op een moment"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

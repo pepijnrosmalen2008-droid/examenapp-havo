@@ -247393,6 +247393,688 @@ var VAKKEN = [
         "u": "f(1) = 1, f(2) = 0,5 en f(4) = 0,25. Op [1, 2] is het quotiënt (0,5 − 1) : 1 = −0,5 (1p) en op [2, 4] is het (0,25 − 0,5) : 2 = −0,125 (1p). f daalt steeds langzamer (1p)."
        }
       ]
+     },
+     {
+      "id": "D2",
+      "lo": "wb.D.2",
+      "gs": 2,
+      "naam": "Lokale afgeleide benaderen en de helling van een grafiek in een punt",
+      "beschrijving": "Je benadert de afgeleide in een punt met differentiequotiënten op steeds kleinere intervallen, interpreteert die als helling van de grafiek of snelheid op een moment, stelt een raaklijn op en gebruikt een symmetrisch interval bij een tabel.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Kleinere intervallen",
+       "De afgeleide benaderen",
+       "Helling en raaklijn",
+       "Numeriek-grafisch met een tabel",
+       "Snelheid op een moment"
+      ],
+      "sam": "De afgeleide in een punt is de waarde waar het differentiequotiënt naartoe gaat als het interval kleiner wordt. Dit is de helling van de grafiek en van de raaklijn, bij afstand en tijd de snelheid op een moment. Een positieve afgeleide betekent stijgen, een negatieve dalen. Gebruik bij een tabel een symmetrisch interval.",
+      "begrippen": [
+       {
+        "t": "Differentiequotiënt op [a, a + h]",
+        "d": "(f(a + h) − f(a)) : h: de gemiddelde verandering op een klein interval."
+       },
+       {
+        "t": "Afnemende intervalgrootte",
+        "d": "Steeds kleinere h nemen, zoals 1; 0,1; 0,01."
+       },
+       {
+        "t": "Afgeleide in een punt",
+        "d": "De waarde waar de quotiënten naartoe gaan; notatie f'(a)."
+       },
+       {
+        "t": "Helling van de grafiek",
+        "d": "De steilheid van de grafiek in dat punt."
+       },
+       {
+        "t": "Raaklijn",
+        "d": "De lijn door het punt met de helling f'(a)."
+       },
+       {
+        "t": "Numeriek-grafische methode",
+        "d": "De helling benaderen met kleine intervallen of een tabel."
+       },
+       {
+        "t": "Symmetrisch interval",
+        "d": "[a − h, a + h]: geeft meestal een betere benadering."
+       },
+       {
+        "t": "Snelheid op een moment",
+        "d": "De afgeleide van de afstand naar de tijd, in m/s."
+       },
+       {
+        "t": "f'(a) = 0",
+        "d": "Horizontale raaklijn: de grafiek stijgt en daalt niet."
+       },
+       {
+        "t": "Positieve afgeleide",
+        "d": "De grafiek stijgt in dat punt."
+       },
+       {
+        "t": "Negatieve afgeleide",
+        "d": "De grafiek daalt in dat punt."
+       },
+       {
+        "t": "Controleren",
+        "d": "Het quotiënt op een kleiner interval berekenen."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat gebeurt er met het differentiequotiënt op [a, a + h] als h steeds kleiner wordt?",
+        "o": [
+         "\"het wordt steeds groter\"",
+         "\"het nadert de helling van de grafiek in het punt a\"",
+         "\"het wordt nul\"",
+         "\"het blijft gelijk aan f(a), denk ik, zeg maar, gewoon\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het wordt steeds groter\"\"? Dan denk je dat het quotiënt oploopt. Het nadert een vaste waarde, dus de helling in a.",
+         "Klopt: de gemiddelde verandering gaat over in de verandering op dat moment.",
+         "Koos je \"\"het wordt nul\"\"? Dan denk je dat een klein interval nul oplevert. Δy en Δx worden beide klein, dus de helling in a.",
+         "Koos je \"\"het blijft gelijk aan f(a), denk ik, zeg maar, gewoon\"\"? Dan verwar je het quotiënt met de functiewaarde. Het is een verandering, dus de helling in a."
+        ],
+        "uh": "Wat gebeurt er met het differentiequotiënt op [a, a + h] als h steeds kleiner wordt?"
+       },
+       {
+        "v": "Waarmee komt de helling van een grafiek in een punt overeen?",
+        "o": [
+         "\"de helling van de lijn tussen twee ver uiteen liggende punten\"",
+         "\"de functiewaarde in dat punt\"",
+         "\"het gemiddelde van alle toenames\"",
+         "\"de helling van de raaklijn in dat punt\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de helling van de lijn tussen twee ver uiteen liggende punten\"\"? Dan neem je een gemiddelde over een groot interval. De helling in een punt volgt uit een heel klein interval, dus de raaklijn.",
+         "Koos je \"\"de functiewaarde in dat punt\"\"? Dan verwar je de hoogte met de steilheid. De helling is een verandering, dus de raaklijn.",
+         "Koos je \"\"het gemiddelde van alle toenames\"\"? Dan neem je een gemiddelde over de hele grafiek. Het gaat om dat ene punt, dus de raaklijn.",
+         "Klopt: de raaklijn heeft dezelfde steilheid als de grafiek in dat punt."
+        ],
+        "uh": "Waarmee komt de helling van een grafiek in een punt overeen?"
+       },
+       {
+        "v": "Welke notatie hoort bij de afgeleide van f in het punt a?",
+        "o": [
+         "\"f'(a)\"",
+         "\"f(a)'\"",
+         "\"f(a)\"",
+         "\"fₐ\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: f'(a) is de helling van de grafiek in a. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"f(a)'\"\"? Dan zet dit je de accent op de verkeerde plaats. De afgeleide schrijf je f'(a), dus f'(a). Het goede antwoord is f'(a).",
+         "Koos je \"\"f(a)\"\"? Dan neem je de functiewaarde. De afgeleide is de helling, dus f'(a). Door de stappen goed na te lopen kom je uit op f'(a).",
+         "Koos je \"\"fₐ\"\"? Dan gebruik je een index. De notatie voor de afgeleide is f'(a), dus f'(a). Controleer je stap: de juiste uitkomst is f'(a)."
+        ],
+        "uh": "Welke notatie hoort bij de afgeleide van f in het punt a?"
+       },
+       {
+        "v": "Hoe bepaal je met een numeriek-grafische methode de helling in een punt?",
+        "o": [
+         "\"de functiewaarde in het punt aflezen\"",
+         "\"de oppervlakte onder de grafiek bepalen, eigenlijk, denk ik, zeg maar\"",
+         "\"kleine intervallen rond het punt nemen en het differentiequotiënt berekenen\"",
+         "\"de x-waarde van het punt verdubbelen\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de functiewaarde in het punt aflezen\"\"? Dan lees je alleen de hoogte af. De helling is een verandering, dus kleine intervallen nemen.",
+         "Koos je \"\"de oppervlakte onder de grafiek bepalen, eigenlijk, denk ik, zeg maar\"\"? Dan bepaal je een oppervlakte. De helling volgt uit het quotiënt, dus kleine intervallen nemen.",
+         "Klopt: je ziet het quotiënt naar een vaste waarde gaan. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de x-waarde van het punt verdubbelen\"\"? Dan verdubbel je x. Dat geeft geen helling, dus kleine intervallen nemen."
+        ],
+        "uh": "Hoe bepaal je met een numeriek-grafische methode de helling in een punt?"
+       },
+       {
+        "v": "Welke grootheid is de afgeleide van de afstand s(t) naar de tijd t?",
+        "o": [
+         "\"de afstand zelf\"",
+         "\"de snelheid\"",
+         "\"de tijd\"",
+         "\"de gemiddelde afstand\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 4,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de afstand zelf\"\"? Dan neem je de functie als afgeleide. De afgeleide is de verandering, dus de snelheid. Het goede antwoord is de snelheid.",
+         "Klopt: de snelheid is de verandering van de afstand per seconde op dat moment.",
+         "Koos je \"\"de tijd\"\"? Dan neem je de variabele. De afgeleide van s is een verandering, dus de snelheid. Door de stappen goed na te lopen kom je uit op de snelheid.",
+         "Koos je \"\"de gemiddelde afstand\"\"? Dan neem je een gemiddelde afstand. De afgeleide is de snelheid op dat moment, dus de snelheid."
+        ],
+        "uh": "Welke grootheid is de afgeleide van de afstand s(t) naar de tijd t?"
+       },
+       {
+        "v": "Wat zegt f'(a) = 0 over de grafiek van f in a?",
+        "o": [
+         "\"f(a) = 0\"",
+         "\"de grafiek heeft in a een nulpunt, denk ik, zeg maar\"",
+         "\"de grafiek is in a verticaal\"",
+         "\"de grafiek heeft in a een horizontale raaklijn\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"f(a) = 0\"\"? Dan verwar je f'(a) met f(a). De afgeleide is de helling, dus een horizontale raaklijn. Het goede antwoord is de grafiek heeft in a een horizontale raaklijn.",
+         "Koos je \"\"de grafiek heeft in a een nulpunt, denk ik, zeg maar\"\"? Dan verwar je de helling met een nulpunt. f'(a) = 0 betekent helling 0, dus een horizontale raaklijn.",
+         "Koos je \"\"de grafiek is in a verticaal\"\"? Dan denk je aan een oneindige helling. Helling 0 is horizontaal, dus een horizontale raaklijn.",
+         "Klopt: helling 0 betekent horizontaal. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Wat zegt f'(a) = 0 over de grafiek van f in a?"
+       },
+       {
+        "v": "Wat zegt een negatieve afgeleide f'(a) < 0 over de grafiek?",
+        "o": [
+         "\"de grafiek daalt in a\"",
+         "\"de grafiek stijgt in a\"",
+         "\"de functiewaarde is negatief\"",
+         "\"de grafiek heeft een top\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een negatieve helling betekent dalen. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de grafiek stijgt in a\"\"? Dan verwar je het teken. Negatief betekent dalen, dus de grafiek daalt. Het goede antwoord is de grafiek daalt in a.",
+         "Koos je \"\"de functiewaarde is negatief\"\"? Dan verwar je f'(a) met f(a). De afgeleide gaat over de helling, dus de grafiek daalt.",
+         "Koos je \"\"de grafiek heeft een top\"\"? Dan denk je aan f'(a) = 0. Een top heeft helling 0, dus de grafiek daalt. Controleer je stap: de juiste uitkomst is de grafiek daalt in a."
+        ],
+        "uh": "Wat zegt een negatieve afgeleide f'(a) < 0 over de grafiek?"
+       },
+       {
+        "v": "Bereken (f(3) − f(2)) : 1 voor f(x) = x².",
+        "o": [
+         "\"9\"",
+         "\"4\"",
+         "\"5\"",
+         "\"25\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"9\"\"? Dan neem je f(3). Het quotiënt is (f(3) − f(2)) : 1, dus 5. Het goede antwoord is 5.",
+         "Koos je \"\"4\"\"? Dan neem je f(2). Het quotiënt is (f(3) − f(2)) : 1, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+         "Klopt: (9 − 4) : 1 = 5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"25\"\"? Dan kwadrateer je het quotiënt. Het is (9 − 4) : 1, dus 5. Controleer je stap: de juiste uitkomst is 5."
+        ],
+        "uh": "Bereken (f(3) − f(2)) : 1 voor f(x) = x².",
+        "ctx": "Voor f(x) = x² wil een leerling de helling in x = 2 benaderen. Hij berekent het differentiequotiënt op [2, 3], [2; 2,1] en [2; 2,01] en kijkt waar de uitkomsten naartoe gaan."
+       },
+       {
+        "v": "Bereken (f(2,1) − f(2)) : 0,1 voor dezelfde functie.",
+        "o": [
+         "\"0,41\"",
+         "\"4,1\"",
+         "\"4,41\"",
+         "\"41\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,41\"\"? Dan deel je niet door 0,1. 4,41 − 4 = 0,41 en 0,41 : 0,1, dus 4,1. Het goede antwoord is 4,1.",
+         "Klopt: (4,41 − 4) : 0,1 = 4,1. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"4,41\"\"? Dan neem je f(2,1). Trek f(2) af en deel door 0,1, dus 4,1. Door de stappen goed na te lopen kom je uit op 4,1.",
+         "Koos je \"\"41\"\"? Dan deel je door 0,01. Het interval is 0,1, dus 4,1. Controleer je stap: de juiste uitkomst is 4,1."
+        ],
+        "uh": "Bereken (f(2,1) − f(2)) : 0,1 voor dezelfde functie.",
+        "ctx": "Voor f(x) = x² wil een leerling de helling in x = 2 benaderen. Hij berekent het differentiequotiënt op [2, 3], [2; 2,1] en [2; 2,01] en kijkt waar de uitkomsten naartoe gaan."
+       },
+       {
+        "v": "Naar welke waarde gaan de quotiënten 5; 4,1 en 4,01 op steeds kleinere intervallen?",
+        "o": [
+         "\"5\"",
+         "\"4,01\"",
+         "\"0\"",
+         "\"4\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5\"\"? Dan neem je het eerste quotiënt. Het nadert 4 als h kleiner wordt, dus 4. Het goede antwoord is 4.",
+         "Koos je \"\"4,01\"\"? Dan neem je het laatste quotiënt. De limiet is 4, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Koos je \"\"0\"\"? Dan denk je dat ze naar nul gaan. De quotiënten naderen 4, dus 4. Controleer je stap: de juiste uitkomst is 4.",
+         "Klopt: de helling in x = 2 is 4. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Naar welke waarde gaan de quotiënten 5; 4,1 en 4,01 op steeds kleinere intervallen?",
+        "ctx": "Voor f(x) = x² wil een leerling de helling in x = 2 benaderen. Hij berekent het differentiequotiënt op [2, 3], [2; 2,1] en [2; 2,01] en kijkt waar de uitkomsten naartoe gaan."
+       },
+       {
+        "v": "Bereken (f(2) − f(1)) : 1 voor f(x) = x³.",
+        "o": [
+         "\"7\"",
+         "\"8\"",
+         "\"3\"",
+         "\"1\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (8 − 1) : 1 = 7. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"8\"\"? Dan neem je f(2). Trek f(1) af, dus 7. Het goede antwoord is 7.",
+         "Koos je \"\"3\"\"? Dan neem je de helling in x = 1. Hier is het quotiënt op [1, 2], dus 7. Door de stappen goed na te lopen kom je uit op 7.",
+         "Koos je \"\"1\"\"? Dan neem je f(1). Het quotiënt is (8 − 1) : 1, dus 7. Controleer je stap: de juiste uitkomst is 7."
+        ],
+        "uh": "Bereken (f(2) − f(1)) : 1 voor f(x) = x³.",
+        "ctx": "Voor f(x) = x³ benadert een leerling de helling in x = 1 met het differentiequotiënt op [1, 2], [1; 1,1] en [1; 1,01]. Hij rekent met de waarden 8, 1,331 en 1,030301."
+       },
+       {
+        "v": "Doe hetzelfde op [1; 1,1]: bereken (f(1,1) − f(1)) : 0,1.",
+        "o": [
+         "\"0,331\"",
+         "\"1,331\"",
+         "\"3,31\"",
+         "\"33,1\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,331\"\"? Dan deel je niet door 0,1. 0,331 : 0,1, dus 3,31. Het goede antwoord is 3,31.",
+         "Koos je \"\"1,331\"\"? Dan neem je f(1,1). Trek f(1) af en deel door 0,1, dus 3,31. Door de stappen goed na te lopen kom je uit op 3,31.",
+         "Klopt: (1,331 − 1) : 0,1 = 3,31. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"33,1\"\"? Dan deel je door 0,01. Het interval is 0,1, dus 3,31. Controleer je stap: de juiste uitkomst is 3,31."
+        ],
+        "uh": "Doe hetzelfde op [1; 1,1]: bereken (f(1,1) − f(1)) : 0,1.",
+        "ctx": "Voor f(x) = x³ benadert een leerling de helling in x = 1 met het differentiequotiënt op [1, 2], [1; 1,1] en [1; 1,01]. Hij rekent met de waarden 8, 1,331 en 1,030301."
+       },
+       {
+        "v": "Welke waarde benadert de helling van x³ in x = 1?",
+        "o": [
+         "\"1\"",
+         "\"3\"",
+         "\"7\"",
+         "\"3,31\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1\"\"? Dan neem je f(1). De helling is het quotiënt, dus 3. Het goede antwoord is 3.",
+         "Klopt: de quotiënten 7; 3,31 en 3,0301 naderen 3. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"7\"\"? Dan neem je het eerste quotiënt. Het nadert 3, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+         "Koos je \"\"3,31\"\"? Dan neem je het tweede quotiënt. Op [1; 1,01] is het 3,0301, dus 3. Controleer je stap: de juiste uitkomst is 3."
+        ],
+        "uh": "Welke waarde benadert de helling van x³ in x = 1?",
+        "ctx": "Voor f(x) = x³ benadert een leerling de helling in x = 1 met het differentiequotiënt op [1, 2], [1; 1,1] en [1; 1,01]. Hij rekent met de waarden 8, 1,331 en 1,030301."
+       },
+       {
+        "v": "Bereken (s(3) − s(2)) : 1 in m/s.",
+        "o": [
+         "\"45 m/s, you know\"",
+         "\"20 m/s\"",
+         "\"5 m/s\"",
+         "\"25 m/s\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"45 m/s, you know\"\"? Dan neem je s(3). Trek s(2) = 20 af, dus 25 m/s. Het goede antwoord is 25 m/s.",
+         "Koos je \"\"20 m/s\"\"? Dan neem je s(2). Trek s(2) af van s(3), dus 25 m/s. Door de stappen goed na te lopen kom je uit op 25 m/s.",
+         "Koos je \"\"5 m/s\"\"? Dan neem je de coëfficiënt 5. Bereken (s(3) − s(2)) : 1, dus 25 m/s. Controleer je stap: de juiste uitkomst is 25 m/s.",
+         "Klopt: (45 − 20) : 1 = 25. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Bereken (s(3) − s(2)) : 1 in m/s.",
+        "ctx": "Een steen valt volgens s(t) = 5t² meter na t seconden. Een leerling benadert de snelheid op t = 2 met het differentiequotiënt op [2, 3], [2; 2,1] en [2; 2,01]. Hij rekent met s(3) = 45, s(2,1) = 22,05 en s(2,01) = 20,2005."
+       },
+       {
+        "v": "En (s(2,1) − s(2)) : 0,1 in m/s?",
+        "o": [
+         "\"20,5 m/s\"",
+         "\"2,05 m/s\"",
+         "\"22,05 m/s, really\"",
+         "\"205 m/s\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (22,05 − 20) : 0,1 = 20,5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2,05 m/s\"\"? Dan deel je niet door 0,1. 2,05 : 0,1, dus 20,5 m/s. Het goede antwoord is 20,5 m/s.",
+         "Koos je \"\"22,05 m/s, really\"\"? Dan neem je s(2,1). Trek s(2) af en deel door 0,1, dus 20,5 m/s. Door de stappen goed na te lopen kom je uit op 20,5 m/s.",
+         "Koos je \"\"205 m/s\"\"? Dan deel je door 0,01. Het interval is 0,1, dus 20,5 m/s. Controleer je stap: de juiste uitkomst is 20,5 m/s."
+        ],
+        "uh": "En (s(2,1) − s(2)) : 0,1 in m/s?",
+        "ctx": "Een steen valt volgens s(t) = 5t² meter na t seconden. Een leerling benadert de snelheid op t = 2 met het differentiequotiënt op [2, 3], [2; 2,1] en [2; 2,01]. Hij rekent met s(3) = 45, s(2,1) = 22,05 en s(2,01) = 20,2005."
+       },
+       {
+        "v": "Naar welke snelheid op t = 2 gaan de quotiënten 25; 20,5 en 20,05?",
+        "o": [
+         "\"25 m/s\"",
+         "\"20,5 m/s\"",
+         "\"20 m/s\"",
+         "\"0 m/s\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"25 m/s\"\"? Dan neem je het eerste quotiënt. Het nadert 20, dus 20 m/s. Het goede antwoord is 20 m/s.",
+         "Koos je \"\"20,5 m/s\"\"? Dan neem je het tweede quotiënt. Het derde is 20,05, dus 20 m/s. Door de stappen goed na te lopen kom je uit op 20 m/s.",
+         "Klopt: de snelheid op t = 2 is 20 m/s. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0 m/s\"\"? Dan denk je dat de snelheid nul wordt. De quotiënten naderen 20, dus 20 m/s. Controleer je stap: de juiste uitkomst is 20 m/s."
+        ],
+        "uh": "Naar welke snelheid op t = 2 gaan de quotiënten 25; 20,5 en 20,05?",
+        "ctx": "Een steen valt volgens s(t) = 5t² meter na t seconden. Een leerling benadert de snelheid op t = 2 met het differentiequotiënt op [2, 3], [2; 2,1] en [2; 2,01]. Hij rekent met s(3) = 45, s(2,1) = 22,05 en s(2,01) = 20,2005."
+       },
+       {
+        "v": "Hoe interpreteer je het getal 20 m/s?",
+        "o": [
+         "\"de gemiddelde snelheid over de hele val, volgens mij\"",
+         "\"de snelheid van de steen op het moment t = 2 s\"",
+         "\"de afstand na 2 s\"",
+         "\"de tijd die de val duurt\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de gemiddelde snelheid over de hele val, volgens mij\"\"? Dan neem je het gemiddelde over een groot interval. 20 m/s hoort bij één moment, dus de snelheid op t = 2.",
+         "Klopt: de helling van s in t = 2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de afstand na 2 s\"\"? Dan neem je de afstand. 20 m is s(2), maar 20 m/s is de snelheid. Door de stappen goed na te lopen kom je uit op de snelheid van de steen op het moment t = 2 s.",
+         "Koos je \"\"de tijd die de val duurt\"\"? Dan neem je een tijd. 20 m/s is een snelheid, dus op t = 2. Controleer je stap: de juiste uitkomst is de snelheid van de steen op het moment t = 2 s."
+        ],
+        "uh": "Hoe interpreteer je het getal 20 m/s?",
+        "ctx": "Een steen valt volgens s(t) = 5t² meter na t seconden. Een leerling benadert de snelheid op t = 2 met het differentiequotiënt op [2, 3], [2; 2,1] en [2; 2,01]. Hij rekent met s(3) = 45, s(2,1) = 22,05 en s(2,01) = 20,2005."
+       },
+       {
+        "v": "Welke waarde heeft het quotiënt van √x op [4, 5]?",
+        "o": [
+         "\"2,236\"",
+         "\"0,5\"",
+         "\"1\"",
+         "\"0,236\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2,236\"\"? Dan neem je √5. Trek f(4) = 2 af, dus 0,236. Het goede antwoord is 0,236.",
+         "Koos je \"\"0,5\"\"? Dan neem je een andere breuk. Het quotiënt is (√5 − 2) : 1, dus 0,236. Door de stappen goed na te lopen kom je uit op 0,236.",
+         "Koos je \"\"1\"\"? Dan neem je Δx. Het quotiënt is Δy : Δx, dus 0,236. Controleer je stap: de juiste uitkomst is 0,236.",
+         "Klopt: (√5 − 2) : 1 ≈ 0,236. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke waarde heeft het quotiënt van √x op [4, 5]?",
+        "ctx": "Voor f(x) = √x benadert een leerling de helling in x = 4 met het quotiënt op [4, 5], [4; 4,1] en [4; 4,01]. De waarden zijn ongeveer 0,236, 0,2485 en 0,2498. Hij gebruikt dat f(4) = 2."
+       },
+       {
+        "v": "Naar welke waarde gaan 0,236; 0,2485 en 0,2498?",
+        "o": [
+         "\"0,25\"",
+         "\"0,2\"",
+         "\"0,236\"",
+         "\"0,5\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de helling van √x in x = 4 is 0,25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0,2\"\"? Dan neem je een afgeronde waarde. De waarden naderen 0,25, dus 0,25. Het goede antwoord is 0,25.",
+         "Koos je \"\"0,236\"\"? Dan neem je het eerste quotiënt. Ze naderen 0,25, dus 0,25. Door de stappen goed na te lopen kom je uit op 0,25.",
+         "Koos je \"\"0,5\"\"? Dan neem je de verhouding bij [0, 4]. Hier gaat het om x = 4, dus 0,25. Controleer je stap: de juiste uitkomst is 0,25."
+        ],
+        "uh": "Naar welke waarde gaan 0,236; 0,2485 en 0,2498?",
+        "ctx": "Voor f(x) = √x benadert een leerling de helling in x = 4 met het quotiënt op [4, 5], [4; 4,1] en [4; 4,01]. De waarden zijn ongeveer 0,236, 0,2485 en 0,2498. Hij gebruikt dat f(4) = 2."
+       },
+       {
+        "v": "Wat zegt 0,25 over de grafiek van f(x) = √x in x = 4?",
+        "o": [
+         "\"de grafiek ligt daar op hoogte 0,25, gewoon\"",
+         "\"de grafiek daalt daar\"",
+         "\"de grafiek stijgt daar met helling 0,25\"",
+         "\"f(4) = 0,25\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de grafiek ligt daar op hoogte 0,25, gewoon\"\"? Dan verwar je de helling met de functiewaarde. f(4) = 2, dus helling 0,25.",
+         "Koos je \"\"de grafiek daalt daar\"\"? Dan denk je dat 0,25 daling betekent. Positief betekent stijgen, dus stijgend. Door de stappen goed na te lopen kom je uit op de grafiek stijgt daar met helling 0,25.",
+         "Klopt: de helling in x = 4 is 0,25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"f(4) = 0,25\"\"? Dan verwar je f(4) met f'(4). f(4) = 2, dus helling 0,25. Controleer je stap: de juiste uitkomst is de grafiek stijgt daar met helling 0,25."
+        ],
+        "uh": "Wat zegt 0,25 over de grafiek van f(x) = √x in x = 4?",
+        "ctx": "Voor f(x) = √x benadert een leerling de helling in x = 4 met het quotiënt op [4, 5], [4; 4,1] en [4; 4,01]. De waarden zijn ongeveer 0,236, 0,2485 en 0,2498. Hij gebruikt dat f(4) = 2."
+       },
+       {
+        "v": "Welke vergelijking heeft de raaklijn in (2, 4) met helling 4?",
+        "o": [
+         "\"y = 4x + 4, denk ik\"",
+         "\"y = 4x − 4\"",
+         "\"y = 2x\"",
+         "\"y = 4x\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"y = 4x + 4, denk ik\"\"? Dan maak je een tekenfout. y − 4 = 4x − 8, dus y = 4x − 4. Het goede antwoord is y = 4x − 4.",
+         "Klopt: y − 4 = 4(x − 2) geeft y = 4x − 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"y = 2x\"\"? Dan neem je de verkeerde helling. De helling is 4, dus y = 4x − 4. Door de stappen goed na te lopen kom je uit op y = 4x − 4.",
+         "Koos je \"\"y = 4x\"\"? Dan laat je de b weg. De raaklijn gaat door (2, 4), dus y = 4x − 4. Controleer je stap: de juiste uitkomst is y = 4x − 4."
+        ],
+        "uh": "Welke vergelijking heeft de raaklijn in (2, 4) met helling 4?",
+        "ctx": "Voor f(x) = x² is de helling in x = 2 gelijk aan 4 en f(2) = 4. Een leerling stelt de raaklijn in (2, 4) op met die helling en vergelijkt de raaklijn met de grafiek bij x = 2,1, waar f(2,1) = 4,41."
+       },
+       {
+        "v": "Welke waarde geeft de raaklijn bij x = 2,1?",
+        "o": [
+         "\"4,41\"",
+         "\"8,4\"",
+         "\"4,0\"",
+         "\"4,4\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4,41\"\"? Dan neem je f(2,1). De raaklijn geeft 4,4, dus 4,4. Het goede antwoord is 4,4.",
+         "Koos je \"\"8,4\"\"? Dan vergeet je − 4 af te trekken. 8,4 − 4 = 4,4, dus 4,4. Door de stappen goed na te lopen kom je uit op 4,4.",
+         "Koos je \"\"4,0\"\"? Dan neem je f(2). Vul x = 2,1 in de raaklijn in, dus 4,4. Controleer je stap: de juiste uitkomst is 4,4.",
+         "Klopt: 4 · 2,1 − 4 = 4,4. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke waarde geeft de raaklijn bij x = 2,1?",
+        "ctx": "Voor f(x) = x² is de helling in x = 2 gelijk aan 4 en f(2) = 4. Een leerling stelt de raaklijn in (2, 4) op met die helling en vergelijkt de raaklijn met de grafiek bij x = 2,1, waar f(2,1) = 4,41."
+       },
+       {
+        "v": "Wat zie je als je de raaklijnwaarde 4,4 vergelijkt met f(2,1) = 4,41?",
+        "o": [
+         "\"de raaklijn ligt dicht bij de grafiek vlak bij het raakpunt\"",
+         "\"de raaklijn is gelijk aan de grafiek\"",
+         "\"de raaklijn is veel te laag\"",
+         "\"de raaklijn snijdt de grafiek twee keer, zeg maar, gewoon, volgens mij\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: het verschil is maar 0,01. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de raaklijn is gelijk aan de grafiek\"\"? Dan denk je dat ze samenvallen. Er is een klein verschil, dus dichtbij maar niet gelijk.",
+         "Koos je \"\"de raaklijn is veel te laag\"\"? Dan denk je dat het verschil groot is. Het is maar 0,01, dus dicht bij de grafiek.",
+         "Koos je \"\"de raaklijn snijdt de grafiek twee keer, zeg maar, gewoon, volgens mij\"\"? Dan denk je aan een snijlijn. De raaklijn raakt in één punt, dus dicht bij de grafiek."
+        ],
+        "uh": "Wat zie je als je de raaklijnwaarde 4,4 vergelijkt met f(2,1) = 4,41?",
+        "ctx": "Voor f(x) = x² is de helling in x = 2 gelijk aan 4 en f(2) = 4. Een leerling stelt de raaklijn in (2, 4) op met die helling en vergelijkt de raaklijn met de grafiek bij x = 2,1, waar f(2,1) = 4,41."
+       },
+       {
+        "v": "Bereken het quotiënt links van x = 2, tussen 1,5 en 2.",
+        "o": [
+         "\"1,75\"",
+         "\"0,5\"",
+         "\"3,5\"",
+         "\"7\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1,75\"\"? Dan deel je niet door 0,5. 1,75 : 0,5, dus 3,5. Het goede antwoord is 3,5.",
+         "Koos je \"\"0,5\"\"? Dan neem je de lengte van het interval. Bereken Δy : Δx, dus 3,5. Door de stappen goed na te lopen kom je uit op 3,5.",
+         "Klopt: (4 − 2,25) : 0,5 = 3,5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"7\"\"? Dan deel je door 0,25. Het interval is 0,5, dus 3,5. Controleer je stap: de juiste uitkomst is 3,5."
+        ],
+        "uh": "Bereken het quotiënt links van x = 2, tussen 1,5 en 2.",
+        "ctx": "De functie f(x) = x² is gegeven in een tabel: x = 1; 1,5; 2; 2,5; 3 geeft f = 1; 2,25; 4; 6,25; 9. Een leerling benadert de helling in x = 2 met links [1,5; 2], rechts [2; 2,5] en het symmetrische interval [1,5; 2,5]."
+       },
+       {
+        "v": "En rechts van x = 2, tussen 2 en 2,5?",
+        "o": [
+         "\"2,25\"",
+         "\"4,5\"",
+         "\"9\"",
+         "\"0,5\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2,25\"\"? Dan deel je niet door 0,5. 2,25 : 0,5, dus 4,5. Het goede antwoord is 4,5.",
+         "Klopt: (6,25 − 4) : 0,5 = 4,5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"9\"\"? Dan neem je f(3). Gebruik f(2,5) − f(2), dus 4,5. Door de stappen goed na te lopen kom je uit op 4,5.",
+         "Koos je \"\"0,5\"\"? Dan neem je de lengte van het interval. Bereken Δy : Δx, dus 4,5. Controleer je stap: de juiste uitkomst is 4,5."
+        ],
+        "uh": "En rechts van x = 2, tussen 2 en 2,5?",
+        "ctx": "De functie f(x) = x² is gegeven in een tabel: x = 1; 1,5; 2; 2,5; 3 geeft f = 1; 2,25; 4; 6,25; 9. Een leerling benadert de helling in x = 2 met links [1,5; 2], rechts [2; 2,5] en het symmetrische interval [1,5; 2,5]."
+       },
+       {
+        "v": "Welke waarde geeft het symmetrische interval [1,5; 2,5]?",
+        "o": [
+         "\"3,5\"",
+         "\"4,5\"",
+         "\"8\"",
+         "\"4\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3,5\"\"? Dan neem je het linkerinterval. Gebruik beide kanten, dus 4. Het goede antwoord is 4.",
+         "Koos je \"\"4,5\"\"? Dan neem je het rechterinterval. Gebruik beide kanten, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Koos je \"\"8\"\"? Dan deel je niet door 1. Δy = 4 en Δx = 1, dus 4. Controleer je stap: de juiste uitkomst is 4.",
+         "Klopt: (6,25 − 2,25) : 1 = 4. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke waarde geeft het symmetrische interval [1,5; 2,5]?",
+        "ctx": "De functie f(x) = x² is gegeven in een tabel: x = 1; 1,5; 2; 2,5; 3 geeft f = 1; 2,25; 4; 6,25; 9. Een leerling benadert de helling in x = 2 met links [1,5; 2], rechts [2; 2,5] en het symmetrische interval [1,5; 2,5]."
+       },
+       {
+        "v": "Waarom is het symmetrische interval een betere benadering van de helling in x = 2?",
+        "o": [
+         "\"de fouten links en rechts heffen elkaar op\"",
+         "\"omdat het interval langer is, volgens mij, eigenlijk\"",
+         "\"omdat x = 2 niet meedoet\"",
+         "\"omdat de functie lineair is\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Neem steeds kleinere intervallen, bekijk waar het differentiequotiënt naartoe gaat en interpreteer dat als helling met eenheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: links is 3,5 te laag en rechts 4,5 te hoog; het gemiddelde is 4.",
+         "Koos je \"\"omdat het interval langer is, volgens mij, eigenlijk\"\"? Dan denk je dat een langer interval beter is. Het gaat om de symmetrie, dus fouten heffen elkaar op.",
+         "Koos je \"\"omdat x = 2 niet meedoet\"\"? Dan denk je dat het punt niet nodig is. Het midden is x = 2, dus symmetrisch. Door de stappen goed na te lopen kom je uit op de fouten links en rechts heffen elkaar op.",
+         "Koos je \"\"omdat de functie lineair is\"\"? Dan denk je dat f een lijn is. f is een parabool, dus de symmetrie helpt. Controleer je stap: de juiste uitkomst is de fouten links en rechts heffen elkaar op."
+        ],
+        "uh": "Waarom is het symmetrische interval een betere benadering van de helling in x = 2?",
+        "ctx": "De functie f(x) = x² is gegeven in een tabel: x = 1; 1,5; 2; 2,5; 3 geeft f = 1; 2,25; 4; 6,25; 9. Een leerling benadert de helling in x = 2 met links [1,5; 2], rechts [2; 2,5] en het symmetrische interval [1,5; 2,5]."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Voor f(x) = x² benadert een leerling de helling in x = 3. Hij berekent het differentiequotiënt op [3; 3,1] en op [3; 3,01] en trekt een conclusie over de helling in x = 3. Hij rekent met f(3,1) = 9,61 en f(3,01) = 9,0601.",
+        "v": "Benader de helling in x = 3 en geef de conclusie.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Op [3; 3,1] is het quotiënt (9,61 − 9) : 0,1 = 6,1 (1p). Op [3; 3,01] is het (9,0601 − 9) : 0,01 = 6,01 (1p). De helling in x = 3 is ongeveer 6 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Voor f(x) = x³ benadert een leerling de helling in x = 2 met intervallen van lengte 0,1 en 0,01. Hij rekent met f(2,1) = 9,261 en f(2,01) = 8,120601 en rondt af op vier decimalen.",
+        "v": "Benader de helling in x = 2.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Op [2; 2,1] is het quotiënt (9,261 − 8) : 0,1 = 12,61 (1p). Op [2; 2,01] is het ongeveer 12,0601 (1p). De helling is ongeveer 12 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een voorwerp heeft afstand s(t) = 4t² meter na t seconden. Een leerling benadert de snelheid op t = 1 met het quotiënt op [1; 1,1] en [1; 1,01] en geeft de snelheid met eenheid. Hij rekent met s(1,1) = 4,84 en s(1,01) = 4,0804.",
+        "v": "Benader de snelheid op t = 1.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Op [1; 1,1] is het quotiënt (4,84 − 4) : 0,1 = 8,4 (1p). Op [1; 1,01] is het 8,04 (1p). De snelheid op t = 1 is ongeveer 8 m/s (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Voor f(x) = 1/x benadert een leerling de helling in x = 2 met het quotiënt op [2; 2,1] en [2; 2,01] en beschrijft wat het teken van de uitkomst betekent. Hij rekent met f(2) = 0,5, f(2,1) ≈ 0,47619 en f(2,01) ≈ 0,497512.",
+        "v": "Benader de helling in x = 2 en interpreteer het teken.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Op [2; 2,1] is het quotiënt ongeveer −0,238 en op [2; 2,01] ongeveer −0,249 (1p). De helling is ongeveer −0,25 (1p). Negatief betekent dat de grafiek daalt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Voor f(x) = x² benadert een leerling de helling in x = 1 met het symmetrische interval [0,5; 1,5], stelt daarmee de raaklijn in (1, 1) op en controleert die bij x = 1,1. Hij rekent met f(0,5) = 0,25 en f(1,5) = 2,25.",
+        "v": "Benader de helling, stel de raaklijn op en controleer bij x = 1,1.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(2,25 − 0,25) : 1 = 2 (1p). De raaklijn is y − 1 = 2(x − 1), dus y = 2x − 1 (1p). Bij x = 1,1 geeft de raaklijn 1,2 en f(1,1) = 1,21 (1p)."
+       }
+      ]
      }
     ]
    },
