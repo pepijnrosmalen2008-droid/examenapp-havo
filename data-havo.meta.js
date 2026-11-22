@@ -5791,6 +5791,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C8",
+      "lo": "wb.C.8",
+      "gs": 2,
+      "naam": "Afstand tussen punten, lijnen en cirkels en het aantal gemeenschappelijke punten",
+      "beschrijving": "Je berekent de afstand tussen punten, van een punt tot een lijn, tussen evenwijdige lijnen en van een punt of lijn tot een cirkel, en bepaalt het aantal gemeenschappelijke punten van twee cirkels.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Afstand tussen punten",
+       "Afstand van punt tot lijn",
+       "Afstand tussen evenwijdige lijnen",
+       "Afstand tot een cirkel",
+       "Aantal gemeenschappelijke punten"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

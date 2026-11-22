@@ -1,0 +1,682 @@
+{
+ "id": "C8",
+ "lo": "wb.C.8",
+ "gs": 2,
+ "naam": "Afstand tussen punten, lijnen en cirkels en het aantal gemeenschappelijke punten",
+ "beschrijving": "Je berekent de afstand tussen punten, van een punt tot een lijn, tussen evenwijdige lijnen en van een punt of lijn tot een cirkel, en bepaalt het aantal gemeenschappelijke punten van twee cirkels.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Afstand tussen punten",
+  "Afstand van punt tot lijn",
+  "Afstand tussen evenwijdige lijnen",
+  "Afstand tot een cirkel",
+  "Aantal gemeenschappelijke punten"
+ ],
+ "sam": "De afstand van een punt tot een lijn is de lengte van het loodrechte lijnstuk, met een loodlijn en het voetpunt. Bij een cirkel vergelijk je de afstand tot het middelpunt met de straal. Twee cirkels liggen buiten elkaar bij d > r₁ + r₂, raken bij gelijkheid en snijden daartussen. Controleer met een punt.",
+ "begrippen": [
+  {
+   "t": "Afstand tussen twee punten",
+   "d": "√(Δx² + Δy²) met Pythagoras."
+  },
+  {
+   "t": "Afstand van een punt tot een lijn",
+   "d": "De lengte van het loodrechte lijnstuk van het punt naar de lijn."
+  },
+  {
+   "t": "Loodlijn",
+   "d": "De lijn door het punt met rc −1 gedeeld door de rc van de lijn."
+  },
+  {
+   "t": "Voetpunt",
+   "d": "Het snijpunt van de loodlijn met de lijn."
+  },
+  {
+   "t": "Afstand tussen evenwijdige lijnen",
+   "d": "Overal gelijk: bereken de afstand van één punt tot de andere lijn."
+  },
+  {
+   "t": "Afstand van een punt tot een cirkel",
+   "d": "Het verschil tussen de afstand tot het middelpunt en de straal."
+  },
+  {
+   "t": "Afstand van een lijn tot een cirkel",
+   "d": "De afstand van M tot de lijn min de straal."
+  },
+  {
+   "t": "Middelpuntsafstand",
+   "d": "De afstand d tussen de middelpunten van twee cirkels."
+  },
+  {
+   "t": "Buiten elkaar",
+   "d": "d > r₁ + r₂: geen gemeenschappelijke punten."
+  },
+  {
+   "t": "Raken van buiten",
+   "d": "d = r₁ + r₂: één gemeenschappelijk punt."
+  },
+  {
+   "t": "Snijden",
+   "d": "|r₁ − r₂| < d < r₁ + r₂: twee gemeenschappelijke punten."
+  },
+  {
+   "t": "Binnen elkaar",
+   "d": "d < |r₁ − r₂|: geen gemeenschappelijke punten; bij d = |r₁ − r₂| raken ze van binnen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke afstand heeft A(0, 0) tot B(3, 4)?",
+   "o": [
+    "\"7\"",
+    "\"5\"",
+    "\"25\"",
+    "\"3,5\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7\"\"? Dan tel je 3 en 4 op. Gebruik Pythagoras, dus 5. Het goede antwoord is 5.",
+    "Klopt: √(9 + 16) = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"25\"\"? Dan vergeet je de wortel. 9 + 16 = 25 en dan √25, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Koos je \"\"3,5\"\"? Dan neem je het gemiddelde van 3 en 4. Gebruik Pythagoras, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Welke afstand heeft A(0, 0) tot B(3, 4)?"
+  },
+  {
+   "v": "Waarmee komt de afstand van een punt tot een lijn overeen?",
+   "o": [
+    "\"het langste lijnstuk\"",
+    "\"een willekeurig lijnstuk naar de lijn, to be honest\"",
+    "\"het lijnstuk naar de oorsprong\"",
+    "\"het kortste lijnstuk, loodrecht op de lijn\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het langste lijnstuk\"\"? Dan kies je het langste lijnstuk. Afstand is altijd de kortste verbinding, dus loodrecht.",
+    "Koos je \"\"een willekeurig lijnstuk naar de lijn, to be honest\"\"? Dan kies je een schuin lijnstuk. Dat is langer dan de kortste, dus loodrecht.",
+    "Koos je \"\"het lijnstuk naar de oorsprong\"\"? Dan neem je de afstand tot (0, 0). Het gaat om de afstand tot de lijn, dus loodrecht.",
+    "Klopt: de kortste verbinding staat loodrecht op de lijn."
+   ],
+   "uh": "Waarmee komt de afstand van een punt tot een lijn overeen?"
+  },
+  {
+   "v": "Welke richtingscoëfficiënt heeft de loodlijn op y = x + 1?",
+   "o": [
+    "\"−1\"",
+    "\"1\"",
+    "\"½\"",
+    "\"−½\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 1 · (−1) = −1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1\"\"? Dan neem je dezelfde rc. Dat geeft een evenwijdige lijn, dus −1. Het goede antwoord is −1.",
+    "Koos je \"\"½\"\"? Dan draai je de breuk om. Het product moet −1 zijn, dus −1. Door de stappen goed na te lopen kom je uit op −1.",
+    "Koos je \"\"−½\"\"? Dan neem je het negatief omgekeerde van 2. Hier is a = 1, dus −1. Controleer je stap: de juiste uitkomst is −1."
+   ],
+   "uh": "Welke richtingscoëfficiënt heeft de loodlijn op y = x + 1?"
+  },
+  {
+   "v": "Waar meet je de afstand tussen twee evenwijdige lijnen?",
+   "o": [
+    "\"langs de x-as\"",
+    "\"langs de y-as\"",
+    "\"loodrecht op beide lijnen\"",
+    "\"langs een van de lijnen, eigenlijk\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"langs de x-as\"\"? Dan meet je horizontaal. Dat is langer dan de kortste afstand, dus loodrecht. Het goede antwoord is loodrecht op beide lijnen.",
+    "Koos je \"\"langs de y-as\"\"? Dan meet je verticaal. Dat is langer dan de kortste afstand, dus loodrecht. Door de stappen goed na te lopen kom je uit op loodrecht op beide lijnen.",
+    "Klopt: de kortste afstand is loodrecht. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"langs een van de lijnen, eigenlijk\"\"? Dan meet je langs een lijn. Dat geeft geen afstand tussen de lijnen, dus loodrecht."
+   ],
+   "uh": "Waar meet je de afstand tussen twee evenwijdige lijnen?"
+  },
+  {
+   "v": "Hoe groot is de afstand van het punt (10, 0) tot de cirkel x² + y² = 25?",
+   "o": [
+    "\"10\"",
+    "\"5\"",
+    "\"15\"",
+    "\"25\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10\"\"? Dan neem je de afstand tot het middelpunt. Trek de straal af, dus 5. Het goede antwoord is 5.",
+    "Klopt: 10 − 5 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"15\"\"? Dan tel je de straal op. Het punt ligt buiten, trek af, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Koos je \"\"25\"\"? Dan neem je r². Trek de straal 5 af van 10, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Hoe groot is de afstand van het punt (10, 0) tot de cirkel x² + y² = 25?"
+  },
+  {
+   "v": "Twee cirkels hebben middelpuntsafstand d en stralen r₁ en r₂. Wat geldt bij d = r₁ + r₂?",
+   "o": [
+    "\"twee punten\"",
+    "\"geen punt\"",
+    "\"ze vallen samen, I think, I suppose, really\"",
+    "\"ze raken elkaar van buiten, één punt\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"twee punten\"\"? Dan denk je aan d < r₁ + r₂. Bij gelijkheid raken ze, dus één punt. Het goede antwoord is ze raken elkaar van buiten, één punt.",
+    "Koos je \"\"geen punt\"\"? Dan denk je aan d > r₁ + r₂. Bij gelijkheid raken ze, dus één punt. Door de stappen goed na te lopen kom je uit op ze raken elkaar van buiten, één punt.",
+    "Koos je \"\"ze vallen samen, I think, I suppose, really\"\"? Dan denk je dat gelijke afstanden samenvallen betekent. Ze raken alleen, dus één punt. Controleer je stap: de juiste uitkomst is ze raken elkaar van buiten, één punt.",
+    "Klopt: de cirkels raken elkaar precies. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Twee cirkels hebben middelpuntsafstand d en stralen r₁ en r₂. Wat geldt bij d = r₁ + r₂?"
+  },
+  {
+   "v": "Hoeveel punten hebben twee cirkels gemeen als d > r₁ + r₂?",
+   "o": [
+    "\"geen\"",
+    "\"één\"",
+    "\"twee\"",
+    "\"oneindig veel\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de cirkels liggen buiten elkaar. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"één\"\"? Dan denk je dat de cirkels raken. Bij d > r₁ + r₂ is er een tussenruimte, dus geen. Het goede antwoord is geen.",
+    "Koos je \"\"twee\"\"? Dan denk je dat de cirkels snijden. Dat gebeurt bij d < r₁ + r₂, dus geen. Door de stappen goed na te lopen kom je uit op geen.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat de cirkels samenvallen. Dat kan alleen bij d = 0, dus geen. Controleer je stap: de juiste uitkomst is geen."
+   ],
+   "uh": "Hoeveel punten hebben twee cirkels gemeen als d > r₁ + r₂?"
+  },
+  {
+   "v": "Welke vergelijking heeft de loodlijn door P(0, 5) op y = x + 1?",
+   "o": [
+    "\"y = x + 5\"",
+    "\"y = −x + 1, zeg maar\"",
+    "\"y = −x + 5\"",
+    "\"y = −x − 5\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = x + 5\"\"? Dan neem je de rc van de lijn. De loodlijn heeft rc −1, dus y = −x + 5. Het goede antwoord is y = −x + 5.",
+    "Koos je \"\"y = −x + 1, zeg maar\"\"? Dan neem je de b van de lijn. De loodlijn gaat door P, dus b = 5. Door de stappen goed na te lopen kom je uit op y = −x + 5.",
+    "Klopt: rc −1 en b = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = −x − 5\"\"? Dan maak je een tekenfout bij b. P(0, 5) geeft b = 5, dus y = −x + 5. Controleer je stap: de juiste uitkomst is y = −x + 5."
+   ],
+   "uh": "Welke vergelijking heeft de loodlijn door P(0, 5) op y = x + 1?",
+   "ctx": "Gegeven zijn de lijn y = x + 1 en het punt P(0, 5). Een leerling berekent de afstand van P tot de lijn met de loodlijn: hij stelt de loodlijn door P op, berekent het snijpunt met de lijn en daarna de afstand."
+  },
+  {
+   "v": "In welk punt snijdt de loodlijn de lijn y = x + 1?",
+   "o": [
+    "\"(3, 2), you know\"",
+    "\"(2, 3)\"",
+    "\"(2, 5)\"",
+    "\"(0, 1)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(3, 2), you know\"\"? Dan verwissel je x en y. Het snijpunt is (2, 3), dus x = 2. Het goede antwoord is (2, 3).",
+    "Klopt: x + 1 = −x + 5 geeft x = 2 en y = 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(2, 5)\"\"? Dan neem je y van P. Vul x = 2 in y = x + 1, dus (2, 3). Door de stappen goed na te lopen kom je uit op (2, 3).",
+    "Koos je \"\"(0, 1)\"\"? Dan neem je het snijpunt met de y-as. Los x + 1 = −x + 5 op, dus (2, 3). Controleer je stap: de juiste uitkomst is (2, 3)."
+   ],
+   "uh": "In welk punt snijdt de loodlijn de lijn y = x + 1?",
+   "ctx": "Gegeven zijn de lijn y = x + 1 en het punt P(0, 5). Een leerling berekent de afstand van P tot de lijn met de loodlijn: hij stelt de loodlijn door P op, berekent het snijpunt met de lijn en daarna de afstand."
+  },
+  {
+   "v": "Hoe groot is de afstand van P tot de lijn?",
+   "o": [
+    "\"4\"",
+    "\"√2\"",
+    "\"8\"",
+    "\"2√2 ≈ 2,83\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4\"\"? Dan neem je het verticale verschil 5 − 1. De afstand is loodrecht, dus 2√2. Het goede antwoord is 2√2 ≈ 2,83.",
+    "Koos je \"\"√2\"\"? Dan vergeet je de factor 2. √(4 + 4) = √8, dus 2√2. Door de stappen goed na te lopen kom je uit op 2√2 ≈ 2,83.",
+    "Koos je \"\"8\"\"? Dan vergeet je de wortel. 4 + 4 = 8 en dan √8, dus 2√2. Controleer je stap: de juiste uitkomst is 2√2 ≈ 2,83.",
+    "Klopt: de afstand van (0, 5) tot (2, 3) is √(4 + 4). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe groot is de afstand van P tot de lijn?",
+   "ctx": "Gegeven zijn de lijn y = x + 1 en het punt P(0, 5). Een leerling berekent de afstand van P tot de lijn met de loodlijn: hij stelt de loodlijn door P op, berekent het snijpunt met de lijn en daarna de afstand."
+  },
+  {
+   "v": "Waarom volstaat één punt op de ene lijn om de afstand tussen de lijnen te bepalen?",
+   "o": [
+    "\"de afstand tussen evenwijdige lijnen is overal gelijk\"",
+    "\"omdat de lijnen snijden\"",
+    "\"omdat het punt het middelpunt is\"",
+    "\"omdat de lijnen dezelfde b hebben, denk ik, zeg maar, gewoon\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: elk punt geeft dezelfde loodrechte afstand. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat de lijnen snijden\"\"? Dan denk je dat de lijnen snijden. Ze zijn evenwijdig, dus overal gelijk. Het goede antwoord is de afstand tussen evenwijdige lijnen is overal gelijk.",
+    "Koos je \"\"omdat het punt het middelpunt is\"\"? Dan verwar je het met een cirkel. Hier zijn het lijnen, dus overal gelijk.",
+    "Koos je \"\"omdat de lijnen dezelfde b hebben, denk ik, zeg maar, gewoon\"\"? Dan denk je dat b gelijk is. Hier zijn de b's 1 en −4, dus overal gelijk."
+   ],
+   "uh": "Waarom volstaat één punt op de ene lijn om de afstand tussen de lijnen te bepalen?",
+   "ctx": "De lijnen y = 2x + 1 en y = 2x − 4 zijn evenwijdig. Een leerling bepaalt de afstand ertussen: hij kiest het punt (0, 1) op de eerste lijn en berekent de afstand van dat punt tot de tweede lijn."
+  },
+  {
+   "v": "Welke vergelijking heeft de loodlijn door (0, 1) op y = 2x + 1?",
+   "o": [
+    "\"y = 2x + 1\"",
+    "\"y = −2x + 1, volgens mij\"",
+    "\"y = −½x + 1\"",
+    "\"y = ½x + 1\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 2x + 1\"\"? Dan neem je dezelfde lijn. De loodlijn heeft rc −½, dus y = −½x + 1. Het goede antwoord is y = −½x + 1.",
+    "Koos je \"\"y = −2x + 1, volgens mij\"\"? Dan verander je alleen het teken. Het product moet −1 zijn, dus −½. Door de stappen goed na te lopen kom je uit op y = −½x + 1.",
+    "Klopt: rc −½ en b = 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = ½x + 1\"\"? Dan draai je alleen de breuk om. Ook het teken moet omdraaien, dus −½. Controleer je stap: de juiste uitkomst is y = −½x + 1."
+   ],
+   "uh": "Welke vergelijking heeft de loodlijn door (0, 1) op y = 2x + 1?",
+   "ctx": "De lijnen y = 2x + 1 en y = 2x − 4 zijn evenwijdig. Een leerling bepaalt de afstand ertussen: hij kiest het punt (0, 1) op de eerste lijn en berekent de afstand van dat punt tot de tweede lijn."
+  },
+  {
+   "v": "Hoe groot is de afstand tussen de lijnen?",
+   "o": [
+    "\"5\"",
+    "\"√5 ≈ 2,24\"",
+    "\"2\"",
+    "\"2,5\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5\"\"? Dan neem je het verticale verschil 1 − (−4). De afstand is loodrecht, dus √5. Het goede antwoord is √5 ≈ 2,24.",
+    "Klopt: het snijpunt met de tweede lijn is (2, 0) en √(4 + 1) = √5.",
+    "Koos je \"\"2\"\"? Dan neem je de x van het snijpunt. De afstand is √(2² + 1²), dus √5. Door de stappen goed na te lopen kom je uit op √5 ≈ 2,24.",
+    "Koos je \"\"2,5\"\"? Dan neem je het gemiddelde van 2 en 3. Gebruik Pythagoras, dus √5. Controleer je stap: de juiste uitkomst is √5 ≈ 2,24."
+   ],
+   "uh": "Hoe groot is de afstand tussen de lijnen?",
+   "ctx": "De lijnen y = 2x + 1 en y = 2x − 4 zijn evenwijdig. Een leerling bepaalt de afstand ertussen: hij kiest het punt (0, 1) op de eerste lijn en berekent de afstand van dat punt tot de tweede lijn."
+  },
+  {
+   "v": "Hoe groot is de afstand M₁M₂ met M₁(0, 0) en M₂(7, 0)?",
+   "o": [
+    "\"5\"",
+    "\"10\"",
+    "\"3,5\"",
+    "\"7\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5\"\"? Dan neem je r₁ + r₂. De middelpuntsafstand is 7, dus 7. Het goede antwoord is 7.",
+    "Koos je \"\"10\"\"? Dan tel je 7 en 3 op. De middelpuntsafstand is 7, dus 7. Door de stappen goed na te lopen kom je uit op 7.",
+    "Koos je \"\"3,5\"\"? Dan neem je de helft. De afstand is 7, dus 7. Controleer je stap: de juiste uitkomst is 7.",
+    "Klopt: het verschil in x is 7 en in y is 0. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe groot is de afstand M₁M₂ met M₁(0, 0) en M₂(7, 0)?",
+   "ctx": "Twee cirkels hebben middelpunten M₁(0, 0) en M₂(7, 0) en stralen 2 en 3. Een leerling berekent de afstand tussen de middelpunten en bepaalt de kleinste afstand tussen de cirkels en het aantal gemeenschappelijke punten."
+  },
+  {
+   "v": "Hoe groot is de kleinste afstand tussen de cirkels?",
+   "o": [
+    "\"2\"",
+    "\"7\"",
+    "\"5\"",
+    "\"4\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 7 − 2 − 3 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7\"\"? Dan neem je de middelpuntsafstand. Trek de stralen af, dus 2. Het goede antwoord is 2.",
+    "Koos je \"\"5\"\"? Dan neem je r₁ + r₂. Trek dat af van 7, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Koos je \"\"4\"\"? Dan trek je maar één straal af. Trek 2 en 3 af, dus 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Hoe groot is de kleinste afstand tussen de cirkels?",
+   "ctx": "Twee cirkels hebben middelpunten M₁(0, 0) en M₂(7, 0) en stralen 2 en 3. Een leerling berekent de afstand tussen de middelpunten en bepaalt de kleinste afstand tussen de cirkels en het aantal gemeenschappelijke punten."
+  },
+  {
+   "v": "Hoeveel gemeenschappelijke punten hebben de cirkels?",
+   "o": [
+    "\"één\"",
+    "\"twee\"",
+    "\"geen\"",
+    "\"oneindig veel\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"één\"\"? Dan denk je dat de cirkels raken. Dat zou d = 5 zijn, dus geen. Het goede antwoord is geen.",
+    "Koos je \"\"twee\"\"? Dan denk je dat de cirkels snijden. Dat zou d < 5 zijn, dus geen. Door de stappen goed na te lopen kom je uit op geen.",
+    "Klopt: 7 > 2 + 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat de cirkels samenvallen. Dat kan alleen bij d = 0, dus geen. Controleer je stap: de juiste uitkomst is geen."
+   ],
+   "uh": "Hoeveel gemeenschappelijke punten hebben de cirkels?",
+   "ctx": "Twee cirkels hebben middelpunten M₁(0, 0) en M₂(7, 0) en stralen 2 en 3. Een leerling berekent de afstand tussen de middelpunten en bepaalt de kleinste afstand tussen de cirkels en het aantal gemeenschappelijke punten."
+  },
+  {
+   "v": "Welke ongelijkheid beschrijft de ligging van deze cirkels?",
+   "o": [
+    "\"d < r₁ + r₂, dus 7 < 5\"",
+    "\"d > r₁ + r₂, dus 7 > 5\"",
+    "\"d = r₁ + r₂, dus 7 = 5\"",
+    "\"d < |r₁ − r₂|, dus 7 < 1\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"d < r₁ + r₂, dus 7 < 5\"\"? Dan draai je de ongelijkheid om. 7 is groter dan 5, dus d > r₁ + r₂. Het goede antwoord is d > r₁ + r₂, dus 7 > 5.",
+    "Klopt: de cirkels liggen buiten elkaar. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"d = r₁ + r₂, dus 7 = 5\"\"? Dan denk je aan raken. 7 ≠ 5, dus d > r₁ + r₂. Door de stappen goed na te lopen kom je uit op d > r₁ + r₂, dus 7 > 5.",
+    "Koos je \"\"d < |r₁ − r₂|, dus 7 < 1\"\"? Dan gebruik je het verschil van de stralen. Dat hoort bij binnen elkaar, dus d > r₁ + r₂."
+   ],
+   "uh": "Welke ongelijkheid beschrijft de ligging van deze cirkels?",
+   "ctx": "Twee cirkels hebben middelpunten M₁(0, 0) en M₂(7, 0) en stralen 2 en 3. Een leerling berekent de afstand tussen de middelpunten en bepaalt de kleinste afstand tussen de cirkels en het aantal gemeenschappelijke punten."
+  },
+  {
+   "v": "Punt P(10, 0) ligt buiten de cirkel. Wat is de afstand tot de cirkel zelf?",
+   "o": [
+    "\"10\"",
+    "\"15\"",
+    "\"25\"",
+    "\"5\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10\"\"? Dan neem je de afstand tot het middelpunt. Trek de straal af, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"15\"\"? Dan tel je de straal op. P ligt buiten, dus 10 − 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Koos je \"\"25\"\"? Dan neem je r². Trek de straal 5 af, dus 5. Controleer je stap: de juiste uitkomst is 5.",
+    "Klopt: 10 − 5 = 5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Punt P(10, 0) ligt buiten de cirkel. Wat is de afstand tot de cirkel zelf?",
+   "ctx": "Gegeven is de cirkel x² + y² = 25. Een leerling berekent de afstand van de punten P(10, 0) en Q(3, 0) tot de cirkel. Hij gebruikt de afstand van het punt tot het middelpunt en de straal."
+  },
+  {
+   "v": "Punt Q(3, 0) ligt binnen. Hoe ver ligt Q van de cirkel af?",
+   "o": [
+    "\"2\"",
+    "\"3\"",
+    "\"8\"",
+    "\"5\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 5 − 3 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3\"\"? Dan neem je de afstand tot het middelpunt. Q ligt binnen, trek af van de straal, dus 2. Het goede antwoord is 2.",
+    "Koos je \"\"8\"\"? Dan tel je 3 en 5 op. Q ligt binnen, dus 5 − 3 = 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Koos je \"\"5\"\"? Dan neem je de straal. Trek de afstand tot M af, dus 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Punt Q(3, 0) ligt binnen. Hoe ver ligt Q van de cirkel af?",
+   "ctx": "Gegeven is de cirkel x² + y² = 25. Een leerling berekent de afstand van de punten P(10, 0) en Q(3, 0) tot de cirkel. Hij gebruikt de afstand van het punt tot het middelpunt en de straal."
+  },
+  {
+   "v": "Waar ligt Q(3, 0) ten opzichte van de cirkel?",
+   "o": [
+    "\"op de cirkel\"",
+    "\"buiten de cirkel\"",
+    "\"binnen de cirkel\"",
+    "\"in het middelpunt, gewoon\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"op de cirkel\"\"? Dan denk je dat de afstand gelijk is aan de straal. 3 ≠ 5, dus binnen. Het goede antwoord is binnen de cirkel.",
+    "Koos je \"\"buiten de cirkel\"\"? Dan denk je dat 3 groter is dan 5. 3 < 5, dus binnen. Door de stappen goed na te lopen kom je uit op binnen de cirkel.",
+    "Klopt: 3 < 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"in het middelpunt, gewoon\"\"? Dan verwar je Q met M. M = (0, 0), dus binnen. Controleer je stap: de juiste uitkomst is binnen de cirkel."
+   ],
+   "uh": "Waar ligt Q(3, 0) ten opzichte van de cirkel?",
+   "ctx": "Gegeven is de cirkel x² + y² = 25. Een leerling berekent de afstand van de punten P(10, 0) en Q(3, 0) tot de cirkel. Hij gebruikt de afstand van het punt tot het middelpunt en de straal."
+  },
+  {
+   "v": "Welke loodlijn op y = x + 8 gaat door het middelpunt (0, 0)?",
+   "o": [
+    "\"y = x\"",
+    "\"y = −x\"",
+    "\"y = −x + 8\"",
+    "\"y = x − 8\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = x\"\"? Dan neem je de rc van de lijn. De loodlijn heeft rc −1, dus y = −x. Het goede antwoord is y = −x.",
+    "Klopt: rc −1 door de oorsprong. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = −x + 8\"\"? Dan neem je de b van de lijn. De loodlijn gaat door (0, 0), dus y = −x. Door de stappen goed na te lopen kom je uit op y = −x.",
+    "Koos je \"\"y = x − 8\"\"? Dan neem je een evenwijdige lijn. De loodlijn heeft rc −1, dus y = −x. Controleer je stap: de juiste uitkomst is y = −x."
+   ],
+   "uh": "Welke loodlijn op y = x + 8 gaat door het middelpunt (0, 0)?",
+   "ctx": "Gegeven zijn de cirkel x² + y² = 25 en de lijn y = x + 8. Een leerling berekent de afstand van het middelpunt tot de lijn met de loodlijn en bepaalt daarmee de afstand tussen de lijn en de cirkel."
+  },
+  {
+   "v": "In welk punt snijdt y = −x de lijn y = x + 8?",
+   "o": [
+    "\"(4, −4), to be honest\"",
+    "\"(0, 8)\"",
+    "\"(−8, 0)\"",
+    "\"(−4, 4)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(4, −4), to be honest\"\"? Dan maak je een tekenfout. −x = x + 8 geeft x = −4, dus (−4, 4). Het goede antwoord is (−4, 4).",
+    "Koos je \"\"(0, 8)\"\"? Dan neem je het snijpunt met de y-as. Los −x = x + 8 op, dus (−4, 4). Door de stappen goed na te lopen kom je uit op (−4, 4).",
+    "Koos je \"\"(−8, 0)\"\"? Dan neem je het snijpunt met de x-as. Los −x = x + 8 op, dus (−4, 4). Controleer je stap: de juiste uitkomst is (−4, 4).",
+    "Klopt: −x = x + 8 geeft x = −4 en y = 4. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "In welk punt snijdt y = −x de lijn y = x + 8?",
+   "ctx": "Gegeven zijn de cirkel x² + y² = 25 en de lijn y = x + 8. Een leerling berekent de afstand van het middelpunt tot de lijn met de loodlijn en bepaalt daarmee de afstand tussen de lijn en de cirkel."
+  },
+  {
+   "v": "Hoe groot is de afstand tussen de lijn en de cirkel, op twee decimalen?",
+   "o": [
+    "\"0,66\"",
+    "\"5,66\"",
+    "\"8,00\"",
+    "\"3,00\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: √(16 + 16) − 5 = 5,66 − 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5,66\"\"? Dan neem je de afstand van M tot de lijn. Trek de straal af, dus 0,66. Het goede antwoord is 0,66.",
+    "Koos je \"\"8,00\"\"? Dan neem je b als afstand. De afstand is loodrecht, dus 0,66. Door de stappen goed na te lopen kom je uit op 0,66.",
+    "Koos je \"\"3,00\"\"? Dan maak je een rekenfout. √32 − 5 ≈ 0,66, dus 0,66. Controleer je stap: de juiste uitkomst is 0,66."
+   ],
+   "uh": "Hoe groot is de afstand tussen de lijn en de cirkel, op twee decimalen?",
+   "ctx": "Gegeven zijn de cirkel x² + y² = 25 en de lijn y = x + 8. Een leerling berekent de afstand van het middelpunt tot de lijn met de loodlijn en bepaalt daarmee de afstand tussen de lijn en de cirkel."
+  },
+  {
+   "v": "A en B hebben stralen 4 en 2 en middelpuntsafstand 6. Hoeveel punten delen ze?",
+   "o": [
+    "\"nul\"",
+    "\"twee\"",
+    "\"één\"",
+    "\"oneindig veel\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nul\"\"? Dan denk je dat de cirkels buiten elkaar liggen. Bij d = 6 raken ze, dus één. Het goede antwoord is één.",
+    "Koos je \"\"twee\"\"? Dan denk je dat de cirkels snijden. Bij d = r₁ + r₂ raken ze, dus één. Door de stappen goed na te lopen kom je uit op één.",
+    "Klopt: d = 6 = 4 + 2, de cirkels raken van buiten. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat de cirkels samenvallen. Ze raken, dus één. Controleer je stap: de juiste uitkomst is één."
+   ],
+   "uh": "A en B hebben stralen 4 en 2 en middelpuntsafstand 6. Hoeveel punten delen ze?",
+   "ctx": "Gegeven zijn cirkel A: x² + y² = 16, cirkel B: (x − 6)² + y² = 4 en cirkel C: (x − 1)² + y² = 1. Een leerling vergelijkt de middelpuntsafstand met de stralen om het aantal gemeenschappelijke punten van A met B en met C te bepalen."
+  },
+  {
+   "v": "Welke vergelijking klopt voor A en B?",
+   "o": [
+    "\"d > r₁ + r₂, gewoon\"",
+    "\"d = r₁ + r₂\"",
+    "\"d < r₁ + r₂\"",
+    "\"d = r₁ − r₂\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"d > r₁ + r₂, gewoon\"\"? Dan denk je dat 6 groter is dan 4 + 2. 6 = 6, dus d = r₁ + r₂. Het goede antwoord is d = r₁ + r₂.",
+    "Klopt: 6 = 4 + 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"d < r₁ + r₂\"\"? Dan denk je dat 6 kleiner is dan 4 + 2. 6 = 6, dus d = r₁ + r₂. Door de stappen goed na te lopen kom je uit op d = r₁ + r₂.",
+    "Koos je \"\"d = r₁ − r₂\"\"? Dan gebruik je het verschil van de stralen. Dat is 2, dus d = r₁ + r₂. Controleer je stap: de juiste uitkomst is d = r₁ + r₂."
+   ],
+   "uh": "Welke vergelijking klopt voor A en B?",
+   "ctx": "Gegeven zijn cirkel A: x² + y² = 16, cirkel B: (x − 6)² + y² = 4 en cirkel C: (x − 1)² + y² = 1. Een leerling vergelijkt de middelpuntsafstand met de stralen om het aantal gemeenschappelijke punten van A met B en met C te bepalen."
+  },
+  {
+   "v": "Heeft cirkel C (middelpunt (1, 0), straal 1) een punt gemeen met A? Geef het aantal.",
+   "o": [
+    "\"één\"",
+    "\"twee\"",
+    "\"oneindig veel\"",
+    "\"geen\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"één\"\"? Dan denk je aan raken van binnen. Dat zou d = 3 zijn, dus geen. Het goede antwoord is geen.",
+    "Koos je \"\"twee\"\"? Dan denk je dat de cirkels snijden. Dat zou 3 < d < 5 zijn, dus geen. Door de stappen goed na te lopen kom je uit op geen.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat de cirkels samenvallen. Dat zou d = 0 en gelijke stralen zijn, dus geen. Controleer je stap: de juiste uitkomst is geen.",
+    "Klopt: d = 1 en |r₁ − r₂| = 3, dus d < 3 en C ligt binnen A."
+   ],
+   "uh": "Heeft cirkel C (middelpunt (1, 0), straal 1) een punt gemeen met A? Geef het aantal.",
+   "ctx": "Gegeven zijn cirkel A: x² + y² = 16, cirkel B: (x − 6)² + y² = 4 en cirkel C: (x − 1)² + y² = 1. Een leerling vergelijkt de middelpuntsafstand met de stralen om het aantal gemeenschappelijke punten van A met B en met C te bepalen."
+  },
+  {
+   "v": "Waar ligt cirkel C ten opzichte van cirkel A?",
+   "o": [
+    "\"binnen cirkel A\"",
+    "\"buiten cirkel A\"",
+    "\"op cirkel A\"",
+    "\"samenvallend met A\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de afstand met Pythagoras of met een loodlijn, vergelijk de middelpuntsafstand met de stralen en controleer met een punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: d + r₂ = 1 + 1 = 2 < 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"buiten cirkel A\"\"? Dan denk je dat C buiten ligt. d = 1 is kleiner dan 4 − 1, dus binnen. Het goede antwoord is binnen cirkel A.",
+    "Koos je \"\"op cirkel A\"\"? Dan denk je dat C raakt. Er is geen gemeenschappelijk punt, dus binnen. Door de stappen goed na te lopen kom je uit op binnen cirkel A.",
+    "Koos je \"\"samenvallend met A\"\"? Dan denk je dat C gelijk is aan A. De stralen verschillen, dus binnen. Controleer je stap: de juiste uitkomst is binnen cirkel A."
+   ],
+   "uh": "Waar ligt cirkel C ten opzichte van cirkel A?",
+   "ctx": "Gegeven zijn cirkel A: x² + y² = 16, cirkel B: (x − 6)² + y² = 4 en cirkel C: (x − 1)² + y² = 1. Een leerling vergelijkt de middelpuntsafstand met de stralen om het aantal gemeenschappelijke punten van A met B en met C te bepalen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven zijn de lijn y = x − 1 en het punt P(1, 6). Een leerling stelt de loodlijn door P op, berekent het voetpunt op de lijn en daarna de afstand van P tot de lijn.",
+   "v": "Bereken de afstand van P tot de lijn.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De loodlijn is y = −x + 7 (1p). Het voetpunt is (4, 3) (1p). De afstand is √(9 + 9) = 3√2 ≈ 4,24 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De lijnen y = 3x + 2 en y = 3x − 8 zijn evenwijdig. Een leerling bepaalt de afstand ertussen met het punt (0, 2) en de loodlijn door dat punt op de tweede lijn.",
+   "v": "Bereken de afstand tussen de twee lijnen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De loodlijn is y = −x/3 + 2 (1p). Het snijpunt met de tweede lijn is (3, 1) (1p). De afstand is √(9 + 1) = √10 ≈ 3,16 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Twee cirkels hebben middelpunten (0, 0) en (8, 0) en stralen 3 en 2. Een leerling berekent de middelpuntsafstand, de kleinste afstand tussen de cirkels en het aantal gemeenschappelijke punten.",
+   "v": "Bereken de afstand tussen de cirkels en het aantal gemeenschappelijke punten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "d = 8 (1p). 8 − 3 − 2 = 3 (1p). Omdat d > 5 zijn er geen gemeenschappelijke punten (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is de cirkel x² + y² = 16 en het punt P(0, −9). Een leerling berekent de afstand van P tot de cirkel met de afstand tot het middelpunt en de straal.",
+   "v": "Bereken de afstand van P tot de cirkel.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De afstand van P tot M is 9 (1p). De straal is 4 (1p). De afstand tot de cirkel is 9 − 4 = 5 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven zijn de cirkels x² + y² = 25 en (x − 3)² + y² = 4. Een leerling vergelijkt de middelpuntsafstand met het verschil van de stralen en bepaalt het aantal gemeenschappelijke punten.",
+   "v": "Bepaal het aantal gemeenschappelijke punten en geef het punt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "d = 3 en r₁ − r₂ = 5 − 2 = 3 (1p), dus de cirkels raken van binnen (1p). Het raakpunt is (5, 0) (1p)."
+  }
+ ]
+}
