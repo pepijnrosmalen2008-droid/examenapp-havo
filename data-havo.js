@@ -243326,6 +243326,688 @@ var VAKKEN = [
         "u": "y = 3x − 2 en y = 3x − 3,5 (1p). Gelijke richtingscoëfficiënten en verschillende b (1p). De lijnen zijn evenwijdig, dus er is geen oplossing (1p)."
        }
       ]
+     },
+     {
+      "id": "C6",
+      "lo": "wb.C.6",
+      "gs": 2,
+      "naam": "De vergelijking van een cirkel: middelpunt en straal",
+      "beschrijving": "Je leest het middelpunt en de straal af uit een cirkelvergelijking, stelt een cirkelvergelijking op, splitst kwadraten af en bepaalt de ligging van een punt ten opzichte van een cirkel.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Middelpunt en straal aflezen",
+       "Een cirkelvergelijking opstellen",
+       "Kwadraat afsplitsen",
+       "Ligging van een punt",
+       "Middellijn en middelpunt bepalen"
+      ],
+      "sam": "Een cirkel met middelpunt (a, b) en straal r heeft de vergelijking (x − a)² + (y − b)² = r²; let op het teken van a en b. Een punt ligt op, binnen of buiten de cirkel afhankelijk van de waarde links. Splits kwadraten af voor de algemene vorm. Controleer met een punt.",
+      "begrippen": [
+       {
+        "t": "Vergelijking van een cirkel",
+        "d": "(x − a)² + (y − b)² = r² met middelpunt (a, b) en straal r."
+       },
+       {
+        "t": "Middelpunt",
+        "d": "Het punt (a, b): let op het teken, bij (x − 3) is a = 3."
+       },
+       {
+        "t": "Straal",
+        "d": "r is de wortel uit het rechterlid."
+       },
+       {
+        "t": "Cirkel om de oorsprong",
+        "d": "x² + y² = r²."
+       },
+       {
+        "t": "Ligging van een punt",
+        "d": "Op de cirkel bij =, binnen bij < en buiten bij > r²."
+       },
+       {
+        "t": "Kwadraat afsplitsen",
+        "d": "x² − 6x = (x − 3)² − 9."
+       },
+       {
+        "t": "Algemene vorm",
+        "d": "x² + y² + px + qy + c = 0."
+       },
+       {
+        "t": "Middellijn",
+        "d": "Een lijnstuk door het middelpunt; r is de helft."
+       },
+       {
+        "t": "Midden van een lijnstuk",
+        "d": "Het gemiddelde van de coördinaten."
+       },
+       {
+        "t": "Afstandsformule",
+        "d": "MP = √((x₂ − x₁)² + (y₂ − y₁)²) voor de straal."
+       },
+       {
+        "t": "Snijpunt met een as",
+        "d": "Vul y = 0 of x = 0 in."
+       },
+       {
+        "t": "Controleren",
+        "d": "Vul een punt in en vergelijk met r²."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Hoe ziet de vergelijking van een cirkel er in het algemeen uit, met middelpunt (a, b)?",
+        "o": [
+         "\"(x + a)² + (y + b)² = r, denk ik\"",
+         "\"(x − a)² + (y − b)² = r²\"",
+         "\"(x − a) + (y − b) = r²\"",
+         "\"x² + y² = r\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(x + a)² + (y + b)² = r, denk ik\"\"? Dan vergeet je het kwadraat van r en draai je de tekens om. Het is (x − a)² en (y − b)² gelijk aan r², dus (x − a)² + (y − b)² = r².",
+         "Klopt: de afstand van elk punt tot het middelpunt is r. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"(x − a) + (y − b) = r²\"\"? Dan tel je de haakjes zonder kwadraten. Beide termen moeten gekwadrateerd zijn, dus (x − a)² + (y − b)² = r².",
+         "Koos je \"\"x² + y² = r\"\"? Dan neem je een cirkel om de oorsprong en vergeet het kwadraat van r. De vergelijking is x² + y² = r² als M = (0, 0), dus (x − a)² + (y − b)² = r²."
+        ],
+        "uh": "Hoe ziet de vergelijking van een cirkel er in het algemeen uit, met middelpunt (a, b)?"
+       },
+       {
+        "v": "Welk middelpunt hoort bij (x − 3)² + (y + 2)² = 25?",
+        "o": [
+         "\"(−3, 2)\"",
+         "\"(3, 2)\"",
+         "\"(−3, −2), volgens mij\"",
+         "\"(3, −2)\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(−3, 2)\"\"? Dan neem je de tekens uit de haakjes over. Bij (x − 3) is a = 3, dus (3, −2). Het goede antwoord is (3, −2).",
+         "Koos je \"\"(3, 2)\"\"? Dan neem je het teken bij y over. Bij (y + 2) is b = −2, dus (3, −2). Door de stappen goed na te lopen kom je uit op (3, −2).",
+         "Koos je \"\"(−3, −2), volgens mij\"\"? Dan draai je het teken bij x om. Bij (x − 3) is a = 3, dus (3, −2). Controleer je stap: de juiste uitkomst is (3, −2).",
+         "Klopt: x − 3 geeft a = 3 en y + 2 = y − (−2) geeft b = −2."
+        ],
+        "uh": "Welk middelpunt hoort bij (x − 3)² + (y + 2)² = 25?"
+       },
+       {
+        "v": "Welke straal hoort bij (x − 3)² + (y + 2)² = 25?",
+        "o": [
+         "\"5\"",
+         "\"25\"",
+         "\"12,5\"",
+         "\"√5\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: r² = 25, dus r = 5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"25\"\"? Dan neem je r² als straal. Neem de wortel, dus r = 5. Het goede antwoord is 5.",
+         "Koos je \"\"12,5\"\"? Dan deel je 25 door 2. De straal is de wortel uit 25, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+         "Koos je \"\"√5\"\"? Dan neem je de wortel uit 5. r² = 25 geeft r = 5, dus 5. Controleer je stap: de juiste uitkomst is 5."
+        ],
+        "uh": "Welke straal hoort bij (x − 3)² + (y + 2)² = 25?"
+       },
+       {
+        "v": "Schrijf de vergelijking op van de cirkel om de oorsprong met straal 4.",
+        "o": [
+         "\"x² + y² = 4, you know\"",
+         "\"x² + y² = 8\"",
+         "\"x² + y² = 16\"",
+         "\"x + y = 16\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x² + y² = 4, you know\"\"? Dan vergeet je het kwadraat van de straal. r² = 16, dus x² + y² = 16. Het goede antwoord is x² + y² = 16.",
+         "Koos je \"\"x² + y² = 8\"\"? Dan verdubbel je de straal. r² = 4² = 16, dus x² + y² = 16. Door de stappen goed na te lopen kom je uit op x² + y² = 16.",
+         "Klopt: r² = 16. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"x + y = 16\"\"? Dan laat je de kwadraten weg. Het zijn x² en y², dus x² + y² = 16. Controleer je stap: de juiste uitkomst is x² + y² = 16."
+        ],
+        "uh": "Schrijf de vergelijking op van de cirkel om de oorsprong met straal 4."
+       },
+       {
+        "v": "Een punt P voldoet aan (x − a)² + (y − b)² < r². Waar ligt P?",
+        "o": [
+         "\"op de cirkel\"",
+         "\"binnen de cirkel\"",
+         "\"buiten de cirkel\"",
+         "\"in het middelpunt, really\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"op de cirkel\"\"? Dan denk je dat het gelijkteken geldt. Hier staat <, dus binnen de cirkel. Het goede antwoord is binnen de cirkel.",
+         "Klopt: de afstand tot het middelpunt is kleiner dan r. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"buiten de cirkel\"\"? Dan draai je de ongelijkheid om. Kleiner dan r² betekent dichterbij, dus binnen de cirkel.",
+         "Koos je \"\"in het middelpunt, really\"\"? Dan denk je dat alleen M voldoet. Elk punt dichter bij M dan r voldoet, dus binnen de cirkel."
+        ],
+        "uh": "Een punt P voldoet aan (x − a)² + (y − b)² < r². Waar ligt P?"
+       },
+       {
+        "v": "Hoe schrijf je x² − 6x + 9 als kwadraat?",
+        "o": [
+         "\"(x + 3)², denk ik\"",
+         "\"(x − 6)²\"",
+         "\"(x − 9)²\"",
+         "\"(x − 3)²\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(x + 3)², denk ik\"\"? Dan maak je een tekenfout. De middenterm −6x hoort bij (x − 3), dus (x − 3)². Het goede antwoord is (x − 3)².",
+         "Koos je \"\"(x − 6)²\"\"? Dan neem je de coëfficiënt −6. Neem de helft, −3, dus (x − 3)². Door de stappen goed na te lopen kom je uit op (x − 3)².",
+         "Koos je \"\"(x − 9)²\"\"? Dan neem je de constante 9. Neem de helft van −6, dus (x − 3)². Controleer je stap: de juiste uitkomst is (x − 3)².",
+         "Klopt: (x − 3)² = x² − 6x + 9. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe schrijf je x² − 6x + 9 als kwadraat?"
+       },
+       {
+        "v": "Hoe bereken je de straal als het middelpunt M en een punt P op de cirkel gegeven zijn?",
+        "o": [
+         "\"r = de afstand MP\"",
+         "\"r = de afstand van P tot de oorsprong\"",
+         "\"r = MP²\"",
+         "\"r = de helft van MP\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: elk punt van de cirkel ligt op afstand r van M. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"r = de afstand van P tot de oorsprong\"\"? Dan neem je de afstand tot (0, 0). De straal is de afstand tot het middelpunt, dus r = MP.",
+         "Koos je \"\"r = MP²\"\"? Dan kwadrateer je de afstand. r² = MP², maar r = MP, dus r = MP. Door de stappen goed na te lopen kom je uit op r = de afstand MP.",
+         "Koos je \"\"r = de helft van MP\"\"? Dan halveer je de afstand. MP is al de straal, dus r = MP. Controleer je stap: de juiste uitkomst is r = de afstand MP."
+        ],
+        "uh": "Hoe bereken je de straal als het middelpunt M en een punt P op de cirkel gegeven zijn?"
+       },
+       {
+        "v": "Welke waarde krijg je als je (6, 2) invult in (x − 3)² + (y + 2)²?",
+        "o": [
+         "\"13\"",
+         "\"5\"",
+         "\"25\"",
+         "\"7\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"13\"\"? Dan tel je 3 + ... verkeerd. (6 − 3)² + (2 + 2)² = 9 + 16, dus 25. Het goede antwoord is 25.",
+         "Koos je \"\"5\"\"? Dan neem je de wortel. De waarde links is 25, dus 25. Door de stappen goed na te lopen kom je uit op 25.",
+         "Klopt: 3² + 4² = 9 + 16 = 25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"7\"\"? Dan tel je 3 en 4 op zonder te kwadrateren. De kwadraten tellen op tot 25, dus 25. Controleer je stap: de juiste uitkomst is 25."
+        ],
+        "uh": "Welke waarde krijg je als je (6, 2) invult in (x − 3)² + (y + 2)²?",
+        "ctx": "Gegeven is de cirkel (x − 3)² + (y + 2)² = 25. Een leerling bepaalt het middelpunt en de straal en onderzoekt of de punten (6, 2), (0, 0) en (9, 2) op, binnen of buiten de cirkel liggen door ze in de vergelijking in te vullen."
+       },
+       {
+        "v": "Is (6, 2) een punt van de cirkel? Bepaal de ligging.",
+        "o": [
+         "\"binnen de cirkel\"",
+         "\"op de cirkel\"",
+         "\"buiten de cirkel\"",
+         "\"in het middelpunt\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"binnen de cirkel\"\"? Dan denk je dat 25 kleiner is dan 25. De waarden zijn gelijk, dus op de cirkel. Het goede antwoord is op de cirkel.",
+         "Klopt: 25 = 25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"buiten de cirkel\"\"? Dan denk je dat 25 groter is dan 25. De waarden zijn gelijk, dus op de cirkel. Door de stappen goed na te lopen kom je uit op op de cirkel.",
+         "Koos je \"\"in het middelpunt\"\"? Dan verwar je het punt met M. Het middelpunt is (3, −2), dus op de cirkel. Controleer je stap: de juiste uitkomst is op de cirkel."
+        ],
+        "uh": "Is (6, 2) een punt van de cirkel? Bepaal de ligging.",
+        "ctx": "Gegeven is de cirkel (x − 3)² + (y + 2)² = 25. Een leerling bepaalt het middelpunt en de straal en onderzoekt of de punten (6, 2), (0, 0) en (9, 2) op, binnen of buiten de cirkel liggen door ze in de vergelijking in te vullen."
+       },
+       {
+        "v": "Bepaal de ligging van de oorsprong ten opzichte van dezelfde cirkel.",
+        "o": [
+         "\"op de cirkel\"",
+         "\"buiten de cirkel\"",
+         "\"in het middelpunt, really\"",
+         "\"binnen de cirkel\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"op de cirkel\"\"? Dan denk je dat de oorsprong op elke cirkel ligt. Hier is de waarde 13, dus binnen. Het goede antwoord is binnen de cirkel.",
+         "Koos je \"\"buiten de cirkel\"\"? Dan denk je dat 13 groter is dan 25. 13 < 25, dus binnen. Door de stappen goed na te lopen kom je uit op binnen de cirkel.",
+         "Koos je \"\"in het middelpunt, really\"\"? Dan verwar je (0, 0) met M. Het middelpunt is (3, −2), dus binnen. Controleer je stap: de juiste uitkomst is binnen de cirkel.",
+         "Klopt: (0 − 3)² + (0 + 2)² = 13 en dat is kleiner dan 25."
+        ],
+        "uh": "Bepaal de ligging van de oorsprong ten opzichte van dezelfde cirkel.",
+        "ctx": "Gegeven is de cirkel (x − 3)² + (y + 2)² = 25. Een leerling bepaalt het middelpunt en de straal en onderzoekt of de punten (6, 2), (0, 0) en (9, 2) op, binnen of buiten de cirkel liggen door ze in de vergelijking in te vullen."
+       },
+       {
+        "v": "Welke vergelijking heeft de cirkel met middelpunt (−1, 4) en straal 3?",
+        "o": [
+         "\"(x + 1)² + (y − 4)² = 9\"",
+         "\"(x − 1)² + (y + 4)² = 9, denk ik\"",
+         "\"(x + 1)² + (y − 4)² = 3\"",
+         "\"(x + 1)² + (y − 4)² = 6\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: a = −1 geeft (x + 1) en r² = 9. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"(x − 1)² + (y + 4)² = 9, denk ik\"\"? Dan neem je de coördinaten van het middelpunt over zonder tekenwissel. a = −1 geeft x + 1, dus (x + 1)² + (y − 4)².",
+         "Koos je \"\"(x + 1)² + (y − 4)² = 3\"\"? Dan vergeet je de straal te kwadrateren. r² = 9, dus = 9. Door de stappen goed na te lopen kom je uit op (x + 1)² + (y − 4)² = 9.",
+         "Koos je \"\"(x + 1)² + (y − 4)² = 6\"\"? Dan verdubbel je de straal. r² = 3² = 9, dus = 9. Controleer je stap: de juiste uitkomst is (x + 1)² + (y − 4)² = 9."
+        ],
+        "uh": "Welke vergelijking heeft de cirkel met middelpunt (−1, 4) en straal 3?",
+        "ctx": "Een cirkel heeft middelpunt M(−1, 4) en straal 3. Een leerling stelt de vergelijking op en controleert die met het punt (−1, 7) en met een tweede punt links van het middelpunt."
+       },
+       {
+        "v": "Hoe controleer je het punt (−1, 7)?",
+        "o": [
+         "\"0 + 3 = 3\"",
+         "\"(−1)² + 7² = 50, volgens mij, eigenlijk, denk ik\"",
+         "\"0² + 3² = 9, dus het punt ligt op de cirkel\"",
+         "\"0² + 3² = 3\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0 + 3 = 3\"\"? Dan tel je de verschillen op zonder te kwadrateren. Kwadrateer eerst, dus 0² + 3² = 9. Het goede antwoord is 0² + 3² = 9, dus het punt ligt op de cirkel.",
+         "Koos je \"\"(−1)² + 7² = 50, volgens mij, eigenlijk, denk ik\"\"? Dan vul je de coördinaten zonder het middelpunt in. Gebruik x + 1 en y − 4, dus 0² + 3² = 9.",
+         "Klopt: (−1 + 1)² + (7 − 4)² = 9. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0² + 3² = 3\"\"? Dan kwadrateer je maar een keer en noemt de uitkomst 3. 0² + 3² = 9, dus op de cirkel. Controleer je stap: de juiste uitkomst is 0² + 3² = 9, dus het punt ligt op de cirkel."
+        ],
+        "uh": "Hoe controleer je het punt (−1, 7)?",
+        "ctx": "Een cirkel heeft middelpunt M(−1, 4) en straal 3. Een leerling stelt de vergelijking op en controleert die met het punt (−1, 7) en met een tweede punt links van het middelpunt."
+       },
+       {
+        "v": "Welk punt ligt op de cirkel?",
+        "o": [
+         "\"(−4, 7), zeg maar\"",
+         "\"(−4, 4)\"",
+         "\"(−1, 8)\"",
+         "\"(3, 4)\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(−4, 7), zeg maar\"\"? Dan kies je een punt dat te ver weg is. (−3)² + 3² = 18, dus (−4, 4). Het goede antwoord is (−4, 4).",
+         "Klopt: (−4 + 1)² + 0² = 9. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"(−1, 8)\"\"? Dan kies je een punt op afstand 4. 0² + 4² = 16, dus (−4, 4). Door de stappen goed na te lopen kom je uit op (−4, 4).",
+         "Koos je \"\"(3, 4)\"\"? Dan kies je een punt op afstand 4. 4² + 0² = 16, dus (−4, 4). Controleer je stap: de juiste uitkomst is (−4, 4)."
+        ],
+        "uh": "Welk punt ligt op de cirkel?",
+        "ctx": "Een cirkel heeft middelpunt M(−1, 4) en straal 3. Een leerling stelt de vergelijking op en controleert die met het punt (−1, 7) en met een tweede punt links van het middelpunt."
+       },
+       {
+        "v": "Splits het kwadraat af van x² − 6x.",
+        "o": [
+         "\"(x − 3)²\"",
+         "\"(x − 6)² − 36, you know\"",
+         "\"(x + 3)² − 9\"",
+         "\"(x − 3)² − 9\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(x − 3)²\"\"? Dan vergeet je 9 af te trekken. (x − 3)² heeft een extra + 9, dus (x − 3)² − 9. Het goede antwoord is (x − 3)² − 9.",
+         "Koos je \"\"(x − 6)² − 36, you know\"\"? Dan neem je de coëfficiënt −6 in plaats van de helft. De helft is −3, dus (x − 3)² − 9. Door de stappen goed na te lopen kom je uit op (x − 3)² − 9.",
+         "Koos je \"\"(x + 3)² − 9\"\"? Dan maak je een tekenfout. De middenterm −6x hoort bij (x − 3), dus (x − 3)² − 9. Controleer je stap: de juiste uitkomst is (x − 3)² − 9.",
+         "Klopt: (x − 3)² = x² − 6x + 9, dus x² − 6x = (x − 3)² − 9."
+        ],
+        "uh": "Splits het kwadraat af van x² − 6x.",
+        "ctx": "Een leerling schrijft de vergelijking x² + y² − 6x + 4y − 12 = 0 om tot de vorm (x − a)² + (y − b)² = r² door kwadraten af te splitsen. Hij controleert zijn werk met het punt (6, 2)."
+       },
+       {
+        "v": "Doe hetzelfde voor y² + 4y.",
+        "o": [
+         "\"(y + 2)² − 4\"",
+         "\"(y − 2)² − 4\"",
+         "\"(y + 4)² − 16, really\"",
+         "\"(y + 2)²\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (y + 2)² = y² + 4y + 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"(y − 2)² − 4\"\"? Dan maak je een tekenfout. De middenterm +4y hoort bij (y + 2), dus (y + 2)² − 4. Het goede antwoord is (y + 2)² − 4.",
+         "Koos je \"\"(y + 4)² − 16, really\"\"? Dan neem je de coëfficiënt 4 in plaats van de helft. De helft is 2, dus (y + 2)² − 4. Door de stappen goed na te lopen kom je uit op (y + 2)² − 4.",
+         "Koos je \"\"(y + 2)²\"\"? Dan vergeet je 4 af te trekken. (y + 2)² heeft een extra + 4, dus (y + 2)² − 4. Controleer je stap: de juiste uitkomst is (y + 2)² − 4."
+        ],
+        "uh": "Doe hetzelfde voor y² + 4y.",
+        "ctx": "Een leerling schrijft de vergelijking x² + y² − 6x + 4y − 12 = 0 om tot de vorm (x − a)² + (y − b)² = r² door kwadraten af te splitsen. Hij controleert zijn werk met het punt (6, 2)."
+       },
+       {
+        "v": "Welke vergelijking krijg je na het afsplitsen van de kwadraten?",
+        "o": [
+         "\"(x − 3)² + (y + 2)² = 12, denk ik\"",
+         "\"(x − 3)² + (y + 2)² = 16\"",
+         "\"(x − 3)² + (y + 2)² = 25\"",
+         "\"(x + 3)² + (y − 2)² = 25\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(x − 3)² + (y + 2)² = 12, denk ik\"\"? Dan vergeet je 9 en 4 aan de rechterkant. 12 + 9 + 4 = 25, dus = 25. Het goede antwoord is (x − 3)² + (y + 2)² = 25.",
+         "Koos je \"\"(x − 3)² + (y + 2)² = 16\"\"? Dan tel je maar 4 bij 12 op. Tel 9 en 4 bij 12 op, dus = 25. Door de stappen goed na te lopen kom je uit op (x − 3)² + (y + 2)² = 25.",
+         "Klopt: (x − 3)² − 9 + (y + 2)² − 4 − 12 = 0 geeft = 25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"(x + 3)² + (y − 2)² = 25\"\"? Dan draai je beide tekens om. Het middelpunt is (3, −2), dus (x − 3)² + (y + 2)². Controleer je stap: de juiste uitkomst is (x − 3)² + (y + 2)² = 25."
+        ],
+        "uh": "Welke vergelijking krijg je na het afsplitsen van de kwadraten?",
+        "ctx": "Een leerling schrijft de vergelijking x² + y² − 6x + 4y − 12 = 0 om tot de vorm (x − a)² + (y − b)² = r² door kwadraten af te splitsen. Hij controleert zijn werk met het punt (6, 2)."
+       },
+       {
+        "v": "Welke straal heeft deze cirkel?",
+        "o": [
+         "\"25\"",
+         "\"5\"",
+         "\"12\"",
+         "\"√12\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"25\"\"? Dan neem je r² als straal. Neem de wortel, dus 5. Het goede antwoord is 5.",
+         "Klopt: r² = 25, dus r = 5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"12\"\"? Dan neem je de constante uit de eerste vergelijking. r² = 25, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+         "Koos je \"\"√12\"\"? Dan neem je de wortel uit 12. r² = 25, dus 5. Controleer je stap: de juiste uitkomst is 5."
+        ],
+        "uh": "Welke straal heeft deze cirkel?",
+        "ctx": "Een leerling schrijft de vergelijking x² + y² − 6x + 4y − 12 = 0 om tot de vorm (x − a)² + (y − b)² = r² door kwadraten af te splitsen. Hij controleert zijn werk met het punt (6, 2)."
+       },
+       {
+        "v": "Hoe groot is de straal MP met M(2, 1) en P(5, 5)?",
+        "o": [
+         "\"7\"",
+         "\"25\"",
+         "\"3,5\"",
+         "\"5\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"7\"\"? Dan tel je 3 en 4 op. Gebruik Pythagoras, dus 5. Het goede antwoord is 5.",
+         "Koos je \"\"25\"\"? Dan vergeet je de wortel. r² = 25, dus r = 5. Door de stappen goed na te lopen kom je uit op 5.",
+         "Koos je \"\"3,5\"\"? Dan neem je het gemiddelde van 3 en 4. Gebruik Pythagoras, dus 5. Controleer je stap: de juiste uitkomst is 5.",
+         "Klopt: √(3² + 4²) = 5. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe groot is de straal MP met M(2, 1) en P(5, 5)?",
+        "ctx": "Een cirkel heeft middelpunt M(2, 1) en gaat door het punt P(5, 5). Een leerling berekent de straal met de afstandsformule, stelt de vergelijking op en onderzoekt nog een punt."
+       },
+       {
+        "v": "Welke vergelijking heeft de cirkel?",
+        "o": [
+         "\"(x − 2)² + (y − 1)² = 25\"",
+         "\"(x − 2)² + (y − 1)² = 5\"",
+         "\"(x + 2)² + (y + 1)² = 25, eigenlijk\"",
+         "\"(x − 5)² + (y − 5)² = 25\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: M = (2, 1) en r² = 25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"(x − 2)² + (y − 1)² = 5\"\"? Dan vergeet je de straal te kwadrateren. r² = 25, dus = 25. Het goede antwoord is (x − 2)² + (y − 1)² = 25.",
+         "Koos je \"\"(x + 2)² + (y + 1)² = 25, eigenlijk\"\"? Dan draai je de tekens van het middelpunt om. M = (2, 1), dus (x − 2)² + (y − 1)².",
+         "Koos je \"\"(x − 5)² + (y − 5)² = 25\"\"? Dan neem je P als middelpunt. M is (2, 1), dus (x − 2)² + (y − 1)². Controleer je stap: de juiste uitkomst is (x − 2)² + (y − 1)² = 25."
+        ],
+        "uh": "Welke vergelijking heeft de cirkel?",
+        "ctx": "Een cirkel heeft middelpunt M(2, 1) en gaat door het punt P(5, 5). Een leerling berekent de straal met de afstandsformule, stelt de vergelijking op en onderzoekt nog een punt."
+       },
+       {
+        "v": "Waar ligt het punt (2, 6) ten opzichte van de cirkel?",
+        "o": [
+         "\"binnen de cirkel\"",
+         "\"buiten de cirkel\"",
+         "\"op de cirkel\"",
+         "\"in het middelpunt\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"binnen de cirkel\"\"? Dan denk je dat de afstand kleiner is dan 5. 0² + 5² = 25, dus op de cirkel. Het goede antwoord is op de cirkel.",
+         "Koos je \"\"buiten de cirkel\"\"? Dan denk je dat de afstand groter is dan 5. 0² + 5² = 25, dus op de cirkel. Door de stappen goed na te lopen kom je uit op op de cirkel.",
+         "Klopt: (2 − 2)² + (6 − 1)² = 25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"in het middelpunt\"\"? Dan verwar je (2, 6) met M. M = (2, 1), dus op de cirkel. Controleer je stap: de juiste uitkomst is op de cirkel."
+        ],
+        "uh": "Waar ligt het punt (2, 6) ten opzichte van de cirkel?",
+        "ctx": "Een cirkel heeft middelpunt M(2, 1) en gaat door het punt P(5, 5). Een leerling berekent de straal met de afstandsformule, stelt de vergelijking op en onderzoekt nog een punt."
+       },
+       {
+        "v": "Welk middelpunt heeft de cirkel met middellijn AB?",
+        "o": [
+         "\"(3, 4)\"",
+         "\"(4, 6)\"",
+         "\"(8, 12), denk ik\"",
+         "\"(6, 8)\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(3, 4)\"\"? Dan neem je het verschil gedeeld door 2. Je neemt het gemiddelde van de coördinaten, dus (4, 6). Het goede antwoord is (4, 6).",
+         "Klopt: het midden van A(1, 2) en B(7, 10). Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"(8, 12), denk ik\"\"? Dan tel je de coördinaten op. Deel door 2, dus (4, 6). Door de stappen goed na te lopen kom je uit op (4, 6).",
+         "Koos je \"\"(6, 8)\"\"? Dan neem je een van de punten. Het middelpunt is het midden, dus (4, 6). Controleer je stap: de juiste uitkomst is (4, 6)."
+        ],
+        "uh": "Welk middelpunt heeft de cirkel met middellijn AB?",
+        "ctx": "Gegeven zijn A(1, 2) en B(7, 10). Een leerling neemt AB als middellijn van een cirkel. Hij berekent het middelpunt als midden van AB, de straal als helft van AB en stelt de vergelijking op."
+       },
+       {
+        "v": "Hoe groot is de straal?",
+        "o": [
+         "\"10\"",
+         "\"7\"",
+         "\"√50\"",
+         "\"5\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10\"\"? Dan neem je de middellijn als straal. De straal is de helft, dus 5. Het goede antwoord is 5.",
+         "Koos je \"\"7\"\"? Dan neem je het gemiddelde van 6 en 8. Gebruik AB : 2, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+         "Koos je \"\"√50\"\"? Dan neem je een verkeerde wortel. AB = 10, dus r = 5. Controleer je stap: de juiste uitkomst is 5.",
+         "Klopt: AB = √(6² + 8²) = 10 en r = 5. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe groot is de straal?",
+        "ctx": "Gegeven zijn A(1, 2) en B(7, 10). Een leerling neemt AB als middellijn van een cirkel. Hij berekent het middelpunt als midden van AB, de straal als helft van AB en stelt de vergelijking op."
+       },
+       {
+        "v": "Welke vergelijking heeft de cirkel?",
+        "o": [
+         "\"(x − 4)² + (y − 6)² = 25\"",
+         "\"(x − 4)² + (y − 6)² = 10, zeg maar\"",
+         "\"(x − 1)² + (y − 2)² = 25\"",
+         "\"(x − 4)² + (y − 6)² = 5\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: M = (4, 6) en r² = 25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"(x − 4)² + (y − 6)² = 10, zeg maar\"\"? Dan neem je de middellijn als r². r = 5, dus r² = 25. Het goede antwoord is (x − 4)² + (y − 6)² = 25.",
+         "Koos je \"\"(x − 1)² + (y − 2)² = 25\"\"? Dan neem je A als middelpunt. M is het midden van AB, dus (x − 4)² + (y − 6)². Door de stappen goed na te lopen kom je uit op (x − 4)² + (y − 6)² = 25.",
+         "Koos je \"\"(x − 4)² + (y − 6)² = 5\"\"? Dan vergeet je de straal te kwadrateren. r² = 25, dus = 25. Controleer je stap: de juiste uitkomst is (x − 4)² + (y − 6)² = 25."
+        ],
+        "uh": "Welke vergelijking heeft de cirkel?",
+        "ctx": "Gegeven zijn A(1, 2) en B(7, 10). Een leerling neemt AB als middellijn van een cirkel. Hij berekent het middelpunt als midden van AB, de straal als helft van AB en stelt de vergelijking op."
+       },
+       {
+        "v": "Valt (1, 2) binnen, op of buiten de cirkel x² + y² = 25?",
+        "o": [
+         "\"op de cirkel\"",
+         "\"buiten de cirkel\"",
+         "\"binnen de cirkel\"",
+         "\"in het middelpunt, you know\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"op de cirkel\"\"? Dan denk je dat elk punt met kleine coördinaten op de cirkel ligt. 5 ≠ 25, dus binnen. Het goede antwoord is binnen de cirkel.",
+         "Koos je \"\"buiten de cirkel\"\"? Dan denk je dat 5 groter is dan 25. 5 < 25, dus binnen. Door de stappen goed na te lopen kom je uit op binnen de cirkel.",
+         "Klopt: 1² + 2² = 5 en dat is kleiner dan 25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"in het middelpunt, you know\"\"? Dan verwar je het met (0, 0). Het middelpunt is (0, 0), dus binnen. Controleer je stap: de juiste uitkomst is binnen de cirkel."
+        ],
+        "uh": "Valt (1, 2) binnen, op of buiten de cirkel x² + y² = 25?",
+        "ctx": "Gegeven is de cirkel x² + y² = 25 met middelpunt in de oorsprong. Een leerling onderzoekt de ligging van de punten (3, 4), (1, 2) en (6, 1) en bepaalt de snijpunten van de cirkel met de x-as."
+       },
+       {
+        "v": "En het punt (6, 1): binnen, op of buiten dezelfde cirkel?",
+        "o": [
+         "\"binnen de cirkel\"",
+         "\"buiten de cirkel\"",
+         "\"op de cirkel\"",
+         "\"in het middelpunt, really\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"binnen de cirkel\"\"? Dan denk je dat 37 kleiner is dan 25. 37 > 25, dus buiten. Het goede antwoord is buiten de cirkel.",
+         "Klopt: 36 + 1 = 37 en dat is groter dan 25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"op de cirkel\"\"? Dan denk je dat het dichtbij genoeg is. 37 ≠ 25, dus buiten. Door de stappen goed na te lopen kom je uit op buiten de cirkel.",
+         "Koos je \"\"in het middelpunt, really\"\"? Dan verwar je het met (0, 0). Het middelpunt is (0, 0), dus buiten. Controleer je stap: de juiste uitkomst is buiten de cirkel."
+        ],
+        "uh": "En het punt (6, 1): binnen, op of buiten dezelfde cirkel?",
+        "ctx": "Gegeven is de cirkel x² + y² = 25 met middelpunt in de oorsprong. Een leerling onderzoekt de ligging van de punten (3, 4), (1, 2) en (6, 1) en bepaalt de snijpunten van de cirkel met de x-as."
+       },
+       {
+        "v": "Welke snijpunten heeft de cirkel met de x-as?",
+        "o": [
+         "\"(25, 0) en (−25, 0)\"",
+         "\"(5, 0) alleen\"",
+         "\"(0, 5) en (0, −5)\"",
+         "\"(5, 0) en (−5, 0)\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(25, 0) en (−25, 0)\"\"? Dan neem je r² als x. x² = 25 geeft x = ±5, dus (5, 0) en (−5, 0). Het goede antwoord is (5, 0) en (−5, 0).",
+         "Koos je \"\"(5, 0) alleen\"\"? Dan vergeet je de negatieve oplossing. Ook (−5)² = 25, dus twee punten. Door de stappen goed na te lopen kom je uit op (5, 0) en (−5, 0).",
+         "Koos je \"\"(0, 5) en (0, −5)\"\"? Dan neem je de snijpunten met de y-as. Voor de x-as is y = 0, dus (5, 0) en (−5, 0). Controleer je stap: de juiste uitkomst is (5, 0) en (−5, 0).",
+         "Klopt: y = 0 geeft x² = 25, dus x = 5 of x = −5. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke snijpunten heeft de cirkel met de x-as?",
+        "ctx": "Gegeven is de cirkel x² + y² = 25 met middelpunt in de oorsprong. Een leerling onderzoekt de ligging van de punten (3, 4), (1, 2) en (6, 1) en bepaalt de snijpunten van de cirkel met de x-as."
+       },
+       {
+        "v": "Waarom ligt (3, 4) op de cirkel x² + y² = 25?",
+        "o": [
+         "\"3² + 4² = 25\"",
+         "\"3 + 4 = 7\"",
+         "\"3 · 4 = 12\"",
+         "\"3² + 4² = 5, volgens mij\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Lees middelpunt en straal af uit de vergelijking, vul punten in en controleer door de afstand tot het middelpunt na te rekenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 9 + 16 = 25 = r². Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3 + 4 = 7\"\"? Dan tel je de coördinaten op zonder te kwadrateren. Kwadrateer eerst, dus 3² + 4² = 25. Het goede antwoord is 3² + 4² = 25.",
+         "Koos je \"\"3 · 4 = 12\"\"? Dan vermenigvuldig je de coördinaten. De vergelijking is x² + y², dus 3² + 4² = 25. Door de stappen goed na te lopen kom je uit op 3² + 4² = 25.",
+         "Koos je \"\"3² + 4² = 5, volgens mij\"\"? Dan neem je de wortel en noemt dat de vergelijking. Links staat 25, dus 3² + 4² = 25. Controleer je stap: de juiste uitkomst is 3² + 4² = 25."
+        ],
+        "uh": "Waarom ligt (3, 4) op de cirkel x² + y² = 25?",
+        "ctx": "Gegeven is de cirkel x² + y² = 25 met middelpunt in de oorsprong. Een leerling onderzoekt de ligging van de punten (3, 4), (1, 2) en (6, 1) en bepaalt de snijpunten van de cirkel met de x-as."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Gegeven is de cirkel (x + 2)² + (y − 3)² = 16. Een leerling geeft het middelpunt en de straal en onderzoekt de ligging van de punten (−2, 7) en (1, 3) door ze in te vullen in de vergelijking.",
+        "v": "Geef het middelpunt en de straal en onderzoek de ligging van de twee punten.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Middelpunt (−2, 3) en straal 4 (1p). (−2, 7): 0 + 16 = 16, dus op de cirkel (1p). (1, 3): 9 + 0 = 9 < 16, dus binnen de cirkel (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een cirkel heeft middelpunt M(1, −2) en gaat door P(4, 2). Een leerling berekent de straal met Pythagoras, stelt de vergelijking op en controleert met het punt P.",
+        "v": "Stel de vergelijking van de cirkel op.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "MP = √(9 + 16) = 5 (1p). De vergelijking is (x − 1)² + (y + 2)² = 25 (1p). Controle: 9 + 16 = 25 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling splitst de kwadraten af in x² + y² + 4x − 6y − 12 = 0. Hij schrijft de vergelijking om tot de vorm (x − a)² + (y − b)² = r² en geeft het middelpunt en de straal.",
+        "v": "Schrijf de vergelijking om en geef het middelpunt en de straal.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(x + 2)² − 4 + (y − 3)² − 9 − 12 = 0 (1p) geeft (x + 2)² + (y − 3)² = 25 (1p). Middelpunt (−2, 3) en straal 5 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Gegeven zijn A(−1, 1) en B(5, 9). Een leerling neemt AB als middellijn van een cirkel, berekent het middelpunt en de straal en stelt de vergelijking op.",
+        "v": "Stel de vergelijking van de cirkel met middellijn AB op.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Middelpunt (2, 5) (1p). AB = √(36 + 64) = 10, dus r = 5 (1p). (x − 2)² + (y − 5)² = 25 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Gegeven is de cirkel (x − 3)² + (y + 2)² = 25. Een leerling bepaalt de snijpunten met de y-as door x = 0 in te vullen en controleert beide punten.",
+        "v": "Bereken de snijpunten van de cirkel met de y-as.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "x = 0 geeft 9 + (y + 2)² = 25 (1p), dus (y + 2)² = 16 en y = 2 of y = −6 (1p). Controle (0, 2): 9 + 16 = 25 (1p)."
+       }
+      ]
      }
     ]
    },

@@ -5749,6 +5749,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C6",
+      "lo": "wb.C.6",
+      "gs": 2,
+      "naam": "De vergelijking van een cirkel: middelpunt en straal",
+      "beschrijving": "Je leest het middelpunt en de straal af uit een cirkelvergelijking, stelt een cirkelvergelijking op, splitst kwadraten af en bepaalt de ligging van een punt ten opzichte van een cirkel.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Middelpunt en straal aflezen",
+       "Een cirkelvergelijking opstellen",
+       "Kwadraat afsplitsen",
+       "Ligging van een punt",
+       "Middellijn en middelpunt bepalen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
