@@ -5877,6 +5877,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D3",
+      "lo": "wb.D.3",
+      "gs": 2,
+      "naam": "Hellinggrafiek: de grafiek van de afgeleide schetsen en lezen",
+      "beschrijving": "Je leest en schetst de hellinggrafiek van een functie: het teken van de afgeleide bepaalt stijgen en dalen, nulpunten van f' zijn toppen en dalen, en je schetst f vanuit f' en andersom.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Teken van f' lezen",
+       "Toppen en dalen",
+       "Hellinggrafiek schetsen",
+       "f schetsen vanuit f'",
+       "Waarden en steilheid"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

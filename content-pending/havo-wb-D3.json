@@ -1,0 +1,682 @@
+{
+ "id": "D3",
+ "lo": "wb.D.3",
+ "gs": 2,
+ "naam": "Hellinggrafiek: de grafiek van de afgeleide schetsen en lezen",
+ "beschrijving": "Je leest en schetst de hellinggrafiek van een functie: het teken van de afgeleide bepaalt stijgen en dalen, nulpunten van f' zijn toppen en dalen, en je schetst f vanuit f' en andersom.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Teken van f' lezen",
+  "Toppen en dalen",
+  "Hellinggrafiek schetsen",
+  "f schetsen vanuit f'",
+  "Waarden en steilheid"
+ ],
+ "sam": "Waar f' positief is stijgt f, waar f' negatief is daalt f en waar f' = 0 en van teken wisselt ligt een top of dal. De steilheid is |f'(x)|. Schets f vanuit het teken van f' en controleer met een waarde.",
+ "begrippen": [
+  {
+   "t": "Afgeleide functie",
+   "d": "f'(x): de helling van f in elk punt."
+  },
+  {
+   "t": "Hellinggrafiek",
+   "d": "De grafiek van f'."
+  },
+  {
+   "t": "Stijgen en f' > 0",
+   "d": "Waar f' positief is, stijgt f."
+  },
+  {
+   "t": "Dalen en f' < 0",
+   "d": "Waar f' negatief is, daalt f."
+  },
+  {
+   "t": "Top of dal",
+   "d": "Waar f' = 0 en van teken wisselt; horizontale raaklijn."
+  },
+  {
+   "t": "Lokaal maximum",
+   "d": "Top: f' gaat van positief naar negatief."
+  },
+  {
+   "t": "Lokaal minimum",
+   "d": "Dal: f' gaat van negatief naar positief."
+  },
+  {
+   "t": "Steilheid",
+   "d": "|f'(x)|: groter betekent steiler."
+  },
+  {
+   "t": "Schetsen van f uit f'",
+   "d": "Teken van f' bepaalt stijgen, dalen en toppen."
+  },
+  {
+   "t": "Constante functie",
+   "d": "f' = 0 op het hele interval."
+  },
+  {
+   "t": "Lijn en f'",
+   "d": "Bij f(x) = ax + b is f'(x) = a."
+  },
+  {
+   "t": "Controleren",
+   "d": "Een waarde van f' invullen en het teken vergelijken met de grafiek."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke grafiek heet de hellinggrafiek van f?",
+   "o": [
+    "\"de grafiek van f zelf\"",
+    "\"de grafiek van de afgeleide f'\"",
+    "\"de raaklijn in een punt, denk ik\"",
+    "\"de grafiek van −f\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de grafiek van f zelf\"\"? Dan verwar je f met f'. De hellinggrafiek toont de helling, dus de grafiek van f'. Het goede antwoord is de grafiek van de afgeleide f'.",
+    "Klopt: f' geeft bij elke x de helling van f. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de raaklijn in een punt, denk ik\"\"? Dan neem je een lijn in één punt. De hellinggrafiek is de grafiek van alle hellingen, dus van f'.",
+    "Koos je \"\"de grafiek van −f\"\"? Dan spiegel je de functie. De hellinggrafiek gaat over de helling, dus f'. Controleer je stap: de juiste uitkomst is de grafiek van de afgeleide f'."
+   ],
+   "uh": "Welke grafiek heet de hellinggrafiek van f?"
+  },
+  {
+   "v": "Welk teken heeft f'(x) op een stuk waar f stijgt?",
+   "o": [
+    "\"negatief\"",
+    "\"nul\"",
+    "\"niet te bepalen\"",
+    "\"positief\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"negatief\"\"? Dan verwar je stijgen met dalen. Een negatieve helling hoort bij dalen, dus positief. Het goede antwoord is positief.",
+    "Koos je \"\"nul\"\"? Dan denk je aan een horizontale raaklijn. Bij stijgen is de helling positief, dus positief. Door de stappen goed na te lopen kom je uit op positief.",
+    "Koos je \"\"niet te bepalen\"\"? Dan denk je dat het teken niets zegt. Stijgen betekent f' > 0, dus positief. Controleer je stap: de juiste uitkomst is positief.",
+    "Klopt: stijgen betekent een positieve helling. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk teken heeft f'(x) op een stuk waar f stijgt?"
+  },
+  {
+   "v": "Welk teken heeft f'(x) op een stuk waar f daalt?",
+   "o": [
+    "\"negatief\"",
+    "\"positief\"",
+    "\"nul\"",
+    "\"niet te bepalen\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dalen betekent een negatieve helling. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"positief\"\"? Dan verwar je dalen met stijgen. Een positieve helling hoort bij stijgen, dus negatief. Het goede antwoord is negatief.",
+    "Koos je \"\"nul\"\"? Dan denk je aan een horizontale raaklijn. Bij dalen is de helling negatief, dus negatief. Door de stappen goed na te lopen kom je uit op negatief.",
+    "Koos je \"\"niet te bepalen\"\"? Dan denk je dat het teken niets zegt. Dalen betekent f' < 0, dus negatief. Controleer je stap: de juiste uitkomst is negatief."
+   ],
+   "uh": "Welk teken heeft f'(x) op een stuk waar f daalt?"
+  },
+  {
+   "v": "Welke waarde heeft f'(x) in een top of dal van f?",
+   "o": [
+    "\"maximaal\"",
+    "\"1\"",
+    "\"0\"",
+    "\"negatief\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"maximaal\"\"? Dan denk je dat de helling in een top het grootst is. Daar is de raaklijn horizontaal, dus 0. Het goede antwoord is 0.",
+    "Koos je \"\"1\"\"? Dan neem je een vaste helling. In een top is de helling 0, dus 0. Door de stappen goed na te lopen kom je uit op 0.",
+    "Klopt: de raaklijn is daar horizontaal. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"negatief\"\"? Dan denk je dat de top bij dalen hoort. In een top is de helling 0, dus 0. Controleer je stap: de juiste uitkomst is 0."
+   ],
+   "uh": "Welke waarde heeft f'(x) in een top of dal van f?"
+  },
+  {
+   "v": "Hoe ziet de hellinggrafiek eruit bij een rechte lijn f(x) = ax + b?",
+   "o": [
+    "\"een rechte door de oorsprong, gewoon\"",
+    "\"een horizontale lijn f'(x) = a\"",
+    "\"een parabool\"",
+    "\"de x-as\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een rechte door de oorsprong, gewoon\"\"? Dan denk je dat de helling meegroeit met x. Bij een lijn is de helling constant, dus f'(x) = a.",
+    "Klopt: de helling is overal gelijk aan a. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"een parabool\"\"? Dan denk je aan een kwadraat. Een lineaire functie heeft constante helling, dus f'(x) = a. Door de stappen goed na te lopen kom je uit op een horizontale lijn f'(x) = a.",
+    "Koos je \"\"de x-as\"\"? Dan denk je dat f' = 0. De helling is a, dus f'(x) = a. Controleer je stap: de juiste uitkomst is een horizontale lijn f'(x) = a."
+   ],
+   "uh": "Hoe ziet de hellinggrafiek eruit bij een rechte lijn f(x) = ax + b?"
+  },
+  {
+   "v": "Waar kijk je naar om f te schetsen als de grafiek van f' gegeven is?",
+   "o": [
+    "\"alleen naar de grootste waarde van f', denk ik\"",
+    "\"alleen naar de nulpunten van f\"",
+    "\"naar het snijpunt met de y-as\"",
+    "\"waar f' positief, negatief of nul is\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen naar de grootste waarde van f', denk ik\"\"? Dan kijk je naar één waarde. Het teken over het hele bereik bepaalt het verloop, dus positief, negatief of nul.",
+    "Koos je \"\"alleen naar de nulpunten van f\"\"? Dan kijk je naar f in plaats van f'. Je moet het teken van f' gebruiken, dus waar f' positief, negatief of nul is.",
+    "Koos je \"\"naar het snijpunt met de y-as\"\"? Dan kijk je naar één punt. Het gaat om het teken van f' over de x-as, dus positief, negatief of nul.",
+    "Klopt: dat bepaalt of f stijgt, daalt of een top heeft. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waar kijk je naar om f te schetsen als de grafiek van f' gegeven is?"
+  },
+  {
+   "v": "Hoe lees je de steilheid van f af uit f'?",
+   "o": [
+    "\"een grotere waarde van |f'(x)| betekent een steilere grafiek\"",
+    "\"een grotere f'(x) betekent een vlakkere grafiek, volgens mij, eigenlijk\"",
+    "\"f'(x) is de hoogte van f\"",
+    "\"f'(x) is altijd 1\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de absolute waarde van de helling is de steilheid.",
+    "Koos je \"\"een grotere f'(x) betekent een vlakkere grafiek, volgens mij, eigenlijk\"\"? Dan draai je het verband om. Grote |f'| is steil, dus steiler.",
+    "Koos je \"\"f'(x) is de hoogte van f\"\"? Dan verwar je f' met f. f' is de helling, dus |f'| is de steilheid. Door de stappen goed na te lopen kom je uit op een grotere waarde van |f'(x)| betekent een steilere grafiek.",
+    "Koos je \"\"f'(x) is altijd 1\"\"? Dan denk je dat de helling vast is. Ze verschilt per punt, dus |f'| bepaalt de steilheid."
+   ],
+   "uh": "Hoe lees je de steilheid van f af uit f'?"
+  },
+  {
+   "v": "Welk teken heeft f' voor x < −1?",
+   "o": [
+    "\"negatief\"",
+    "\"nul\"",
+    "\"positief\"",
+    "\"niet te bepalen\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"negatief\"\"? Dan denk je dat f daalt. Voor x < −1 stijgt f, dus positief. Het goede antwoord is positief.",
+    "Koos je \"\"nul\"\"? Dan denk je aan de top. Pas bij x = −1 is f' nul, dus positief. Door de stappen goed na te lopen kom je uit op positief.",
+    "Klopt: f stijgt daar. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"niet te bepalen\"\"? Dan denk je dat het teken onbekend is. Stijgen betekent positief, dus positief. Controleer je stap: de juiste uitkomst is positief."
+   ],
+   "uh": "Welk teken heeft f' voor x < −1?",
+   "ctx": "Een functie f heeft een top bij (−1, 2) en een dal bij (1, −2). Voor x < −1 stijgt f, tussen x = −1 en x = 1 daalt f en voor x > 1 stijgt f weer. Een leerling bepaalt waar f' positief, negatief of nul is."
+  },
+  {
+   "v": "Welk teken heeft f' tussen x = −1 en x = 1?",
+   "o": [
+    "\"positief\"",
+    "\"negatief\"",
+    "\"nul\"",
+    "\"niet te bepalen\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"positief\"\"? Dan denk je dat f stijgt. Tussen −1 en 1 daalt f, dus negatief. Het goede antwoord is negatief.",
+    "Klopt: f daalt daar. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"nul\"\"? Dan denk je aan een horizontale raaklijn. Alleen in −1 en 1 is f' nul, dus negatief. Door de stappen goed na te lopen kom je uit op negatief.",
+    "Koos je \"\"niet te bepalen\"\"? Dan denk je dat het teken onbekend is. Dalen betekent negatief, dus negatief. Controleer je stap: de juiste uitkomst is negatief."
+   ],
+   "uh": "Welk teken heeft f' tussen x = −1 en x = 1?",
+   "ctx": "Een functie f heeft een top bij (−1, 2) en een dal bij (1, −2). Voor x < −1 stijgt f, tussen x = −1 en x = 1 daalt f en voor x > 1 stijgt f weer. Een leerling bepaalt waar f' positief, negatief of nul is."
+  },
+  {
+   "v": "Voor welke x is f'(x) = 0?",
+   "o": [
+    "\"x = 0\"",
+    "\"x = 2 en x = −2, really\"",
+    "\"x < −1\"",
+    "\"x = −1 en x = 1\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 0\"\"? Dan neem je de x van het snijpunt met de y-as. De raaklijn is horizontaal in de top en het dal, dus x = −1 en x = 1.",
+    "Koos je \"\"x = 2 en x = −2, really\"\"? Dan neem je de y-waarden van de punten. Je zoekt de x-waarden, dus x = −1 en x = 1. Door de stappen goed na te lopen kom je uit op x = −1 en x = 1.",
+    "Koos je \"\"x < −1\"\"? Dan neem je een interval. f' = 0 geldt in twee punten, dus x = −1 en x = 1. Controleer je stap: de juiste uitkomst is x = −1 en x = 1.",
+    "Klopt: in de top en het dal is de raaklijn horizontaal. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Voor welke x is f'(x) = 0?",
+   "ctx": "Een functie f heeft een top bij (−1, 2) en een dal bij (1, −2). Voor x < −1 stijgt f, tussen x = −1 en x = 1 daalt f en voor x > 1 stijgt f weer. Een leerling bepaalt waar f' positief, negatief of nul is."
+  },
+  {
+   "v": "Bereken f'(−2) voor f'(x) = 2x.",
+   "o": [
+    "\"−4\"",
+    "\"4\"",
+    "\"−2\"",
+    "\"−1\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2 · (−2) = −4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"4\"\"? Dan vergeet je het minteken. 2 · (−2) = −4, dus −4. Het goede antwoord is −4.",
+    "Koos je \"\"−2\"\"? Dan neem je x zelf. f'(x) = 2x, dus −4. Door de stappen goed na te lopen kom je uit op −4.",
+    "Koos je \"\"−1\"\"? Dan deel je door 2. f'(x) = 2x, dus −4. Controleer je stap: de juiste uitkomst is −4."
+   ],
+   "uh": "Bereken f'(−2) voor f'(x) = 2x.",
+   "ctx": "Gegeven is f(x) = x² met f'(x) = 2x. Een leerling berekent f'(−2), f'(0) en f'(3) en beschrijft wat die waarden zeggen over de grafiek van f."
+  },
+  {
+   "v": "In de top van de parabool is x = 0. Welke helling hoort daarbij?",
+   "o": [
+    "\"2\"",
+    "\"−2\"",
+    "\"0\"",
+    "\"1\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2\"\"? Dan neem je de coëfficiënt. f'(0) = 2 · 0, dus 0. Het goede antwoord is 0.",
+    "Koos je \"\"−2\"\"? Dan neem je een verkeerde waarde. 2 · 0 = 0, dus 0. Door de stappen goed na te lopen kom je uit op 0.",
+    "Klopt: 2 · 0 = 0; de top van de parabool ligt in x = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1\"\"? Dan neem je een vaste waarde. 2 · 0 = 0, dus 0. Controleer je stap: de juiste uitkomst is 0."
+   ],
+   "uh": "In de top van de parabool is x = 0. Welke helling hoort daarbij?",
+   "ctx": "Gegeven is f(x) = x² met f'(x) = 2x. Een leerling berekent f'(−2), f'(0) en f'(3) en beschrijft wat die waarden zeggen over de grafiek van f."
+  },
+  {
+   "v": "Wat zegt f'(3) = 6 over de grafiek van f in x = 3?",
+   "o": [
+    "\"f(3) = 6\"",
+    "\"f stijgt daar met helling 6\"",
+    "\"f daalt daar\"",
+    "\"f heeft daar een top, zeg maar\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f(3) = 6\"\"? Dan verwar je f' met f. f(3) = 9, dus helling 6. Het goede antwoord is f stijgt daar met helling 6.",
+    "Klopt: positieve helling 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f daalt daar\"\"? Dan denk je dat 6 daling betekent. Positief is stijgen, dus stijgt met helling 6. Door de stappen goed na te lopen kom je uit op f stijgt daar met helling 6.",
+    "Koos je \"\"f heeft daar een top, zeg maar\"\"? Dan denk je aan f' = 0. Hier is f' = 6, dus stijgt. Controleer je stap: de juiste uitkomst is f stijgt daar met helling 6."
+   ],
+   "uh": "Wat zegt f'(3) = 6 over de grafiek van f in x = 3?",
+   "ctx": "Gegeven is f(x) = x² met f'(x) = 2x. Een leerling berekent f'(−2), f'(0) en f'(3) en beschrijft wat die waarden zeggen over de grafiek van f."
+  },
+  {
+   "v": "Voor welke x stijgt f volgens de tabel?",
+   "o": [
+    "\"voor −1 < x < 1\"",
+    "\"alleen voor x > 1, you know\"",
+    "\"voor alle x\"",
+    "\"voor x < −1 en voor x > 1\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"voor −1 < x < 1\"\"? Dan neem je het stuk met negatieve f'. Daar daalt f, dus x < −1 en x > 1. Het goede antwoord is voor x < −1 en voor x > 1.",
+    "Koos je \"\"alleen voor x > 1, you know\"\"? Dan vergeet je het stuk links. f'(−2) = 9 is ook positief, dus ook x < −1. Door de stappen goed na te lopen kom je uit op voor x < −1 en voor x > 1.",
+    "Koos je \"\"voor alle x\"\"? Dan denk je dat f nooit daalt. f'(0) = −3 is negatief, dus niet overal. Controleer je stap: de juiste uitkomst is voor x < −1 en voor x > 1.",
+    "Klopt: daar is f' positief. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Voor welke x stijgt f volgens de tabel?",
+   "ctx": "Van een functie f is f'(x) gegeven in een tabel: bij x = −2, −1, 0, 1 en 2 is f'(x) gelijk aan 9, 0, −3, 0 en 9. Een leerling schetst de grafiek van f vanuit deze tabel door te kijken naar het teken van f'."
+  },
+  {
+   "v": "Voor welke x daalt f?",
+   "o": [
+    "\"voor −1 < x < 1\"",
+    "\"voor x < −1, really\"",
+    "\"voor x > 1\"",
+    "\"nergens\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: daar is f' negatief. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"voor x < −1, really\"\"? Dan neem je het stuk links. Daar is f' positief, dus −1 < x < 1. Het goede antwoord is voor −1 < x < 1.",
+    "Koos je \"\"voor x > 1\"\"? Dan neem je het stuk rechts. Daar is f' positief, dus −1 < x < 1. Door de stappen goed na te lopen kom je uit op voor −1 < x < 1.",
+    "Koos je \"\"nergens\"\"? Dan denk je dat f' nooit negatief is. f'(0) = −3, dus −1 < x < 1. Controleer je stap: de juiste uitkomst is voor −1 < x < 1."
+   ],
+   "uh": "Voor welke x daalt f?",
+   "ctx": "Van een functie f is f'(x) gegeven in een tabel: bij x = −2, −1, 0, 1 en 2 is f'(x) gelijk aan 9, 0, −3, 0 en 9. Een leerling schetst de grafiek van f vanuit deze tabel door te kijken naar het teken van f'."
+  },
+  {
+   "v": "Welk soort punt is x = −1 voor f?",
+   "o": [
+    "\"een dal\"",
+    "\"een nulpunt\"",
+    "\"een top (lokaal maximum)\"",
+    "\"een buigpunt, denk ik, zeg maar\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een dal\"\"? Dan verwar je top en dal. Bij een dal gaat f' van negatief naar positief, dus een top. Het goede antwoord is een top (lokaal maximum).",
+    "Koos je \"\"een nulpunt\"\"? Dan neem je f = 0. Het gaat om f' = 0, dus een top. Door de stappen goed na te lopen kom je uit op een top (lokaal maximum).",
+    "Klopt: f' gaat daar van positief naar negatief. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"een buigpunt, denk ik, zeg maar\"\"? Dan denk je dat f' niet van teken wisselt. Hier wisselt f' van + naar −, dus een top. Controleer je stap: de juiste uitkomst is een top (lokaal maximum)."
+   ],
+   "uh": "Welk soort punt is x = −1 voor f?",
+   "ctx": "Van een functie f is f'(x) gegeven in een tabel: bij x = −2, −1, 0, 1 en 2 is f'(x) gelijk aan 9, 0, −3, 0 en 9. Een leerling schetst de grafiek van f vanuit deze tabel door te kijken naar het teken van f'."
+  },
+  {
+   "v": "Het teken van f' wisselt bij x = 1 van − naar +. Welk soort punt is dat?",
+   "o": [
+    "\"een top\"",
+    "\"een dal (lokaal minimum)\"",
+    "\"een nulpunt\"",
+    "\"het snijpunt met de y-as, to be honest\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een top\"\"? Dan verwar je top en dal. Bij een top gaat f' van positief naar negatief, dus een dal. Het goede antwoord is een dal (lokaal minimum).",
+    "Klopt: f' gaat daar van negatief naar positief. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"een nulpunt\"\"? Dan neem je f = 0. Het gaat om f' = 0, dus een dal. Door de stappen goed na te lopen kom je uit op een dal (lokaal minimum).",
+    "Koos je \"\"het snijpunt met de y-as, to be honest\"\"? Dan verwar je x = 1 met x = 0. Hier is f' = 0 en wisselt het teken, dus een dal. Controleer je stap: de juiste uitkomst is een dal (lokaal minimum)."
+   ],
+   "uh": "Het teken van f' wisselt bij x = 1 van − naar +. Welk soort punt is dat?",
+   "ctx": "Van een functie f is f'(x) gegeven in een tabel: bij x = −2, −1, 0, 1 en 2 is f'(x) gelijk aan 9, 0, −3, 0 en 9. Een leerling schetst de grafiek van f vanuit deze tabel door te kijken naar het teken van f'."
+  },
+  {
+   "v": "Bereken f'(0) voor f'(x) = 3x² − 3.",
+   "o": [
+    "\"3\"",
+    "\"0\"",
+    "\"−1\"",
+    "\"−3\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3\"\"? Dan vergeet je het minteken. 3 · 0² − 3 = −3, dus −3. Het goede antwoord is −3.",
+    "Koos je \"\"0\"\"? Dan neem je 3 · 0. Trek ook 3 af, dus −3. Door de stappen goed na te lopen kom je uit op −3.",
+    "Koos je \"\"−1\"\"? Dan deel je door 3. 3 · 0² − 3 = −3, dus −3. Controleer je stap: de juiste uitkomst is −3.",
+    "Klopt: 3 · 0 − 3 = −3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken f'(0) voor f'(x) = 3x² − 3.",
+   "ctx": "Gegeven is f(x) = x³ − 3x met f'(x) = 3x² − 3. Een leerling berekent f'(0) en f'(2) en vergelijkt de steilheid van de grafiek van f in x = 0 en x = 2."
+  },
+  {
+   "v": "Vul x = 2 in dezelfde afgeleide in. Welk getal krijg je?",
+   "o": [
+    "\"9\"",
+    "\"3\"",
+    "\"6\"",
+    "\"12\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3 · 4 − 3 = 9. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3\"\"? Dan neem je 3 · 2 − 3. Kwadrateer x eerst, dus 9. Het goede antwoord is 9.",
+    "Koos je \"\"6\"\"? Dan neem je 3 · 2. Kwadrateer x en trek 3 af, dus 9. Door de stappen goed na te lopen kom je uit op 9.",
+    "Koos je \"\"12\"\"? Dan vergeet je 3 af te trekken. 3 · 4 − 3, dus 9. Controleer je stap: de juiste uitkomst is 9."
+   ],
+   "uh": "Vul x = 2 in dezelfde afgeleide in. Welk getal krijg je?",
+   "ctx": "Gegeven is f(x) = x³ − 3x met f'(x) = 3x² − 3. Een leerling berekent f'(0) en f'(2) en vergelijkt de steilheid van de grafiek van f in x = 0 en x = 2."
+  },
+  {
+   "v": "Waar is de grafiek van f steiler: in x = 0 of in x = 2?",
+   "o": [
+    "\"in x = 0, want −3 is groter dan 9, gewoon\"",
+    "\"even steil\"",
+    "\"in x = 2, want |9| is groter dan |−3|\"",
+    "\"dat is niet te bepalen\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"in x = 0, want −3 is groter dan 9, gewoon\"\"? Dan vergelijk je de getallen zonder absolute waarde. −3 < 9, dus x = 2 is steiler.",
+    "Koos je \"\"even steil\"\"? Dan denk je dat de tekens niets uitmaken. |9| ≠ |−3|, dus x = 2 is steiler. Door de stappen goed na te lopen kom je uit op in x = 2, want |9| is groter dan |−3|.",
+    "Klopt: de steilheid is |f'|. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"dat is niet te bepalen\"\"? Dan denk je dat f' niets zegt. De steilheid is |f'|, dus x = 2 is steiler. Controleer je stap: de juiste uitkomst is in x = 2, want |9| is groter dan |−3|."
+   ],
+   "uh": "Waar is de grafiek van f steiler: in x = 0 of in x = 2?",
+   "ctx": "Gegeven is f(x) = x³ − 3x met f'(x) = 3x² − 3. Een leerling berekent f'(0) en f'(2) en vergelijkt de steilheid van de grafiek van f in x = 0 en x = 2."
+  },
+  {
+   "v": "Los −2x + 4 = 0 op.",
+   "o": [
+    "\"x = −2, I think\"",
+    "\"x = 2\"",
+    "\"x = 4\"",
+    "\"x = 0\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = −2, I think\"\"? Dan maak je een tekenfout. −2x = −4, dus x = 2. Het goede antwoord is x = 2.",
+    "Klopt: −2x + 4 = 0 geeft x = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 4\"\"? Dan neem je de constante. −2x + 4 = 0, dus x = 2. Door de stappen goed na te lopen kom je uit op x = 2.",
+    "Koos je \"\"x = 0\"\"? Dan neem je f'(0) = 4. Los −2x + 4 = 0 op, dus x = 2. Controleer je stap: de juiste uitkomst is x = 2."
+   ],
+   "uh": "Los −2x + 4 = 0 op.",
+   "ctx": "Gegeven is f(x) = −x² + 4x met f'(x) = −2x + 4. Een leerling bepaalt waar f' nul is, waar f' positief is en wat dat betekent voor de top van de grafiek van f."
+  },
+  {
+   "v": "Bepaal voor welke x de helling positief is.",
+   "o": [
+    "\"x > 2, to be honest\"",
+    "\"x < 0\"",
+    "\"x > 0\"",
+    "\"x < 2\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x > 2, to be honest\"\"? Dan vergeet je het teken om te draaien bij delen door −2. Het is x < 2, dus x < 2. Het goede antwoord is x < 2.",
+    "Koos je \"\"x < 0\"\"? Dan neem je f'(0) = 4. −2x + 4 > 0 geeft x < 2, dus x < 2. Door de stappen goed na te lopen kom je uit op x < 2.",
+    "Koos je \"\"x > 0\"\"? Dan neem je een verkeerde grens. De grens is x = 2, dus x < 2. Controleer je stap: de juiste uitkomst is x < 2.",
+    "Klopt: −2x + 4 > 0 geeft x < 2 (het teken draait om). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bepaal voor welke x de helling positief is.",
+   "ctx": "Gegeven is f(x) = −x² + 4x met f'(x) = −2x + 4. Een leerling bepaalt waar f' nul is, waar f' positief is en wat dat betekent voor de top van de grafiek van f."
+  },
+  {
+   "v": "Welke top heeft de grafiek van f(x) = −x² + 4x?",
+   "o": [
+    "\"(2, 4)\"",
+    "\"(2, 0), zeg maar\"",
+    "\"(4, 0)\"",
+    "\"(2, 8)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: f'(2) = 0 en f(2) = −4 + 8 = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(2, 0), zeg maar\"\"? Dan neem je f'(2) als y. De y-waarde is f(2) = 4, dus (2, 4). Het goede antwoord is (2, 4).",
+    "Koos je \"\"(4, 0)\"\"? Dan neem je een nulpunt van f. De top ligt bij f' = 0, dus (2, 4). Door de stappen goed na te lopen kom je uit op (2, 4).",
+    "Koos je \"\"(2, 8)\"\"? Dan reken je 4 · 2 zonder het kwadraat af te trekken. f(2) = −4 + 8, dus (2, 4). Controleer je stap: de juiste uitkomst is (2, 4)."
+   ],
+   "uh": "Welke top heeft de grafiek van f(x) = −x² + 4x?",
+   "ctx": "Gegeven is f(x) = −x² + 4x met f'(x) = −2x + 4. Een leerling bepaalt waar f' nul is, waar f' positief is en wat dat betekent voor de top van de grafiek van f."
+  },
+  {
+   "v": "Vul x = 1 in f'(x) = 1/(2√x) in.",
+   "o": [
+    "\"1\"",
+    "\"2\"",
+    "\"0,5\"",
+    "\"0,25\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1\"\"? Dan vergeet je de 2 in de noemer. 1/(2 · 1) = 0,5, dus 0,5. Het goede antwoord is 0,5.",
+    "Koos je \"\"2\"\"? Dan draai je de breuk om. 1/(2 · 1) = 0,5, dus 0,5. Door de stappen goed na te lopen kom je uit op 0,5.",
+    "Klopt: 1/(2 · 1) = 0,5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,25\"\"? Dan neem je f'(4). Voor x = 1 is het 1/(2 · 1), dus 0,5. Controleer je stap: de juiste uitkomst is 0,5."
+   ],
+   "uh": "Vul x = 1 in f'(x) = 1/(2√x) in.",
+   "ctx": "Voor f(x) = √x geldt f'(x) = 1/(2√x). Een leerling berekent f'(1), f'(4) en f'(9) en beschrijft aan de hand van deze waarden het verloop van de grafiek van f."
+  },
+  {
+   "v": "Vul x = 4 in dezelfde afgeleide in.",
+   "o": [
+    "\"0,5\"",
+    "\"0,25\"",
+    "\"2\"",
+    "\"1\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,5\"\"? Dan neem je f'(1). Voor x = 4 is √4 = 2, dus 0,25. Het goede antwoord is 0,25.",
+    "Klopt: 1/(2 · 2) = 0,25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2\"\"? Dan draai je de breuk om. 1/(2 · 2) = 0,25, dus 0,25. Door de stappen goed na te lopen kom je uit op 0,25.",
+    "Koos je \"\"1\"\"? Dan vergeet je de 2 in de noemer en de wortel. 1/(2 · 2), dus 0,25. Controleer je stap: de juiste uitkomst is 0,25."
+   ],
+   "uh": "Vul x = 4 in dezelfde afgeleide in.",
+   "ctx": "Voor f(x) = √x geldt f'(x) = 1/(2√x). Een leerling berekent f'(1), f'(4) en f'(9) en beschrijft aan de hand van deze waarden het verloop van de grafiek van f."
+  },
+  {
+   "v": "Wat doet de hellinggrafiek van √x als x groter wordt?",
+   "o": [
+    "\"f' wordt groter\"",
+    "\"f' wordt negatief, denk ik, zeg maar, gewoon\"",
+    "\"f' blijft gelijk\"",
+    "\"f' blijft positief maar wordt kleiner\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f' wordt groter\"\"? Dan denk je dat de helling toeneemt. 0,5 daalt naar 0,25, dus kleiner. Het goede antwoord is f' blijft positief maar wordt kleiner.",
+    "Koos je \"\"f' wordt negatief, denk ik, zeg maar, gewoon\"\"? Dan denk je dat de helling omslaat. De waarden blijven positief, dus positief maar kleiner.",
+    "Koos je \"\"f' blijft gelijk\"\"? Dan denk je dat de helling constant is. 0,5 ≠ 0,25, dus kleiner. Controleer je stap: de juiste uitkomst is f' blijft positief maar wordt kleiner.",
+    "Klopt: 0,5, 0,25, ... naderen 0. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat doet de hellinggrafiek van √x als x groter wordt?",
+   "ctx": "Voor f(x) = √x geldt f'(x) = 1/(2√x). Een leerling berekent f'(1), f'(4) en f'(9) en beschrijft aan de hand van deze waarden het verloop van de grafiek van f."
+  },
+  {
+   "v": "Hoe verloopt de grafiek van √x dus?",
+   "o": [
+    "\"afnemend stijgend\"",
+    "\"toenemend stijgend, volgens mij\"",
+    "\"dalend\"",
+    "\"constant\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Kijk naar het teken van f'(x): positief betekent stijgen, negatief dalen en nul een horizontale raaklijn. Controleer met een waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: positieve maar steeds kleinere helling. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"toenemend stijgend, volgens mij\"\"? Dan denk je dat de helling groter wordt. Ze wordt kleiner, dus afnemend stijgend. Het goede antwoord is afnemend stijgend.",
+    "Koos je \"\"dalend\"\"? Dan denk je dat f daalt. f' is positief, dus stijgend. Door de stappen goed na te lopen kom je uit op afnemend stijgend.",
+    "Koos je \"\"constant\"\"? Dan denk je dat er geen verandering is. f' > 0, dus afnemend stijgend. Controleer je stap: de juiste uitkomst is afnemend stijgend."
+   ],
+   "uh": "Hoe verloopt de grafiek van √x dus?",
+   "ctx": "Voor f(x) = √x geldt f'(x) = 1/(2√x). Een leerling berekent f'(1), f'(4) en f'(9) en beschrijft aan de hand van deze waarden het verloop van de grafiek van f."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = x² − 4x met f'(x) = 2x − 4. Een leerling bepaalt waar f' nul is, waar f' negatief is en welk soort punt f daar heeft, en geeft de coördinaten.",
+   "v": "Bepaal waar f' = 0 en het soort punt, met coördinaten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "2x − 4 = 0 geeft x = 2 (1p). Voor x < 2 is f' negatief en daarna positief, dus een dal (1p). f(2) = 4 − 8 = −4, dus het dal is (2, −4) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Van een functie f is f'(x) = 3 − 2x gegeven. Een leerling berekent f'(0), f'(1), f'(2) en f'(3) en beschrijft op basis daarvan waar f stijgt en daalt en waar de top ligt.",
+   "v": "Beschrijf het verloop van f en geef de x van de top.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De waarden zijn 3, 1, −1 en −3 (1p). f' is positief voor x < 1,5 en negatief daarna (1p). De top ligt bij x = 1,5 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = x³ − 12x met f'(x) = 3x² − 12. Een leerling bepaalt de x-waarden waarvoor f'(x) = 0 en onderzoekt het teken van f' ervoor en erna om top en dal te vinden.",
+   "v": "Bepaal top en dal van f.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "3x² − 12 = 0 geeft x = 2 of x = −2 (1p). f' is positief voor x < −2 en x > 2 en negatief ertussen, dus top bij −2 en dal bij 2 (1p). f(−2) = 16 en f(2) = −16 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Voor f(x) = 2√x geldt f'(x) = 1/√x. Een leerling berekent f'(1), f'(4) en f'(9) en beschrijft het verloop van f en de steilheid.",
+   "v": "Bereken f'(1), f'(4) en f'(9) en beschrijf het verloop.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(1) = 1, f'(4) = 0,5 en f'(9) ≈ 0,33 (1p). f' blijft positief maar wordt kleiner (1p). f stijgt dus steeds langzamer: afnemend stijgend (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = x² met f'(x) = 2x. Een leerling vergelijkt de steilheid in x = 3 en x = −3 en legt uit wat het verschil in teken betekent voor de grafiek.",
+   "v": "Vergelijk de steilheid in x = 3 en x = −3.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(3) = 6 en f'(−3) = −6 (1p). De steilheid is gelijk (1p). Bij x = 3 stijgt de grafiek en bij x = −3 daalt hij (1p)."
+  }
+ ]
+}
