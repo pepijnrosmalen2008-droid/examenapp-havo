@@ -1,0 +1,682 @@
+{
+ "id": "D7",
+ "lo": "wb.D.7",
+ "gs": 2,
+ "naam": "Optimaliseren met de afgeleide",
+ "beschrijving": "Je stelt een formule met één variabele op, bepaalt met f'(x) = 0 en een tekenschema het maximum of minimum, controleert randpunten en geeft het antwoord in de context met eenheid.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Van situatie naar formule",
+  "Afgeleide gelijk aan nul",
+  "Randvoorwaarde en domein",
+  "Maximum controleren",
+  "Antwoord in context"
+ ],
+ "sam": "Bij optimaliseren stel je een formule met één variabele op, differentieer je en los je f'(x) = 0 op. Controleer met een tekenschema en let op randpunten van het domein. Bereken de extreme waarde met f(x) en geef een antwoord met eenheid.",
+ "begrippen": [
+  {
+   "t": "Optimaliseren",
+   "d": "De grootste of kleinste waarde van een grootheid zoeken met de afgeleide."
+  },
+  {
+   "t": "Formule met één variabele",
+   "d": "Eerst een functie opstellen, bijvoorbeeld A(x) = x(20 − x)."
+  },
+  {
+   "t": "Randvoorwaarde",
+   "d": "Een vaste grootte, zoals een omtrek van 40 m, waarmee je de variabelen koppelt."
+  },
+  {
+   "t": "Domein",
+   "d": "De waarden van x die in de situatie mogelijk zijn, bijvoorbeeld 0 < x < 6."
+  },
+  {
+   "t": "Afgeleide gelijk aan nul",
+   "d": "Los f'(x) = 0 op voor de kandidaten voor een extremum."
+  },
+  {
+   "t": "Tekenschema",
+   "d": "Het teken van f' links en rechts van de oplossing."
+  },
+  {
+   "t": "Maximum",
+   "d": "f' wisselt van + naar −."
+  },
+  {
+   "t": "Minimum",
+   "d": "f' wisselt van − naar +."
+  },
+  {
+   "t": "Randpunt",
+   "d": "Een uiteinde van het domein, dat je ook controleert."
+  },
+  {
+   "t": "Extreme waarde",
+   "d": "De waarde f(x) in het extremum, zoals A(10) = 100."
+  },
+  {
+   "t": "Maximale winst of omzet",
+   "d": "De grootste waarde van W(q) of R(p)."
+  },
+  {
+   "t": "Antwoord in context",
+   "d": "Een antwoord met eenheid en uitleg, zoals 128 cm³ bij x = 2 cm."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is de eerste stap bij een optimaliseringsvraag?",
+   "o": [
+    "\"f'(x) = 0 oplossen\"",
+    "\"een formule opstellen voor de grootheid met één variabele\"",
+    "\"de randpunten invullen, denk ik, zeg maar, gewoon\"",
+    "\"het antwoord afronden\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f'(x) = 0 oplossen\"\"? Dan los je op zonder formule. Je hebt eerst een functie nodig, dus eerst een formule opstellen.",
+    "Klopt: eerst het model, daarna differentiëren. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de randpunten invullen, denk ik, zeg maar, gewoon\"\"? Dan controleer je te vroeg. Eerst moet je de functie kennen, dus eerst een formule opstellen.",
+    "Koos je \"\"het antwoord afronden\"\"? Dan rond je af vóór je iets berekend hebt. Eerst het model, dus eerst een formule opstellen."
+   ],
+   "uh": "Wat is de eerste stap bij een optimaliseringsvraag?"
+  },
+  {
+   "v": "Hoe vind je de waarde van x waarbij de grootheid optimaal is?",
+   "o": [
+    "\"los f(x) = 0 op\"",
+    "\"vul x = 0 in\"",
+    "\"neem het grootste getal\"",
+    "\"los f'(x) = 0 op\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"los f(x) = 0 op\"\"? Dan los je de functie zelf op. Dat geeft de nulpunten, dus f'(x) = 0. Het goede antwoord is los f'(x) = 0 op.",
+    "Koos je \"\"vul x = 0 in\"\"? Dan vul je maar één getal in. Je zoekt de x met helling 0, dus f'(x) = 0. Door de stappen goed na te lopen kom je uit op los f'(x) = 0 op.",
+    "Koos je \"\"neem het grootste getal\"\"? Dan kies je zomaar een getal. Gebruik de afgeleide, dus f'(x) = 0. Controleer je stap: de juiste uitkomst is los f'(x) = 0 op.",
+    "Klopt: in een extremum is de helling 0. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe vind je de waarde van x waarbij de grootheid optimaal is?"
+  },
+  {
+   "v": "Wat controleer je nadat je f'(x) = 0 hebt opgelost?",
+   "o": [
+    "\"het teken van f' links en rechts van de oplossing\"",
+    "\"of x een geheel getal is, zeg maar, gewoon, volgens mij\"",
+    "\"of f(x) positief is\"",
+    "\"niets, f' = 0 is genoeg\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: wisselt f' van + naar −, dan is het een maximum. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"of x een geheel getal is, zeg maar, gewoon, volgens mij\"\"? Dan denk je aan de vorm van het antwoord. Controleer het teken van f', dus het tekenschema.",
+    "Koos je \"\"of f(x) positief is\"\"? Dan kijk je naar de functiewaarde. Het teken van f' bepaalt het soort extremum, dus het tekenschema.",
+    "Koos je \"\"niets, f' = 0 is genoeg\"\"? Dan neem je aan dat f' = 0 genoeg is. Het teken moet wisselen, dus het tekenschema."
+   ],
+   "uh": "Wat controleer je nadat je f'(x) = 0 hebt opgelost?"
+  },
+  {
+   "v": "Een rechthoek heeft omtrek 40 en breedte x. Welke lengte hoort daarbij?",
+   "o": [
+    "\"40 − x\"",
+    "\"20 + x\"",
+    "\"20 − x\"",
+    "\"40 − 2x, you know\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 − x\"\"? Dan vergeet je dat de omtrek twee keer b + l is. b + l = 20, dus 20 − x. Het goede antwoord is 20 − x.",
+    "Koos je \"\"20 + x\"\"? Dan tel je x erbij op. Trek x af van 20, dus 20 − x. Door de stappen goed na te lopen kom je uit op 20 − x.",
+    "Klopt: twee breedtes en twee lengtes samen zijn 40, dus b + l = 20.",
+    "Koos je \"\"40 − 2x, you know\"\"? Dan trek je maar twee keer x af. Twee b en twee l geven b + l = 20, dus 20 − x. Controleer je stap: de juiste uitkomst is 20 − x."
+   ],
+   "uh": "Een rechthoek heeft omtrek 40 en breedte x. Welke lengte hoort daarbij?"
+  },
+  {
+   "v": "Welke formule geeft de oppervlakte van de rechthoek met breedte x en lengte 20 − x?",
+   "o": [
+    "\"A(x) = 20 − x\"",
+    "\"A(x) = x(20 − x)\"",
+    "\"A(x) = 2x(20 − x)\"",
+    "\"A(x) = x + (20 − x)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A(x) = 20 − x\"\"? Dan vergeet je de breedte. Oppervlakte is breedte maal lengte, dus A(x) = x(20 − x). Het goede antwoord is A(x) = x(20 − x).",
+    "Klopt: oppervlakte = breedte maal lengte. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"A(x) = 2x(20 − x)\"\"? Dan reken je met een dubbele oppervlakte. Er is één rechthoek, dus A(x) = x(20 − x). Door de stappen goed na te lopen kom je uit op A(x) = x(20 − x).",
+    "Koos je \"\"A(x) = x + (20 − x)\"\"? Dan tel je op in plaats van te vermenigvuldigen. Oppervlakte is maal, dus A(x) = x(20 − x)."
+   ],
+   "uh": "Welke formule geeft de oppervlakte van de rechthoek met breedte x en lengte 20 − x?"
+  },
+  {
+   "v": "Je hebt x gevonden. Hoe bereken je de maximale waarde?",
+   "o": [
+    "\"vul x in in f'(x)\"",
+    "\"neem x zelf als antwoord, I think, I suppose\"",
+    "\"neem f'(x) als antwoord\"",
+    "\"vul x in in de formule van de grootheid\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"vul x in in f'(x)\"\"? Dan vul je in in de afgeleide. Dat geeft 0, dus in f(x). Het goede antwoord is vul x in in de formule van de grootheid.",
+    "Koos je \"\"neem x zelf als antwoord, I think, I suppose\"\"? Dan neem je de plaats van de top. De waarde is f(x), dus in f(x). Door de stappen goed na te lopen kom je uit op vul x in in de formule van de grootheid.",
+    "Koos je \"\"neem f'(x) als antwoord\"\"? Dan neem je de helling. De maximale waarde is f(x), dus in f(x). Controleer je stap: de juiste uitkomst is vul x in in de formule van de grootheid.",
+    "Klopt: de extreme waarde is f(x), niet x zelf. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Je hebt x gevonden. Hoe bereken je de maximale waarde?"
+  },
+  {
+   "v": "Waarom controleer je bij een domein 0 < x < 6 ook de randen?",
+   "o": [
+    "\"een extremum kan op de rand liggen\"",
+    "\"omdat f'(x) daar altijd 0 is\"",
+    "\"omdat de formule dan verandert, volgens mij\"",
+    "\"het hoeft niet\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een maximum hoeft niet in een stationair punt te liggen.",
+    "Koos je \"\"omdat f'(x) daar altijd 0 is\"\"? Dan denk je dat f' op de rand nul is. Dat hoeft niet, dus een extremum kan op de rand liggen.",
+    "Koos je \"\"omdat de formule dan verandert, volgens mij\"\"? Dan denk je dat de formule verandert. Alleen het domein is beperkt, dus een extremum kan op de rand liggen.",
+    "Koos je \"\"het hoeft niet\"\"? Dan sla je de controle over. Soms ligt het extremum op de rand, dus controleer de randen. Controleer je stap: de juiste uitkomst is een extremum kan op de rand liggen."
+   ],
+   "uh": "Waarom controleer je bij een domein 0 < x < 6 ook de randen?"
+  },
+  {
+   "v": "Welke afgeleide heeft A(x) = 20x − x²?",
+   "o": [
+    "\"A'(x) = 20 − x\"",
+    "\"A'(x) = 20x − 2x, zeg maar\"",
+    "\"A'(x) = 20 − 2x\"",
+    "\"A'(x) = 20 + 2x\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A'(x) = 20 − x\"\"? Dan laat je de factor 2 van x² weg. (x²)' = 2x, dus 20 − 2x. Het goede antwoord is A'(x) = 20 − 2x.",
+    "Koos je \"\"A'(x) = 20x − 2x, zeg maar\"\"? Dan laat je de x bij 20 staan. (20x)' = 20, dus 20 − 2x. Door de stappen goed na te lopen kom je uit op A'(x) = 20 − 2x.",
+    "Klopt: (20x)' = 20 en (x²)' = 2x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"A'(x) = 20 + 2x\"\"? Dan laat je het minteken fout. −x² geeft −2x, dus 20 − 2x. Controleer je stap: de juiste uitkomst is A'(x) = 20 − 2x."
+   ],
+   "uh": "Welke afgeleide heeft A(x) = 20x − x²?",
+   "ctx": "Een rechthoekige tuin heeft een omtrek van 40 meter. Een leerling noemt de breedte x en stelt de oppervlakte A(x) = x(20 − x) = 20x − x² op. Hij zoekt de afmetingen waarbij de oppervlakte zo groot mogelijk is."
+  },
+  {
+   "v": "Voor welke x geldt A'(x) = 0?",
+   "o": [
+    "\"x = 20\"",
+    "\"x = 10\"",
+    "\"x = 5\"",
+    "\"x = 100, you know\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 20\"\"? Dan neem je de constante. Los 20 − 2x = 0 op, dus x = 10. Het goede antwoord is x = 10.",
+    "Klopt: 20 − 2x = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 5\"\"? Dan deel je door 4. 2x = 20, dus x = 10. Door de stappen goed na te lopen kom je uit op x = 10.",
+    "Koos je \"\"x = 100, you know\"\"? Dan neem je A(10) = 100. De x-waarde is 10, dus x = 10. Controleer je stap: de juiste uitkomst is x = 10."
+   ],
+   "uh": "Voor welke x geldt A'(x) = 0?",
+   "ctx": "Een rechthoekige tuin heeft een omtrek van 40 meter. Een leerling noemt de breedte x en stelt de oppervlakte A(x) = x(20 − x) = 20x − x² op. Hij zoekt de afmetingen waarbij de oppervlakte zo groot mogelijk is."
+  },
+  {
+   "v": "Welke maximale oppervlakte heeft de tuin?",
+   "o": [
+    "\"10 m²\"",
+    "\"200 m², gewoon\"",
+    "\"20 m²\"",
+    "\"100 m²\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10 m²\"\"? Dan neem je de breedte. De oppervlakte is A(10), dus 100 m². Het goede antwoord is 100 m².",
+    "Koos je \"\"200 m², gewoon\"\"? Dan vergeet je −x² = −100. A(10) = 200 − 100, dus 100 m². Door de stappen goed na te lopen kom je uit op 100 m².",
+    "Koos je \"\"20 m²\"\"? Dan neem je b + l. De oppervlakte is b maal l, dus 100 m². Controleer je stap: de juiste uitkomst is 100 m².",
+    "Klopt: A(10) = 200 − 100 = 100. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke maximale oppervlakte heeft de tuin?",
+   "ctx": "Een rechthoekige tuin heeft een omtrek van 40 meter. Een leerling noemt de breedte x en stelt de oppervlakte A(x) = x(20 − x) = 20x − x² op. Hij zoekt de afmetingen waarbij de oppervlakte zo groot mogelijk is."
+  },
+  {
+   "v": "Welke afmetingen heeft de tuin met de grootste oppervlakte?",
+   "o": [
+    "\"10 m bij 10 m, een vierkant\"",
+    "\"10 m bij 20 m, denk ik, zeg maar\"",
+    "\"5 m bij 15 m\"",
+    "\"10 m bij 30 m\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: breedte 10 en lengte 20 − 10 = 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"10 m bij 20 m, denk ik, zeg maar\"\"? Dan neem je de lengte 20. De lengte is 20 − x = 10, dus 10 m bij 10 m. Het goede antwoord is 10 m bij 10 m, een vierkant.",
+    "Koos je \"\"5 m bij 15 m\"\"? Dan neem je een willekeurige waarde. x = 10 uit A' = 0, dus 10 m bij 10 m. Door de stappen goed na te lopen kom je uit op 10 m bij 10 m, een vierkant.",
+    "Koos je \"\"10 m bij 30 m\"\"? Dan tel je 20 + x. De lengte is 20 − x, dus 10 m bij 10 m. Controleer je stap: de juiste uitkomst is 10 m bij 10 m, een vierkant."
+   ],
+   "uh": "Welke afmetingen heeft de tuin met de grootste oppervlakte?",
+   "ctx": "Een rechthoekige tuin heeft een omtrek van 40 meter. Een leerling noemt de breedte x en stelt de oppervlakte A(x) = x(20 − x) = 20x − x² op. Hij zoekt de afmetingen waarbij de oppervlakte zo groot mogelijk is."
+  },
+  {
+   "v": "Het hek is twee breedtes x plus één lengte. Welke lengte hoort bij x?",
+   "o": [
+    "\"60 − x\"",
+    "\"30 − x\"",
+    "\"60 − 2x\"",
+    "\"60 + 2x, to be honest\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"60 − x\"\"? Dan tel je maar één breedte. Er zijn twee breedtes, dus 60 − 2x. Het goede antwoord is 60 − 2x.",
+    "Koos je \"\"30 − x\"\"? Dan deel je door 2. Er is maar één lengte, dus 60 − 2x. Door de stappen goed na te lopen kom je uit op 60 − 2x.",
+    "Klopt: 2x + l = 60. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"60 + 2x, to be honest\"\"? Dan tel je erbij op. Trek 2x af van 60, dus 60 − 2x. Controleer je stap: de juiste uitkomst is 60 − 2x."
+   ],
+   "uh": "Het hek is twee breedtes x plus één lengte. Welke lengte hoort bij x?",
+   "ctx": "Een boer heeft 60 meter hek voor een rechthoekig weiland langs een muur. Het hek is nodig voor drie zijden. Met breedte x is de lengte 60 − 2x en de oppervlakte A(x) = 60x − 2x²."
+  },
+  {
+   "v": "Voor welke x geldt A'(x) = 0? Er geldt A'(x) = 60 − 4x.",
+   "o": [
+    "\"x = 30, I suppose\"",
+    "\"x = 15\"",
+    "\"x = 60\"",
+    "\"x = 12\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 30, I suppose\"\"? Dan deel je door 2. 4x = 60, dus x = 15. Het goede antwoord is x = 15.",
+    "Klopt: 60 − 4x = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 60\"\"? Dan neem je de constante. Los 60 − 4x = 0 op, dus x = 15. Door de stappen goed na te lopen kom je uit op x = 15.",
+    "Koos je \"\"x = 12\"\"? Dan deel je door 5. 4x = 60, dus x = 15. Controleer je stap: de juiste uitkomst is x = 15."
+   ],
+   "uh": "Voor welke x geldt A'(x) = 0? Er geldt A'(x) = 60 − 4x.",
+   "ctx": "Een boer heeft 60 meter hek voor een rechthoekig weiland langs een muur. Het hek is nodig voor drie zijden. Met breedte x is de lengte 60 − 2x en de oppervlakte A(x) = 60x − 2x²."
+  },
+  {
+   "v": "Welke maximale oppervlakte heeft het weiland?",
+   "o": [
+    "\"900 m², eigenlijk\"",
+    "\"225 m²\"",
+    "\"30 m²\"",
+    "\"450 m²\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"900 m², eigenlijk\"\"? Dan vergeet je −2x² = −450. A(15) = 900 − 450, dus 450 m². Het goede antwoord is 450 m².",
+    "Koos je \"\"225 m²\"\"? Dan neem je 15 · 15. De lengte is 30, dus 450 m². Door de stappen goed na te lopen kom je uit op 450 m².",
+    "Koos je \"\"30 m²\"\"? Dan neem je de lengte. De oppervlakte is 15 · 30, dus 450 m². Controleer je stap: de juiste uitkomst is 450 m².",
+    "Klopt: A(15) = 900 − 450. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke maximale oppervlakte heeft het weiland?",
+   "ctx": "Een boer heeft 60 meter hek voor een rechthoekig weiland langs een muur. Het hek is nodig voor drie zijden. Met breedte x is de lengte 60 − 2x en de oppervlakte A(x) = 60x − 2x²."
+  },
+  {
+   "v": "Welke afgeleide heeft V(x) = 4x³ − 48x² + 144x?",
+   "o": [
+    "\"V'(x) = 12x² − 96x + 144\"",
+    "\"V'(x) = 12x² − 48x + 144, gewoon\"",
+    "\"V'(x) = 12x² − 96x\"",
+    "\"V'(x) = 4x² − 96x + 144\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 12x² − 96x + 144. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"V'(x) = 12x² − 48x + 144, gewoon\"\"? Dan vergeet je de factor 2 bij x². (48x²)' = 96x, dus 12x² − 96x + 144. Het goede antwoord is V'(x) = 12x² − 96x + 144.",
+    "Koos je \"\"V'(x) = 12x² − 96x\"\"? Dan laat je de term 144 weg. (144x)' = 144, dus 12x² − 96x + 144. Door de stappen goed na te lopen kom je uit op V'(x) = 12x² − 96x + 144.",
+    "Koos je \"\"V'(x) = 4x² − 96x + 144\"\"? Dan laat je de factor 3 weg. (4x³)' = 12x², dus 12x² − 96x + 144. Controleer je stap: de juiste uitkomst is V'(x) = 12x² − 96x + 144."
+   ],
+   "uh": "Welke afgeleide heeft V(x) = 4x³ − 48x² + 144x?",
+   "ctx": "Uit een vierkant stuk karton van 12 cm bij 12 cm worden in de hoeken vierkantjes van x bij x cm geknipt. Van de rest wordt een open doos gevouwen met inhoud V(x) = x(12 − 2x)² = 4x³ − 48x² + 144x en 0 < x < 6."
+  },
+  {
+   "v": "Er geldt V'(x) = 12(x − 2)(x − 6). Welke x levert het maximum binnen 0 < x < 6?",
+   "o": [
+    "\"x = 6\"",
+    "\"x = 2 en x = 6 allebei maximum\"",
+    "\"x = 2\"",
+    "\"x = 12\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 6\"\"? Dan neem je de rand. V(6) = 0 is geen maximum, dus x = 2. Het goede antwoord is x = 2.",
+    "Koos je \"\"x = 2 en x = 6 allebei maximum\"\"? Dan denk je dat beide maxima zijn. V(6) = 0, dus alleen x = 2. Door de stappen goed na te lopen kom je uit op x = 2.",
+    "Klopt: x = 6 valt af en V(6) = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 12\"\"? Dan neem je de factor 12. De nulpunten zijn 2 en 6, dus x = 2. Controleer je stap: de juiste uitkomst is x = 2."
+   ],
+   "uh": "Er geldt V'(x) = 12(x − 2)(x − 6). Welke x levert het maximum binnen 0 < x < 6?",
+   "ctx": "Uit een vierkant stuk karton van 12 cm bij 12 cm worden in de hoeken vierkantjes van x bij x cm geknipt. Van de rest wordt een open doos gevouwen met inhoud V(x) = x(12 − 2x)² = 4x³ − 48x² + 144x en 0 < x < 6."
+  },
+  {
+   "v": "Welke maximale inhoud heeft de doos?",
+   "o": [
+    "\"64 cm³\"",
+    "\"128 cm³\"",
+    "\"256 cm³, volgens mij\"",
+    "\"12 cm³\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"64 cm³\"\"? Dan vergeet je de factor 2. V(2) = 2 · 64, dus 128 cm³. Het goede antwoord is 128 cm³.",
+    "Klopt: V(2) = 2 · 8² = 128. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"256 cm³, volgens mij\"\"? Dan neem je x · 128. V(2) = 2 · 8², dus 128 cm³. Door de stappen goed na te lopen kom je uit op 128 cm³.",
+    "Koos je \"\"12 cm³\"\"? Dan neem je de zijde. De inhoud is V(2), dus 128 cm³. Controleer je stap: de juiste uitkomst is 128 cm³."
+   ],
+   "uh": "Welke maximale inhoud heeft de doos?",
+   "ctx": "Uit een vierkant stuk karton van 12 cm bij 12 cm worden in de hoeken vierkantjes van x bij x cm geknipt. Van de rest wordt een open doos gevouwen met inhoud V(x) = x(12 − 2x)² = 4x³ − 48x² + 144x en 0 < x < 6."
+  },
+  {
+   "v": "Welke afgeleide heeft W(q) = −0,5q² + 20q − 50?",
+   "o": [
+    "\"W'(q) = −0,5q + 20\"",
+    "\"W'(q) = −q + 20 − 50\"",
+    "\"W'(q) = −0,25q + 20\"",
+    "\"W'(q) = −q + 20\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"W'(q) = −0,5q + 20\"\"? Dan laat je de exponent weg. (−0,5q²)' = −q, dus −q + 20. Het goede antwoord is W'(q) = −q + 20.",
+    "Koos je \"\"W'(q) = −q + 20 − 50\"\"? Dan laat je de constante staan. Die verdwijnt, dus −q + 20. Door de stappen goed na te lopen kom je uit op W'(q) = −q + 20.",
+    "Koos je \"\"W'(q) = −0,25q + 20\"\"? Dan deel je door 2. (−0,5q²)' = −q, dus −q + 20. Controleer je stap: de juiste uitkomst is W'(q) = −q + 20.",
+    "Klopt: (−0,5q²)' = −q. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke afgeleide heeft W(q) = −0,5q² + 20q − 50?",
+   "ctx": "Een bedrijf heeft de winst W(q) = −0,5q² + 20q − 50 (in duizenden euro's) bij een productie van q eenheden. Een leerling bepaalt met de afgeleide de productie waarbij de winst zo groot mogelijk is."
+  },
+  {
+   "v": "Bij welke productie q is de winst maximaal?",
+   "o": [
+    "\"q = 20\"",
+    "\"q = 50\"",
+    "\"q = 10\"",
+    "\"q = 150, you know\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: −q + 20 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"q = 50\"\"? Dan neem je de constante. Los −q + 20 = 0 op, dus q = 20. Het goede antwoord is q = 20.",
+    "Koos je \"\"q = 10\"\"? Dan deel je door 2. q = 20, dus q = 20. Door de stappen goed na te lopen kom je uit op q = 20.",
+    "Koos je \"\"q = 150, you know\"\"? Dan neem je de winst. De productie is q = 20, dus q = 20. Controleer je stap: de juiste uitkomst is q = 20."
+   ],
+   "uh": "Bij welke productie q is de winst maximaal?",
+   "ctx": "Een bedrijf heeft de winst W(q) = −0,5q² + 20q − 50 (in duizenden euro's) bij een productie van q eenheden. Een leerling bepaalt met de afgeleide de productie waarbij de winst zo groot mogelijk is."
+  },
+  {
+   "v": "Hoe groot is de maximale winst?",
+   "o": [
+    "\"20 duizend euro\"",
+    "\"200 duizend euro, gewoon\"",
+    "\"150 duizend euro\"",
+    "\"−50 duizend euro\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 duizend euro\"\"? Dan neem je de productie. De winst is W(20), dus 150 duizend euro. Het goede antwoord is 150 duizend euro.",
+    "Koos je \"\"200 duizend euro, gewoon\"\"? Dan vergeet je −50. W(20) = −200 + 400 − 50, dus 150 duizend euro. Door de stappen goed na te lopen kom je uit op 150 duizend euro.",
+    "Klopt: W(20) = −200 + 400 − 50. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−50 duizend euro\"\"? Dan neem je W(0). De maximale winst is W(20), dus 150 duizend euro. Controleer je stap: de juiste uitkomst is 150 duizend euro."
+   ],
+   "uh": "Hoe groot is de maximale winst?",
+   "ctx": "Een bedrijf heeft de winst W(q) = −0,5q² + 20q − 50 (in duizenden euro's) bij een productie van q eenheden. Een leerling bepaalt met de afgeleide de productie waarbij de winst zo groot mogelijk is."
+  },
+  {
+   "v": "Op welk moment is de bal het hoogst? Er geldt h'(t) = −10t + 20.",
+   "o": [
+    "\"t = 4 seconden\"",
+    "\"t = 2 seconden\"",
+    "\"t = 20 seconden, I think\"",
+    "\"t = 21 seconden\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"t = 4 seconden\"\"? Dan kies je het moment waarop de bal terugvalt. Los −10t + 20 = 0 op, dus t = 2. Het goede antwoord is t = 2 seconden.",
+    "Klopt: −10t + 20 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"t = 20 seconden, I think\"\"? Dan neem je de constante. Deel door 10, dus t = 2. Door de stappen goed na te lopen kom je uit op t = 2 seconden.",
+    "Koos je \"\"t = 21 seconden\"\"? Dan neem je de hoogte. Het moment is t = 2, dus t = 2. Controleer je stap: de juiste uitkomst is t = 2 seconden."
+   ],
+   "uh": "Op welk moment is de bal het hoogst? Er geldt h'(t) = −10t + 20.",
+   "ctx": "Een bal wordt omhoog geschopt. De hoogte in meter na t seconden is h(t) = −5t² + 20t + 1. Een leerling bepaalt met de afgeleide het moment waarop de bal het hoogst is en de grootste hoogte."
+  },
+  {
+   "v": "Wat is de grootste hoogte van de bal?",
+   "o": [
+    "\"20 meter, volgens mij\"",
+    "\"41 meter\"",
+    "\"2 meter\"",
+    "\"21 meter\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 meter, volgens mij\"\"? Dan vergeet je de + 1. h(2) = −20 + 40 + 1, dus 21 meter. Het goede antwoord is 21 meter.",
+    "Koos je \"\"41 meter\"\"? Dan vergeet je −5t² = −20. h(2) = −20 + 40 + 1, dus 21 meter. Door de stappen goed na te lopen kom je uit op 21 meter.",
+    "Koos je \"\"2 meter\"\"? Dan neem je het moment. De hoogte is h(2), dus 21 meter. Controleer je stap: de juiste uitkomst is 21 meter.",
+    "Klopt: h(2) = −20 + 40 + 1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat is de grootste hoogte van de bal?",
+   "ctx": "Een bal wordt omhoog geschopt. De hoogte in meter na t seconden is h(t) = −5t² + 20t + 1. Een leerling bepaalt met de afgeleide het moment waarop de bal het hoogst is en de grootste hoogte."
+  },
+  {
+   "v": "Hoe controleer je dat t = 2 een maximum geeft?",
+   "o": [
+    "\"h'(1) = 10 is positief en h'(3) = −10 is negatief\"",
+    "\"h'(2) = 0 is genoeg\"",
+    "\"h'(1) = −10 en h'(3) = 10\"",
+    "\"h'(0) = 20 en h'(1) = 10 zijn beide positief, zeg maar\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het teken wisselt van + naar −. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"h'(2) = 0 is genoeg\"\"? Dan denk je dat h' = 0 genoeg is. Het teken moet wisselen, dus h'(1) = 10 en h'(3) = −10.",
+    "Koos je \"\"h'(1) = −10 en h'(3) = 10\"\"? Dan draai je de tekens om. Dat zou een minimum zijn, dus h'(1) = 10 en h'(3) = −10.",
+    "Koos je \"\"h'(0) = 20 en h'(1) = 10 zijn beide positief, zeg maar\"\"? Dan kijk je alleen naar links van t = 2. Je moet ook rechts kijken, dus h'(3) = −10."
+   ],
+   "uh": "Hoe controleer je dat t = 2 een maximum geeft?",
+   "ctx": "Een bal wordt omhoog geschopt. De hoogte in meter na t seconden is h(t) = −5t² + 20t + 1. Een leerling bepaalt met de afgeleide het moment waarop de bal het hoogst is en de grootste hoogte."
+  },
+  {
+   "v": "Bij welke prijs p is de omzet maximaal? Er geldt R'(p) = 100 − 4p.",
+   "o": [
+    "\"p = 50 euro\"",
+    "\"p = 100 euro\"",
+    "\"p = 25 euro\"",
+    "\"p = 1250 euro\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"p = 50 euro\"\"? Dan deel je door 2. 4p = 100, dus p = 25. Het goede antwoord is p = 25 euro.",
+    "Koos je \"\"p = 100 euro\"\"? Dan neem je de constante. Los 100 − 4p = 0 op, dus p = 25. Door de stappen goed na te lopen kom je uit op p = 25 euro.",
+    "Klopt: 100 − 4p = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"p = 1250 euro\"\"? Dan neem je de omzet. De prijs is p = 25, dus p = 25. Controleer je stap: de juiste uitkomst is p = 25 euro."
+   ],
+   "uh": "Bij welke prijs p is de omzet maximaal? Er geldt R'(p) = 100 − 4p.",
+   "ctx": "Bij een prijs van p euro per stuk is de vraag 100 − 2p stuks, dus de omzet is R(p) = p(100 − 2p) = 100p − 2p². Een leerling zoekt met de afgeleide de prijs waarbij de omzet zo groot mogelijk is."
+  },
+  {
+   "v": "Hoe groot is de maximale omzet?",
+   "o": [
+    "\"2500 euro, gewoon\"",
+    "\"1250 euro\"",
+    "\"625 euro\"",
+    "\"50 euro\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2500 euro, gewoon\"\"? Dan vergeet je −2p² = −1250. R(25) = 2500 − 1250, dus 1250 euro. Het goede antwoord is 1250 euro.",
+    "Klopt: R(25) = 25 · 50. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"625 euro\"\"? Dan neem je 25 · 25. De vraag is 100 − 50 = 50, dus 1250 euro. Door de stappen goed na te lopen kom je uit op 1250 euro.",
+    "Koos je \"\"50 euro\"\"? Dan neem je de vraag. De omzet is prijs maal vraag, dus 1250 euro. Controleer je stap: de juiste uitkomst is 1250 euro."
+   ],
+   "uh": "Hoe groot is de maximale omzet?",
+   "ctx": "Bij een prijs van p euro per stuk is de vraag 100 − 2p stuks, dus de omzet is R(p) = p(100 − 2p) = 100p − 2p². Een leerling zoekt met de afgeleide de prijs waarbij de omzet zo groot mogelijk is."
+  },
+  {
+   "v": "Waarom is x = 6 geen maximum voor de inhoud van de doos?",
+   "o": [
+    "\"V(6) = 128\"",
+    "\"V'(6) is niet 0\"",
+    "\"x = 6 is te klein, denk ik, zeg maar, gewoon\"",
+    "\"V(6) = 0: er blijft geen bodem over\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"V(6) = 128\"\"? Dan neem je de inhoud bij x = 2. V(6) = 6 · 0², dus V(6) = 0. Het goede antwoord is V(6) = 0: er blijft geen bodem over.",
+    "Koos je \"\"V'(6) is niet 0\"\"? Dan denk je dat de afgeleide niet nul is. V'(6) = 0, maar V(6) = 0, dus geen maximum. Door de stappen goed na te lopen kom je uit op V(6) = 0: er blijft geen bodem over.",
+    "Koos je \"\"x = 6 is te klein, denk ik, zeg maar, gewoon\"\"? Dan denk je dat 6 te klein is. De inhoud is dan 0, dus geen maximum. Controleer je stap: de juiste uitkomst is V(6) = 0: er blijft geen bodem over.",
+    "Klopt: de doos heeft dan inhoud 0. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waarom is x = 6 geen maximum voor de inhoud van de doos?",
+   "ctx": "Uit een vierkant stuk karton van 12 cm bij 12 cm worden in de hoeken vierkantjes van x bij x cm geknipt. Van de rest wordt een open doos gevouwen met inhoud V(x) = x(12 − 2x)² = 4x³ − 48x² + 144x en 0 < x < 6."
+  },
+  {
+   "v": "Welk antwoord past bij de vraag in de context?",
+   "o": [
+    "\"knip vierkantjes van 2 cm af: de inhoud is dan maximaal 128 cm³\"",
+    "\"knip vierkantjes van 6 cm af: de inhoud is dan maximaal 128 cm³, volgens mij\"",
+    "\"knip vierkantjes van 2 cm af: de inhoud is dan maximaal 128 cm\"",
+    "\"knip vierkantjes van 128 cm af: de inhoud is dan maximaal 2 cm³\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Stel een formule op met één variabele, bepaal de afgeleide, los f'(x) = 0 op, controleer met een tekenschema en geef de extreme waarde met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x = 2 cm en V = 128 cm³. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"knip vierkantjes van 6 cm af: de inhoud is dan maximaal 128 cm³, volgens mij\"\"? Dan neem je het randpunt van het domein. Het maximum ligt dichter bij 0, dus x = 2 cm.",
+    "Koos je \"\"knip vierkantjes van 2 cm af: de inhoud is dan maximaal 128 cm\"\"? Dan zet dit je cm als eenheid van de inhoud. Een inhoud meet je in een derde macht, dus cm³ als eenheid.",
+    "Koos je \"\"knip vierkantjes van 128 cm af: de inhoud is dan maximaal 2 cm³\"\"? Dan wissel je de rollen van x en V om. De zijde is klein en de inhoud groot, dus x is 2 en V is 128."
+   ],
+   "uh": "Welk antwoord past bij de vraag in de context?",
+   "ctx": "Uit een vierkant stuk karton van 12 cm bij 12 cm worden in de hoeken vierkantjes van x bij x cm geknipt. Van de rest wordt een open doos gevouwen met inhoud V(x) = x(12 − 2x)² = 4x³ − 48x² + 144x en 0 < x < 6."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een boer heeft 80 meter hek voor een rechthoekig weiland langs een muur. Het hek is nodig voor drie zijden. Met breedte x is de lengte 80 − 2x. De boer wil dat de oppervlakte zo groot mogelijk is.",
+   "v": "Bepaal de afmetingen en de maximale oppervlakte van het weiland.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "A(x) = x(80 − 2x) = 80x − 2x² (1p). A'(x) = 80 − 4x = 0 geeft x = 20 (1p). Het weiland is 20 m bij 40 m en A(20) = 800 m² (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Uit een vierkant stuk karton van 18 cm bij 18 cm worden in de hoeken vierkantjes van x bij x cm geknipt. Daarna wordt een open doos gevouwen met inhoud V(x) = x(18 − 2x)² = 4x³ − 72x² + 324x en 0 < x < 9.",
+   "v": "Bepaal voor welke x de inhoud maximaal is en bereken die inhoud.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "V'(x) = 12x² − 144x + 324 = 12(x − 3)(x − 9) (1p). Binnen het domein geeft x = 3 het maximum, want V(9) = 0 (1p). V(3) = 3 · 12² = 432 cm³ (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bedrijf heeft de winst W(q) = −q² + 12q − 20 (in duizenden euro's) bij een productie van q eenheden. Het bedrijf wil de winst zo groot mogelijk maken.",
+   "v": "Bepaal de productie waarbij de winst maximaal is en bereken die winst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "W'(q) = −2q + 12 = 0 geeft q = 6 (1p). Het teken van W' wisselt van + naar − (1p). W(6) = −36 + 72 − 20 = 16, dus 16 duizend euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De hoogte van een bal in meter na t seconden is h(t) = −5t² + 30t + 2. Een leerling bepaalt met de afgeleide het hoogste punt van de baan en controleert zijn antwoord met een tekenschema.",
+   "v": "Bepaal het moment van de grootste hoogte en bereken die hoogte.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "h'(t) = −10t + 30 = 0 geeft t = 3 (1p). h' wisselt van + naar −, dus het is een maximum (1p). h(3) = −45 + 90 + 2 = 47 meter (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Bij een prijs van p euro per stuk is de omzet R(p) = 120p − 3p². Een winkelier zoekt met de afgeleide de prijs waarbij de omzet zo groot mogelijk is.",
+   "v": "Bepaal de prijs voor de maximale omzet en bereken die omzet.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "R'(p) = 120 − 6p = 0 geeft p = 20 (1p). R' wisselt van + naar −, dus het is een maximum (1p). R(20) = 2400 − 1200 = 1200 euro (1p)."
+  }
+ ]
+}

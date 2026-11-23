@@ -5961,6 +5961,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D7",
+      "lo": "wb.D.7",
+      "gs": 2,
+      "naam": "Optimaliseren met de afgeleide",
+      "beschrijving": "Je stelt een formule met één variabele op, bepaalt met f'(x) = 0 en een tekenschema het maximum of minimum, controleert randpunten en geeft het antwoord in de context met eenheid.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Van situatie naar formule",
+       "Afgeleide gelijk aan nul",
+       "Randvoorwaarde en domein",
+       "Maximum controleren",
+       "Antwoord in context"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
