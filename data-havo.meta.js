@@ -5919,6 +5919,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D5",
+      "lo": "wb.D.5",
+      "gs": 2,
+      "naam": "Kettingregel met een lineaire inwendige functie",
+      "beschrijving": "Je bepaalt de afgeleide van een samengestelde functie waarvan de binnenkant lineair is, werkt met wortels en breuken als macht, berekent f'(a) en controleert door uit te werken of met een differentiequotiënt.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Inwendig en uitwendig",
+       "Kettingregel toepassen",
+       "Wortels en breuken",
+       "Waarde van de afgeleide",
+       "Controleren en interpreteren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

@@ -1,0 +1,682 @@
+{
+ "id": "D5",
+ "lo": "wb.D.5",
+ "gs": 2,
+ "naam": "Kettingregel met een lineaire inwendige functie",
+ "beschrijving": "Je bepaalt de afgeleide van een samengestelde functie waarvan de binnenkant lineair is, werkt met wortels en breuken als macht, berekent f'(a) en controleert door uit te werken of met een differentiequotiënt.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Inwendig en uitwendig",
+  "Kettingregel toepassen",
+  "Wortels en breuken",
+  "Waarde van de afgeleide",
+  "Controleren en interpreteren"
+ ],
+ "sam": "Bij f(x) = g(ax + b) is f'(x) = a·g'(ax + b): differentieer de buitenkant, laat de binnenkant staan en vermenigvuldig met de afgeleide van de binnenkant. Schrijf wortels en breuken als macht, let op het teken van a en controleer door uit te werken of met een differentiequotiënt.",
+ "begrippen": [
+  {
+   "t": "Kettingregel",
+   "d": "Voor f(x) = g(ax + b) geldt f'(x) = a·g'(ax + b)."
+  },
+  {
+   "t": "Inwendige functie",
+   "d": "De binnenkant, zoals 3x + 1 in (3x + 1)⁴."
+  },
+  {
+   "t": "Uitwendige functie",
+   "d": "De buitenkant, zoals u⁴."
+  },
+  {
+   "t": "Afgeleide van de binnenkant",
+   "d": "Bij ax + b is dat de factor a."
+  },
+  {
+   "t": "Wortel als macht",
+   "d": "√(2x + 1) = (2x + 1)^(1/2)."
+  },
+  {
+   "t": "Negatieve exponent",
+   "d": "1/(x − 3) = (x − 3)^(−1) met afgeleide −(x − 3)^(−2)."
+  },
+  {
+   "t": "Constante factor",
+   "d": "Blijft staan bij differentiëren."
+  },
+  {
+   "t": "Waarde van de afgeleide",
+   "d": "f'(a): invullen in de afgeleide."
+  },
+  {
+   "t": "Controleren door uitwerken",
+   "d": "Werk het kwadraat uit en differentieer term voor term."
+  },
+  {
+   "t": "Controleren met een quotiënt",
+   "d": "Het quotiënt op [a; a + 0,01] nadert f'(a)."
+  },
+  {
+   "t": "Afgeleide in een situatie",
+   "d": "Bijvoorbeeld marginale kosten of s per m, met eenheid."
+  },
+  {
+   "t": "Haakjes bewaren",
+   "d": "Bij de kettingregel blijft de binnenkant tussen haakjes."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke functie is de inwendige functie van (3x + 1)⁴?",
+   "o": [
+    "\"x⁴\"",
+    "\"3x + 1\"",
+    "\"3x\"",
+    "\"(3x + 1)⁴\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x⁴\"\"? Dan neem je een deel van de uitwendige functie. De inwendige is wat binnen de haakjes staat, dus 3x + 1.",
+    "Klopt: dat is wat je eerst uitrekent, voordat je tot de vierde macht verheft.",
+    "Koos je \"\"3x\"\"? Dan laat je de + 1 weg. Binnen de haakjes staat 3x + 1, dus 3x + 1. Door de stappen goed na te lopen kom je uit op 3x + 1.",
+    "Koos je \"\"(3x + 1)⁴\"\"? Dan neem je de hele functie. De inwendige functie is de binnenkant, dus 3x + 1. Controleer je stap: de juiste uitkomst is 3x + 1."
+   ],
+   "uh": "Welke functie is de inwendige functie van (3x + 1)⁴?"
+  },
+  {
+   "v": "Welke functie is de uitwendige functie van (3x + 1)⁴?",
+   "o": [
+    "\"3x + 1\"",
+    "\"de wortel, volgens mij\"",
+    "\"3x\"",
+    "\"de machtsfunctie u⁴\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3x + 1\"\"? Dan neem je de inwendige functie. De uitwendige is de laatste bewerking, dus u⁴. Het goede antwoord is de machtsfunctie u⁴.",
+    "Koos je \"\"de wortel, volgens mij\"\"? Dan verwar je met een andere functie. Hier wordt verheven tot de macht 4, dus u⁴. Door de stappen goed na te lopen kom je uit op de machtsfunctie u⁴.",
+    "Koos je \"\"3x\"\"? Dan neem je een deel van de inwendige functie. De uitwendige is u⁴, dus u⁴. Controleer je stap: de juiste uitkomst is de machtsfunctie u⁴.",
+    "Klopt: u = 3x + 1 wordt tot de vierde macht verheven. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke functie is de uitwendige functie van (3x + 1)⁴?"
+  },
+  {
+   "v": "Welke formule is de kettingregel voor f(x) = g(ax + b)?",
+   "o": [
+    "\"f'(x) = a·g'(ax + b)\"",
+    "\"f'(x) = g'(ax + b), zeg maar\"",
+    "\"f'(x) = g'(x) + a\"",
+    "\"f'(x) = a·g'(x)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je vermenigvuldigt met de afgeleide van de binnenkant, a.",
+    "Koos je \"\"f'(x) = g'(ax + b), zeg maar\"\"? Dan vergeet je de factor a. De binnenkant ax + b heeft afgeleide a, dus a·g'(ax + b). Het goede antwoord is f'(x) = a·g'(ax + b).",
+    "Koos je \"\"f'(x) = g'(x) + a\"\"? Dan tel je a erbij op. De kettingregel vermenigvuldigt, dus a·g'(ax + b). Door de stappen goed na te lopen kom je uit op f'(x) = a·g'(ax + b).",
+    "Koos je \"\"f'(x) = a·g'(x)\"\"? Dan vul je ax + b niet in g' in. De afgeleide wordt ook in ax + b bepaald, dus a·g'(ax + b)."
+   ],
+   "uh": "Welke formule is de kettingregel voor f(x) = g(ax + b)?"
+  },
+  {
+   "v": "Welke afgeleide heeft f(x) = (x + 2)²?",
+   "o": [
+    "\"2x\"",
+    "\"(x + 2)\"",
+    "\"2(x + 2)\"",
+    "\"2(x + 2)², eigenlijk\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2x\"\"? Dan laat je de + 2 weg. De afgeleide is 2(x + 2), dus 2(x + 2). Het goede antwoord is 2(x + 2).",
+    "Koos je \"\"(x + 2)\"\"? Dan vergeet je de factor 2. De exponent komt voor de haakjes, dus 2(x + 2). Door de stappen goed na te lopen kom je uit op 2(x + 2).",
+    "Klopt: 2 · (x + 2) · 1 (de binnenkant heeft afgeleide 1).",
+    "Koos je \"\"2(x + 2)², eigenlijk\"\"? Dan laat je de exponent niet verlagen. De exponent wordt 1, dus 2(x + 2). Controleer je stap: de juiste uitkomst is 2(x + 2)."
+   ],
+   "uh": "Welke afgeleide heeft f(x) = (x + 2)²?"
+  },
+  {
+   "v": "Hoe schrijf je √(2x + 1) als macht?",
+   "o": [
+    "\"2x + 1^(1/2), gewoon\"",
+    "\"(2x + 1)^(1/2)\"",
+    "\"(2x + 1)²\"",
+    "\"2x^(1/2) + 1\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2x + 1^(1/2), gewoon\"\"? Dan pas je de macht alleen op de 1 toe. De hele binnenkant staat tussen haakjes, dus (2x + 1)^(1/2).",
+    "Klopt: een wortel is een macht met exponent een half. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(2x + 1)²\"\"? Dan kwadrateer je de binnenkant. Een wortel is het omgekeerde, dus (2x + 1)^(1/2). Door de stappen goed na te lopen kom je uit op (2x + 1)^(1/2).",
+    "Koos je \"\"2x^(1/2) + 1\"\"? Dan pas je de macht alleen op x toe. De wortel geldt voor 2x + 1, dus (2x + 1)^(1/2). Controleer je stap: de juiste uitkomst is (2x + 1)^(1/2)."
+   ],
+   "uh": "Hoe schrijf je √(2x + 1) als macht?"
+  },
+  {
+   "v": "Welke waarde heeft f'(0) als f'(x) = 12(3x + 1)³?",
+   "o": [
+    "\"1\"",
+    "\"36 (12 · 3)\"",
+    "\"0\"",
+    "\"12\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1\"\"? Dan neem je (3x + 1)³ als uitkomst. Vergeet de factor 12 niet, dus 12. Het goede antwoord is 12.",
+    "Koos je \"\"36 (12 · 3)\"\"? Dan vermenigvuldig je met 3 en 12. 12 · 1³ = 12, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"0\"\"? Dan neem je x = 0 als uitkomst. 3 · 0 + 1 = 1, dus 12. Controleer je stap: de juiste uitkomst is 12.",
+    "Klopt: 12 · 1³ = 12. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft f'(0) als f'(x) = 12(3x + 1)³?"
+  },
+  {
+   "v": "Hoe controleer je de afgeleide van (x + 2)²?",
+   "o": [
+    "\"werk uit tot x² + 4x + 4 en differentieer: 2x + 4\"",
+    "\"vul x = 0 in in de functie, volgens mij, eigenlijk, denk ik\"",
+    "\"differentieer alleen x\"",
+    "\"tel de exponenten op\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dat is gelijk aan 2(x + 2). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"vul x = 0 in in de functie, volgens mij, eigenlijk, denk ik\"\"? Dan vul je in in de functie. Je controleert de afgeleide, dus uitwerken en differentiëren.",
+    "Koos je \"\"differentieer alleen x\"\"? Dan differentieer je een deel. Werk het hele kwadraat uit, dus x² + 4x + 4. Door de stappen goed na te lopen kom je uit op werk uit tot x² + 4x + 4 en differentieer: 2x + 4.",
+    "Koos je \"\"tel de exponenten op\"\"? Dan tel je exponenten op. Werk uit en differentieer, dus 2x + 4. Controleer je stap: de juiste uitkomst is werk uit tot x² + 4x + 4 en differentieer: 2x + 4."
+   ],
+   "uh": "Hoe controleer je de afgeleide van (x + 2)²?"
+  },
+  {
+   "v": "Welke afgeleide heeft f(x) = (3x + 1)⁴?",
+   "o": [
+    "\"4(3x + 1)³\"",
+    "\"12(3x + 1)⁴, zeg maar\"",
+    "\"12(3x + 1)³\"",
+    "\"(3x + 1)³·3\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4(3x + 1)³\"\"? Dan vergeet je de factor 3 van de binnenkant. De binnenkant heeft afgeleide 3, dus 12(3x + 1)³. Het goede antwoord is 12(3x + 1)³.",
+    "Koos je \"\"12(3x + 1)⁴, zeg maar\"\"? Dan laat je de exponent niet verlagen. De exponent wordt 3, dus 12(3x + 1)³. Door de stappen goed na te lopen kom je uit op 12(3x + 1)³.",
+    "Klopt: 4 · (3x + 1)³ · 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(3x + 1)³·3\"\"? Dan vergeet je de factor 4. De exponent komt voor, dus 12(3x + 1)³. Controleer je stap: de juiste uitkomst is 12(3x + 1)³."
+   ],
+   "uh": "Welke afgeleide heeft f(x) = (3x + 1)⁴?",
+   "ctx": "Een leerling differentieert f(x) = (3x + 1)⁴ met de kettingregel. De inwendige functie is 3x + 1 en de uitwendige functie is u⁴. Hij berekent daarna f'(0) en f'(1)."
+  },
+  {
+   "v": "Bereken f'(0) voor f'(x) = 12(3x + 1)³.",
+   "o": [
+    "\"4\"",
+    "\"12\"",
+    "\"3\"",
+    "\"36 (12 · 3)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4\"\"? Dan neem je de exponent. Vul x = 0 in f'(x) = 12(3x + 1)³ in, dus 12. Het goede antwoord is 12.",
+    "Klopt: 12 · 1³ = 12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3\"\"? Dan neem je de afgeleide van de binnenkant. Vul in f'(x) in, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"36 (12 · 3)\"\"? Dan vermenigvuldig je 12 met 3. 12 · 1 = 12, dus 12. Controleer je stap: de juiste uitkomst is 12."
+   ],
+   "uh": "Bereken f'(0) voor f'(x) = 12(3x + 1)³.",
+   "ctx": "Een leerling differentieert f(x) = (3x + 1)⁴ met de kettingregel. De inwendige functie is 3x + 1 en de uitwendige functie is u⁴. Hij berekent daarna f'(0) en f'(1)."
+  },
+  {
+   "v": "Vul x = 1 in dezelfde afgeleide in. Welk getal krijg je?",
+   "o": [
+    "\"192\"",
+    "\"256 (dat is 4⁴)\"",
+    "\"48\"",
+    "\"768\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"192\"\"? Dan vermenigvuldig je 3 · 4 · 16. 12 · 4³ = 768, dus 768. Het goede antwoord is 768.",
+    "Koos je \"\"256 (dat is 4⁴)\"\"? Dan neem je 4⁴. Vermenigvuldig 12 met 4³, dus 768. Door de stappen goed na te lopen kom je uit op 768.",
+    "Koos je \"\"48\"\"? Dan vermenigvuldig je 12 met 4. 4³ = 64, dus 768. Controleer je stap: de juiste uitkomst is 768.",
+    "Klopt: 12 · 4³ = 768. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Vul x = 1 in dezelfde afgeleide in. Welk getal krijg je?",
+   "ctx": "Een leerling differentieert f(x) = (3x + 1)⁴ met de kettingregel. De inwendige functie is 3x + 1 en de uitwendige functie is u⁴. Hij berekent daarna f'(0) en f'(1)."
+  },
+  {
+   "v": "Welke afgeleide heeft f(x) = (2x + 1)^(1/2)?",
+   "o": [
+    "\"1/√(2x + 1)\"",
+    "\"1/(2√(2x + 1))\"",
+    "\"2/√(2x + 1)\"",
+    "\"√(2x + 1)/2\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ½(2x + 1)^(−1/2) · 2 = 1/√(2x + 1). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1/(2√(2x + 1))\"\"? Dan vergeet je de factor 2 van de binnenkant. ½ · 2 = 1, dus 1/√(2x + 1). Het goede antwoord is 1/√(2x + 1).",
+    "Koos je \"\"2/√(2x + 1)\"\"? Dan vergeet je de factor ½. ½ · 2 = 1, dus 1/√(2x + 1). Door de stappen goed na te lopen kom je uit op 1/√(2x + 1).",
+    "Koos je \"\"√(2x + 1)/2\"\"? Dan laat je het minteken in de exponent weg. De exponent wordt −1/2, dus 1/√(2x + 1). Controleer je stap: de juiste uitkomst is 1/√(2x + 1)."
+   ],
+   "uh": "Welke afgeleide heeft f(x) = (2x + 1)^(1/2)?",
+   "ctx": "Een leerling differentieert f(x) = √(2x + 1) = (2x + 1)^(1/2) met de kettingregel en berekent f'(4). Daarna controleert hij zijn antwoord met een differentiequotiënt."
+  },
+  {
+   "v": "Welke waarde heeft f'(4)?",
+   "o": [
+    "\"1/6\"",
+    "\"2/3 (2 : √9)\"",
+    "\"1/3\"",
+    "\"3\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1/6\"\"? Dan neem je 1/(2√9). De afgeleide is 1/√(2x + 1), dus 1/3. Het goede antwoord is 1/3.",
+    "Koos je \"\"2/3 (2 : √9)\"\"? Dan neem je 2/√9. De afgeleide is 1/√(2x + 1), dus 1/3. Door de stappen goed na te lopen kom je uit op 1/3.",
+    "Klopt: 1/√9 = 1/3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3\"\"? Dan neem je √9. De afgeleide is 1/√9, dus 1/3. Controleer je stap: de juiste uitkomst is 1/3."
+   ],
+   "uh": "Welke waarde heeft f'(4)?",
+   "ctx": "Een leerling differentieert f(x) = √(2x + 1) = (2x + 1)^(1/2) met de kettingregel en berekent f'(4). Daarna controleert hij zijn antwoord met een differentiequotiënt."
+  },
+  {
+   "v": "Hoe controleer je f'(4) ≈ 0,333 met een quotiënt?",
+   "o": [
+    "\"(√9 − 3) : 0,01 = 0\"",
+    "\"(√(2·4,01 + 1) − 3) : 0,01 ≈ 0,333\"",
+    "\"√(2·4 + 1) : 4 = 0,75, zeg maar, gewoon\"",
+    "\"(3 − √9,02) : 0,01\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(√9 − 3) : 0,01 = 0\"\"? Dan vul je dezelfde waarde twee keer in. Neem x = 4,01, dus (√9,02 − 3) : 0,01. Het goede antwoord is (√(2·4,01 + 1) − 3) : 0,01 ≈ 0,333.",
+    "Klopt: √9,02 ≈ 3,00333. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"√(2·4 + 1) : 4 = 0,75, zeg maar, gewoon\"\"? Dan deel je f(4) door 4. Dat is geen quotiënt van een interval, dus (√9,02 − 3) : 0,01.",
+    "Koos je \"\"(3 − √9,02) : 0,01\"\"? Dan draai je de volgorde om. Het quotiënt is (f(4,01) − f(4)) : 0,01, dus (√9,02 − 3) : 0,01."
+   ],
+   "uh": "Hoe controleer je f'(4) ≈ 0,333 met een quotiënt?",
+   "ctx": "Een leerling differentieert f(x) = √(2x + 1) = (2x + 1)^(1/2) met de kettingregel en berekent f'(4). Daarna controleert hij zijn antwoord met een differentiequotiënt."
+  },
+  {
+   "v": "Differentieer f(x) = (x − 3)^(−1).",
+   "o": [
+    "\"1/(x − 3)², you know\"",
+    "\"−1/(x − 3)\"",
+    "\"−(x − 3)²\"",
+    "\"−1/(x − 3)²\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1/(x − 3)², you know\"\"? Dan vergeet je het minteken. De factor is −1, dus −1/(x − 3)². Het goede antwoord is −1/(x − 3)².",
+    "Koos je \"\"−1/(x − 3)\"\"? Dan laat je de exponent niet verlagen. De exponent wordt −2, dus −1/(x − 3)². Door de stappen goed na te lopen kom je uit op −1/(x − 3)².",
+    "Koos je \"\"−(x − 3)²\"\"? Dan draai je de breuk om. (x − 3)^(−2) = 1/(x − 3)², dus −1/(x − 3)². Controleer je stap: de juiste uitkomst is −1/(x − 3)².",
+    "Klopt: −1 · (x − 3)^(−2) · 1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Differentieer f(x) = (x − 3)^(−1).",
+   "ctx": "Een leerling differentieert f(x) = 1/(x − 3) = (x − 3)^(−1) en g(x) = (5 − 2x)³ met de kettingregel en berekent een afgeleide in een punt."
+  },
+  {
+   "v": "Bepaal g'(x) voor g(x) = (5 − 2x)³.",
+   "o": [
+    "\"−6(5 − 2x)²\"",
+    "\"6(5 − 2x)²\"",
+    "\"3(5 − 2x)²\"",
+    "\"−2(5 − 2x)², really\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3 · (5 − 2x)² · (−2). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6(5 − 2x)²\"\"? Dan vergeet je het minteken van de binnenkant. De afgeleide van 5 − 2x is −2, dus −6(5 − 2x)². Het goede antwoord is −6(5 − 2x)².",
+    "Koos je \"\"3(5 − 2x)²\"\"? Dan vergeet je de factor −2. De binnenkant heeft afgeleide −2, dus −6(5 − 2x)². Door de stappen goed na te lopen kom je uit op −6(5 − 2x)².",
+    "Koos je \"\"−2(5 − 2x)², really\"\"? Dan vergeet je de factor 3. De exponent komt voor, dus −6(5 − 2x)². Controleer je stap: de juiste uitkomst is −6(5 − 2x)²."
+   ],
+   "uh": "Bepaal g'(x) voor g(x) = (5 − 2x)³.",
+   "ctx": "Een leerling differentieert f(x) = 1/(x − 3) = (x − 3)^(−1) en g(x) = (5 − 2x)³ met de kettingregel en berekent een afgeleide in een punt."
+  },
+  {
+   "v": "Bereken g'(1).",
+   "o": [
+    "\"54\"",
+    "\"−18 (−6 · 3)\"",
+    "\"−54\"",
+    "\"−6\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"54\"\"? Dan vergeet je het minteken. −6 · 9 = −54, dus −54. Het goede antwoord is −54.",
+    "Koos je \"\"−18 (−6 · 3)\"\"? Dan vermenigvuldig je −6 met 3. 3² = 9, dus −54. Door de stappen goed na te lopen kom je uit op −54.",
+    "Klopt: −6 · 3² = −54. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−6\"\"? Dan vergeet je (5 − 2)² = 9. −6 · 9, dus −54. Controleer je stap: de juiste uitkomst is −54."
+   ],
+   "uh": "Bereken g'(1).",
+   "ctx": "Een leerling differentieert f(x) = 1/(x − 3) = (x − 3)^(−1) en g(x) = (5 − 2x)³ met de kettingregel en berekent een afgeleide in een punt."
+  },
+  {
+   "v": "Vul x = 5 in de afgeleide van f in.",
+   "o": [
+    "\"1/4\"",
+    "\"−1/4\"",
+    "\"−1/2 (zonder kwadraat)\"",
+    "\"−1\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1/4\"\"? Dan vergeet je het minteken. De afgeleide is negatief, dus −1/4. Het goede antwoord is −1/4.",
+    "Klopt: −1/(5 − 3)² = −1/4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−1/2 (zonder kwadraat)\"\"? Dan vergeet je te kwadrateren. (5 − 3)² = 4, dus −1/4. Door de stappen goed na te lopen kom je uit op −1/4.",
+    "Koos je \"\"−1\"\"? Dan neem je −1/(x − 3)^0. De noemer is (5 − 3)² = 4, dus −1/4. Controleer je stap: de juiste uitkomst is −1/4."
+   ],
+   "uh": "Vul x = 5 in de afgeleide van f in.",
+   "ctx": "Een leerling differentieert f(x) = 1/(x − 3) = (x − 3)^(−1) en g(x) = (5 − 2x)³ met de kettingregel en berekent een afgeleide in een punt."
+  },
+  {
+   "v": "Welke afgeleide heeft f(x) = 3(2x − 1)^(1/2)?",
+   "o": [
+    "\"3/(2√(2x − 1))\"",
+    "\"6/√(2x − 1)\"",
+    "\"(3/2)(2x − 1)^(1/2)\"",
+    "\"3/√(2x − 1)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3/(2√(2x − 1))\"\"? Dan vergeet je de factor 2 van de binnenkant. 3 · ½ · 2 = 3, dus 3/√(2x − 1). Het goede antwoord is 3/√(2x − 1).",
+    "Koos je \"\"6/√(2x − 1)\"\"? Dan tel je de factor 2 twee keer. 3 · ½ · 2 = 3, dus 3/√(2x − 1). Door de stappen goed na te lopen kom je uit op 3/√(2x − 1).",
+    "Koos je \"\"(3/2)(2x − 1)^(1/2)\"\"? Dan laat je de exponent niet verlagen. De exponent wordt −1/2, dus 3/√(2x − 1). Controleer je stap: de juiste uitkomst is 3/√(2x − 1).",
+    "Klopt: 3 · ½ · (2x − 1)^(−1/2) · 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke afgeleide heeft f(x) = 3(2x − 1)^(1/2)?",
+   "ctx": "Gegeven is f(x) = 3√(2x − 1) = 3(2x − 1)^(1/2). Een leerling differentieert f met de kettingregel en de constante factor en berekent f'(5). Daarna controleert hij met x = 5,01."
+  },
+  {
+   "v": "Welke waarde heeft f'(5)?",
+   "o": [
+    "\"1\"",
+    "\"3\"",
+    "\"1/3\"",
+    "\"1,5\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3/√9 = 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3\"\"? Dan neem je de factor 3. f'(5) = 3/√9, dus 1. Het goede antwoord is 1.",
+    "Koos je \"\"1/3\"\"? Dan neem je 1/√9. Vergeet de factor 3 niet, dus 1. Door de stappen goed na te lopen kom je uit op 1.",
+    "Koos je \"\"1,5\"\"? Dan neem je 3/(2√9). De afgeleide is 3/√(2x − 1), dus 1. Controleer je stap: de juiste uitkomst is 1."
+   ],
+   "uh": "Welke waarde heeft f'(5)?",
+   "ctx": "Gegeven is f(x) = 3√(2x − 1) = 3(2x − 1)^(1/2). Een leerling differentieert f met de kettingregel en de constante factor en berekent f'(5). Daarna controleert hij met x = 5,01."
+  },
+  {
+   "v": "Hoe controleer je f'(5) ≈ 1 met een quotiënt?",
+   "o": [
+    "\"(3√9,02 − 9) : 5,01 ≈ 0,002, gewoon\"",
+    "\"(√9,02 − 3) : 0,01 ≈ 0,333\"",
+    "\"(3√9,02 − 9) : 0,01 ≈ 0,9993\"",
+    "\"3 · 3 : 5 = 1,8\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(3√9,02 − 9) : 5,01 ≈ 0,002, gewoon\"\"? Dan deel je door 5,01. Deel door de lengte van het interval, 0,01, dus ≈ 0,9993.",
+    "Koos je \"\"(√9,02 − 3) : 0,01 ≈ 0,333\"\"? Dan laat je de factor 3 weg. Dat is het quotiënt van √(2x − 1), dus 3√9,02 − 9. Door de stappen goed na te lopen kom je uit op (3√9,02 − 9) : 0,01 ≈ 0,9993.",
+    "Klopt: 3√9,02 ≈ 9,00999. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3 · 3 : 5 = 1,8\"\"? Dan deel je 9 door 5. Dat is geen quotiënt van een interval, dus (3√9,02 − 9) : 0,01. Controleer je stap: de juiste uitkomst is (3√9,02 − 9) : 0,01 ≈ 0,9993."
+   ],
+   "uh": "Hoe controleer je f'(5) ≈ 1 met een quotiënt?",
+   "ctx": "Gegeven is f(x) = 3√(2x − 1) = 3(2x − 1)^(1/2). Een leerling differentieert f met de kettingregel en de constante factor en berekent f'(5). Daarna controleert hij met x = 5,01."
+  },
+  {
+   "v": "Welke afgeleide heeft K(x) = (0,5x + 10)²?",
+   "o": [
+    "\"2(0,5x + 10)\"",
+    "\"0,5x + 10\"",
+    "\"0,5·(0,5x + 10)\"",
+    "\"(0,5x + 10)²·0,5\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2(0,5x + 10)\"\"? Dan vergeet je de factor 0,5 van de binnenkant. 2 · 0,5 = 1, dus 0,5x + 10. Het goede antwoord is 0,5x + 10.",
+    "Klopt: 2(0,5x + 10) · 0,5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,5·(0,5x + 10)\"\"? Dan vergeet je de factor 2 van de macht. 2 · 0,5 = 1, dus 0,5x + 10. Door de stappen goed na te lopen kom je uit op 0,5x + 10.",
+    "Koos je \"\"(0,5x + 10)²·0,5\"\"? Dan laat je de exponent niet verlagen. De exponent wordt 1, dus 0,5x + 10. Controleer je stap: de juiste uitkomst is 0,5x + 10."
+   ],
+   "uh": "Welke afgeleide heeft K(x) = (0,5x + 10)²?",
+   "ctx": "Een fabrikant heeft kosten K(x) = (0,5x + 10)² euro bij x stuks. Een leerling differentieert K met de kettingregel, berekent K'(20) en controleert door K eerst uit te werken."
+  },
+  {
+   "v": "Welke waarde heeft K'(20)?",
+   "o": [
+    "\"40 (2 · 20)\"",
+    "\"10\"",
+    "\"30\"",
+    "\"20\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 (2 · 20)\"\"? Dan neem je 2(0,5 · 20 + 10). De afgeleide is 0,5x + 10, dus 20. Het goede antwoord is 20.",
+    "Koos je \"\"10\"\"? Dan neem je alleen de constante. Tel 0,5 · 20 erbij, dus 20. Door de stappen goed na te lopen kom je uit op 20.",
+    "Koos je \"\"30\"\"? Dan tel je 20 + 10. 0,5 · 20 = 10, dus 20. Controleer je stap: de juiste uitkomst is 20.",
+    "Klopt: 0,5 · 20 + 10 = 20. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft K'(20)?",
+   "ctx": "Een fabrikant heeft kosten K(x) = (0,5x + 10)² euro bij x stuks. Een leerling differentieert K met de kettingregel, berekent K'(20) en controleert door K eerst uit te werken."
+  },
+  {
+   "v": "Hoe controleer je door K eerst uit te werken?",
+   "o": [
+    "\"K(x) = 0,25x² + 10x + 100 geeft K'(x) = 0,5x + 10\"",
+    "\"K(x) = 0,25x² + 100 geeft K'(x) = 0,5x\"",
+    "\"K(x) = 0,5x² + 100 geeft K'(x) = x\"",
+    "\"K(x) = 0,25x² + 10x + 100 geeft K'(x) = 0,25x + 10, zeg maar\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dezelfde afgeleide. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"K(x) = 0,25x² + 100 geeft K'(x) = 0,5x\"\"? Dan laat je de dubbele term 10x weg. (0,5x + 10)² heeft die term, dus 0,5x + 10.",
+    "Koos je \"\"K(x) = 0,5x² + 100 geeft K'(x) = x\"\"? Dan kwadrateer je 0,5 niet goed. (0,5x)² = 0,25x², dus K'(x) = 0,5x + 10.",
+    "Koos je \"\"K(x) = 0,25x² + 10x + 100 geeft K'(x) = 0,25x + 10, zeg maar\"\"? Dan differentieer je 0,25x² als 0,25x. (0,25x²)' = 0,5x, dus 0,5x + 10."
+   ],
+   "uh": "Hoe controleer je door K eerst uit te werken?",
+   "ctx": "Een fabrikant heeft kosten K(x) = (0,5x + 10)² euro bij x stuks. Een leerling differentieert K met de kettingregel, berekent K'(20) en controleert door K eerst uit te werken."
+  },
+  {
+   "v": "Welke afgeleide heeft T(h) = (0,2h)^(1/2)?",
+   "o": [
+    "\"0,5·(0,2h)^(−1/2)\"",
+    "\"0,2·(0,2h)^(−1/2)\"",
+    "\"0,1·(0,2h)^(−1/2)\"",
+    "\"0,1·(0,2h)^(1/2)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,5·(0,2h)^(−1/2)\"\"? Dan vergeet je de factor 0,2 van de binnenkant. ½ · 0,2 = 0,1, dus 0,1·(0,2h)^(−1/2). Het goede antwoord is 0,1·(0,2h)^(−1/2).",
+    "Koos je \"\"0,2·(0,2h)^(−1/2)\"\"? Dan vergeet je de factor ½. ½ · 0,2 = 0,1, dus 0,1·(0,2h)^(−1/2). Door de stappen goed na te lopen kom je uit op 0,1·(0,2h)^(−1/2).",
+    "Klopt: ½ · 0,2 · (0,2h)^(−1/2). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,1·(0,2h)^(1/2)\"\"? Dan laat je de exponent niet verlagen. De exponent wordt −1/2, dus 0,1·(0,2h)^(−1/2). Controleer je stap: de juiste uitkomst is 0,1·(0,2h)^(−1/2)."
+   ],
+   "uh": "Welke afgeleide heeft T(h) = (0,2h)^(1/2)?",
+   "ctx": "De valtijd van een voorwerp is T(h) = √(h/5) seconden bij een valhoogte van h meter. Een leerling schrijft T(h) = (0,2h)^(1/2) en differentieert met de kettingregel."
+  },
+  {
+   "v": "Welke waarde heeft T'(20)?",
+   "o": [
+    "\"0,5\"",
+    "\"0,05\"",
+    "\"0,1 (zonder de wortel)\"",
+    "\"0,25\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,5\"\"? Dan vergeet je de factor 0,1. 4^(−1/2) = 0,5, dus 0,05. Het goede antwoord is 0,05.",
+    "Klopt: 0,1 · 4^(−1/2) = 0,05. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,1 (zonder de wortel)\"\"? Dan vergeet je 4^(−1/2) = 0,5. 0,1 · 0,5, dus 0,05. Door de stappen goed na te lopen kom je uit op 0,05.",
+    "Koos je \"\"0,25\"\"? Dan neem je 4^(−1). 4^(−1/2) = 0,5, dus 0,05. Controleer je stap: de juiste uitkomst is 0,05."
+   ],
+   "uh": "Welke waarde heeft T'(20)?",
+   "ctx": "De valtijd van een voorwerp is T(h) = √(h/5) seconden bij een valhoogte van h meter. Een leerling schrijft T(h) = (0,2h)^(1/2) en differentieert met de kettingregel."
+  },
+  {
+   "v": "Hoe interpreteer je T'(20) = 0,05?",
+   "o": [
+    "\"de valtijd is 0,05 s\"",
+    "\"de valtijd daalt 0,05 s per meter, denk ik, zeg maar, gewoon\"",
+    "\"de snelheid is 0,05 m/s\"",
+    "\"bij 20 m neemt de valtijd ongeveer 0,05 s toe per extra meter\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de valtijd is 0,05 s\"\"? Dan neem je T'(20) als T(20). T(20) = 2 s, dus een toename per meter. Het goede antwoord is bij 20 m neemt de valtijd ongeveer 0,05 s toe per extra meter.",
+    "Koos je \"\"de valtijd daalt 0,05 s per meter, denk ik, zeg maar, gewoon\"\"? Dan denk je dat de tijd afneemt. T'(20) is positief, dus een toename. Door de stappen goed na te lopen kom je uit op bij 20 m neemt de valtijd ongeveer 0,05 s toe per extra meter.",
+    "Koos je \"\"de snelheid is 0,05 m/s\"\"? Dan verwar je de eenheid. T' is in s per m, dus een toename van de valtijd per meter.",
+    "Klopt: de afgeleide van de valtijd naar de hoogte, in s per m."
+   ],
+   "uh": "Hoe interpreteer je T'(20) = 0,05?",
+   "ctx": "De valtijd van een voorwerp is T(h) = √(h/5) seconden bij een valhoogte van h meter. Een leerling schrijft T(h) = (0,2h)^(1/2) en differentieert met de kettingregel."
+  },
+  {
+   "v": "Waarom wordt T'(h) kleiner als h groter wordt?",
+   "o": [
+    "\"een extra meter kost bij grote h relatief minder extra tijd\"",
+    "\"omdat T afneemt\"",
+    "\"omdat h negatief is\"",
+    "\"omdat de formule fout is, volgens mij, eigenlijk, denk ik\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Herken de inwendige en uitwendige functie, differentieer de uitwendige functie en vermenigvuldig met de afgeleide van de inwendige functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de wortel stijgt steeds langzamer. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat T afneemt\"\"? Dan denk je dat T afneemt. T neemt toe, maar langzamer, dus T' wordt kleiner. Het goede antwoord is een extra meter kost bij grote h relatief minder extra tijd.",
+    "Koos je \"\"omdat h negatief is\"\"? Dan denk je dat h negatief is. h is positief, dus T' wordt kleiner. Door de stappen goed na te lopen kom je uit op een extra meter kost bij grote h relatief minder extra tijd.",
+    "Koos je \"\"omdat de formule fout is, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat de formule onjuist is. De formule klopt, dus T' wordt kleiner. Controleer je stap: de juiste uitkomst is een extra meter kost bij grote h relatief minder extra tijd."
+   ],
+   "uh": "Waarom wordt T'(h) kleiner als h groter wordt?",
+   "ctx": "De valtijd van een voorwerp is T(h) = √(h/5) seconden bij een valhoogte van h meter. Een leerling schrijft T(h) = (0,2h)^(1/2) en differentieert met de kettingregel."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = (2x − 3)⁵. Een leerling bepaalt f'(x) met de kettingregel, berekent f'(2) en controleert zijn antwoord met een differentiequotiënt op een klein interval.",
+   "v": "Bepaal f'(x) en bereken f'(2).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = 5(2x − 3)⁴ · 2 = 10(2x − 3)⁴ (2p). f'(2) = 10 · 1 = 10 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = √(4x + 1). Een leerling schrijft f(x) = (4x + 1)^(1/2), differentieert met de kettingregel en berekent f'(2). Hij schrijft de afgeleide ook als breuk.",
+   "v": "Bepaal f'(x) en bereken f'(2).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = ½(4x + 1)^(−1/2) · 4 = 2/√(4x + 1) (2p). f'(2) = 2/3 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = 1/(3x + 2). Een leerling schrijft f(x) = (3x + 2)^(−1), differentieert met de kettingregel en berekent f'(1). Hij schrijft het antwoord als breuk.",
+   "v": "Bepaal f'(x) en bereken f'(1).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = −(3x + 2)^(−2) · 3 = −3/(3x + 2)² (2p). f'(1) = −3/25 = −0,12 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = (x − 1)³ + 2x. Een leerling differentieert elke term, gebruikt de kettingregel voor het eerste deel en berekent f'(2). Hij controleert met een quotiënt.",
+   "v": "Bepaal f'(x) en bereken f'(2).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = 3(x − 1)² + 2, want de kettingregel geeft 3(x − 1)² · 1 en (2x)' = 2 (2p). f'(2) = 3 · 1 + 2 = 5 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = 2√(5 − x). Een leerling schrijft f(x) = 2(5 − x)^(1/2), differentieert met de kettingregel en de constante factor en bepaalt f'(1). Hij let op het minteken van de binnenkant.",
+   "v": "Bepaal f'(x) en bereken f'(1).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = 2 · ½ · (5 − x)^(−1/2) · (−1) = −1/√(5 − x) (2p). f'(1) = −1/2 (1p)."
+  }
+ ]
+}
