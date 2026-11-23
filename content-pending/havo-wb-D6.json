@@ -1,0 +1,682 @@
+{
+ "id": "D6",
+ "lo": "wb.D.6",
+ "gs": 2,
+ "naam": "Raaklijn en extremen met de afgeleide",
+ "beschrijving": "Je stelt de raaklijn op in een punt van de grafiek, vindt horizontale raaklijnen met f'(x) = 0 en bepaalt extremen met een tekenschema van de afgeleide.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "De raaklijn opstellen",
+  "Horizontale raaklijnen",
+  "Tekenschema van de afgeleide",
+  "Extremen bepalen",
+  "Controleren en interpreteren"
+ ],
+ "sam": "De raaklijn in x = a is y = f'(a)(x − a) + f(a). Een horizontale raaklijn hoort bij f'(x) = 0. Bij extremen wisselt f' van teken: van + naar − is een lokaal maximum, van − naar + een lokaal minimum. Geef ook de functiewaarde en controleer met een tekenschema.",
+ "begrippen": [
+  {
+   "t": "Raaklijn",
+   "d": "De lijn y = f'(a)(x − a) + f(a) die de grafiek in het raakpunt raakt."
+  },
+  {
+   "t": "Raakpunt",
+   "d": "Het punt (a, f(a)) waar de raaklijn de grafiek raakt."
+  },
+  {
+   "t": "Helling van de raaklijn",
+   "d": "De helling van de raaklijn in x = a is f'(a)."
+  },
+  {
+   "t": "Horizontale raaklijn",
+   "d": "Een raaklijn met helling 0, dus f'(a) = 0."
+  },
+  {
+   "t": "Stationair punt",
+   "d": "Een punt van de grafiek waar f'(x) = 0."
+  },
+  {
+   "t": "Tekenschema van f'",
+   "d": "Schema van het teken van f' links en rechts van de nulpunten."
+  },
+  {
+   "t": "Lokaal maximum",
+   "d": "f' wisselt van + naar −: de grafiek gaat van stijgend naar dalend."
+  },
+  {
+   "t": "Lokaal minimum",
+   "d": "f' wisselt van − naar +: de grafiek gaat van dalend naar stijgend."
+  },
+  {
+   "t": "Extremen",
+   "d": "De lokale maxima en minima van een functie."
+  },
+  {
+   "t": "Top",
+   "d": "Bij een parabool het hoogste of laagste punt."
+  },
+  {
+   "t": "Extreme waarde",
+   "d": "De functiewaarde in een extremum, bijvoorbeeld W(4) = 9."
+  },
+  {
+   "t": "Maximale winst",
+   "d": "De grootste waarde van de winstfunctie, waar W'(q) = 0 en W van + naar − wisselt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke formule geeft de raaklijn aan de grafiek van f in het punt met x = a?",
+   "o": [
+    "\"y = f'(a)(x − a)\"",
+    "\"y = f'(a)(x − a) + f(a)\"",
+    "\"y = f(a)(x − a) + f'(a), denk ik\"",
+    "\"y = f'(x)(x − a) + f(a)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = f'(a)(x − a)\"\"? Dan vergeet je het punt (a, f(a)). De lijn moet door het raakpunt gaan, dus y = f'(a)(x − a) + f(a).",
+    "Klopt: de helling is f'(a) en de lijn gaat door het raakpunt (a, f(a)).",
+    "Koos je \"\"y = f(a)(x − a) + f'(a), denk ik\"\"? Dan wissel je de functiewaarde en de helling. De helling is f'(a), dus y = f'(a)(x − a) + f(a).",
+    "Koos je \"\"y = f'(x)(x − a) + f(a)\"\"? Dan laat je x staan in plaats van a. De helling is één getal, dus y = f'(a)(x − a) + f(a)."
+   ],
+   "uh": "Welke formule geeft de raaklijn aan de grafiek van f in het punt met x = a?"
+  },
+  {
+   "v": "Welke voorwaarde hoort bij een horizontale raaklijn in het punt met x = a?",
+   "o": [
+    "\"f(a) = 0\"",
+    "\"f'(a) = 1, volgens mij\"",
+    "\"f'(0) = a\"",
+    "\"f'(a) = 0\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f(a) = 0\"\"? Dan verwar je de helling met de hoogte. De helling is f'(a), dus f'(a) = 0. Het goede antwoord is f'(a) = 0.",
+    "Koos je \"\"f'(a) = 1, volgens mij\"\"? Dan neem je helling 1. Een horizontale lijn heeft helling 0, dus f'(a) = 0. Door de stappen goed na te lopen kom je uit op f'(a) = 0.",
+    "Koos je \"\"f'(0) = a\"\"? Dan verwissel je de plaats van het getal. De helling bij x = a moet 0 zijn, dus f'(a) = 0. Controleer je stap: de juiste uitkomst is f'(a) = 0.",
+    "Klopt: een horizontale lijn heeft helling 0. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke voorwaarde hoort bij een horizontale raaklijn in het punt met x = a?"
+  },
+  {
+   "v": "Welk teken heeft f' op een gedeelte waar de grafiek van f stijgt?",
+   "o": [
+    "\"positief\"",
+    "\"negatief\"",
+    "\"nul\"",
+    "\"hangt van f(x) af\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: stijgen betekent een positieve helling. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"negatief\"\"? Dan verwar je stijgen met dalen. Bij stijgen is de helling positief, dus f' is positief. Het goede antwoord is positief.",
+    "Koos je \"\"nul\"\"? Dan neem je een top. Op een stijgend gedeelte is de helling niet nul, dus f' is positief. Door de stappen goed na te lopen kom je uit op positief.",
+    "Koos je \"\"hangt van f(x) af\"\"? Dan denk je aan de hoogte van de grafiek. Het gaat om de helling, dus f' is positief. Controleer je stap: de juiste uitkomst is positief."
+   ],
+   "uh": "Welk teken heeft f' op een gedeelte waar de grafiek van f stijgt?"
+  },
+  {
+   "v": "Hoe heet een punt waar de grafiek van stijgend naar dalend gaat?",
+   "o": [
+    "\"een lokaal minimum, eigenlijk\"",
+    "\"een nulpunt\"",
+    "\"een lokaal maximum\"",
+    "\"een buigpunt\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een lokaal minimum, eigenlijk\"\"? Dan draai je het om. Bij een minimum gaat de grafiek eerst omlaag en dan omhoog, dus een lokaal maximum.",
+    "Koos je \"\"een nulpunt\"\"? Dan verwar je de top met het snijpunt met de x-as. Een top is een extremum, dus een lokaal maximum.",
+    "Klopt: eerst omhoog, daarna omlaag. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"een buigpunt\"\"? Dan verwar je de top met een buigpunt. Een buigpunt is geen top, dus een lokaal maximum. Controleer je stap: de juiste uitkomst is een lokaal maximum."
+   ],
+   "uh": "Hoe heet een punt waar de grafiek van stijgend naar dalend gaat?"
+  },
+  {
+   "v": "Hoe vind je de x-coördinaten van de toppen van een grafiek?",
+   "o": [
+    "\"los f(x) = 0 op\"",
+    "\"los f'(x) = 0 op\"",
+    "\"los f''(x) = 0 op, gewoon\"",
+    "\"vul x = 0 in\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"los f(x) = 0 op\"\"? Dan los je de functie zelf op. Dat geeft de snijpunten met de x-as, dus f'(x) = 0. Het goede antwoord is los f'(x) = 0 op.",
+    "Klopt: in een top is de helling 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"los f''(x) = 0 op, gewoon\"\"? Dan gebruik je een tweede afgeleide. Dat is niet nodig, dus f'(x) = 0. Door de stappen goed na te lopen kom je uit op los f'(x) = 0 op.",
+    "Koos je \"\"vul x = 0 in\"\"? Dan vul je maar één getal in. Je zoekt de x-waarden waarvoor de helling 0 is, dus f'(x) = 0. Controleer je stap: de juiste uitkomst is los f'(x) = 0 op."
+   ],
+   "uh": "Hoe vind je de x-coördinaten van de toppen van een grafiek?"
+  },
+  {
+   "v": "Wat is de raaklijn aan f(x) = x² in het punt met x = 1?",
+   "o": [
+    "\"y = 2x + 1, denk ik\"",
+    "\"y = 2x\"",
+    "\"y = x − 1\"",
+    "\"y = 2x − 1\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 2x + 1, denk ik\"\"? Dan vergeet je de verschuiving. y = 2(x − 1) + 1 = 2x − 1, dus y = 2x − 1. Het goede antwoord is y = 2x − 1.",
+    "Koos je \"\"y = 2x\"\"? Dan laat je de verschuiving weg. De lijn gaat door (1, 1), dus y = 2x − 1. Door de stappen goed na te lopen kom je uit op y = 2x − 1.",
+    "Koos je \"\"y = x − 1\"\"? Dan neem je helling 1. f'(1) = 2, dus y = 2x − 1. Controleer je stap: de juiste uitkomst is y = 2x − 1.",
+    "Klopt: f(1) = 1 en f'(1) = 2, dus y = 2(x − 1) + 1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat is de raaklijn aan f(x) = x² in het punt met x = 1?"
+  },
+  {
+   "v": "Hoe controleer je dat een extremum een maximum is?",
+   "o": [
+    "\"f' wisselt van positief naar negatief\"",
+    "\"f' wisselt van negatief naar positief, volgens mij\"",
+    "\"f' is overal positief\"",
+    "\"f'(x) = 0 is voldoende\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de grafiek gaat van stijgend naar dalend. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f' wisselt van negatief naar positief, volgens mij\"\"? Dan draai je de volgorde om. Dat is een minimum, dus van positief naar negatief.",
+    "Koos je \"\"f' is overal positief\"\"? Dan neem je een stijgende functie. Er is dan geen top, dus van positief naar negatief.",
+    "Koos je \"\"f'(x) = 0 is voldoende\"\"? Dan denk je dat f' = 0 genoeg is. Het teken moet wisselen, dus van positief naar negatief."
+   ],
+   "uh": "Hoe controleer je dat een extremum een maximum is?"
+  },
+  {
+   "v": "Welke afgeleide heeft f(x) = x² − 4x + 5?",
+   "o": [
+    "\"f'(x) = 2x + 1, zeg maar\"",
+    "\"f'(x) = x² − 4\"",
+    "\"f'(x) = 2x − 4\"",
+    "\"f'(x) = 2x + 4\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f'(x) = 2x + 1, zeg maar\"\"? Dan tel je de constante 5 mee. Die verdwijnt bij differentiëren, dus 2x − 4. Het goede antwoord is f'(x) = 2x − 4.",
+    "Koos je \"\"f'(x) = x² − 4\"\"? Dan laat je de exponent niet verlagen. x² wordt 2x, dus 2x − 4. Door de stappen goed na te lopen kom je uit op f'(x) = 2x − 4.",
+    "Klopt: 2x − 4 + 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f'(x) = 2x + 4\"\"? Dan vergeet je het minteken van −4x. De afgeleide is 2x − 4, dus 2x − 4. Controleer je stap: de juiste uitkomst is f'(x) = 2x − 4."
+   ],
+   "uh": "Welke afgeleide heeft f(x) = x² − 4x + 5?",
+   "ctx": "Gegeven is f(x) = x² − 4x + 5. Een leerling bepaalt de afgeleide met de somregel, berekent de helling in het punt met x = 4, stelt de raaklijn op en zoekt het punt waar de raaklijn horizontaal is."
+  },
+  {
+   "v": "Bereken f'(4).",
+   "o": [
+    "\"5\"",
+    "\"4\"",
+    "\"8\"",
+    "\"12\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5\"\"? Dan neem je f(4) = 5. De helling is f'(4), dus 4. Het goede antwoord is 4.",
+    "Klopt: 2 · 4 − 4 = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8\"\"? Dan vergeet je de − 4. 2 · 4 − 4 = 4, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+    "Koos je \"\"12\"\"? Dan vermenigvuldig je 3 met 4. f'(4) = 2 · 4 − 4, dus 4. Controleer je stap: de juiste uitkomst is 4."
+   ],
+   "uh": "Bereken f'(4).",
+   "ctx": "Gegeven is f(x) = x² − 4x + 5. Een leerling bepaalt de afgeleide met de somregel, berekent de helling in het punt met x = 4, stelt de raaklijn op en zoekt het punt waar de raaklijn horizontaal is."
+  },
+  {
+   "v": "Welke raaklijn hoort bij x = 4? Er geldt f(4) = 5 en f'(4) = 4.",
+   "o": [
+    "\"y = 4x + 5\"",
+    "\"y = 4x − 16, gewoon\"",
+    "\"y = 5x − 11\"",
+    "\"y = 4x − 11\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 4x + 5\"\"? Dan vergeet je de − 4 · 4. y = 4(x − 4) + 5, dus y = 4x − 11. Het goede antwoord is y = 4x − 11.",
+    "Koos je \"\"y = 4x − 16, gewoon\"\"? Dan vergeet je de + 5. y = 4(x − 4) + 5, dus y = 4x − 11. Door de stappen goed na te lopen kom je uit op y = 4x − 11.",
+    "Koos je \"\"y = 5x − 11\"\"? Dan wissel je de helling met f(4). De helling is f'(4) = 4, dus y = 4x − 11. Controleer je stap: de juiste uitkomst is y = 4x − 11.",
+    "Klopt: y = 4(x − 4) + 5 = 4x − 11. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke raaklijn hoort bij x = 4? Er geldt f(4) = 5 en f'(4) = 4.",
+   "ctx": "Gegeven is f(x) = x² − 4x + 5. Een leerling bepaalt de afgeleide met de somregel, berekent de helling in het punt met x = 4, stelt de raaklijn op en zoekt het punt waar de raaklijn horizontaal is."
+  },
+  {
+   "v": "Voor welke x is de raaklijn horizontaal?",
+   "o": [
+    "\"x = 2\"",
+    "\"x = 4\"",
+    "\"x = −2, I think\"",
+    "\"x = 1\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2x − 4 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 4\"\"? Dan vul je de gegeven x in. Los 2x − 4 = 0 op, dus x = 2. Het goede antwoord is x = 2.",
+    "Koos je \"\"x = −2, I think\"\"? Dan laat je het teken fout. 2x = 4, dus x = 2. Door de stappen goed na te lopen kom je uit op x = 2.",
+    "Koos je \"\"x = 1\"\"? Dan neem je f(2) = 1. De x-waarde is 2, dus x = 2. Controleer je stap: de juiste uitkomst is x = 2."
+   ],
+   "uh": "Voor welke x is de raaklijn horizontaal?",
+   "ctx": "Gegeven is f(x) = x² − 4x + 5. Een leerling bepaalt de afgeleide met de somregel, berekent de helling in het punt met x = 4, stelt de raaklijn op en zoekt het punt waar de raaklijn horizontaal is."
+  },
+  {
+   "v": "Welke afgeleide heeft f(x) = x³ − 3x²?",
+   "o": [
+    "\"f'(x) = 3x² − 3x, volgens mij\"",
+    "\"f'(x) = x³ − 6x\"",
+    "\"f'(x) = 3x² − 6x\"",
+    "\"f'(x) = 3x² − 6\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f'(x) = 3x² − 3x, volgens mij\"\"? Dan laat je de exponent van 3x² niet goed behandelen. (3x²)' = 6x, dus 3x² − 6x. Het goede antwoord is f'(x) = 3x² − 6x.",
+    "Koos je \"\"f'(x) = x³ − 6x\"\"? Dan laat je de exponent van x³ niet verlagen. (x³)' = 3x², dus 3x² − 6x. Door de stappen goed na te lopen kom je uit op f'(x) = 3x² − 6x.",
+    "Klopt: x³ wordt 3x² en 3x² wordt 6x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f'(x) = 3x² − 6\"\"? Dan laat je de x weg. (3x²)' = 6x, dus 3x² − 6x. Controleer je stap: de juiste uitkomst is f'(x) = 3x² − 6x."
+   ],
+   "uh": "Welke afgeleide heeft f(x) = x³ − 3x²?",
+   "ctx": "Gegeven is f(x) = x³ − 3x². Een leerling differentieert met de somregel, lost f'(x) = 0 op, maakt een tekenschema van f' en bepaalt de extremen van de grafiek."
+  },
+  {
+   "v": "Welke x-waarden voldoen aan f'(x) = 0?",
+   "o": [
+    "\"alleen x = 2\"",
+    "\"x = 0 en x = 2\"",
+    "\"x = 0 en x = −2, zeg maar\"",
+    "\"x = 3 en x = 0\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen x = 2\"\"? Dan vergeet je de factor x. 3x(x − 2) = 0 heeft twee oplossingen, dus x = 0 en x = 2. Het goede antwoord is x = 0 en x = 2.",
+    "Klopt: 3x(x − 2) = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 0 en x = −2, zeg maar\"\"? Dan laat je het teken fout. x − 2 = 0 geeft x = 2, dus x = 0 en x = 2. Door de stappen goed na te lopen kom je uit op x = 0 en x = 2.",
+    "Koos je \"\"x = 3 en x = 0\"\"? Dan neem je het getal uit de formule. Los 3x(x − 2) = 0 op, dus x = 0 en x = 2. Controleer je stap: de juiste uitkomst is x = 0 en x = 2."
+   ],
+   "uh": "Welke x-waarden voldoen aan f'(x) = 0?",
+   "ctx": "Gegeven is f(x) = x³ − 3x². Een leerling differentieert met de somregel, lost f'(x) = 0 op, maakt een tekenschema van f' en bepaalt de extremen van de grafiek."
+  },
+  {
+   "v": "Welk teken heeft f' tussen x = 0 en x = 2? Bijvoorbeeld f'(1) = −3.",
+   "o": [
+    "\"positief\"",
+    "\"nul\"",
+    "\"wisselend\"",
+    "\"negatief\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"positief\"\"? Dan neem je het teken van f(1) = −2 niet goed. f'(1) = −3, dus negatief. Het goede antwoord is negatief.",
+    "Koos je \"\"nul\"\"? Dan denk je dat de helling hier 0 is. Alleen in x = 0 en x = 2 is f' nul, dus negatief. Door de stappen goed na te lopen kom je uit op negatief.",
+    "Koos je \"\"wisselend\"\"? Dan denk je dat het teken verandert. Tussen de nulpunten blijft het gelijk, dus negatief. Controleer je stap: de juiste uitkomst is negatief.",
+    "Klopt: f'(1) = −3, dus f daalt tussen 0 en 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk teken heeft f' tussen x = 0 en x = 2? Bijvoorbeeld f'(1) = −3.",
+   "ctx": "Gegeven is f(x) = x³ − 3x². Een leerling differentieert met de somregel, lost f'(x) = 0 op, maakt een tekenschema van f' en bepaalt de extremen van de grafiek."
+  },
+  {
+   "v": "Welk punt is het lokale maximum van f? Het teken van f' wisselt bij x = 0 van + naar −.",
+   "o": [
+    "\"(0, 0)\"",
+    "\"(2, −4), gewoon\"",
+    "\"(0, −4)\"",
+    "\"(2, 0)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: f(0) = 0 en f gaat van stijgend naar dalend. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(2, −4), gewoon\"\"? Dan neem je het minimum. Bij x = 2 wisselt f' van − naar +, dus (0, 0). Het goede antwoord is (0, 0).",
+    "Koos je \"\"(0, −4)\"\"? Dan neem je f(2). Het maximum heeft x = 0 en f(0) = 0, dus (0, 0). Door de stappen goed na te lopen kom je uit op (0, 0).",
+    "Koos je \"\"(2, 0)\"\"? Dan wissel je de coördinaten door elkaar. Het maximum ligt bij x = 0, dus (0, 0). Controleer je stap: de juiste uitkomst is (0, 0)."
+   ],
+   "uh": "Welk punt is het lokale maximum van f? Het teken van f' wisselt bij x = 0 van + naar −.",
+   "ctx": "Gegeven is f(x) = x³ − 3x². Een leerling differentieert met de somregel, lost f'(x) = 0 op, maakt een tekenschema van f' en bepaalt de extremen van de grafiek."
+  },
+  {
+   "v": "Voor welke x heeft g een top? Het geldt g'(x) = −2x + 6.",
+   "o": [
+    "\"x = −3, I think\"",
+    "\"x = 6\"",
+    "\"x = 3\"",
+    "\"x = 9\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = −3, I think\"\"? Dan laat je het teken fout. −2x = −6, dus x = 3. Het goede antwoord is x = 3.",
+    "Koos je \"\"x = 6\"\"? Dan neem je de constante. Deel 6 door 2, dus x = 3. Door de stappen goed na te lopen kom je uit op x = 3.",
+    "Klopt: −2x + 6 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 9\"\"? Dan neem je g(3) = 9. De x-waarde is 3, dus x = 3. Controleer je stap: de juiste uitkomst is x = 3."
+   ],
+   "uh": "Voor welke x heeft g een top? Het geldt g'(x) = −2x + 6.",
+   "ctx": "Gegeven is g(x) = −x² + 6x. De grafiek is een bergparabool. Een leerling stelt de raaklijn op in het punt met x = 1 en zoekt de top van de parabool met g'(x) = 0."
+  },
+  {
+   "v": "Welke maximale waarde heeft g?",
+   "o": [
+    "\"3\"",
+    "\"9\"",
+    "\"18\"",
+    "\"6\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3\"\"? Dan neem je de x-waarde van de top. De waarde is g(3), dus 9. Het goede antwoord is 9.",
+    "Klopt: g(3) = −9 + 18 = 9. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"18\"\"? Dan vergeet je −x² = −9. g(3) = −9 + 18, dus 9. Door de stappen goed na te lopen kom je uit op 9.",
+    "Koos je \"\"6\"\"? Dan neem je g'(0) = 6. De maximale waarde is g(3), dus 9. Controleer je stap: de juiste uitkomst is 9."
+   ],
+   "uh": "Welke maximale waarde heeft g?",
+   "ctx": "Gegeven is g(x) = −x² + 6x. De grafiek is een bergparabool. Een leerling stelt de raaklijn op in het punt met x = 1 en zoekt de top van de parabool met g'(x) = 0."
+  },
+  {
+   "v": "Welke raaklijn hoort bij x = 1? Er geldt g(1) = 5.",
+   "o": [
+    "\"y = 4x + 5, zeg maar\"",
+    "\"y = 4x − 1\"",
+    "\"y = 5x − 1\"",
+    "\"y = 4x + 1\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 4x + 5, zeg maar\"\"? Dan vergeet je de − 4 · 1. y = 4(x − 1) + 5, dus y = 4x + 1. Het goede antwoord is y = 4x + 1.",
+    "Koos je \"\"y = 4x − 1\"\"? Dan laat je het teken fout. y = 4x − 4 + 5, dus y = 4x + 1. Door de stappen goed na te lopen kom je uit op y = 4x + 1.",
+    "Koos je \"\"y = 5x − 1\"\"? Dan wissel je f'(1) en g(1). De helling is 4, dus y = 4x + 1. Controleer je stap: de juiste uitkomst is y = 4x + 1.",
+    "Klopt: g'(1) = 4, dus y = 4(x − 1) + 5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke raaklijn hoort bij x = 1? Er geldt g(1) = 5.",
+   "ctx": "Gegeven is g(x) = −x² + 6x. De grafiek is een bergparabool. Een leerling stelt de raaklijn op in het punt met x = 1 en zoekt de top van de parabool met g'(x) = 0."
+  },
+  {
+   "v": "Welke x-waarden geven h'(x) = 3x² − 12 = 0?",
+   "o": [
+    "\"x = −2 en x = 2\"",
+    "\"x = 4 en x = −4, eigenlijk\"",
+    "\"alleen x = 2\"",
+    "\"x = 6\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x² = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 4 en x = −4, eigenlijk\"\"? Dan vergeet je de wortel te nemen. x² = 4 geeft x = ±2, dus x = −2 en x = 2. Het goede antwoord is x = −2 en x = 2.",
+    "Koos je \"\"alleen x = 2\"\"? Dan vergeet je x = −2. x² = 4 heeft twee oplossingen, dus x = −2 en x = 2. Door de stappen goed na te lopen kom je uit op x = −2 en x = 2.",
+    "Koos je \"\"x = 6\"\"? Dan deel je 12 door 2. 3x² = 12 geeft x² = 4, dus x = −2 en x = 2. Controleer je stap: de juiste uitkomst is x = −2 en x = 2."
+   ],
+   "uh": "Welke x-waarden geven h'(x) = 3x² − 12 = 0?",
+   "ctx": "Gegeven is h(x) = x³ − 12x. Een leerling lost h'(x) = 0 op, maakt een tekenschema van h' en bepaalt de coördinaten van het lokale maximum en het lokale minimum. Daarna stelt hij ook de raaklijn op in het punt met x = 1."
+  },
+  {
+   "v": "Welk punt is het lokale maximum van h? Het teken van h' is + − + met nulpunten x = −2 en x = 2.",
+   "o": [
+    "\"(2, −16)\"",
+    "\"(−2, −16), gewoon\"",
+    "\"(−2, 16)\"",
+    "\"(16, −2)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(2, −16)\"\"? Dan neem je het minimum. Het maximum zit bij x = −2, dus (−2, 16). Het goede antwoord is (−2, 16).",
+    "Koos je \"\"(−2, −16), gewoon\"\"? Dan neem je het verkeerde teken. h(−2) = 16, dus (−2, 16). Door de stappen goed na te lopen kom je uit op (−2, 16).",
+    "Klopt: h(−2) = −8 + 24 = 16 en h' gaat van + naar −. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(16, −2)\"\"? Dan wissel je x en y. Het maximum ligt bij x = −2, dus (−2, 16). Controleer je stap: de juiste uitkomst is (−2, 16)."
+   ],
+   "uh": "Welk punt is het lokale maximum van h? Het teken van h' is + − + met nulpunten x = −2 en x = 2.",
+   "ctx": "Gegeven is h(x) = x³ − 12x. Een leerling lost h'(x) = 0 op, maakt een tekenschema van h' en bepaalt de coördinaten van het lokale maximum en het lokale minimum. Daarna stelt hij ook de raaklijn op in het punt met x = 1."
+  },
+  {
+   "v": "Bij x = 2 wisselt h' van teken. Welke wisseling en welk gevolg?",
+   "o": [
+    "\"van + naar −, dus een lokaal maximum, I think\"",
+    "\"van − naar +, dus een lokaal minimum\"",
+    "\"geen wisseling, dus geen extremum\"",
+    "\"van + naar +, dus een buigpunt\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"van + naar −, dus een lokaal maximum, I think\"\"? Dan draai je de volgorde om. Voor x = 2 is h' negatief, dus van − naar + en een minimum.",
+    "Klopt: h daalt eerst en stijgt daarna. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"geen wisseling, dus geen extremum\"\"? Dan neem je aan dat het teken gelijk blijft. Tussen −2 en 2 is h' negatief, dus van − naar + en een minimum.",
+    "Koos je \"\"van + naar +, dus een buigpunt\"\"? Dan verwar je een extremum met een buigpunt. Bij extremen wisselt h' van teken, dus van − naar + en een minimum."
+   ],
+   "uh": "Bij x = 2 wisselt h' van teken. Welke wisseling en welk gevolg?",
+   "ctx": "Gegeven is h(x) = x³ − 12x. Een leerling lost h'(x) = 0 op, maakt een tekenschema van h' en bepaalt de coördinaten van het lokale maximum en het lokale minimum. Daarna stelt hij ook de raaklijn op in het punt met x = 1."
+  },
+  {
+   "v": "Welke raaklijn hoort bij x = 1? Er geldt h(1) = −11 en h'(1) = −9.",
+   "o": [
+    "\"y = −9x − 11, volgens mij\"",
+    "\"y = −9x + 2\"",
+    "\"y = 9x − 2\"",
+    "\"y = −9x − 2\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = −9x − 11, volgens mij\"\"? Dan vergeet je de + 9. y = −9(x − 1) − 11, dus y = −9x − 2. Het goede antwoord is y = −9x − 2.",
+    "Koos je \"\"y = −9x + 2\"\"? Dan laat je het teken fout. −9x + 9 − 11 = −9x − 2, dus y = −9x − 2. Door de stappen goed na te lopen kom je uit op y = −9x − 2.",
+    "Koos je \"\"y = 9x − 2\"\"? Dan laat je het minteken van de helling weg. h'(1) = −9, dus y = −9x − 2. Controleer je stap: de juiste uitkomst is y = −9x − 2.",
+    "Klopt: y = −9(x − 1) − 11. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke raaklijn hoort bij x = 1? Er geldt h(1) = −11 en h'(1) = −9.",
+   "ctx": "Gegeven is h(x) = x³ − 12x. Een leerling lost h'(x) = 0 op, maakt een tekenschema van h' en bepaalt de coördinaten van het lokale maximum en het lokale minimum. Daarna stelt hij ook de raaklijn op in het punt met x = 1."
+  },
+  {
+   "v": "Bij welke productie q is de winst maximaal? Er geldt W'(q) = −2q + 8.",
+   "o": [
+    "\"q = 4 (dus 400 stuks)\"",
+    "\"q = 8\"",
+    "\"q = −4, I suppose, really\"",
+    "\"q = 9\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: −2q + 8 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"q = 8\"\"? Dan neem je de constante 8. Los −2q + 8 = 0 op, dus q = 4. Het goede antwoord is q = 4 (dus 400 stuks).",
+    "Koos je \"\"q = −4, I suppose, really\"\"? Dan laat je het teken fout. −2q = −8, dus q = 4. Door de stappen goed na te lopen kom je uit op q = 4 (dus 400 stuks).",
+    "Koos je \"\"q = 9\"\"? Dan neem je de winst W(4) = 9. De productie is q = 4, dus 400 stuks. Controleer je stap: de juiste uitkomst is q = 4 (dus 400 stuks)."
+   ],
+   "uh": "Bij welke productie q is de winst maximaal? Er geldt W'(q) = −2q + 8.",
+   "ctx": "Een bedrijf heeft de winst W(q) = −q² + 8q − 7 (in duizenden euro's) bij een productie van q honderd stuks. Een leerling bepaalt met de afgeleide bij welke productie de winst maximaal is en hoe groot die winst is."
+  },
+  {
+   "v": "Hoe groot is de maximale winst?",
+   "o": [
+    "\"4000 euro, eigenlijk\"",
+    "\"9 euro\"",
+    "\"9000 euro\"",
+    "\"8000 euro\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4000 euro, eigenlijk\"\"? Dan neem je de productie. De winst is W(4), dus 9000 euro. Het goede antwoord is 9000 euro.",
+    "Koos je \"\"9 euro\"\"? Dan vergeet je dat W in duizenden euro's is. 9 duizend, dus 9000 euro. Door de stappen goed na te lopen kom je uit op 9000 euro.",
+    "Klopt: W(4) = −16 + 32 − 7 = 9 duizend euro. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8000 euro\"\"? Dan neem je de coëfficiënt 8. De winst is W(4) = 9, dus 9000 euro. Controleer je stap: de juiste uitkomst is 9000 euro."
+   ],
+   "uh": "Hoe groot is de maximale winst?",
+   "ctx": "Een bedrijf heeft de winst W(q) = −q² + 8q − 7 (in duizenden euro's) bij een productie van q honderd stuks. Een leerling bepaalt met de afgeleide bij welke productie de winst maximaal is en hoe groot die winst is."
+  },
+  {
+   "v": "Welke vergelijkingen hebben de horizontale raaklijnen aan de grafiek van f? Er geldt f(1) = 4 en f(3) = 0.",
+   "o": [
+    "\"x = 1 en x = 3\"",
+    "\"y = 4 en y = 0\"",
+    "\"y = 3 en y = 1\"",
+    "\"y = 4 en y = −4, gewoon\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 1 en x = 3\"\"? Dan geef je de x-waarden. Een horizontale lijn heeft de vorm y = f(a), dus y = 4 en y = 0. Het goede antwoord is y = 4 en y = 0.",
+    "Klopt: de raaklijnen liggen op hoogte f(1) en f(3). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = 3 en y = 1\"\"? Dan neem je de x-waarden als hoogte. De hoogte is f(1) en f(3), dus y = 4 en y = 0. Door de stappen goed na te lopen kom je uit op y = 4 en y = 0.",
+    "Koos je \"\"y = 4 en y = −4, gewoon\"\"? Dan neem je een verkeerd teken. f(3) = 0, dus y = 4 en y = 0. Controleer je stap: de juiste uitkomst is y = 4 en y = 0."
+   ],
+   "uh": "Welke vergelijkingen hebben de horizontale raaklijnen aan de grafiek van f? Er geldt f(1) = 4 en f(3) = 0.",
+   "ctx": "Gegeven is f(x) = x³ − 6x² + 9x. Een leerling schrijft f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3), zoekt de punten met een horizontale raaklijn en controleert met een tekenschema welk punt een maximum en welk een minimum is."
+  },
+  {
+   "v": "Welk punt is het lokale minimum van f?",
+   "o": [
+    "\"(1, 4), denk ik\"",
+    "\"(3, 4)\"",
+    "\"(0, 0)\"",
+    "\"(3, 0)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(1, 4), denk ik\"\"? Dan neem je het maximum. Bij x = 1 wisselt f' van + naar −, dus (3, 0). Het goede antwoord is (3, 0).",
+    "Koos je \"\"(3, 4)\"\"? Dan neem je de hoogte van het maximum. f(3) = 0, dus (3, 0). Door de stappen goed na te lopen kom je uit op (3, 0).",
+    "Koos je \"\"(0, 0)\"\"? Dan neem je het beginpunt. Het minimum ligt bij het nulpunt van f', dus (3, 0). Controleer je stap: de juiste uitkomst is (3, 0).",
+    "Klopt: f' wisselt bij x = 3 van − naar + en f(3) = 0. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk punt is het lokale minimum van f?",
+   "ctx": "Gegeven is f(x) = x³ − 6x² + 9x. Een leerling schrijft f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3), zoekt de punten met een horizontale raaklijn en controleert met een tekenschema welk punt een maximum en welk een minimum is."
+  },
+  {
+   "v": "Hoe controleer je dat x = 1 een maximum geeft?",
+   "o": [
+    "\"f'(0) = 9 is positief en f'(2) = −3 is negatief\"",
+    "\"f'(1) = 0 is genoeg\"",
+    "\"f'(0) = 9 en f'(2) = 3 zijn allebei positief, volgens mij\"",
+    "\"f(1) = 4 is positief\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de afgeleide, vul het x-getal in voor de helling, stel de raaklijn op met y = f'(a)(x − a) + f(a) en zoek extremen met f'(x) = 0 en een tekenschema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het teken wisselt van + naar −. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f'(1) = 0 is genoeg\"\"? Dan denk je dat f' = 0 voldoende is. Het teken moet wisselen, dus f'(0) = 9 en f'(2) = −3.",
+    "Koos je \"\"f'(0) = 9 en f'(2) = 3 zijn allebei positief, volgens mij\"\"? Dan reken je f'(2) fout. f'(2) = 12 − 24 + 9 = −3, dus + naar −.",
+    "Koos je \"\"f(1) = 4 is positief\"\"? Dan kijk je naar de hoogte. Je moet het teken van f' controleren, dus f'(0) = 9 en f'(2) = −3."
+   ],
+   "uh": "Hoe controleer je dat x = 1 een maximum geeft?",
+   "ctx": "Gegeven is f(x) = x³ − 6x² + 9x. Een leerling schrijft f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3), zoekt de punten met een horizontale raaklijn en controleert met een tekenschema welk punt een maximum en welk een minimum is."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = x³ − 3x². Een leerling stelt de raaklijn op aan de grafiek van f in het punt met x = 3. Hij bepaalt eerst de afgeleide, daarna de helling en de functiewaarde.",
+   "v": "Stel een vergelijking op van de raaklijn in het punt met x = 3.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = 3x² − 6x (1p). f'(3) = 9 en f(3) = 0 (1p). Raaklijn: y = 9(x − 3) = 9x − 27 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = x² − 6x + 11. Een leerling zoekt het laagste punt van de parabool met de afgeleide. Hij lost f'(x) = 0 op en berekent daarna de functiewaarde.",
+   "v": "Bepaal de coördinaten van het laagste punt van de grafiek.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = 2x − 6 (1p). f'(x) = 0 geeft x = 3 (1p). f(3) = 9 − 18 + 11 = 2, dus het laagste punt is (3, 2) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = x³ − 27x. Een leerling lost f'(x) = 0 op, maakt een tekenschema van f' en bepaalt de coördinaten van het lokale maximum en het lokale minimum.",
+   "v": "Bepaal de coördinaten van het lokale maximum en het lokale minimum.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = 3x² − 27 = 0 geeft x = −3 of x = 3 (1p). Tekenschema + − +: maximum bij x = −3, minimum bij x = 3 (1p). Maximum (−3, 54) en minimum (3, −54) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bedrijf heeft de winst W(q) = −q² + 10q − 16 (in duizenden euro's) bij een productie van q honderd stuks. Een leerling bepaalt met de afgeleide de productie waarbij de winst maximaal is en berekent de maximale winst.",
+   "v": "Bepaal bij welke productie de winst maximaal is en hoe groot die winst is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "W'(q) = −2q + 10 = 0 geeft q = 5 (1p). W(5) = −25 + 50 − 16 = 9 (1p). Bij 500 stuks is de winst maximaal, namelijk 9000 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = x³ − 3x + 1. Een leerling zoekt de punten met een horizontale raaklijn, schrijft de vergelijkingen van die raaklijnen op en controleert de ligging met een tekenschema.",
+   "v": "Bepaal de vergelijkingen van de horizontale raaklijnen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = 3x² − 3 = 0 geeft x = −1 of x = 1 (1p). f(−1) = 3 en f(1) = −1 (1p). De horizontale raaklijnen zijn y = 3 en y = −1 (1p)."
+  }
+ ]
+}

@@ -5940,6 +5940,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D6",
+      "lo": "wb.D.6",
+      "gs": 2,
+      "naam": "Raaklijn en extremen met de afgeleide",
+      "beschrijving": "Je stelt de raaklijn op in een punt van de grafiek, vindt horizontale raaklijnen met f'(x) = 0 en bepaalt extremen met een tekenschema van de afgeleide.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "De raaklijn opstellen",
+       "Horizontale raaklijnen",
+       "Tekenschema van de afgeleide",
+       "Extremen bepalen",
+       "Controleren en interpreteren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
