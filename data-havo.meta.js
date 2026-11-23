@@ -5898,6 +5898,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D4",
+      "lo": "wb.D.4",
+      "gs": 2,
+      "naam": "Afgeleide van machtsfuncties met de som- en verschilregel",
+      "beschrijving": "Je bepaalt de afgeleide van machtsfuncties met rationale exponenten met de machtsregel, gebruikt de som- en verschilregel en de constante factor, herschrijft wortels en breuken als macht en controleert met een differentiequotiënt.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Machtsregel",
+       "Constante factor en constante",
+       "Som- en verschilregel",
+       "Wortels en breuken herschrijven",
+       "Waarde invullen en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

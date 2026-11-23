@@ -1,0 +1,682 @@
+{
+ "id": "D4",
+ "lo": "wb.D.4",
+ "gs": 2,
+ "naam": "Afgeleide van machtsfuncties met de som- en verschilregel",
+ "beschrijving": "Je bepaalt de afgeleide van machtsfuncties met rationale exponenten met de machtsregel, gebruikt de som- en verschilregel en de constante factor, herschrijft wortels en breuken als macht en controleert met een differentiequotiënt.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Machtsregel",
+  "Constante factor en constante",
+  "Som- en verschilregel",
+  "Wortels en breuken herschrijven",
+  "Waarde invullen en controleren"
+ ],
+ "sam": "Gebruik (xⁿ)' = n·xⁿ⁻¹, laat een factor staan en differentieer een som of verschil per term; een constante geeft 0. Schrijf wortels en breuken eerst als macht. Vul daarna in en controleer met een differentiequotiënt.",
+ "begrippen": [
+  {
+   "t": "Machtsregel",
+   "d": "(xⁿ)' = n·xⁿ⁻¹, ook voor rationale exponenten."
+  },
+  {
+   "t": "Constante factor",
+   "d": "(c·f)' = c·f': de factor blijft staan."
+  },
+  {
+   "t": "Afgeleide van een constante",
+   "d": "De afgeleide van een getal is 0."
+  },
+  {
+   "t": "Somregel",
+   "d": "(g + h)' = g' + h'."
+  },
+  {
+   "t": "Verschilregel",
+   "d": "(g − h)' = g' − h'."
+  },
+  {
+   "t": "Differentiëren",
+   "d": "Het bepalen van de afgeleide."
+  },
+  {
+   "t": "Herschrijven als macht",
+   "d": "√x = x^(1/2) en 1/x = x^(−1)."
+  },
+  {
+   "t": "Wortelfunctie afgeleide",
+   "d": "(√x)' = 1/(2√x)."
+  },
+  {
+   "t": "Marginale kosten",
+   "d": "De afgeleide van de kostenfunctie K'(q)."
+  },
+  {
+   "t": "Controleren met een quotiënt",
+   "d": "Het differentiequotiënt op een klein interval nadert f'(a)."
+  },
+  {
+   "t": "Waarde van de afgeleide",
+   "d": "f'(a): invullen van a in f'."
+  },
+  {
+   "t": "Rationale exponent",
+   "d": "Een exponent als breuk, zoals 1/2 of −1."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Differentieer f(x) = x⁵ met de machtsregel.",
+   "o": [
+    "\"5x⁵\"",
+    "\"5x⁴\"",
+    "\"x⁴ (zonder factor)\"",
+    "\"4x⁵\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5x⁵\"\"? Dan laat je de exponent niet verlagen. De nieuwe exponent is 4, dus 5x⁴. Het goede antwoord is 5x⁴.",
+    "Klopt: de exponent wordt de factor en de exponent gaat met 1 omlaag.",
+    "Koos je \"\"x⁴ (zonder factor)\"\"? Dan vergeet je de factor 5. De exponent wordt de coëfficiënt, dus 5x⁴. Door de stappen goed na te lopen kom je uit op 5x⁴.",
+    "Koos je \"\"4x⁵\"\"? Dan verwissel je de exponenten. De factor is 5 en de exponent 4, dus 5x⁴. Controleer je stap: de juiste uitkomst is 5x⁴."
+   ],
+   "uh": "Differentieer f(x) = x⁵ met de machtsregel."
+  },
+  {
+   "v": "Hoe luidt de machtsregel voor f(x) = xⁿ?",
+   "o": [
+    "\"f'(x) = xⁿ⁻¹\"",
+    "\"f'(x) = n·xⁿ\"",
+    "\"f'(x) = (n + 1)·xⁿ⁺¹\"",
+    "\"f'(x) = n·xⁿ⁻¹\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f'(x) = xⁿ⁻¹\"\"? Dan vergeet je de factor n. De regel is n·xⁿ⁻¹, dus f'(x) = n·xⁿ⁻¹. Het goede antwoord is f'(x) = n·xⁿ⁻¹.",
+    "Koos je \"\"f'(x) = n·xⁿ\"\"? Dan laat je de exponent niet verlagen. De exponent wordt n − 1, dus f'(x) = n·xⁿ⁻¹. Door de stappen goed na te lopen kom je uit op f'(x) = n·xⁿ⁻¹.",
+    "Koos je \"\"f'(x) = (n + 1)·xⁿ⁺¹\"\"? Dan verhoog je de exponent. Bij differentiëren gaat de exponent omlaag, dus n·xⁿ⁻¹. Controleer je stap: de juiste uitkomst is f'(x) = n·xⁿ⁻¹.",
+    "Klopt: n komt voor de x en de exponent wordt n − 1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe luidt de machtsregel voor f(x) = xⁿ?"
+  },
+  {
+   "v": "Welke afgeleide heeft de constante functie f(x) = 7?",
+   "o": [
+    "\"0\"",
+    "\"7\"",
+    "\"1\"",
+    "\"7x\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een constante verandert niet. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7\"\"? Dan neem je de constante zelf. De helling van een horizontale lijn is 0, dus 0. Het goede antwoord is 0.",
+    "Koos je \"\"1\"\"? Dan neem je de helling van x. Een constante heeft helling 0, dus 0. Door de stappen goed na te lopen kom je uit op 0.",
+    "Koos je \"\"7x\"\"? Dan maak je er een lineaire functie van. De afgeleide van een constante is 0, dus 0. Controleer je stap: de juiste uitkomst is 0."
+   ],
+   "uh": "Welke afgeleide heeft de constante functie f(x) = 7?"
+  },
+  {
+   "v": "Bepaal de afgeleide van 3x² met behulp van de constante factor.",
+   "o": [
+    "\"3x\"",
+    "\"6x²\"",
+    "\"6x\"",
+    "\"2x\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3x\"\"? Dan vergeet je de exponent 2 te gebruiken. (x²)' = 2x, dus 6x. Het goede antwoord is 6x.",
+    "Koos je \"\"6x²\"\"? Dan laat je de exponent niet verlagen. (x²)' = 2x, dus 6x. Door de stappen goed na te lopen kom je uit op 6x.",
+    "Klopt: de factor 3 blijft staan: 3 · 2x = 6x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2x\"\"? Dan laat je de factor 3 weg. De factor blijft staan, dus 6x. Controleer je stap: de juiste uitkomst is 6x."
+   ],
+   "uh": "Bepaal de afgeleide van 3x² met behulp van de constante factor."
+  },
+  {
+   "v": "Hoe differentieer je f(x) = g(x) + h(x)?",
+   "o": [
+    "\"f'(x) = g'(x) · h'(x), gewoon\"",
+    "\"f'(x) = g'(x) + h'(x)\"",
+    "\"f'(x) = g'(x) + h(x)\"",
+    "\"f'(x) = g(x) + h(x)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f'(x) = g'(x) · h'(x), gewoon\"\"? Dan vermenigvuldig je de afgeleiden. Bij een som tel je op, dus g' + h'. Het goede antwoord is f'(x) = g'(x) + h'(x).",
+    "Klopt: je differentieert elke term apart (somregel). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f'(x) = g'(x) + h(x)\"\"? Dan differentieer je maar één term. Beide termen krijgen een accent, dus g' + h'. Door de stappen goed na te lopen kom je uit op f'(x) = g'(x) + h'(x).",
+    "Koos je \"\"f'(x) = g(x) + h(x)\"\"? Dan laat je de accenten weg. Je differentieert beide termen, dus g' + h'. Controleer je stap: de juiste uitkomst is f'(x) = g'(x) + h'(x)."
+   ],
+   "uh": "Hoe differentieer je f(x) = g(x) + h(x)?"
+  },
+  {
+   "v": "Hoe schrijf je √x als macht van x?",
+   "o": [
+    "\"x² (het kwadraat)\"",
+    "\"x^(−2)\"",
+    "\"2x\"",
+    "\"x^(1/2)\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² (het kwadraat)\"\"? Dan kwadrateer je x. Een wortel is het omgekeerde, dus x^(1/2). Het goede antwoord is x^(1/2).",
+    "Koos je \"\"x^(−2)\"\"? Dan kies je een negatieve exponent. Dat is 1/x², dus x^(1/2). Door de stappen goed na te lopen kom je uit op x^(1/2).",
+    "Koos je \"\"2x\"\"? Dan vermenigvuldig je met 2. Een wortel is een gebroken exponent, dus x^(1/2). Controleer je stap: de juiste uitkomst is x^(1/2).",
+    "Klopt: een wortel is een macht met exponent een half. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe schrijf je √x als macht van x?"
+  },
+  {
+   "v": "Welke macht van x is gelijk aan 1/x?",
+   "o": [
+    "\"x^(−1)\"",
+    "\"x¹\"",
+    "\"x^(1/2)\"",
+    "\"−x\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een breuk geeft een negatieve exponent. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x¹\"\"? Dan laat je het minteken weg. 1/x is x^(−1), dus x^(−1). Het goede antwoord is x^(−1).",
+    "Koos je \"\"x^(1/2)\"\"? Dan verwar je de breuk met een wortel. 1/x is x^(−1), dus x^(−1). Door de stappen goed na te lopen kom je uit op x^(−1).",
+    "Koos je \"\"−x\"\"? Dan maak je er een product van. 1/x is x^(−1), dus x^(−1). Controleer je stap: de juiste uitkomst is x^(−1)."
+   ],
+   "uh": "Welke macht van x is gelijk aan 1/x?"
+  },
+  {
+   "v": "Differentieer x⁴.",
+   "o": [
+    "\"4x⁴\"",
+    "\"x³\"",
+    "\"4x³\"",
+    "\"3x⁴\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4x⁴\"\"? Dan laat je de exponent niet verlagen. De exponent wordt 3, dus 4x³. Het goede antwoord is 4x³.",
+    "Koos je \"\"x³\"\"? Dan vergeet je de factor 4. De exponent wordt de coëfficiënt, dus 4x³. Door de stappen goed na te lopen kom je uit op 4x³.",
+    "Klopt: 4 · x^(4−1) = 4x³. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3x⁴\"\"? Dan verwissel je de getallen. De factor is 4 en de exponent 3, dus 4x³. Controleer je stap: de juiste uitkomst is 4x³."
+   ],
+   "uh": "Differentieer x⁴.",
+   "ctx": "Een leerling differentieert machtsfuncties met de regel (xⁿ)' = n·xⁿ⁻¹. Hij doet dat voor f(x) = x⁴, g(x) = x⁷ en h(x) = x^(1/2)."
+  },
+  {
+   "v": "Bereken de afgeleide van x⁷.",
+   "o": [
+    "\"7x⁷\"",
+    "\"7x⁶\"",
+    "\"6x⁷\"",
+    "\"x⁶ (zonder factor 7)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7x⁷\"\"? Dan laat je de exponent niet verlagen. De exponent wordt 6, dus 7x⁶. Het goede antwoord is 7x⁶.",
+    "Klopt: 7 · x^(7−1) = 7x⁶. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6x⁷\"\"? Dan verwissel je de getallen. De factor is 7 en de exponent 6, dus 7x⁶. Door de stappen goed na te lopen kom je uit op 7x⁶.",
+    "Koos je \"\"x⁶ (zonder factor 7)\"\"? Dan vergeet je de factor 7. De exponent wordt de coëfficiënt, dus 7x⁶. Controleer je stap: de juiste uitkomst is 7x⁶."
+   ],
+   "uh": "Bereken de afgeleide van x⁷.",
+   "ctx": "Een leerling differentieert machtsfuncties met de regel (xⁿ)' = n·xⁿ⁻¹. Hij doet dat voor f(x) = x⁴, g(x) = x⁷ en h(x) = x^(1/2)."
+  },
+  {
+   "v": "Bepaal (x^(1/2))'.",
+   "o": [
+    "\"½·x^(1/2)\"",
+    "\"2·x^(−1/2)\"",
+    "\"x^(−1/2)\"",
+    "\"½·x^(−1/2)\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"½·x^(1/2)\"\"? Dan laat je de exponent niet verlagen. 1/2 − 1 = −1/2, dus ½x^(−1/2). Het goede antwoord is ½·x^(−1/2).",
+    "Koos je \"\"2·x^(−1/2)\"\"? Dan draai je de factor om. De factor is de oude exponent ½, dus ½x^(−1/2). Door de stappen goed na te lopen kom je uit op ½·x^(−1/2).",
+    "Koos je \"\"x^(−1/2)\"\"? Dan vergeet je de factor ½. De exponent wordt de coëfficiënt, dus ½x^(−1/2). Controleer je stap: de juiste uitkomst is ½·x^(−1/2).",
+    "Klopt: ½ · x^(1/2 − 1) = ½x^(−1/2). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bepaal (x^(1/2))'.",
+   "ctx": "Een leerling differentieert machtsfuncties met de regel (xⁿ)' = n·xⁿ⁻¹. Hij doet dat voor f(x) = x⁴, g(x) = x⁷ en h(x) = x^(1/2)."
+  },
+  {
+   "v": "Welke afgeleide heeft f(x) = x³ − 4x² + 5x − 7?",
+   "o": [
+    "\"3x² − 8x + 5\"",
+    "\"3x² − 4x + 5\"",
+    "\"3x² − 8x + 5 − 7\"",
+    "\"3x² − 8x\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de constante −7 geeft 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3x² − 4x + 5\"\"? Dan vergeet je de exponent bij 4x². (4x²)' = 8x, dus 3x² − 8x + 5. Het goede antwoord is 3x² − 8x + 5.",
+    "Koos je \"\"3x² − 8x + 5 − 7\"\"? Dan neem je de constante mee. De afgeleide van −7 is 0, dus 3x² − 8x + 5. Door de stappen goed na te lopen kom je uit op 3x² − 8x + 5.",
+    "Koos je \"\"3x² − 8x\"\"? Dan laat je de afgeleide van 5x weg. (5x)' = 5, dus 3x² − 8x + 5. Controleer je stap: de juiste uitkomst is 3x² − 8x + 5."
+   ],
+   "uh": "Welke afgeleide heeft f(x) = x³ − 4x² + 5x − 7?",
+   "ctx": "Een leerling differentieert f(x) = x³ − 4x² + 5x − 7 met de somregel en de verschilregel en berekent daarna f'(0), f'(1) en f'(2)."
+  },
+  {
+   "v": "Bereken f'(0) voor f'(x) = 3x² − 8x + 5.",
+   "o": [
+    "\"−7\"",
+    "\"0\"",
+    "\"5\"",
+    "\"3\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−7\"\"? Dan neem je f(0). f'(0) is de afgeleide in 0, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"0\"\"? Dan vergeet je de constante 5. 3x² − 8x is 0 bij x = 0, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Klopt: 3 · 0 − 8 · 0 + 5 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3\"\"? Dan neem je de coëfficiënt van x². Vul x = 0 in, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Bereken f'(0) voor f'(x) = 3x² − 8x + 5.",
+   "ctx": "Een leerling differentieert f(x) = x³ − 4x² + 5x − 7 met de somregel en de verschilregel en berekent daarna f'(0), f'(1) en f'(2)."
+  },
+  {
+   "v": "Vul x = 1 in dezelfde f'. Welk getal krijg je?",
+   "o": [
+    "\"1\"",
+    "\"0\"",
+    "\"5\"",
+    "\"−1\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1\"\"? Dan tel je de coëfficiënten verkeerd op. 3 − 8 + 5 = 0, dus 0. Het goede antwoord is 0.",
+    "Klopt: 3 − 8 + 5 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5\"\"? Dan neem je f'(0). Vul x = 1 in, dus 0. Door de stappen goed na te lopen kom je uit op 0.",
+    "Koos je \"\"−1\"\"? Dan maak je een rekenfout. 3 − 8 + 5 = 0, dus 0. Controleer je stap: de juiste uitkomst is 0."
+   ],
+   "uh": "Vul x = 1 in dezelfde f'. Welk getal krijg je?",
+   "ctx": "Een leerling differentieert f(x) = x³ − 4x² + 5x − 7 met de somregel en de verschilregel en berekent daarna f'(0), f'(1) en f'(2)."
+  },
+  {
+   "v": "Differentieer 1/x door eerst x^(−1) te schrijven.",
+   "o": [
+    "\"1/x²\"",
+    "\"−1/x\"",
+    "\"−x²\"",
+    "\"−1/x²\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1/x²\"\"? Dan vergeet je het minteken. De factor is −1, dus −1/x². Het goede antwoord is −1/x².",
+    "Koos je \"\"−1/x\"\"? Dan laat je de exponent niet verlagen. De exponent wordt −2, dus −1/x². Door de stappen goed na te lopen kom je uit op −1/x².",
+    "Koos je \"\"−x²\"\"? Dan draai je de breuk om. x^(−2) = 1/x², dus −1/x². Controleer je stap: de juiste uitkomst is −1/x².",
+    "Klopt: (x^(−1))' = −x^(−2) = −1/x². Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Differentieer 1/x door eerst x^(−1) te schrijven.",
+   "ctx": "Een leerling differentieert drie functies die hij eerst als macht schrijft: f(x) = 1/x, g(x) = √x en h(x) = x√x. Hij gebruikt de machtsregel voor rationale exponenten."
+  },
+  {
+   "v": "Bepaal de afgeleide van √x.",
+   "o": [
+    "\"1/(2√x)\"",
+    "\"2√x\"",
+    "\"1/√x\"",
+    "\"½√x\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ½x^(−1/2) = 1/(2√x). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2√x\"\"? Dan draai je de breuk om. ½x^(−1/2) = 1/(2√x), dus 1/(2√x). Het goede antwoord is 1/(2√x).",
+    "Koos je \"\"1/√x\"\"? Dan vergeet je de factor ½. De afgeleide is ½x^(−1/2), dus 1/(2√x). Door de stappen goed na te lopen kom je uit op 1/(2√x).",
+    "Koos je \"\"½√x\"\"? Dan laat je het minteken in de exponent weg. De exponent wordt −1/2, dus 1/(2√x). Controleer je stap: de juiste uitkomst is 1/(2√x)."
+   ],
+   "uh": "Bepaal de afgeleide van √x.",
+   "ctx": "Een leerling differentieert drie functies die hij eerst als macht schrijft: f(x) = 1/x, g(x) = √x en h(x) = x√x. Hij gebruikt de machtsregel voor rationale exponenten."
+  },
+  {
+   "v": "Hoe schrijf je h(x) = x√x als macht?",
+   "o": [
+    "\"x^(1/2)\"",
+    "\"x²\"",
+    "\"x^(3/2)\"",
+    "\"x^(1/3)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x^(1/2)\"\"? Dan laat je de factor x weg. x · x^(1/2) = x^(3/2), dus x^(3/2). Het goede antwoord is x^(3/2).",
+    "Koos je \"\"x²\"\"? Dan kwadrateer je x. x · √x = x^(3/2), dus x^(3/2). Door de stappen goed na te lopen kom je uit op x^(3/2).",
+    "Klopt: x¹ · x^(1/2) = x^(3/2). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x^(1/3)\"\"? Dan gebruik je een verkeerde breuk. De exponenten tellen op, dus x^(3/2). Controleer je stap: de juiste uitkomst is x^(3/2)."
+   ],
+   "uh": "Hoe schrijf je h(x) = x√x als macht?",
+   "ctx": "Een leerling differentieert drie functies die hij eerst als macht schrijft: f(x) = 1/x, g(x) = √x en h(x) = x√x. Hij gebruikt de machtsregel voor rationale exponenten."
+  },
+  {
+   "v": "Differentieer x^(3/2).",
+   "o": [
+    "\"(3/2)·x^(3/2)\"",
+    "\"(3/2)·√x\"",
+    "\"(1/2)·√x\"",
+    "\"(2/3)·√x\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(3/2)·x^(3/2)\"\"? Dan laat je de exponent niet verlagen. 3/2 − 1 = 1/2, dus (3/2)√x. Het goede antwoord is (3/2)·√x.",
+    "Klopt: (3/2)x^(3/2 − 1) = (3/2)x^(1/2). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(1/2)·√x\"\"? Dan neem je een verkeerde factor. De factor is de oude exponent 3/2, dus (3/2)√x. Door de stappen goed na te lopen kom je uit op (3/2)·√x.",
+    "Koos je \"\"(2/3)·√x\"\"? Dan draai je de factor om. De factor is 3/2, dus (3/2)√x. Controleer je stap: de juiste uitkomst is (3/2)·√x."
+   ],
+   "uh": "Differentieer x^(3/2).",
+   "ctx": "Een leerling differentieert drie functies die hij eerst als macht schrijft: f(x) = 1/x, g(x) = √x en h(x) = x√x. Hij gebruikt de machtsregel voor rationale exponenten."
+  },
+  {
+   "v": "Hoe schrijf je f(x) = 1/x + 2√x als machten?",
+   "o": [
+    "\"x + 2x²\"",
+    "\"x^(−2) + 2x^(1/2), zeg maar\"",
+    "\"−x + 2x^(1/2)\"",
+    "\"x^(−1) + 2x^(1/2)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x + 2x²\"\"? Dan verwar je de breuk en de wortel met machten van 1 en 2. 1/x = x^(−1), dus x^(−1) + 2x^(1/2). Het goede antwoord is x^(−1) + 2x^(1/2).",
+    "Koos je \"\"x^(−2) + 2x^(1/2), zeg maar\"\"? Dan verwar je 1/x met 1/x². 1/x = x^(−1), dus x^(−1) + 2x^(1/2). Door de stappen goed na te lopen kom je uit op x^(−1) + 2x^(1/2).",
+    "Koos je \"\"−x + 2x^(1/2)\"\"? Dan maak je er een min van. 1/x = x^(−1), dus x^(−1) + 2x^(1/2). Controleer je stap: de juiste uitkomst is x^(−1) + 2x^(1/2).",
+    "Klopt: 1/x = x^(−1) en √x = x^(1/2). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe schrijf je f(x) = 1/x + 2√x als machten?",
+   "ctx": "Gegeven is f(x) = 1/x + 2√x. Een leerling schrijft f(x) = x^(−1) + 2x^(1/2), differentieert met de som- en machtsregel en berekent f'(4)."
+  },
+  {
+   "v": "Welke afgeleide heeft f(x) = x^(−1) + 2x^(1/2)?",
+   "o": [
+    "\"−x^(−2) + x^(−1/2)\"",
+    "\"x^(−2) + x^(−1/2)\"",
+    "\"−x^(−2) + 2x^(−1/2), eigenlijk\"",
+    "\"−x⁰ + 2x^(1/2)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2 · ½ = 1 en de exponent wordt −1/2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x^(−2) + x^(−1/2)\"\"? Dan vergeet je het minteken bij (x^(−1))'. De factor is −1, dus −x^(−2) + x^(−1/2). Het goede antwoord is −x^(−2) + x^(−1/2).",
+    "Koos je \"\"−x^(−2) + 2x^(−1/2), eigenlijk\"\"? Dan laat je de factor ½ weg. 2 · ½ = 1, dus −x^(−2) + x^(−1/2). Door de stappen goed na te lopen kom je uit op −x^(−2) + x^(−1/2).",
+    "Koos je \"\"−x⁰ + 2x^(1/2)\"\"? Dan laat je de exponent niet goed verlagen. De exponenten worden −2 en −1/2, dus −x^(−2) + x^(−1/2)."
+   ],
+   "uh": "Welke afgeleide heeft f(x) = x^(−1) + 2x^(1/2)?",
+   "ctx": "Gegeven is f(x) = 1/x + 2√x. Een leerling schrijft f(x) = x^(−1) + 2x^(1/2), differentieert met de som- en machtsregel en berekent f'(4)."
+  },
+  {
+   "v": "Welke waarde heeft f'(4) bij f'(x) = −x^(−2) + x^(−1/2)?",
+   "o": [
+    "\"0,5\"",
+    "\"−0,0625\"",
+    "\"0,4375\"",
+    "\"0,5625\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,5\"\"? Dan vergeet je de eerste term. −1/16 + 1/2, dus 0,4375. Het goede antwoord is 0,4375.",
+    "Koos je \"\"−0,0625\"\"? Dan neem je alleen de eerste term. Tel 1/2 erbij, dus 0,4375. Door de stappen goed na te lopen kom je uit op 0,4375.",
+    "Klopt: −1/16 + 1/2 = 7/16. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,5625\"\"? Dan maak je een tekenfout. De eerste term is −1/16, dus 0,4375. Controleer je stap: de juiste uitkomst is 0,4375."
+   ],
+   "uh": "Welke waarde heeft f'(4) bij f'(x) = −x^(−2) + x^(−1/2)?",
+   "ctx": "Gegeven is f(x) = 1/x + 2√x. Een leerling schrijft f(x) = x^(−1) + 2x^(1/2), differentieert met de som- en machtsregel en berekent f'(4)."
+  },
+  {
+   "v": "Welke afgeleide heeft K(q) = 0,1q³ − 2q² + 20q + 50?",
+   "o": [
+    "\"0,3q² − 4q + 20 + 50\"",
+    "\"0,3q² − 4q + 20\"",
+    "\"0,1q² − 2q + 20\"",
+    "\"0,3q³ − 4q² + 20q\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,3q² − 4q + 20 + 50\"\"? Dan neem je de constante mee. De afgeleide van 50 is 0, dus 0,3q² − 4q + 20. Het goede antwoord is 0,3q² − 4q + 20.",
+    "Klopt: de constante 50 verdwijnt. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,1q² − 2q + 20\"\"? Dan vergeet je de exponent als factor. (0,1q³)' = 0,3q², dus 0,3q² − 4q + 20. Door de stappen goed na te lopen kom je uit op 0,3q² − 4q + 20.",
+    "Koos je \"\"0,3q³ − 4q² + 20q\"\"? Dan laat je de exponenten niet verlagen. Elke exponent gaat met 1 omlaag, dus 0,3q² − 4q + 20."
+   ],
+   "uh": "Welke afgeleide heeft K(q) = 0,1q³ − 2q² + 20q + 50?",
+   "ctx": "Een fabrikant heeft kosten K(q) = 0,1q³ − 2q² + 20q + 50 euro bij q stuks. Een leerling differentieert K en berekent K'(10), de marginale kosten bij 10 stuks."
+  },
+  {
+   "v": "Welke waarde heeft K'(10)?",
+   "o": [
+    "\"20\"",
+    "\"30\"",
+    "\"60\"",
+    "\"10\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20\"\"? Dan neem je alleen de laatste term. Vul q = 10 in alle termen in, dus 10. Het goede antwoord is 10.",
+    "Koos je \"\"30\"\"? Dan neem je alleen de eerste term. Tel de andere termen erbij, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+    "Koos je \"\"60\"\"? Dan maak je een rekenfout. 30 − 40 + 20 = 10, dus 10. Controleer je stap: de juiste uitkomst is 10.",
+    "Klopt: 0,3 · 100 − 40 + 20 = 10. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft K'(10)?",
+   "ctx": "Een fabrikant heeft kosten K(q) = 0,1q³ − 2q² + 20q + 50 euro bij q stuks. Een leerling differentieert K en berekent K'(10), de marginale kosten bij 10 stuks."
+  },
+  {
+   "v": "Hoe interpreteer je K'(10) = 10?",
+   "o": [
+    "\"bij 10 stuks nemen de kosten ongeveer 10 euro toe per extra stuk\"",
+    "\"de kosten zijn 10 euro\"",
+    "\"de kosten dalen 10 euro per stuk\"",
+    "\"de gemiddelde kosten over 10 stuks zijn 10 euro, zeg maar, gewoon, volgens mij\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: marginale kosten zijn de afgeleide van de kosten.",
+    "Koos je \"\"de kosten zijn 10 euro\"\"? Dan neem je K'(10) als kosten. K(10) = 70, dus een toename per stuk. Het goede antwoord is bij 10 stuks nemen de kosten ongeveer 10 euro toe per extra stuk.",
+    "Koos je \"\"de kosten dalen 10 euro per stuk\"\"? Dan denk je dat de kosten dalen. K'(10) is positief, dus stijgen. Door de stappen goed na te lopen kom je uit op bij 10 stuks nemen de kosten ongeveer 10 euro toe per extra stuk.",
+    "Koos je \"\"de gemiddelde kosten over 10 stuks zijn 10 euro, zeg maar, gewoon, volgens mij\"\"? Dan denk je aan een gemiddelde over het interval. K' is de verandering op dat moment, dus 10 euro per extra stuk."
+   ],
+   "uh": "Hoe interpreteer je K'(10) = 10?",
+   "ctx": "Een fabrikant heeft kosten K(q) = 0,1q³ − 2q² + 20q + 50 euro bij q stuks. Een leerling differentieert K en berekent K'(10), de marginale kosten bij 10 stuks."
+  },
+  {
+   "v": "Welke afgeleide heeft f(x) = x⁶?",
+   "o": [
+    "\"6x⁶\"",
+    "\"5x⁶\"",
+    "\"6x⁵\"",
+    "\"x⁵\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6x⁶\"\"? Dan laat je de exponent niet verlagen. De exponent wordt 5, dus 6x⁵. Het goede antwoord is 6x⁵.",
+    "Koos je \"\"5x⁶\"\"? Dan verwissel je de getallen. De factor is 6 en de exponent 5, dus 6x⁵. Door de stappen goed na te lopen kom je uit op 6x⁵.",
+    "Klopt: 6 · x^(6−1). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x⁵\"\"? Dan vergeet je de factor 6. De exponent wordt de coëfficiënt, dus 6x⁵. Controleer je stap: de juiste uitkomst is 6x⁵."
+   ],
+   "uh": "Welke afgeleide heeft f(x) = x⁶?",
+   "ctx": "Een leerling controleert zijn afgeleide van f(x) = x⁶ met een differentiequotiënt: hij berekent f'(1) met de regel en vergelijkt dat met het quotiënt op [1; 1,01], waarvoor f(1,01) ≈ 1,06152."
+  },
+  {
+   "v": "Welke waarde heeft f'(1)?",
+   "o": [
+    "\"5\"",
+    "\"6\"",
+    "\"1\"",
+    "\"0 (dat is f'(0))\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5\"\"? Dan neem je de exponent van de afgeleide. 6 · 1 = 6, dus 6. Het goede antwoord is 6.",
+    "Klopt: 6 · 1⁵ = 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1\"\"? Dan neem je f(1). f'(1) = 6 · 1⁵, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+    "Koos je \"\"0 (dat is f'(0))\"\"? Dan neem je f'(0). Vul x = 1 in, dus 6. Controleer je stap: de juiste uitkomst is 6."
+   ],
+   "uh": "Welke waarde heeft f'(1)?",
+   "ctx": "Een leerling controleert zijn afgeleide van f(x) = x⁶ met een differentiequotiënt: hij berekent f'(1) met de regel en vergelijkt dat met het quotiënt op [1; 1,01], waarvoor f(1,01) ≈ 1,06152."
+  },
+  {
+   "v": "Welke waarde heeft het quotiënt op [1; 1,01]?",
+   "o": [
+    "\"0,0615\"",
+    "\"61,52\"",
+    "\"6,0\"",
+    "\"6,152\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,0615\"\"? Dan deel je niet door 0,01. 0,06152 : 0,01, dus 6,152. Het goede antwoord is 6,152.",
+    "Koos je \"\"61,52\"\"? Dan deel je door 0,001. Het interval is 0,01, dus 6,152. Door de stappen goed na te lopen kom je uit op 6,152.",
+    "Koos je \"\"6,0\"\"? Dan neem je f'(1). Het quotiënt is (1,06152 − 1) : 0,01, dus 6,152. Controleer je stap: de juiste uitkomst is 6,152.",
+    "Klopt: (1,06152 − 1) : 0,01 ≈ 6,152. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft het quotiënt op [1; 1,01]?",
+   "ctx": "Een leerling controleert zijn afgeleide van f(x) = x⁶ met een differentiequotiënt: hij berekent f'(1) met de regel en vergelijkt dat met het quotiënt op [1; 1,01], waarvoor f(1,01) ≈ 1,06152."
+  },
+  {
+   "v": "Welke conclusie trek je uit f'(1) = 6 en het quotiënt 6,152?",
+   "o": [
+    "\"het quotiënt nadert f'(1), dus de afgeleide klopt\"",
+    "\"het quotiënt is gelijk aan 1,06152\"",
+    "\"de afgeleide is fout omdat 6,152 ≠ 6\"",
+    "\"het quotiënt heeft niets met f' te maken, volgens mij\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf eerst als macht, gebruik de machtsregel, de som- en verschilregel en controleer met een waarde of een differentiequotiënt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het quotiënt is een benadering van de helling. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"het quotiënt is gelijk aan 1,06152\"\"? Dan verwar je het quotiënt met f(1,01). Het quotiënt is Δy : Δx, dus het nadert f'(1).",
+    "Koos je \"\"de afgeleide is fout omdat 6,152 ≠ 6\"\"? Dan denk je dat ze gelijk moeten zijn. Het quotiënt is een benadering, dus ze naderen elkaar.",
+    "Koos je \"\"het quotiënt heeft niets met f' te maken, volgens mij\"\"? Dan denk je dat het geen verband heeft. Het quotiënt nadert de afgeleide, dus de afgeleide klopt."
+   ],
+   "uh": "Welke conclusie trek je uit f'(1) = 6 en het quotiënt 6,152?",
+   "ctx": "Een leerling controleert zijn afgeleide van f(x) = x⁶ met een differentiequotiënt: hij berekent f'(1) met de regel en vergelijkt dat met het quotiënt op [1; 1,01], waarvoor f(1,01) ≈ 1,06152."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = 2x⁴ − 3x² + x − 5. Een leerling differentieert f met de machtsregel, de somregel en de verschilregel en berekent daarna f'(1) en controleert zijn antwoord.",
+   "v": "Bepaal f'(x) en bereken f'(1).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = 8x³ − 6x + 1, want (2x⁴)' = 8x³, (3x²)' = 6x, x' = 1 en de constante −5 geeft 0 (2p). f'(1) = 8 − 6 + 1 = 3 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = x² + 1/x. Een leerling schrijft 1/x als x^(−1), differentieert f en berekent f'(2). Hij schrijft de afgeleide ook zonder negatieve exponent op.",
+   "v": "Bepaal f'(x) en bereken f'(2).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = 2x − x^(−2) = 2x − 1/x² (2p). f'(2) = 4 − 0,25 = 3,75 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = 3√x − x³. Een leerling schrijft √x als x^(1/2), differentieert f en berekent f'(4). Hij controleert zijn afgeleide met een differentiequotiënt.",
+   "v": "Bepaal f'(x) en bereken f'(4).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f'(x) = (3/2)x^(−1/2) − 3x² = 3/(2√x) − 3x² (2p). f'(4) = 0,75 − 48 = −47,25 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = x√x. Een leerling schrijft f als x^(3/2), bepaalt f'(x) en berekent f'(4) en f'(9). Hij vergelijkt de uitkomsten en beschrijft het verloop van f.",
+   "v": "Bepaal f'(x), f'(4) en f'(9).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f(x) = x^(3/2) en f'(x) = (3/2)√x (1p). f'(4) = 3 en f'(9) = 4,5 (1p). f' neemt toe, dus f stijgt steeds sneller (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De kosten van een bedrijf zijn K(q) = 0,2q² − 3q + 100 euro bij q stuks. Een leerling berekent de marginale kosten K'(q), K'(10) en bepaalt bij welke q de marginale kosten nul zijn.",
+   "v": "Bepaal K'(q), K'(10) en de q waarbij K'(q) = 0.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "K'(q) = 0,4q − 3 (1p). K'(10) = 1 euro per extra stuk (1p). 0,4q − 3 = 0 geeft q = 7,5 (1p)."
+  }
+ ]
+}
