@@ -1,0 +1,682 @@
+{
+ "id": "A1",
+ "lo": "wa.A.1",
+ "gs": 2,
+ "naam": "Informatie zoeken, beoordelen en selecteren, en erover communiceren",
+ "beschrijving": "Je zoekt gericht informatie, beoordeelt bronnen op betrouwbaarheid, actualiteit en belang, rekent met procent en procentpunt, herkent misleidende grafieken en rapporteert met eenheid en bronvermelding.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Gericht zoeken",
+  "Bronnen beoordelen",
+  "Procent en procentpunt",
+  "Misleidende presentaties",
+  "Communiceren en rapporteren"
+ ],
+ "sam": "Zoek gericht met onderwerp, plaats, jaar en eenheid. Beoordeel een bron op auteur, methode, actualiteit en belang van de maker. Maak onderscheid tussen procent en procentpunt, let op de marge en op een afgeknotte as en reken eenheden om. Rapporteer met tussenstappen, eenheid en bronvermelding.",
+ "begrippen": [
+  {
+   "t": "Zoekopdracht",
+   "d": "Trefwoorden die onderwerp, plaats, jaar en eenheid noemen."
+  },
+  {
+   "t": "Bron",
+   "d": "De herkomst van informatie, zoals een rapport, een website of een forum."
+  },
+  {
+   "t": "Betrouwbaarheid",
+   "d": "Of de bron auteur, methode en bronnen noemt en dus te controleren is."
+  },
+  {
+   "t": "Actualiteit",
+   "d": "Of de gegevens recent genoeg zijn voor de vraag."
+  },
+  {
+   "t": "Belang van de maker",
+   "d": "Wat de maker wil, zoals verkopen of overtuigen."
+  },
+  {
+   "t": "Relevantie",
+   "d": "Of een gegeven nodig is voor de vraag."
+  },
+  {
+   "t": "Procentpunt",
+   "d": "Het verschil tussen twee percentages, zoals 46% − 43% = 3 procentpunt."
+  },
+  {
+   "t": "Relatieve verandering",
+   "d": "Het verschil gedeeld door de beginwaarde, zoals 0,04 : 0,20 = 20%."
+  },
+  {
+   "t": "Marge",
+   "d": "De onzekerheid bij een peiling, bijvoorbeeld ±3 procentpunt."
+  },
+  {
+   "t": "Afgeknotte as",
+   "d": "Een as die niet bij 0 begint en verschillen groter laat lijken."
+  },
+  {
+   "t": "Eenheden omrekenen",
+   "d": "Gegevens in dezelfde eenheid zetten, zoals €2400 per maand naar €28 800 per jaar."
+  },
+  {
+   "t": "Citeren en bronvermelding",
+   "d": "Letterlijke tekst tussen aanhalingstekens met de bron erbij."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zoekopdracht is het meest gericht om de gemiddelde huurprijs in Utrecht in 2025 te vinden?",
+   "o": [
+    "\"huur\"",
+    "\"gemiddelde huurprijs Utrecht 2025 per maand\"",
+    "\"wonen in Utrecht, denk ik, zeg maar, gewoon\"",
+    "\"is huren duur\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"huur\"\"? Dan kies je één los woord. Dan komen er duizenden niet-relevante resultaten, dus voeg plaats, jaar en eenheid toe.",
+    "Klopt: onderwerp, plaats, jaar en eenheid staan erin. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"wonen in Utrecht, denk ik, zeg maar, gewoon\"\"? Dan noem je alleen de plaats. Het onderwerp huurprijs ontbreekt, dus noem huurprijs, jaar en eenheid.",
+    "Koos je \"\"is huren duur\"\"? Dan stel je een algemene vraag. Daar komen meningen op terug in plaats van cijfers, dus zoek op gemiddelde huurprijs."
+   ],
+   "uh": "Welke zoekopdracht is het meest gericht om de gemiddelde huurprijs in Utrecht in 2025 te vinden?"
+  },
+  {
+   "v": "Waaraan zie je het snelst dat een bron zwak is?",
+   "o": [
+    "\"de bron bevat veel tekst\"",
+    "\"de bron staat op internet, to be honest, you know, I think\"",
+    "\"de bron bevat cijfers\"",
+    "\"geen auteur, geen jaartal en geen bronvermelding\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de bron bevat veel tekst\"\"? Dan laat je de lengte meetellen. Lang is niet hetzelfde als betrouwbaar, dus kijk naar auteur, jaartal en bronnen.",
+    "Koos je \"\"de bron staat op internet, to be honest, you know, I think\"\"? Dan denk je dat het medium telt. Ook goede bronnen staan online, dus kijk naar herkomst.",
+    "Koos je \"\"de bron bevat cijfers\"\"? Dan denk je dat cijfers een nadeel zijn. Cijfers zijn juist nuttig, dus kijk naar herkomst en methode.",
+    "Klopt: dan kun je de herkomst en actualiteit niet controleren."
+   ],
+   "uh": "Waaraan zie je het snelst dat een bron zwak is?"
+  },
+  {
+   "v": "Wat bedoel je met: een bron heeft een belang?",
+   "o": [
+    "\"de maker wil iets verkopen of overtuigen, en kiest daarom bepaalde gegevens\"",
+    "\"de bron is altijd onwaar, zeg maar, gewoon, volgens mij\"",
+    "\"de bron is verouderd\"",
+    "\"de bron is erg lang\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dat kan de selectie van gegevens kleuren. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de bron is altijd onwaar, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat belang betekent dat alles fout is. Het betekent dat je extra kritisch leest, dus kijk wat de maker wil.",
+    "Koos je \"\"de bron is verouderd\"\"? Dan verwar je belang met actualiteit. Belang gaat over het doel van de maker, dus wat de maker wil bereiken.",
+    "Koos je \"\"de bron is erg lang\"\"? Dan verwar je belang met omvang. Belang gaat over het doel van de maker, dus overtuigen of verkopen."
+   ],
+   "uh": "Wat bedoel je met: een bron heeft een belang?"
+  },
+  {
+   "v": "Je berekent de prijs per liter. Welke twee gegevens heb je nodig?",
+   "o": [
+    "\"het merk en de kleur\"",
+    "\"het gewicht en de vorm, you know\"",
+    "\"de prijs en het aantal liter\"",
+    "\"alleen de prijs\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het merk en de kleur\"\"? Dan neem je gegevens zonder verband met de berekening. Die zijn niet nodig, dus prijs en aantal liter.",
+    "Koos je \"\"het gewicht en de vorm, you know\"\"? Dan neem je kenmerken die niets zeggen over de prijs per liter. Je hebt prijs en volume nodig, dus prijs en aantal liter.",
+    "Klopt: prijs gedeeld door het aantal liter. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"alleen de prijs\"\"? Dan laat je het aantal liter weg. Een prijs per liter heeft ook het volume nodig, dus prijs en aantal liter."
+   ],
+   "uh": "Je berekent de prijs per liter. Welke twee gegevens heb je nodig?"
+  },
+  {
+   "v": "Wat is het verschil tussen een procent en een procentpunt?",
+   "o": [
+    "\"ze betekenen hetzelfde\"",
+    "\"een procentpunt is het verschil tussen twee percentages, een procent is een relatieve verandering\"",
+    "\"een procentpunt is een honderdste procent, gewoon, volgens mij, eigenlijk\"",
+    "\"een procent is altijd groter\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ze betekenen hetzelfde\"\"? Dan denk je dat het synoniemen zijn. Een procentpunt vergelijkt twee percentages direct, dus ze verschillen.",
+    "Klopt: 20% naar 25% is 5 procentpunt, en een relatieve stijging van 25%.",
+    "Koos je \"\"een procentpunt is een honderdste procent, gewoon, volgens mij, eigenlijk\"\"? Dan verwar je procentpunt met promille of andere eenheden. Een procentpunt is het verschil tussen twee percentages, dus een eigen eenheid.",
+    "Koos je \"\"een procent is altijd groter\"\"? Dan denk je dat de ene eenheid groter is. Het gaat om wat je vergelijkt, dus procentpunt of relatief procent."
+   ],
+   "uh": "Wat is het verschil tussen een procent en een procentpunt?"
+  },
+  {
+   "v": "Een percentage stijgt van 20% naar 25%. Hoe groot is de stijging in procentpunt?",
+   "o": [
+    "\"25 procentpunt, I think\"",
+    "\"20 procentpunt\"",
+    "\"4 procentpunt\"",
+    "\"5 procentpunt\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"25 procentpunt, I think\"\"? Dan neem je de relatieve stijging als procentpunt. 5 : 20 = 25% is een relatieve stijging, dus 5 procentpunt.",
+    "Koos je \"\"20 procentpunt\"\"? Dan neem je het beginpercentage. De stijging is het verschil 25 − 20, dus 5 procentpunt. Door de stappen goed na te lopen kom je uit op 5 procentpunt.",
+    "Koos je \"\"4 procentpunt\"\"? Dan deel je 20 door 5. Het verschil is 25 − 20, dus 5 procentpunt. Controleer je stap: de juiste uitkomst is 5 procentpunt.",
+    "Klopt: 25 − 20 = 5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een percentage stijgt van 20% naar 25%. Hoe groot is de stijging in procentpunt?"
+  },
+  {
+   "v": "Hoe neem je een zin letterlijk uit een bron over in je verslag?",
+   "o": [
+    "\"tussen aanhalingstekens, met bronvermelding\"",
+    "\"zonder aanhalingstekens, met je eigen naam, volgens mij\"",
+    "\"in een andere lettergrootte\"",
+    "\"zonder bron als het kort is\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: zo is duidelijk dat de tekst van een ander is. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"zonder aanhalingstekens, met je eigen naam, volgens mij\"\"? Dan zet dit je je eigen naam bij andermans tekst. Dat is misleidend, dus aanhalingstekens en bron.",
+    "Koos je \"\"in een andere lettergrootte\"\"? Dan denk je dat de opmaak volstaat. Een citaat markeer je met aanhalingstekens en bron, dus aanhalingstekens en bron.",
+    "Koos je \"\"zonder bron als het kort is\"\"? Dan denk je dat een korte zin geen bron nodig heeft. Ook korte citaten hebben een bron, dus met bronvermelding."
+   ],
+   "uh": "Hoe neem je een zin letterlijk uit een bron over in je verslag?"
+  },
+  {
+   "v": "Welke bron is het meest betrouwbaar voor het werkstuk?",
+   "o": [
+    "\"de website van de autodealer\"",
+    "\"het forumbericht\"",
+    "\"het CBS-rapport uit 2025\"",
+    "\"alle drie even\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de website van de autodealer\"\"? Dan kies je een bron met belang bij hoge cijfers. De dealer verkoopt auto's, dus het CBS-rapport.",
+    "Koos je \"\"het forumbericht\"\"? Dan kies je een bron zonder herkomst. Niemand staat in voor de gegevens, dus het CBS-rapport.",
+    "Klopt: het is recent en noemt definities en meetmethode.",
+    "Koos je \"\"alle drie even\"\"? Dan denk je dat de bronnen gelijkwaardig zijn. Ze verschillen in herkomst en doel, dus het CBS-rapport."
+   ],
+   "uh": "Welke bron is het meest betrouwbaar voor het werkstuk?",
+   "ctx": "Voor een werkstuk economie onderzoekt een leerling of het aantal huishoudens met een elektrische auto stijgt. Hij vindt drie bronnen: een rapport van het CBS uit 2025 met definities en meetmethode, de website van een autodealer en een forumbericht zonder auteur en zonder bronnen."
+  },
+  {
+   "v": "Waarom is het forumbericht zonder auteur en bronnen zwak?",
+   "o": [
+    "\"omdat een forum altijd fout is\"",
+    "\"je kunt de herkomst en juistheid niet controleren\"",
+    "\"omdat het bericht te kort is\"",
+    "\"omdat het bericht cijfers noemt, eigenlijk, denk ik\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat een forum altijd fout is\"\"? Dan denk je dat fora altijd fout zijn. Dat is niet zo, maar zonder bron is controle onmogelijk.",
+    "Klopt: zonder bronnen is niets na te gaan. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat het bericht te kort is\"\"? Dan denk je dat de lengte telt. Het probleem is de herkomst, dus controle. Door de stappen goed na te lopen kom je uit op je kunt de herkomst en juistheid niet controleren.",
+    "Koos je \"\"omdat het bericht cijfers noemt, eigenlijk, denk ik\"\"? Dan denk je dat cijfers het probleem zijn. Zonder bron zijn ze niet te toetsen, dus controle."
+   ],
+   "uh": "Waarom is het forumbericht zonder auteur en bronnen zwak?",
+   "ctx": "Voor een werkstuk economie onderzoekt een leerling of het aantal huishoudens met een elektrische auto stijgt. Hij vindt drie bronnen: een rapport van het CBS uit 2025 met definities en meetmethode, de website van een autodealer en een forumbericht zonder auteur en zonder bronnen."
+  },
+  {
+   "v": "Welke zoekopdracht vindt het snelst het aantal huishoudens met een elektrische auto?",
+   "o": [
+    "\"elektrisch\"",
+    "\"is een elektrische auto goed, gewoon, volgens mij, eigenlijk\"",
+    "\"auto kopen\"",
+    "\"aantal huishoudens met elektrische auto CBS per jaar\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"elektrisch\"\"? Dan kies je één los woord. Het is veel te breed, dus voeg onderwerp en bron toe. Het goede antwoord is aantal huishoudens met elektrische auto CBS per jaar.",
+    "Koos je \"\"is een elektrische auto goed, gewoon, volgens mij, eigenlijk\"\"? Dan stel je een algemene vraag. Er komen meningen en geen cijfers, dus zoek op aantallen per jaar.",
+    "Koos je \"\"auto kopen\"\"? Dan zoek je naar een ander onderwerp. Het gaat om huishoudens met een elektrische auto, dus zoek op aantal huishoudens.",
+    "Klopt: onderwerp, bron en periode staan erin. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke zoekopdracht vindt het snelst het aantal huishoudens met een elektrische auto?",
+   "ctx": "Voor een werkstuk economie onderzoekt een leerling of het aantal huishoudens met een elektrische auto stijgt. Hij vindt drie bronnen: een rapport van het CBS uit 2025 met definities en meetmethode, de website van een autodealer en een forumbericht zonder auteur en zonder bronnen."
+  },
+  {
+   "v": "Waar let je vooral op bij de website van de dealer?",
+   "o": [
+    "\"de dealer verkoopt auto's en heeft belang bij hoge cijfers\"",
+    "\"de website is mooi opgemaakt\"",
+    "\"de website heeft veel bezoekers\"",
+    "\"de website noemt een telefoonnummer, denk ik, zeg maar, gewoon\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je leest de cijfers kritisch en zoekt een onafhankelijke bron erbij.",
+    "Koos je \"\"de website is mooi opgemaakt\"\"? Dan laat je de vormgeving meetellen. Uiterlijk zegt niets over juistheid, dus let op het belang.",
+    "Koos je \"\"de website heeft veel bezoekers\"\"? Dan laat je populariteit meetellen. Veel bezoek is geen bewijs, dus let op het belang.",
+    "Koos je \"\"de website noemt een telefoonnummer, denk ik, zeg maar, gewoon\"\"? Dan kijk je naar contactgegevens. Dat zegt niets over de gegevens zelf, dus let op het belang."
+   ],
+   "uh": "Waar let je vooral op bij de website van de dealer?",
+   "ctx": "Voor een werkstuk economie onderzoekt een leerling of het aantal huishoudens met een elektrische auto stijgt. Hij vindt drie bronnen: een rapport van het CBS uit 2025 met definities en meetmethode, de website van een autodealer en een forumbericht zonder auteur en zonder bronnen."
+  },
+  {
+   "v": "Hoeveel procentpunt is 46% hoger dan 43%?",
+   "o": [
+    "\"7 procentpunt\"",
+    "\"43 procentpunt, to be honest\"",
+    "\"3 procentpunt\"",
+    "\"46 procentpunt\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7 procentpunt\"\"? Dan neem je de relatieve stijging. Het verschil is 46 − 43, dus 3 procentpunt. Het goede antwoord is 3 procentpunt.",
+    "Koos je \"\"43 procentpunt, to be honest\"\"? Dan neem je het eerste percentage. Het verschil is 46 − 43, dus 3 procentpunt. Door de stappen goed na te lopen kom je uit op 3 procentpunt.",
+    "Klopt: 46 − 43 = 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"46 procentpunt\"\"? Dan neem je het tweede percentage. Het verschil is 46 − 43, dus 3 procentpunt. Controleer je stap: de juiste uitkomst is 3 procentpunt."
+   ],
+   "uh": "Hoeveel procentpunt is 46% hoger dan 43%?",
+   "ctx": "Een peiling onder 1000 mensen meldt dat 46% een maatregel steunt, met een marge van ±3 procentpunt. Een maand eerder meldde een peiling met dezelfde opzet 43% steun. Een leerling wil weten of de steun is gestegen."
+  },
+  {
+   "v": "Met hoeveel procent is de steun relatief gestegen van 43% naar 46%, op één decimaal?",
+   "o": [
+    "\"3,0%\"",
+    "\"7,0%\"",
+    "\"6,5%\"",
+    "\"43%\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3,0%\"\"? Dan neem je het verschil in procentpunt. Deel het verschil door 43, dus 7,0%. Het goede antwoord is 7,0%.",
+    "Klopt: 3 : 43 ≈ 0,0698. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6,5%\"\"? Dan deel je door 46. De relatieve stijging is ten opzichte van het begin 43, dus 7,0%. Door de stappen goed na te lopen kom je uit op 7,0%.",
+    "Koos je \"\"43%\"\"? Dan neem je het beginpercentage. De relatieve stijging is 3 : 43, dus 7,0%. Controleer je stap: de juiste uitkomst is 7,0%."
+   ],
+   "uh": "Met hoeveel procent is de steun relatief gestegen van 43% naar 46%, op één decimaal?",
+   "ctx": "Een peiling onder 1000 mensen meldt dat 46% een maatregel steunt, met een marge van ±3 procentpunt. Een maand eerder meldde een peiling met dezelfde opzet 43% steun. Een leerling wil weten of de steun is gestegen."
+  },
+  {
+   "v": "Mag de leerling concluderen dat de steun is gestegen?",
+   "o": [
+    "\"ja, want 46 is groter dan 43\"",
+    "\"ja, want de peiling heeft 1000 mensen, you know, I think, I suppose\"",
+    "\"nee, want een peiling zegt nooit iets\"",
+    "\"nee, het verschil van 3 procentpunt valt binnen de marge van ±3 procentpunt\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ja, want 46 is groter dan 43\"\"? Dan kijk je alleen naar de getallen. Je moet de marge meewegen, dus niet zeker.",
+    "Koos je \"\"ja, want de peiling heeft 1000 mensen, you know, I think, I suppose\"\"? Dan denk je dat een grote steekproef elke conclusie toestaat. De marge blijft, dus niet zeker.",
+    "Koos je \"\"nee, want een peiling zegt nooit iets\"\"? Dan denk je dat peilingen waardeloos zijn. Ze geven een schatting met marge, dus alleen niet zeker.",
+    "Klopt: een verschil binnen de marge kan toeval zijn. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Mag de leerling concluderen dat de steun is gestegen?",
+   "ctx": "Een peiling onder 1000 mensen meldt dat 46% een maatregel steunt, met een marge van ±3 procentpunt. Een maand eerder meldde een peiling met dezelfde opzet 43% steun. Een leerling wil weten of de steun is gestegen."
+  },
+  {
+   "v": "Hoeveel euro per kWh is de prijs gestegen?",
+   "o": [
+    "\"€0,04\"",
+    "\"€0,24\"",
+    "\"€0,20\"",
+    "\"€0,44\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 0,24 − 0,20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€0,24\"\"? Dan neem je de nieuwe prijs. De stijging is het verschil, dus €0,04. Het goede antwoord is €0,04.",
+    "Koos je \"\"€0,20\"\"? Dan neem je de oude prijs. De stijging is het verschil, dus €0,04. Door de stappen goed na te lopen kom je uit op €0,04.",
+    "Koos je \"\"€0,44\"\"? Dan tel je de prijzen op. De stijging is het verschil, dus €0,04. Controleer je stap: de juiste uitkomst is €0,04."
+   ],
+   "uh": "Hoeveel euro per kWh is de prijs gestegen?",
+   "ctx": "Een energiebedrijf meldt: de prijs steeg van €0,20 naar €0,24 per kWh en dat is slechts 4 procent. Een leerling controleert die bewering en berekent wat de stijging een huishouden met 3000 kWh per jaar kost."
+  },
+  {
+   "v": "Met hoeveel procent is de prijs gestegen?",
+   "o": [
+    "\"4%\"",
+    "\"24%\"",
+    "\"20%\"",
+    "\"0,2%\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4%\"\"? Dan neem je 0,04 als percentage. Deel de stijging door de oude prijs, dus 20%. Het goede antwoord is 20%.",
+    "Koos je \"\"24%\"\"? Dan neem je de nieuwe prijs als percentage. De stijging is relatief ten opzichte van 0,20, dus 20%. Door de stappen goed na te lopen kom je uit op 20%.",
+    "Klopt: 0,04 : 0,20 = 0,20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,2%\"\"? Dan verplaats je de komma verkeerd. 0,04 : 0,20 = 0,20, dus 20%. Controleer je stap: de juiste uitkomst is 20%."
+   ],
+   "uh": "Met hoeveel procent is de prijs gestegen?",
+   "ctx": "Een energiebedrijf meldt: de prijs steeg van €0,20 naar €0,24 per kWh en dat is slechts 4 procent. Een leerling controleert die bewering en berekent wat de stijging een huishouden met 3000 kWh per jaar kost."
+  },
+  {
+   "v": "Wat kost de stijging een huishouden met 3000 kWh per jaar extra?",
+   "o": [
+    "\"€12 per jaar\"",
+    "\"€120 per jaar\"",
+    "\"€720 per jaar\"",
+    "\"€0,04 per jaar, volgens mij\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€12 per jaar\"\"? Dan verplaats je de komma verkeerd. 3000 × 0,04 = 120, dus €120 per jaar. Het goede antwoord is €120 per jaar.",
+    "Klopt: 3000 × 0,04. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€720 per jaar\"\"? Dan neem je de nieuwe jaarkosten. De extra kosten zijn het verschil, dus €120 per jaar. Door de stappen goed na te lopen kom je uit op €120 per jaar.",
+    "Koos je \"\"€0,04 per jaar, volgens mij\"\"? Dan neem je de prijsstijging per kWh. Vermenigvuldig met 3000, dus €120 per jaar. Controleer je stap: de juiste uitkomst is €120 per jaar."
+   ],
+   "uh": "Wat kost de stijging een huishouden met 3000 kWh per jaar extra?",
+   "ctx": "Een energiebedrijf meldt: de prijs steeg van €0,20 naar €0,24 per kWh en dat is slechts 4 procent. Een leerling controleert die bewering en berekent wat de stijging een huishouden met 3000 kWh per jaar kost."
+  },
+  {
+   "v": "Met hoeveel procent steeg het aantal studenten van 2021 naar 2023?",
+   "o": [
+    "\"300%\"",
+    "\"5,7%\"",
+    "\"0,6%\"",
+    "\"6%\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"300%\"\"? Dan neem je het verschil als percentage. Deel door 5000, dus 6%. Het goede antwoord is 6%.",
+    "Koos je \"\"5,7%\"\"? Dan deel je door 5300. De relatieve stijging is ten opzichte van het begin, dus 6%. Door de stappen goed na te lopen kom je uit op 6%.",
+    "Koos je \"\"0,6%\"\"? Dan verplaats je de komma verkeerd. 300 : 5000 = 0,06, dus 6%. Controleer je stap: de juiste uitkomst is 6%.",
+    "Klopt: 300 : 5000 = 0,06. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Met hoeveel procent steeg het aantal studenten van 2021 naar 2023?",
+   "ctx": "Een universiteit toont een staafdiagram van het aantal studenten: 5000 in 2021, 5100 in 2022 en 5300 in 2023. De verticale as begint bij 4800. Een leerling beoordeelt de presentatie en rekent de werkelijke groei uit."
+  },
+  {
+   "v": "Hoeveel keer zo hoog lijkt de staaf van 2023 ten opzichte van die van 2021 als de as bij 4800 begint?",
+   "o": [
+    "\"2,5 keer\"",
+    "\"1,06 keer, you know\"",
+    "\"1,1 keer\"",
+    "\"5 keer\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (5300 − 4800) : (5000 − 4800) = 500 : 200. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,06 keer, you know\"\"? Dan neem je de echte verhouding 5300 : 5000. Met de afgeknotte as zie je 500 en 200, dus 2,5 keer.",
+    "Koos je \"\"1,1 keer\"\"? Dan neem je een afronding van de echte groei. De zichtbare staven zijn 500 en 200, dus 2,5 keer. Door de stappen goed na te lopen kom je uit op 2,5 keer.",
+    "Koos je \"\"5 keer\"\"? Dan deel je 5300 door 4800 en 1000 verkeerd. De zichtbare staven zijn 500 en 200, dus 2,5 keer. Controleer je stap: de juiste uitkomst is 2,5 keer."
+   ],
+   "uh": "Hoeveel keer zo hoog lijkt de staaf van 2023 ten opzichte van die van 2021 als de as bij 4800 begint?",
+   "ctx": "Een universiteit toont een staafdiagram van het aantal studenten: 5000 in 2021, 5100 in 2022 en 5300 in 2023. De verticale as begint bij 4800. Een leerling beoordeelt de presentatie en rekent de werkelijke groei uit."
+  },
+  {
+   "v": "Wat is misleidend aan het staafdiagram?",
+   "o": [
+    "\"het diagram heeft staven\"",
+    "\"de studentenaantallen zijn onjuist, gewoon, volgens mij, eigenlijk\"",
+    "\"de as begint bij 4800, waardoor kleine verschillen groot lijken\"",
+    "\"de jaartallen ontbreken\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het diagram heeft staven\"\"? Dan denk je dat staven fout zijn. Het probleem is de as, dus de afgeknotte as. Het goede antwoord is de as begint bij 4800, waardoor kleine verschillen groot lijken.",
+    "Koos je \"\"de studentenaantallen zijn onjuist, gewoon, volgens mij, eigenlijk\"\"? Dan denk je aan een rekenfout. De waarden zijn juist, maar de as vertekent.",
+    "Klopt: een afgeknotte as vergroot de verhouding tussen de staven.",
+    "Koos je \"\"de jaartallen ontbreken\"\"? Dan denk je dat jaren ontbreken. De jaren staan erbij, maar de as vertekent. Controleer je stap: de juiste uitkomst is de as begint bij 4800, waardoor kleine verschillen groot lijken."
+   ],
+   "uh": "Wat is misleidend aan het staafdiagram?",
+   "ctx": "Een universiteit toont een staafdiagram van het aantal studenten: 5000 in 2021, 5100 in 2022 en 5300 in 2023. De verticale as begint bij 4800. Een leerling beoordeelt de presentatie en rekent de werkelijke groei uit."
+  },
+  {
+   "v": "Hoe kan de universiteit het eerlijker tonen?",
+   "o": [
+    "\"de as nog hoger laten beginnen, denk ik, zeg maar, gewoon\"",
+    "\"de verticale as bij 0 laten beginnen en de groei in procenten noemen\"",
+    "\"de staven dikker maken\"",
+    "\"de jaartallen weglaten\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de as nog hoger laten beginnen, denk ik, zeg maar, gewoon\"\"? Dan vergroot je de vertekening. Een hogere beginwaarde vergroot het verschil, dus bij 0.",
+    "Klopt: dan zijn de staven in juiste verhouding. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de staven dikker maken\"\"? Dan verander je de vormgeving. Het probleem is de as, dus bij 0. Door de stappen goed na te lopen kom je uit op de verticale as bij 0 laten beginnen en de groei in procenten noemen.",
+    "Koos je \"\"de jaartallen weglaten\"\"? Dan verwijder je informatie. Het probleem is de as, dus bij 0 en groei in procenten."
+   ],
+   "uh": "Hoe kan de universiteit het eerlijker tonen?",
+   "ctx": "Een universiteit toont een staafdiagram van het aantal studenten: 5000 in 2021, 5100 in 2022 en 5300 in 2023. De verticale as begint bij 4800. Een leerling beoordeelt de presentatie en rekent de werkelijke groei uit."
+  },
+  {
+   "v": "Welke drie dingen ontbreken in de verslagregel van de leerling?",
+   "o": [
+    "\"alleen een titel\"",
+    "\"een kleurenfoto en een grafiek, volgens mij, eigenlijk, denk ik\"",
+    "\"alleen het jaartal\"",
+    "\"aanhalingstekens bij het citaat, een bronvermelding en een eenheid bij 6,8\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen een titel\"\"? Dan zoek je het probleem bij de kop van het verslag. De kop is hier niet het punt, het gaat om de ontbrekende aanhalingstekens, bron en eenheid.",
+    "Koos je \"\"een kleurenfoto en een grafiek, volgens mij, eigenlijk, denk ik\"\"? Dan denk je aan versiering van het verslag. Plaatjes maken de inhoud niet controleerbaar, terwijl citaatmarkering, bron en eenheid ontbreken.",
+    "Koos je \"\"alleen het jaartal\"\"? Dan noem je maar één gegeven. Dat jaartal zegt niets over de zin en het getal, want er ontbreken er drie.",
+    "Klopt: zonder deze drie is het verslag niet controleerbaar."
+   ],
+   "uh": "Welke drie dingen ontbreken in de verslagregel van de leerling?",
+   "ctx": "Een leerling schrijft een verslag over het energieverbruik van zijn school. Hij neemt een zin van een website letterlijk over zonder aanhalingstekens en schrijft als eindantwoord: Het verbruik is 6,8. Er staat geen eenheid en geen bron bij."
+  },
+  {
+   "v": "Welk eindantwoord is het best voor het energieverbruik van de school?",
+   "o": [
+    "\"Het verbruik is 6,8 GWh per jaar (bron: jaarverslag van de school)\"",
+    "\"Het verbruik is 6,8\"",
+    "\"Het verbruik is groot (bron: jaarverslag), zeg maar, gewoon, volgens mij\"",
+    "\"Het verbruik is 6,8 GWh per jaar\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: getal, eenheid en bron staan erbij. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"Het verbruik is 6,8\"\"? Dan vergeet je eenheid en bron. Zonder eenheid betekent 6,8 niets, dus getal, eenheid en bron.",
+    "Koos je \"\"Het verbruik is groot (bron: jaarverslag), zeg maar, gewoon, volgens mij\"\"? Dan noem je geen getal. Een eindantwoord bevat de gemeten waarde, dus 6,8 GWh per jaar.",
+    "Koos je \"\"Het verbruik is 6,8 GWh per jaar\"\"? Dan laat je de bron weg. Een lezer moet kunnen nagaan waar het vandaan komt, dus met bron."
+   ],
+   "uh": "Welk eindantwoord is het best voor het energieverbruik van de school?",
+   "ctx": "Een leerling schrijft een verslag over het energieverbruik van zijn school. Hij neemt een zin van een website letterlijk over zonder aanhalingstekens en schrijft als eindantwoord: Het verbruik is 6,8. Er staat geen eenheid en geen bron bij."
+  },
+  {
+   "v": "Hoeveel euro per jaar komt overeen met €2400 per maand?",
+   "o": [
+    "\"€2412\"",
+    "\"€200\"",
+    "\"€28 800\"",
+    "\"€14 400, you know\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€2412\"\"? Dan tel je 12 op bij 2400. Je moet vermenigvuldigen met 12, dus €28 800. Het goede antwoord is €28 800.",
+    "Koos je \"\"€200\"\"? Dan deel je 2400 door 12. Van maand naar jaar vermenigvuldig je, dus €28 800. Door de stappen goed na te lopen kom je uit op €28 800.",
+    "Klopt: 2400 × 12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€14 400, you know\"\"? Dan vermenigvuldig je met 6. Een jaar heeft 12 maanden, dus €28 800. Controleer je stap: de juiste uitkomst is €28 800."
+   ],
+   "uh": "Hoeveel euro per jaar komt overeen met €2400 per maand?",
+   "ctx": "Bron A meldt een gemiddeld inkomen van €2400 per maand. Bron B meldt voor dezelfde groep €28 800 per jaar. Een leerling wil de bronnen vergelijken en rekent daarna een jaarbedrag van €31 200 om naar een maandbedrag."
+  },
+  {
+   "v": "Spreken bron A en bron B elkaar tegen?",
+   "o": [
+    "\"ja, want 28 800 is veel groter dan 2400, really\"",
+    "\"nee, €2400 per maand is €28 800 per jaar\"",
+    "\"ja, want bronnen verschillen altijd\"",
+    "\"dat is niet te zeggen\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ja, want 28 800 is veel groter dan 2400, really\"\"? Dan vergelijk je de getallen zonder eenheid. De ene is per maand en de andere per jaar, dus ze komen overeen.",
+    "Klopt: dezelfde waarde in verschillende eenheden. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"ja, want bronnen verschillen altijd\"\"? Dan denk je dat verschillende bronnen elkaar tegenspreken. Hier gaat het om eenheden, dus ze komen overeen.",
+    "Koos je \"\"dat is niet te zeggen\"\"? Dan denk je dat de gegevens onvergelijkbaar zijn. Je kunt ze omrekenen, dus ze komen overeen."
+   ],
+   "uh": "Spreken bron A en bron B elkaar tegen?",
+   "ctx": "Bron A meldt een gemiddeld inkomen van €2400 per maand. Bron B meldt voor dezelfde groep €28 800 per jaar. Een leerling wil de bronnen vergelijken en rekent daarna een jaarbedrag van €31 200 om naar een maandbedrag."
+  },
+  {
+   "v": "Welk bedrag per maand hoort bij €31 200 per jaar?",
+   "o": [
+    "\"€374 400\"",
+    "\"€260\"",
+    "\"€31 188\"",
+    "\"€2600\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€374 400\"\"? Dan vermenigvuldig je met 12. Van jaar naar maand deel je, dus €2600. Het goede antwoord is €2600.",
+    "Koos je \"\"€260\"\"? Dan verplaats je de komma verkeerd. 31 200 : 12 = 2600, dus €2600. Door de stappen goed na te lopen kom je uit op €2600.",
+    "Koos je \"\"€31 188\"\"? Dan trek je 12 af. Je moet delen door 12, dus €2600. Controleer je stap: de juiste uitkomst is €2600.",
+    "Klopt: 31 200 : 12. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk bedrag per maand hoort bij €31 200 per jaar?",
+   "ctx": "Bron A meldt een gemiddeld inkomen van €2400 per maand. Bron B meldt voor dezelfde groep €28 800 per jaar. Een leerling wil de bronnen vergelijken en rekent daarna een jaarbedrag van €31 200 om naar een maandbedrag."
+  },
+  {
+   "v": "Hoe noteer je het bedrag per maand in je verslag?",
+   "o": [
+    "\"€2600 per maand (31 200 : 12, bron B)\"",
+    "\"2600\"",
+    "\"€2600 per jaar\"",
+    "\"€2600 per maand, volgens mij, eigenlijk\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Kijk wie de bron is en wat de maker wil, controleer of de gegevens passen bij jouw vraag, reken om naar dezelfde eenheid en noteer je antwoord met eenheid en bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: getal, eenheid, berekening en bron. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2600\"\"? Dan vergeet je eenheid en bron. Zonder eenheid is het getal niet bruikbaar, dus met eenheid en bron. Het goede antwoord is €2600 per maand (31 200 : 12, bron B).",
+    "Koos je \"\"€2600 per jaar\"\"? Dan noteer je de verkeerde eenheid. Het bedrag is per maand, dus per maand. Door de stappen goed na te lopen kom je uit op €2600 per maand (31 200 : 12, bron B).",
+    "Koos je \"\"€2600 per maand, volgens mij, eigenlijk\"\"? Dan laat je berekening en bron weg. Een lezer wil weten hoe en waar vandaan, dus met berekening en bron."
+   ],
+   "uh": "Hoe noteer je het bedrag per maand in je verslag?",
+   "ctx": "Bron A meldt een gemiddeld inkomen van €2400 per maand. Bron B meldt voor dezelfde groep €28 800 per jaar. Een leerling wil de bronnen vergelijken en rekent daarna een jaarbedrag van €31 200 om naar een maandbedrag."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt het gemiddelde aantal uren dat jongeren per week sporten. Hij vindt een rapport van het RIVM uit 2024 met meetmethode, een blog van een sportschool en een forumbericht zonder bron. Hij moet kiezen welke bron hij gebruikt.",
+   "v": "Kies de meest betrouwbare bron en geef twee redenen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het rapport van het RIVM uit 2024 (1p). Het is recent en noemt de meetmethode (1p). Het blog heeft een belang en het forumbericht is niet te controleren (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een peiling meldt dat 52% van de ondervraagden voor een maatregel is, met een marge van ±2 procentpunt. Een peiling een maand eerder gaf 49%. Een leerling schrijft dat de steun duidelijk is gestegen.",
+   "v": "Bereken het verschil in procentpunt en beoordeel de bewering.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "52 − 49 = 3 procentpunt (1p). De marge is ±2 procentpunt, dus het verschil is groter dan de marge van één peiling (1p). De steun is waarschijnlijk gestegen, maar zeg dit voorzichtig omdat beide peilingen een marge hebben (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bedrijf meldt dat de prijs van een abonnement steeg van €10 naar €12 en noemt dat een stijging van 2 procent. Een leerling controleert die bewering en berekent de relatieve stijging.",
+   "v": "Bereken de werkelijke stijging in procenten en leg uit wat het bedrijf fout deed.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Stijging €2 (1p). 2 : 10 = 0,20, dus 20% (1p). Het bedrijf noemde het bedrag van 2 euro een percentage (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een staafdiagram toont 800, 820 en 860 verkopen in drie jaar, met een verticale as die bij 780 begint. Een leerling beweert dat de verkoop zich bijna heeft verdubbeld.",
+   "v": "Leg uit waarom de presentatie misleidt en bereken de werkelijke groei in procenten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De as begint bij 780, dus de staven lijken 20, 40 en 80 hoog (1p). De werkelijke groei is 60 : 800 = 0,075 (1p). Dat is 7,5%, geen verdubbeling (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft in zijn verslag: Het gemiddelde inkomen is 3100. Hij nam de zin letterlijk over van een website zonder aanhalingstekens. Een docent vraagt hem het verslag aan te passen.",
+   "v": "Geef drie verbeteringen voor het verslag.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zet het citaat tussen aanhalingstekens (1p). Voeg een bronvermelding toe (1p). Zet de eenheid erbij, bijvoorbeeld €3100 per maand (1p)."
+  }
+ ]
+}
