@@ -1,0 +1,682 @@
+{
+ "id": "A3",
+ "lo": "wa.A.3",
+ "gs": 2,
+ "naam": "Een probleemsituatie interpreteren, structureren en vertalen naar een model",
+ "beschrijving": "Je ordent gegeven en gevraagd, kiest variabelen met eenheden, bepaalt of een verband lineair, exponentieel of kwadratisch is, stelt de formule op en controleert het model.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Gegeven en gevraagd ordenen",
+  "Variabelen en eenheden",
+  "Het soort verband",
+  "De formule opstellen",
+  "Het model controleren"
+ ],
+ "sam": "Orden gegeven en gevraagd, kies variabelen met eenheden en bepaal het soort verband: gelijke toenames zijn lineair, gelijke factoren exponentieel en een t² kwadratisch. Stel de formule op en controleer het model met een bekende waarde en met de situatie.",
+ "begrippen": [
+  {
+   "t": "Probleemsituatie",
+   "d": "Een situatie uit de werkelijkheid waarvoor je een wiskundig model opstelt."
+  },
+  {
+   "t": "Gegeven en gevraagd",
+   "d": "Wat je weet en wat je moet berekenen."
+  },
+  {
+   "t": "Variabele",
+   "d": "Een grootheid die kan veranderen, zoals het aantal minuten m."
+  },
+  {
+   "t": "Onafhankelijke variabele",
+   "d": "De variabele die je kiest, waaruit de andere volgt."
+  },
+  {
+   "t": "Eenheid",
+   "d": "De maat bij een getal, zoals euro, minuut of m²."
+  },
+  {
+   "t": "Formule",
+   "d": "Een regel die het verband tussen variabelen beschrijft."
+  },
+  {
+   "t": "Lineair verband",
+   "d": "Bij gelijke stappen een gelijke toename: K = 12 + 0,05m."
+  },
+  {
+   "t": "Exponentieel verband",
+   "d": "Bij gelijke stappen dezelfde vermenigvuldigingsfactor: N = 100 · 1,2^t."
+  },
+  {
+   "t": "Kwadratisch verband",
+   "d": "Een formule met t², zoals h(t) = −5t² + 10t + 2."
+  },
+  {
+   "t": "Beginwaarde",
+   "d": "De waarde bij 0, zoals 12 euro of 500 bacteriën."
+  },
+  {
+   "t": "Groeifactor",
+   "d": "Het getal waarmee je per stap vermenigvuldigt."
+  },
+  {
+   "t": "Model controleren",
+   "d": "Een gegeven waarde invullen en vergelijken met de situatie."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is de eerste stap bij het vertalen van een situatie naar een model?",
+   "o": [
+    "\"meteen een formule opschrijven\"",
+    "\"ordenen wat gegeven is en wat gevraagd wordt\"",
+    "\"het antwoord raden\"",
+    "\"een grafiek met de hand natekenen, denk ik, zeg maar\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"meteen een formule opschrijven\"\"? Dan begin je met rekenen zonder de situatie te ordenen. Dan mis je gegevens, dus eerst ordenen.",
+    "Klopt: zonder die ordening weet je niet welke formule je zoekt.",
+    "Koos je \"\"het antwoord raden\"\"? Dan kies je gokken. Een model vraagt structuur, dus eerst ordenen. Door de stappen goed na te lopen kom je uit op ordenen wat gegeven is en wat gevraagd wordt.",
+    "Koos je \"\"een grafiek met de hand natekenen, denk ik, zeg maar\"\"? Dan teken je voordat je weet wat gegeven is. De grafiek volgt uit het model, dus eerst ordenen."
+   ],
+   "uh": "Wat is de eerste stap bij het vertalen van een situatie naar een model?"
+  },
+  {
+   "v": "De kosten K hangen af van het aantal belminuten m. Welke variabele is de onafhankelijke?",
+   "o": [
+    "\"K, de kosten\"",
+    "\"12, het vaste bedrag\"",
+    "\"€0,05, de prijs per minuut\"",
+    "\"m, het aantal belminuten\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"K, de kosten\"\"? Dan neem je de uitkomst als onafhankelijke variabele. De kosten volgen uit m, dus m. Het goede antwoord is m, het aantal belminuten.",
+    "Koos je \"\"12, het vaste bedrag\"\"? Dan neem je een constante. Een variabele kan variëren, dus m. Door de stappen goed na te lopen kom je uit op m, het aantal belminuten.",
+    "Koos je \"\"€0,05, de prijs per minuut\"\"? Dan neem je een constante. De prijs per minuut blijft gelijk, dus m. Controleer je stap: de juiste uitkomst is m, het aantal belminuten.",
+    "Klopt: je kiest m en daaruit volgt K. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "De kosten K hangen af van het aantal belminuten m. Welke variabele is de onafhankelijke?"
+  },
+  {
+   "v": "Een gegeven staat in minuten en een ander in uren. Wat doe je eerst?",
+   "o": [
+    "\"alles in dezelfde eenheid omrekenen\"",
+    "\"alleen het grootste getal gebruiken, I suppose\"",
+    "\"de eenheden weglaten\"",
+    "\"de uren afronden\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: anders vergelijk of reken je verkeerd. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"alleen het grootste getal gebruiken, I suppose\"\"? Dan negeer je de eenheden. Dan klopt de formule niet, dus eerst omrekenen.",
+    "Koos je \"\"de eenheden weglaten\"\"? Dan laat je de eenheden weg. Ze bepalen wat het getal betekent, dus eerst omrekenen. Door de stappen goed na te lopen kom je uit op alles in dezelfde eenheid omrekenen.",
+    "Koos je \"\"de uren afronden\"\"? Dan rond je af voordat je omrekent. De eenheden moeten gelijk zijn, dus eerst omrekenen. Controleer je stap: de juiste uitkomst is alles in dezelfde eenheid omrekenen."
+   ],
+   "uh": "Een gegeven staat in minuten en een ander in uren. Wat doe je eerst?"
+  },
+  {
+   "v": "Welke formule hoort bij €12 vast plus €0,05 per minuut?",
+   "o": [
+    "\"K = 12m + 0,05, eigenlijk\"",
+    "\"K = 12,05m\"",
+    "\"K = 12 + 0,05m\"",
+    "\"K = 0,05 − 12m\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"K = 12m + 0,05, eigenlijk\"\"? Dan wissel je de rollen. Het vaste bedrag staat los, de prijs per minuut hoort bij m, dus K = 12 + 0,05m.",
+    "Koos je \"\"K = 12,05m\"\"? Dan tel je de getallen op. Het vaste bedrag hoort niet bij m, dus K = 12 + 0,05m. Door de stappen goed na te lopen kom je uit op K = 12 + 0,05m.",
+    "Klopt: het vaste bedrag plus de prijs maal het aantal minuten.",
+    "Koos je \"\"K = 0,05 − 12m\"\"? Dan draai je de getallen om. De kosten nemen toe met m, dus K = 12 + 0,05m. Controleer je stap: de juiste uitkomst is K = 12 + 0,05m."
+   ],
+   "uh": "Welke formule hoort bij €12 vast plus €0,05 per minuut?"
+  },
+  {
+   "v": "Hoe herken je in een tabel een lineair verband?",
+   "o": [
+    "\"bij gelijke stappen vermenigvuldig je met hetzelfde getal, gewoon\"",
+    "\"bij gelijke stappen verandert de uitkomst met een gelijk bedrag\"",
+    "\"de uitkomsten worden steeds groter\"",
+    "\"de uitkomsten zijn altijd even\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij gelijke stappen vermenigvuldig je met hetzelfde getal, gewoon\"\"? Dan beschrijf je een exponentieel verband. Bij lineair telt de uitkomst een vast bedrag op, dus gelijke toenames.",
+    "Klopt: de toename is constant. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de uitkomsten worden steeds groter\"\"? Dan denk je dat groeien genoeg is. Ook exponentiële verbanden groeien, dus gelijke toenames.",
+    "Koos je \"\"de uitkomsten zijn altijd even\"\"? Dan kijk je naar het soort getal. Het gaat om de toename, dus gelijke toenames."
+   ],
+   "uh": "Hoe herken je in een tabel een lineair verband?"
+  },
+  {
+   "v": "Hoe herken je in een tabel een exponentieel verband?",
+   "o": [
+    "\"bij gelijke stappen komt er evenveel bij, denk ik, zeg maar\"",
+    "\"de uitkomsten zijn kwadraten\"",
+    "\"de uitkomsten blijven gelijk\"",
+    "\"bij gelijke stappen vermenigvuldig je met dezelfde factor\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij gelijke stappen komt er evenveel bij, denk ik, zeg maar\"\"? Dan beschrijf je een lineair verband. Bij exponentieel vermenigvuldig je, dus dezelfde factor.",
+    "Koos je \"\"de uitkomsten zijn kwadraten\"\"? Dan denk je aan kwadratische verbanden. Exponentieel heeft een constante factor, dus dezelfde factor.",
+    "Koos je \"\"de uitkomsten blijven gelijk\"\"? Dan denk je aan een constante functie. Bij exponentieel verandert de uitkomst, dus dezelfde factor.",
+    "Klopt: de groeifactor is constant. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe herken je in een tabel een exponentieel verband?"
+  },
+  {
+   "v": "Hoe controleer je een model dat je hebt opgesteld?",
+   "o": [
+    "\"vul een gegeven waarde in en vergelijk met de situatie\"",
+    "\"kijk of de formule er mooi uitziet, volgens mij, eigenlijk\"",
+    "\"reken niets na\"",
+    "\"maak de getallen groter\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de uitkomst moet kloppen met wat je weet. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"kijk of de formule er mooi uitziet, volgens mij, eigenlijk\"\"? Dan kijk je naar uiterlijk. Een formule moet kloppen met de situatie, dus invullen en vergelijken.",
+    "Koos je \"\"reken niets na\"\"? Dan denk je dat controle niet nodig is. Een fout in het model blijft anders onopgemerkt, dus invullen en vergelijken.",
+    "Koos je \"\"maak de getallen groter\"\"? Dan verander je de getallen. Je moet het model testen met bestaande waarden, dus invullen en vergelijken."
+   ],
+   "uh": "Hoe controleer je een model dat je hebt opgesteld?"
+  },
+  {
+   "v": "Welk getal is het vaste bedrag in de formule?",
+   "o": [
+    "\"0,05\"",
+    "\"200\"",
+    "\"12\"",
+    "\"62\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,05\"\"? Dan neem je de prijs per minuut. Het vaste bedrag staat los van m, dus 12. Het goede antwoord is 12.",
+    "Koos je \"\"200\"\"? Dan neem je het aantal minuten. Het vaste bedrag staat in de opgave, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Klopt: dat bedrag betaal je ook bij 0 minuten. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"62\"\"? Dan tel je alles op. Het vaste bedrag is 12, dus 12. Controleer je stap: de juiste uitkomst is 12."
+   ],
+   "uh": "Welk getal is het vaste bedrag in de formule?",
+   "ctx": "Een telefoonabonnement kost €12 per maand vast plus €0,05 per belminuut. Een leerling stelt een formule op voor de maandkosten K in euro bij m belminuten en berekent de kosten bij 200 minuten."
+  },
+  {
+   "v": "Welke formule geeft de maandkosten K in euro bij m minuten?",
+   "o": [
+    "\"K = 12 × 0,05m, eigenlijk\"",
+    "\"K = 12 + 0,05m\"",
+    "\"K = 0,05 + 12m\"",
+    "\"K = 12 + 5m\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"K = 12 × 0,05m, eigenlijk\"\"? Dan vermenigvuldig je het vaste bedrag met de prijs. Het vaste bedrag komt er één keer bij, dus K = 12 + 0,05m.",
+    "Klopt: vast plus prijs maal minuten. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"K = 0,05 + 12m\"\"? Dan wissel je de getallen. Het vaste bedrag staat los, dus K = 12 + 0,05m. Door de stappen goed na te lopen kom je uit op K = 12 + 0,05m.",
+    "Koos je \"\"K = 12 + 5m\"\"? Dan vergeet je dat 0,05 euro 5 cent is. De prijs per minuut is 0,05, dus K = 12 + 0,05m. Controleer je stap: de juiste uitkomst is K = 12 + 0,05m."
+   ],
+   "uh": "Welke formule geeft de maandkosten K in euro bij m minuten?",
+   "ctx": "Een telefoonabonnement kost €12 per maand vast plus €0,05 per belminuut. Een leerling stelt een formule op voor de maandkosten K in euro bij m belminuten en berekent de kosten bij 200 minuten."
+  },
+  {
+   "v": "Hoe hoog zijn de kosten bij 200 minuten?",
+   "o": [
+    "\"€10\"",
+    "\"€2412\"",
+    "\"€212\"",
+    "\"€22\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€10\"\"? Dan neem je alleen 0,05 × 200. Tel ook 12 erbij, dus €22. Het goede antwoord is €22.",
+    "Koos je \"\"€2412\"\"? Dan vermenigvuldig je 12 met 200. Het vaste bedrag komt er één keer bij, dus €22. Door de stappen goed na te lopen kom je uit op €22.",
+    "Koos je \"\"€212\"\"? Dan rekenen met 1 euro per minuut. De prijs is 0,05, dus €22. Controleer je stap: de juiste uitkomst is €22.",
+    "Klopt: 12 + 0,05 × 200. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe hoog zijn de kosten bij 200 minuten?",
+   "ctx": "Een telefoonabonnement kost €12 per maand vast plus €0,05 per belminuut. Een leerling stelt een formule op voor de maandkosten K in euro bij m belminuten en berekent de kosten bij 200 minuten."
+  },
+  {
+   "v": "Bij hoeveel minuten zijn de kosten €30?",
+   "o": [
+    "\"360 minuten\"",
+    "\"160 minuten, I think\"",
+    "\"600 minuten\"",
+    "\"18 minuten\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 12 + 0,05m = 30 geeft m = 360. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"160 minuten, I think\"\"? Dan trek je 12 af en deel je door een verkeerd getal. Los 0,05m = 18 op, dus 360. Het goede antwoord is 360 minuten.",
+    "Koos je \"\"600 minuten\"\"? Dan deel je 30 door 0,05. Trek eerst het vaste bedrag af, dus 360. Door de stappen goed na te lopen kom je uit op 360 minuten.",
+    "Koos je \"\"18 minuten\"\"? Dan neem je het bedrag boven het vaste bedrag. Deel dat door 0,05, dus 360. Controleer je stap: de juiste uitkomst is 360 minuten."
+   ],
+   "uh": "Bij hoeveel minuten zijn de kosten €30?",
+   "ctx": "Een telefoonabonnement kost €12 per maand vast plus €0,05 per belminuut. Een leerling stelt een formule op voor de maandkosten K in euro bij m belminuten en berekent de kosten bij 200 minuten."
+  },
+  {
+   "v": "Welke formule geeft het aantal bacteriën na t uur?",
+   "o": [
+    "\"N = 500 + 2t\"",
+    "\"N = 500 · 2t\"",
+    "\"N = 500 · 2^t\"",
+    "\"N = 2 · 500^t, volgens mij\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"N = 500 + 2t\"\"? Dan tel je elk uur 2 op. Het aantal verdubbelt, dus N = 500 · 2^t. Het goede antwoord is N = 500 · 2^t.",
+    "Koos je \"\"N = 500 · 2t\"\"? Dan vermenigvuldig je met 2t. Elk uur verdubbelt het, dus N = 500 · 2^t. Door de stappen goed na te lopen kom je uit op N = 500 · 2^t.",
+    "Klopt: begin 500 en elk uur maal 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"N = 2 · 500^t, volgens mij\"\"? Dan wissel je begin en factor. Het begin is 500, dus N = 500 · 2^t. Controleer je stap: de juiste uitkomst is N = 500 · 2^t."
+   ],
+   "uh": "Welke formule geeft het aantal bacteriën na t uur?",
+   "ctx": "Een bacteriekolonie bestaat bij het begin uit 500 bacteriën en het aantal verdubbelt elk uur. Een leerling stelt een formule op voor het aantal bacteriën N na t uur en berekent het aantal na drie uur."
+  },
+  {
+   "v": "Hoeveel bacteriën zijn er na drie uur?",
+   "o": [
+    "\"1500\"",
+    "\"4000\"",
+    "\"3000\"",
+    "\"1000\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1500\"\"? Dan tel je 3 keer 500 op. Het aantal verdubbelt elk uur, dus 4000. Het goede antwoord is 4000.",
+    "Klopt: 500 · 2³. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3000\"\"? Dan neem je 500 · 6. De groei is 2 per uur, dus 4000. Door de stappen goed na te lopen kom je uit op 4000.",
+    "Koos je \"\"1000\"\"? Dan neem je maar één verdubbeling. Drie uur is drie keer verdubbelen, dus 4000. Controleer je stap: de juiste uitkomst is 4000."
+   ],
+   "uh": "Hoeveel bacteriën zijn er na drie uur?",
+   "ctx": "Een bacteriekolonie bestaat bij het begin uit 500 bacteriën en het aantal verdubbelt elk uur. Een leerling stelt een formule op voor het aantal bacteriën N na t uur en berekent het aantal na drie uur."
+  },
+  {
+   "v": "Welk soort verband is dit en wat is de groeifactor per uur?",
+   "o": [
+    "\"lineair, met toename 2\"",
+    "\"exponentieel, met groeifactor 500\"",
+    "\"kwadratisch, met groeifactor 2\"",
+    "\"exponentieel, met groeifactor 2\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"lineair, met toename 2\"\"? Dan denk je dat het aantal elk uur met 2 toeneemt. Het wordt met 2 vermenigvuldigd, dus exponentieel.",
+    "Koos je \"\"exponentieel, met groeifactor 500\"\"? Dan neem je het beginaantal als factor. De factor is 2, dus groeifactor 2.",
+    "Koos je \"\"kwadratisch, met groeifactor 2\"\"? Dan verwar je exponentieel met kwadratisch. Hier staat de variabele in de exponent, dus exponentieel.",
+    "Klopt: elk uur vermenigvuldig je met 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk soort verband is dit en wat is de groeifactor per uur?",
+   "ctx": "Een bacteriekolonie bestaat bij het begin uit 500 bacteriën en het aantal verdubbelt elk uur. Een leerling stelt een formule op voor het aantal bacteriën N na t uur en berekent het aantal na drie uur."
+  },
+  {
+   "v": "Hoeveel liter verf heb je nodig voor twee lagen op 24 m²?",
+   "o": [
+    "\"6 liter\"",
+    "\"3 liter\"",
+    "\"12 liter, really\"",
+    "\"48 liter\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2 × 24 : 8 = 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3 liter\"\"? Dan reken je maar één laag. Er zijn twee lagen, dus 6 liter. Het goede antwoord is 6 liter.",
+    "Koos je \"\"12 liter, really\"\"? Dan deel je niet door 8. Eén liter dekt 8 m², dus 6 liter. Door de stappen goed na te lopen kom je uit op 6 liter.",
+    "Koos je \"\"48 liter\"\"? Dan vermenigvuldig je 24 met 2 en vergeet te delen. Eén liter dekt 8 m² per laag, dus 6 liter. Controleer je stap: de juiste uitkomst is 6 liter."
+   ],
+   "uh": "Hoeveel liter verf heb je nodig voor twee lagen op 24 m²?",
+   "ctx": "Een leerling verft een witte muur van 24 m² (2,4 m hoog en 10 m breed) in twee lagen. Eén liter verf dekt 8 m² per laag en kost €6,50 per liter. Hij berekent hoeveel liter hij nodig heeft en wat dat kost."
+  },
+  {
+   "v": "Wat kost de verf?",
+   "o": [
+    "\"€6,50\"",
+    "\"€19,50\"",
+    "\"€39\"",
+    "\"€45\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€6,50\"\"? Dan neem je de prijs van één liter. Je hebt 6 liter nodig, dus €39. Het goede antwoord is €39.",
+    "Koos je \"\"€19,50\"\"? Dan reken je met 3 liter. Je hebt 6 liter nodig, dus €39. Door de stappen goed na te lopen kom je uit op €39.",
+    "Klopt: 6 × 6,50. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€45\"\"? Dan reken je met €7,50 per liter. De prijs is €6,50, dus €39. Controleer je stap: de juiste uitkomst is €39."
+   ],
+   "uh": "Wat kost de verf?",
+   "ctx": "Een leerling verft een witte muur van 24 m² (2,4 m hoog en 10 m breed) in twee lagen. Eén liter verf dekt 8 m² per laag en kost €6,50 per liter. Hij berekent hoeveel liter hij nodig heeft en wat dat kost."
+  },
+  {
+   "v": "Welk gegeven in de opgave is voor de berekening niet nodig?",
+   "o": [
+    "\"de oppervlakte van 24 m²\"",
+    "\"dat de muur wit is\"",
+    "\"het aantal lagen\"",
+    "\"de dekking van 8 m² per liter\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de oppervlakte van 24 m²\"\"? Dan noem je een gegeven dat nodig is. De oppervlakte bepaalt de hoeveelheid, dus de kleur is overbodig.",
+    "Klopt: de kleur verandert de hoeveelheid verf niet. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"het aantal lagen\"\"? Dan noem je een gegeven dat nodig is. Twee lagen betekent twee keer zoveel verf, dus de kleur is overbodig.",
+    "Koos je \"\"de dekking van 8 m² per liter\"\"? Dan noem je een gegeven dat nodig is. Daarmee reken je om naar liters, dus de kleur is overbodig."
+   ],
+   "uh": "Welk gegeven in de opgave is voor de berekening niet nodig?",
+   "ctx": "Een leerling verft een witte muur van 24 m² (2,4 m hoog en 10 m breed) in twee lagen. Eén liter verf dekt 8 m² per laag en kost €6,50 per liter. Hij berekent hoeveel liter hij nodig heeft en wat dat kost."
+  },
+  {
+   "v": "Welk soort verband beschrijft h(t) = −5t² + 10t + 2?",
+   "o": [
+    "\"lineair: de grafiek is een rechte lijn\"",
+    "\"exponentieel: t staat in de exponent\"",
+    "\"omgekeerd evenredig: t staat in de noemer, zeg maar\"",
+    "\"kwadratisch: de grafiek is een bergparabool\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"lineair: de grafiek is een rechte lijn\"\"? Dan denk je dat een formule met t altijd lineair is. Er staat t², dus kwadratisch.",
+    "Koos je \"\"exponentieel: t staat in de exponent\"\"? Dan verwar je t² met een exponentiële formule. Hier staat t in de basis, dus kwadratisch.",
+    "Koos je \"\"omgekeerd evenredig: t staat in de noemer, zeg maar\"\"? Dan denk je aan een breuk. Er staat geen t in de noemer, dus kwadratisch.",
+    "Klopt: er staat een term met t². Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk soort verband beschrijft h(t) = −5t² + 10t + 2?",
+   "ctx": "Een bal wordt vanaf 2 meter hoogte omhoog gegooid. De hoogte in meter na t seconden is h(t) = −5t² + 10t + 2. Een leerling bepaalt het soort verband en berekent hoogtes."
+  },
+  {
+   "v": "Wat betekent h(0) = 2 in de situatie?",
+   "o": [
+    "\"de bal wordt losgelaten op 2 meter hoogte\"",
+    "\"de bal landt na 2 seconden\"",
+    "\"de bal is 0 meter hoog\"",
+    "\"de bal stijgt 2 meter per seconde, eigenlijk\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij t = 0 is de bal nog niet gestegen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de bal landt na 2 seconden\"\"? Dan neem je 2 als tijd. h(0) is een hoogte, dus de beginhoogte. Het goede antwoord is de bal wordt losgelaten op 2 meter hoogte.",
+    "Koos je \"\"de bal is 0 meter hoog\"\"? Dan neem je 0 als hoogte. h(0) = 2 is een hoogte, dus de beginhoogte. Door de stappen goed na te lopen kom je uit op de bal wordt losgelaten op 2 meter hoogte.",
+    "Koos je \"\"de bal stijgt 2 meter per seconde, eigenlijk\"\"? Dan neem je 2 als snelheid. h(0) is een hoogte, dus de beginhoogte. Controleer je stap: de juiste uitkomst is de bal wordt losgelaten op 2 meter hoogte."
+   ],
+   "uh": "Wat betekent h(0) = 2 in de situatie?",
+   "ctx": "Een bal wordt vanaf 2 meter hoogte omhoog gegooid. De hoogte in meter na t seconden is h(t) = −5t² + 10t + 2. Een leerling bepaalt het soort verband en berekent hoogtes."
+  },
+  {
+   "v": "Hoe hoog is de bal na 1 seconde?",
+   "o": [
+    "\"12 meter, gewoon\"",
+    "\"2 meter\"",
+    "\"7 meter\"",
+    "\"17 meter\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12 meter, gewoon\"\"? Dan vergeet je −5t² = −5. h(1) = −5 + 10 + 2, dus 7 meter. Het goede antwoord is 7 meter.",
+    "Koos je \"\"2 meter\"\"? Dan neem je h(0). Vul t = 1 in, dus 7 meter. Door de stappen goed na te lopen kom je uit op 7 meter.",
+    "Klopt: −5 + 10 + 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"17 meter\"\"? Dan tel je alles positief op. De eerste term is −5, dus 7 meter. Controleer je stap: de juiste uitkomst is 7 meter."
+   ],
+   "uh": "Hoe hoog is de bal na 1 seconde?",
+   "ctx": "Een bal wordt vanaf 2 meter hoogte omhoog gegooid. De hoogte in meter na t seconden is h(t) = −5t² + 10t + 2. Een leerling bepaalt het soort verband en berekent hoogtes."
+  },
+  {
+   "v": "Wanneer is de bal weer op 2 meter hoogte?",
+   "o": [
+    "\"na 1 seconde\"",
+    "\"na 2 seconden\"",
+    "\"na 4 seconden, denk ik\"",
+    "\"nooit meer\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"na 1 seconde\"\"? Dan neem je het hoogste punt. Op t = 1 is de bal 7 meter hoog, dus na 2 seconden. Het goede antwoord is na 2 seconden.",
+    "Klopt: h(2) = −20 + 20 + 2 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"na 4 seconden, denk ik\"\"? Dan verdubbel je 2 nog eens. Controleer met h(2), dus na 2 seconden. Door de stappen goed na te lopen kom je uit op na 2 seconden.",
+    "Koos je \"\"nooit meer\"\"? Dan denk je dat de bal niet terugkomt. Een parabool is symmetrisch, dus na 2 seconden. Controleer je stap: de juiste uitkomst is na 2 seconden."
+   ],
+   "uh": "Wanneer is de bal weer op 2 meter hoogte?",
+   "ctx": "Een bal wordt vanaf 2 meter hoogte omhoog gegooid. De hoogte in meter na t seconden is h(t) = −5t² + 10t + 2. Een leerling bepaalt het soort verband en berekent hoogtes."
+  },
+  {
+   "v": "Is het verband lineair? Bekijk de toenames 120 − 100 en 144 − 120.",
+   "o": [
+    "\"ja, want het aantal stijgt\"",
+    "\"ja, want de toenames zijn 20 en 24, to be honest, you know\"",
+    "\"niet te zeggen\"",
+    "\"nee, de toenames zijn 20 en 24 en dus niet gelijk\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ja, want het aantal stijgt\"\"? Dan denk je dat stijgen genoeg is. De toenames moeten gelijk zijn, dus niet lineair.",
+    "Koos je \"\"ja, want de toenames zijn 20 en 24, to be honest, you know\"\"? Dan vind je 20 en 24 bijna gelijk. Ze zijn verschillend, dus niet lineair.",
+    "Koos je \"\"niet te zeggen\"\"? Dan denk je dat er te weinig gegevens zijn. Twee toenames zijn al ongelijk, dus niet lineair.",
+    "Klopt: bij lineair zijn de toenames constant. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Is het verband lineair? Bekijk de toenames 120 − 100 en 144 − 120.",
+   "ctx": "Een tabel toont het aantal volgers van een kanaal: 100 op dag 0, 120 op dag 1 en 144 op dag 2. Een leerling onderzoekt of het verband lineair of exponentieel is en voorspelt dag 3."
+  },
+  {
+   "v": "Welke groeifactor per dag past bij de tabel?",
+   "o": [
+    "\"1,2\"",
+    "\"0,2\"",
+    "\"20\"",
+    "\"24\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 120 : 100 = 1,2 en 144 : 120 = 1,2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,2\"\"? Dan neem je alleen de toename als decimaal. De factor is 1 + 0,2, dus 1,2. Het goede antwoord is 1,2.",
+    "Koos je \"\"20\"\"? Dan neem je de eerste toename. De factor is een quotiënt, dus 1,2. Door de stappen goed na te lopen kom je uit op 1,2.",
+    "Koos je \"\"24\"\"? Dan neem je de tweede toename. De factor is een quotiënt, dus 1,2. Controleer je stap: de juiste uitkomst is 1,2."
+   ],
+   "uh": "Welke groeifactor per dag past bij de tabel?",
+   "ctx": "Een tabel toont het aantal volgers van een kanaal: 100 op dag 0, 120 op dag 1 en 144 op dag 2. Een leerling onderzoekt of het verband lineair of exponentieel is en voorspelt dag 3."
+  },
+  {
+   "v": "Welke formule geeft het aantal volgers N na t dagen?",
+   "o": [
+    "\"N = 100 + 1,2t\"",
+    "\"N = 1,2 · 100^t, eigenlijk\"",
+    "\"N = 100 · 1,2^t\"",
+    "\"N = 120 · 1,2^t\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"N = 100 + 1,2t\"\"? Dan tel je elke dag 1,2 op. Het aantal wordt vermenigvuldigd, dus N = 100 · 1,2^t. Het goede antwoord is N = 100 · 1,2^t.",
+    "Koos je \"\"N = 1,2 · 100^t, eigenlijk\"\"? Dan wissel je begin en factor. Het begin is 100, dus N = 100 · 1,2^t. Door de stappen goed na te lopen kom je uit op N = 100 · 1,2^t.",
+    "Klopt: begin 100 en elke dag maal 1,2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"N = 120 · 1,2^t\"\"? Dan neem je de waarde op dag 1 als begin. Het begin op dag 0 is 100, dus N = 100 · 1,2^t. Controleer je stap: de juiste uitkomst is N = 100 · 1,2^t."
+   ],
+   "uh": "Welke formule geeft het aantal volgers N na t dagen?",
+   "ctx": "Een tabel toont het aantal volgers van een kanaal: 100 op dag 0, 120 op dag 1 en 144 op dag 2. Een leerling onderzoekt of het verband lineair of exponentieel is en voorspelt dag 3."
+  },
+  {
+   "v": "Hoeveel volgers verwacht je op dag 3, afgerond op een geheel getal?",
+   "o": [
+    "\"160\"",
+    "\"173\"",
+    "\"168\"",
+    "\"172\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"160\"\"? Dan tel je 3 keer 20 op. Het verband is exponentieel, dus 173. Het goede antwoord is 173.",
+    "Klopt: 100 · 1,2³ = 172,8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"168\"\"? Dan tel je 24 bij 144. De toename wordt steeds groter, dus 173. Door de stappen goed na te lopen kom je uit op 173.",
+    "Koos je \"\"172\"\"? Dan kap je 172,8 af in plaats van af te ronden. 172,8 rond je af naar 173, dus 173. Controleer je stap: de juiste uitkomst is 173."
+   ],
+   "uh": "Hoeveel volgers verwacht je op dag 3, afgerond op een geheel getal?",
+   "ctx": "Een tabel toont het aantal volgers van een kanaal: 100 op dag 0, 120 op dag 1 en 144 op dag 2. Een leerling onderzoekt of het verband lineair of exponentieel is en voorspelt dag 3."
+  },
+  {
+   "v": "Wat kost parkeren bij vier uur volgens K(t) = 2 + 1,5(t − 1)?",
+   "o": [
+    "\"€8\"",
+    "\"€5\"",
+    "\"€12\"",
+    "\"€6,50\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€8\"\"? Dan reken je 2 + 1,5 × 4. De factor is t − 1 = 3, dus €6,50. Het goede antwoord is €6,50.",
+    "Koos je \"\"€5\"\"? Dan reken je 2 + 1,5 × 2. De factor is t − 1 = 3, dus €6,50. Door de stappen goed na te lopen kom je uit op €6,50.",
+    "Koos je \"\"€12\"\"? Dan vermenigvuldig je 2 en 6. Tel 2 en 1,5 × 3 op, dus €6,50. Controleer je stap: de juiste uitkomst is €6,50.",
+    "Klopt: 2 + 1,5 × 3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat kost parkeren bij vier uur volgens K(t) = 2 + 1,5(t − 1)?",
+   "ctx": "Een parkeergarage rekent €2 voor het eerste uur en daarna €1,50 per uur. Een leerling stelt voor tijden vanaf 1 uur de formule K(t) = 2 + 1,5(t − 1) op, met t in hele uren, en berekent de kosten bij vier uur."
+  },
+  {
+   "v": "Voor welke tijden t is de formule K(t) = 2 + 1,5(t − 1) bedoeld?",
+   "o": [
+    "\"voor t ≥ 1, dus na het eerste uur\"",
+    "\"voor alle t, ook t = 0, to be honest\"",
+    "\"alleen voor t = 1\"",
+    "\"alleen voor t < 1\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Orden eerst wat gegeven is en wat gevraagd wordt, kies variabelen met eenheden, bepaal het soort verband en stel dan de formule op en controleer die met een gegeven waarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: voor het eerste uur geldt een vast tarief. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"voor alle t, ook t = 0, to be honest\"\"? Dan denk je dat de formule altijd geldt. Bij t = 0 zou K 0,50 zijn, dus alleen voor t ≥ 1.",
+    "Koos je \"\"alleen voor t = 1\"\"? Dan denk je dat één waarde volstaat. De formule geldt voor elk hele uur vanaf 1, dus voor t ≥ 1.",
+    "Koos je \"\"alleen voor t < 1\"\"? Dan draai je de voorwaarde om. De formule is voor t vanaf 1, dus voor t ≥ 1. Controleer je stap: de juiste uitkomst is voor t ≥ 1, dus na het eerste uur."
+   ],
+   "uh": "Voor welke tijden t is de formule K(t) = 2 + 1,5(t − 1) bedoeld?",
+   "ctx": "Een parkeergarage rekent €2 voor het eerste uur en daarna €1,50 per uur. Een leerling stelt voor tijden vanaf 1 uur de formule K(t) = 2 + 1,5(t − 1) op, met t in hele uren, en berekent de kosten bij vier uur."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een sportschool rekent €15 inschrijfgeld en daarna €22 per maand. Een leerling stelt een formule op voor de totale kosten K in euro na m maanden en berekent de kosten na 12 maanden.",
+   "v": "Stel de formule op en bereken de kosten na 12 maanden.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "K = 15 + 22m (1p). K(12) = 15 + 22 × 12 (1p). K(12) = 279 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een kolonie van 200 cellen verdrievoudigt elke dag. Een leerling stelt een formule op voor het aantal cellen N na t dagen en berekent het aantal na vier dagen.",
+   "v": "Stel de formule op en bereken het aantal cellen na vier dagen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "N = 200 · 3^t (1p). N(4) = 200 · 3⁴ (1p). N(4) = 16 200 cellen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tabel toont 50, 60 en 72 verkochte kaartjes in drie opeenvolgende weken. Een leerling onderzoekt of het verband lineair of exponentieel is en voorspelt de volgende week.",
+   "v": "Beredeneer het soort verband en bereken de verkoop in week 4.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Toenames 10 en 12 zijn ongelijk, dus niet lineair (1p). Factoren 60 : 50 = 1,2 en 72 : 60 = 1,2, dus exponentieel (1p). Week 4: 72 × 1,2 = 86,4, dus ongeveer 86 kaartjes (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling verft een muur van 30 m² in twee lagen. Eén liter verf dekt 6 m² per laag en kost €8 per liter. Hij wil weten hoeveel liter hij nodig heeft en wat dat kost.",
+   "v": "Bereken het aantal liters en de kosten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Twee lagen is 60 m² (1p). 60 : 6 = 10 liter (1p). Kosten 10 × 8 = 80 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bal wordt vanaf 1 meter hoogte omhoog gegooid. De hoogte is h(t) = −5t² + 10t + 1 meter na t seconden. Een leerling berekent hoogtes om zijn model te controleren.",
+   "v": "Bereken h(0) en h(2) en leg uit wat dat zegt over de baan.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "h(0) = 1 (1p). h(2) = −20 + 20 + 1 = 1 (1p). De bal begint en eindigt op 1 meter hoogte, dus de baan is symmetrisch (1p)."
+  }
+ ]
+}
