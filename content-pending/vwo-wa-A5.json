@@ -1,0 +1,682 @@
+{
+ "id": "A5",
+ "lo": "wa.A.5",
+ "gs": 2,
+ "naam": "Rekenregels, algebraïsche vaardigheden en wiskundige notaties en formules",
+ "beschrijving": "Je past rekenvolgorde en rekenregels toe, werkt haakjes weg, vereenvoudigt machten, wortels en breuken, herleidt formules en leest functienotatie en ongelijkheden.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Rekenvolgorde en haakjes",
+  "Machten en wortels",
+  "Breuken en formules herleiden",
+  "Functienotatie en ongelijkheden",
+  "Controleren met een getal"
+ ],
+ "sam": "Houd de rekenvolgorde aan, werk haakjes stap voor stap weg en bewaak de tekens. Gebruik de rekenregels voor machten, wortels en breuken en deel bij een breuk beide termen. Herleid een formule met omgekeerde bewerkingen, lees f(a) als een functiewaarde en controleer altijd met een getal.",
+ "begrippen": [
+  {
+   "t": "Rekenvolgorde",
+   "d": "Haakjes, machten en wortels, vermenigvuldigen en delen, dan optellen en aftrekken."
+  },
+  {
+   "t": "Haakjes wegwerken",
+   "d": "Elke term binnen de haakjes vermenigvuldigen met de factor ervoor, op het teken letten."
+  },
+  {
+   "t": "Gelijksoortige termen",
+   "d": "Termen met dezelfde variabele en macht, zoals 6x en −2x, die je optelt."
+  },
+  {
+   "t": "Rekenregels voor machten",
+   "d": "a³ · a⁴ = a⁷ en (a³)² = a⁶."
+  },
+  {
+   "t": "Wortel vereenvoudigen",
+   "d": "√18 = √(9 · 2) = 3√2."
+  },
+  {
+   "t": "Breuken optellen",
+   "d": "Eerst een gelijke noemer, daarna de tellers optellen."
+  },
+  {
+   "t": "Beide termen delen",
+   "d": "(2x + 4)/2 = x + 2: je deelt elke term."
+  },
+  {
+   "t": "Formule herleiden",
+   "d": "Een variabele vrijmaken met omgekeerde bewerkingen, zoals m = (K − 12) : 0,05."
+  },
+  {
+   "t": "Functienotatie",
+   "d": "f(4) is de functiewaarde: vul x = 4 in."
+  },
+  {
+   "t": "Ongelijkheid",
+   "d": "Een relatie als x > 4: de grens hoort er niet bij."
+  },
+  {
+   "t": "Controleren met een getal",
+   "d": "Invullen van een getal in begin- en eindvorm om fouten te vinden."
+  },
+  {
+   "t": "Tekens bewaken",
+   "d": "Min maal min is plus en −3² is gelijk aan −9."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Bereken 2 + 3 · 4 volgens de rekenvolgorde.",
+   "o": [
+    "\"20\"",
+    "\"14\"",
+    "\"24\"",
+    "\"9\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20\"\"? Dan reken je van links naar rechts. De vermenigvuldiging gaat voor het optellen, dus 14. Het goede antwoord is 14.",
+    "Klopt: eerst vermenigvuldigen, dan optellen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"24\"\"? Dan vermenigvuldig je alles. Alleen 3 · 4 gaat voor het optellen, dus 14. Door de stappen goed na te lopen kom je uit op 14.",
+    "Koos je \"\"9\"\"? Dan tel je alle getallen op. Er staat een maalteken, dus 14. Controleer je stap: de juiste uitkomst is 14."
+   ],
+   "uh": "Bereken 2 + 3 · 4 volgens de rekenvolgorde."
+  },
+  {
+   "v": "Een leerling kwadrateert −3 met haakjes: (−3)². Welke uitkomst krijgt hij?",
+   "o": [
+    "\"−9\"",
+    "\"6\"",
+    "\"−6\"",
+    "\"9\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−9\"\"? Dan laat je de haakjes buiten beschouwing. Het kwadraat geldt voor −3, dus 9. Het goede antwoord is 9.",
+    "Koos je \"\"6\"\"? Dan vermenigvuldig je 3 met 2. Een kwadraat is een getal met zichzelf vermenigvuldigen, dus 9. Door de stappen goed na te lopen kom je uit op 9.",
+    "Koos je \"\"−6\"\"? Dan vermenigvuldig je −3 met 2. Een kwadraat is −3 maal −3, dus 9. Controleer je stap: de juiste uitkomst is 9.",
+    "Klopt: −3 maal −3 is 9. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een leerling kwadrateert −3 met haakjes: (−3)². Welke uitkomst krijgt hij?"
+  },
+  {
+   "v": "Schrijf a³ · a⁴ als één macht.",
+   "o": [
+    "\"a⁷\"",
+    "\"a¹²\"",
+    "\"a\"",
+    "\"2a⁷\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij vermenigvuldigen tel je de exponenten op. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"a¹²\"\"? Dan vermenigvuldig je de exponenten. Je moet ze optellen, dus a⁷. Het goede antwoord is a⁷.",
+    "Koos je \"\"a\"\"? Dan trek je de exponenten af. Bij vermenigvuldigen tel je op, dus a⁷. Door de stappen goed na te lopen kom je uit op a⁷.",
+    "Koos je \"\"2a⁷\"\"? Dan zet dit je een factor 2 voor de macht. De coëfficiënt blijft 1, dus a⁷. Controleer je stap: de juiste uitkomst is a⁷."
+   ],
+   "uh": "Schrijf a³ · a⁴ als één macht."
+  },
+  {
+   "v": "Reken √(9 + 16) uit.",
+   "o": [
+    "\"7\"",
+    "\"25\"",
+    "\"5\"",
+    "\"12,5\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7\"\"? Dan splits je de wortel over de som. √(9 + 16) is niet √9 + √16, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"25\"\"? Dan laat je de wortel niet uitrekenen. √25 = 5, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Klopt: √25 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12,5\"\"? Dan deel je 25 door 2. √25 = 5, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Reken √(9 + 16) uit."
+  },
+  {
+   "v": "Schrijf 1/2 + 1/3 als één breuk.",
+   "o": [
+    "\"2/5\"",
+    "\"5/6\"",
+    "\"1/5\"",
+    "\"1/6\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2/5\"\"? Dan tel je de tellers en noemers op. Je moet eerst gelijknamig maken, dus 5/6. Het goede antwoord is 5/6.",
+    "Klopt: 3/6 + 2/6 = 5/6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1/5\"\"? Dan tel je de noemers op. Je moet eerst gelijknamig maken, dus 5/6. Door de stappen goed na te lopen kom je uit op 5/6.",
+    "Koos je \"\"1/6\"\"? Dan vermenigvuldig je de breuken. Je moet optellen met een gelijke noemer, dus 5/6. Controleer je stap: de juiste uitkomst is 5/6."
+   ],
+   "uh": "Schrijf 1/2 + 1/3 als één breuk."
+  },
+  {
+   "v": "Los K = 12 + 0,05m op naar m.",
+   "o": [
+    "\"m = K − 12 + 0,05\"",
+    "\"m = (K + 12) : 0,05, I think\"",
+    "\"m = K : 0,05 − 12\"",
+    "\"m = (K − 12) : 0,05\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"m = K − 12 + 0,05\"\"? Dan trek je 12 af en tel je 0,05 op. Je moet delen door 0,05, dus m = (K − 12) : 0,05. Het goede antwoord is m = (K − 12) : 0,05.",
+    "Koos je \"\"m = (K + 12) : 0,05, I think\"\"? Dan tel je 12 erbij op. Je moet 12 aftrekken, dus m = (K − 12) : 0,05. Door de stappen goed na te lopen kom je uit op m = (K − 12) : 0,05.",
+    "Koos je \"\"m = K : 0,05 − 12\"\"? Dan deel je K door 0,05 en trek dan 12 af. Eerst moet je 12 van K aftrekken, dus m = (K − 12) : 0,05.",
+    "Klopt: eerst 12 aftrekken, daarna delen door 0,05. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Los K = 12 + 0,05m op naar m."
+  },
+  {
+   "v": "Een functie f is gegeven. Hoe bereken je f(4)?",
+   "o": [
+    "\"vul x = 4 in en reken de functiewaarde uit\"",
+    "\"f maal 4\"",
+    "\"de oplossing van f(x) = 4, to be honest, you know\"",
+    "\"de afgeleide in 4\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: f(4) is de uitkomst bij x = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f maal 4\"\"? Dan lees je f als een getal. f(4) is een functiewaarde, dus x = 4 invullen. Het goede antwoord is vul x = 4 in en reken de functiewaarde uit.",
+    "Koos je \"\"de oplossing van f(x) = 4, to be honest, you know\"\"? Dan verwar je f(4) met een vergelijking. f(4) is een waarde, dus x = 4 invullen. Door de stappen goed na te lopen kom je uit op vul x = 4 in en reken de functiewaarde uit.",
+    "Koos je \"\"de afgeleide in 4\"\"? Dan verwar je de notatie met een afgeleide. f(4) is geen afgeleide, dus x = 4 invullen. Controleer je stap: de juiste uitkomst is vul x = 4 in en reken de functiewaarde uit."
+   ],
+   "uh": "Een functie f is gegeven. Hoe bereken je f(4)?"
+  },
+  {
+   "v": "Schrijf 3(2x − 4) zonder haakjes.",
+   "o": [
+    "\"6x − 4\"",
+    "\"5x − 1\"",
+    "\"6x − 12\"",
+    "\"6x + 12, I suppose\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6x − 4\"\"? Dan vermenigvuldig je alleen de eerste term. Elke term krijgt de factor 3, dus 6x − 12. Het goede antwoord is 6x − 12.",
+    "Koos je \"\"5x − 1\"\"? Dan tel je 3 op bij de termen. De haakjes vermenigvuldig je, dus 6x − 12. Door de stappen goed na te lopen kom je uit op 6x − 12.",
+    "Klopt: 3 · 2x = 6x en 3 · −4 = −12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6x + 12, I suppose\"\"? Dan laat je het minteken weg. 3 · −4 = −12, dus 6x − 12. Controleer je stap: de juiste uitkomst is 6x − 12."
+   ],
+   "uh": "Schrijf 3(2x − 4) zonder haakjes.",
+   "ctx": "Een leerling vereenvoudigt 3(2x − 4) − 2(x − 5) door de haakjes weg te werken en gelijksoortige termen samen te nemen. Hij controleert zijn antwoord met x = 1."
+  },
+  {
+   "v": "Werk de haakjes weg in −2(x − 5).",
+   "o": [
+    "\"−2x − 10, you know\"",
+    "\"−2x + 10\"",
+    "\"−2x − 5\"",
+    "\"−x + 10\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−2x − 10, you know\"\"? Dan laat je het teken fout. min maal min is plus, dus −2x + 10. Het goede antwoord is −2x + 10.",
+    "Klopt: −2 · −5 = +10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−2x − 5\"\"? Dan vermenigvuldig je alleen de eerste term. Elke term krijgt de factor −2, dus −2x + 10. Door de stappen goed na te lopen kom je uit op −2x + 10.",
+    "Koos je \"\"−x + 10\"\"? Dan neem je −2 niet mee bij x. Elke term krijgt de factor −2, dus −2x + 10. Controleer je stap: de juiste uitkomst is −2x + 10."
+   ],
+   "uh": "Werk de haakjes weg in −2(x − 5).",
+   "ctx": "Een leerling vereenvoudigt 3(2x − 4) − 2(x − 5) door de haakjes weg te werken en gelijksoortige termen samen te nemen. Hij controleert zijn antwoord met x = 1."
+  },
+  {
+   "v": "Neem de termen samen: hoe vereenvoudig je 3(2x − 4) − 2(x − 5)?",
+   "o": [
+    "\"4x − 22, really\"",
+    "\"8x − 2\"",
+    "\"4x + 2\"",
+    "\"4x − 2\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4x − 22, really\"\"? Dan laat je het teken van +10 fout. −2 · −5 = +10, dus 4x − 2. Het goede antwoord is 4x − 2.",
+    "Koos je \"\"8x − 2\"\"? Dan tel je 6x en 2x op. Het is 6x − 2x, dus 4x − 2. Door de stappen goed na te lopen kom je uit op 4x − 2.",
+    "Koos je \"\"4x + 2\"\"? Dan reken je −12 + 10 verkeerd. Dat is −2, dus 4x − 2. Controleer je stap: de juiste uitkomst is 4x − 2.",
+    "Klopt: 6x − 12 − 2x + 10 = 4x − 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Neem de termen samen: hoe vereenvoudig je 3(2x − 4) − 2(x − 5)?",
+   "ctx": "Een leerling vereenvoudigt 3(2x − 4) − 2(x − 5) door de haakjes weg te werken en gelijksoortige termen samen te nemen. Hij controleert zijn antwoord met x = 1."
+  },
+  {
+   "v": "Controleer met x = 1: welke waarde heeft de oorspronkelijke uitdrukking?",
+   "o": [
+    "\"2\"",
+    "\"−14\"",
+    "\"−2\"",
+    "\"8\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3 · −2 − 2 · −4 = −6 + 8 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−14\"\"? Dan laat je het teken fout. −2 · −4 = +8, dus 2. Het goede antwoord is 2.",
+    "Koos je \"\"−2\"\"? Dan neem je 4x − 2 met x = 1 niet goed. 4 − 2 = 2, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Koos je \"\"8\"\"? Dan reken je maar één term uit. Beide termen tellen mee, dus 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Controleer met x = 1: welke waarde heeft de oorspronkelijke uitdrukking?",
+   "ctx": "Een leerling vereenvoudigt 3(2x − 4) − 2(x − 5) door de haakjes weg te werken en gelijksoortige termen samen te nemen. Hij controleert zijn antwoord met x = 1."
+  },
+  {
+   "v": "Bereken de macht (2a³)².",
+   "o": [
+    "\"2a⁶\"",
+    "\"4a⁵\"",
+    "\"4a⁶\"",
+    "\"4a⁹\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2a⁶\"\"? Dan kwadrateer je de 2 niet. De coëfficiënt wordt 4, dus 4a⁶. Het goede antwoord is 4a⁶.",
+    "Koos je \"\"4a⁵\"\"? Dan tel je de exponenten op. Bij een macht van een macht vermenigvuldig je, dus 4a⁶. Door de stappen goed na te lopen kom je uit op 4a⁶.",
+    "Klopt: 2² = 4 en (a³)² = a⁶. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"4a⁹\"\"? Dan bereken je 3³. De exponent is 3 · 2 = 6, dus 4a⁶. Controleer je stap: de juiste uitkomst is 4a⁶."
+   ],
+   "uh": "Bereken de macht (2a³)².",
+   "ctx": "Een leerling werkt (2a³)² · a uit met de rekenregels voor machten en schrijft daarna √18 vereenvoudigd als een wortel van een klein getal."
+  },
+  {
+   "v": "Vereenvoudig (2a³)² · a.",
+   "o": [
+    "\"4a⁶\"",
+    "\"4a⁷\"",
+    "\"8a⁷\"",
+    "\"4a⁸\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4a⁶\"\"? Dan laat je de factor a weg. a⁶ · a = a⁷, dus 4a⁷. Het goede antwoord is 4a⁷.",
+    "Klopt: 4a⁶ · a¹ = 4a⁷. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8a⁷\"\"? Dan reken je 2 · 4. De coëfficiënt is 4, dus 4a⁷. Door de stappen goed na te lopen kom je uit op 4a⁷.",
+    "Koos je \"\"4a⁸\"\"? Dan tel je 6 + 2 op. De factor a heeft exponent 1, dus 4a⁷. Controleer je stap: de juiste uitkomst is 4a⁷."
+   ],
+   "uh": "Vereenvoudig (2a³)² · a.",
+   "ctx": "Een leerling werkt (2a³)² · a uit met de rekenregels voor machten en schrijft daarna √18 vereenvoudigd als een wortel van een klein getal."
+  },
+  {
+   "v": "Schrijf √18 zo eenvoudig mogelijk.",
+   "o": [
+    "\"2√3\"",
+    "\"9√2\"",
+    "\"6√3\"",
+    "\"3√2\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2√3\"\"? Dan draai je de getallen om. 9 · 2 = 18 en √9 = 3, dus 3√2. Het goede antwoord is 3√2.",
+    "Koos je \"\"9√2\"\"? Dan haal je 9 uit de wortel zonder wortel te nemen. √9 = 3, dus 3√2. Door de stappen goed na te lopen kom je uit op 3√2.",
+    "Koos je \"\"6√3\"\"? Dan neem je 18 : 3. Splits 18 in 9 · 2, dus 3√2. Controleer je stap: de juiste uitkomst is 3√2.",
+    "Klopt: √18 = √(9 · 2) = 3√2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Schrijf √18 zo eenvoudig mogelijk.",
+   "ctx": "Een leerling werkt (2a³)² · a uit met de rekenregels voor machten en schrijft daarna √18 vereenvoudigd als een wortel van een klein getal."
+  },
+  {
+   "v": "Neem 3/x + 2/x samen tot één breuk.",
+   "o": [
+    "\"5/x\"",
+    "\"5/2x\"",
+    "\"6/x\"",
+    "\"5/x²\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: gelijke noemer, dus de tellers optellen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5/2x\"\"? Dan tel je de noemers op. Bij een gelijke noemer blijft die staan, dus 5/x. Het goede antwoord is 5/x.",
+    "Koos je \"\"6/x\"\"? Dan vermenigvuldig je de tellers. Bij optellen tel je ze op, dus 5/x. Door de stappen goed na te lopen kom je uit op 5/x.",
+    "Koos je \"\"5/x²\"\"? Dan maak je de noemer x². De noemer blijft x, dus 5/x. Controleer je stap: de juiste uitkomst is 5/x."
+   ],
+   "uh": "Neem 3/x + 2/x samen tot één breuk.",
+   "ctx": "Een leerling schrijft 3/x + 2/x als één breuk en vereenvoudigt (2x + 4)/2. Een klasgenoot zegt dat (2x + 4)/2 gelijk is aan 2x + 2."
+  },
+  {
+   "v": "Vereenvoudig de breuk (2x + 4)/2.",
+   "o": [
+    "\"2x + 2, I think\"",
+    "\"x + 4\"",
+    "\"x + 2\"",
+    "\"2x + 4\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2x + 2, I think\"\"? Dan deel je alleen de laatste term door 2. Beide termen delen, dus x + 2. Het goede antwoord is x + 2.",
+    "Koos je \"\"x + 4\"\"? Dan deel je alleen de eerste term door 2. Beide termen delen, dus x + 2. Door de stappen goed na te lopen kom je uit op x + 2.",
+    "Klopt: je deelt beide termen door 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2x + 4\"\"? Dan laat je de breuk staan. Je kunt delen door 2, dus x + 2. Controleer je stap: de juiste uitkomst is x + 2."
+   ],
+   "uh": "Vereenvoudig de breuk (2x + 4)/2.",
+   "ctx": "Een leerling schrijft 3/x + 2/x als één breuk en vereenvoudigt (2x + 4)/2. Een klasgenoot zegt dat (2x + 4)/2 gelijk is aan 2x + 2."
+  },
+  {
+   "v": "Waarom klopt het antwoord 2x + 2 van de klasgenoot niet?",
+   "o": [
+    "\"hij deelt alles door 4\"",
+    "\"hij deelt alleen de laatste term door 2\"",
+    "\"hij vergeet de haakjes\"",
+    "\"hij telt 2 bij de teller op, volgens mij, eigenlijk\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"hij deelt alles door 4\"\"? Dan denk je dat de deler 4 is. De deler is 2, dus hij deelt maar één term. Het goede antwoord is hij deelt alleen de laatste term door 2.",
+    "Klopt: de teller moet als geheel door 2 worden gedeeld. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"hij vergeet de haakjes\"\"? Dan denk je dat er haakjes ontbreken. Het gaat om delen van beide termen, dus hij deelt maar één term.",
+    "Koos je \"\"hij telt 2 bij de teller op, volgens mij, eigenlijk\"\"? Dan denk je dat hij optelt. Hij deelt maar één term, dus hij deelt alleen de laatste term."
+   ],
+   "uh": "Waarom klopt het antwoord 2x + 2 van de klasgenoot niet?",
+   "ctx": "Een leerling schrijft 3/x + 2/x als één breuk en vereenvoudigt (2x + 4)/2. Een klasgenoot zegt dat (2x + 4)/2 gelijk is aan 2x + 2."
+  },
+  {
+   "v": "Een leerling maakt m vrij in de kostenformule. Welke vorm van de formule is juist?",
+   "o": [
+    "\"m = K − 12 : 0,05\"",
+    "\"m = (K + 12) · 0,05, I suppose\"",
+    "\"m = K : (12 + 0,05)\"",
+    "\"m = (K − 12) : 0,05\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"m = K − 12 : 0,05\"\"? Dan deel je alleen 12 door 0,05. Het hele verschil moet gedeeld worden, dus m = (K − 12) : 0,05.",
+    "Koos je \"\"m = (K + 12) · 0,05, I suppose\"\"? Dan tel je 12 op en vermenigvuldig je. De omgekeerde bewerkingen zijn aftrekken en delen, dus m = (K − 12) : 0,05.",
+    "Koos je \"\"m = K : (12 + 0,05)\"\"? Dan deel je K door de som. Eerst 12 aftrekken, dus m = (K − 12) : 0,05. Controleer je stap: de juiste uitkomst is m = (K − 12) : 0,05.",
+    "Klopt: eerst 12 aftrekken en dan delen door 0,05. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een leerling maakt m vrij in de kostenformule. Welke vorm van de formule is juist?",
+   "ctx": "Een formule voor de maandkosten is K = 12 + 0,05m. Een leerling wil m uitdrukken in K en gebruikt dat bij een rekening van K = 32 euro. Daarna herleidt hij ook de omtrekformule O = 2(l + b) naar l."
+  },
+  {
+   "v": "Hoeveel belminuten horen bij een rekening van K = 32 euro?",
+   "o": [
+    "\"400 minuten\"",
+    "\"40 minuten\"",
+    "\"640 minuten\"",
+    "\"4000 minuten, you know\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (32 − 12) : 0,05 = 20 : 0,05 = 400. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"40 minuten\"\"? Dan verplaats je de komma verkeerd. 20 : 0,05 = 400, dus 400 minuten. Het goede antwoord is 400 minuten.",
+    "Koos je \"\"640 minuten\"\"? Dan deel je 32 door 0,05. Trek eerst 12 af, dus 400 minuten. Door de stappen goed na te lopen kom je uit op 400 minuten.",
+    "Koos je \"\"4000 minuten, you know\"\"? Dan verplaats je de komma verkeerd. 20 : 0,05 = 400, dus 400 minuten. Controleer je stap: de juiste uitkomst is 400 minuten."
+   ],
+   "uh": "Hoeveel belminuten horen bij een rekening van K = 32 euro?",
+   "ctx": "Een formule voor de maandkosten is K = 12 + 0,05m. Een leerling wil m uitdrukken in K en gebruikt dat bij een rekening van K = 32 euro. Daarna herleidt hij ook de omtrekformule O = 2(l + b) naar l."
+  },
+  {
+   "v": "Hoe schrijf je de omtrekformule O = 2(l + b) als formule voor l?",
+   "o": [
+    "\"l = O − b\"",
+    "\"l = (O − b) : 2\"",
+    "\"l = O : 2 − b\"",
+    "\"l = O : 2 + b\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"l = O − b\"\"? Dan vergeet je te delen door 2. De factor 2 hoort bij l + b, dus l = O : 2 − b. Het goede antwoord is l = O : 2 − b.",
+    "Koos je \"\"l = (O − b) : 2\"\"? Dan trek je b van O af voordat je deelt. Eerst delen door 2, dus l = O : 2 − b. Door de stappen goed na te lopen kom je uit op l = O : 2 − b.",
+    "Klopt: eerst delen door 2 en dan b aftrekken. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"l = O : 2 + b\"\"? Dan tel je b erbij op. Je moet b aftrekken, dus l = O : 2 − b. Controleer je stap: de juiste uitkomst is l = O : 2 − b."
+   ],
+   "uh": "Hoe schrijf je de omtrekformule O = 2(l + b) als formule voor l?",
+   "ctx": "Een formule voor de maandkosten is K = 12 + 0,05m. Een leerling wil m uitdrukken in K en gebruikt dat bij een rekening van K = 32 euro. Daarna herleidt hij ook de omtrekformule O = 2(l + b) naar l."
+  },
+  {
+   "v": "Bereken l voor een omtrek O = 40 en een breedte b = 8.",
+   "o": [
+    "\"32\"",
+    "\"12\"",
+    "\"28\"",
+    "\"16\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"32\"\"? Dan reken je 40 − 8. Deel eerst door 2, dus 12. Het goede antwoord is 12.",
+    "Klopt: 40 : 2 − 8 = 12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"28\"\"? Dan reken je 20 + 8. Trek b af in plaats van op te tellen, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"16\"\"? Dan reken je (40 − 8) : 2. Deel eerst door 2, dus 12. Controleer je stap: de juiste uitkomst is 12."
+   ],
+   "uh": "Bereken l voor een omtrek O = 40 en een breedte b = 8.",
+   "ctx": "Een formule voor de maandkosten is K = 12 + 0,05m. Een leerling wil m uitdrukken in K en gebruikt dat bij een rekening van K = 32 euro. Daarna herleidt hij ook de omtrekformule O = 2(l + b) naar l."
+  },
+  {
+   "v": "Bereken f(4) voor de functie f(x) = 3x − 2.",
+   "o": [
+    "\"12\"",
+    "\"14\"",
+    "\"7\"",
+    "\"10\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12\"\"? Dan vergeet je −2. f(4) = 12 − 2, dus 10. Het goede antwoord is 10.",
+    "Koos je \"\"14\"\"? Dan tel je 2 erbij op. Het is −2, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+    "Koos je \"\"7\"\"? Dan reken je 3 + 4. f(4) betekent 3 maal 4 min 2, dus 10. Controleer je stap: de juiste uitkomst is 10.",
+    "Klopt: 3 · 4 − 2 = 10. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken f(4) voor de functie f(x) = 3x − 2.",
+   "ctx": "Gegeven is f(x) = 3x − 2. Een leerling berekent functiewaarden, schrijft f(a + 1) uit en lost de ongelijkheid 2x − 3 > 5 op. Hij let op de notatie van functies en ongelijkheden."
+  },
+  {
+   "v": "Schrijf f(a + 1) uit voor f(x) = 3x − 2.",
+   "o": [
+    "\"3a + 1\"",
+    "\"3a − 1\"",
+    "\"3a + 3\"",
+    "\"3a − 2 + 1\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3(a + 1) − 2 = 3a + 3 − 2 = 3a + 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3a − 1\"\"? Dan vergeet je de 3 bij de 1. 3(a + 1) = 3a + 3, dus 3a + 1. Het goede antwoord is 3a + 1.",
+    "Koos je \"\"3a + 3\"\"? Dan vergeet je −2. 3(a + 1) − 2, dus 3a + 1. Door de stappen goed na te lopen kom je uit op 3a + 1.",
+    "Koos je \"\"3a − 2 + 1\"\"? Dan vervang je alleen de x door a en tel 1 erbij. Je vult x = a + 1 in, dus 3a + 1. Controleer je stap: de juiste uitkomst is 3a + 1."
+   ],
+   "uh": "Schrijf f(a + 1) uit voor f(x) = 3x − 2.",
+   "ctx": "Gegeven is f(x) = 3x − 2. Een leerling berekent functiewaarden, schrijft f(a + 1) uit en lost de ongelijkheid 2x − 3 > 5 op. Hij let op de notatie van functies en ongelijkheden."
+  },
+  {
+   "v": "Welke oplossing heeft 2x − 3 > 5?",
+   "o": [
+    "\"x > 1, eigenlijk\"",
+    "\"x < 4\"",
+    "\"x > 4\"",
+    "\"x = 4\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x > 1, eigenlijk\"\"? Dan trek je 3 af van 5 en deel je door 2. Je moet 3 optellen, dus x > 4. Het goede antwoord is x > 4.",
+    "Koos je \"\"x < 4\"\"? Dan draai je het teken om. Delen door 2 laat het teken staan, dus x > 4. Door de stappen goed na te lopen kom je uit op x > 4.",
+    "Klopt: 2x > 8 en dus x > 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 4\"\"? Dan maak je een vergelijking. Het is een ongelijkheid, dus x > 4. Controleer je stap: de juiste uitkomst is x > 4."
+   ],
+   "uh": "Welke oplossing heeft 2x − 3 > 5?",
+   "ctx": "Gegeven is f(x) = 3x − 2. Een leerling berekent functiewaarden, schrijft f(a + 1) uit en lost de ongelijkheid 2x − 3 > 5 op. Hij let op de notatie van functies en ongelijkheden."
+  },
+  {
+   "v": "Welk getal voldoet aan x > 4?",
+   "o": [
+    "\"4\"",
+    "\"5\"",
+    "\"3\"",
+    "\"−5\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4\"\"? Dan neem je de grens zelf. Bij > hoort de grens er niet bij, dus 5. Het goede antwoord is 5.",
+    "Klopt: 5 is groter dan 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3\"\"? Dan neem je een getal kleiner dan 4. Het moet groter zijn, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Koos je \"\"−5\"\"? Dan neem je een negatief getal. Het moet groter zijn dan 4, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Welk getal voldoet aan x > 4?",
+   "ctx": "Gegeven is f(x) = 3x − 2. Een leerling berekent functiewaarden, schrijft f(a + 1) uit en lost de ongelijkheid 2x − 3 > 5 op. Hij let op de notatie van functies en ongelijkheden."
+  },
+  {
+   "v": "Bereken −3² volgens de rekenregels.",
+   "o": [
+    "\"9\"",
+    "\"−6\"",
+    "\"6\"",
+    "\"−9\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9\"\"? Dan laat je het minteken meekwadrateren. Het kwadraat geldt alleen voor 3, dus −9. Het goede antwoord is −9.",
+    "Koos je \"\"−6\"\"? Dan vermenigvuldig je −3 met 2. 3² = 9, dus −9. Door de stappen goed na te lopen kom je uit op −9.",
+    "Koos je \"\"6\"\"? Dan vermenigvuldig je 3 met 2. 3² = 9 en daarna het minteken, dus −9. Controleer je stap: de juiste uitkomst is −9.",
+    "Klopt: eerst 3² = 9, daarna het minteken. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken −3² volgens de rekenregels.",
+   "ctx": "Een leerling rekent −3² uit op papier en vindt 9, terwijl zijn rekenmachine −9 geeft. Hij zoekt uit welke rekenregel hij moet toepassen."
+  },
+  {
+   "v": "Waarom geeft de rekenmachine −9 en niet 9?",
+   "o": [
+    "\"de macht gaat voor het minteken: −3² = −(3²)\"",
+    "\"de rekenmachine is stuk\"",
+    "\"het minteken gaat altijd voor, volgens mij, eigenlijk\"",
+    "\"de rekenmachine rondt af\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Pas de rekenvolgorde en de rekenregels toe, werk haakjes stap voor stap weg, herleid formules met dezelfde bewerking links en rechts en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je schrijft (−3)² als je 9 wilt. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de rekenmachine is stuk\"\"? Dan denk je dat de machine fout is. De machine volgt de rekenvolgorde, dus de macht gaat voor.",
+    "Koos je \"\"het minteken gaat altijd voor, volgens mij, eigenlijk\"\"? Dan denk je dat een minteken altijd eerst komt. De macht gaat voor, dus −(3²).",
+    "Koos je \"\"de rekenmachine rondt af\"\"? Dan denk je aan afronden. Hier gaat het om de volgorde, dus de macht gaat voor het minteken."
+   ],
+   "uh": "Waarom geeft de rekenmachine −9 en niet 9?",
+   "ctx": "Een leerling rekent −3² uit op papier en vindt 9, terwijl zijn rekenmachine −9 geeft. Hij zoekt uit welke rekenregel hij moet toepassen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling vereenvoudigt 4(x − 3) − 2(2x − 5) door de haakjes weg te werken en gelijksoortige termen samen te nemen. Hij controleert zijn antwoord met een getal naar keuze.",
+   "v": "Vereenvoudig de uitdrukking.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "4x − 12 − 4x + 10 (1p). De x-termen vallen weg: −12 + 10 (1p). Het resultaat is −2 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling werkt (3b²)³ · b uit met de rekenregels voor machten en vereenvoudigt daarna √50 als een wortel van een klein getal. Hij schrijft zijn stappen op.",
+   "v": "Schrijf (3b²)³ · b en √50 zo eenvoudig mogelijk.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(3b²)³ = 27b⁶ (1p). 27b⁶ · b = 27b⁷ (1p). √50 = √(25 · 2) = 5√2 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft 5/y − 2/y als één breuk en vereenvoudigt daarna (6y + 9)/3. Hij zegt dat het resultaat 2y + 9 is, maar zijn klasgenoot twijfelt.",
+   "v": "Schrijf beide uitdrukkingen zo eenvoudig mogelijk en verbeter de bewering.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "5/y − 2/y = 3/y (1p). (6y + 9)/3 = 2y + 3 (1p). De leerling deelde alleen de eerste term door 3 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een formule voor de kosten is K = 8 + 0,25m. Een leerling herleidt de formule naar m en berekent het aantal minuten bij K = 33 euro. Hij noteert elke stap van de herleiding.",
+   "v": "Herleid de formule naar m en bereken m bij K = 33.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "m = (K − 8) : 0,25 (1p). m = (33 − 8) : 0,25 (1p). m = 100 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = 2x + 5. Een leerling berekent f(3), schrijft f(a − 1) uit en lost de ongelijkheid 3x − 4 < 8 op. Hij let op de notatie en het teken van de ongelijkheid.",
+   "v": "Bereken f(3), schrijf f(a − 1) uit en los de ongelijkheid op.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f(3) = 11 (1p). f(a − 1) = 2(a − 1) + 5 = 2a + 3 (1p). 3x < 12 geeft x < 4 (1p)."
+  }
+ ]
+}
