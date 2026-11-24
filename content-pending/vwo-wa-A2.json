@@ -1,0 +1,682 @@
+{
+ "id": "A2",
+ "lo": "wa.A.2",
+ "gs": 2,
+ "naam": "Toepassingen en effecten van wiskunde in het dagelijks leven en in beroepen herkennen",
+ "beschrijving": "Je herkent wiskunde in rente, kans, reistijd en verzekeringen, benoemt aannames en beperkingen van een model, beoordeelt effecten van modellen en reflecteert op je eigen leerproces.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Wiskunde in het dagelijks leven",
+  "Wiskunde in beroepen",
+  "Aannames en beperkingen",
+  "Effecten en kritische vragen",
+  "Reflecteren op je leerproces"
+ ],
+ "sam": "Herken welk gereedschap in een situatie zit, zoals een groeifactor bij rente en een kans bij een verzekering. Noem de aannames en de beperking van een model en let op extrapoleren. Stel kritische vragen bij beweringen met procenten en reflecteer op je eigen aanpak met een concreet plan.",
+ "begrippen": [
+  {
+   "t": "Wiskunde in het dagelijks leven",
+   "d": "Rente, kans, reistijd en percentages die je dagelijks tegenkomt."
+  },
+  {
+   "t": "Wiskunde in beroepen",
+   "d": "Statistiek bij onderzoek, kansrekening bij verzekeringen, modellen bij planning."
+  },
+  {
+   "t": "Samengestelde rente",
+   "d": "Rente over rente: het saldo vermenigvuldig je elk jaar met dezelfde groeifactor."
+  },
+  {
+   "t": "Groeifactor",
+   "d": "Het getal waarmee je per periode vermenigvuldigt, zoals 1,025."
+  },
+  {
+   "t": "Verwachte waarde",
+   "d": "De gemiddelde uitkomst, zoals 0,02 × €5000 = €100."
+  },
+  {
+   "t": "Model",
+   "d": "Een vereenvoudigde weergave van de werkelijkheid in wiskundige termen."
+  },
+  {
+   "t": "Aanname",
+   "d": "Iets wat je aanneemt om te kunnen rekenen, zoals geen files."
+  },
+  {
+   "t": "Beperking van een model",
+   "d": "Het gebied of de situatie waarin het model niet meer klopt."
+  },
+  {
+   "t": "Extrapoleren",
+   "d": "Een model gebruiken buiten het gebied van de gegevens."
+  },
+  {
+   "t": "Effect van een model",
+   "d": "De invloed op beslissingen en gedrag van mensen."
+  },
+  {
+   "t": "Kritische vraag",
+   "d": "Een vraag over groepen, steekproef en methode bij een bewering."
+  },
+  {
+   "t": "Reflecteren",
+   "d": "Nagaan wat goed ging, wat niet en wat je anders gaat doen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welk wiskundig gereedschap hoort bij samengestelde rente op een spaarrekening?",
+   "o": [
+    "\"alleen optellen\"",
+    "\"groeifactor en machten\"",
+    "\"alleen de stelling van Pythagoras\"",
+    "\"alleen delen\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen optellen\"\"? Dan tel je elk jaar hetzelfde bedrag op. Dat is lineaire groei, dus groeifactor en machten.",
+    "Klopt: elk jaar vermenigvuldig je met dezelfde groeifactor.",
+    "Koos je \"\"alleen de stelling van Pythagoras\"\"? Dan verwar je de situatie met meetkunde. Hier gaat het om groei, dus groeifactor en machten.",
+    "Koos je \"\"alleen delen\"\"? Dan deel je het bedrag. Rente laat het saldo vermenigvuldigen, dus groeifactor en machten. Controleer je stap: de juiste uitkomst is groeifactor en machten."
+   ],
+   "uh": "Welk wiskundig gereedschap hoort bij samengestelde rente op een spaarrekening?"
+  },
+  {
+   "v": "Waar komt kansrekening in het dagelijks leven vooral voor?",
+   "o": [
+    "\"bij het meten van een kamer\"",
+    "\"bij het lezen van een klok\"",
+    "\"bij het tellen van geld in je portemonnee, volgens mij\"",
+    "\"bij een verzekering of een weersverwachting\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij het meten van een kamer\"\"? Dan kies je een situatie met lengtes. Daar meet je en reken je zonder kans, dus verzekering of weersverwachting.",
+    "Koos je \"\"bij het lezen van een klok\"\"? Dan kies je een situatie met tijd. De klok geeft vaste getallen, dus verzekering of weersverwachting.",
+    "Koos je \"\"bij het tellen van geld in je portemonnee, volgens mij\"\"? Dan kies je een situatie zonder onzekerheid. Je weet precies hoeveel je hebt, dus verzekering of weersverwachting.",
+    "Klopt: daar wordt gerekend met de kans op een gebeurtenis."
+   ],
+   "uh": "Waar komt kansrekening in het dagelijks leven vooral voor?"
+  },
+  {
+   "v": "Welk beroep gebruikt vooral statistiek en kansrekening?",
+   "o": [
+    "\"een onderzoeker die twee groepen patiënten vergelijkt\"",
+    "\"een schilder die een muur verft\"",
+    "\"een bakker die brood bakt\"",
+    "\"een bibliothecaris die boeken sorteert, zeg maar, gewoon\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: zo wordt de werking van een behandeling getoetst.",
+    "Koos je \"\"een schilder die een muur verft\"\"? Dan kies je een beroep waarbij vooral oppervlakte telt. Dat is meetkunde, dus de onderzoeker.",
+    "Koos je \"\"een bakker die brood bakt\"\"? Dan kies je een beroep waar kansrekening niet centraal staat. Het gaat om een recept, dus de onderzoeker.",
+    "Koos je \"\"een bibliothecaris die boeken sorteert, zeg maar, gewoon\"\"? Dan kies je een beroep zonder onzekerheid. Boeken sorteer je op regels, dus de onderzoeker."
+   ],
+   "uh": "Welk beroep gebruikt vooral statistiek en kansrekening?"
+  },
+  {
+   "v": "Wat is een effect van wiskundige modellen in de maatschappij?",
+   "o": [
+    "\"modellen zijn altijd precies juist, eigenlijk, denk ik, zeg maar\"",
+    "\"modellen hebben geen invloed\"",
+    "\"beslissingen worden erop gebaseerd, zoals premies en prognoses\"",
+    "\"modellen maken wiskunde overbodig\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"modellen zijn altijd precies juist, eigenlijk, denk ik, zeg maar\"\"? Dan denk je dat een model de werkelijkheid exact weergeeft. Een model is een vereenvoudiging, dus modellen sturen beslissingen.",
+    "Koos je \"\"modellen hebben geen invloed\"\"? Dan denk je dat modellen alleen op papier bestaan. Ze worden echt gebruikt, dus beslissingen worden erop gebaseerd.",
+    "Klopt: modellen sturen keuzes van bedrijven en overheden.",
+    "Koos je \"\"modellen maken wiskunde overbodig\"\"? Dan denk je dat modellen alles overnemen. Iemand moet ze maken en beoordelen, dus wiskunde blijft nodig."
+   ],
+   "uh": "Wat is een effect van wiskundige modellen in de maatschappij?"
+  },
+  {
+   "v": "Een app rekent de reistijd uit en gaat ervan uit dat er geen files zijn. Wat is dat voor iets in het model?",
+   "o": [
+    "\"een bewezen stelling, really, to be honest, you know\"",
+    "\"een aanname: iets wat je als waar aanneemt om te kunnen rekenen\"",
+    "\"een meetfout\"",
+    "\"het eindantwoord\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een bewezen stelling, really, to be honest, you know\"\"? Dan verwar je een aanname met een stelling. Een aanname bewijs je niet, dus je neemt hem aan.",
+    "Klopt: een aanname maakt het model eenvoudiger, maar beperkt de geldigheid.",
+    "Koos je \"\"een meetfout\"\"? Dan verwar je een aanname met een fout in de meting. Een aanname is een keuze, dus iets wat je aanneemt.",
+    "Koos je \"\"het eindantwoord\"\"? Dan verwar je een aanname met de uitkomst. Een aanname komt vooraf, dus iets wat je aanneemt."
+   ],
+   "uh": "Een app rekent de reistijd uit en gaat ervan uit dat er geen files zijn. Wat is dat voor iets in het model?"
+  },
+  {
+   "v": "Waarom noemen we een model een vereenvoudiging van de werkelijkheid?",
+   "o": [
+    "\"het bevat alle details van de situatie, denk ik\"",
+    "\"het is altijd een grafiek\"",
+    "\"het geeft altijd het juiste antwoord\"",
+    "\"het laat details weg om te kunnen rekenen\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het bevat alle details van de situatie, denk ik\"\"? Dan denk je dat een model alles meeneemt. Dat zou te ingewikkeld worden, dus het laat details weg.",
+    "Koos je \"\"het is altijd een grafiek\"\"? Dan denk je dat een model een grafiek moet zijn. Een model kan ook een formule zijn, dus een vereenvoudiging.",
+    "Koos je \"\"het geeft altijd het juiste antwoord\"\"? Dan denk je dat een model onfeilbaar is. Door het weglaten van details zit er een afwijking in, dus een vereenvoudiging.",
+    "Klopt: daarom moet je de uitkomst altijd terugvertalen en toetsen."
+   ],
+   "uh": "Waarom noemen we een model een vereenvoudiging van de werkelijkheid?"
+  },
+  {
+   "v": "Na een toets kijkt een leerling welke fouten hij maakte en past hij zijn aanpak aan. Wat doet hij?",
+   "o": [
+    "\"reflecteren: nagaan wat goed ging, wat niet en wat hij anders gaat doen\"",
+    "\"een toets overschrijven\"",
+    "\"alleen je cijfer onthouden, to be honest, you know, I think\"",
+    "\"een nieuw boek kopen\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je leert van je eigen aanpak. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"een toets overschrijven\"\"? Dan denk je dat reflecteren kopiëren is. Het gaat om jouw aanpak, dus nagaan en bijsturen.",
+    "Koos je \"\"alleen je cijfer onthouden, to be honest, you know, I think\"\"? Dan denk je dat het cijfer genoeg is. Reflecteren gaat over oorzaken, dus nagaan en bijsturen.",
+    "Koos je \"\"een nieuw boek kopen\"\"? Dan denk je aan materiaal. Reflecteren is nadenken over je eigen leren, dus nagaan en bijsturen."
+   ],
+   "uh": "Na een toets kijkt een leerling welke fouten hij maakte en past hij zijn aanpak aan. Wat doet hij?"
+  },
+  {
+   "v": "Met welke groeifactor groeit het saldo per jaar?",
+   "o": [
+    "\"0,025\"",
+    "\"2,5\"",
+    "\"1,025\"",
+    "\"1,25\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,025\"\"? Dan neem je alleen de rente. De groeifactor is 1 plus de rente, dus 1,025. Het goede antwoord is 1,025.",
+    "Koos je \"\"2,5\"\"? Dan neem je het percentage als factor. 2,5% is 0,025, dus 1,025. Door de stappen goed na te lopen kom je uit op 1,025.",
+    "Klopt: 100% + 2,5% = 102,5%. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,25\"\"? Dan verplaats je de komma verkeerd. 2,5% is 0,025, dus 1,025. Controleer je stap: de juiste uitkomst is 1,025."
+   ],
+   "uh": "Met welke groeifactor groeit het saldo per jaar?",
+   "ctx": "Een bank biedt een spaarrekening met 2,5% rente per jaar. Een leerling zet €2000 op de rekening en wil weten hoe het saldo groeit. Hij herkent de rente als wiskunde in het dagelijks leven."
+  },
+  {
+   "v": "Welk saldo staat er na één jaar op de rekening?",
+   "o": [
+    "\"€2025\"",
+    "\"€2050\"",
+    "\"€2500\"",
+    "\"€2002,50\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€2025\"\"? Dan neem je 2,5% als 25. 2,5% van 2000 is 50, dus €2050. Het goede antwoord is €2050.",
+    "Klopt: 2000 × 1,025. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€2500\"\"? Dan neem je 2,5 als 25%. 2,5% van 2000 is 50, dus €2050. Door de stappen goed na te lopen kom je uit op €2050.",
+    "Koos je \"\"€2002,50\"\"? Dan neem je 2,5% van 100. Het is 2,5% van 2000, dus €2050. Controleer je stap: de juiste uitkomst is €2050."
+   ],
+   "uh": "Welk saldo staat er na één jaar op de rekening?",
+   "ctx": "Een bank biedt een spaarrekening met 2,5% rente per jaar. Een leerling zet €2000 op de rekening en wil weten hoe het saldo groeit. Hij herkent de rente als wiskunde in het dagelijks leven."
+  },
+  {
+   "v": "Welk saldo staat er na drie jaar op de rekening, op de cent nauwkeurig?",
+   "o": [
+    "\"€2150,00\"",
+    "\"€2075,00\"",
+    "\"€2200,00\"",
+    "\"€2153,78\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€2150,00\"\"? Dan tel je elk jaar €50 op. De rente groeit mee, dat is geen lineaire groei, dus €2153,78. Het goede antwoord is €2153,78.",
+    "Koos je \"\"€2075,00\"\"? Dan neem je 2000 × 1,025 × 3 niet goed. Je moet 1,025 drie keer vermenigvuldigen, dus 1,025³. Door de stappen goed na te lopen kom je uit op €2153,78.",
+    "Koos je \"\"€2200,00\"\"? Dan neem je 3 × 100. De rente per jaar is 2,5%, dus €2153,78. Controleer je stap: de juiste uitkomst is €2153,78.",
+    "Klopt: 2000 × 1,025³ = 2153,78. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk saldo staat er na drie jaar op de rekening, op de cent nauwkeurig?",
+   "ctx": "Een bank biedt een spaarrekening met 2,5% rente per jaar. Een leerling zet €2000 op de rekening en wil weten hoe het saldo groeit. Hij herkent de rente als wiskunde in het dagelijks leven."
+  },
+  {
+   "v": "Wat voor soort groei is dit en waarom?",
+   "o": [
+    "\"exponentieel, want elk jaar vermenigvuldig je met dezelfde factor\"",
+    "\"lineair, want elk jaar komt er evenveel bij\"",
+    "\"kwadratisch, want het saldo wordt tot de macht 2 verheven, denk ik, zeg maar\"",
+    "\"geen van beide, het saldo blijft gelijk\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de groeifactor is constant. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"lineair, want elk jaar komt er evenveel bij\"\"? Dan denk je dat de rente elk jaar hetzelfde bedrag is. De rente groeit mee met het saldo, dus exponentieel.",
+    "Koos je \"\"kwadratisch, want het saldo wordt tot de macht 2 verheven, denk ik, zeg maar\"\"? Dan verwar je een macht met een exponent. Het saldo wordt vermenigvuldigd met 1,025 per jaar, dus exponentieel.",
+    "Koos je \"\"geen van beide, het saldo blijft gelijk\"\"? Dan denk je dat het saldo niet verandert. Het groeit elk jaar, dus exponentieel."
+   ],
+   "uh": "Wat voor soort groei is dit en waarom?",
+   "ctx": "Een bank biedt een spaarrekening met 2,5% rente per jaar. Een leerling zet €2000 op de rekening en wil weten hoe het saldo groeit. Hij herkent de rente als wiskunde in het dagelijks leven."
+  },
+  {
+   "v": "Hoeveel kost de schade de verzekeraar gemiddeld per verzekerde per jaar?",
+   "o": [
+    "\"€5000\"",
+    "\"€10\"",
+    "\"€100\"",
+    "\"€2\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€5000\"\"? Dan neem je de schade van één geval. Je moet met de kans van 2% rekenen, dus €100. Het goede antwoord is €100.",
+    "Koos je \"\"€10\"\"? Dan verplaats je de komma verkeerd. 0,02 × 5000 = 100, dus €100. Door de stappen goed na te lopen kom je uit op €100.",
+    "Klopt: 0,02 × 5000. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€2\"\"? Dan neem je het percentage. Vermenigvuldig met de schade, dus €100. Controleer je stap: de juiste uitkomst is €100."
+   ],
+   "uh": "Hoeveel kost de schade de verzekeraar gemiddeld per verzekerde per jaar?",
+   "ctx": "Een verzekeraar schat dat de kans op een schadegeval bij een verzekerde 2% per jaar is en dat zo'n schade gemiddeld €5000 kost. Een leerling berekent wat dat de verzekeraar gemiddeld per verzekerde kost."
+  },
+  {
+   "v": "De verzekeraar vraagt €140 premie per verzekerde. Waarom meer dan €100?",
+   "o": [
+    "\"omdat 100 fout is berekend\"",
+    "\"omdat er ook kosten, een buffer voor risico en winst bij horen\"",
+    "\"omdat de kans groter is dan 2%\"",
+    "\"omdat premies altijd afgerond worden, I suppose, really, to be honest\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat 100 fout is berekend\"\"? Dan denk je dat de berekening onjuist is. 100 is de gemiddelde schade, dus de premie bevat meer.",
+    "Klopt: de verwachte schade is maar één deel van de premie.",
+    "Koos je \"\"omdat de kans groter is dan 2%\"\"? Dan denk je dat de kans hoger is. Volgens de gegevens is die 2%, dus kosten en winst.",
+    "Koos je \"\"omdat premies altijd afgerond worden, I suppose, really, to be honest\"\"? Dan denk je aan afronden. Het verschil is veel groter dan een afronding, dus kosten en winst."
+   ],
+   "uh": "De verzekeraar vraagt €140 premie per verzekerde. Waarom meer dan €100?",
+   "ctx": "Een verzekeraar schat dat de kans op een schadegeval bij een verzekerde 2% per jaar is en dat zo'n schade gemiddeld €5000 kost. Een leerling berekent wat dat de verzekeraar gemiddeld per verzekerde kost."
+  },
+  {
+   "v": "Wat is de verwachte totale schade bij 10 000 verzekerden?",
+   "o": [
+    "\"€100 000\"",
+    "\"€50 000 000, eigenlijk\"",
+    "\"€10 000\"",
+    "\"€1 000 000\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€100 000\"\"? Dan verplaats je de komma verkeerd. 10 000 × 100 = 1 000 000, dus €1 000 000. Het goede antwoord is €1 000 000.",
+    "Koos je \"\"€50 000 000, eigenlijk\"\"? Dan neem je 10 000 × 5000. Je moet met de kans rekenen, dus €1 000 000. Door de stappen goed na te lopen kom je uit op €1 000 000.",
+    "Koos je \"\"€10 000\"\"? Dan neem je het aantal verzekerden. Vermenigvuldig met €100, dus €1 000 000. Controleer je stap: de juiste uitkomst is €1 000 000.",
+    "Klopt: 10 000 × €100. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat is de verwachte totale schade bij 10 000 verzekerden?",
+   "ctx": "Een verzekeraar schat dat de kans op een schadegeval bij een verzekerde 2% per jaar is en dat zo'n schade gemiddeld €5000 kost. Een leerling berekent wat dat de verzekeraar gemiddeld per verzekerde kost."
+  },
+  {
+   "v": "Hoe lang duurt de rit volgens het model?",
+   "o": [
+    "\"1 uur en 15 minuten\"",
+    "\"1 uur en 25 minuten, gewoon\"",
+    "\"1 uur en 5 minuten\"",
+    "\"51,2 uur\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 80 : 64 = 1,25 uur. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1 uur en 25 minuten, gewoon\"\"? Dan zet dit je 1,25 uur om als 1 uur 25. 0,25 uur is 15 minuten, dus 1 uur en 15 minuten.",
+    "Koos je \"\"1 uur en 5 minuten\"\"? Dan deel je verkeerd. 80 : 64 = 1,25, dus 1 uur en 15 minuten. Door de stappen goed na te lopen kom je uit op 1 uur en 15 minuten.",
+    "Koos je \"\"51,2 uur\"\"? Dan vermenigvuldig je 80 met 64. Je moet delen, dus 1 uur en 15 minuten. Controleer je stap: de juiste uitkomst is 1 uur en 15 minuten."
+   ],
+   "uh": "Hoe lang duurt de rit volgens het model?",
+   "ctx": "Een navigatie-app berekent voor een rit van 80 km met een gemiddelde snelheid van 64 km/u de reistijd. De app houdt geen rekening met files of pauzes. Een leerling beoordeelt de uitkomst."
+  },
+  {
+   "v": "Welke aanname maakt de app?",
+   "o": [
+    "\"de weg is rechtlijnig\"",
+    "\"de auto rijdt nooit sneller dan 64, denk ik, zeg maar\"",
+    "\"er zijn geen files en geen pauzes onderweg\"",
+    "\"de rit is korter dan 80 km\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de weg is rechtlijnig\"\"? Dan denk je aan de vorm van de weg. De app rekent met afstand en snelheid, dus geen files en pauzes.",
+    "Koos je \"\"de auto rijdt nooit sneller dan 64, denk ik, zeg maar\"\"? Dan denk je dat 64 de maximale snelheid is. Het is de gemiddelde snelheid, dus geen files en pauzes.",
+    "Klopt: de gemiddelde snelheid blijft constant. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de rit is korter dan 80 km\"\"? Dan denk je dat de afstand verandert. Die is gegeven, dus geen files en pauzes. Controleer je stap: de juiste uitkomst is er zijn geen files en geen pauzes onderweg."
+   ],
+   "uh": "Welke aanname maakt de app?",
+   "ctx": "Een navigatie-app berekent voor een rit van 80 km met een gemiddelde snelheid van 64 km/u de reistijd. De app houdt geen rekening met files of pauzes. Een leerling beoordeelt de uitkomst."
+  },
+  {
+   "v": "Hoe maak je de schatting realistischer?",
+   "o": [
+    "\"rond de reistijd naar beneden af, volgens mij, eigenlijk\"",
+    "\"tel een marge voor files en pauzes op bij de rekentijd\"",
+    "\"laat de afstand weg\"",
+    "\"gebruik een grotere snelheid\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"rond de reistijd naar beneden af, volgens mij, eigenlijk\"\"? Dan maak je de schatting optimistischer. Dat is juist minder realistisch, dus een marge voor files.",
+    "Klopt: je verfijnt het model met een extra gegeven. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"laat de afstand weg\"\"? Dan verwijder je het enige vaste gegeven. De afstand blijft nodig, dus een marge. Door de stappen goed na te lopen kom je uit op tel een marge voor files en pauzes op bij de rekentijd.",
+    "Koos je \"\"gebruik een grotere snelheid\"\"? Dan maak je de reistijd korter. Dat is minder realistisch, dus een marge. Controleer je stap: de juiste uitkomst is tel een marge voor files en pauzes op bij de rekentijd."
+   ],
+   "uh": "Hoe maak je de schatting realistischer?",
+   "ctx": "Een navigatie-app berekent voor een rit van 80 km met een gemiddelde snelheid van 64 km/u de reistijd. De app houdt geen rekening met files of pauzes. Een leerling beoordeelt de uitkomst."
+  },
+  {
+   "v": "Wat voor soort model is B(t) = 1200 + 150t?",
+   "o": [
+    "\"exponentieel: het aantal verdubbelt\"",
+    "\"kwadratisch: het aantal groeit steeds sneller, zeg maar\"",
+    "\"constant: het aantal blijft 1200\"",
+    "\"lineair: elke maand komen er 150 bezoekers bij\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"exponentieel: het aantal verdubbelt\"\"? Dan denk je aan een groeifactor. Hier komt er steeds hetzelfde aantal bij, dus lineair.",
+    "Koos je \"\"kwadratisch: het aantal groeit steeds sneller, zeg maar\"\"? Dan denk je aan een kwadraat. Er staat geen t² in, dus lineair.",
+    "Koos je \"\"constant: het aantal blijft 1200\"\"? Dan laat je de term 150t weg. Er komt elke maand 150 bij, dus lineair. Controleer je stap: de juiste uitkomst is lineair: elke maand komen er 150 bezoekers bij.",
+    "Klopt: de toename per maand is constant. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat voor soort model is B(t) = 1200 + 150t?",
+   "ctx": "Een gemeente gebruikt het model B(t) = 1200 + 150t voor het aantal bezoekers van een museum per maand, met t het aantal maanden na de opening. Een leerling gebruikt het model voor een voorspelling."
+  },
+  {
+   "v": "Hoeveel bezoekers voorspelt het model 12 maanden na de opening?",
+   "o": [
+    "\"3000\"",
+    "\"1350\"",
+    "\"19 800\"",
+    "\"1800\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 1200 + 150 × 12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1350\"\"? Dan neem je 1200 + 150. Je moet 150 met 12 vermenigvuldigen, dus 3000. Het goede antwoord is 3000.",
+    "Koos je \"\"19 800\"\"? Dan vermenigvuldig je 1200 + 150 met 12. Alleen 150t groeit mee, dus 3000. Door de stappen goed na te lopen kom je uit op 3000.",
+    "Koos je \"\"1800\"\"? Dan neem je 150 × 12. Tel ook 1200 erbij, dus 3000. Controleer je stap: de juiste uitkomst is 3000."
+   ],
+   "uh": "Hoeveel bezoekers voorspelt het model 12 maanden na de opening?",
+   "ctx": "Een gemeente gebruikt het model B(t) = 1200 + 150t voor het aantal bezoekers van een museum per maand, met t het aantal maanden na de opening. Een leerling gebruikt het model voor een voorspelling."
+  },
+  {
+   "v": "Wat voorspelt het model na 60 maanden?",
+   "o": [
+    "\"9000 bezoekers\"",
+    "\"1350 bezoekers\"",
+    "\"10 200 bezoekers\"",
+    "\"72 000 bezoekers, gewoon\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9000 bezoekers\"\"? Dan neem je alleen 150 × 60. Tel ook 1200 erbij, dus 10 200. Het goede antwoord is 10 200 bezoekers.",
+    "Koos je \"\"1350 bezoekers\"\"? Dan neem je 1200 + 150. Je moet met 60 vermenigvuldigen, dus 10 200. Door de stappen goed na te lopen kom je uit op 10 200 bezoekers.",
+    "Klopt: 1200 + 150 × 60. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"72 000 bezoekers, gewoon\"\"? Dan vermenigvuldig je 1200 + 150 met 60. Alleen 150t groeit mee, dus 10 200. Controleer je stap: de juiste uitkomst is 10 200 bezoekers."
+   ],
+   "uh": "Wat voorspelt het model na 60 maanden?",
+   "ctx": "Een gemeente gebruikt het model B(t) = 1200 + 150t voor het aantal bezoekers van een museum per maand, met t het aantal maanden na de opening. Een leerling gebruikt het model voor een voorspelling."
+  },
+  {
+   "v": "Waarom is de voorspelling voor 60 maanden onbetrouwbaar?",
+   "o": [
+    "\"omdat 60 een te groot getal is\"",
+    "\"het model neemt aan dat de toename altijd 150 per maand blijft\"",
+    "\"omdat lineaire modellen altijd fout zijn, denk ik, zeg maar, gewoon\"",
+    "\"omdat t in maanden is\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat 60 een te groot getal is\"\"? Dan denk je dat het getal zelf fout is. Het probleem is de aanname, dus de constante toename.",
+    "Klopt: ver buiten het gebied van de gegevens klopt die aanname meestal niet.",
+    "Koos je \"\"omdat lineaire modellen altijd fout zijn, denk ik, zeg maar, gewoon\"\"? Dan denk je dat lineair altijd fout is. Het kan binnen een bereik goed passen, dus ver weg niet.",
+    "Koos je \"\"omdat t in maanden is\"\"? Dan denk je dat de eenheid het probleem is. De eenheid is prima, dus de aanname is het probleem."
+   ],
+   "uh": "Waarom is de voorspelling voor 60 maanden onbetrouwbaar?",
+   "ctx": "Een gemeente gebruikt het model B(t) = 1200 + 150t voor het aantal bezoekers van een museum per maand, met t het aantal maanden na de opening. Een leerling gebruikt het model voor een voorspelling."
+  },
+  {
+   "v": "Welk percentage van de punten haalde de leerling?",
+   "o": [
+    "\"18%\"",
+    "\"7,2%\"",
+    "\"25%\"",
+    "\"72%\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"18%\"\"? Dan neem je het aantal punten als percentage. Deel door 25, dus 72%. Het goede antwoord is 72%.",
+    "Koos je \"\"7,2%\"\"? Dan verplaats je de komma verkeerd. 18 : 25 = 0,72, dus 72%. Door de stappen goed na te lopen kom je uit op 72%.",
+    "Koos je \"\"25%\"\"? Dan neem je het maximum. Het is 18 : 25, dus 72%. Controleer je stap: de juiste uitkomst is 72%.",
+    "Klopt: 18 : 25 = 0,72. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk percentage van de punten haalde de leerling?",
+   "ctx": "Een leerling heeft voor een toets 18 van de 25 punten. Hij maakte fouten bij haakjes uitwerken en bij procenten. Hij bedenkt een plan: twee keer per week 20 minuten oefenen en zijn antwoorden nakijken met de uitwerkingen."
+  },
+  {
+   "v": "Waarom is zijn plan een goede reflectie?",
+   "o": [
+    "\"het richt zich op zijn fouten, is concreet en wordt gecontroleerd met uitwerkingen\"",
+    "\"omdat hij gewoon langer gaat leren, zeg maar, gewoon, volgens mij\"",
+    "\"omdat hij het cijfer nu vergeet\"",
+    "\"omdat hij een nieuw boek koopt\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: hij benoemt wat misging en wat hij gaat doen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat hij gewoon langer gaat leren, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat meer tijd vanzelf werkt. Het plan moet bij zijn fouten passen, dus gericht en concreet.",
+    "Koos je \"\"omdat hij het cijfer nu vergeet\"\"? Dan denk je dat vergeten helpt. Reflectie is nadenken over de oorzaak, dus gericht op fouten.",
+    "Koos je \"\"omdat hij een nieuw boek koopt\"\"? Dan denk je aan materiaal. Zijn plan gaat over zijn aanpak, dus gericht en concreet."
+   ],
+   "uh": "Waarom is zijn plan een goede reflectie?",
+   "ctx": "Een leerling heeft voor een toets 18 van de 25 punten. Hij maakte fouten bij haakjes uitwerken en bij procenten. Hij bedenkt een plan: twee keer per week 20 minuten oefenen en zijn antwoorden nakijken met de uitwerkingen."
+  },
+  {
+   "v": "Hoeveel procentpunt hoger is het koopaandeel met aanbeveling?",
+   "o": [
+    "\"50 procentpunt, you know\"",
+    "\"12 procentpunt\"",
+    "\"4 procentpunt\"",
+    "\"20 procentpunt\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"50 procentpunt, you know\"\"? Dan neem je de relatieve stijging. Het verschil is 12 − 8, dus 4 procentpunt. Het goede antwoord is 4 procentpunt.",
+    "Koos je \"\"12 procentpunt\"\"? Dan neem je het percentage met aanbeveling. Het verschil is 12 − 8, dus 4 procentpunt. Door de stappen goed na te lopen kom je uit op 4 procentpunt.",
+    "Klopt: 12 − 8 = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"20 procentpunt\"\"? Dan tel je 12 en 8 op. Het verschil is 12 − 8, dus 4 procentpunt. Controleer je stap: de juiste uitkomst is 4 procentpunt."
+   ],
+   "uh": "Hoeveel procentpunt hoger is het koopaandeel met aanbeveling?",
+   "ctx": "Een webshop meldt dat 12% van de klanten koopt na een aanbeveling van het algoritme, tegen 8% zonder aanbeveling. Een leerling beoordeelt wat dat betekent en welke vragen hij erbij stelt."
+  },
+  {
+   "v": "Met hoeveel procent is het koopaandeel relatief gestegen?",
+   "o": [
+    "\"4%\"",
+    "\"50%\"",
+    "\"33%\"",
+    "\"150%\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4%\"\"? Dan neem je het verschil in procentpunt. Deel door 8, dus 50%. Het goede antwoord is 50%.",
+    "Klopt: 4 : 8 = 0,5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"33%\"\"? Dan deel je door 12. De relatieve stijging is ten opzichte van het begin 8, dus 50%. Door de stappen goed na te lopen kom je uit op 50%.",
+    "Koos je \"\"150%\"\"? Dan tel je 100% erbij. De stijging is 4 : 8, dus 50%. Controleer je stap: de juiste uitkomst is 50%."
+   ],
+   "uh": "Met hoeveel procent is het koopaandeel relatief gestegen?",
+   "ctx": "Een webshop meldt dat 12% van de klanten koopt na een aanbeveling van het algoritme, tegen 8% zonder aanbeveling. Een leerling beoordeelt wat dat betekent en welke vragen hij erbij stelt."
+  },
+  {
+   "v": "Welk effect van het algoritme zie je hier?",
+   "o": [
+    "\"het verandert de prijzen, denk ik, zeg maar\"",
+    "\"het vervangt de klant\"",
+    "\"het heeft geen effect\"",
+    "\"het beïnvloedt het koopgedrag van klanten\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het verandert de prijzen, denk ik, zeg maar\"\"? Dan denk je dat de prijs verandert. Het gaat om het aandeel kopers, dus het koopgedrag.",
+    "Koos je \"\"het vervangt de klant\"\"? Dan denk je dat het algoritme zelf koopt. De klanten kopen zelf, dus het koopgedrag. Door de stappen goed na te lopen kom je uit op het beïnvloedt het koopgedrag van klanten.",
+    "Koos je \"\"het heeft geen effect\"\"? Dan denk je dat 12% en 8% gelijk zijn. Er is een duidelijk verschil, dus het koopgedrag.",
+    "Klopt: modellen sturen keuzes van mensen. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk effect van het algoritme zie je hier?",
+   "ctx": "Een webshop meldt dat 12% van de klanten koopt na een aanbeveling van het algoritme, tegen 8% zonder aanbeveling. Een leerling beoordeelt wat dat betekent en welke vragen hij erbij stelt."
+  },
+  {
+   "v": "Welke vraag stel je bij deze bewering als kritische lezer?",
+   "o": [
+    "\"hoe zijn de groepen gekozen en hoe groot waren ze\"",
+    "\"welke kleur heeft de webshop\"",
+    "\"hoeveel mensen werken er bij de webshop, volgens mij\"",
+    "\"wie heeft de website gemaakt\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Herken welk wiskundig gereedschap in de situatie zit, reken met de gegevens en noem welke aannames het model maakt en wat het effect van het resultaat is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: zo beoordeel je of het verschil betrouwbaar is. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"welke kleur heeft de webshop\"\"? Dan kies je een vraag zonder verband met de gegevens. De kleur zegt niets over betrouwbaarheid, dus naar groepen en grootte.",
+    "Koos je \"\"hoeveel mensen werken er bij de webshop, volgens mij\"\"? Dan kies je een gegeven dat niet bij de vergelijking hoort. Het gaat om de groepen, dus naar groepen en grootte.",
+    "Koos je \"\"wie heeft de website gemaakt\"\"? Dan kies je een vraag over de vormgeving. De onderzoeksopzet is belangrijker, dus naar groepen en grootte."
+   ],
+   "uh": "Welke vraag stel je bij deze bewering als kritische lezer?",
+   "ctx": "Een webshop meldt dat 12% van de klanten koopt na een aanbeveling van het algoritme, tegen 8% zonder aanbeveling. Een leerling beoordeelt wat dat betekent en welke vragen hij erbij stelt."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bank biedt een spaarrekening met 3% rente per jaar. Een leerling zet €1500 op de rekening en berekent het saldo na twee jaar. Hij schrijft de uitkomst in euro's en centen.",
+   "v": "Bereken het saldo na twee jaar en noem het soort groei.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Groeifactor 1,03 (1p). 1500 × 1,03² = 1591,35 (1p). Het is exponentiële groei, want het saldo wordt elk jaar met dezelfde factor vermenigvuldigd (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een verzekeraar schat de kans op een fietsdiefstal op 4% per jaar. De gemiddelde schade is €600. Een leerling berekent wat de verzekeraar gemiddeld per verzekerde kwijt is en vergelijkt dat met een premie van €30.",
+   "v": "Bereken de verwachte schade per verzekerde en leg uit waarom de premie hoger is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "0,04 × 600 = 24 euro (1p). De premie is €30, dus meer dan €24 (1p). Het verschil dekt kosten, een buffer voor risico en winst (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een gemeente gebruikt het model A(t) = 400 + 20t voor het aantal deelnemers aan een sportdag, met t het aantal jaar na de start. Een leerling voorspelt het aantal na 10 jaar en na 100 jaar.",
+   "v": "Bereken beide voorspellingen en beoordeel de tweede.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "A(10) = 600 (1p). A(100) = 2400 (1p). Het model neemt aan dat de toename altijd 20 per jaar blijft, dat klopt ver buiten het gebied niet (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een webshop meldt dat 15% van de klanten koopt na een aanbeveling, tegen 10% zonder aanbeveling. Een leerling schrijft dat het aandeel met 5% is gestegen.",
+   "v": "Bereken het verschil in procentpunt en de relatieve stijging en verbeter de bewering.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "15 − 10 = 5 procentpunt (1p). 5 : 10 = 50% relatieve stijging (1p). De bewering moet zijn: 5 procentpunt of 50% (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling haalt 20 van de 40 punten voor een toets. Hij maakte fouten bij breuken en bij machten en wil beter voorbereid zijn. Hij schrijft op wat misging en wat hij de volgende keer anders gaat doen.",
+   "v": "Bereken het percentage en geef een goed plan om de aanpak te verbeteren.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "20 : 40 = 50% (1p). Het plan richt zich op breuken en machten (1p). Het is concreet, met oefenmomenten, en controleert de antwoorden (1p)."
+  }
+ ]
+}
