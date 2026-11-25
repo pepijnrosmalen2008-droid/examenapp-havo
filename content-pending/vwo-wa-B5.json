@@ -1,0 +1,682 @@
+{
+ "id": "B5",
+ "lo": "wa.B.5",
+ "gs": 2,
+ "naam": "Telproblemen structureren met boomdiagram, wegendiagram en rooster",
+ "beschrijving": "Je herkent een telprobleem, structureert het met een boomdiagram, wegendiagram of rooster, past de productregel en de somregel toe en telt met herhaling, zonder herhaling en met verboden combinaties.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "De productregel en de somregel",
+  "Boomdiagram",
+  "Wegendiagram",
+  "Rooster",
+  "Beperkingen en controleren"
+ ],
+ "sam": "Herken een telprobleem en teken een boomdiagram, wegendiagram of rooster. Vermenigvuldig bij opeenvolgende keuzes en tel op bij alternatieven. Let op herhaling en beperkingen, trek verboden combinaties af en controleer met een klein voorbeeld.",
+ "begrippen": [
+  {
+   "t": "Telprobleem",
+   "d": "Een vraag naar het aantal mogelijkheden of uitkomsten."
+  },
+  {
+   "t": "Productregel",
+   "d": "Bij opeenvolgende keuzes vermenigvuldig je de aantallen: 3 · 4 · 2 = 24."
+  },
+  {
+   "t": "Somregel",
+   "d": "Bij alternatieven tel je de aantallen op: 6 + 1 = 7 routes."
+  },
+  {
+   "t": "Boomdiagram",
+   "d": "Een schema met takken per keuze, dat alle uitkomsten laat zien."
+  },
+  {
+   "t": "Wegendiagram",
+   "d": "Een schema met plaatsen en wegen, waarin je routes telt."
+  },
+  {
+   "t": "Rooster",
+   "d": "Een tabel met alle uitkomsten van twee keuzes, zoals 6 bij 6."
+  },
+  {
+   "t": "Uitkomst",
+   "d": "Eén mogelijke afloop, zoals KKM of (3, 4)."
+  },
+  {
+   "t": "Herhaling toegestaan",
+   "d": "Een keuze mag opnieuw gemaakt worden, zoals 10⁴ pincodes."
+  },
+  {
+   "t": "Zonder herhaling",
+   "d": "Elke keuze heeft één mogelijkheid minder: 10 · 9 · 8 · 7."
+  },
+  {
+   "t": "Minstens één",
+   "d": "Totaal min het geval waarin het niet voorkomt: 8 − 1 = 7."
+  },
+  {
+   "t": "Verboden combinatie",
+   "d": "Een combinatie die je van het totaal aftrekt."
+  },
+  {
+   "t": "Controleren",
+   "d": "Met een klein voorbeeld nagaan of de telling klopt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een menu heeft 3 voorgerechten en 4 hoofdgerechten. Hoeveel combinaties zijn er?",
+   "o": [
+    "\"7 (3 + 4)\"",
+    "\"12\"",
+    "\"4 (alleen de hoofdgerechten)\"",
+    "\"1\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7 (3 + 4)\"\"? Dan tel je 3 en 4 op. Bij elk voorgerecht kies je nog een hoofdgerecht, dus 12. Het goede antwoord is 12.",
+    "Klopt: bij elk voorgerecht horen 4 hoofdgerechten, dus 3 · 4.",
+    "Koos je \"\"4 (alleen de hoofdgerechten)\"\"? Dan neem je alleen de hoofdgerechten. Ook het voorgerecht telt, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"1\"\"? Dan neem je één combinatie. Er zijn er meer, dus 12. Controleer je stap: de juiste uitkomst is 12."
+   ],
+   "uh": "Een menu heeft 3 voorgerechten en 4 hoofdgerechten. Hoeveel combinaties zijn er?"
+  },
+  {
+   "v": "Je gooit drie keer met een munt. Hoeveel verschillende uitkomsten zijn er?",
+   "o": [
+    "\"6 (3 · 2)\"",
+    "\"3 (het aantal worpen)\"",
+    "\"9 (3²)\"",
+    "\"8\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6 (3 · 2)\"\"? Dan tel je 3 · 2 op. Elke worp heeft 2 uitkomsten en de worpen volgen op elkaar, dus 2 · 2 · 2. Het goede antwoord is 8.",
+    "Koos je \"\"3 (het aantal worpen)\"\"? Dan neem je het aantal worpen. Elke worp heeft 2 mogelijkheden, dus 8. Door de stappen goed na te lopen kom je uit op 8.",
+    "Koos je \"\"9 (3²)\"\"? Dan neem je 3². Het is 2³, dus 8. Controleer je stap: de juiste uitkomst is 8.",
+    "Klopt: 2 · 2 · 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Je gooit drie keer met een munt. Hoeveel verschillende uitkomsten zijn er?"
+  },
+  {
+   "v": "In een boomdiagram heeft elke worp van een dobbelsteen 6 takken. Hoeveel eindpunten na twee worpen?",
+   "o": [
+    "\"36\"",
+    "\"12 (6 + 6)\"",
+    "\"6 (takken van één worp)\"",
+    "\"66\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 6 · 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12 (6 + 6)\"\"? Dan tel je 6 en 6 op. Bij elke tak van de eerste worp komen 6 takken, dus 36. Het goede antwoord is 36.",
+    "Koos je \"\"6 (takken van één worp)\"\"? Dan neem je het aantal takken van één worp. Er zijn twee worpen, dus 36. Door de stappen goed na te lopen kom je uit op 36.",
+    "Koos je \"\"66\"\"? Dan schrijf je de getallen achter elkaar. Je vermenigvuldigt, dus 36. Controleer je stap: de juiste uitkomst is 36."
+   ],
+   "uh": "In een boomdiagram heeft elke worp van een dobbelsteen 6 takken. Hoeveel eindpunten na twee worpen?"
+  },
+  {
+   "v": "Tussen A en B lopen 3 wegen en tussen B en C 2 wegen. Hoeveel routes zijn er van A via B naar C?",
+   "o": [
+    "\"5 (3 + 2)\"",
+    "\"1\"",
+    "\"6\"",
+    "\"32\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5 (3 + 2)\"\"? Dan tel je 3 en 2 op. Bij elke weg naar B kies je nog een weg naar C, dus 6. Het goede antwoord is 6.",
+    "Koos je \"\"1\"\"? Dan neem je één route. Er zijn meer combinaties, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+    "Klopt: 3 · 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"32\"\"? Dan schrijf je de getallen achter elkaar. Je vermenigvuldigt, dus 6. Controleer je stap: de juiste uitkomst is 6."
+   ],
+   "uh": "Tussen A en B lopen 3 wegen en tussen B en C 2 wegen. Hoeveel routes zijn er van A via B naar C?"
+  },
+  {
+   "v": "Hoeveel uitkomsten heeft een rooster van twee dobbelstenen?",
+   "o": [
+    "\"12 (6 + 6)\"",
+    "\"36\"",
+    "\"6 (één dobbelsteen)\"",
+    "\"21 (paren zonder volgorde)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12 (6 + 6)\"\"? Dan tel je 6 en 6 op. Een rooster heeft 6 rijen en 6 kolommen, dus 36. Het goede antwoord is 36.",
+    "Klopt: 6 rijen en 6 kolommen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6 (één dobbelsteen)\"\"? Dan neem je één dobbelsteen. Er zijn twee dobbelstenen, dus 36. Door de stappen goed na te lopen kom je uit op 36.",
+    "Koos je \"\"21 (paren zonder volgorde)\"\"? Dan tel je de unieke paren zonder volgorde. In het rooster tellen beide volgordes, dus 36."
+   ],
+   "uh": "Hoeveel uitkomsten heeft een rooster van twee dobbelstenen?"
+  },
+  {
+   "v": "Wanneer vermenigvuldig je en wanneer tel je op bij tellen?",
+   "o": [
+    "\"altijd vermenigvuldigen\"",
+    "\"altijd optellen\"",
+    "\"optellen bij opeenvolgende keuzes\"",
+    "\"vermenigvuldigen bij opeenvolgende keuzes, optellen bij alternatieven\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"altijd vermenigvuldigen\"\"? Dan vermenigvuldig je ook bij alternatieven. Bij een keuze tussen twee routes tel je op, dus per soort.",
+    "Koos je \"\"altijd optellen\"\"? Dan tel je ook bij opeenvolgende keuzes op. Dan vermenigvuldig je, dus per soort. Door de stappen goed na te lopen kom je uit op vermenigvuldigen bij opeenvolgende keuzes, optellen bij alternatieven.",
+    "Koos je \"\"optellen bij opeenvolgende keuzes\"\"? Dan draai je het om. Opeenvolgende keuzes vermenigvuldig je, dus per soort.",
+    "Klopt: en betekent maal en of betekent plus. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wanneer vermenigvuldig je en wanneer tel je op bij tellen?"
+  },
+  {
+   "v": "Een pincode heeft 4 cijfers van 0 tot en met 9, herhalen mag. Hoeveel codes zijn er?",
+   "o": [
+    "\"10 000\"",
+    "\"40\"",
+    "\"1000\"",
+    "\"5040\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 10 · 10 · 10 · 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"40\"\"? Dan vermenigvuldig je 4 met 10. Elke plaats heeft 10 mogelijkheden, dus 10⁴. Het goede antwoord is 10 000.",
+    "Koos je \"\"1000\"\"? Dan neem je 10³. Er zijn 4 plaatsen, dus 10 000. Door de stappen goed na te lopen kom je uit op 10 000.",
+    "Koos je \"\"5040\"\"? Dan neem je het aantal codes zonder herhaling. Herhalen mag, dus 10 000. Controleer je stap: de juiste uitkomst is 10 000."
+   ],
+   "uh": "Een pincode heeft 4 cijfers van 0 tot en met 9, herhalen mag. Hoeveel codes zijn er?"
+  },
+  {
+   "v": "Hoeveel menu's met voorgerecht, hoofdgerecht en toetje zijn er?",
+   "o": [
+    "\"9 (3 + 4 + 2)\"",
+    "\"12 (zonder toetje)\"",
+    "\"24\"",
+    "\"8 (4 · 2)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9 (3 + 4 + 2)\"\"? Dan tel je 3, 4 en 2 op. Bij elke keuze komt een volgende, dus 24. Het goede antwoord is 24.",
+    "Koos je \"\"12 (zonder toetje)\"\"? Dan laat je het toetje weg. Ook het toetje is een keuze, dus 24. Door de stappen goed na te lopen kom je uit op 24.",
+    "Klopt: 3 · 4 · 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8 (4 · 2)\"\"? Dan neem je 4 · 2. Ook het voorgerecht telt, dus 24. Controleer je stap: de juiste uitkomst is 24."
+   ],
+   "uh": "Hoeveel menu's met voorgerecht, hoofdgerecht en toetje zijn er?",
+   "ctx": "Een restaurant biedt 3 voorgerechten, 4 hoofdgerechten en 2 toetjes aan. Een leerling telt hoeveel verschillende menu's met voorgerecht, hoofdgerecht en toetje mogelijk zijn en hoeveel menu's zonder toetje."
+  },
+  {
+   "v": "Hoeveel menu's zijn er zonder toetje?",
+   "o": [
+    "\"24 (met toetje)\"",
+    "\"12\"",
+    "\"7 (3 + 4)\"",
+    "\"6 (3 · 2)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"24 (met toetje)\"\"? Dan tel je het toetje mee. Zonder toetje blijven voorgerecht en hoofdgerecht, dus 12. Het goede antwoord is 12.",
+    "Klopt: 3 · 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7 (3 + 4)\"\"? Dan tel je 3 en 4 op. Je vermenigvuldigt, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"6 (3 · 2)\"\"? Dan neem je 3 · 2. Het gaat om voorgerecht en hoofdgerecht, dus 12. Controleer je stap: de juiste uitkomst is 12."
+   ],
+   "uh": "Hoeveel menu's zijn er zonder toetje?",
+   "ctx": "Een restaurant biedt 3 voorgerechten, 4 hoofdgerechten en 2 toetjes aan. Een leerling telt hoeveel verschillende menu's met voorgerecht, hoofdgerecht en toetje mogelijk zijn en hoeveel menu's zonder toetje."
+  },
+  {
+   "v": "Waarom vermenigvuldig je het aantal keuzes?",
+   "o": [
+    "\"omdat je alles moet optellen\"",
+    "\"omdat er veel gerechten zijn\"",
+    "\"omdat een menu groot is\"",
+    "\"bij elke keuze hoort elk van de volgende keuzes\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat je alles moet optellen\"\"? Dan denk je dat optellen nodig is. De keuzes volgen op elkaar, dus vermenigvuldigen.",
+    "Koos je \"\"omdat er veel gerechten zijn\"\"? Dan denk je dat het aantal gerechten de reden is. De keuzes komen na elkaar, dus vermenigvuldigen.",
+    "Koos je \"\"omdat een menu groot is\"\"? Dan denk je dat de grootte telt. Elke keuze hoort bij elke volgende, dus vermenigvuldigen.",
+    "Klopt: dat is de productregel. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waarom vermenigvuldig je het aantal keuzes?",
+   "ctx": "Een restaurant biedt 3 voorgerechten, 4 hoofdgerechten en 2 toetjes aan. Een leerling telt hoeveel verschillende menu's met voorgerecht, hoofdgerecht en toetje mogelijk zijn en hoeveel menu's zonder toetje."
+  },
+  {
+   "v": "Hoeveel routes zijn er van A via B naar C?",
+   "o": [
+    "\"6\"",
+    "\"5 (3 + 2)\"",
+    "\"3 (alleen de wegen naar B)\"",
+    "\"2 (alleen de wegen naar C)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3 · 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5 (3 + 2)\"\"? Dan tel je 3 en 2 op. Bij elke weg naar B kies je een weg naar C, dus 6. Het goede antwoord is 6.",
+    "Koos je \"\"3 (alleen de wegen naar B)\"\"? Dan neem je alleen de wegen naar B. Ook de wegen naar C tellen, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+    "Koos je \"\"2 (alleen de wegen naar C)\"\"? Dan neem je alleen de wegen naar C. Ook de wegen naar B tellen, dus 6. Controleer je stap: de juiste uitkomst is 6."
+   ],
+   "uh": "Hoeveel routes zijn er van A via B naar C?",
+   "ctx": "Tussen de plaatsen A en B lopen 3 wegen en tussen B en C lopen 2 wegen. Daarnaast is er 1 directe weg van A naar C. Een leerling tekent een wegendiagram en telt de routes van A naar C."
+  },
+  {
+   "v": "Hoeveel routes zijn er in totaal van A naar C, met de directe weg erbij?",
+   "o": [
+    "\"6\"",
+    "\"12\"",
+    "\"7\"",
+    "\"8\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6\"\"? Dan laat je de directe weg weg. Die is een extra route, dus 7. Het goede antwoord is 7.",
+    "Koos je \"\"12\"\"? Dan vermenigvuldig je 6 met 2. De directe weg komt erbij, dus 7. Door de stappen goed na te lopen kom je uit op 7.",
+    "Klopt: 6 + 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8\"\"? Dan tel je 6 en 2 op. De directe weg is één weg, dus 7. Controleer je stap: de juiste uitkomst is 7."
+   ],
+   "uh": "Hoeveel routes zijn er in totaal van A naar C, met de directe weg erbij?",
+   "ctx": "Tussen de plaatsen A en B lopen 3 wegen en tussen B en C lopen 2 wegen. Daarnaast is er 1 directe weg van A naar C. Een leerling tekent een wegendiagram en telt de routes van A naar C."
+  },
+  {
+   "v": "Heen via B naar C en terug via B naar A: hoeveel heen-en-terugroutes zijn er?",
+   "o": [
+    "\"12 (6 + 6)\"",
+    "\"36\"",
+    "\"6 (alleen heen)\"",
+    "\"72 (2 · 36)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12 (6 + 6)\"\"? Dan tel je 6 en 6 op. Heen en terug zijn opeenvolgende keuzes, dus 36. Het goede antwoord is 36.",
+    "Klopt: 6 · 6, want heen en terug kunnen elk via een van de 6 routes.",
+    "Koos je \"\"6 (alleen heen)\"\"? Dan neem je alleen de heenweg. Ook de terugweg heeft 6 keuzes, dus 36. Door de stappen goed na te lopen kom je uit op 36.",
+    "Koos je \"\"72 (2 · 36)\"\"? Dan vermenigvuldig je 36 met 2. Het is 6 · 6, dus 36. Controleer je stap: de juiste uitkomst is 36."
+   ],
+   "uh": "Heen via B naar C en terug via B naar A: hoeveel heen-en-terugroutes zijn er?",
+   "ctx": "Tussen de plaatsen A en B lopen 3 wegen en tussen B en C lopen 2 wegen. Daarnaast is er 1 directe weg van A naar C. Een leerling tekent een wegendiagram en telt de routes van A naar C."
+  },
+  {
+   "v": "Hoeveel uitkomsten heeft het rooster?",
+   "o": [
+    "\"12 (6 + 6)\"",
+    "\"6 (één dobbelsteen)\"",
+    "\"21\"",
+    "\"36\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12 (6 + 6)\"\"? Dan tel je 6 en 6 op. Een rooster heeft 6 rijen en 6 kolommen, dus 36. Het goede antwoord is 36.",
+    "Koos je \"\"6 (één dobbelsteen)\"\"? Dan neem je één dobbelsteen. Er zijn twee dobbelstenen, dus 36. Door de stappen goed na te lopen kom je uit op 36.",
+    "Koos je \"\"21\"\"? Dan tel je paren zonder volgorde. Beide volgordes tellen, dus 36. Controleer je stap: de juiste uitkomst is 36.",
+    "Klopt: 6 · 6. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel uitkomsten heeft het rooster?",
+   "ctx": "Een leerling gooit met twee dobbelstenen en tekent een rooster van 6 bij 6 met alle uitkomsten. Hij telt in het rooster het aantal uitkomsten met een bepaalde som."
+  },
+  {
+   "v": "Tel in het rooster de paren met een som van 7. Hoeveel zijn het?",
+   "o": [
+    "\"6\"",
+    "\"3\"",
+    "\"7\"",
+    "\"12\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3\"\"? Dan tel je alleen de paren zonder volgorde. (1,6) en (6,1) zijn verschillend, dus 6. Het goede antwoord is 6.",
+    "Koos je \"\"7\"\"? Dan neem je de som als aantal. Tel de paren, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+    "Koos je \"\"12\"\"? Dan tel je dubbel. Er zijn zes paren met som 7, dus 6. Controleer je stap: de juiste uitkomst is 6."
+   ],
+   "uh": "Tel in het rooster de paren met een som van 7. Hoeveel zijn het?",
+   "ctx": "Een leerling gooit met twee dobbelstenen en tekent een rooster van 6 bij 6 met alle uitkomsten. Hij telt in het rooster het aantal uitkomsten met een bepaalde som."
+  },
+  {
+   "v": "Hoe vaak komt de som 8 voor als je alle paren in het rooster nagaat?",
+   "o": [
+    "\"6 (het aantal van som 7)\"",
+    "\"4 (zonder (4,4))\"",
+    "\"5\"",
+    "\"8 (de som zelf)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6 (het aantal van som 7)\"\"? Dan neem je het aantal van som 7. Bij som 8 telt (4,4) maar één keer, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"4 (zonder (4,4))\"\"? Dan tel je (4,4) niet mee. (4,4) heeft som 8, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Klopt: (2,6), (3,5), (4,4), (5,3), (6,2). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8 (de som zelf)\"\"? Dan neem je de som als aantal. Tel de paren, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Hoe vaak komt de som 8 voor als je alle paren in het rooster nagaat?",
+   "ctx": "Een leerling gooit met twee dobbelstenen en tekent een rooster van 6 bij 6 met alle uitkomsten. Hij telt in het rooster het aantal uitkomsten met een bepaalde som."
+  },
+  {
+   "v": "De hoogste som is 12. Op hoeveel manieren komt die voor?",
+   "o": [
+    "\"2\"",
+    "\"1\"",
+    "\"6 (het aantal van som 7)\"",
+    "\"12\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2\"\"? Dan tel je twee volgordes. (6,6) is één uitkomst, dus 1. Het goede antwoord is 1.",
+    "Klopt: alleen (6,6). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6 (het aantal van som 7)\"\"? Dan neem je het aantal van som 7. Som 12 kan maar op één manier, dus 1. Door de stappen goed na te lopen kom je uit op 1.",
+    "Koos je \"\"12\"\"? Dan neem je de som als aantal. Tel de paren, dus 1. Controleer je stap: de juiste uitkomst is 1."
+   ],
+   "uh": "De hoogste som is 12. Op hoeveel manieren komt die voor?",
+   "ctx": "Een leerling gooit met twee dobbelstenen en tekent een rooster van 6 bij 6 met alle uitkomsten. Hij telt in het rooster het aantal uitkomsten met een bepaalde som."
+  },
+  {
+   "v": "Hoeveel uitkomsten heeft het boomdiagram van drie worpen?",
+   "o": [
+    "\"6 (3 · 2)\"",
+    "\"3 (het aantal worpen)\"",
+    "\"9 (3²)\"",
+    "\"8\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6 (3 · 2)\"\"? Dan tel je 3 · 2 op. Elke worp splitst in 2, dus 8. Het goede antwoord is 8.",
+    "Koos je \"\"3 (het aantal worpen)\"\"? Dan neem je het aantal worpen. Elke worp splitst in 2, dus 8. Door de stappen goed na te lopen kom je uit op 8.",
+    "Koos je \"\"9 (3²)\"\"? Dan neem je 3². Het is 2³, dus 8. Controleer je stap: de juiste uitkomst is 8.",
+    "Klopt: 2 · 2 · 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel uitkomsten heeft het boomdiagram van drie worpen?",
+   "ctx": "Een leerling gooit drie keer met een eerlijke munt en tekent een boomdiagram met kop (K) en munt (M). Hij telt alle uitkomsten en de uitkomsten met een bepaald aantal keer kop."
+  },
+  {
+   "v": "Bij hoeveel van de 8 uitkomsten staat kop op precies twee plaatsen?",
+   "o": [
+    "\"3\"",
+    "\"2 (alleen KK vooraan)\"",
+    "\"4 (met KKK erbij)\"",
+    "\"6 (dubbel geteld)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: KKM, KMK en MKK. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2 (alleen KK vooraan)\"\"? Dan tel je alleen de volgorde KK. De munt kan op drie plaatsen vallen, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"4 (met KKK erbij)\"\"? Dan tel je KKK mee. Dat is 3 keer kop, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"6 (dubbel geteld)\"\"? Dan tel je dubbel. Er zijn drie uitkomsten, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Bij hoeveel van de 8 uitkomsten staat kop op precies twee plaatsen?",
+   "ctx": "Een leerling gooit drie keer met een eerlijke munt en tekent een boomdiagram met kop (K) en munt (M). Hij telt alle uitkomsten en de uitkomsten met een bepaald aantal keer kop."
+  },
+  {
+   "v": "Je wilt minstens één keer kop. Hoeveel van de 8 uitkomsten voldoen?",
+   "o": [
+    "\"4 (kop op de eerste plaats)\"",
+    "\"3 (precies 2 keer kop)\"",
+    "\"7\"",
+    "\"8 (MMM meegeteld)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4 (kop op de eerste plaats)\"\"? Dan tel je alleen de uitkomsten met kop op de eerste plaats. Minstens 1 keer kop kan overal, dus 7.",
+    "Koos je \"\"3 (precies 2 keer kop)\"\"? Dan tel je alleen de uitkomsten met 2 keer kop. Minstens één kop is veel meer, dus 7.",
+    "Klopt: 8 − 1, want alleen MMM heeft geen kop. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8 (MMM meegeteld)\"\"? Dan tel je MMM mee. Dat heeft geen kop, dus 7. Controleer je stap: de juiste uitkomst is 7."
+   ],
+   "uh": "Je wilt minstens één keer kop. Hoeveel van de 8 uitkomsten voldoen?",
+   "ctx": "Een leerling gooit drie keer met een eerlijke munt en tekent een boomdiagram met kop (K) en munt (M). Hij telt alle uitkomsten en de uitkomsten met een bepaald aantal keer kop."
+  },
+  {
+   "v": "Hoeveel pincodes zijn er als cijfers herhaald mogen worden?",
+   "o": [
+    "\"40\"",
+    "\"10 000\"",
+    "\"1000\"",
+    "\"5040\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40\"\"? Dan vermenigvuldig je 4 met 10. Elke plaats heeft 10 keuzes, dus 10⁴. Het goede antwoord is 10 000.",
+    "Klopt: 10 · 10 · 10 · 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1000\"\"? Dan neem je 10³. Er zijn 4 plaatsen, dus 10 000. Door de stappen goed na te lopen kom je uit op 10 000.",
+    "Koos je \"\"5040\"\"? Dan neem je het aantal zonder herhaling. Hier mag herhaald worden, dus 10 000. Controleer je stap: de juiste uitkomst is 10 000."
+   ],
+   "uh": "Hoeveel pincodes zijn er als cijfers herhaald mogen worden?",
+   "ctx": "Een pincode bestaat uit 4 cijfers van 0 tot en met 9. Een leerling telt het aantal pincodes als cijfers mogen worden herhaald, als alle cijfers verschillend moeten zijn en als de code niet met 0 mag beginnen."
+  },
+  {
+   "v": "Hoeveel pincodes zijn er als alle vier de cijfers verschillend moeten zijn?",
+   "o": [
+    "\"10 000\"",
+    "\"40\"",
+    "\"3024\"",
+    "\"5040\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10 000\"\"? Dan laat je de beperking weg. Elk volgend cijfer heeft één keuze minder, dus 5040. Het goede antwoord is 5040.",
+    "Koos je \"\"40\"\"? Dan vermenigvuldig je 4 met 10. De keuzes nemen af, dus 5040. Door de stappen goed na te lopen kom je uit op 5040.",
+    "Koos je \"\"3024\"\"? Dan neem je 9 · 8 · 7 · 6. De eerste plaats heeft 10 keuzes, dus 5040. Controleer je stap: de juiste uitkomst is 5040.",
+    "Klopt: 10 · 9 · 8 · 7. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel pincodes zijn er als alle vier de cijfers verschillend moeten zijn?",
+   "ctx": "Een pincode bestaat uit 4 cijfers van 0 tot en met 9. Een leerling telt het aantal pincodes als cijfers mogen worden herhaald, als alle cijfers verschillend moeten zijn en als de code niet met 0 mag beginnen."
+  },
+  {
+   "v": "Hoeveel pincodes zijn er als de code niet met 0 mag beginnen en herhalen mag?",
+   "o": [
+    "\"9000\"",
+    "\"10 000\"",
+    "\"9999\"",
+    "\"1000\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 9 · 10 · 10 · 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"10 000\"\"? Dan laat je de beperking weg. De eerste plaats heeft maar 9 keuzes, dus 9000. Het goede antwoord is 9000.",
+    "Koos je \"\"9999\"\"? Dan trek je 1 af. De eerste plaats heeft 9 keuzes, dus 9000. Door de stappen goed na te lopen kom je uit op 9000.",
+    "Koos je \"\"1000\"\"? Dan neem je alleen de codes met 0 vooraan. Die moeten juist weg, dus 9000. Controleer je stap: de juiste uitkomst is 9000."
+   ],
+   "uh": "Hoeveel pincodes zijn er als de code niet met 0 mag beginnen en herhalen mag?",
+   "ctx": "Een pincode bestaat uit 4 cijfers van 0 tot en met 9. Een leerling telt het aantal pincodes als cijfers mogen worden herhaald, als alle cijfers verschillend moeten zijn en als de code niet met 0 mag beginnen."
+  },
+  {
+   "v": "Hoeveel outfits zijn er zonder de rode regel?",
+   "o": [
+    "\"9\"",
+    "\"12 (zonder schoenen)\"",
+    "\"24\"",
+    "\"6\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9\"\"? Dan tel je 4, 3 en 2 op. Elke keuze hoort bij elke volgende, dus 24. Het goede antwoord is 24.",
+    "Koos je \"\"12 (zonder schoenen)\"\"? Dan laat je de schoenen weg. Ook de schoenen zijn een keuze, dus 24. Door de stappen goed na te lopen kom je uit op 24.",
+    "Klopt: 4 · 3 · 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6\"\"? Dan neem je 3 · 2. Ook de shirts tellen, dus 24. Controleer je stap: de juiste uitkomst is 24."
+   ],
+   "uh": "Hoeveel outfits zijn er zonder de rode regel?",
+   "ctx": "Een leerling heeft 4 shirts, 3 broeken en 2 paar schoenen. Eén shirt is rood en één broek is rood; die twee wil hij niet samen dragen. Hij telt de outfits met een boomdiagram en een productregel."
+  },
+  {
+   "v": "Hoeveel outfits zijn er als het rode shirt en de rode broek niet samen mogen?",
+   "o": [
+    "\"23 (24 − 1)\"",
+    "\"22\"",
+    "\"24 (zonder de regel)\"",
+    "\"20 (24 − 4)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"23 (24 − 1)\"\"? Dan trek je 1 af. De verboden combinatie kan met beide schoenen, dus 22. Het goede antwoord is 22.",
+    "Klopt: 24 − 1 · 1 · 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"24 (zonder de regel)\"\"? Dan laat je de regel weg. De regel verbiedt outfits, dus 22. Door de stappen goed na te lopen kom je uit op 22.",
+    "Koos je \"\"20 (24 − 4)\"\"? Dan trek je 4 af. Er zijn 2 verboden outfits, dus 22. Controleer je stap: de juiste uitkomst is 22."
+   ],
+   "uh": "Hoeveel outfits zijn er als het rode shirt en de rode broek niet samen mogen?",
+   "ctx": "Een leerling heeft 4 shirts, 3 broeken en 2 paar schoenen. Eén shirt is rood en één broek is rood; die twee wil hij niet samen dragen. Hij telt de outfits met een boomdiagram en een productregel."
+  },
+  {
+   "v": "Hoe bereken je 22 uit 24?",
+   "o": [
+    "\"trek 1 af\"",
+    "\"trek 3 af\"",
+    "\"deel 24 door 2\"",
+    "\"trek de verboden outfits af: 1 · 1 · 2 = 2\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"trek 1 af\"\"? Dan tel je maar één verboden outfit. Met twee paar schoenen zijn het twee, dus 24 − 2. Het goede antwoord is trek de verboden outfits af: 1 · 1 · 2 = 2.",
+    "Koos je \"\"trek 3 af\"\"? Dan tel je het aantal broeken. Het gaat om de verboden outfits, dus 24 − 2. Door de stappen goed na te lopen kom je uit op trek de verboden outfits af: 1 · 1 · 2 = 2.",
+    "Koos je \"\"deel 24 door 2\"\"? Dan deel je. Je trekt de verboden gevallen af, dus 24 − 2. Controleer je stap: de juiste uitkomst is trek de verboden outfits af: 1 · 1 · 2 = 2.",
+    "Klopt: het rode shirt, de rode broek en elk paar schoenen."
+   ],
+   "uh": "Hoe bereken je 22 uit 24?",
+   "ctx": "Een leerling heeft 4 shirts, 3 broeken en 2 paar schoenen. Eén shirt is rood en één broek is rood; die twee wil hij niet samen dragen. Hij telt de outfits met een boomdiagram en een productregel."
+  },
+  {
+   "v": "Waarom is het antwoord niet 24 − 1 = 23?",
+   "o": [
+    "\"het rode shirt en de rode broek kunnen met elk van de 2 paar schoenen voorkomen\"",
+    "\"omdat 24 fout is\"",
+    "\"omdat 1 geen getal is\"",
+    "\"omdat er drie broeken zijn\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Teken eerst een boomdiagram, wegendiagram of rooster, vermenigvuldig bij opeenvolgende keuzes, tel op bij alternatieven en controleer met een klein voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: er zijn twee verboden outfits. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat 24 fout is\"\"? Dan denk je dat de eerste telling fout is. 24 klopt zonder regel, dus 2 outfits verbieden.",
+    "Koos je \"\"omdat 1 geen getal is\"\"? Dan denk je dat 1 niet mag. Het gaat om het aantal verboden outfits, dus 2. Door de stappen goed na te lopen kom je uit op het rode shirt en de rode broek kunnen met elk van de 2 paar schoenen voorkomen.",
+    "Koos je \"\"omdat er drie broeken zijn\"\"? Dan denk je dat het aantal broeken de oorzaak is. De schoenen vergroten het aantal verboden outfits, dus 2."
+   ],
+   "uh": "Waarom is het antwoord niet 24 − 1 = 23?",
+   "ctx": "Een leerling heeft 4 shirts, 3 broeken en 2 paar schoenen. Eén shirt is rood en één broek is rood; die twee wil hij niet samen dragen. Hij telt de outfits met een boomdiagram en een productregel."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een restaurant biedt 5 voorgerechten, 3 hoofdgerechten en 4 toetjes aan. Een leerling telt het aantal verschillende menu's met voorgerecht, hoofdgerecht en toetje en ook het aantal menu's zonder toetje.",
+   "v": "Bereken beide aantallen en noem de regel.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "5 · 3 · 4 = 60 (1p). Zonder toetje 5 · 3 = 15 (1p). Opeenvolgende keuzes: productregel (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Tussen A en B lopen 4 wegen en tussen B en C lopen 3 wegen. Daarnaast is er een directe route van A naar C met 2 wegen. Een leerling tekent een wegendiagram en telt de routes van A naar C.",
+   "v": "Bereken het aantal routes van A naar C.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Via B: 4 · 3 = 12 (1p). Direct: 2 (1p). Totaal 12 + 2 = 14 routes (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling gooit met twee dobbelstenen en tekent een rooster van 6 bij 6. Hij telt de uitkomsten met som 9. Hij schrijft de paren op.",
+   "v": "Geef het aantal uitkomsten met som 9 en het totaal aantal uitkomsten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Totaal 36 uitkomsten (1p). Som 9: (3,6), (4,5), (5,4), (6,3) (1p). Dat zijn 4 uitkomsten (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling gooit vier keer met een eerlijke munt en tekent een boomdiagram met kop (K) en munt (M). Hij telt alle uitkomsten en de uitkomsten met precies 3 keer kop.",
+   "v": "Bereken het totaal aantal uitkomsten en het aantal met precies 3 keer kop.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "2 · 2 · 2 · 2 = 16 (1p). Precies 3 keer kop: KKKM, KKMK, KMKK, MKKK (1p). Dat zijn 4 uitkomsten (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een wachtwoord bestaat uit 2 letters (26 mogelijkheden per letter) gevolgd door 3 cijfers van 0 tot en met 9. Herhaling is toegestaan. Een leerling telt het aantal wachtwoorden met de productregel.",
+   "v": "Bereken het aantal mogelijke wachtwoorden.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Letters: 26 · 26 = 676 (1p). Cijfers: 10 · 10 · 10 = 1000 (1p). Totaal 676 · 1000 = 676 000 (1p)."
+  }
+ ]
+}
