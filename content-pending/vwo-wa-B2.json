@@ -1,0 +1,682 @@
+{
+ "id": "B2",
+ "lo": "wa.B.2",
+ "gs": 2,
+ "naam": "Verhoudingen en percentages, absoluut en relatief, met en zonder variabelen",
+ "beschrijving": "Je maakt onderscheid tussen absolute en relatieve verandering en procentpunt, rekent met groeifactoren en opeenvolgende veranderingen, rekent terug en werkt met verhoudingen en percentages van een variabele.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Absoluut en relatief",
+  "Groeifactoren",
+  "Opeenvolgende veranderingen en terugrekenen",
+  "Percentages met een variabele",
+  "Verhoudingen en schaal"
+ ],
+ "sam": "Bepaal of een verandering absoluut, relatief of in procentpunt is. Reken met groeifactoren, vermenigvuldig bij opeenvolgende veranderingen en deel bij terugrekenen. Gebruik bij een variabele p de factor 1,10 of 0,90, werk met verhoudingen als delen van het geheel en controleer met een schatting.",
+ "begrippen": [
+  {
+   "t": "Absolute verandering",
+   "d": "Het verschil in aantal, zoals 230 − 200 = 30."
+  },
+  {
+   "t": "Relatieve verandering",
+   "d": "Het verschil gedeeld door de beginwaarde, zoals 30 : 200 = 15%."
+  },
+  {
+   "t": "Groeifactor",
+   "d": "Het getal waarmee je vermenigvuldigt: 1,08 bij +8% en 0,75 bij −25%."
+  },
+  {
+   "t": "Procentpunt",
+   "d": "Het verschil tussen twee percentages, zoals 6% − 5% = 1 procentpunt."
+  },
+  {
+   "t": "Opeenvolgende veranderingen",
+   "d": "Vermenigvuldig de groeifactoren: 0,75 · 0,80 = 0,60."
+  },
+  {
+   "t": "Terugrekenen",
+   "d": "Delen door de groeifactor: 48 : 0,80 = 60."
+  },
+  {
+   "t": "Btw",
+   "d": "Een toeslag van 21% met groeifactor 1,21."
+  },
+  {
+   "t": "Verhouding",
+   "d": "Een vergelijking van aantallen, zoals 2 : 3, waarbij het geheel 5 delen is."
+  },
+  {
+   "t": "Schaal",
+   "d": "Verhouding tussen kaart en werkelijkheid, bijvoorbeeld 1 : 50 000."
+  },
+  {
+   "t": "Gemiddeld groeipercentage",
+   "d": "De jaarlijkse groeifactor als wortel, zoals 1,08^(1/3) ≈ 1,026."
+  },
+  {
+   "t": "Procent van een variabele",
+   "d": "p% van x is p/100 · x, bijvoorbeeld 1,10p voor 10% erbij."
+  },
+  {
+   "t": "Controleren",
+   "d": "Een afgeronde schatting maken en het antwoord vergelijken."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Hoeveel groter is 230 dan 200, uitgedrukt in een aantal?",
+   "o": [
+    "\"15%\"",
+    "\"30\"",
+    "\"230\"",
+    "\"1,15\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15%\"\"? Dan geef je de relatieve toename. Absoluut betekent in aantal, dus 30. Het goede antwoord is 30.",
+    "Klopt: 230 − 200. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"230\"\"? Dan neem je de nieuwe waarde. De toename is het verschil, dus 30. Door de stappen goed na te lopen kom je uit op 30.",
+    "Koos je \"\"1,15\"\"? Dan geef je de groeifactor. Absoluut is het verschil, dus 30. Controleer je stap: de juiste uitkomst is 30."
+   ],
+   "uh": "Hoeveel groter is 230 dan 200, uitgedrukt in een aantal?"
+  },
+  {
+   "v": "Met welk percentage van het beginaantal 200 steeg het naar 230?",
+   "o": [
+    "\"30%\"",
+    "\"13%\"",
+    "\"1,5%\"",
+    "\"15%\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"30%\"\"? Dan neem je het aantal als percentage. Deel door de beginwaarde 200, dus 15%. Het goede antwoord is 15%.",
+    "Koos je \"\"13%\"\"? Dan deel je door 230. De relatieve toename is ten opzichte van het begin, dus 15%. Door de stappen goed na te lopen kom je uit op 15%.",
+    "Koos je \"\"1,5%\"\"? Dan verplaats je de komma verkeerd. 30 : 200 = 0,15, dus 15%. Controleer je stap: de juiste uitkomst is 15%.",
+    "Klopt: 30 : 200 = 0,15. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Met welk percentage van het beginaantal 200 steeg het naar 230?"
+  },
+  {
+   "v": "Welke groeifactor hoort bij een stijging van 8%?",
+   "o": [
+    "\"1,08\"",
+    "\"0,08\"",
+    "\"0,92\"",
+    "\"1,8\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 100% + 8% = 108%. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,08\"\"? Dan neem je alleen het percentage. De groeifactor is 1 plus de toename, dus 1,08. Het goede antwoord is 1,08.",
+    "Koos je \"\"0,92\"\"? Dan neem je een daling. Bij een stijging tel je op, dus 1,08. Door de stappen goed na te lopen kom je uit op 1,08.",
+    "Koos je \"\"1,8\"\"? Dan verplaats je de komma verkeerd. 8% is 0,08, dus 1,08. Controleer je stap: de juiste uitkomst is 1,08."
+   ],
+   "uh": "Welke groeifactor hoort bij een stijging van 8%?"
+  },
+  {
+   "v": "Welke groeifactor hoort bij een daling van 25%?",
+   "o": [
+    "\"1,25\"",
+    "\"0,25\"",
+    "\"0,75\"",
+    "\"−0,25\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1,25\"\"? Dan neem je een stijging. Bij een daling trek je af, dus 0,75. Het goede antwoord is 0,75.",
+    "Koos je \"\"0,25\"\"? Dan neem je het percentage van de daling. De groeifactor is wat overblijft, dus 0,75. Door de stappen goed na te lopen kom je uit op 0,75.",
+    "Klopt: 100% − 25% = 75%. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−0,25\"\"? Dan neem je het percentage met een minteken. De groeifactor is 1 min de daling, dus 0,75. Controleer je stap: de juiste uitkomst is 0,75."
+   ],
+   "uh": "Welke groeifactor hoort bij een daling van 25%?"
+  },
+  {
+   "v": "Een verf wordt gemengd in de verhouding 2 : 3. Welk deel van de verf is het eerste onderdeel?",
+   "o": [
+    "\"2/3\"",
+    "\"2/5\"",
+    "\"3/5\"",
+    "\"1/5\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2/3\"\"? Dan vergelijk je alleen de twee onderdelen. Het deel is ten opzichte van het geheel van 5, dus 2/5. Het goede antwoord is 2/5.",
+    "Klopt: 2 van de 5 delen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3/5\"\"? Dan neem je het tweede onderdeel. Het eerste heeft 2 delen, dus 2/5. Door de stappen goed na te lopen kom je uit op 2/5.",
+    "Koos je \"\"1/5\"\"? Dan neem je het verschil van de delen. Het geheel is 2 + 3 = 5, dus 2/5. Controleer je stap: de juiste uitkomst is 2/5."
+   ],
+   "uh": "Een verf wordt gemengd in de verhouding 2 : 3. Welk deel van de verf is het eerste onderdeel?"
+  },
+  {
+   "v": "Twee kortingen na elkaar: 25% en daarna 20%. Hoeveel procent korting is dat samen?",
+   "o": [
+    "\"45%\"",
+    "\"5%\"",
+    "\"20%\"",
+    "\"40%\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"45%\"\"? Dan tel je de kortingen op. Elke korting werkt op een nieuw bedrag, dus 40%. Het goede antwoord is 40%.",
+    "Koos je \"\"5%\"\"? Dan trek je de kortingen van elkaar af. Je moet de groeifactoren vermenigvuldigen, dus 40%. Door de stappen goed na te lopen kom je uit op 40%.",
+    "Koos je \"\"20%\"\"? Dan neem je de laatste korting. Beide kortingen tellen mee, dus 40%. Controleer je stap: de juiste uitkomst is 40%.",
+    "Klopt: 0,75 · 0,80 = 0,60, dus 40% korting. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Twee kortingen na elkaar: 25% en daarna 20%. Hoeveel procent korting is dat samen?"
+  },
+  {
+   "v": "Een prijs is €121 inclusief 21% btw. Hoeveel is de prijs exclusief btw?",
+   "o": [
+    "\"€100\"",
+    "\"€99,59\"",
+    "\"€146,41\"",
+    "\"€121\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 121 : 1,21 = 100. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€99,59\"\"? Dan trek je 21% van 121 af. De 21% is over de prijs exclusief btw berekend, dus €100. Het goede antwoord is €100.",
+    "Koos je \"\"€146,41\"\"? Dan vermenigvuldig je met 1,21. Je moet delen door 1,21, dus €100. Door de stappen goed na te lopen kom je uit op €100.",
+    "Koos je \"\"€121\"\"? Dan laat je de btw staan. Je moet de btw eraf rekenen, dus €100. Controleer je stap: de juiste uitkomst is €100."
+   ],
+   "uh": "Een prijs is €121 inclusief 21% btw. Hoeveel is de prijs exclusief btw?"
+  },
+  {
+   "v": "Welke groeifactor hoort bij 25% korting?",
+   "o": [
+    "\"1,25\"",
+    "\"0,25\"",
+    "\"0,75\"",
+    "\"0,025\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1,25\"\"? Dan neem je een stijging. Een korting is een daling, dus 0,75. Het goede antwoord is 0,75.",
+    "Koos je \"\"0,25\"\"? Dan neem je het kortingspercentage. De groeifactor is wat overblijft, dus 0,75. Door de stappen goed na te lopen kom je uit op 0,75.",
+    "Klopt: 100% − 25% = 75%. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,025\"\"? Dan verplaats je de komma verkeerd. 25% is 0,25, dus 0,75. Controleer je stap: de juiste uitkomst is 0,75."
+   ],
+   "uh": "Welke groeifactor hoort bij 25% korting?",
+   "ctx": "Een jas kost €80. De winkel geeft eerst 25% korting. Daarna rekent de kassa 21% btw over het bedrag na korting. Een leerling rekent met groeifactoren en noteert de eindprijs op de cent nauwkeurig."
+  },
+  {
+   "v": "Welke prijs heeft de jas na de korting?",
+   "o": [
+    "\"€55\"",
+    "\"€60\"",
+    "\"€20\"",
+    "\"€100\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€55\"\"? Dan trek je 25 af van 80. Je neemt 25% van 80, dus €60. Het goede antwoord is €60.",
+    "Klopt: 80 · 0,75. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€20\"\"? Dan neem je de korting zelf. De prijs is wat overblijft, dus €60. Door de stappen goed na te lopen kom je uit op €60.",
+    "Koos je \"\"€100\"\"? Dan tel je de korting erbij op. Een korting maakt de prijs lager, dus €60. Controleer je stap: de juiste uitkomst is €60."
+   ],
+   "uh": "Welke prijs heeft de jas na de korting?",
+   "ctx": "Een jas kost €80. De winkel geeft eerst 25% korting. Daarna rekent de kassa 21% btw over het bedrag na korting. Een leerling rekent met groeifactoren en noteert de eindprijs op de cent nauwkeurig."
+  },
+  {
+   "v": "Welke groeifactor hoort bij 21% btw erbij?",
+   "o": [
+    "\"0,21\"",
+    "\"0,79\"",
+    "\"1,021\"",
+    "\"1,21\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,21\"\"? Dan neem je alleen het percentage. De groeifactor is 1 plus de btw, dus 1,21. Het goede antwoord is 1,21.",
+    "Koos je \"\"0,79\"\"? Dan trek je 21% af. De btw komt erbij, dus 1,21. Door de stappen goed na te lopen kom je uit op 1,21.",
+    "Koos je \"\"1,021\"\"? Dan verplaats je de komma verkeerd. 21% is 0,21, dus 1,21. Controleer je stap: de juiste uitkomst is 1,21.",
+    "Klopt: 100% + 21% = 121%. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke groeifactor hoort bij 21% btw erbij?",
+   "ctx": "Een jas kost €80. De winkel geeft eerst 25% korting. Daarna rekent de kassa 21% btw over het bedrag na korting. Een leerling rekent met groeifactoren en noteert de eindprijs op de cent nauwkeurig."
+  },
+  {
+   "v": "Wat is de eindprijs van de jas na korting en btw?",
+   "o": [
+    "\"€72,60\"",
+    "\"€80,00\"",
+    "\"€75,00\"",
+    "\"€63,00\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 60 · 1,21 = 72,60. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€80,00\"\"? Dan denk je dat korting en btw elkaar opheffen. 25% korting en 21% btw werken op verschillende bedragen, dus €72,60.",
+    "Koos je \"\"€75,00\"\"? Dan trek je 25% af en tel je 21% op over de beginprijs. De btw komt over €60, dus €72,60. Door de stappen goed na te lopen kom je uit op €72,60.",
+    "Koos je \"\"€63,00\"\"? Dan reken je 60 · 1,05. De btw is 21%, dus €72,60. Controleer je stap: de juiste uitkomst is €72,60."
+   ],
+   "uh": "Wat is de eindprijs van de jas na korting en btw?",
+   "ctx": "Een jas kost €80. De winkel geeft eerst 25% korting. Daarna rekent de kassa 21% btw over het bedrag na korting. Een leerling rekent met groeifactoren en noteert de eindprijs op de cent nauwkeurig."
+  },
+  {
+   "v": "Met hoeveel procent is de jas na korting en btw in totaal goedkoper dan €80?",
+   "o": [
+    "\"4%\"",
+    "\"25%\"",
+    "\"9,25%\"",
+    "\"0%\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4%\"\"? Dan trek je 25% en 21% van elkaar af. Je moet de groeifactoren vermenigvuldigen, dus 9,25%. Het goede antwoord is 9,25%.",
+    "Koos je \"\"25%\"\"? Dan neem je alleen de korting. De btw telt ook mee, dus 9,25%. Door de stappen goed na te lopen kom je uit op 9,25%.",
+    "Klopt: 72,60 : 80 = 0,9075. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0%\"\"? Dan denk je dat het gelijk blijft. 0,75 · 1,21 = 0,9075, dus 9,25%. Controleer je stap: de juiste uitkomst is 9,25%."
+   ],
+   "uh": "Met hoeveel procent is de jas na korting en btw in totaal goedkoper dan €80?",
+   "ctx": "Een jas kost €80. De winkel geeft eerst 25% korting. Daarna rekent de kassa 21% btw over het bedrag na korting. Een leerling rekent met groeifactoren en noteert de eindprijs op de cent nauwkeurig."
+  },
+  {
+   "v": "Hoeveel inwoners kwamen er in totaal bij tussen 2020 en 2023?",
+   "o": [
+    "\"8%\"",
+    "\"3200\"",
+    "\"83 200\"",
+    "\"320\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8%\"\"? Dan geef je de relatieve toename. Absoluut betekent in aantal inwoners, dus 3200. Het goede antwoord is 3200.",
+    "Klopt: 43 200 − 40 000. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"83 200\"\"? Dan tel je de aantallen op. De toename is het verschil, dus 3200. Door de stappen goed na te lopen kom je uit op 3200.",
+    "Koos je \"\"320\"\"? Dan verplaats je de komma verkeerd. 43 200 − 40 000 = 3200, dus 3200. Controleer je stap: de juiste uitkomst is 3200."
+   ],
+   "uh": "Hoeveel inwoners kwamen er in totaal bij tussen 2020 en 2023?",
+   "ctx": "Een gemeente had in 2020 40 000 inwoners en in 2023 43 200 inwoners. Een leerling berekent de absolute en de relatieve toename en het gemiddelde groeipercentage per jaar, afgerond op één decimaal."
+  },
+  {
+   "v": "Met hoeveel procent van het aantal in 2020 is het aantal inwoners gegroeid?",
+   "o": [
+    "\"7,4%\"",
+    "\"3200%\"",
+    "\"0,8%\"",
+    "\"8%\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7,4%\"\"? Dan deel je door 43 200. De relatieve toename is ten opzichte van het begin, dus 8%. Het goede antwoord is 8%.",
+    "Koos je \"\"3200%\"\"? Dan neem je de toename als percentage. Deel door 40 000, dus 8%. Door de stappen goed na te lopen kom je uit op 8%.",
+    "Koos je \"\"0,8%\"\"? Dan verplaats je de komma verkeerd. 3200 : 40 000 = 0,08, dus 8%. Controleer je stap: de juiste uitkomst is 8%.",
+    "Klopt: 3200 : 40 000 = 0,08. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Met hoeveel procent van het aantal in 2020 is het aantal inwoners gegroeid?",
+   "ctx": "Een gemeente had in 2020 40 000 inwoners en in 2023 43 200 inwoners. Een leerling berekent de absolute en de relatieve toename en het gemiddelde groeipercentage per jaar, afgerond op één decimaal."
+  },
+  {
+   "v": "Welk gemiddeld groeipercentage per jaar hoort bij 8% in drie jaar, op één decimaal?",
+   "o": [
+    "\"2,6%\"",
+    "\"2,7%\"",
+    "\"8%\"",
+    "\"24%\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 1,08^(1/3) ≈ 1,026. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2,7%\"\"? Dan deel je 8% door 3. Per jaar groeit het exponentieel, dus 2,6%. Het goede antwoord is 2,6%.",
+    "Koos je \"\"8%\"\"? Dan neem je het percentage over drie jaar. Gevraagd is per jaar, dus 2,6%. Door de stappen goed na te lopen kom je uit op 2,6%.",
+    "Koos je \"\"24%\"\"? Dan vermenigvuldig je 8% met 3. Dat zou over negen jaar zijn, dus 2,6%. Controleer je stap: de juiste uitkomst is 2,6%."
+   ],
+   "uh": "Welk gemiddeld groeipercentage per jaar hoort bij 8% in drie jaar, op één decimaal?",
+   "ctx": "Een gemeente had in 2020 40 000 inwoners en in 2023 43 200 inwoners. Een leerling berekent de absolute en de relatieve toename en het gemiddelde groeipercentage per jaar, afgerond op één decimaal."
+  },
+  {
+   "v": "Hoeveel procentpunt is de werkloosheid gestegen?",
+   "o": [
+    "\"20 procentpunt, I think\"",
+    "\"6 procentpunt\"",
+    "\"1 procentpunt\"",
+    "\"5 procentpunt\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 procentpunt, I think\"\"? Dan neem je de relatieve toename als procentpunt. 1 : 5 = 20% is relatief, dus 1 procentpunt.",
+    "Koos je \"\"6 procentpunt\"\"? Dan neem je het nieuwe percentage. De stijging is het verschil, dus 1 procentpunt. Door de stappen goed na te lopen kom je uit op 1 procentpunt.",
+    "Klopt: 6 − 5 = 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5 procentpunt\"\"? Dan neem je het oude percentage. De stijging is het verschil, dus 1 procentpunt. Controleer je stap: de juiste uitkomst is 1 procentpunt."
+   ],
+   "uh": "Hoeveel procentpunt is de werkloosheid gestegen?",
+   "ctx": "In een land steeg de werkloosheid van 5% naar 6% van de beroepsbevolking. Een krant schrijft dat de werkloosheid met 1% steeg. Een leerling beoordeelt dat met procentpunt en relatieve toename."
+  },
+  {
+   "v": "Met hoeveel procent is de werkloosheid relatief gestegen?",
+   "o": [
+    "\"1%\"",
+    "\"20%\"",
+    "\"16,7%\"",
+    "\"120%\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1%\"\"? Dan neem je het procentpunt. Deel door het oude percentage 5, dus 20%. Het goede antwoord is 20%.",
+    "Klopt: 1 : 5 = 0,20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"16,7%\"\"? Dan deel je door 6. De relatieve toename is ten opzichte van het begin, dus 20%. Door de stappen goed na te lopen kom je uit op 20%.",
+    "Koos je \"\"120%\"\"? Dan tel je 100% erbij. De toename is 1 : 5, dus 20%. Controleer je stap: de juiste uitkomst is 20%."
+   ],
+   "uh": "Met hoeveel procent is de werkloosheid relatief gestegen?",
+   "ctx": "In een land steeg de werkloosheid van 5% naar 6% van de beroepsbevolking. Een krant schrijft dat de werkloosheid met 1% steeg. Een leerling beoordeelt dat met procentpunt en relatieve toename."
+  },
+  {
+   "v": "Hoeveel kilometer is 3 cm op de kaart met schaal 1 : 50 000?",
+   "o": [
+    "\"15 km\"",
+    "\"150 km\"",
+    "\"0,15 km, I suppose\"",
+    "\"1,5 km\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15 km\"\"? Dan verplaats je de komma verkeerd. 150 000 cm is 1,5 km, dus 1,5 km. Het goede antwoord is 1,5 km.",
+    "Koos je \"\"150 km\"\"? Dan reken je 150 000 cm niet goed om. 100 000 cm is 1 km, dus 1,5 km. Door de stappen goed na te lopen kom je uit op 1,5 km.",
+    "Koos je \"\"0,15 km, I suppose\"\"? Dan deel je door 20. Je vermenigvuldigt met de schaal, dus 1,5 km. Controleer je stap: de juiste uitkomst is 1,5 km.",
+    "Klopt: 3 · 50 000 = 150 000 cm = 1,5 km. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel kilometer is 3 cm op de kaart met schaal 1 : 50 000?",
+   "ctx": "Op een kaart met schaal 1 : 50 000 meet een leerling afstanden. Daarnaast mengt hij verf wit en rood in de verhouding 2 : 3 en rekent hij uit hoeveel liter van elke kleur nodig is."
+  },
+  {
+   "v": "Hoeveel centimeter op de kaart komt overeen met 4 km?",
+   "o": [
+    "\"8 cm\"",
+    "\"80 cm\"",
+    "\"0,8 cm\"",
+    "\"200 cm\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 400 000 cm : 50 000 = 8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"80 cm\"\"? Dan verplaats je de komma verkeerd. 400 000 : 50 000 = 8, dus 8 cm. Het goede antwoord is 8 cm.",
+    "Koos je \"\"0,8 cm\"\"? Dan verplaats je de komma verkeerd. 400 000 : 50 000 = 8, dus 8 cm. Door de stappen goed na te lopen kom je uit op 8 cm.",
+    "Koos je \"\"200 cm\"\"? Dan vermenigvuldig je met 50 000. Je moet delen door de schaal, dus 8 cm. Controleer je stap: de juiste uitkomst is 8 cm."
+   ],
+   "uh": "Hoeveel centimeter op de kaart komt overeen met 4 km?",
+   "ctx": "Op een kaart met schaal 1 : 50 000 meet een leerling afstanden. Daarnaast mengt hij verf wit en rood in de verhouding 2 : 3 en rekent hij uit hoeveel liter van elke kleur nodig is."
+  },
+  {
+   "v": "Hoeveel liter wit is er nodig voor 20 liter verf in de verhouding wit : rood = 2 : 3?",
+   "o": [
+    "\"12 liter\"",
+    "\"13,3 liter\"",
+    "\"8 liter\"",
+    "\"4 liter\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12 liter\"\"? Dan neem je het deel rood. Wit is 2 van de 5 delen, dus 8 liter. Het goede antwoord is 8 liter.",
+    "Koos je \"\"13,3 liter\"\"? Dan deel je 20 door 3 en vermenigvuldig met 2. Wit is 2/5, dus 8 liter. Door de stappen goed na te lopen kom je uit op 8 liter.",
+    "Klopt: 2/5 van 20 = 8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"4 liter\"\"? Dan deel je 20 door 5 en vergeet te vermenigvuldigen met 2. Wit is 2 delen, dus 8 liter. Controleer je stap: de juiste uitkomst is 8 liter."
+   ],
+   "uh": "Hoeveel liter wit is er nodig voor 20 liter verf in de verhouding wit : rood = 2 : 3?",
+   "ctx": "Op een kaart met schaal 1 : 50 000 meet een leerling afstanden. Daarnaast mengt hij verf wit en rood in de verhouding 2 : 3 en rekent hij uit hoeveel liter van elke kleur nodig is."
+  },
+  {
+   "v": "Welk percentage van de verf is wit?",
+   "o": [
+    "\"66,7%\"",
+    "\"40%\"",
+    "\"60%\"",
+    "\"20%\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"66,7%\"\"? Dan vergelijk je wit met rood. Het deel is ten opzichte van het geheel van 5, dus 40%. Het goede antwoord is 40%.",
+    "Klopt: 2 : 5 = 0,40. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"60%\"\"? Dan neem je het percentage rood. Wit is 2 van de 5 delen, dus 40%. Door de stappen goed na te lopen kom je uit op 40%.",
+    "Koos je \"\"20%\"\"? Dan neem je 2 als percentage. Het is 2 : 5, dus 40%. Controleer je stap: de juiste uitkomst is 40%."
+   ],
+   "uh": "Welk percentage van de verf is wit?",
+   "ctx": "Op een kaart met schaal 1 : 50 000 meet een leerling afstanden. Daarnaast mengt hij verf wit en rood in de verhouding 2 : 3 en rekent hij uit hoeveel liter van elke kleur nodig is."
+  },
+  {
+   "v": "Welke totale groeifactor hoort bij +10% en daarna −10%?",
+   "o": [
+    "\"1\"",
+    "\"0,90\"",
+    "\"1,10\"",
+    "\"0,99\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1\"\"? Dan denk je dat de veranderingen elkaar opheffen. Ze werken op verschillende bedragen, dus 0,99. Het goede antwoord is 0,99.",
+    "Koos je \"\"0,90\"\"? Dan neem je alleen de daling. Beide veranderingen tellen mee, dus 0,99. Door de stappen goed na te lopen kom je uit op 0,99.",
+    "Koos je \"\"1,10\"\"? Dan neem je alleen de stijging. Beide veranderingen tellen mee, dus 0,99. Controleer je stap: de juiste uitkomst is 0,99.",
+    "Klopt: 1,10 · 0,90 = 0,99. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke totale groeifactor hoort bij +10% en daarna −10%?",
+   "ctx": "Een winkelier verhoogt de prijs p van een artikel eerst met 10% en verlaagt daarna de nieuwe prijs met 10%. Een leerling denkt dat de prijs dan weer gelijk is en rekent het na met groeifactoren en met p = 50."
+  },
+  {
+   "v": "Welke eindprijs hoort bij p = 50?",
+   "o": [
+    "\"€49,50\"",
+    "\"€50,00\"",
+    "\"€55,00\"",
+    "\"€45,00\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 50 · 0,99. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€50,00\"\"? Dan denk je dat de prijs gelijk blijft. 50 · 1,10 · 0,90 = 49,50, dus €49,50. Het goede antwoord is €49,50.",
+    "Koos je \"\"€55,00\"\"? Dan neem je alleen de stijging. Daarna daalt de prijs, dus €49,50. Door de stappen goed na te lopen kom je uit op €49,50.",
+    "Koos je \"\"€45,00\"\"? Dan neem je alleen de daling van 10%. Eerst gaat de prijs omhoog, dus €49,50. Controleer je stap: de juiste uitkomst is €49,50."
+   ],
+   "uh": "Welke eindprijs hoort bij p = 50?",
+   "ctx": "Een winkelier verhoogt de prijs p van een artikel eerst met 10% en verlaagt daarna de nieuwe prijs met 10%. Een leerling denkt dat de prijs dan weer gelijk is en rekent het na met groeifactoren en met p = 50."
+  },
+  {
+   "v": "Welke conclusie past bij de verandering van de winkelier?",
+   "o": [
+    "\"de prijs is weer gelijk, eigenlijk, denk ik, zeg maar\"",
+    "\"de prijs is 20% hoger\"",
+    "\"de prijs is 1% lager dan het begin, want 10% van een hoger bedrag is meer\"",
+    "\"de prijs is 10% lager\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de prijs is weer gelijk, eigenlijk, denk ik, zeg maar\"\"? Dan denk je dat 10% op en neer gelijk is. De bedragen zijn verschillend, dus 1% lager.",
+    "Koos je \"\"de prijs is 20% hoger\"\"? Dan tel je de twee percentages op. De daling werkt op het hogere bedrag, dus 1% lager.",
+    "Klopt: de daling is over een groter bedrag. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de prijs is 10% lager\"\"? Dan neem je alleen de laatste verandering. Eerst was er een stijging, dus 1% lager. Controleer je stap: de juiste uitkomst is de prijs is 1% lager dan het begin, want 10% van een hoger bedrag is meer."
+   ],
+   "uh": "Welke conclusie past bij de verandering van de winkelier?",
+   "ctx": "Een winkelier verhoogt de prijs p van een artikel eerst met 10% en verlaagt daarna de nieuwe prijs met 10%. Een leerling denkt dat de prijs dan weer gelijk is en rekent het na met groeifactoren en met p = 50."
+  },
+  {
+   "v": "Wat is de oorspronkelijke prijs van de broek vóór 20% korting?",
+   "o": [
+    "\"€57,60\"",
+    "\"€60\"",
+    "\"€68\"",
+    "\"€38,40\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€57,60\"\"? Dan vermenigvuldig je 48 met 1,20. De korting was op de oorspronkelijke prijs, dus €60. Het goede antwoord is €60.",
+    "Klopt: 48 : 0,80 = 60. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€68\"\"? Dan tel je 20 bij 48 op. Deel door de groeifactor 0,80, dus €60. Door de stappen goed na te lopen kom je uit op €60.",
+    "Koos je \"\"€38,40\"\"? Dan neem je 80% van 48. Deel door 0,80, dus €60. Controleer je stap: de juiste uitkomst is €60."
+   ],
+   "uh": "Wat is de oorspronkelijke prijs van de broek vóór 20% korting?",
+   "ctx": "Een broek kost €48 na 20% korting. Een leerling rekent de oorspronkelijke prijs terug. Ook rekent hij een prijs van €121 inclusief 21% btw terug naar de prijs exclusief btw."
+  },
+  {
+   "v": "Wat is €121 inclusief 21% btw exclusief btw?",
+   "o": [
+    "\"€95,59\"",
+    "\"€146,41\"",
+    "\"€121\"",
+    "\"€100\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€95,59\"\"? Dan trek je 21% van 121 af. Deel door 1,21, dus €100. Het goede antwoord is €100.",
+    "Koos je \"\"€146,41\"\"? Dan vermenigvuldig je met 1,21. Deel door de groeifactor, dus €100. Door de stappen goed na te lopen kom je uit op €100.",
+    "Koos je \"\"€121\"\"? Dan laat je de btw staan. Reken de btw eraf, dus €100. Controleer je stap: de juiste uitkomst is €100.",
+    "Klopt: 121 : 1,21 = 100. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat is €121 inclusief 21% btw exclusief btw?",
+   "ctx": "Een broek kost €48 na 20% korting. Een leerling rekent de oorspronkelijke prijs terug. Ook rekent hij een prijs van €121 inclusief 21% btw terug naar de prijs exclusief btw."
+  },
+  {
+   "v": "Waarom is 48 · 1,20 = 57,60 geen goede manier om de oorspronkelijke prijs te vinden?",
+   "o": [
+    "\"20% van 60 is niet gelijk aan 20% van 48\"",
+    "\"omdat 1,20 geen groeifactor is\"",
+    "\"omdat 48 te klein is\"",
+    "\"omdat een korting nooit teruggerekend kan worden\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst of het om een absolute of relatieve verandering gaat, reken met groeifactoren in plaats van percentages op te tellen en controleer met een afgeronde schatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de korting was over de oorspronkelijke prijs. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat 1,20 geen groeifactor is\"\"? Dan denk je dat 1,20 geen groeifactor kan zijn. Het is een groeifactor, maar de verkeerde, dus delen door 0,80.",
+    "Koos je \"\"omdat 48 te klein is\"\"? Dan denk je dat het getal fout is. De methode is fout, dus delen door 0,80. Door de stappen goed na te lopen kom je uit op 20% van 60 is niet gelijk aan 20% van 48.",
+    "Koos je \"\"omdat een korting nooit teruggerekend kan worden\"\"? Dan denk je dat het niet kan. Het kan met delen door de groeifactor, dus 48 : 0,80."
+   ],
+   "uh": "Waarom is 48 · 1,20 = 57,60 geen goede manier om de oorspronkelijke prijs te vinden?",
+   "ctx": "Een broek kost €48 na 20% korting. Een leerling rekent de oorspronkelijke prijs terug. Ook rekent hij een prijs van €121 inclusief 21% btw terug naar de prijs exclusief btw."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een computer kost €900. De winkel geeft 15% korting en rekent daarna 21% btw over het bedrag na korting. Een leerling rekent met groeifactoren en geeft het antwoord op de cent nauwkeurig.",
+   "v": "Bereken de eindprijs van de computer.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Groeifactor korting 0,85 en btw 1,21 (1p). 900 · 0,85 · 1,21 (1p). De eindprijs is €925,65 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het aantal leden van een club steeg van 250 naar 280. Een leerling berekent de absolute en relatieve toename en zegt dat de toename 30% is. Zijn klasgenoot twijfelt aan de eenheden.",
+   "v": "Bereken de absolute en de relatieve toename en verbeter de bewering.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Absolute toename 30 leden (1p). Relatieve toename 30 : 250 = 12% (1p). De toename is 30 leden of 12%, niet 30% (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een werkloosheidspercentage steeg van 4% naar 5%. Een krant schrijft dat de werkloosheid met 1% steeg. Een leerling beoordeelt die bewering met begrippen als procentpunt en relatieve toename.",
+   "v": "Bereken de toename in procentpunt en procent en verbeter de krant.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Stijging 1 procentpunt (1p). Relatief 1 : 4 = 25% (1p). De krant moet 1 procentpunt of 25% schrijven (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een winkelier verlaagt de prijs p van een artikel met 20% en verhoogt de nieuwe prijs daarna met 20%. Een leerling denkt dat de prijs weer gelijk is en rekent het na met groeifactoren en p = 100.",
+   "v": "Toon met een berekening aan dat de prijs niet gelijk is aan het begin.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "0,80 · 1,20 = 0,96 (1p). 100 · 0,96 = 96 (1p). De prijs is 4% lager dan het begin (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een broek kost €42 na 30% korting. Een leerling wil de oorspronkelijke prijs terugrekenen en schrijft 42 · 1,30 = 54,60. Zijn docent vraagt hem zijn werkwijze te verbeteren.",
+   "v": "Bereken de oorspronkelijke prijs en leg de fout uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De groeifactor van 30% korting is 0,70 (1p). 42 : 0,70 = 60 euro (1p). 30% van 60 is niet gelijk aan 30% van 42, dus 42 · 1,30 is fout (1p)."
+  }
+ ]
+}
