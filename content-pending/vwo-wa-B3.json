@@ -1,0 +1,682 @@
+{
+ "id": "B3",
+ "lo": "wa.B.3",
+ "gs": 2,
+ "naam": "Algebraïsche expressies herleiden en verifiëren",
+ "beschrijving": "Je ontbindt in factoren, herleidt formules, vereenvoudigt gebroken uitdrukkingen en verifieert met getallen en tegenvoorbeelden of twee uitdrukkingen gelijkwaardig zijn.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Ontbinden in factoren",
+  "Formules herleiden",
+  "Verifiëren met getallen",
+  "Gebroken uitdrukkingen",
+  "Algebra in een context"
+ ],
+ "sam": "Ontbind met buiten haakjes brengen, verschil van kwadraten en de som-productmethode. Herleid formules met omgekeerde bewerkingen, vereenvoudig gebroken uitdrukkingen met de voorwaarde voor x en verifieer met meerdere getallen en een tegenvoorbeeld.",
+ "begrippen": [
+  {
+   "t": "Ontbinden",
+   "d": "Een som schrijven als product van factoren, zoals 6x² − 9x = 3x(2x − 3)."
+  },
+  {
+   "t": "Buiten haakjes brengen",
+   "d": "De grootste gemeenschappelijke factor voor de haakjes zetten."
+  },
+  {
+   "t": "Verschil van kwadraten",
+   "d": "a² − b² = (a − b)(a + b), bijvoorbeeld x² − 9 = (x − 3)(x + 3)."
+  },
+  {
+   "t": "Kwadraat van een som",
+   "d": "x² + 6x + 9 = (x + 3)²."
+  },
+  {
+   "t": "Som-productmethode",
+   "d": "Zoek twee getallen met product c en som b voor x² + bx + c."
+  },
+  {
+   "t": "Formule herleiden",
+   "d": "Een variabele vrijmaken met omgekeerde bewerkingen, zoals m = (K − 15) : 0,12."
+  },
+  {
+   "t": "Gelijkwaardige uitdrukkingen",
+   "d": "Uitdrukkingen die voor elke waarde van x dezelfde uitkomst geven."
+  },
+  {
+   "t": "Tegenvoorbeeld",
+   "d": "Een waarde van x waarbij de uitdrukkingen niet gelijk zijn."
+  },
+  {
+   "t": "Gebroken uitdrukking",
+   "d": "Een uitdrukking met een variabele in de noemer, zoals 1/x + 1/(x + 1)."
+  },
+  {
+   "t": "Voorwaarde voor x",
+   "d": "De noemer mag niet nul zijn, bijvoorbeeld x ≠ −2."
+  },
+  {
+   "t": "Formule opstellen",
+   "d": "Een formule maken voor de oppervlakte of kosten uit de context."
+  },
+  {
+   "t": "Verifiëren",
+   "d": "Meerdere getallen invullen om begin- en eindvorm te vergelijken."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Schrijf 6x² − 9x als product door buiten haakjes te brengen.",
+   "o": [
+    "\"3(2x² − 3x), I think\"",
+    "\"3x(2x − 3)\"",
+    "\"6x(x − 9)\"",
+    "\"x(6x − 9)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3(2x² − 3x), I think\"\"? Dan laat je de x in de haakjes staan, terwijl die in beide termen voorkomt, dus ook x buiten haakjes: 3x(2x − 3).",
+    "Klopt: 3x · 2x = 6x² en 3x · −3 = −9x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6x(x − 9)\"\"? Dan kies je 6x als factor, maar 6x zit niet in −9x, dus de factor is 3x: 3x(2x − 3). Door de stappen goed na te lopen kom je uit op 3x(2x − 3).",
+    "Koos je \"\"x(6x − 9)\"\"? Dan laat je het getal 3 in de haakjes, terwijl 6 en 9 beide deelbaar zijn door 3, dus ook 3 buiten: 3x(2x − 3)."
+   ],
+   "uh": "Schrijf 6x² − 9x als product door buiten haakjes te brengen."
+  },
+  {
+   "v": "Ontbind x² − 9 in factoren.",
+   "o": [
+    "\"(x − 3)²\"",
+    "\"(x − 9)(x + 1), to be honest\"",
+    "\"x(x − 9)\"",
+    "\"(x − 3)(x + 3)\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(x − 3)²\"\"? Dan schrijf je twee gelijke factoren met een min. Uitwerken geeft x² − 6x + 9, dus (x − 3)(x + 3).",
+    "Koos je \"\"(x − 9)(x + 1), to be honest\"\"? Dan kies je factoren met product −9 en som −8, terwijl de middenterm ontbreekt, dus de som moet 0 zijn: (x − 3)(x + 3).",
+    "Koos je \"\"x(x − 9)\"\"? Dan haal je x buiten haakjes terwijl 9 geen x bevat. Dat klopt niet, dus (x − 3)(x + 3). Controleer je stap: de juiste uitkomst is (x − 3)(x + 3).",
+    "Klopt: een verschil van kwadraten, a² − b². Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Ontbind x² − 9 in factoren."
+  },
+  {
+   "v": "Herleid K = 15 + 0,12m naar m.",
+   "o": [
+    "\"m = (K − 15) : 0,12\"",
+    "\"m = K − 15 : 0,12\"",
+    "\"m = (K + 15) : 0,12, I suppose\"",
+    "\"m = 0,12K − 15\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: eerst 15 aftrekken en dan delen door 0,12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"m = K − 15 : 0,12\"\"? Dan deel je alleen 15 door 0,12. Het hele verschil moet gedeeld worden, dus m = (K − 15) : 0,12.",
+    "Koos je \"\"m = (K + 15) : 0,12, I suppose\"\"? Dan tel je 15 erbij op. Je moet 15 aftrekken, dus m = (K − 15) : 0,12. Door de stappen goed na te lopen kom je uit op m = (K − 15) : 0,12.",
+    "Koos je \"\"m = 0,12K − 15\"\"? Dan vermenigvuldig je met 0,12. Je moet delen door 0,12, dus m = (K − 15) : 0,12. Controleer je stap: de juiste uitkomst is m = (K − 15) : 0,12."
+   ],
+   "uh": "Herleid K = 15 + 0,12m naar m."
+  },
+  {
+   "v": "Herleid V = ⅓Gh naar h.",
+   "o": [
+    "\"h = V : (3G)\"",
+    "\"h = 3VG\"",
+    "\"h = 3V : G\"",
+    "\"h = V − 3G\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"h = V : (3G)\"\"? Dan deel je door 3 in plaats van te vermenigvuldigen. Beide kanten maal 3, dus h = 3V : G. Het goede antwoord is h = 3V : G.",
+    "Koos je \"\"h = 3VG\"\"? Dan vermenigvuldig je met G. Je moet delen door G, dus h = 3V : G. Door de stappen goed na te lopen kom je uit op h = 3V : G.",
+    "Klopt: vermenigvuldig met 3 en deel door G. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"h = V − 3G\"\"? Dan trek je 3G af. De bewerkingen zijn vermenigvuldigen en delen, dus h = 3V : G. Controleer je stap: de juiste uitkomst is h = 3V : G."
+   ],
+   "uh": "Herleid V = ⅓Gh naar h."
+  },
+  {
+   "v": "Hoe controleer je of twee uitdrukkingen gelijk zijn?",
+   "o": [
+    "\"vul alleen x = 0 in\"",
+    "\"vul meerdere verschillende getallen in en vergelijk\"",
+    "\"kijk of ze er hetzelfde uitzien, gewoon, volgens mij, eigenlijk\"",
+    "\"vraag een klasgenoot\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"vul alleen x = 0 in\"\"? Dan controleer je maar met één getal. Dat kan toevallig gelijk zijn, dus meerdere getallen.",
+    "Klopt: één verschil laat zien dat ze niet gelijk zijn. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"kijk of ze er hetzelfde uitzien, gewoon, volgens mij, eigenlijk\"\"? Dan vertrouw je op uiterlijk. Gelijk zijn ze pas als de waarden gelijk zijn, dus meerdere getallen.",
+    "Koos je \"\"vraag een klasgenoot\"\"? Dan vertrouw je op een mening. Je kunt zelf controleren, dus meerdere getallen. Controleer je stap: de juiste uitkomst is vul meerdere verschillende getallen in en vergelijk."
+   ],
+   "uh": "Hoe controleer je of twee uitdrukkingen gelijk zijn?"
+  },
+  {
+   "v": "Vereenvoudig (x² − x)/x voor x ≠ 0.",
+   "o": [
+    "\"x² − 1, I think\"",
+    "\"x\"",
+    "\"−1\"",
+    "\"x − 1\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² − 1, I think\"\"? Dan deel je alleen de tweede term door x. Beide termen delen, dus x − 1. Het goede antwoord is x − 1.",
+    "Koos je \"\"x\"\"? Dan laat je de −1 weg. x² : x = x en −x : x = −1, dus x − 1. Door de stappen goed na te lopen kom je uit op x − 1.",
+    "Koos je \"\"−1\"\"? Dan deel je alleen de tweede term. Beide termen delen, dus x − 1. Controleer je stap: de juiste uitkomst is x − 1.",
+    "Klopt: x(x − 1) gedeeld door x. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Vereenvoudig (x² − x)/x voor x ≠ 0."
+  },
+  {
+   "v": "Schrijf x² + 6x + 9 als kwadraat.",
+   "o": [
+    "\"(x + 3)²\"",
+    "\"(x + 9)², to be honest\"",
+    "\"(x + 6)²\"",
+    "\"x(x + 9)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x² + 2 · 3x + 3². Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(x + 9)², to be honest\"\"? Dan neem je het laatste getal 9. De 3 komt uit 2 · 3 = 6, dus (x + 3)². Het goede antwoord is (x + 3)².",
+    "Koos je \"\"(x + 6)²\"\"? Dan neem je de coëfficiënt 6. Halveer 6, dus (x + 3)². Door de stappen goed na te lopen kom je uit op (x + 3)².",
+    "Koos je \"\"x(x + 9)\"\"? Dan haal je x buiten haakjes. De uitdrukking is een kwadraat, dus (x + 3)². Controleer je stap: de juiste uitkomst is (x + 3)²."
+   ],
+   "uh": "Schrijf x² + 6x + 9 als kwadraat."
+  },
+  {
+   "v": "Welk product ontstaat als je 6x² − 9x buiten haakjes brengt?",
+   "o": [
+    "\"3(2x² − 3x), zeg maar\"",
+    "\"x(6x − 9)\"",
+    "\"3x(2x − 3)\"",
+    "\"6x(x − 1,5)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3(2x² − 3x), zeg maar\"\"? Dan haal je alleen 3 buiten haakjes. Haal ook x buiten, dus 3x(2x − 3). Het goede antwoord is 3x(2x − 3).",
+    "Koos je \"\"x(6x − 9)\"\"? Dan haal je alleen x buiten haakjes. Haal ook 3 buiten, dus 3x(2x − 3). Door de stappen goed na te lopen kom je uit op 3x(2x − 3).",
+    "Klopt: de grootste gemeenschappelijke factor is 3x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6x(x − 1,5)\"\"? Dan haal je 6x buiten haakjes. Het resultaat is dan niet gelijk, dus 3x(2x − 3). Controleer je stap: de juiste uitkomst is 3x(2x − 3)."
+   ],
+   "uh": "Welk product ontstaat als je 6x² − 9x buiten haakjes brengt?",
+   "ctx": "Een leerling ontbindt algebraïsche uitdrukkingen in factoren: 6x² − 9x, x² − 5x + 6 en x² + 6x + 9. Hij controleert zijn ontbinding door de haakjes weer weg te werken en door getallen in te vullen."
+  },
+  {
+   "v": "Welke twee factoren horen bij x² − 5x + 6 volgens de som-productmethode?",
+   "o": [
+    "\"(x + 2)(x + 3), eigenlijk\"",
+    "\"(x − 2)(x − 3)\"",
+    "\"(x − 1)(x − 6)\"",
+    "\"(x − 5)(x + 6)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(x + 2)(x + 3), eigenlijk\"\"? Dan neem je plustekens. De som moet −5 zijn, dus (x − 2)(x − 3). Het goede antwoord is (x − 2)(x − 3).",
+    "Klopt: −2 · −3 = 6 en −2 + −3 = −5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(x − 1)(x − 6)\"\"? Dan kies je factoren met product 6 maar som −7. De som moet −5 zijn, dus (x − 2)(x − 3). Door de stappen goed na te lopen kom je uit op (x − 2)(x − 3).",
+    "Koos je \"\"(x − 5)(x + 6)\"\"? Dan neem je de coëfficiënten over. Zoek getallen met product 6 en som −5, dus (x − 2)(x − 3)."
+   ],
+   "uh": "Welke twee factoren horen bij x² − 5x + 6 volgens de som-productmethode?",
+   "ctx": "Een leerling ontbindt algebraïsche uitdrukkingen in factoren: 6x² − 9x, x² − 5x + 6 en x² + 6x + 9. Hij controleert zijn ontbinding door de haakjes weer weg te werken en door getallen in te vullen."
+  },
+  {
+   "v": "Herken x² + 6x + 9 als een bijzondere vorm: hoe schrijf je het als product?",
+   "o": [
+    "\"(x + 6)(x + 3)\"",
+    "\"(x − 3)²\"",
+    "\"x(x + 6) + 9\"",
+    "\"(x + 3)²\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(x + 6)(x + 3)\"\"? Dan kies je factoren met product 18. Het product moet 9 zijn, dus (x + 3)². Het goede antwoord is (x + 3)².",
+    "Koos je \"\"(x − 3)²\"\"? Dan neem je een minteken. De middenterm +6x hoort bij een plus, dus (x + 3)². Door de stappen goed na te lopen kom je uit op (x + 3)².",
+    "Koos je \"\"x(x + 6) + 9\"\"? Dan laat je niet ontbonden. Het is een kwadraat, dus (x + 3)². Controleer je stap: de juiste uitkomst is (x + 3)².",
+    "Klopt: het is een kwadraat van een som. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Herken x² + 6x + 9 als een bijzondere vorm: hoe schrijf je het als product?",
+   "ctx": "Een leerling ontbindt algebraïsche uitdrukkingen in factoren: 6x² − 9x, x² − 5x + 6 en x² + 6x + 9. Hij controleert zijn ontbinding door de haakjes weer weg te werken en door getallen in te vullen."
+  },
+  {
+   "v": "Controleer 6x² − 9x = 3x(2x − 3) met x = 2.",
+   "o": [
+    "\"beide kanten geven 6\"",
+    "\"beide kanten geven 18, I think\"",
+    "\"links 6 en rechts 12\"",
+    "\"links 6 en rechts 0\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 24 − 18 = 6 en 3 · 2 · 1 = 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"beide kanten geven 18, I think\"\"? Dan reken je 6 · 2² − 9 · 2 verkeerd. Dat is 24 − 18 = 6, dus 6. Het goede antwoord is beide kanten geven 6.",
+    "Koos je \"\"links 6 en rechts 12\"\"? Dan reken je rechts 3 · 2 · 2. De haakjes geven 2 · 2 − 3 = 1, dus beide 6. Door de stappen goed na te lopen kom je uit op beide kanten geven 6.",
+    "Koos je \"\"links 6 en rechts 0\"\"? Dan reken je 2x − 3 verkeerd. Bij x = 2 is dat 1, dus beide 6. Controleer je stap: de juiste uitkomst is beide kanten geven 6."
+   ],
+   "uh": "Controleer 6x² − 9x = 3x(2x − 3) met x = 2.",
+   "ctx": "Een leerling ontbindt algebraïsche uitdrukkingen in factoren: 6x² − 9x, x² − 5x + 6 en x² + 6x + 9. Hij controleert zijn ontbinding door de haakjes weer weg te werken en door getallen in te vullen."
+  },
+  {
+   "v": "Maak m vrij in de kostenformule van het abonnement.",
+   "o": [
+    "\"m = K − 15 : 0,12\"",
+    "\"m = 0,12K − 15\"",
+    "\"m = (K − 15) : 0,12\"",
+    "\"m = (K + 15) : 0,12, to be honest\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"m = K − 15 : 0,12\"\"? Dan deel je alleen 15 door 0,12. Het hele verschil moet gedeeld worden, dus m = (K − 15) : 0,12.",
+    "Koos je \"\"m = 0,12K − 15\"\"? Dan vermenigvuldig je met 0,12. Je moet delen door 0,12, dus m = (K − 15) : 0,12. Door de stappen goed na te lopen kom je uit op m = (K − 15) : 0,12.",
+    "Klopt: eerst 15 aftrekken en dan delen door 0,12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"m = (K + 15) : 0,12, to be honest\"\"? Dan tel je 15 erbij op. Je moet 15 aftrekken, dus m = (K − 15) : 0,12. Controleer je stap: de juiste uitkomst is m = (K − 15) : 0,12."
+   ],
+   "uh": "Maak m vrij in de kostenformule van het abonnement.",
+   "ctx": "Een telefoonabonnement kost K = 15 + 0,12m euro bij m belminuten. Een leerling herleidt de formule naar m en past dat toe. Ook herleidt hij de inhoudsformule V = ⅓Gh van een kegel naar h."
+  },
+  {
+   "v": "Hoeveel belminuten horen bij K = 39 euro?",
+   "o": [
+    "\"20 minuten\"",
+    "\"200 minuten\"",
+    "\"325 minuten\"",
+    "\"2000 minuten, I suppose\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 minuten\"\"? Dan verplaats je de komma verkeerd. 24 : 0,12 = 200, dus 200 minuten. Het goede antwoord is 200 minuten.",
+    "Klopt: (39 − 15) : 0,12 = 24 : 0,12 = 200. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"325 minuten\"\"? Dan deel je 39 door 0,12. Trek eerst 15 af, dus 200 minuten. Door de stappen goed na te lopen kom je uit op 200 minuten.",
+    "Koos je \"\"2000 minuten, I suppose\"\"? Dan verplaats je de komma verkeerd. 24 : 0,12 = 200, dus 200 minuten. Controleer je stap: de juiste uitkomst is 200 minuten."
+   ],
+   "uh": "Hoeveel belminuten horen bij K = 39 euro?",
+   "ctx": "Een telefoonabonnement kost K = 15 + 0,12m euro bij m belminuten. Een leerling herleidt de formule naar m en past dat toe. Ook herleidt hij de inhoudsformule V = ⅓Gh van een kegel naar h."
+  },
+  {
+   "v": "Maak h vrij in de inhoudsformule van de kegel.",
+   "o": [
+    "\"h = V : 3G, you know\"",
+    "\"h = 3VG\"",
+    "\"h = G : 3V\"",
+    "\"h = 3V : G\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"h = V : 3G, you know\"\"? Dan deel je door 3 in plaats van maal 3. Beide kanten maal 3, dus h = 3V : G. Het goede antwoord is h = 3V : G.",
+    "Koos je \"\"h = 3VG\"\"? Dan vermenigvuldig je met G. Je moet delen door G, dus h = 3V : G. Door de stappen goed na te lopen kom je uit op h = 3V : G.",
+    "Koos je \"\"h = G : 3V\"\"? Dan draai je de breuk om. De uitkomst is 3V : G, dus h = 3V : G. Controleer je stap: de juiste uitkomst is h = 3V : G.",
+    "Klopt: vermenigvuldig met 3 en deel door G. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Maak h vrij in de inhoudsformule van de kegel.",
+   "ctx": "Een telefoonabonnement kost K = 15 + 0,12m euro bij m belminuten. Een leerling herleidt de formule naar m en past dat toe. Ook herleidt hij de inhoudsformule V = ⅓Gh van een kegel naar h."
+  },
+  {
+   "v": "Een klasgenoot zegt (x + 2)² = x² + 4. Vul x = 1 in: wat blijkt?",
+   "o": [
+    "\"nee: links 9 en rechts 5\"",
+    "\"ja: beide 5\"",
+    "\"ja: beide 9\"",
+    "\"ja, want er staat x² + 4, really\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (1 + 2)² = 9 en 1² + 4 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"ja: beide 5\"\"? Dan reken je links niet uit. (1 + 2)² = 9, dus nee. Het goede antwoord is nee: links 9 en rechts 5.",
+    "Koos je \"\"ja: beide 9\"\"? Dan reken je rechts verkeerd. 1² + 4 = 5, dus nee. Door de stappen goed na te lopen kom je uit op nee: links 9 en rechts 5.",
+    "Koos je \"\"ja, want er staat x² + 4, really\"\"? Dan vertrouw je op de vorm. De waarden verschillen, dus nee. Controleer je stap: de juiste uitkomst is nee: links 9 en rechts 5."
+   ],
+   "uh": "Een klasgenoot zegt (x + 2)² = x² + 4. Vul x = 1 in: wat blijkt?",
+   "ctx": "Twee klasgenoten beweren dat (x + 2)² gelijk is aan x² + 4 en dat 2(x + 3) − 3 gelijk is aan 2x + 3. Een leerling controleert de beweringen met getallen en zoekt een tegenvoorbeeld."
+  },
+  {
+   "v": "Vul x = 1 in bij 2(x + 3) − 3 en bij 2x + 3: wat concludeer je?",
+   "o": [
+    "\"nee: links 8\"",
+    "\"nee: rechts 6\"",
+    "\"ja: beide 5\"",
+    "\"nee: links 3\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nee: links 8\"\"? Dan vergeet je −3 links. 2 · 4 − 3 = 5, dus ja. Het goede antwoord is ja: beide 5.",
+    "Koos je \"\"nee: rechts 6\"\"? Dan reken je rechts verkeerd. 2 + 3 = 5, dus ja. Door de stappen goed na te lopen kom je uit op ja: beide 5.",
+    "Klopt: 2 · 4 − 3 = 5 en 2 + 3 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"nee: links 3\"\"? Dan reken je 2(x + 3) verkeerd. Het is 2 · 4 = 8, dus 8 − 3 = 5 en ja. Controleer je stap: de juiste uitkomst is ja: beide 5."
+   ],
+   "uh": "Vul x = 1 in bij 2(x + 3) − 3 en bij 2x + 3: wat concludeer je?",
+   "ctx": "Twee klasgenoten beweren dat (x + 2)² gelijk is aan x² + 4 en dat 2(x + 3) − 3 gelijk is aan 2x + 3. Een leerling controleert de beweringen met getallen en zoekt een tegenvoorbeeld."
+  },
+  {
+   "v": "Waarom bewijst één getal niet dat twee uitdrukkingen gelijk zijn?",
+   "o": [
+    "\"omdat x = 0 niet mag\"",
+    "\"ze kunnen bij één getal toevallig gelijk zijn, zoals (x + 2)² en x² + 4 bij x = 0\"",
+    "\"omdat getallen niets bewijzen, volgens mij, eigenlijk, denk ik\"",
+    "\"omdat een leerling het zegt\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat x = 0 niet mag\"\"? Dan denk je dat 0 verboden is. 0 mag, maar bewijst niets, dus meerdere getallen. Het goede antwoord is ze kunnen bij één getal toevallig gelijk zijn, zoals (x + 2)² en x² + 4 bij x = 0.",
+    "Klopt: beide zijn 4 bij x = 0, maar ze zijn niet gelijk.",
+    "Koos je \"\"omdat getallen niets bewijzen, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat getallen niets zeggen. Een tegenvoorbeeld weerlegt wel, dus ze kunnen toevallig gelijk zijn.",
+    "Koos je \"\"omdat een leerling het zegt\"\"? Dan denk je dat het om een mening gaat. Het gaat om meerdere controles, dus ze kunnen toevallig gelijk zijn."
+   ],
+   "uh": "Waarom bewijst één getal niet dat twee uitdrukkingen gelijk zijn?",
+   "ctx": "Twee klasgenoten beweren dat (x + 2)² gelijk is aan x² + 4 en dat 2(x + 3) − 3 gelijk is aan 2x + 3. Een leerling controleert de beweringen met getallen en zoekt een tegenvoorbeeld."
+  },
+  {
+   "v": "Breng x buiten haakjes in de teller en deel weg: welke vorm blijft van (x² − x)/x over?",
+   "o": [
+    "\"x² − 1, I suppose\"",
+    "\"x² − x\"",
+    "\"−1\"",
+    "\"x − 1\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² − 1, I suppose\"\"? Dan deel je alleen de tweede term door x. Beide termen delen, dus x − 1. Het goede antwoord is x − 1.",
+    "Koos je \"\"x² − x\"\"? Dan laat je de breuk staan. Je kunt x wegdelen, dus x − 1. Door de stappen goed na te lopen kom je uit op x − 1.",
+    "Koos je \"\"−1\"\"? Dan deel je alleen de tweede term. Beide termen delen, dus x − 1. Controleer je stap: de juiste uitkomst is x − 1.",
+    "Klopt: x(x − 1) gedeeld door x. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Breng x buiten haakjes in de teller en deel weg: welke vorm blijft van (x² − x)/x over?",
+   "ctx": "Een leerling vereenvoudigt gebroken uitdrukkingen: (x² − x)/x, (3x + 6)/(x + 2) en 1/x + 1/(x + 1). Hij let op de waarden van x die niet mogen omdat de noemer nul wordt."
+  },
+  {
+   "v": "Haal 3 buiten haakjes in de teller en vereenvoudig (3x + 6)/(x + 2).",
+   "o": [
+    "\"3\"",
+    "\"3x + 3\"",
+    "\"3x + 4\"",
+    "\"x + 4\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3(x + 2) gedeeld door (x + 2). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3x + 3\"\"? Dan deel je alleen de 6 door 2. Eerst buiten haakjes brengen, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"3x + 4\"\"? Dan trek je 2 af van 6. Eerst buiten haakjes brengen, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"x + 4\"\"? Dan deel je alleen de eerste term door 3. Breng 3 buiten haakjes, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Haal 3 buiten haakjes in de teller en vereenvoudig (3x + 6)/(x + 2).",
+   "ctx": "Een leerling vereenvoudigt gebroken uitdrukkingen: (x² − x)/x, (3x + 6)/(x + 2) en 1/x + 1/(x + 1). Hij let op de waarden van x die niet mogen omdat de noemer nul wordt."
+  },
+  {
+   "v": "Schrijf 1/x + 1/(x + 1) als één breuk.",
+   "o": [
+    "\"2/(2x + 1)\"",
+    "\"1/(x(x + 1)), really, to be honest\"",
+    "\"(2x + 1)/(x(x + 1))\"",
+    "\"2/(x + 1)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2/(2x + 1)\"\"? Dan tel je de tellers en noemers op. Eerst gelijknamig maken, dus (2x + 1)/(x(x + 1)). Het goede antwoord is (2x + 1)/(x(x + 1)).",
+    "Koos je \"\"1/(x(x + 1)), really, to be honest\"\"? Dan vermenigvuldig je de breuken. Je moet optellen, dus (2x + 1)/(x(x + 1)). Door de stappen goed na te lopen kom je uit op (2x + 1)/(x(x + 1)).",
+    "Klopt: (x + 1)/(x(x + 1)) + x/(x(x + 1)). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2/(x + 1)\"\"? Dan tel je alleen de tellers op. De noemers moeten gelijk worden, dus (2x + 1)/(x(x + 1)). Controleer je stap: de juiste uitkomst is (2x + 1)/(x(x + 1))."
+   ],
+   "uh": "Schrijf 1/x + 1/(x + 1) als één breuk.",
+   "ctx": "Een leerling vereenvoudigt gebroken uitdrukkingen: (x² − x)/x, (3x + 6)/(x + 2) en 1/x + 1/(x + 1). Hij let op de waarden van x die niet mogen omdat de noemer nul wordt."
+  },
+  {
+   "v": "Controleer (3x + 6)/(x + 2) = 3 met x = 1.",
+   "o": [
+    "\"links 9, I think, I suppose\"",
+    "\"beide kanten geven 3\"",
+    "\"links 1\"",
+    "\"links 6\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"links 9, I think, I suppose\"\"? Dan deel je niet door de noemer. 9 : 3 = 3, dus beide 3. Het goede antwoord is beide kanten geven 3.",
+    "Klopt: 9 : 3 = 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"links 1\"\"? Dan deel je 3 door 9. Het is 9 : 3, dus beide 3. Door de stappen goed na te lopen kom je uit op beide kanten geven 3.",
+    "Koos je \"\"links 6\"\"? Dan reken je 3 + 6 : 1. Eerst de hele teller, dus 9 : 3 = 3. Controleer je stap: de juiste uitkomst is beide kanten geven 3."
+   ],
+   "uh": "Controleer (3x + 6)/(x + 2) = 3 met x = 1.",
+   "ctx": "Een leerling vereenvoudigt gebroken uitdrukkingen: (x² − x)/x, (3x + 6)/(x + 2) en 1/x + 1/(x + 1). Hij let op de waarden van x die niet mogen omdat de noemer nul wordt."
+  },
+  {
+   "v": "Hoe schrijf je de breedte b uit in l bij omtrek 40?",
+   "o": [
+    "\"b = 40 − l\"",
+    "\"b = 20 + l\"",
+    "\"b = 40 − 2l, volgens mij\"",
+    "\"b = 20 − l\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"b = 40 − l\"\"? Dan vergeet je dat de omtrek twee lengtes en twee breedtes heeft. l + b = 20, dus b = 20 − l. Het goede antwoord is b = 20 − l.",
+    "Koos je \"\"b = 20 + l\"\"? Dan tel je l erbij op. Je moet l aftrekken, dus b = 20 − l. Door de stappen goed na te lopen kom je uit op b = 20 − l.",
+    "Koos je \"\"b = 40 − 2l, volgens mij\"\"? Dan trek je maar twee keer l af. Deel eerst door 2, dus b = 20 − l. Controleer je stap: de juiste uitkomst is b = 20 − l.",
+    "Klopt: 2l + 2b = 40, dus l + b = 20. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe schrijf je de breedte b uit in l bij omtrek 40?",
+   "ctx": "Een rechthoekige tuin heeft een omtrek van 40 meter. Een leerling noemt de lengte l, schrijft de breedte uit in l en stelt een formule op voor de oppervlakte A, die hij daarna herleidt en controleert."
+  },
+  {
+   "v": "Stel een formule voor de oppervlakte A op in l.",
+   "o": [
+    "\"A = l(20 − l)\"",
+    "\"A = l + (20 − l)\"",
+    "\"A = 20 − l\"",
+    "\"A = 2l(20 − l)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: lengte maal breedte. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"A = l + (20 − l)\"\"? Dan tel je op. Oppervlakte is lengte maal breedte, dus A = l(20 − l). Het goede antwoord is A = l(20 − l).",
+    "Koos je \"\"A = 20 − l\"\"? Dan vergeet je de lengte. Oppervlakte is lengte maal breedte, dus A = l(20 − l). Door de stappen goed na te lopen kom je uit op A = l(20 − l).",
+    "Koos je \"\"A = 2l(20 − l)\"\"? Dan neem je een dubbele oppervlakte. Er is één rechthoek, dus A = l(20 − l). Controleer je stap: de juiste uitkomst is A = l(20 − l)."
+   ],
+   "uh": "Stel een formule voor de oppervlakte A op in l.",
+   "ctx": "Een rechthoekige tuin heeft een omtrek van 40 meter. Een leerling noemt de lengte l, schrijft de breedte uit in l en stelt een formule op voor de oppervlakte A, die hij daarna herleidt en controleert."
+  },
+  {
+   "v": "Werk A = l(20 − l) uit zonder haakjes.",
+   "o": [
+    "\"A = 20l + l², you know\"",
+    "\"A = 20 − l²\"",
+    "\"A = 20l − l²\"",
+    "\"A = 19l\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A = 20l + l², you know\"\"? Dan laat je het minteken weg. l · −l = −l², dus A = 20l − l². Het goede antwoord is A = 20l − l².",
+    "Koos je \"\"A = 20 − l²\"\"? Dan vergeet je de l bij 20. l · 20 = 20l, dus A = 20l − l². Door de stappen goed na te lopen kom je uit op A = 20l − l².",
+    "Klopt: l · 20 = 20l en l · −l = −l². Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"A = 19l\"\"? Dan trek je l van 20 af en vermenigvuldig niet. Elke term krijgt de factor l, dus A = 20l − l². Controleer je stap: de juiste uitkomst is A = 20l − l²."
+   ],
+   "uh": "Werk A = l(20 − l) uit zonder haakjes.",
+   "ctx": "Een rechthoekige tuin heeft een omtrek van 40 meter. Een leerling noemt de lengte l, schrijft de breedte uit in l en stelt een formule op voor de oppervlakte A, die hij daarna herleidt en controleert."
+  },
+  {
+   "v": "Hoe groot is de oppervlakte bij l = 5?",
+   "o": [
+    "\"100 m², gewoon\"",
+    "\"75 m²\"",
+    "\"15 m²\"",
+    "\"20 m²\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"100 m², gewoon\"\"? Dan neem je de maximale oppervlakte. Vul l = 5 in, dus 75 m². Het goede antwoord is 75 m².",
+    "Klopt: 5 · 15 = 75. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"15 m²\"\"? Dan neem je de breedte. De oppervlakte is 5 · 15, dus 75 m². Door de stappen goed na te lopen kom je uit op 75 m².",
+    "Koos je \"\"20 m²\"\"? Dan neem je 20 − l niet goed. De breedte is 15, dus 75 m². Controleer je stap: de juiste uitkomst is 75 m²."
+   ],
+   "uh": "Hoe groot is de oppervlakte bij l = 5?",
+   "ctx": "Een rechthoekige tuin heeft een omtrek van 40 meter. Een leerling noemt de lengte l, schrijft de breedte uit in l en stelt een formule op voor de oppervlakte A, die hij daarna herleidt en controleert."
+  },
+  {
+   "v": "Herleid C = 5 + 0,2d naar d.",
+   "o": [
+    "\"d = C − 5 : 0,2\"",
+    "\"d = 0,2C − 5\"",
+    "\"d = (C + 5) : 0,2, I think\"",
+    "\"d = (C − 5) : 0,2\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"d = C − 5 : 0,2\"\"? Dan deel je alleen 5 door 0,2. Het hele verschil moet gedeeld worden, dus d = (C − 5) : 0,2.",
+    "Koos je \"\"d = 0,2C − 5\"\"? Dan vermenigvuldig je met 0,2. Je moet delen door 0,2, dus d = (C − 5) : 0,2. Door de stappen goed na te lopen kom je uit op d = (C − 5) : 0,2.",
+    "Koos je \"\"d = (C + 5) : 0,2, I think\"\"? Dan tel je 5 erbij op. Je moet 5 aftrekken, dus d = (C − 5) : 0,2. Controleer je stap: de juiste uitkomst is d = (C − 5) : 0,2.",
+    "Klopt: eerst 5 aftrekken en dan delen door 0,2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Herleid C = 5 + 0,2d naar d.",
+   "ctx": "De kosten van een taxirit zijn C = 5 + 0,2d euro bij d kilometer, waarbij 5 euro het instaptarief is. Een leerling herleidt de formule naar d en berekent de afstand bij C = 9 euro."
+  },
+  {
+   "v": "Welke afstand hoort bij C = 9 euro?",
+   "o": [
+    "\"20 km\"",
+    "\"2 km\"",
+    "\"45 km\"",
+    "\"0,8 km, volgens mij\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Herleid stap voor stap met één regel per stap, noteer welke waarden niet mogen en verifieer het resultaat door verschillende getallen in te vullen in begin- en eindvorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (9 − 5) : 0,2 = 4 : 0,2 = 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2 km\"\"? Dan verplaats je de komma verkeerd. 4 : 0,2 = 20, dus 20 km. Het goede antwoord is 20 km.",
+    "Koos je \"\"45 km\"\"? Dan deel je 9 door 0,2. Trek eerst 5 af, dus 20 km. Door de stappen goed na te lopen kom je uit op 20 km.",
+    "Koos je \"\"0,8 km, volgens mij\"\"? Dan vermenigvuldig je 4 met 0,2. Je moet delen, dus 20 km. Controleer je stap: de juiste uitkomst is 20 km."
+   ],
+   "uh": "Welke afstand hoort bij C = 9 euro?",
+   "ctx": "De kosten van een taxirit zijn C = 5 + 0,2d euro bij d kilometer, waarbij 5 euro het instaptarief is. Een leerling herleidt de formule naar d en berekent de afstand bij C = 9 euro."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling ontbindt 4x² − 12x en x² − 16 in factoren. Hij controleert zijn antwoorden door de haakjes weg te werken en door een getal in te vullen.",
+   "v": "Ontbind beide uitdrukkingen in factoren.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "4x² − 12x = 4x(x − 3) (1p). x² − 16 is een verschil van kwadraten (1p). x² − 16 = (x − 4)(x + 4) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een telefoonabonnement kost K = 20 + 0,25m euro bij m belminuten. Een leerling herleidt de formule naar m en berekent het aantal minuten bij een rekening van €45. Hij noteert elke stap en rondt niet te vroeg af.",
+   "v": "Herleid de formule naar m en bereken m bij K = 45.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "m = (K − 20) : 0,25 (1p). m = (45 − 20) : 0,25 (1p). m = 100 minuten (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een klasgenoot beweert dat (x − 1)² gelijk is aan x² − 1. Een leerling controleert de bewering met een getal, zoekt een tegenvoorbeeld en schrijft de juiste vorm op. Hij legt zijn redenering uit.",
+   "v": "Toon aan dat de bewering niet klopt en geef de juiste vorm.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Neem x = 2: (2 − 1)² = 1 maar 2² − 1 = 3 (1p). Dat is een tegenvoorbeeld (1p). De juiste vorm is x² − 2x + 1 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling vereenvoudigt (x² − 3x)/(x − 3) en schrijft op voor welke waarden van x de uitdrukking niet bestaat. Hij controleert zijn antwoord met x = 5 en schrijft zijn stappen op.",
+   "v": "Vereenvoudig de uitdrukking en geef de voorwaarde voor x.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "x² − 3x = x(x − 3) (1p). Het quotiënt is x voor x ≠ 3 (1p). Controle x = 5: (25 − 15) : 2 = 5 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rechthoekige tuin heeft een omtrek van 60 meter. Een leerling noemt de lengte l en stelt de formule A = l(30 − l) op voor de oppervlakte. Daarna berekent hij A voor l = 10 en werkt hij de formule uit.",
+   "v": "Werk A uit en bereken A voor l = 10.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "A = 30l − l² (1p). Voor l = 10 geldt 10 · 20 (1p). A = 200 m² (1p)."
+  }
+ ]
+}
