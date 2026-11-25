@@ -1,0 +1,682 @@
+{
+ "id": "B4",
+ "lo": "wa.B.4",
+ "gs": 2,
+ "naam": "Grootheden, samengestelde grootheden en eenheden omrekenen",
+ "beschrijving": "Je rekent eenheden van lengte, oppervlakte, inhoud en tijd om, werkt met samengestelde grootheden als snelheid, dichtheid, verbruik en prijs per eenheid en controleert met een schatting.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Eenheden omrekenen",
+  "Snelheid en tijd",
+  "Dichtheid en inhoud",
+  "Verbruik en prijs per eenheid",
+  "Controleren met een schatting"
+ ],
+ "sam": "Schrijf bij elk getal de eenheid en reken om met de juiste factor, waarbij de factor bij oppervlakte en inhoud kwadrateert en kubeert. Werk met samengestelde grootheden als snelheid, dichtheid, verbruik en prijs per eenheid en controleer met een afgeronde schatting.",
+ "begrippen": [
+  {
+   "t": "Grootheid en eenheid",
+   "d": "Een grootheid zoals lengte of tijd met een eenheid zoals m of s."
+  },
+  {
+   "t": "Omrekenfactor",
+   "d": "Het getal waarmee je omrekent: 1 km = 1000 m."
+  },
+  {
+   "t": "Snelheid",
+   "d": "Afstand per tijd: km/u of m/s, met 1 m/s = 3,6 km/u."
+  },
+  {
+   "t": "Samengestelde grootheid",
+   "d": "Een grootheid uit twee andere, zoals snelheid, dichtheid of prijs per kilo."
+  },
+  {
+   "t": "Dichtheid",
+   "d": "Massa gedeeld door volume: 540 g : 200 cm³ = 2,7 g/cm³."
+  },
+  {
+   "t": "Oppervlakte-eenheden",
+   "d": "1 m² = 10 000 cm²: de factor kwadrateert."
+  },
+  {
+   "t": "Inhoud-eenheden",
+   "d": "1 m³ = 1000 liter."
+  },
+  {
+   "t": "Tijd in uren",
+   "d": "15 minuten is 0,25 uur; 2 uur 15 minuten is 2,25 uur."
+  },
+  {
+   "t": "Verbruik",
+   "d": "Liters per 100 km omrekenen naar kilometers per liter."
+  },
+  {
+   "t": "Prijs per eenheid",
+   "d": "Prijs gedeeld door hoeveelheid, zoals €2,10 : 0,75 kg = €2,80 per kg."
+  },
+  {
+   "t": "Maatsysteem",
+   "d": "Een systeem van eenheden, zoals het metrieke stelsel en de tijd in 60-delen."
+  },
+  {
+   "t": "Controleren met een schatting",
+   "d": "Een afgeronde berekening vergelijken met het antwoord."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Hoeveel meter is 3,5 km?",
+   "o": [
+    "\"35 m\"",
+    "\"3500 m\"",
+    "\"350 m\"",
+    "\"0,35 m, I think\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"35 m\"\"? Dan verplaats je de komma verkeerd. 3,5 × 1000 = 3500, dus 3500 m. Het goede antwoord is 3500 m.",
+    "Klopt: 1 km is 1000 m. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"350 m\"\"? Dan vermenigvuldig je met 100. 1 km is 1000 m, dus 3500 m. Door de stappen goed na te lopen kom je uit op 3500 m.",
+    "Koos je \"\"0,35 m, I think\"\"? Dan deel je door 10. Je vermenigvuldigt met 1000, dus 3500 m. Controleer je stap: de juiste uitkomst is 3500 m."
+   ],
+   "uh": "Hoeveel meter is 3,5 km?"
+  },
+  {
+   "v": "Een fietser rijdt 36 km/u. Hoeveel meter legt hij per seconde af?",
+   "o": [
+    "\"129,6 m/s\"",
+    "\"36 000 m/s\"",
+    "\"0,6 m/s\"",
+    "\"10 m/s\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"129,6 m/s\"\"? Dan vermenigvuldig je met 3,6. Van km/u naar m/s deel je door 3,6, dus 10 m/s. Het goede antwoord is 10 m/s.",
+    "Koos je \"\"36 000 m/s\"\"? Dan vermenigvuldig je met 1000 en vergeet de seconden. Deel door 3,6, dus 10 m/s. Door de stappen goed na te lopen kom je uit op 10 m/s.",
+    "Koos je \"\"0,6 m/s\"\"? Dan deel je door 60. Het is delen door 3,6, dus 10 m/s. Controleer je stap: de juiste uitkomst is 10 m/s.",
+    "Klopt: 36 : 3,6 = 10. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een fietser rijdt 36 km/u. Hoeveel meter legt hij per seconde af?"
+  },
+  {
+   "v": "Hoeveel vierkante centimeter is 1 m²?",
+   "o": [
+    "\"10 000 cm²\"",
+    "\"100 cm²\"",
+    "\"1000 cm²\"",
+    "\"1 000 000 cm²\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 100 cm × 100 cm. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"100 cm²\"\"? Dan gebruik je de factor van een lengte. Bij oppervlakte kwadrateer je 100, dus 10 000 cm². Het goede antwoord is 10 000 cm².",
+    "Koos je \"\"1000 cm²\"\"? Dan neem je de factor van een inhoud in liters. Bij oppervlakte kwadrateer je 100, dus 10 000 cm².",
+    "Koos je \"\"1 000 000 cm²\"\"? Dan kubeer je de factor 100. Bij oppervlakte kwadrateer je, dus 10 000 cm². Controleer je stap: de juiste uitkomst is 10 000 cm²."
+   ],
+   "uh": "Hoeveel vierkante centimeter is 1 m²?"
+  },
+  {
+   "v": "Hoeveel liter is 1 m³?",
+   "o": [
+    "\"100 liter\"",
+    "\"10 liter\"",
+    "\"1000 liter\"",
+    "\"1 000 000 liter\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"100 liter\"\"? Dan gebruik je de lengtefactor 100. Een kubieke meter is 10³ dm³, dus 1000 liter. Het goede antwoord is 1000 liter.",
+    "Koos je \"\"10 liter\"\"? Dan gebruik je een te kleine factor. 1 m³ is 1000 dm³, dus 1000 liter. Door de stappen goed na te lopen kom je uit op 1000 liter.",
+    "Klopt: 1 m³ is 1000 dm³ en 1 dm³ is 1 liter. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1 000 000 liter\"\"? Dan verwar je liters met cm³. 1 m³ is 1 000 000 cm³ en 1000 liter, dus 1000 liter. Controleer je stap: de juiste uitkomst is 1000 liter."
+   ],
+   "uh": "Hoeveel liter is 1 m³?"
+  },
+  {
+   "v": "Welke eenheid hoort bij dichtheid?",
+   "o": [
+    "\"m/s\"",
+    "\"kg/m³ of g/cm³\"",
+    "\"kg·m\"",
+    "\"m²/s\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"m/s\"\"? Dan kies je de eenheid van snelheid. Dichtheid is massa per volume, dus kg/m³. Het goede antwoord is kg/m³ of g/cm³.",
+    "Klopt: massa gedeeld door volume. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"kg·m\"\"? Dan vermenigvuldig je massa en lengte. Dichtheid is massa gedeeld door volume, dus kg/m³. Door de stappen goed na te lopen kom je uit op kg/m³ of g/cm³.",
+    "Koos je \"\"m²/s\"\"? Dan kies je een eenheid zonder massa. Dichtheid is massa per volume, dus kg/m³. Controleer je stap: de juiste uitkomst is kg/m³ of g/cm³."
+   ],
+   "uh": "Welke eenheid hoort bij dichtheid?"
+  },
+  {
+   "v": "Een sprinter loopt 20 m/s. Hoeveel kilometer per uur is dat?",
+   "o": [
+    "\"5,6 km/u\"",
+    "\"20 000 km/u\"",
+    "\"1200 km/u\"",
+    "\"72 km/u\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5,6 km/u\"\"? Dan deel je door 3,6. Van m/s naar km/u vermenigvuldig je met 3,6, dus 72 km/u. Het goede antwoord is 72 km/u.",
+    "Koos je \"\"20 000 km/u\"\"? Dan vermenigvuldig je met 1000. Je gebruikt 3,6, dus 72 km/u. Door de stappen goed na te lopen kom je uit op 72 km/u.",
+    "Koos je \"\"1200 km/u\"\"? Dan vermenigvuldig je met 60. Je gebruikt 3,6, dus 72 km/u. Controleer je stap: de juiste uitkomst is 72 km/u.",
+    "Klopt: 20 × 3,6 = 72. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een sprinter loopt 20 m/s. Hoeveel kilometer per uur is dat?"
+  },
+  {
+   "v": "Een pak van 500 g kost €1,50. Hoeveel kost dat per kilo?",
+   "o": [
+    "\"€3,00\"",
+    "\"€0,75\"",
+    "\"€1,50\"",
+    "\"€30,00\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 1,50 × 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€0,75\"\"? Dan deel je door 2. 1 kg is 2 keer 500 g, dus €3,00. Het goede antwoord is €3,00.",
+    "Koos je \"\"€1,50\"\"? Dan neem je de prijs van het pak. Reken om naar 1 kg, dus €3,00. Door de stappen goed na te lopen kom je uit op €3,00.",
+    "Koos je \"\"€30,00\"\"? Dan vermenigvuldig je met 20. 1 kg is 2 keer 500 g, dus €3,00. Controleer je stap: de juiste uitkomst is €3,00."
+   ],
+   "uh": "Een pak van 500 g kost €1,50. Hoeveel kost dat per kilo?"
+  },
+  {
+   "v": "Reken 90 km/u om naar m/s.",
+   "o": [
+    "\"324 m/s\"",
+    "\"90 000 m/s\"",
+    "\"25 m/s\"",
+    "\"1,5 m/s\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"324 m/s\"\"? Dan vermenigvuldig je met 3,6. Van km/u naar m/s deel je door 3,6, dus 25 m/s. Het goede antwoord is 25 m/s.",
+    "Koos je \"\"90 000 m/s\"\"? Dan vermenigvuldig je met 1000. Je vergeet te delen door 3600 seconden, dus 25 m/s. Door de stappen goed na te lopen kom je uit op 25 m/s.",
+    "Klopt: 90 : 3,6 = 25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,5 m/s\"\"? Dan deel je door 60. Deel door 3,6, dus 25 m/s. Controleer je stap: de juiste uitkomst is 25 m/s."
+   ],
+   "uh": "Reken 90 km/u om naar m/s.",
+   "ctx": "Een trein rijdt met een constante snelheid van 90 km/u. Een leerling rekent de snelheid om naar meter per seconde en berekent afgelegde afstanden in seconden en in minuten."
+  },
+  {
+   "v": "Hoeveel meter komt de trein vooruit in 8 seconden?",
+   "o": [
+    "\"720 m, you know\"",
+    "\"200 m\"",
+    "\"33 m\"",
+    "\"3,1 m\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"720 m, you know\"\"? Dan gebruik je 90 km/u in plaats van 25 m/s. Reken met m/s, dus 200 m. Het goede antwoord is 200 m.",
+    "Klopt: 25 · 8 = 200. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"33 m\"\"? Dan deel je 25 door 8 en gebruik je een andere eenheid. Afstand is snelheid maal tijd, dus 200 m. Door de stappen goed na te lopen kom je uit op 200 m.",
+    "Koos je \"\"3,1 m\"\"? Dan deel je 25 door 8. Afstand is snelheid maal tijd, dus 200 m. Controleer je stap: de juiste uitkomst is 200 m."
+   ],
+   "uh": "Hoeveel meter komt de trein vooruit in 8 seconden?",
+   "ctx": "Een trein rijdt met een constante snelheid van 90 km/u. Een leerling rekent de snelheid om naar meter per seconde en berekent afgelegde afstanden in seconden en in minuten."
+  },
+  {
+   "v": "Na 20 minuten rijden: hoeveel kilometer heeft de trein dan afgelegd?",
+   "o": [
+    "\"1800 km\"",
+    "\"450 km\"",
+    "\"4,5 km\"",
+    "\"30 km\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1800 km\"\"? Dan vermenigvuldig je 90 met 20. 20 minuten is 1/3 uur, dus 30 km. Het goede antwoord is 30 km.",
+    "Koos je \"\"450 km\"\"? Dan vermenigvuldig je met 5. 20 minuten is 1/3 uur, dus 30 km. Door de stappen goed na te lopen kom je uit op 30 km.",
+    "Koos je \"\"4,5 km\"\"? Dan deel je 90 door 20. 20 minuten is 1/3 uur, dus 30 km. Controleer je stap: de juiste uitkomst is 30 km.",
+    "Klopt: 90 · 1/3 = 30. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Na 20 minuten rijden: hoeveel kilometer heeft de trein dan afgelegd?",
+   "ctx": "Een trein rijdt met een constante snelheid van 90 km/u. Een leerling rekent de snelheid om naar meter per seconde en berekent afgelegde afstanden in seconden en in minuten."
+  },
+  {
+   "v": "Welke inhoud heeft de kamer in kubieke meter?",
+   "o": [
+    "\"30 m³\"",
+    "\"9,5 m³, denk ik\"",
+    "\"12 m³\"",
+    "\"19 m³\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 4,0 · 3,0 · 2,5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"9,5 m³, denk ik\"\"? Dan tel je de maten op. Inhoud is lengte maal breedte maal hoogte, dus 30 m³. Het goede antwoord is 30 m³.",
+    "Koos je \"\"12 m³\"\"? Dan neem je alleen lengte maal breedte. Ook de hoogte telt mee, dus 30 m³. Door de stappen goed na te lopen kom je uit op 30 m³.",
+    "Koos je \"\"19 m³\"\"? Dan neem je de omtrek. Inhoud is lengte maal breedte maal hoogte, dus 30 m³. Controleer je stap: de juiste uitkomst is 30 m³."
+   ],
+   "uh": "Welke inhoud heeft de kamer in kubieke meter?",
+   "ctx": "Een kamer is 4,0 m lang, 3,0 m breed en 2,5 m hoog. Een leerling berekent de inhoud in kubieke meter en in liter en de vloeroppervlakte in vierkante meter en in vierkante centimeter."
+  },
+  {
+   "v": "Hoeveel liter lucht gaat er in de kamer?",
+   "o": [
+    "\"300 liter\"",
+    "\"30 liter\"",
+    "\"30 000 liter\"",
+    "\"3 000 000 liter\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"300 liter\"\"? Dan vermenigvuldig je met 10. 1 m³ is 1000 liter, dus 30 000 liter. Het goede antwoord is 30 000 liter.",
+    "Koos je \"\"30 liter\"\"? Dan laat je de omrekening weg. 1 m³ is 1000 liter, dus 30 000 liter. Door de stappen goed na te lopen kom je uit op 30 000 liter.",
+    "Klopt: 30 · 1000. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3 000 000 liter\"\"? Dan vermenigvuldig je met 100 000. 1 m³ is 1000 liter, dus 30 000 liter. Controleer je stap: de juiste uitkomst is 30 000 liter."
+   ],
+   "uh": "Hoeveel liter lucht gaat er in de kamer?",
+   "ctx": "Een kamer is 4,0 m lang, 3,0 m breed en 2,5 m hoog. Een leerling berekent de inhoud in kubieke meter en in liter en de vloeroppervlakte in vierkante meter en in vierkante centimeter."
+  },
+  {
+   "v": "Hoeveel vierkante centimeter is de vloer van 12 m²?",
+   "o": [
+    "\"1200 cm²\"",
+    "\"120 000 cm²\"",
+    "\"12 000 cm²\"",
+    "\"12 000 000 cm²\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1200 cm²\"\"? Dan vermenigvuldig je met 100. Bij oppervlakte kwadrateer je 100, dus 120 000 cm². Het goede antwoord is 120 000 cm².",
+    "Klopt: 12 · 10 000. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12 000 cm²\"\"? Dan vermenigvuldig je met 1000. Bij oppervlakte is de factor 10 000, dus 120 000 cm². Door de stappen goed na te lopen kom je uit op 120 000 cm².",
+    "Koos je \"\"12 000 000 cm²\"\"? Dan vermenigvuldig je met 1 000 000. De factor is 10 000, dus 120 000 cm². Controleer je stap: de juiste uitkomst is 120 000 cm²."
+   ],
+   "uh": "Hoeveel vierkante centimeter is de vloer van 12 m²?",
+   "ctx": "Een kamer is 4,0 m lang, 3,0 m breed en 2,5 m hoog. Een leerling berekent de inhoud in kubieke meter en in liter en de vloeroppervlakte in vierkante meter en in vierkante centimeter."
+  },
+  {
+   "v": "Welke dichtheid heeft het blokje in g/cm³?",
+   "o": [
+    "\"0,37 g/cm³\"",
+    "\"340 g/cm³\"",
+    "\"108 000 g/cm³\"",
+    "\"2,7 g/cm³\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,37 g/cm³\"\"? Dan deel je het volume door de massa. Dichtheid is massa gedeeld door volume, dus 2,7 g/cm³. Het goede antwoord is 2,7 g/cm³.",
+    "Koos je \"\"340 g/cm³\"\"? Dan trek je 200 van 540 af. Dichtheid is massa gedeeld door volume, dus 2,7 g/cm³. Door de stappen goed na te lopen kom je uit op 2,7 g/cm³.",
+    "Koos je \"\"108 000 g/cm³\"\"? Dan vermenigvuldig je massa en volume. Dichtheid is massa gedeeld door volume, dus 2,7 g/cm³.",
+    "Klopt: 540 : 200 = 2,7. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke dichtheid heeft het blokje in g/cm³?",
+   "ctx": "Een blokje heeft een massa van 540 g en een volume van 200 cm³. Een leerling berekent de dichtheid in g/cm³ en in kg/m³ en gebruikt die om massa en volume van andere hoeveelheden van dezelfde stof te bepalen."
+  },
+  {
+   "v": "Hoeveel kg/m³ is 2,7 g/cm³?",
+   "o": [
+    "\"2700 kg/m³\"",
+    "\"2,7 kg/m³\"",
+    "\"27 kg/m³\"",
+    "\"2 700 000 kg/m³\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 1 g/cm³ is 1000 kg/m³. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2,7 kg/m³\"\"? Dan laat je de omrekening weg. 1 g/cm³ is 1000 kg/m³, dus 2700 kg/m³. Het goede antwoord is 2700 kg/m³.",
+    "Koos je \"\"27 kg/m³\"\"? Dan vermenigvuldig je met 10. De factor is 1000, dus 2700 kg/m³. Door de stappen goed na te lopen kom je uit op 2700 kg/m³.",
+    "Koos je \"\"2 700 000 kg/m³\"\"? Dan vermenigvuldig je met 1 000 000. De factor is 1000, dus 2700 kg/m³. Controleer je stap: de juiste uitkomst is 2700 kg/m³."
+   ],
+   "uh": "Hoeveel kg/m³ is 2,7 g/cm³?",
+   "ctx": "Een blokje heeft een massa van 540 g en een volume van 200 cm³. Een leerling berekent de dichtheid in g/cm³ en in kg/m³ en gebruikt die om massa en volume van andere hoeveelheden van dezelfde stof te bepalen."
+  },
+  {
+   "v": "Welke massa heeft 50 cm³ van dezelfde stof?",
+   "o": [
+    "\"18,5 g, denk ik\"",
+    "\"52,7 g\"",
+    "\"135 g\"",
+    "\"1,35 g\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"18,5 g, denk ik\"\"? Dan deel je 50 door 2,7. Massa is dichtheid maal volume, dus 135 g. Het goede antwoord is 135 g.",
+    "Koos je \"\"52,7 g\"\"? Dan tel je 50 en 2,7 op. Massa is dichtheid maal volume, dus 135 g. Door de stappen goed na te lopen kom je uit op 135 g.",
+    "Klopt: 2,7 · 50. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,35 g\"\"? Dan verplaats je de komma verkeerd. 2,7 · 50 = 135, dus 135 g. Controleer je stap: de juiste uitkomst is 135 g."
+   ],
+   "uh": "Welke massa heeft 50 cm³ van dezelfde stof?",
+   "ctx": "Een blokje heeft een massa van 540 g en een volume van 200 cm³. Een leerling berekent de dichtheid in g/cm³ en in kg/m³ en gebruikt die om massa en volume van andere hoeveelheden van dezelfde stof te bepalen."
+  },
+  {
+   "v": "Welk volume heeft 810 g van dezelfde stof?",
+   "o": [
+    "\"2187 cm³, volgens mij\"",
+    "\"300 cm³\"",
+    "\"30 cm³\"",
+    "\"3000 cm³\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2187 cm³, volgens mij\"\"? Dan vermenigvuldig je 810 met 2,7. Volume is massa gedeeld door dichtheid, dus 300 cm³. Het goede antwoord is 300 cm³.",
+    "Klopt: 810 : 2,7 = 300. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"30 cm³\"\"? Dan verplaats je de komma verkeerd. 810 : 2,7 = 300, dus 300 cm³. Door de stappen goed na te lopen kom je uit op 300 cm³.",
+    "Koos je \"\"3000 cm³\"\"? Dan verplaats je de komma verkeerd. 810 : 2,7 = 300, dus 300 cm³. Controleer je stap: de juiste uitkomst is 300 cm³."
+   ],
+   "uh": "Welk volume heeft 810 g van dezelfde stof?",
+   "ctx": "Een blokje heeft een massa van 540 g en een volume van 200 cm³. Een leerling berekent de dichtheid in g/cm³ en in kg/m³ en gebruikt die om massa en volume van andere hoeveelheden van dezelfde stof te bepalen."
+  },
+  {
+   "v": "Hoeveel kilometer rijdt de auto op één liter, op één decimaal?",
+   "o": [
+    "\"0,064 km, I suppose\"",
+    "\"93,6 km\"",
+    "\"640 km\"",
+    "\"15,6 km\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,064 km, I suppose\"\"? Dan deel je 6,4 door 100. Je wilt kilometers per liter, dus 15,6 km. Het goede antwoord is 15,6 km.",
+    "Koos je \"\"93,6 km\"\"? Dan trek je 6,4 af van 100. Je deelt 100 door 6,4, dus 15,6 km. Door de stappen goed na te lopen kom je uit op 15,6 km.",
+    "Koos je \"\"640 km\"\"? Dan vermenigvuldig je 100 met 6,4. Je deelt, dus 15,6 km. Controleer je stap: de juiste uitkomst is 15,6 km.",
+    "Klopt: 100 : 6,4 = 15,625. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel kilometer rijdt de auto op één liter, op één decimaal?",
+   "ctx": "Een auto verbruikt 6,4 liter per 100 km. Een leerling rekent het verbruik om naar kilometers per liter, berekent het aantal liters voor 480 km en de kosten bij €1,90 per liter."
+  },
+  {
+   "v": "Hoeveel liter is nodig voor 480 km?",
+   "o": [
+    "\"30,72 liter\"",
+    "\"3,07 liter\"",
+    "\"307,2 liter, you know\"",
+    "\"75 liter\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 4,8 · 6,4 = 30,72. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3,07 liter\"\"? Dan verplaats je de komma verkeerd. 4,8 · 6,4 = 30,72, dus 30,72 liter. Het goede antwoord is 30,72 liter.",
+    "Koos je \"\"307,2 liter, you know\"\"? Dan vermenigvuldig je 480 met 6,4. 480 km is 4,8 keer 100 km, dus 30,72 liter. Door de stappen goed na te lopen kom je uit op 30,72 liter.",
+    "Koos je \"\"75 liter\"\"? Dan deel je 480 door 6,4. Je vermenigvuldigt met het aantal honderden kilometers, dus 30,72 liter."
+   ],
+   "uh": "Hoeveel liter is nodig voor 480 km?",
+   "ctx": "Een auto verbruikt 6,4 liter per 100 km. Een leerling rekent het verbruik om naar kilometers per liter, berekent het aantal liters voor 480 km en de kosten bij €1,90 per liter."
+  },
+  {
+   "v": "Wat kosten die liters bij €1,90 per liter, op de cent nauwkeurig?",
+   "o": [
+    "\"€16,17\"",
+    "\"€32,62\"",
+    "\"€58,37\"",
+    "\"€583,68\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€16,17\"\"? Dan deel je 30,72 door 1,90. Kosten zijn liters maal prijs, dus €58,37. Het goede antwoord is €58,37.",
+    "Koos je \"\"€32,62\"\"? Dan tel je 30,72 en 1,90 op. Kosten zijn liters maal prijs, dus €58,37. Door de stappen goed na te lopen kom je uit op €58,37.",
+    "Klopt: 30,72 · 1,90 = 58,368. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€583,68\"\"? Dan verplaats je de komma verkeerd. 30,72 · 1,90 = 58,368, dus €58,37. Controleer je stap: de juiste uitkomst is €58,37."
+   ],
+   "uh": "Wat kosten die liters bij €1,90 per liter, op de cent nauwkeurig?",
+   "ctx": "Een auto verbruikt 6,4 liter per 100 km. Een leerling rekent het verbruik om naar kilometers per liter, berekent het aantal liters voor 480 km en de kosten bij €1,90 per liter."
+  },
+  {
+   "v": "Hoe controleer je 30,72 liter met een schatting?",
+   "o": [
+    "\"480 : 6,4 is ongeveer 75\"",
+    "\"480 km is bijna 5 keer 100 km en 5 · 6,4 = 32\"",
+    "\"480 + 6,4 is ongeveer 486\"",
+    "\"6,4 : 100 is ongeveer 0,06, denk ik, zeg maar, gewoon\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"480 : 6,4 is ongeveer 75\"\"? Dan deel je 480 door 6,4. Het verbruik is per 100 km, dus 5 · 6,4 = 32. Het goede antwoord is 480 km is bijna 5 keer 100 km en 5 · 6,4 = 32.",
+    "Klopt: 32 ligt dicht bij 30,72. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"480 + 6,4 is ongeveer 486\"\"? Dan tel je de getallen op. Je moet vermenigvuldigen met het aantal honderden km, dus 5 · 6,4 = 32.",
+    "Koos je \"\"6,4 : 100 is ongeveer 0,06, denk ik, zeg maar, gewoon\"\"? Dan deel je 6,4 door 100. Dat is liters per kilometer, dus 5 · 6,4 = 32. Controleer je stap: de juiste uitkomst is 480 km is bijna 5 keer 100 km en 5 · 6,4 = 32."
+   ],
+   "uh": "Hoe controleer je 30,72 liter met een schatting?",
+   "ctx": "Een auto verbruikt 6,4 liter per 100 km. Een leerling rekent het verbruik om naar kilometers per liter, berekent het aantal liters voor 480 km en de kosten bij €1,90 per liter."
+  },
+  {
+   "v": "Zet de reistijd 2 uur en 15 minuten om in uren met een decimaal getal.",
+   "o": [
+    "\"2,15 uur\"",
+    "\"2,5 uur\"",
+    "\"2,015 uur, to be honest\"",
+    "\"2,25 uur\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2,15 uur\"\"? Dan schrijf je de minuten als decimalen. 15 minuten is een kwart uur, dus 2,25 uur. Het goede antwoord is 2,25 uur.",
+    "Koos je \"\"2,5 uur\"\"? Dan neem je 30 minuten. 15 minuten is een kwart uur, dus 2,25 uur. Door de stappen goed na te lopen kom je uit op 2,25 uur.",
+    "Koos je \"\"2,015 uur, to be honest\"\"? Dan deel je 15 door 1000. Een uur heeft 60 minuten, dus 2,25 uur. Controleer je stap: de juiste uitkomst is 2,25 uur.",
+    "Klopt: 15 minuten is 0,25 uur. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Zet de reistijd 2 uur en 15 minuten om in uren met een decimaal getal.",
+   "ctx": "Een fietsroute is 135 km lang en duurt 2 uur en 15 minuten. Een leerling rekent de tijd om naar uren en berekent de gemiddelde snelheid in km/u."
+  },
+  {
+   "v": "Hoe groot is de gemiddelde snelheid in km/u?",
+   "o": [
+    "\"60 km/u\"",
+    "\"62,8 km/u\"",
+    "\"67,5 km/u\"",
+    "\"303,75 km/u\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 135 : 2,25 = 60. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"62,8 km/u\"\"? Dan deel je 135 door 2,15. 2 uur 15 minuten is 2,25 uur, dus 60 km/u. Het goede antwoord is 60 km/u.",
+    "Koos je \"\"67,5 km/u\"\"? Dan deel je 135 door 2. Het is 2,25 uur, dus 60 km/u. Door de stappen goed na te lopen kom je uit op 60 km/u.",
+    "Koos je \"\"303,75 km/u\"\"? Dan vermenigvuldig je 135 met 2,25. Snelheid is afstand gedeeld door tijd, dus 60 km/u. Controleer je stap: de juiste uitkomst is 60 km/u."
+   ],
+   "uh": "Hoe groot is de gemiddelde snelheid in km/u?",
+   "ctx": "Een fietsroute is 135 km lang en duurt 2 uur en 15 minuten. Een leerling rekent de tijd om naar uren en berekent de gemiddelde snelheid in km/u."
+  },
+  {
+   "v": "Druk dezelfde reistijd uit in alleen minuten.",
+   "o": [
+    "\"215 minuten, you know\"",
+    "\"75 minuten\"",
+    "\"135 minuten\"",
+    "\"150 minuten\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"215 minuten, you know\"\"? Dan zet dit je de getallen achter elkaar. 2 uur is 120 minuten, dus 135 minuten. Het goede antwoord is 135 minuten.",
+    "Koos je \"\"75 minuten\"\"? Dan tel je 60 en 15 op. 2 uur is 120 minuten, dus 135 minuten. Door de stappen goed na te lopen kom je uit op 135 minuten.",
+    "Klopt: 2 · 60 + 15. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"150 minuten\"\"? Dan tel je 2 · 60 + 30 op. De minuten zijn 15, dus 135 minuten. Controleer je stap: de juiste uitkomst is 135 minuten."
+   ],
+   "uh": "Druk dezelfde reistijd uit in alleen minuten.",
+   "ctx": "Een fietsroute is 135 km lang en duurt 2 uur en 15 minuten. Een leerling rekent de tijd om naar uren en berekent de gemiddelde snelheid in km/u."
+  },
+  {
+   "v": "Wat kost de pasta per kilo bij 750 g voor €2,10?",
+   "o": [
+    "\"€1,58\"",
+    "\"€2,80\"",
+    "\"€2,10\"",
+    "\"€0,28\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€1,58\"\"? Dan vermenigvuldig je 2,10 met 0,75. Deel door 0,75 kilo, dus €2,80. Het goede antwoord is €2,80.",
+    "Klopt: 2,10 : 0,75 = 2,80. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€2,10\"\"? Dan neem je de prijs van het pak. Reken om naar 1 kg, dus €2,80. Door de stappen goed na te lopen kom je uit op €2,80.",
+    "Koos je \"\"€0,28\"\"? Dan verplaats je de komma verkeerd. 2,10 : 0,75 = 2,80, dus €2,80. Controleer je stap: de juiste uitkomst is €2,80."
+   ],
+   "uh": "Wat kost de pasta per kilo bij 750 g voor €2,10?",
+   "ctx": "Een supermarkt verkoopt 750 g pasta voor €2,10 en een pak van 1 kg voor €2,70. Ook kost 1,5 liter sap €1,35. Een leerling berekent prijzen per kilo en per liter om te vergelijken."
+  },
+  {
+   "v": "Wat kost het sap per liter bij 1,5 liter voor €1,35?",
+   "o": [
+    "\"€2,03\"",
+    "\"€1,35\"",
+    "\"€0,09\"",
+    "\"€0,90\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€2,03\"\"? Dan vermenigvuldig je 1,35 met 1,5. Deel door 1,5 liter, dus €0,90. Het goede antwoord is €0,90.",
+    "Koos je \"\"€1,35\"\"? Dan neem je de prijs van het pak. Reken om naar 1 liter, dus €0,90. Door de stappen goed na te lopen kom je uit op €0,90.",
+    "Koos je \"\"€0,09\"\"? Dan verplaats je de komma verkeerd. 1,35 : 1,5 = 0,90, dus €0,90. Controleer je stap: de juiste uitkomst is €0,90.",
+    "Klopt: 1,35 : 1,5 = 0,90. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat kost het sap per liter bij 1,5 liter voor €1,35?",
+   "ctx": "Een supermarkt verkoopt 750 g pasta voor €2,10 en een pak van 1 kg voor €2,70. Ook kost 1,5 liter sap €1,35. Een leerling berekent prijzen per kilo en per liter om te vergelijken."
+  },
+  {
+   "v": "Welk pak pasta is voordeliger per kilo?",
+   "o": [
+    "\"het pak van 1 kg, want €2,70 per kg is minder dan €2,80 per kg\"",
+    "\"het pak van 750 g, want €2,10 is minder dan €2,70, volgens mij, eigenlijk\"",
+    "\"ze zijn even duur\"",
+    "\"het pak van 750 g, want het is lichter\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf bij elk getal de eenheid, reken om met de juiste omrekenfactor en controleer of de eenheid van het antwoord past bij de gevraagde grootheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: vergelijk de prijzen per kilo. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"het pak van 750 g, want €2,10 is minder dan €2,70, volgens mij, eigenlijk\"\"? Dan vergelijk je de pakprijzen. De hoeveelheden verschillen, dus per kilo vergelijken.",
+    "Koos je \"\"ze zijn even duur\"\"? Dan denk je dat de prijzen gelijk zijn. €2,80 en €2,70 per kg verschillen, dus het pak van 1 kg.",
+    "Koos je \"\"het pak van 750 g, want het is lichter\"\"? Dan laat je het gewicht meetellen. Het gaat om de prijs per kilo, dus het pak van 1 kg."
+   ],
+   "uh": "Welk pak pasta is voordeliger per kilo?",
+   "ctx": "Een supermarkt verkoopt 750 g pasta voor €2,10 en een pak van 1 kg voor €2,70. Ook kost 1,5 liter sap €1,35. Een leerling berekent prijzen per kilo en per liter om te vergelijken."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een trein rijdt met een constante snelheid van 54 km/u. Een leerling rekent de snelheid om naar m/s en berekent de afstand die de trein in 40 seconden aflegt. Hij schrijft bij elk getal de eenheid.",
+   "v": "Reken 54 km/u om naar m/s en bereken de afstand in 40 seconden.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "54 : 3,6 = 15 m/s (1p). Afstand = 15 · 40 (1p). Dat is 600 m (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een kamer is 5,0 m lang, 4,0 m breed en 2,5 m hoog. Een leerling berekent de inhoud in kubieke meter en rekent die om naar liter. Hij controleert zijn antwoord met een schatting en schrijft de eenheid erbij.",
+   "v": "Bereken de inhoud in m³ en in liter.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "5,0 · 4,0 · 2,5 = 50 m³ (1p). 1 m³ is 1000 liter (1p). 50 000 liter (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een blokje heeft een massa van 810 g en een volume van 300 cm³. Een leerling berekent de dichtheid in g/cm³ en rekent die om naar kg/m³. Hij schrijft zijn omrekening stap voor stap op.",
+   "v": "Bereken de dichtheid in g/cm³ en in kg/m³.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "810 : 300 = 2,7 g/cm³ (1p). 1 g/cm³ is 1000 kg/m³ (1p). 2700 kg/m³ (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een auto verbruikt 5,5 liter per 100 km. Een leerling berekent het aantal liters voor een rit van 350 km en de kosten bij €1,80 per liter. Hij rondt af op de cent en controleert met een schatting.",
+   "v": "Bereken het aantal liters en de kosten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "3,5 · 5,5 = 19,25 liter (1p). 19,25 · 1,80 (1p). €34,65 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een winkel verkoopt 400 g koffie voor €1,60 en 600 g koffie voor €2,10. Een leerling berekent de prijs per kilo van beide pakken om te kiezen. Hij schrijft de eenheid erbij.",
+   "v": "Bereken beide prijzen per kilo en geef het voordeligste pak.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "1,60 : 0,4 = €4,00 per kg (1p). 2,10 : 0,6 = €3,50 per kg (1p). Het pak van 600 g is voordeliger (1p)."
+  }
+ ]
+}
