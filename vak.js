@@ -531,6 +531,7 @@ const UITLEG_VIDEOS = {
 function initSamInteractive(container, d) {
   // 1. Collapsible sam-head sections
   const samEl = container.querySelector('.sam');
+  try{ if(samEl&&typeof samMooi==='function')samMooi(samEl); }catch(e){}
   if (samEl) {
     samEl.querySelectorAll('.sam-head').forEach(h => {
       h.addEventListener('click', () => {
@@ -574,7 +575,7 @@ function initSamInteractive(container, d) {
         prog.classList.toggle('prog-done', n===total&&total>0);
       };
       heads.forEach(h => {
-        const title = h.childNodes[0]?.textContent?.trim()||h.textContent.trim();
+        const _tn=[...h.childNodes].find(n=>!(n.classList&&n.classList.contains('sam-head-n'))); const title = _tn?.textContent?.trim()||h.textContent.trim();
         const btn = document.createElement('button');
         btn.className = 'sam-head-ck'+(readSet.has(title)?' hck-done':'');
         btn.title = readSet.has(title)?'Ongelezen':'Gelezen markeren';

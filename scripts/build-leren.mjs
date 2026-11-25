@@ -177,7 +177,7 @@ ${top}
 ${vragenHtml ? `<h2>Oefen alvast: ${kies.length} vragen met uitleg</h2>\n${vragenHtml}\n<div class="pg-cta"><a class="pg-knop" href="${app}&oefen=1">Oefen de andere ${l.sv.length - kies.length} vragen, aangepast aan jouw niveau</a></div>` : ''}
 ${buren.length ? `<h2>Verder in ${esc(vakNaam)}</h2><ul class="pg-lijst">${buren.map(b => `<li><a href="${vakUrl}${b.slug}.html">${esc(b.l.naam)}</a><span>${esc(kort(b.l.beschrijving, 140))}</span></li>`).join('')}</ul>` : ''}
 ${voet}
-</main><script src="/sam-clip.js" defer></script></body></html>
+</main><script src="/sam-clip.js" defer></script><script src="/sam-mooi.js" defer></script></body></html>
 `);
       overzicht.push({ niv, vakNaam, vs, naam: l.naam, url, besch: kort(l.beschrijving, 160) });
     }
