@@ -1,0 +1,682 @@
+{
+ "id": "B6",
+ "lo": "wa.B.6",
+ "gs": 2,
+ "naam": "Permutaties en combinaties berekenen en een telstrategie kiezen",
+ "beschrijving": "Je berekent faculteiten, permutaties en combinaties, bepaalt of de volgorde telt, kiest een telstrategie zoals het complement of een blok en controleert met de rekenmachine.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Faculteit en permutaties",
+  "Combinaties",
+  "Volgorde wel of niet",
+  "Complement en minstens één",
+  "Telstrategie en controleren"
+ ],
+ "sam": "Bepaal of de volgorde telt: dan nPr, anders nCr. Gebruik faculteiten en de symmetrie van combinaties. Kies bij minstens één het complement, bij naast elkaar een blok en bij groepen de productregel en controleer met de rekenmachine of een klein voorbeeld.",
+ "begrippen": [
+  {
+   "t": "Faculteit",
+   "d": "n! = n · (n − 1) · … · 1, bijvoorbeeld 5! = 120."
+  },
+  {
+   "t": "Permutatie",
+   "d": "Een rangschikking waarbij de volgorde telt: nPr = n!/(n − r)!."
+  },
+  {
+   "t": "Combinatie",
+   "d": "Een keuze waarbij de volgorde niet telt: nCr = n!/(r!(n − r)!)."
+  },
+  {
+   "t": "Volgorde telt wel of niet",
+   "d": "Verschillende functies: permutatie. Alleen wie meedoet: combinatie."
+  },
+  {
+   "t": "Symmetrie van combinaties",
+   "d": "nCr = nC(n − r), bijvoorbeeld 8C3 = 8C5."
+  },
+  {
+   "t": "Complement",
+   "d": "Totaal min het geval waarin het niet voorkomt, handig bij minstens één."
+  },
+  {
+   "t": "Blokstrategie",
+   "d": "Twee personen als één blok tellen en de volgorde binnen het blok meetellen."
+  },
+  {
+   "t": "Productregel bij groepen",
+   "d": "Aantal keuzes uit twee groepen vermenigvuldigen: 12C2 · 8C2."
+  },
+  {
+   "t": "Wedstrijden tellen",
+   "d": "Elk paar één keer: nC2, bij heen en terug dubbel."
+  },
+  {
+   "t": "nCr op de rekenmachine",
+   "d": "De functie die het aantal combinaties direct geeft."
+  },
+  {
+   "t": "Telstrategie",
+   "d": "Een plan: schema, regel kiezen, rekenen en controleren."
+  },
+  {
+   "t": "Controleren",
+   "d": "Met permutaties gedeeld door volgordes of met de rekenmachine."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Bereken 5! zonder rekenmachine.",
+   "o": [
+    "\"25 (5²)\"",
+    "\"120\"",
+    "\"15 (5 + 4 + 3 + 2 + 1)\"",
+    "\"5 (het getal zelf)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"25 (5²)\"\"? Dan kwadrateer je 5. Een faculteit is een productreeks, dus 120. Het goede antwoord is 120.",
+    "Klopt: 5 · 4 · 3 · 2 · 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"15 (5 + 4 + 3 + 2 + 1)\"\"? Dan tel je 5 + 4 + 3 + 2 + 1 op. Een faculteit vermenigvuldigt, dus 120. Door de stappen goed na te lopen kom je uit op 120.",
+    "Koos je \"\"5 (het getal zelf)\"\"? Dan neem je het getal zelf. Vermenigvuldig 5 · 4 · 3 · 2 · 1, dus 120. Controleer je stap: de juiste uitkomst is 120."
+   ],
+   "uh": "Bereken 5! zonder rekenmachine."
+  },
+  {
+   "v": "Bereken 4P2, het aantal permutaties van 2 uit 4.",
+   "o": [
+    "\"6 (het aantal combinaties)\"",
+    "\"8 (4 · 2)\"",
+    "\"24 (4!)\"",
+    "\"12\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6 (het aantal combinaties)\"\"? Dan neem je het aantal combinaties. Bij permutaties telt de volgorde, dus 4 · 3 = 12.",
+    "Koos je \"\"8 (4 · 2)\"\"? Dan vermenigvuldig je 4 · 2. Je neemt twee dalende getallen, dus 4 · 3 = 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"24 (4!)\"\"? Dan neem je 4!. Er worden maar 2 gekozen, dus 4 · 3 = 12. Controleer je stap: de juiste uitkomst is 12.",
+    "Klopt: 4 · 3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken 4P2, het aantal permutaties van 2 uit 4."
+  },
+  {
+   "v": "Bereken 5C2, het aantal combinaties van 2 uit 5.",
+   "o": [
+    "\"10\"",
+    "\"20 (het aantal permutaties)\"",
+    "\"7 (5 + 2)\"",
+    "\"25 (5²)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 5 · 4 : 2 = 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"20 (het aantal permutaties)\"\"? Dan neem je het aantal permutaties. Bij combinaties deel je door 2!, dus 10. Het goede antwoord is 10.",
+    "Koos je \"\"7 (5 + 2)\"\"? Dan tel je 5 en 2 op. Combinaties volgen uit een quotiënt, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+    "Koos je \"\"25 (5²)\"\"? Dan kwadrateer je 5. Combinaties volgen uit 5 · 4 : 2, dus 10. Controleer je stap: de juiste uitkomst is 10."
+   ],
+   "uh": "Bereken 5C2, het aantal combinaties van 2 uit 5."
+  },
+  {
+   "v": "Een voorzitter en een secretaris worden gekozen uit 6 personen. Welke berekening hoort daarbij?",
+   "o": [
+    "\"6C2 = 15, want de volgorde telt niet\"",
+    "\"6! = 720, want iedereen krijgt een plek\"",
+    "\"6P2 = 30, want de volgorde telt\"",
+    "\"6 · 2 = 12, want twee functies\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6C2 = 15, want de volgorde telt niet\"\"? Dan kies je een combinatie. Bij verschillende functies telt de volgorde, dus 6P2 = 30.",
+    "Koos je \"\"6! = 720, want iedereen krijgt een plek\"\"? Dan rangschik je alle zes. Er worden maar twee gekozen, dus 6P2 = 30.",
+    "Klopt: voorzitter en secretaris zijn verschillende functies.",
+    "Koos je \"\"6 · 2 = 12, want twee functies\"\"? Dan vermenigvuldig je 6 met 2. De tweede keuze heeft 5 mogelijkheden, dus 6P2 = 30."
+   ],
+   "uh": "Een voorzitter en een secretaris worden gekozen uit 6 personen. Welke berekening hoort daarbij?"
+  },
+  {
+   "v": "Twee afgevaardigden zonder functies worden gekozen uit 6 personen. Welke berekening hoort daarbij?",
+   "o": [
+    "\"6P2 = 30, want de volgorde telt\"",
+    "\"6C2 = 15, want de volgorde telt niet\"",
+    "\"6! = 720, want alle zes personen krijgen een plek\"",
+    "\"6 · 2 = 12, want er zijn twee afgevaardigden en zes personen\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6P2 = 30, want de volgorde telt\"\"? Dan kies je een permutatie. Zonder functies telt de volgorde niet, dus 6C2 = 15.",
+    "Klopt: geen functies, dus alleen wie er meedoet telt. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6! = 720, want alle zes personen krijgen een plek\"\"? Dan rangschik je alle zes. Er worden maar twee gekozen, dus 6C2 = 15.",
+    "Koos je \"\"6 · 2 = 12, want er zijn twee afgevaardigden en zes personen\"\"? Dan vermenigvuldig je 6 met 2. Je moet de volgorde wegdelen, dus 6C2 = 15."
+   ],
+   "uh": "Twee afgevaardigden zonder functies worden gekozen uit 6 personen. Welke berekening hoort daarbij?"
+  },
+  {
+   "v": "Hoe tel je 'minstens één' bij een telprobleem handig?",
+   "o": [
+    "\"alle gevallen van één, twee, drie en vier apart optellen\"",
+    "\"alleen het geval tellen waarin precies één voorkomt\"",
+    "\"het totaal door het aantal gevallen delen\"",
+    "\"totaal min het aantal waarbij het niet voorkomt (het complement)\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alle gevallen van één, twee, drie en vier apart optellen\"\"? Dan tel je elk geval apart. Dat is veel werk, dus het complement.",
+    "Koos je \"\"alleen het geval tellen waarin precies één voorkomt\"\"? Dan tel je alleen precies één. Minstens één omvat ook meer, dus het complement.",
+    "Koos je \"\"het totaal door het aantal gevallen delen\"\"? Dan deel je het totaal door een getal. Dat telt niet 'minstens één', dus het complement.",
+    "Klopt: je telt het eenvoudige tegengestelde geval. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe tel je 'minstens één' bij een telprobleem handig?"
+  },
+  {
+   "v": "Hoe controleer je een berekening met nCr?",
+   "o": [
+    "\"met de rekenmachine (nCr) of met faculteiten n!/(r!(n − r)!)\"",
+    "\"door n en r op te tellen en door 2 te delen\"",
+    "\"door n te delen door r\"",
+    "\"door n te kwadrateren en door r te delen\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: beide wegen geven hetzelfde aantal. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"door n en r op te tellen en door 2 te delen\"\"? Dan tel je n en r op. Dat geeft geen aantal combinaties, dus nCr of faculteiten.",
+    "Koos je \"\"door n te delen door r\"\"? Dan deel je n door r. Dat is een breuk, geen aantal, dus nCr of faculteiten. Door de stappen goed na te lopen kom je uit op met de rekenmachine (nCr) of met faculteiten n!/(r!(n − r)!).",
+    "Koos je \"\"door n te kwadrateren en door r te delen\"\"? Dan kwadrateer je n. Dat hoort bij een ander probleem, dus nCr of faculteiten."
+   ],
+   "uh": "Hoe controleer je een berekening met nCr?"
+  },
+  {
+   "v": "Hoeveel manieren zijn er om de vijf vrienden op een rij te zetten?",
+   "o": [
+    "\"25 (5²)\"",
+    "\"5 (het aantal vrienden)\"",
+    "\"120\"",
+    "\"15 (5 + 4 + 3 + 2 + 1)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"25 (5²)\"\"? Dan kwadrateer je 5. Een rij heeft 5 · 4 · 3 · 2 · 1 mogelijkheden, dus 120. Het goede antwoord is 120.",
+    "Koos je \"\"5 (het aantal vrienden)\"\"? Dan neem je het aantal vrienden. Elke plek heeft een afnemend aantal keuzes, dus 120.",
+    "Klopt: 5! = 120. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"15 (5 + 4 + 3 + 2 + 1)\"\"? Dan tel je 5 + 4 + 3 + 2 + 1. Je vermenigvuldigt, dus 120. Controleer je stap: de juiste uitkomst is 120."
+   ],
+   "uh": "Hoeveel manieren zijn er om de vijf vrienden op een rij te zetten?",
+   "ctx": "Vijf vrienden doen mee aan een race. Een leerling telt op hoeveel manieren ze op een rij kunnen staan en op hoeveel manieren goud, zilver en brons verdeeld kunnen worden onder deze vijf."
+  },
+  {
+   "v": "Op hoeveel manieren kunnen goud, zilver en brons worden verdeeld?",
+   "o": [
+    "\"10\"",
+    "\"60\"",
+    "\"120\"",
+    "\"15\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10\"\"? Dan neem je het aantal combinaties 5C3. Bij medailles telt de volgorde, dus 60. Het goede antwoord is 60.",
+    "Klopt: 5 · 4 · 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"120\"\"? Dan neem je 5!. Er worden maar 3 plekken verdeeld, dus 60. Door de stappen goed na te lopen kom je uit op 60.",
+    "Koos je \"\"15\"\"? Dan tel je 5 + 4 + 3 + 3 op. Je vermenigvuldigt de afnemende keuzes, dus 60. Controleer je stap: de juiste uitkomst is 60."
+   ],
+   "uh": "Op hoeveel manieren kunnen goud, zilver en brons worden verdeeld?",
+   "ctx": "Vijf vrienden doen mee aan een race. Een leerling telt op hoeveel manieren ze op een rij kunnen staan en op hoeveel manieren goud, zilver en brons verdeeld kunnen worden onder deze vijf."
+  },
+  {
+   "v": "Waarom is de verdeling van goud, zilver en brons een permutatie?",
+   "o": [
+    "\"omdat er vijf mensen meedoen aan de race\"",
+    "\"omdat er drie medailles te verdelen zijn\"",
+    "\"omdat je zelf mag kiezen wie de medaille krijgt\"",
+    "\"omdat de volgorde telt: goud is iets anders dan zilver\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat er vijf mensen meedoen aan de race\"\"? Dan denk je dat het aantal deelnemers het type bepaalt. Ook bij vijf mensen kan de volgorde er niet toe doen, dus een permutatie.",
+    "Koos je \"\"omdat er drie medailles te verdelen zijn\"\"? Dan denk je dat het aantal medailles het type bepaalt. Het type hangt af van of de plaatsen verschillen, dus een permutatie.",
+    "Koos je \"\"omdat je zelf mag kiezen wie de medaille krijgt\"\"? Dan denk je dat kiezen op zich een permutatie oplevert. Dat geldt ook bij een combinatie, dus een permutatie.",
+    "Klopt: elke plaats is een eigen functie. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waarom is de verdeling van goud, zilver en brons een permutatie?",
+   "ctx": "Vijf vrienden doen mee aan een race. Een leerling telt op hoeveel manieren ze op een rij kunnen staan en op hoeveel manieren goud, zilver en brons verdeeld kunnen worden onder deze vijf."
+  },
+  {
+   "v": "Schrijf het aantal verdelingen als 5!/2!.",
+   "o": [
+    "\"5!/2! = 60\"",
+    "\"5!/2! = 120\"",
+    "\"5!/2! = 30\"",
+    "\"5!/2! = 10\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 5 · 4 · 3 = 60. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5!/2! = 120\"\"? Dan deel je niet door 2!. 120 : 2 = 60, dus 60. Het goede antwoord is 5!/2! = 60.",
+    "Koos je \"\"5!/2! = 30\"\"? Dan deel je door 4. 120 : 2 = 60, dus 60. Door de stappen goed na te lopen kom je uit op 5!/2! = 60.",
+    "Koos je \"\"5!/2! = 10\"\"? Dan neem je het aantal combinaties 5C3. 5! : 2! = 60, dus 60. Controleer je stap: de juiste uitkomst is 5!/2! = 60."
+   ],
+   "uh": "Schrijf het aantal verdelingen als 5!/2!.",
+   "ctx": "Vijf vrienden doen mee aan een race. Een leerling telt op hoeveel manieren ze op een rij kunnen staan en op hoeveel manieren goud, zilver en brons verdeeld kunnen worden onder deze vijf."
+  },
+  {
+   "v": "Hoeveel commissies van 3 zijn er uit 8 leerlingen?",
+   "o": [
+    "\"336\"",
+    "\"24\"",
+    "\"56\"",
+    "\"11\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"336\"\"? Dan neem je het aantal permutaties. Bij een commissie telt de volgorde niet, dus 56. Het goede antwoord is 56.",
+    "Koos je \"\"24\"\"? Dan vermenigvuldig je 8 en 3. Combinaties volgen uit 8 · 7 · 6 : 6, dus 56. Door de stappen goed na te lopen kom je uit op 56.",
+    "Klopt: 8 · 7 · 6 : 6 = 56. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"11\"\"? Dan tel je 8 en 3 op. Combinaties volgen uit een quotiënt, dus 56. Controleer je stap: de juiste uitkomst is 56."
+   ],
+   "uh": "Hoeveel commissies van 3 zijn er uit 8 leerlingen?",
+   "ctx": "Uit een groep van 8 leerlingen kiest de school een commissie van 3 leerlingen zonder functies. Een leerling berekent het aantal mogelijke commissies en let op of de volgorde telt."
+  },
+  {
+   "v": "Je kiest nu 5 van de 8 leerlingen voor de commissie. Hoeveel mogelijkheden zijn er?",
+   "o": [
+    "\"6720\"",
+    "\"56\"",
+    "\"40\"",
+    "\"13\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6720\"\"? Dan neem je het aantal permutaties van 5. De volgorde telt niet, dus 56. Het goede antwoord is 56.",
+    "Klopt: 8C5 = 8C3, want kies je 3, dan laat je 5 weg. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"40\"\"? Dan vermenigvuldig je 8 en 5. Gebruik de symmetrie 8C5 = 8C3, dus 56. Door de stappen goed na te lopen kom je uit op 56.",
+    "Koos je \"\"13\"\"? Dan tel je 8 en 5 op. Combinaties volgen uit een quotiënt, dus 56. Controleer je stap: de juiste uitkomst is 56."
+   ],
+   "uh": "Je kiest nu 5 van de 8 leerlingen voor de commissie. Hoeveel mogelijkheden zijn er?",
+   "ctx": "Uit een groep van 8 leerlingen kiest de school een commissie van 3 leerlingen zonder functies. Een leerling berekent het aantal mogelijke commissies en let op of de volgorde telt."
+  },
+  {
+   "v": "Waarom is de commissie een combinatie?",
+   "o": [
+    "\"omdat er acht leerlingen zijn om uit te kiezen\"",
+    "\"omdat de commissie maar drie leerlingen telt\"",
+    "\"omdat alle acht de leerlingen verschillende mensen zijn\"",
+    "\"omdat de volgorde niet telt: dezelfde drie leerlingen is dezelfde commissie\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat er acht leerlingen zijn om uit te kiezen\"\"? Dan denk je dat het aantal leerlingen het type bepaalt. Bij acht leerlingen kan de volgorde ook wel tellen, dus een combinatie.",
+    "Koos je \"\"omdat de commissie maar drie leerlingen telt\"\"? Dan denk je dat de grootte van de groep het type bepaalt. Ook een kleine groep kan een volgorde hebben, dus een combinatie.",
+    "Koos je \"\"omdat alle acht de leerlingen verschillende mensen zijn\"\"? Dan denk je dat verschillende mensen een permutatie geven. Zonder functies telt de volgorde niet, dus een combinatie.",
+    "Klopt: er zijn geen functies. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waarom is de commissie een combinatie?",
+   "ctx": "Uit een groep van 8 leerlingen kiest de school een commissie van 3 leerlingen zonder functies. Een leerling berekent het aantal mogelijke commissies en let op of de volgorde telt."
+  },
+  {
+   "v": "Hoeveel wedstrijden zijn er als elk van de 6 teams één keer tegen elk ander team speelt?",
+   "o": [
+    "\"15\"",
+    "\"30 (6P2)\"",
+    "\"36 (6²)\"",
+    "\"12 (6 · 2)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 6C2 = 6 · 5 : 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"30 (6P2)\"\"? Dan neem je het aantal permutaties 6P2. De wedstrijd A tegen B is dezelfde als B tegen A, dus 15. Het goede antwoord is 15.",
+    "Koos je \"\"36 (6²)\"\"? Dan kwadrateer je 6. Elk team speelt niet tegen zichzelf, dus 15. Door de stappen goed na te lopen kom je uit op 15.",
+    "Koos je \"\"12 (6 · 2)\"\"? Dan vermenigvuldig je 6 met 2. Gebruik 6 · 5 : 2, dus 15. Controleer je stap: de juiste uitkomst is 15."
+   ],
+   "uh": "Hoeveel wedstrijden zijn er als elk van de 6 teams één keer tegen elk ander team speelt?",
+   "ctx": "In een toernooi spelen 6 teams. Ieder team speelt één keer tegen ieder ander team. Een leerling berekent het aantal wedstrijden en het aantal bij heen- en terugwedstrijden."
+  },
+  {
+   "v": "Hoeveel wedstrijden zijn er bij heen- en terugwedstrijden?",
+   "o": [
+    "\"15 (één wedstrijd per paar)\"",
+    "\"60 (15 · 4)\"",
+    "\"30\"",
+    "\"36 (6²)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15 (één wedstrijd per paar)\"\"? Dan tel je maar één wedstrijd per paar. Er zijn nu twee, dus 30. Het goede antwoord is 30.",
+    "Koos je \"\"60 (15 · 4)\"\"? Dan vermenigvuldig je 15 met 4. Het is 2 keer 15, dus 30. Door de stappen goed na te lopen kom je uit op 30.",
+    "Klopt: 2 · 15. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"36 (6²)\"\"? Dan kwadrateer je 6. Elk paar speelt twee keer, dus 30. Controleer je stap: de juiste uitkomst is 30."
+   ],
+   "uh": "Hoeveel wedstrijden zijn er bij heen- en terugwedstrijden?",
+   "ctx": "In een toernooi spelen 6 teams. Ieder team speelt één keer tegen ieder ander team. Een leerling berekent het aantal wedstrijden en het aantal bij heen- en terugwedstrijden."
+  },
+  {
+   "v": "Waarom tel je 15 en niet 30 bij één wedstrijd per paar?",
+   "o": [
+    "\"omdat er zes teams meedoen in het toernooi\"",
+    "\"A tegen B is dezelfde wedstrijd als B tegen A, dus de volgorde telt niet\"",
+    "\"omdat elk team twee keer tegen elk ander team speelt\"",
+    "\"omdat 30 wedstrijden te veel zijn voor een toernooi\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat er zes teams meedoen in het toernooi\"\"? Dan denk je dat het aantal teams de uitkomst bepaalt. Het gaat om de volgorde van elk paar, dus 15.",
+    "Klopt: een wedstrijd is een paar zonder volgorde. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat elk team twee keer tegen elk ander team speelt\"\"? Dan denk je dat elk team dubbel speelt. Elk paar speelt hier maar één keer, dus 15.",
+    "Koos je \"\"omdat 30 wedstrijden te veel zijn voor een toernooi\"\"? Dan denk je dat het aantal te groot is. Het gaat om de vraag of de volgorde telt, dus 15."
+   ],
+   "uh": "Waarom tel je 15 en niet 30 bij één wedstrijd per paar?",
+   "ctx": "In een toernooi spelen 6 teams. Ieder team speelt één keer tegen ieder ander team. Een leerling berekent het aantal wedstrijden en het aantal bij heen- en terugwedstrijden."
+  },
+  {
+   "v": "Hoeveel groepen van 4 zijn er uit de 20 leerlingen?",
+   "o": [
+    "\"116 280\"",
+    "\"80\"",
+    "\"24 (4!)\"",
+    "\"4845\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"116 280\"\"? Dan neem je het aantal permutaties. Bij een groep telt de volgorde niet, dus 4845. Het goede antwoord is 4845.",
+    "Koos je \"\"80\"\"? Dan vermenigvuldig je 20 en 4. Combinaties volgen uit het quotiënt, dus 4845. Door de stappen goed na te lopen kom je uit op 4845.",
+    "Koos je \"\"24 (4!)\"\"? Dan neem je 4!. Het gaat om 20C4, dus 4845. Controleer je stap: de juiste uitkomst is 4845.",
+    "Klopt: 20C4 = 20 · 19 · 18 · 17 : 24. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel groepen van 4 zijn er uit de 20 leerlingen?",
+   "ctx": "In een klas zitten 12 meisjes en 8 jongens. Er worden 4 leerlingen gekozen voor een quiz. Een leerling berekent het totaal, het aantal groepen met alleen meisjes en het aantal met minstens één jongen."
+  },
+  {
+   "v": "Hoeveel groepen van 4 bestaan alleen uit meisjes?",
+   "o": [
+    "\"495\"",
+    "\"11 880\"",
+    "\"48\"",
+    "\"4845\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 12C4 = 12 · 11 · 10 · 9 : 24. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"11 880\"\"? Dan neem je het aantal permutaties. De volgorde telt niet, dus 495. Het goede antwoord is 495.",
+    "Koos je \"\"48\"\"? Dan vermenigvuldig je 12 en 4. Gebruik 12C4, dus 495. Door de stappen goed na te lopen kom je uit op 495.",
+    "Koos je \"\"4845\"\"? Dan neem je alle groepen. Alleen meisjes zijn er minder, dus 495. Controleer je stap: de juiste uitkomst is 495."
+   ],
+   "uh": "Hoeveel groepen van 4 bestaan alleen uit meisjes?",
+   "ctx": "In een klas zitten 12 meisjes en 8 jongens. Er worden 4 leerlingen gekozen voor een quiz. Een leerling berekent het totaal, het aantal groepen met alleen meisjes en het aantal met minstens één jongen."
+  },
+  {
+   "v": "Hoeveel groepen van 4 hebben minstens één jongen?",
+   "o": [
+    "\"495 (alleen meisjes)\"",
+    "\"4845 (alle groepen)\"",
+    "\"4350\"",
+    "\"2170 (de helft van 4845)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"495 (alleen meisjes)\"\"? Dan neem je alleen de groepen zonder jongens. Dat is het complement, dus 4350. Het goede antwoord is 4350.",
+    "Koos je \"\"4845 (alle groepen)\"\"? Dan neem je alle groepen. Trek de groepen zonder jongens af, dus 4350. Door de stappen goed na te lopen kom je uit op 4350.",
+    "Klopt: 4845 − 495. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2170 (de helft van 4845)\"\"? Dan neem je de helft van 4845. Gebruik het complement, dus 4350. Controleer je stap: de juiste uitkomst is 4350."
+   ],
+   "uh": "Hoeveel groepen van 4 hebben minstens één jongen?",
+   "ctx": "In een klas zitten 12 meisjes en 8 jongens. Er worden 4 leerlingen gekozen voor een quiz. Een leerling berekent het totaal, het aantal groepen met alleen meisjes en het aantal met minstens één jongen."
+  },
+  {
+   "v": "Hoeveel groepen van 4 hebben precies 2 jongens?",
+   "o": [
+    "\"94 (66 + 28)\"",
+    "\"1848\"",
+    "\"1980 (66 · 30)\"",
+    "\"4845 (alle groepen)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"94 (66 + 28)\"\"? Dan tel je 66 en 28 op. Elke keuze van twee meisjes hoort bij elke keuze van twee jongens, dus 1848.",
+    "Klopt: 12C2 · 8C2 = 66 · 28. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1980 (66 · 30)\"\"? Dan neem je 66 · 30. 8C2 = 28, dus 1848. Door de stappen goed na te lopen kom je uit op 1848.",
+    "Koos je \"\"4845 (alle groepen)\"\"? Dan neem je alle groepen. Je wilt precies 2 jongens, dus 1848. Controleer je stap: de juiste uitkomst is 1848."
+   ],
+   "uh": "Hoeveel groepen van 4 hebben precies 2 jongens?",
+   "ctx": "In een klas zitten 12 meisjes en 8 jongens. Er worden 4 leerlingen gekozen voor een quiz. Een leerling berekent het totaal, het aantal groepen met alleen meisjes en het aantal met minstens één jongen."
+  },
+  {
+   "v": "Ali en Bo als één blok: op hoeveel manieren staan de zes mensen dan op een rij?",
+   "o": [
+    "\"120 (zonder wisselen)\"",
+    "\"720 (alle rijen)\"",
+    "\"48 (4! · 2)\"",
+    "\"240\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"120 (zonder wisselen)\"\"? Dan laat je de twee volgordes binnen het blok weg. Ali en Bo kunnen wisselen, dus 240.",
+    "Koos je \"\"720 (alle rijen)\"\"? Dan neem je alle rijen. Alleen die met Ali en Bo naast elkaar tellen, dus 240. Door de stappen goed na te lopen kom je uit op 240.",
+    "Koos je \"\"48 (4! · 2)\"\"? Dan neem je 4! · 2. Het blok telt als één plaats, dus 5 plaatsen, dus 240. Controleer je stap: de juiste uitkomst is 240.",
+    "Klopt: 5! · 2 = 240. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Ali en Bo als één blok: op hoeveel manieren staan de zes mensen dan op een rij?",
+   "ctx": "Zes mensen gaan op een rij staan voor een foto. Twee van hen, Ali en Bo, willen naast elkaar staan. Een leerling telt de rijen met een blok-strategie en met het complement."
+  },
+  {
+   "v": "Op hoeveel manieren kunnen Ali en Bo onderling van plaats wisselen binnen hun blok?",
+   "o": [
+    "\"2\"",
+    "\"1 (één volgorde)\"",
+    "\"4 (2²)\"",
+    "\"6 (3!)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2! = 2, Ali links of Bo links. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1 (één volgorde)\"\"? Dan denk je dat er maar één volgorde is. Ali en Bo kunnen wisselen, dus 2. Het goede antwoord is 2.",
+    "Koos je \"\"4 (2²)\"\"? Dan kwadrateer je 2. Twee mensen hebben 2! = 2 volgordes, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Koos je \"\"6 (3!)\"\"? Dan neem je 3!. Het blok bestaat uit twee mensen, dus 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Op hoeveel manieren kunnen Ali en Bo onderling van plaats wisselen binnen hun blok?",
+   "ctx": "Zes mensen gaan op een rij staan voor een foto. Twee van hen, Ali en Bo, willen naast elkaar staan. Een leerling telt de rijen met een blok-strategie en met het complement."
+  },
+  {
+   "v": "Hoeveel rijen zijn er in totaal met zes mensen zonder voorwaarde?",
+   "o": [
+    "\"120 (5!)\"",
+    "\"36 (6²)\"",
+    "\"720\"",
+    "\"240 (Ali en Bo naast elkaar)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"120 (5!)\"\"? Dan neem je 5!. Er zijn zes mensen, dus 720. Het goede antwoord is 720.",
+    "Koos je \"\"36 (6²)\"\"? Dan kwadrateer je 6. Een rij van zes mensen is 6!, dus 720. Door de stappen goed na te lopen kom je uit op 720.",
+    "Klopt: 6! = 720. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"240 (Ali en Bo naast elkaar)\"\"? Dan neem je het aantal met Ali en Bo naast elkaar. Hier is er geen voorwaarde, dus 720."
+   ],
+   "uh": "Hoeveel rijen zijn er in totaal met zes mensen zonder voorwaarde?",
+   "ctx": "Zes mensen gaan op een rij staan voor een foto. Twee van hen, Ali en Bo, willen naast elkaar staan. Een leerling telt de rijen met een blok-strategie en met het complement."
+  },
+  {
+   "v": "Hoeveel rijen zijn er waarin Ali en Bo niet naast elkaar staan?",
+   "o": [
+    "\"240 (naast elkaar)\"",
+    "\"480\"",
+    "\"720 (alle rijen)\"",
+    "\"360 (de helft van 720)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"240 (naast elkaar)\"\"? Dan neem je alleen de rijen met Ali en Bo naast elkaar. Trek die af van 720, dus 480. Het goede antwoord is 480.",
+    "Klopt: 720 − 240. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"720 (alle rijen)\"\"? Dan neem je alle rijen. Trek de rijen met Ali en Bo naast elkaar af, dus 480. Door de stappen goed na te lopen kom je uit op 480.",
+    "Koos je \"\"360 (de helft van 720)\"\"? Dan neem je de helft van 720. Gebruik het complement, dus 480. Controleer je stap: de juiste uitkomst is 480."
+   ],
+   "uh": "Hoeveel rijen zijn er waarin Ali en Bo niet naast elkaar staan?",
+   "ctx": "Zes mensen gaan op een rij staan voor een foto. Twee van hen, Ali en Bo, willen naast elkaar staan. Een leerling telt de rijen met een blok-strategie en met het complement."
+  },
+  {
+   "v": "Hoeveel mogelijke trekkingen van 5 getallen uit 20 zijn er?",
+   "o": [
+    "\"1 860 480\"",
+    "\"100\"",
+    "\"120\"",
+    "\"15 504\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1 860 480\"\"? Dan neem je het aantal permutaties. De volgorde telt niet, dus 15 504. Het goede antwoord is 15 504.",
+    "Koos je \"\"100\"\"? Dan vermenigvuldig je 20 en 5. Gebruik 20C5, dus 15 504. Door de stappen goed na te lopen kom je uit op 15 504.",
+    "Koos je \"\"120\"\"? Dan neem je 5!. Gebruik 20C5, dus 15 504. Controleer je stap: de juiste uitkomst is 15 504.",
+    "Klopt: 20C5 = 15 504. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel mogelijke trekkingen van 5 getallen uit 20 zijn er?",
+   "ctx": "Een loterij trekt 5 getallen uit de getallen 1 tot en met 20, zonder terugleggen. De volgorde van trekken telt niet. Een leerling berekent het aantal mogelijke trekkingen en controleert met de rekenmachine."
+  },
+  {
+   "v": "Hoe controleer je 15 504 zonder nCr-knop?",
+   "o": [
+    "\"20 · 19 · 18 · 17 · 16 : 5! = 1 860 480 : 120 = 15 504\"",
+    "\"20 · 5 = 100 en dan door 5! delen\"",
+    "\"20! : 5! = 20!/120, een heel groot getal\"",
+    "\"20 + 19 + 18 + 17 + 16 = 90 en dan door 5! delen\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst of de volgorde telt: dan is het een permutatie, anders een combinatie. Gebruik n!, nPr en nCr, kies bij minstens één het complement en controleer met de rekenmachine. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het aantal permutaties gedeeld door de volgorden.",
+    "Koos je \"\"20 · 5 = 100 en dan door 5! delen\"\"? Dan vermenigvuldig je 20 en 5. Je moet vijf dalende getallen nemen, dus : 5!.",
+    "Koos je \"\"20! : 5! = 20!/120, een heel groot getal\"\"? Dan neem je 20! zonder (20 − 5)! te delen. Gebruik vijf dalende getallen, dus 1 860 480 : 120.",
+    "Koos je \"\"20 + 19 + 18 + 17 + 16 = 90 en dan door 5! delen\"\"? Dan tel je de getallen op. Je vermenigvuldigt, dus 1 860 480 : 120."
+   ],
+   "uh": "Hoe controleer je 15 504 zonder nCr-knop?",
+   "ctx": "Een loterij trekt 5 getallen uit de getallen 1 tot en met 20, zonder terugleggen. De volgorde van trekken telt niet. Een leerling berekent het aantal mogelijke trekkingen en controleert met de rekenmachine."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Zeven vrienden doen mee aan een race. Een leerling telt het aantal manieren om hen op een rij te zetten en het aantal manieren om goud, zilver en brons te verdelen. Hij schrijft de berekeningen met faculteiten op.",
+   "v": "Bereken beide aantallen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "7! = 5040 (1p). Goud, zilver en brons: 7 · 6 · 5 (1p). Dat is 210 verdelingen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Uit een groep van 10 leerlingen wordt een commissie van 4 gekozen zonder functies. Een leerling berekent het aantal mogelijke commissies en controleert met de rekenmachine. Hij legt uit waarom de volgorde niet telt.",
+   "v": "Bereken het aantal commissies en leg uit waarom het een combinatie is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "10 · 9 · 8 · 7 : 24 (1p). 10C4 = 210 (1p). De volgorde telt niet, want dezelfde vier leerlingen is dezelfde commissie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een klas zitten 10 jongens en 8 meisjes. Er worden 3 leerlingen gekozen voor een toets. Een leerling berekent het totaal, het aantal groepen met alleen jongens en het aantal met minstens één meisje.",
+   "v": "Bereken het aantal groepen met minstens één meisje.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Totaal 18C3 = 816 (1p). Alleen jongens 10C3 = 120 (1p). Minstens één meisje: 816 − 120 = 696 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Vijf mensen staan op een rij voor een foto. Twee van hen, Ali en Bo, mogen niet naast elkaar staan. Een leerling telt alle rijen en trekt de rijen af waarin zij wel naast elkaar staan.",
+   "v": "Bereken het aantal rijen waarin Ali en Bo niet naast elkaar staan.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Alle rijen 5! = 120 (1p). Naast elkaar: 4! · 2 = 48 (1p). Niet naast elkaar: 120 − 48 = 72 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een toernooi spelen 8 teams. Ieder team speelt één keer tegen ieder ander team. Een leerling berekent het aantal wedstrijden en daarna het aantal wedstrijden bij heen- en terugwedstrijden.",
+   "v": "Bereken het aantal wedstrijden in beide situaties.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "8C2 = 8 · 7 : 2 (1p). Dat zijn 28 wedstrijden (1p). Heen en terug: 2 · 28 = 56 wedstrijden (1p)."
+  }
+ ]
+}
