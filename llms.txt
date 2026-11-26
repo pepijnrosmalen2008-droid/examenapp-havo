@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 29.110 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 29.137 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -298,6 +298,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Lineaire en kwadratische functies: kenmerken in grafiek, tabel en formule (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/lineaire-en-kwadratische-functies-kenmerken-in-grafiek-tabel-en-formul.html): Je herkent lineaire en kwadratische functies in grafiek, tabel en formule, bepaalt richtingscoëfficiënt, beginwaarde, nulpunten, symmetrieas en top en…
 - [Machtsfuncties en (omgekeerd) evenredige verbanden (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/machtsfuncties-en-omgekeerd-evenredige-verbanden.html): Je herkent recht evenredige, omgekeerd evenredige en machtsverbanden in tabel, grafiek en formule, stelt de formule op en interpreteert de…
 - [Exponentiële functies: groeifactor, beginwaarde, verdubbelingstijd en halveringstijd (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/exponentiele-functies-groeifactor-beginwaarde-verdubbelingstijd-en-hal.html): Je stelt exponentiële formules op uit tabel en tekst, rekent met groeifactor en groeipercentage, bepaalt verdubbelings- en halveringstijd en vertaalt de…
+- [Logaritmische functies en rekenregels voor logaritmen (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/logaritmische-functies-en-rekenregels-voor-logaritmen.html): Je ziet een logaritme als exponent, gebruikt de rekenregels, lost vergelijkingen met een exponent op, tekent de grafiek van een logaritmische functie en werkt…
 - [Feit en mening onderscheiden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/feit-en-mening-onderscheiden.html): Je hoort of ziet een tekst en weet of een uitspraak een feit of een mening is. Je let op woorden die een oordeel geven en je controleert wat te controleren is.
 - [De hoofdzaak en de kernboodschap vinden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/de-hoofdzaak-en-de-kernboodschap-vinden.html): Je luistert naar een gesproken tekst en vindt de hoofdzaak, de bijzaken en de kernboodschap, zodat je die kort en volledig kunt samenvatten.
 - [Het doel van de spreker herkennen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/het-doel-van-de-spreker-herkennen.html): Je hoort of ziet een tekst en herkent wat de spreker wil: informeren, overtuigen of amuseren. Je let op signalen zoals oproepen, meningen en grapjes.

@@ -1,0 +1,682 @@
+{
+ "id": "C4",
+ "lo": "wa.C.4",
+ "gs": 2,
+ "naam": "Logaritmische functies en rekenregels voor logaritmen",
+ "beschrijving": "Je ziet een logaritme als exponent, gebruikt de rekenregels, lost vergelijkingen met een exponent op, tekent de grafiek van een logaritmische functie en werkt met een logaritmische schaal zoals de pH.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "De logaritme als exponent",
+  "Rekenregels voor logaritmen",
+  "Vergelijkingen met een exponent",
+  "De grafiek van een logaritmische functie",
+  "Logaritmische schaal en context"
+ ],
+ "sam": "Een logaritme is een exponent: glog a = x betekent g^x = a. Gebruik log a + log b = log(ab), log a − log b = log(a : b) en log(aⁿ) = n · log a. Los g^x = a op met x = log a : log g, controleer door terug te machtsverheffen en vertaal het antwoord naar de context.",
+ "begrippen": [
+  {
+   "t": "Logaritme",
+   "d": "glog a = x betekent g^x = a: de logaritme is de exponent."
+  },
+  {
+   "t": "Grondtal",
+   "d": "Het getal g in glog a; bij log is dat 10."
+  },
+  {
+   "t": "Logaritme van 1",
+   "d": "glog 1 = 0, want g⁰ = 1."
+  },
+  {
+   "t": "Som van logaritmen",
+   "d": "log a + log b = log(ab)."
+  },
+  {
+   "t": "Verschil van logaritmen",
+   "d": "log a − log b = log(a : b)."
+  },
+  {
+   "t": "Macht in een logaritme",
+   "d": "log(aⁿ) = n · log a."
+  },
+  {
+   "t": "Vergelijking met een exponent",
+   "d": "g^x = a heeft de oplossing x = log a : log g."
+  },
+  {
+   "t": "Verdubbelingstijd met logaritmen",
+   "d": "1,05^t = 2 geeft t = log 2 : log 1,05."
+  },
+  {
+   "t": "Logaritmische functie",
+   "d": "y = glog x met de y-as als verticale asymptoot en het punt (1, 0)."
+  },
+  {
+   "t": "Logaritmische schaalverdeling",
+   "d": "Een schaal waarbij gelijke stappen gelijke factoren zijn, zoals de pH."
+  },
+  {
+   "t": "pH",
+   "d": "pH = −log[H⁺]: een stap van 1 is een factor 10 in de concentratie."
+  },
+  {
+   "t": "Controleren",
+   "d": "Terugmachtsverheffen: 10^1,70 ≈ 50."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Bereken 10log 1000 zonder rekenmachine.",
+   "o": [
+    "\"1000\"",
+    "\"3\"",
+    "\"100\"",
+    "\"10\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1000\"\"? Dan neem je het getal zelf. De logaritme is de exponent, dus 3. Het goede antwoord is 3.",
+    "Klopt: 10³ = 1000. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"100\"\"? Dan neem je 10². 10³ = 1000, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"10\"\"? Dan neem je het grondtal. De exponent is 3, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Bereken 10log 1000 zonder rekenmachine."
+  },
+  {
+   "v": "Bereken 2log 8 zonder rekenmachine.",
+   "o": [
+    "\"4\"",
+    "\"8\"",
+    "\"16\"",
+    "\"3\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4\"\"? Dan deel je 8 door 2. De logaritme is de exponent, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"8\"\"? Dan neem je het getal zelf. De exponent is 3, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"16\"\"? Dan neem je 2⁴. 2³ = 8, dus 3. Controleer je stap: de juiste uitkomst is 3.",
+    "Klopt: 2³ = 8. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken 2log 8 zonder rekenmachine."
+  },
+  {
+   "v": "Welke exponent hoort bij 10 om 0,01 te krijgen?",
+   "o": [
+    "\"−2\"",
+    "\"2\"",
+    "\"−1\"",
+    "\"0,01\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 10⁻² = 0,01. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2\"\"? Dan laat je het minteken weg. 10² = 100, niet 0,01, dus −2. Het goede antwoord is −2.",
+    "Koos je \"\"−1\"\"? Dan neem je 10⁻¹ = 0,1. 0,01 is 10⁻², dus −2. Door de stappen goed na te lopen kom je uit op −2.",
+    "Koos je \"\"0,01\"\"? Dan neem je het getal zelf. De logaritme is de exponent, dus −2. Controleer je stap: de juiste uitkomst is −2."
+   ],
+   "uh": "Welke exponent hoort bij 10 om 0,01 te krijgen?"
+  },
+  {
+   "v": "Wat geeft log 2 + log 5?",
+   "o": [
+    "\"log 7\"",
+    "\"log 2 · log 5\"",
+    "\"log 10 = 1\"",
+    "\"0\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"log 7\"\"? Dan tel je de getallen op. Bij logaritmen vermenigvuldig je de getallen, dus log 10 = 1. Het goede antwoord is log 10 = 1.",
+    "Koos je \"\"log 2 · log 5\"\"? Dan vermenigvuldig je de logaritmen. Je moet de getallen vermenigvuldigen, dus log 10 = 1. Door de stappen goed na te lopen kom je uit op log 10 = 1.",
+    "Klopt: log a + log b = log(ab). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0\"\"? Dan tel je de exponenten niet goed op. log 10 = 1, dus 1. Controleer je stap: de juiste uitkomst is log 10 = 1."
+   ],
+   "uh": "Wat geeft log 2 + log 5?"
+  },
+  {
+   "v": "Hoe herschrijf je log(a^n)?",
+   "o": [
+    "\"(log a)^n\"",
+    "\"n · log a\"",
+    "\"log a + n\"",
+    "\"log(na)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(log a)^n\"\"? Dan neem je de macht van de logaritme. De exponent komt ervoor, dus n · log a. Het goede antwoord is n · log a.",
+    "Klopt: de exponent komt voor de logaritme. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"log a + n\"\"? Dan tel je n op. De exponent wordt een factor, dus n · log a. Door de stappen goed na te lopen kom je uit op n · log a.",
+    "Koos je \"\"log(na)\"\"? Dan vermenigvuldig je a met n. De exponent wordt een factor voor de log, dus n · log a. Controleer je stap: de juiste uitkomst is n · log a."
+   ],
+   "uh": "Hoe herschrijf je log(a^n)?"
+  },
+  {
+   "v": "Los 10^x = 1000 op.",
+   "o": [
+    "\"x = 100\"",
+    "\"x = 1000\"",
+    "\"x = 10\"",
+    "\"x = 3\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 100\"\"? Dan neem je 10². 10^x = 1000 geeft x = 3, dus x = 3. Het goede antwoord is x = 3.",
+    "Koos je \"\"x = 1000\"\"? Dan neem je het getal zelf. x is de exponent, dus x = 3. Door de stappen goed na te lopen kom je uit op x = 3.",
+    "Koos je \"\"x = 10\"\"? Dan neem je het grondtal. x = log 1000, dus x = 3. Controleer je stap: de juiste uitkomst is x = 3.",
+    "Klopt: x = log 1000 = 3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Los 10^x = 1000 op."
+  },
+  {
+   "v": "Door welk punt gaat de grafiek van y = glog x altijd?",
+   "o": [
+    "\"door het punt (1, 0)\"",
+    "\"door het punt (0, 1)\"",
+    "\"door het punt (0, 0)\"",
+    "\"door het punt (1, 1)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: glog 1 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"door het punt (0, 1)\"\"? Dan wissel je de coördinaten. De grafiek is niet gedefinieerd bij x = 0, dus (1, 0). Het goede antwoord is door het punt (1, 0).",
+    "Koos je \"\"door het punt (0, 0)\"\"? Dan denk je dat elke grafiek door de oorsprong gaat. glog 0 bestaat niet, dus (1, 0). Door de stappen goed na te lopen kom je uit op door het punt (1, 0).",
+    "Koos je \"\"door het punt (1, 1)\"\"? Dan neem je glog 1 = 1. g^0 = 1, dus glog 1 = 0, dus (1, 0). Controleer je stap: de juiste uitkomst is door het punt (1, 0)."
+   ],
+   "uh": "Door welk punt gaat de grafiek van y = glog x altijd?"
+  },
+  {
+   "v": "Bereken 2log 32.",
+   "o": [
+    "\"16\"",
+    "\"32\"",
+    "\"5\"",
+    "\"6\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"16\"\"? Dan deel je 32 door 2. De logaritme is de exponent, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"32\"\"? Dan neem je het getal zelf. De exponent is 5, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Klopt: 2⁵ = 32. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6\"\"? Dan neem je 2⁶. 2⁵ = 32, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Bereken 2log 32.",
+   "ctx": "Een leerling berekent logaritmen zonder rekenmachine door te vragen: tot welke macht verhef ik het grondtal? Hij bepaalt 2log 32, 5log 125, 4log 2 en 3log 81."
+  },
+  {
+   "v": "Bereken 5log 125.",
+   "o": [
+    "\"25\"",
+    "\"3\"",
+    "\"125\"",
+    "\"5\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"25\"\"? Dan neem je 5². 5³ = 125, dus 3. Het goede antwoord is 3.",
+    "Klopt: 5³ = 125. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"125\"\"? Dan neem je het getal zelf. De exponent is 3, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"5\"\"? Dan neem je het grondtal. De exponent is 3, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Bereken 5log 125.",
+   "ctx": "Een leerling berekent logaritmen zonder rekenmachine door te vragen: tot welke macht verhef ik het grondtal? Hij bepaalt 2log 32, 5log 125, 4log 2 en 3log 81."
+  },
+  {
+   "v": "Bereken 4log 2.",
+   "o": [
+    "\"2 (het getal zelf)\"",
+    "\"8 (4 · 2)\"",
+    "\"−2 (een negatieve exponent)\"",
+    "\"0,5\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2 (het getal zelf)\"\"? Dan neem je het getal zelf. 4^0,5 = 2, dus de exponent is 0,5, dus 0,5. Het goede antwoord is 0,5.",
+    "Koos je \"\"8 (4 · 2)\"\"? Dan neem je 4 · 2. De exponent is gevraagd, dus 0,5. Door de stappen goed na te lopen kom je uit op 0,5.",
+    "Koos je \"\"−2 (een negatieve exponent)\"\"? Dan neem je een negatieve exponent. 4⁻² is 1/16, dus 0,5. Controleer je stap: de juiste uitkomst is 0,5.",
+    "Klopt: 4^0,5 = √4 = 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken 4log 2.",
+   "ctx": "Een leerling berekent logaritmen zonder rekenmachine door te vragen: tot welke macht verhef ik het grondtal? Hij bepaalt 2log 32, 5log 125, 4log 2 en 3log 81."
+  },
+  {
+   "v": "Bereken 3log 81.",
+   "o": [
+    "\"4\"",
+    "\"27\"",
+    "\"81\"",
+    "\"3\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3⁴ = 81. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"27\"\"? Dan neem je 3³. 3⁴ = 81, dus 4. Het goede antwoord is 4.",
+    "Koos je \"\"81\"\"? Dan neem je het getal zelf. De exponent is 4, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+    "Koos je \"\"3\"\"? Dan neem je het grondtal. De exponent is 4, dus 4. Controleer je stap: de juiste uitkomst is 4."
+   ],
+   "uh": "Bereken 3log 81.",
+   "ctx": "Een leerling berekent logaritmen zonder rekenmachine door te vragen: tot welke macht verhef ik het grondtal? Hij bepaalt 2log 32, 5log 125, 4log 2 en 3log 81."
+  },
+  {
+   "v": "Vereenvoudig log 20 + log 5 tot een geheel getal.",
+   "o": [
+    "\"log 25\"",
+    "\"25\"",
+    "\"2\"",
+    "\"100\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"log 25\"\"? Dan tel je de getallen op. Bij logaritmen vermenigvuldig je, dus log 100 = 2. Het goede antwoord is 2.",
+    "Koos je \"\"25\"\"? Dan tel je de getallen op en laat de log weg. log 20 + log 5 = log 100, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Klopt: log 100 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"100\"\"? Dan neem je het product zonder log. log 100 = 2, dus 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Vereenvoudig log 20 + log 5 tot een geheel getal.",
+   "ctx": "Een leerling past de rekenregels voor logaritmen toe op log 20 + log 5, op log 50 − log 5 en op log 8. Hij gebruikt log voor de logaritme met grondtal 10."
+  },
+  {
+   "v": "Het verschil log 50 − log 5 is gelijk aan welk getal?",
+   "o": [
+    "\"log 45\"",
+    "\"1\"",
+    "\"45\"",
+    "\"10\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"log 45\"\"? Dan trek je de getallen af. Bij logaritmen deel je, dus log 10 = 1. Het goede antwoord is 1.",
+    "Klopt: log(50 : 5) = log 10 = 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"45\"\"? Dan trek je af en laat de log weg. log 50 − log 5 = log 10, dus 1. Door de stappen goed na te lopen kom je uit op 1.",
+    "Koos je \"\"10\"\"? Dan neem je het quotiënt zonder log. log 10 = 1, dus 1. Controleer je stap: de juiste uitkomst is 1."
+   ],
+   "uh": "Het verschil log 50 − log 5 is gelijk aan welk getal?",
+   "ctx": "Een leerling past de rekenregels voor logaritmen toe op log 20 + log 5, op log 50 − log 5 en op log 8. Hij gebruikt log voor de logaritme met grondtal 10."
+  },
+  {
+   "v": "Hoe schrijf je log 8 met log 2, en hoeveel is dat ongeveer?",
+   "o": [
+    "\"2 · log 4 ≈ 1,20\"",
+    "\"log 2 + 3 ≈ 3,30\"",
+    "\"8 · log 2 ≈ 2,41\"",
+    "\"3 · log 2 ≈ 0,90\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2 · log 4 ≈ 1,20\"\"? Dan kies je een verkeerde ontbinding. 2 · log 4 = log 16, dus 3 · log 2. Het goede antwoord is 3 · log 2 ≈ 0,90.",
+    "Koos je \"\"log 2 + 3 ≈ 3,30\"\"? Dan tel je 3 op. De exponent wordt een factor, dus 3 · log 2. Door de stappen goed na te lopen kom je uit op 3 · log 2 ≈ 0,90.",
+    "Koos je \"\"8 · log 2 ≈ 2,41\"\"? Dan neem je 8 als factor. De exponent is 3, dus 3 · log 2. Controleer je stap: de juiste uitkomst is 3 · log 2 ≈ 0,90.",
+    "Klopt: 8 = 2³ en log 2 ≈ 0,301. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe schrijf je log 8 met log 2, en hoeveel is dat ongeveer?",
+   "ctx": "Een leerling past de rekenregels voor logaritmen toe op log 20 + log 5, op log 50 − log 5 en op log 8. Hij gebruikt log voor de logaritme met grondtal 10."
+  },
+  {
+   "v": "Hoe schrijf je de oplossing van 10^x = 50 exact?",
+   "o": [
+    "\"x = log 50\"",
+    "\"x = 50 : 10\"",
+    "\"x = 10log 5\"",
+    "\"x = 5\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x is de exponent van 10 die 50 geeft. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 50 : 10\"\"? Dan deel je 50 door 10. x staat in de exponent, dus x = log 50. Het goede antwoord is x = log 50.",
+    "Koos je \"\"x = 10log 5\"\"? Dan neem je 5 in plaats van 50. De vergelijking is 10^x = 50, dus x = log 50. Door de stappen goed na te lopen kom je uit op x = log 50.",
+    "Koos je \"\"x = 5\"\"? Dan neem je 10⁵. 10⁵ = 100 000, niet 50, dus x = log 50. Controleer je stap: de juiste uitkomst is x = log 50."
+   ],
+   "uh": "Hoe schrijf je de oplossing van 10^x = 50 exact?",
+   "ctx": "Een leerling lost de vergelijkingen 10^x = 50 en 3^x = 20 op met logaritmen. Hij schrijft het antwoord als exacte logaritme en rondt daarna af op twee decimalen."
+  },
+  {
+   "v": "Welke waarde heeft x ongeveer, op twee decimalen?",
+   "o": [
+    "\"5,00 (50 : 10)\"",
+    "\"0,70 (log 5)\"",
+    "\"1,70\"",
+    "\"2,70 (log 500)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5,00 (50 : 10)\"\"? Dan neem je 50 : 10. x = log 50, dus 1,70. Het goede antwoord is 1,70.",
+    "Koos je \"\"0,70 (log 5)\"\"? Dan neem je log 5. Het is log 50, dus 1,70. Door de stappen goed na te lopen kom je uit op 1,70.",
+    "Klopt: log 50 ≈ 1,699. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2,70 (log 500)\"\"? Dan neem je log 500. Het is log 50, dus 1,70. Controleer je stap: de juiste uitkomst is 1,70."
+   ],
+   "uh": "Welke waarde heeft x ongeveer, op twee decimalen?",
+   "ctx": "Een leerling lost de vergelijkingen 10^x = 50 en 3^x = 20 op met logaritmen. Hij schrijft het antwoord als exacte logaritme en rondt daarna af op twee decimalen."
+  },
+  {
+   "v": "Los 3^x = 20 op en geef x op twee decimalen.",
+   "o": [
+    "\"6,67 (20 : 3)\"",
+    "\"2,73\"",
+    "\"1,30 (alleen log 20)\"",
+    "\"0,37 (log 3 : log 20)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6,67 (20 : 3)\"\"? Dan deel je 20 door 3. x staat in de exponent, dus 2,73. Het goede antwoord is 2,73.",
+    "Klopt: x = log 20 : log 3 ≈ 2,727. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,30 (alleen log 20)\"\"? Dan neem je alleen log 20. Deel nog door log 3, dus 2,73. Door de stappen goed na te lopen kom je uit op 2,73.",
+    "Koos je \"\"0,37 (log 3 : log 20)\"\"? Dan deel je log 3 door log 20. Het is log 20 : log 3, dus 2,73. Controleer je stap: de juiste uitkomst is 2,73."
+   ],
+   "uh": "Los 3^x = 20 op en geef x op twee decimalen.",
+   "ctx": "Een leerling lost de vergelijkingen 10^x = 50 en 3^x = 20 op met logaritmen. Hij schrijft het antwoord als exacte logaritme en rondt daarna af op twee decimalen."
+  },
+  {
+   "v": "Welke exacte oplossing heeft 1,05^t = 2?",
+   "o": [
+    "\"t = 2 : 1,05\"",
+    "\"t = log 1,05 : log 2\"",
+    "\"t = 1,05 · log 2\"",
+    "\"t = log 2 : log 1,05\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"t = 2 : 1,05\"\"? Dan deel je 2 door 1,05. t staat in de exponent, dus t = log 2 : log 1,05. Het goede antwoord is t = log 2 : log 1,05.",
+    "Koos je \"\"t = log 1,05 : log 2\"\"? Dan draai je de breuk om. Het is log 2 : log 1,05, dus t = log 2 : log 1,05. Door de stappen goed na te lopen kom je uit op t = log 2 : log 1,05.",
+    "Koos je \"\"t = 1,05 · log 2\"\"? Dan vermenigvuldig je 1,05 met log 2. Deel door log 1,05, dus t = log 2 : log 1,05. Controleer je stap: de juiste uitkomst is t = log 2 : log 1,05.",
+    "Klopt: t · log 1,05 = log 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke exacte oplossing heeft 1,05^t = 2?",
+   "ctx": "Een bedrag groeit met 5% per jaar. Een leerling lost 1,05^t = 2 algebraïsch op met logaritmen om de verdubbelingstijd te vinden en controleert het antwoord met de rekenmachine."
+  },
+  {
+   "v": "Welke waarde heeft t op één decimaal?",
+   "o": [
+    "\"14,2\"",
+    "\"12,5 (50 : 4)\"",
+    "\"20,0 (100 : 5)\"",
+    "\"2,0 (een gok)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 0,3010 : 0,02119 ≈ 14,2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12,5 (50 : 4)\"\"? Dan gebruik je 50 : 4 alsof de groei lineair is. De groei is exponentieel, dus 14,2. Het goede antwoord is 14,2.",
+    "Koos je \"\"20,0 (100 : 5)\"\"? Dan gebruik je 100 : 5 als vuistregel. Dat negeert rente over rente, dus 14,2. Door de stappen goed na te lopen kom je uit op 14,2.",
+    "Koos je \"\"2,0 (een gok)\"\"? Dan denk je dat de uitkomst gelijk is aan het te bereiken getal. Reken log 2 : log 1,05 uit, dus 14,2."
+   ],
+   "uh": "Welke waarde heeft t op één decimaal?",
+   "ctx": "Een bedrag groeit met 5% per jaar. Een leerling lost 1,05^t = 2 algebraïsch op met logaritmen om de verdubbelingstijd te vinden en controleert het antwoord met de rekenmachine."
+  },
+  {
+   "v": "Welke conclusie past bij de vraag?",
+   "o": [
+    "\"t = 14,2\"",
+    "\"na 5 jaar is het bedrag verdubbeld\"",
+    "\"na ongeveer 14,2 jaar is het bedrag verdubbeld\"",
+    "\"na 2 jaar is het bedrag verdubbeld\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"t = 14,2\"\"? Dan noteer je alleen de variabele. Een conclusie beantwoordt de vraag in een zin, dus met jaren. Het goede antwoord is na ongeveer 14,2 jaar is het bedrag verdubbeld.",
+    "Koos je \"\"na 5 jaar is het bedrag verdubbeld\"\"? Dan neem je het percentage als aantal jaren. De tijd volgt uit de vergelijking, dus na ongeveer 14,2 jaar.",
+    "Klopt: het antwoord noemt tijd en context. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"na 2 jaar is het bedrag verdubbeld\"\"? Dan denk je dat het getal 2 uit de vergelijking de tijd is. Het is de factor van de verdubbeling, dus na ongeveer 14,2 jaar."
+   ],
+   "uh": "Welke conclusie past bij de vraag?",
+   "ctx": "Een bedrag groeit met 5% per jaar. Een leerling lost 1,05^t = 2 algebraïsch op met logaritmen om de verdubbelingstijd te vinden en controleert het antwoord met de rekenmachine."
+  },
+  {
+   "v": "Welke pH hoort bij [H⁺] = 10⁻⁴ mol per liter?",
+   "o": [
+    "\"pH −4\"",
+    "\"pH 4\"",
+    "\"pH 10\"",
+    "\"pH 0,0001\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"pH −4\"\"? Dan neem je de exponent zonder het minteken van de formule. pH = −log[H⁺], dus pH 4. Het goede antwoord is pH 4.",
+    "Klopt: −log 10⁻⁴ = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"pH 10\"\"? Dan neem je het grondtal. pH = −log 10⁻⁴, dus pH 4. Door de stappen goed na te lopen kom je uit op pH 4.",
+    "Koos je \"\"pH 0,0001\"\"? Dan neem je de concentratie. pH is de logaritme, dus pH 4. Controleer je stap: de juiste uitkomst is pH 4."
+   ],
+   "uh": "Welke pH hoort bij [H⁺] = 10⁻⁴ mol per liter?",
+   "ctx": "De zuurgraad pH van een vloeistof is pH = −log[H⁺], met [H⁺] de concentratie waterstofionen in mol per liter. Een leerling rekent tussen pH en concentratie en vergelijkt twee oplossingen."
+  },
+  {
+   "v": "Welke concentratie hoort bij pH 7?",
+   "o": [
+    "\"10⁷ mol per liter\"",
+    "\"7 mol per liter\"",
+    "\"0,7 mol per liter\"",
+    "\"10⁻⁷ mol per liter\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10⁷ mol per liter\"\"? Dan laat je het minteken weg. [H⁺] = 10^(−pH), dus 10⁻⁷. Het goede antwoord is 10⁻⁷ mol per liter.",
+    "Koos je \"\"7 mol per liter\"\"? Dan neem je de pH als concentratie. [H⁺] = 10^(−7), dus 10⁻⁷. Door de stappen goed na te lopen kom je uit op 10⁻⁷ mol per liter.",
+    "Koos je \"\"0,7 mol per liter\"\"? Dan deel je 7 door 10. [H⁺] = 10^(−7), dus 10⁻⁷. Controleer je stap: de juiste uitkomst is 10⁻⁷ mol per liter.",
+    "Klopt: [H⁺] = 10^(−pH). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke concentratie hoort bij pH 7?",
+   "ctx": "De zuurgraad pH van een vloeistof is pH = −log[H⁺], met [H⁺] de concentratie waterstofionen in mol per liter. Een leerling rekent tussen pH en concentratie en vergelijkt twee oplossingen."
+  },
+  {
+   "v": "Oplossing A heeft pH 3 en oplossing B heeft pH 5. Hoeveel keer groter is [H⁺] bij A?",
+   "o": [
+    "\"100 keer\"",
+    "\"2 keer\"",
+    "\"10 keer\"",
+    "\"1,67 keer\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 10⁻³ : 10⁻⁵ = 100. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2 keer\"\"? Dan trek je 5 − 3 af en neem dat als factor. Het verschil is een exponent, dus 10² = 100. Het goede antwoord is 100 keer.",
+    "Koos je \"\"10 keer\"\"? Dan neem je een pH-stap. Twee pH-stappen zijn 10², dus 100 keer. Door de stappen goed na te lopen kom je uit op 100 keer.",
+    "Koos je \"\"1,67 keer\"\"? Dan deel je 5 door 3. Het verschil van 2 is een exponent van 10, dus 100 keer. Controleer je stap: de juiste uitkomst is 100 keer."
+   ],
+   "uh": "Oplossing A heeft pH 3 en oplossing B heeft pH 5. Hoeveel keer groter is [H⁺] bij A?",
+   "ctx": "De zuurgraad pH van een vloeistof is pH = −log[H⁺], met [H⁺] de concentratie waterstofionen in mol per liter. Een leerling rekent tussen pH en concentratie en vergelijkt twee oplossingen."
+  },
+  {
+   "v": "Waarom noem je de pH een logaritmische schaal?",
+   "o": [
+    "\"omdat pH alleen met een rekenmachine kan\"",
+    "\"omdat een stap van 1 de concentratie met 1 verhoogt\"",
+    "\"een stap van 1 op de pH-schaal is een factor 10 in de concentratie\"",
+    "\"omdat pH negatief is\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat pH alleen met een rekenmachine kan\"\"? Dan denk je dat een logaritme een apparaat is. Het gaat om factoren, dus een stap van 1 is een factor 10.",
+    "Koos je \"\"omdat een stap van 1 de concentratie met 1 verhoogt\"\"? Dan denk je aan optellen. Op een logaritmische schaal vermenigvuldig je, dus een factor 10.",
+    "Klopt: gelijke stappen zijn gelijke factoren. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat pH negatief is\"\"? Dan denk je dat het teken de schaal bepaalt. De schaal volgt de logaritme, dus een factor 10."
+   ],
+   "uh": "Waarom noem je de pH een logaritmische schaal?",
+   "ctx": "De zuurgraad pH van een vloeistof is pH = −log[H⁺], met [H⁺] de concentratie waterstofionen in mol per liter. Een leerling rekent tussen pH en concentratie en vergelijkt twee oplossingen."
+  },
+  {
+   "v": "Welke waarde heeft y = 2log x bij x = 8?",
+   "o": [
+    "\"4\"",
+    "\"3\"",
+    "\"16\"",
+    "\"8\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4\"\"? Dan deel je 8 door 2. De logaritme is de exponent, dus 3. Het goede antwoord is 3.",
+    "Klopt: 2³ = 8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"16\"\"? Dan neem je 2 · 8. De exponent is gevraagd, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"8\"\"? Dan neem je het getal zelf. De exponent is 3, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Welke waarde heeft y = 2log x bij x = 8?",
+   "ctx": "Gegeven is de logaritmische functie y = 2log x. Een leerling berekent functiewaarden voor x = 1, 2, 4 en 8, schetst de grafiek en bepaalt de asymptoot."
+  },
+  {
+   "v": "Welke verticale asymptoot heeft de grafiek van y = 2log x?",
+   "o": [
+    "\"y = 0 (de x-as)\"",
+    "\"x = 1 (het snijpunt met de x-as)\"",
+    "\"y = x (de diagonaal)\"",
+    "\"x = 0\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 0 (de x-as)\"\"? Dan verwar je het met een exponentiële functie. Bij een logaritme is de y-as de asymptoot, dus x = 0.",
+    "Koos je \"\"x = 1 (het snijpunt met de x-as)\"\"? Dan neem je het snijpunt met de x-as. De asymptoot is de y-as, dus x = 0. Door de stappen goed na te lopen kom je uit op x = 0.",
+    "Koos je \"\"y = x (de diagonaal)\"\"? Dan neem je de diagonaal. De asymptoot is verticaal, dus x = 0. Controleer je stap: de juiste uitkomst is x = 0.",
+    "Klopt: de grafiek nadert de y-as maar raakt hem nooit. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke verticale asymptoot heeft de grafiek van y = 2log x?",
+   "ctx": "Gegeven is de logaritmische functie y = 2log x. Een leerling berekent functiewaarden voor x = 1, 2, 4 en 8, schetst de grafiek en bepaalt de asymptoot."
+  },
+  {
+   "v": "Bij welke x is y = 2log x gelijk aan 4?",
+   "o": [
+    "\"x = 16\"",
+    "\"x = 8 (de x van y = 3)\"",
+    "\"x = 4 (y als x)\"",
+    "\"x = 6 (2 + 4)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Zie een logaritme als de exponent: glog a = x betekent g^x = a. Gebruik de rekenregels, los een vergelijking met de exponent op met een logaritme en controleer door terug te machtsverheffen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2⁴ = 16. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 8 (de x van y = 3)\"\"? Dan neem je de x van y = 3. Voor y = 4 geldt 2⁴, dus x = 16. Het goede antwoord is x = 16.",
+    "Koos je \"\"x = 4 (y als x)\"\"? Dan neem je de waarde van y als x. Los 2^y op, dus x = 16. Door de stappen goed na te lopen kom je uit op x = 16.",
+    "Koos je \"\"x = 6 (2 + 4)\"\"? Dan tel je 2 en 4 op. Het is 2⁴, dus x = 16. Controleer je stap: de juiste uitkomst is x = 16."
+   ],
+   "uh": "Bij welke x is y = 2log x gelijk aan 4?",
+   "ctx": "Gegeven is de logaritmische functie y = 2log x. Een leerling berekent functiewaarden voor x = 1, 2, 4 en 8, schetst de grafiek en bepaalt de asymptoot."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling berekent logaritmen zonder rekenmachine. Hij bepaalt 2log 64, 5log 25 en 3log (1/9) en schrijft zijn redenering met machten op.",
+   "v": "Bereken de drie logaritmen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "2⁶ = 64, dus 2log 64 = 6 (1p). 5² = 25, dus 5log 25 = 2 (1p). 3⁻² = 1/9, dus 3log (1/9) = −2 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling gebruikt de rekenregels voor logaritmen om log 4 + log 25 en log 200 − log 2 te vereenvoudigen. Hij schrijft elke stap met het grondtal 10 op.",
+   "v": "Bereken beide uitdrukkingen exact.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "log 4 + log 25 = log 100 (1p). log 100 = 2 (1p). log 200 − log 2 = log 100 = 2 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling lost de vergelijking 10^x = 200 op met een logaritme en rondt af op twee decimalen. Hij controleert zijn antwoord door terug te machtsverheffen.",
+   "v": "Los 10^x = 200 op, afgerond op twee decimalen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "x = log 200 (1p). x ≈ 2,30 (1p). Controle: 10^2,30 ≈ 200 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bedrag groeit met 6% per jaar. Een leerling wil de verdubbelingstijd weten en lost 1,06^t = 2 algebraïsch op met logaritmen. Hij rondt af op één decimaal.",
+   "v": "Bereken de verdubbelingstijd op één decimaal.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "t = log 2 : log 1,06 (1p). t ≈ 0,3010 : 0,02531 (1p). Na ongeveer 11,9 jaar is het bedrag verdubbeld (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De zuurgraad is pH = −log[H⁺]. Een leerling vergelijkt een oplossing met pH 5 met een oplossing met pH 6 en rekent de concentratie bij pH 5 uit. Hij legt het verschil uit.",
+   "v": "Bereken [H⁺] bij pH 5 en leg het verschil tussen pH 5 en pH 6 uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "[H⁺] = 10⁻⁵ mol per liter (1p). Bij pH 6 is [H⁺] = 10⁻⁶ (1p). Een stap van 1 op de pH is een factor 10 in de concentratie (1p)."
+  }
+ ]
+}
