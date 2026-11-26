@@ -1,0 +1,682 @@
+{
+ "id": "C3",
+ "lo": "wa.C.3",
+ "gs": 2,
+ "naam": "Exponentiële functies: groeifactor, beginwaarde, verdubbelingstijd en halveringstijd",
+ "beschrijving": "Je stelt exponentiële formules op uit tabel en tekst, rekent met groeifactor en groeipercentage, bepaalt verdubbelings- en halveringstijd en vertaalt de uitkomst terug naar de context.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Groeifactor en groeipercentage",
+  "Beginwaarde en formule",
+  "Halveringstijd en verdubbelingstijd",
+  "Grafiek en asymptoot",
+  "Terugvertalen"
+ ],
+ "sam": "Bij N = b · g^t is b de beginwaarde en g de groeifactor. Bepaal g met een quotiënt uit een tabel, reken met een groeifactor in plaats van percentages op te tellen en los verdubbelings- en halveringstijd op met de GR. Vertaal het antwoord terug met eenheid.",
+ "begrippen": [
+  {
+   "t": "Exponentiële functie",
+   "d": "Een functie N = b · g^t met de variabele in de exponent."
+  },
+  {
+   "t": "Beginwaarde",
+   "d": "Het getal b: de waarde bij t = 0."
+  },
+  {
+   "t": "Groeifactor",
+   "d": "Het getal g waarmee je per tijdseenheid vermenigvuldigt."
+  },
+  {
+   "t": "Groeipercentage",
+   "d": "g − 1 uitgedrukt in procent: g = 1,05 betekent 5% groei."
+  },
+  {
+   "t": "Afname",
+   "d": "Bij g < 1 neemt de waarde af: g = 0,85 is 15% afname."
+  },
+  {
+   "t": "Halveringstijd",
+   "d": "De tijd waarin een hoeveelheid half zo groot wordt."
+  },
+  {
+   "t": "Verdubbelingstijd",
+   "d": "De tijd waarin een hoeveelheid twee keer zo groot wordt."
+  },
+  {
+   "t": "Grondtal en exponent",
+   "d": "In g^t is g het grondtal en t de exponent."
+  },
+  {
+   "t": "Asymptoot",
+   "d": "De lijn y = 0 die de grafiek van een exponentiële functie nadert."
+  },
+  {
+   "t": "Formule opstellen uit een tabel",
+   "d": "Quotiënten van opeenvolgende waarden geven g, de eerste waarde is b."
+  },
+  {
+   "t": "Vergelijking oplossen met de GR",
+   "d": "1,04^t = 2 oplossen met het snijpunt van twee grafieken."
+  },
+  {
+   "t": "Terugvertalen",
+   "d": "Het getal als antwoord met eenheid in de context noemen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een bedrag groeit met 5% per jaar. Welke groeifactor past daarbij?",
+   "o": [
+    "\"0,05 (alleen het percentage)\"",
+    "\"1,05\"",
+    "\"5 (het percentage zelf)\"",
+    "\"0,95 (5% eraf)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,05 (alleen het percentage)\"\"? Dan neem je alleen het percentage. De groeifactor is 1 plus het percentage, dus 1,05.",
+    "Klopt: 100% + 5% = 105%. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5 (het percentage zelf)\"\"? Dan neem je het percentage als factor. 5% is 0,05, dus 1,05. Door de stappen goed na te lopen kom je uit op 1,05.",
+    "Koos je \"\"0,95 (5% eraf)\"\"? Dan trek je 5% af. Bij groei tel je op, dus 1,05. Controleer je stap: de juiste uitkomst is 1,05."
+   ],
+   "uh": "Een bedrag groeit met 5% per jaar. Welke groeifactor past daarbij?"
+  },
+  {
+   "v": "Een waarde neemt elk jaar 20% af. Met welke factor vermenigvuldig je per jaar?",
+   "o": [
+    "\"1,20\"",
+    "\"0,20\"",
+    "\"−0,20\"",
+    "\"0,80\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1,20\"\"? Dan tel je 20% erbij op. Bij afname trek je af, dus 0,80. Het goede antwoord is 0,80.",
+    "Koos je \"\"0,20\"\"? Dan neem je het percentage van de afname. De groeifactor is wat overblijft, dus 0,80. Door de stappen goed na te lopen kom je uit op 0,80.",
+    "Koos je \"\"−0,20\"\"? Dan neem je het percentage met een minteken. De factor is 1 min 0,20, dus 0,80. Controleer je stap: de juiste uitkomst is 0,80.",
+    "Klopt: 100% − 20% = 80%. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een waarde neemt elk jaar 20% af. Met welke factor vermenigvuldig je per jaar?"
+  },
+  {
+   "v": "Welke beginwaarde heeft N = 200 · 1,5^t?",
+   "o": [
+    "\"200\"",
+    "\"1,5\"",
+    "\"300\"",
+    "\"201,5\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de waarde bij t = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,5\"\"? Dan neem je de groeifactor. De beginwaarde is de waarde bij t = 0, dus 200. Het goede antwoord is 200.",
+    "Koos je \"\"300\"\"? Dan neem je de waarde bij t = 1. De beginwaarde is de waarde bij t = 0, dus 200. Door de stappen goed na te lopen kom je uit op 200.",
+    "Koos je \"\"201,5\"\"? Dan tel je de getallen op. De beginwaarde is het getal voor de macht, dus 200. Controleer je stap: de juiste uitkomst is 200."
+   ],
+   "uh": "Welke beginwaarde heeft N = 200 · 1,5^t?"
+  },
+  {
+   "v": "Welk groeipercentage hoort bij de groeifactor 1,25?",
+   "o": [
+    "\"125%\"",
+    "\"1,25%\"",
+    "\"25%\"",
+    "\"0,25%\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"125%\"\"? Dan neem je 1,25 als percentage. Trek 1 af voor het groeipercentage, dus 25%. Het goede antwoord is 25%.",
+    "Koos je \"\"1,25%\"\"? Dan verplaats je de komma verkeerd. 0,25 is 25%, dus 25%. Door de stappen goed na te lopen kom je uit op 25%.",
+    "Klopt: 1,25 − 1 = 0,25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,25%\"\"? Dan verplaats je de komma verkeerd. 0,25 is 25%, dus 25%. Controleer je stap: de juiste uitkomst is 25%."
+   ],
+   "uh": "Welk groeipercentage hoort bij de groeifactor 1,25?"
+  },
+  {
+   "v": "Welke betekenis heeft de halveringstijd bij exponentiële afname?",
+   "o": [
+    "\"de tijd waarin een hoeveelheid twee keer zo groot wordt\"",
+    "\"de tijd waarin een hoeveelheid half zo groot wordt\"",
+    "\"de helft van de totale tijd\"",
+    "\"de tijd waarin alles verdwenen is\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de tijd waarin een hoeveelheid twee keer zo groot wordt\"\"? Dan verwar je het met de verdubbelingstijd. Halveren is afnemen, dus de halveringstijd.",
+    "Klopt: bij exponentiële afname is die tijd constant. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de helft van de totale tijd\"\"? Dan denk je dat het de helft van de looptijd is. Het gaat om de hoeveelheid, dus de halveringstijd.",
+    "Koos je \"\"de tijd waarin alles verdwenen is\"\"? Dan denk je dat het tot nul gaat. De hoeveelheid wordt half zo groot, dus de halveringstijd."
+   ],
+   "uh": "Welke betekenis heeft de halveringstijd bij exponentiële afname?"
+  },
+  {
+   "v": "Welke betekenis heeft de verdubbelingstijd bij exponentiële groei?",
+   "o": [
+    "\"de tijd waarin een hoeveelheid half zo groot wordt\"",
+    "\"de tijd waarin de groei verdubbelt\"",
+    "\"twee keer de beginwaarde\"",
+    "\"de tijd waarin een hoeveelheid twee keer zo groot wordt\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de tijd waarin een hoeveelheid half zo groot wordt\"\"? Dan verwar je het met de halveringstijd. Verdubbelen is toenemen, dus de verdubbelingstijd.",
+    "Koos je \"\"de tijd waarin de groei verdubbelt\"\"? Dan denk je dat de groeisnelheid verdubbelt. De hoeveelheid wordt twee keer zo groot, dus de verdubbelingstijd.",
+    "Koos je \"\"twee keer de beginwaarde\"\"? Dan noem je de uitkomst, geen tijd. De verdubbelingstijd is een tijdsduur, dus de tijd tot een dubbele hoeveelheid.",
+    "Klopt: bij exponentiële groei is die tijd constant. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke betekenis heeft de verdubbelingstijd bij exponentiële groei?"
+  },
+  {
+   "v": "Welke lijn is de horizontale asymptoot van y = 5 · 0,8^x?",
+   "o": [
+    "\"y = 0\"",
+    "\"y = 5\"",
+    "\"y = 0,8\"",
+    "\"x = 0\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de waarden naderen 0 maar worden nooit 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = 5\"\"? Dan neem je de beginwaarde. De grafiek nadert 0, dus y = 0. Het goede antwoord is y = 0.",
+    "Koos je \"\"y = 0,8\"\"? Dan neem je de groeifactor. De grafiek nadert 0, dus y = 0. Door de stappen goed na te lopen kom je uit op y = 0.",
+    "Koos je \"\"x = 0\"\"? Dan neem je de y-as. De grafiek nadert de x-as, dus y = 0. Controleer je stap: de juiste uitkomst is y = 0."
+   ],
+   "uh": "Welke lijn is de horizontale asymptoot van y = 5 · 0,8^x?"
+  },
+  {
+   "v": "Welke groeifactor per uur heeft de formule N = 200 · 1,5^t?",
+   "o": [
+    "\"200 (de beginwaarde)\"",
+    "\"0,5 (het decimale deel)\"",
+    "\"1,5\"",
+    "\"2 (afgerond)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"200 (de beginwaarde)\"\"? Dan neem je de beginwaarde. De groeifactor staat bij t in de exponent, dus 1,5. Het goede antwoord is 1,5.",
+    "Koos je \"\"0,5 (het decimale deel)\"\"? Dan neem je alleen het decimale deel. De groeifactor is 1,5, dus 1,5. Door de stappen goed na te lopen kom je uit op 1,5.",
+    "Klopt: het getal tussen de macht. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2 (afgerond)\"\"? Dan neem je een afgeronde waarde. De groeifactor is 1,5, dus 1,5. Controleer je stap: de juiste uitkomst is 1,5."
+   ],
+   "uh": "Welke groeifactor per uur heeft de formule N = 200 · 1,5^t?",
+   "ctx": "Een bacteriekolonie groeit volgens N = 200 · 1,5^t, met t in uren. Een leerling leest de beginwaarde en de groeifactor af, berekent het groeipercentage en het aantal bacteriën na 2 uur."
+  },
+  {
+   "v": "Welk groeipercentage per uur hoort bij de groeifactor 1,5?",
+   "o": [
+    "\"150%\"",
+    "\"50%\"",
+    "\"5%\"",
+    "\"15%\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"150%\"\"? Dan neem je 1,5 als percentage. Trek 1 af, dus 50%. Het goede antwoord is 50%.",
+    "Klopt: 1,5 − 1 = 0,5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5%\"\"? Dan verplaats je de komma verkeerd. 0,5 is 50%, dus 50%. Door de stappen goed na te lopen kom je uit op 50%.",
+    "Koos je \"\"15%\"\"? Dan verplaats je de komma verkeerd. 0,5 is 50%, dus 50%. Controleer je stap: de juiste uitkomst is 50%."
+   ],
+   "uh": "Welk groeipercentage per uur hoort bij de groeifactor 1,5?",
+   "ctx": "Een bacteriekolonie groeit volgens N = 200 · 1,5^t, met t in uren. Een leerling leest de beginwaarde en de groeifactor af, berekent het groeipercentage en het aantal bacteriën na 2 uur."
+  },
+  {
+   "v": "Hoeveel bacteriën zijn er na 2 uur?",
+   "o": [
+    "\"600\"",
+    "\"300\"",
+    "\"200,25\"",
+    "\"450\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"600\"\"? Dan reken je 200 · 3. De groeifactor wordt 2 keer toegepast, dus 450. Het goede antwoord is 450.",
+    "Koos je \"\"300\"\"? Dan reken je 200 · 1,5. Het zijn 2 uur, dus 450. Door de stappen goed na te lopen kom je uit op 450.",
+    "Koos je \"\"200,25\"\"? Dan reken je 200 + 1,5². De formule is een product, dus 450. Controleer je stap: de juiste uitkomst is 450.",
+    "Klopt: 200 · 1,5² = 450. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel bacteriën zijn er na 2 uur?",
+   "ctx": "Een bacteriekolonie groeit volgens N = 200 · 1,5^t, met t in uren. Een leerling leest de beginwaarde en de groeifactor af, berekent het groeipercentage en het aantal bacteriën na 2 uur."
+  },
+  {
+   "v": "Hoeveel bacteriën zijn er bij het begin, op t = 0?",
+   "o": [
+    "\"200 bacteriën aan het begin\"",
+    "\"1,5 bacteriën\"",
+    "\"450 bacteriën\"",
+    "\"50 bacteriën\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de waarde bij t = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,5 bacteriën\"\"? Dan neem je de groeifactor. De beginwaarde is 200, dus 200 bacteriën. Het goede antwoord is 200 bacteriën aan het begin.",
+    "Koos je \"\"450 bacteriën\"\"? Dan neem je de waarde na 2 uur. De beginwaarde is bij t = 0, dus 200 bacteriën. Door de stappen goed na te lopen kom je uit op 200 bacteriën aan het begin.",
+    "Koos je \"\"50 bacteriën\"\"? Dan neem je het groeipercentage. De beginwaarde is 200, dus 200 bacteriën. Controleer je stap: de juiste uitkomst is 200 bacteriën aan het begin."
+   ],
+   "uh": "Hoeveel bacteriën zijn er bij het begin, op t = 0?",
+   "ctx": "Een bacteriekolonie groeit volgens N = 200 · 1,5^t, met t in uren. Een leerling leest de beginwaarde en de groeifactor af, berekent het groeipercentage en het aantal bacteriën na 2 uur."
+  },
+  {
+   "v": "Welke formule geeft het saldo K na t jaar?",
+   "o": [
+    "\"K = 1500 + 0,04t\"",
+    "\"K = 1,04 · 1500^t\"",
+    "\"K = 1500 · 1,04^t\"",
+    "\"K = 1500 · 0,04^t\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"K = 1500 + 0,04t\"\"? Dan neem je een lineaire groei. Rente over rente is exponentieel, dus K = 1500 · 1,04^t. Het goede antwoord is K = 1500 · 1,04^t.",
+    "Koos je \"\"K = 1,04 · 1500^t\"\"? Dan wissel je grondtal en beginwaarde. De beginwaarde is 1500, dus K = 1500 · 1,04^t. Door de stappen goed na te lopen kom je uit op K = 1500 · 1,04^t.",
+    "Klopt: beginsaldo maal groeifactor tot de macht t. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"K = 1500 · 0,04^t\"\"? Dan neem je alleen het percentage. De groeifactor is 1,04, dus K = 1500 · 1,04^t. Controleer je stap: de juiste uitkomst is K = 1500 · 1,04^t."
+   ],
+   "uh": "Welke formule geeft het saldo K na t jaar?",
+   "ctx": "Een leerling zet €1500 op een spaarrekening met 4% rente per jaar. Hij stelt een formule op voor het saldo K na t jaar, berekent het saldo na 5 jaar en onderzoekt wanneer het saldo is verdubbeld."
+  },
+  {
+   "v": "Bereken het saldo na 5 jaar, op de cent nauwkeurig.",
+   "o": [
+    "\"€1800,00\"",
+    "\"€1824,98\"",
+    "\"€1560,00\"",
+    "\"€9124,00\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€1800,00\"\"? Dan tel je 5 keer €60 op. De rente groeit mee, dus €1824,98. Het goede antwoord is €1824,98.",
+    "Klopt: 1500 · 1,04⁵ = 1824,98. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€1560,00\"\"? Dan neem je maar één jaar. Het zijn 5 jaar, dus €1824,98. Door de stappen goed na te lopen kom je uit op €1824,98.",
+    "Koos je \"\"€9124,00\"\"? Dan vermenigvuldig je met 1,04 · 5. Het is een macht, dus €1824,98. Controleer je stap: de juiste uitkomst is €1824,98."
+   ],
+   "uh": "Bereken het saldo na 5 jaar, op de cent nauwkeurig.",
+   "ctx": "Een leerling zet €1500 op een spaarrekening met 4% rente per jaar. Hij stelt een formule op voor het saldo K na t jaar, berekent het saldo na 5 jaar en onderzoekt wanneer het saldo is verdubbeld."
+  },
+  {
+   "v": "Na hoeveel jaar is het saldo verdubbeld? Los 1,04^t = 2 op met de GR.",
+   "o": [
+    "\"na 25 jaar\"",
+    "\"na 12,5 jaar\"",
+    "\"na 50 jaar\"",
+    "\"na ongeveer 17,7 jaar\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"na 25 jaar\"\"? Dan deel je 100 door 4. Rente over rente werkt sneller, dus na ongeveer 17,7 jaar. Het goede antwoord is na ongeveer 17,7 jaar.",
+    "Koos je \"\"na 12,5 jaar\"\"? Dan deel je 50 door 4. De formule is exponentieel, dus na ongeveer 17,7 jaar. Door de stappen goed na te lopen kom je uit op na ongeveer 17,7 jaar.",
+    "Koos je \"\"na 50 jaar\"\"? Dan neem je 100% : 2%. De groeifactor is 1,04, dus na ongeveer 17,7 jaar. Controleer je stap: de juiste uitkomst is na ongeveer 17,7 jaar.",
+    "Klopt: t ≈ 17,67. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Na hoeveel jaar is het saldo verdubbeld? Los 1,04^t = 2 op met de GR.",
+   "ctx": "Een leerling zet €1500 op een spaarrekening met 4% rente per jaar. Hij stelt een formule op voor het saldo K na t jaar, berekent het saldo na 5 jaar en onderzoekt wanneer het saldo is verdubbeld."
+  },
+  {
+   "v": "Na hoeveel uur is de hoeveelheid medicijn de helft van het begin?",
+   "o": [
+    "\"6 uur\"",
+    "\"12 uur\"",
+    "\"80 uur\"",
+    "\"3 uur\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: elke 6 uur halveert de hoeveelheid. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12 uur\"\"? Dan neem je de tijd na twee halveringen. De halveringstijd is de tijd voor één halvering, dus 6 uur.",
+    "Koos je \"\"80 uur\"\"? Dan neem je de beginhoeveelheid. De halveringstijd is een tijd, dus 6 uur. Door de stappen goed na te lopen kom je uit op 6 uur.",
+    "Koos je \"\"3 uur\"\"? Dan neem je de helft van de halveringstijd. Die is 6 uur, dus 6 uur. Controleer je stap: de juiste uitkomst is 6 uur."
+   ],
+   "uh": "Na hoeveel uur is de hoeveelheid medicijn de helft van het begin?",
+   "ctx": "Een patiënt neemt 80 mg van een medicijn. De hoeveelheid halveert elke 6 uur. Een leerling stelt M = 80 · 0,5^(t/6) op en berekent hoeveelheden na 12 en na 18 uur."
+  },
+  {
+   "v": "Hoeveel mg is er na 12 uur over?",
+   "o": [
+    "\"40 mg (één halvering)\"",
+    "\"0 mg (alles verdwenen)\"",
+    "\"20 mg\"",
+    "\"10 mg (drie halveringen)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 mg (één halvering)\"\"? Dan neem je maar één halvering. 12 uur is twee halveringen, dus 20 mg. Het goede antwoord is 20 mg.",
+    "Koos je \"\"0 mg (alles verdwenen)\"\"? Dan denk je dat alles verdwenen is. Er is nog 20 mg, dus 20 mg. Door de stappen goed na te lopen kom je uit op 20 mg.",
+    "Klopt: 80 → 40 → 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"10 mg (drie halveringen)\"\"? Dan neem je drie halveringen. 12 uur is twee halveringen, dus 20 mg. Controleer je stap: de juiste uitkomst is 20 mg."
+   ],
+   "uh": "Hoeveel mg is er na 12 uur over?",
+   "ctx": "Een patiënt neemt 80 mg van een medicijn. De hoeveelheid halveert elke 6 uur. Een leerling stelt M = 80 · 0,5^(t/6) op en berekent hoeveelheden na 12 en na 18 uur."
+  },
+  {
+   "v": "De patiënt wacht tot 18 uur na inname. Hoeveel mg is er dan nog?",
+   "o": [
+    "\"20 mg (twee halveringen)\"",
+    "\"10 mg\"",
+    "\"5 mg (vier halveringen)\"",
+    "\"62 mg (80 − 18)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 mg (twee halveringen)\"\"? Dan neem je twee halveringen. 18 uur is drie halveringen, dus 10 mg. Het goede antwoord is 10 mg.",
+    "Klopt: 80 → 40 → 20 → 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5 mg (vier halveringen)\"\"? Dan neem je vier halveringen. 18 uur is drie halveringen, dus 10 mg. Door de stappen goed na te lopen kom je uit op 10 mg.",
+    "Koos je \"\"62 mg (80 − 18)\"\"? Dan trek je 18 af van 80. De hoeveelheid halveert, dus 10 mg. Controleer je stap: de juiste uitkomst is 10 mg."
+   ],
+   "uh": "De patiënt wacht tot 18 uur na inname. Hoeveel mg is er dan nog?",
+   "ctx": "Een patiënt neemt 80 mg van een medicijn. De hoeveelheid halveert elke 6 uur. Een leerling stelt M = 80 · 0,5^(t/6) op en berekent hoeveelheden na 12 en na 18 uur."
+  },
+  {
+   "v": "Welke groeifactor per dag past bij de tabel?",
+   "o": [
+    "\"20\"",
+    "\"0,2\"",
+    "\"1,44\"",
+    "\"1,2\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20\"\"? Dan neem je de toename. De groeifactor is een quotiënt, dus 1,2. Het goede antwoord is 1,2.",
+    "Koos je \"\"0,2\"\"? Dan neem je alleen het decimale deel. De groeifactor is 1,2, dus 1,2. Door de stappen goed na te lopen kom je uit op 1,2.",
+    "Koos je \"\"1,44\"\"? Dan neem je 144 : 100. Dat is voor twee dagen, dus 1,2. Controleer je stap: de juiste uitkomst is 1,2.",
+    "Klopt: 120 : 100 = 144 : 120 = 1,2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke groeifactor per dag past bij de tabel?",
+   "ctx": "Een tabel toont het aantal volgers van een kanaal: 100 op dag 0, 120 op dag 1 en 144 op dag 2. Een leerling onderzoekt het verband en stelt een formule op."
+  },
+  {
+   "v": "Welke formule hoort bij de tabel?",
+   "o": [
+    "\"N = 100 · 1,2^t\"",
+    "\"N = 100 + 20t (lineair)\"",
+    "\"N = 120 · 1,2^t (begin op dag 1)\"",
+    "\"N = 1,2 · 100^t (omgewisseld)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: beginwaarde 100 en factor 1,2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"N = 100 + 20t (lineair)\"\"? Dan neem je een lineaire groei. De toenames 20 en 24 zijn niet gelijk, dus N = 100 · 1,2^t.",
+    "Koos je \"\"N = 120 · 1,2^t (begin op dag 1)\"\"? Dan neem je de waarde bij dag 1 als begin. De beginwaarde is 100, dus N = 100 · 1,2^t.",
+    "Koos je \"\"N = 1,2 · 100^t (omgewisseld)\"\"? Dan wissel je begin en factor. De factor staat in de macht, dus N = 100 · 1,2^t."
+   ],
+   "uh": "Welke formule hoort bij de tabel?",
+   "ctx": "Een tabel toont het aantal volgers van een kanaal: 100 op dag 0, 120 op dag 1 en 144 op dag 2. Een leerling onderzoekt het verband en stelt een formule op."
+  },
+  {
+   "v": "Hoeveel volgers verwacht je op dag 3?",
+   "o": [
+    "\"160 (3 · 20 erbij)\"",
+    "\"168 (144 + 24)\"",
+    "\"172,8\"",
+    "\"180 (3 · 60)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"160 (3 · 20 erbij)\"\"? Dan tel je 3 keer 20 op. De groei is exponentieel, dus 172,8. Het goede antwoord is 172,8.",
+    "Koos je \"\"168 (144 + 24)\"\"? Dan tel je 24 bij 144 op. De toename wordt steeds groter, dus 172,8. Door de stappen goed na te lopen kom je uit op 172,8.",
+    "Klopt: 100 · 1,2³ = 172,8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"180 (3 · 60)\"\"? Dan neem je 3 · 60. De factor is 1,2, dus 172,8. Controleer je stap: de juiste uitkomst is 172,8."
+   ],
+   "uh": "Hoeveel volgers verwacht je op dag 3?",
+   "ctx": "Een tabel toont het aantal volgers van een kanaal: 100 op dag 0, 120 op dag 1 en 144 op dag 2. Een leerling onderzoekt het verband en stelt een formule op."
+  },
+  {
+   "v": "Welk groeipercentage per dag past bij de tabel?",
+   "o": [
+    "\"120%\"",
+    "\"20%\"",
+    "\"2%\"",
+    "\"44%\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"120%\"\"? Dan neem je 1,2 als percentage. Trek 1 af, dus 20%. Het goede antwoord is 20%.",
+    "Klopt: 1,2 − 1 = 0,2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2%\"\"? Dan verplaats je de komma verkeerd. 0,2 is 20%, dus 20%. Door de stappen goed na te lopen kom je uit op 20%.",
+    "Koos je \"\"44%\"\"? Dan neem je het percentage over twee dagen. Gevraagd is per dag, dus 20%. Controleer je stap: de juiste uitkomst is 20%."
+   ],
+   "uh": "Welk groeipercentage per dag past bij de tabel?",
+   "ctx": "Een tabel toont het aantal volgers van een kanaal: 100 op dag 0, 120 op dag 1 en 144 op dag 2. Een leerling onderzoekt het verband en stelt een formule op."
+  },
+  {
+   "v": "Welke groeifactor per jaar hoort bij een waardeverlies van 15%?",
+   "o": [
+    "\"1,15\"",
+    "\"0,15\"",
+    "\"−0,15\"",
+    "\"0,85\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1,15\"\"? Dan tel je 15% erbij op. Bij verlies trek je af, dus 0,85. Het goede antwoord is 0,85.",
+    "Koos je \"\"0,15\"\"? Dan neem je het percentage van het verlies. De factor is wat overblijft, dus 0,85. Door de stappen goed na te lopen kom je uit op 0,85.",
+    "Koos je \"\"−0,15\"\"? Dan neem je het percentage met een minteken. De factor is 1 min 0,15, dus 0,85. Controleer je stap: de juiste uitkomst is 0,85.",
+    "Klopt: 100% − 15% = 85%. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke groeifactor per jaar hoort bij een waardeverlies van 15%?",
+   "ctx": "Een auto is nieuw €20 000 waard en verliest elk jaar 15% van zijn waarde. Een leerling stelt een formule op voor de waarde W na t jaar en berekent de waarde na 3 jaar."
+  },
+  {
+   "v": "Welke formule geeft de waarde W na t jaar?",
+   "o": [
+    "\"W = 20 000 · 0,85^t\"",
+    "\"W = 20 000 − 0,15t\"",
+    "\"W = 20 000 · 1,15^t\"",
+    "\"W = 0,85 · 20 000^t\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: beginwaarde maal factor tot de macht t. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"W = 20 000 − 0,15t\"\"? Dan neem je een lineaire afname. De afname is relatief, dus W = 20 000 · 0,85^t. Het goede antwoord is W = 20 000 · 0,85^t.",
+    "Koos je \"\"W = 20 000 · 1,15^t\"\"? Dan neem je een groeifactor. Het is een afname, dus W = 20 000 · 0,85^t. Door de stappen goed na te lopen kom je uit op W = 20 000 · 0,85^t.",
+    "Koos je \"\"W = 0,85 · 20 000^t\"\"? Dan wissel je begin en factor. De beginwaarde is 20 000, dus W = 20 000 · 0,85^t. Controleer je stap: de juiste uitkomst is W = 20 000 · 0,85^t."
+   ],
+   "uh": "Welke formule geeft de waarde W na t jaar?",
+   "ctx": "Een auto is nieuw €20 000 waard en verliest elk jaar 15% van zijn waarde. Een leerling stelt een formule op voor de waarde W na t jaar en berekent de waarde na 3 jaar."
+  },
+  {
+   "v": "Bereken de waarde van de auto na 3 jaar, op de cent nauwkeurig.",
+   "o": [
+    "\"€11 000,00 (3 · 15% eraf)\"",
+    "\"€20 000,00 (de beginwaarde)\"",
+    "\"€12 282,50\"",
+    "\"€1228,25 (komma verschoven)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€11 000,00 (3 · 15% eraf)\"\"? Dan trek je 3 keer 15% van 20 000 af. De afname is relatief, dus €12 282,50. Het goede antwoord is €12 282,50.",
+    "Koos je \"\"€20 000,00 (de beginwaarde)\"\"? Dan neem je de beginwaarde. Na 3 jaar is de waarde lager, dus €12 282,50. Door de stappen goed na te lopen kom je uit op €12 282,50.",
+    "Klopt: 20 000 · 0,85³ = 12 282,50. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€1228,25 (komma verschoven)\"\"? Dan verplaats je de komma verkeerd. 20 000 · 0,614125, dus €12 282,50. Controleer je stap: de juiste uitkomst is €12 282,50."
+   ],
+   "uh": "Bereken de waarde van de auto na 3 jaar, op de cent nauwkeurig.",
+   "ctx": "Een auto is nieuw €20 000 waard en verliest elk jaar 15% van zijn waarde. Een leerling stelt een formule op voor de waarde W na t jaar en berekent de waarde na 3 jaar."
+  },
+  {
+   "v": "Hoeveel euro verliest de auto in het eerste jaar?",
+   "o": [
+    "\"€300\"",
+    "\"€3000\"",
+    "\"€17 000\"",
+    "\"€15\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€300\"\"? Dan verplaats je de komma verkeerd. 0,15 · 20 000 = 3000, dus €3000. Het goede antwoord is €3000.",
+    "Klopt: 15% van 20 000. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€17 000\"\"? Dan neem je de waarde na één jaar. Gevraagd is het verlies, dus €3000. Door de stappen goed na te lopen kom je uit op €3000.",
+    "Koos je \"\"€15\"\"? Dan neem je het percentage. Reken met 20 000, dus €3000. Controleer je stap: de juiste uitkomst is €3000."
+   ],
+   "uh": "Hoeveel euro verliest de auto in het eerste jaar?",
+   "ctx": "Een auto is nieuw €20 000 waard en verliest elk jaar 15% van zijn waarde. Een leerling stelt een formule op voor de waarde W na t jaar en berekent de waarde na 3 jaar."
+  },
+  {
+   "v": "Welke vergelijking los je op voor de verdubbelingstijd bij 3% groei?",
+   "o": [
+    "\"1,03 · t = 2\"",
+    "\"0,03^t = 2\"",
+    "\"t^1,03 = 2\"",
+    "\"1,03^t = 2\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1,03 · t = 2\"\"? Dan vermenigvuldig je 1,03 met t. Het is een macht, dus 1,03^t = 2. Het goede antwoord is 1,03^t = 2.",
+    "Koos je \"\"0,03^t = 2\"\"? Dan neem je alleen het percentage. De factor is 1,03, dus 1,03^t = 2. Door de stappen goed na te lopen kom je uit op 1,03^t = 2.",
+    "Koos je \"\"t^1,03 = 2\"\"? Dan wissel je grondtal en exponent. De variabele staat in de exponent, dus 1,03^t = 2. Controleer je stap: de juiste uitkomst is 1,03^t = 2.",
+    "Klopt: de bevolking wordt 2 keer zo groot. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke vergelijking los je op voor de verdubbelingstijd bij 3% groei?",
+   "ctx": "De bevolking van een land groeit met 3% per jaar. Een leerling wil weten na hoeveel jaar de bevolking is verdubbeld en lost 1,03^t = 2 op met de grafische rekenmachine."
+  },
+  {
+   "v": "Na hoeveel jaar is de bevolking verdubbeld, op één decimaal?",
+   "o": [
+    "\"na ongeveer 23,4 jaar\"",
+    "\"na ongeveer 33,3 jaar (100 : 3)\"",
+    "\"na ongeveer 66,7 jaar (200 : 3)\"",
+    "\"na ongeveer 12 jaar (een gok)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal de beginwaarde en de groeifactor per tijdseenheid, stel N = b · g^t op, controleer met een tabel en vertaal het antwoord terug naar de context met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: t ≈ 23,45. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"na ongeveer 33,3 jaar (100 : 3)\"\"? Dan deel je 100 door 3. Rente over rente werkt sneller, dus na ongeveer 23,4 jaar.",
+    "Koos je \"\"na ongeveer 66,7 jaar (200 : 3)\"\"? Dan deel je 200 door 3. De groei is exponentieel, dus na ongeveer 23,4 jaar.",
+    "Koos je \"\"na ongeveer 12 jaar (een gok)\"\"? Dan neem je een willekeurige waarde. Los 1,03^t = 2 op, dus na ongeveer 23,4 jaar."
+   ],
+   "uh": "Na hoeveel jaar is de bevolking verdubbeld, op één decimaal?",
+   "ctx": "De bevolking van een land groeit met 3% per jaar. Een leerling wil weten na hoeveel jaar de bevolking is verdubbeld en lost 1,03^t = 2 op met de grafische rekenmachine."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zet €2500 op een spaarrekening met 3,5% rente per jaar. Hij stelt een formule op voor het saldo K na t jaar en berekent het saldo na 4 jaar op de cent nauwkeurig. Hij noteert zijn antwoord met eenheid.",
+   "v": "Stel de formule op en bereken het saldo na 4 jaar.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Groeifactor 1,035 (1p). K = 2500 · 1,035^t (1p). K(4) = 2868,81 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bacteriekolonie van 80 bacteriën groeit met 25% per uur. Een leerling stelt een formule op voor het aantal N na t uur en berekent het aantal na 3 uur. Hij controleert zijn antwoord met een tabel.",
+   "v": "Stel de formule op en bereken N na 3 uur.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Groeifactor 1,25 (1p). N = 80 · 1,25^t (1p). N(3) = 156,25 bacteriën (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een patiënt neemt 200 mg van een medicijn. De hoeveelheid halveert elke 4 uur. Een leerling berekent de hoeveelheid na 12 uur zonder rekenmachine en legt zijn redenering uit.",
+   "v": "Bereken de hoeveelheid na 12 uur.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "12 uur is drie halveringstijden (1p). 200 → 100 → 50 → 25 (1p). Er is nog 25 mg (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een apparaat is €900 waard en verliest elk jaar 20% van zijn waarde. Een leerling stelt een formule op voor de waarde W na t jaar en berekent de waarde na 2 jaar.",
+   "v": "Stel de formule op en bereken W na 2 jaar.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Groeifactor 0,80 (1p). W = 900 · 0,80^t (1p). W(2) = 576 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tabel toont het aantal bezoekers van een website: 500 op dag 0, 550 op dag 1 en 605 op dag 2. Een leerling onderzoekt het verband, stelt een formule op en voorspelt dag 3.",
+   "v": "Bepaal de groeifactor, de formule en N na 3 dagen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "550 : 500 = 605 : 550 = 1,1 (1p). N = 500 · 1,1^t (1p). N(3) = 665,5 (1p)."
+  }
+ ]
+}
