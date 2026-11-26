@@ -1,0 +1,682 @@
+{
+ "id": "C1",
+ "lo": "wa.C.1",
+ "gs": 2,
+ "naam": "Lineaire en kwadratische functies: kenmerken in grafiek, tabel en formule",
+ "beschrijving": "Je herkent lineaire en kwadratische functies in grafiek, tabel en formule, bepaalt richtingscoëfficiënt, beginwaarde, nulpunten, symmetrieas en top en interpreteert ze in een context.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Lineaire functies",
+  "Tabel en formule",
+  "Kwadratische functies",
+  "Snijpunten",
+  "Interpreteren in de context"
+ ],
+ "sam": "Bij y = ax + b is a de toename per eenheid en b de beginwaarde. Bij een parabool y = ax² + bx + c bepaal je de nulpunten, de symmetrieas en de top. Stel voor een snijpunt de formules gelijk en vertaal elk antwoord terug naar de context met eenheid.",
+ "begrippen": [
+  {
+   "t": "Eerstegraadsfunctie",
+   "d": "Een functie y = ax + b, met een rechte lijn als grafiek."
+  },
+  {
+   "t": "Richtingscoëfficiënt",
+   "d": "Het getal a in y = ax + b: de toename van y per toename van x."
+  },
+  {
+   "t": "Beginwaarde",
+   "d": "Het getal b in y = ax + b: de waarde bij x = 0."
+  },
+  {
+   "t": "Tweedegraadsfunctie",
+   "d": "Een functie y = ax² + bx + c, met een parabool als grafiek."
+  },
+  {
+   "t": "Dalparabool en bergparabool",
+   "d": "Bij a > 0 opent de parabool omhoog (dal), bij a < 0 omlaag (berg)."
+  },
+  {
+   "t": "Nulpunt",
+   "d": "Een x-waarde waarbij de functiewaarde 0 is: snijpunt met de x-as."
+  },
+  {
+   "t": "Snijpunt met de y-as",
+   "d": "Het punt (0, f(0))."
+  },
+  {
+   "t": "Symmetrieas",
+   "d": "De verticale lijn midden tussen de nulpunten van een parabool."
+  },
+  {
+   "t": "Top",
+   "d": "Het hoogste of laagste punt van een parabool: minimum of maximum."
+  },
+  {
+   "t": "Snijpunt van twee grafieken",
+   "d": "De x waarvoor f(x) = g(x); daar zijn de functiewaarden gelijk."
+  },
+  {
+   "t": "Verschil in y per verschil in x",
+   "d": "Zo bereken je de rc uit twee punten van een tabel."
+  },
+  {
+   "t": "Interpreteren in de context",
+   "d": "De rc als toename per eenheid en de beginwaarde als vaste waarde benoemen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke richtingscoëfficiënt heeft de lijn y = 3x + 5?",
+   "o": [
+    "\"5\"",
+    "\"3\"",
+    "\"8\"",
+    "\"15\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5\"\"? Dan neem je de beginwaarde. De richtingscoëfficiënt staat bij x, dus 3. Het goede antwoord is 3.",
+    "Klopt: in y = ax + b is a de richtingscoëfficiënt. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8\"\"? Dan tel je 3 en 5 op. De richtingscoëfficiënt is het getal bij x, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"15\"\"? Dan vermenigvuldig je 3 en 5. De richtingscoëfficiënt is het getal bij x, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Welke richtingscoëfficiënt heeft de lijn y = 3x + 5?"
+  },
+  {
+   "v": "Welke beginwaarde heeft K = 40 + 0,25d?",
+   "o": [
+    "\"0,25\"",
+    "\"40,25\"",
+    "\"10\"",
+    "\"40\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,25\"\"? Dan neem je de richtingscoëfficiënt. De beginwaarde is de waarde bij d = 0, dus 40. Het goede antwoord is 40.",
+    "Koos je \"\"40,25\"\"? Dan tel je de getallen op. De beginwaarde is de waarde bij d = 0, dus 40. Door de stappen goed na te lopen kom je uit op 40.",
+    "Koos je \"\"10\"\"? Dan vermenigvuldig je 40 en 0,25. De beginwaarde is de waarde bij d = 0, dus 40. Controleer je stap: de juiste uitkomst is 40.",
+    "Klopt: de waarde bij d = 0. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke beginwaarde heeft K = 40 + 0,25d?"
+  },
+  {
+   "v": "Op welke plek komt de lijn y = 2x − 4 door de verticale as?",
+   "o": [
+    "\"in het punt (0, −4)\"",
+    "\"in het punt (−4, 0)\"",
+    "\"in het punt (2, 0)\"",
+    "\"in het punt (0, 2)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij x = 0 is y = −4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"in het punt (−4, 0)\"\"? Dan wissel je de coördinaten. De y-as heeft x = 0, dus (0, −4). Het goede antwoord is in het punt (0, −4).",
+    "Koos je \"\"in het punt (2, 0)\"\"? Dan neem je het snijpunt met de x-as. De y-as heeft x = 0, dus (0, −4). Door de stappen goed na te lopen kom je uit op in het punt (0, −4).",
+    "Koos je \"\"in het punt (0, 2)\"\"? Dan neem je de richtingscoëfficiënt als y-waarde. Vul x = 0 in, dus (0, −4). Controleer je stap: de juiste uitkomst is in het punt (0, −4)."
+   ],
+   "uh": "Op welke plek komt de lijn y = 2x − 4 door de verticale as?"
+  },
+  {
+   "v": "Welk punt heeft de lijn y = 2x − 4 op de horizontale as?",
+   "o": [
+    "\"in het punt (0, 2)\"",
+    "\"in het punt (0, −4)\"",
+    "\"in het punt (2, 0)\"",
+    "\"in het punt (4, 0)\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"in het punt (0, 2)\"\"? Dan wissel je de coördinaten. De x-as heeft y = 0, dus (2, 0). Het goede antwoord is in het punt (2, 0).",
+    "Koos je \"\"in het punt (0, −4)\"\"? Dan neem je het snijpunt met de y-as. De x-as heeft y = 0, dus (2, 0). Door de stappen goed na te lopen kom je uit op in het punt (2, 0).",
+    "Klopt: 2x − 4 = 0 geeft x = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"in het punt (4, 0)\"\"? Dan neem je 4 als oplossing. Los 2x − 4 = 0 op, dus (2, 0). Controleer je stap: de juiste uitkomst is in het punt (2, 0)."
+   ],
+   "uh": "Welk punt heeft de lijn y = 2x − 4 op de horizontale as?"
+  },
+  {
+   "v": "Welke vorm heeft de grafiek van y = x² − 6x + 5?",
+   "o": [
+    "\"een bergparabool\"",
+    "\"een dalparabool\"",
+    "\"een rechte lijn\"",
+    "\"een hyperbool\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een bergparabool\"\"? Dan denk je dat de opening naar beneden is. Bij een positieve a opent de parabool omhoog, dus een dalparabool.",
+    "Klopt: a = 1 is positief, dus de parabool opent omhoog. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"een rechte lijn\"\"? Dan denk je dat er geen kwadraat is. Er staat x², dus een dalparabool. Door de stappen goed na te lopen kom je uit op een dalparabool.",
+    "Koos je \"\"een hyperbool\"\"? Dan denk je aan een breuk. Er staat geen x in de noemer, dus een dalparabool. Controleer je stap: de juiste uitkomst is een dalparabool."
+   ],
+   "uh": "Welke vorm heeft de grafiek van y = x² − 6x + 5?"
+  },
+  {
+   "v": "Een parabool heeft nulpunten bij x = 1 en x = 5. Waar ligt de symmetrieas?",
+   "o": [
+    "\"bij x = 5\"",
+    "\"bij x = 6\"",
+    "\"bij x = 0\"",
+    "\"bij x = 3\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij x = 5\"\"? Dan neem je het grootste nulpunt. De symmetrieas ligt in het midden, dus x = 3. Het goede antwoord is bij x = 3.",
+    "Koos je \"\"bij x = 6\"\"? Dan tel je 1 en 5 op. Het midden is de helft, dus x = 3. Door de stappen goed na te lopen kom je uit op bij x = 3.",
+    "Koos je \"\"bij x = 0\"\"? Dan neem je de y-as. De symmetrieas ligt in het midden van de nulpunten, dus x = 3. Controleer je stap: de juiste uitkomst is bij x = 3.",
+    "Klopt: het midden van 1 en 5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een parabool heeft nulpunten bij x = 1 en x = 5. Waar ligt de symmetrieas?"
+  },
+  {
+   "v": "Hoe bereken je de richtingscoëfficiënt uit twee punten van een tabel?",
+   "o": [
+    "\"het verschil in y gedeeld door het verschil in x\"",
+    "\"het verschil in x gedeeld door het verschil in y\"",
+    "\"de som van x en y\"",
+    "\"het product van x en y\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de toename in y per toename in x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"het verschil in x gedeeld door het verschil in y\"\"? Dan draai je de breuk om. De rc is de toename in y per toename in x, dus Δy : Δx.",
+    "Koos je \"\"de som van x en y\"\"? Dan tel je x en y op. De rc volgt uit een quotiënt van verschillen, dus Δy : Δx. Door de stappen goed na te lopen kom je uit op het verschil in y gedeeld door het verschil in x.",
+    "Koos je \"\"het product van x en y\"\"? Dan vermenigvuldig je x en y. De rc volgt uit een quotiënt van verschillen, dus Δy : Δx."
+   ],
+   "uh": "Hoe bereken je de richtingscoëfficiënt uit twee punten van een tabel?"
+  },
+  {
+   "v": "Bereken de toename van y per toename van 1 in x in de tabel.",
+   "o": [
+    "\"6 (het verschil in y)\"",
+    "\"5 (de beginwaarde)\"",
+    "\"3\"",
+    "\"2 (het verschil in x)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6 (het verschil in y)\"\"? Dan neem je het verschil in y. Deel door het verschil in x, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"5 (de beginwaarde)\"\"? Dan neem je de beginwaarde. De rc is een quotiënt van verschillen, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Klopt: (11 − 5) : (2 − 0) = 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2 (het verschil in x)\"\"? Dan neem je het verschil in x. De rc is Δy : Δx, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Bereken de toename van y per toename van 1 in x in de tabel.",
+   "ctx": "Een tabel toont een lineair verband: bij x = 0 is y = 5, bij x = 2 is y = 11 en bij x = 4 is y = 17. Een leerling bepaalt de richtingscoëfficiënt, de beginwaarde en de formule."
+  },
+  {
+   "v": "Welke beginwaarde heeft het verband?",
+   "o": [
+    "\"3\"",
+    "\"5\"",
+    "\"11\"",
+    "\"0\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3\"\"? Dan neem je de richtingscoëfficiënt. De beginwaarde is y bij x = 0, dus 5. Het goede antwoord is 5.",
+    "Klopt: de waarde van y bij x = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"11\"\"? Dan neem je een waarde bij x = 2. De beginwaarde is y bij x = 0, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Koos je \"\"0\"\"? Dan neem je x = 0 als beginwaarde. De beginwaarde is de y-waarde, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Welke beginwaarde heeft het verband?",
+   "ctx": "Een tabel toont een lineair verband: bij x = 0 is y = 5, bij x = 2 is y = 11 en bij x = 4 is y = 17. Een leerling bepaalt de richtingscoëfficiënt, de beginwaarde en de formule."
+  },
+  {
+   "v": "Schrijf het verband uit de tabel als een formule y = …",
+   "o": [
+    "\"y = 5x + 3\"",
+    "\"y = 3x − 5\"",
+    "\"y = 6x + 5\"",
+    "\"y = 3x + 5\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 5x + 3\"\"? Dan wissel je rc en beginwaarde. De rc is 3, dus y = 3x + 5. Het goede antwoord is y = 3x + 5.",
+    "Koos je \"\"y = 3x − 5\"\"? Dan laat je het teken fout. De beginwaarde is +5, dus y = 3x + 5. Door de stappen goed na te lopen kom je uit op y = 3x + 5.",
+    "Koos je \"\"y = 6x + 5\"\"? Dan neem je het verschil in y als rc. Deel door het verschil in x, dus y = 3x + 5. Controleer je stap: de juiste uitkomst is y = 3x + 5.",
+    "Klopt: rc 3 en beginwaarde 5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Schrijf het verband uit de tabel als een formule y = …",
+   "ctx": "Een tabel toont een lineair verband: bij x = 0 is y = 5, bij x = 2 is y = 11 en bij x = 4 is y = 17. Een leerling bepaalt de richtingscoëfficiënt, de beginwaarde en de formule."
+  },
+  {
+   "v": "Welke waarde heeft y bij x = 6?",
+   "o": [
+    "\"23\"",
+    "\"18 (zonder de beginwaarde)\"",
+    "\"29 (3 · 6 + 11)\"",
+    "\"21 (3 · 6 + 3)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3 · 6 + 5 = 23. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"18 (zonder de beginwaarde)\"\"? Dan vergeet je de beginwaarde 5. y = 3 · 6 + 5, dus 23. Het goede antwoord is 23.",
+    "Koos je \"\"29 (3 · 6 + 11)\"\"? Dan tel je 6 · 3 + 11. De beginwaarde is 5, dus 23. Door de stappen goed na te lopen kom je uit op 23.",
+    "Koos je \"\"21 (3 · 6 + 3)\"\"? Dan neem je 3 · 6 + 3. De beginwaarde is 5, dus 23. Controleer je stap: de juiste uitkomst is 23."
+   ],
+   "uh": "Welke waarde heeft y bij x = 6?",
+   "ctx": "Een tabel toont een lineair verband: bij x = 0 is y = 5, bij x = 2 is y = 11 en bij x = 4 is y = 17. Een leerling bepaalt de richtingscoëfficiënt, de beginwaarde en de formule."
+  },
+  {
+   "v": "Wat kost een rit van 120 kilometer?",
+   "o": [
+    "\"€30\"",
+    "\"€160\"",
+    "\"€70\"",
+    "\"€120,25\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€30\"\"? Dan vergeet je de vaste kosten. K = 40 + 30, dus €70. Het goede antwoord is €70.",
+    "Koos je \"\"€160\"\"? Dan vermenigvuldig je 40 en 4. De rc is 0,25 euro per km, dus €70. Door de stappen goed na te lopen kom je uit op €70.",
+    "Klopt: 40 + 0,25 · 120. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€120,25\"\"? Dan tel je 120 en 0,25 op. K = 40 + 0,25 · 120, dus €70. Controleer je stap: de juiste uitkomst is €70."
+   ],
+   "uh": "Wat kost een rit van 120 kilometer?",
+   "ctx": "Een autoverhuurder rekent K = 40 + 0,25d euro voor een rit van d kilometer, met 40 euro vaste kosten. Een leerling leest de formule af, berekent kosten en interpreteert de getallen."
+  },
+  {
+   "v": "Wat betekent het getal 0,25 in de formule?",
+   "o": [
+    "\"de vaste kosten in euro\"",
+    "\"de kosten per gereden kilometer in euro\"",
+    "\"het aantal kilometers\"",
+    "\"de totale kosten\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de vaste kosten in euro\"\"? Dan verwar je de rc met de beginwaarde. De vaste kosten zijn 40, dus per kilometer.",
+    "Klopt: de richtingscoëfficiënt is de toename per kilometer.",
+    "Koos je \"\"het aantal kilometers\"\"? Dan verwar je 0,25 met d. d is het aantal kilometers, dus per kilometer. Door de stappen goed na te lopen kom je uit op de kosten per gereden kilometer in euro.",
+    "Koos je \"\"de totale kosten\"\"? Dan verwar je 0,25 met K. K is de totale prijs, dus per kilometer. Controleer je stap: de juiste uitkomst is de kosten per gereden kilometer in euro."
+   ],
+   "uh": "Wat betekent het getal 0,25 in de formule?",
+   "ctx": "Een autoverhuurder rekent K = 40 + 0,25d euro voor een rit van d kilometer, met 40 euro vaste kosten. Een leerling leest de formule af, berekent kosten en interpreteert de getallen."
+  },
+  {
+   "v": "Welke vergelijking los je op om het snijpunt van de twee lijnen te vinden?",
+   "o": [
+    "\"2x + 1 = 0\"",
+    "\"2x + 1 = 7\"",
+    "\"2x = −x\"",
+    "\"2x + 1 = −x + 7\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2x + 1 = 0\"\"? Dan stel je alleen de eerste gelijk aan nul. Dat is het snijpunt met de x-as, dus 2x + 1 = −x + 7.",
+    "Koos je \"\"2x + 1 = 7\"\"? Dan laat je de x aan de rechterkant weg. Beide formules horen erbij, dus 2x + 1 = −x + 7. Door de stappen goed na te lopen kom je uit op 2x + 1 = −x + 7.",
+    "Koos je \"\"2x = −x\"\"? Dan laat je de constanten weg. Die horen erbij, dus 2x + 1 = −x + 7. Controleer je stap: de juiste uitkomst is 2x + 1 = −x + 7.",
+    "Klopt: beide y-waarden zijn gelijk. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke vergelijking los je op om het snijpunt van de twee lijnen te vinden?",
+   "ctx": "Twee lijnen zijn gegeven: y = 2x + 1 en y = −x + 7. Een leerling bepaalt het snijpunt en controleert het in beide formules."
+  },
+  {
+   "v": "Bij welke x snijden de lijnen elkaar?",
+   "o": [
+    "\"x = 2\"",
+    "\"x = 3 (9 : 3)\"",
+    "\"x = 6 (7 − 1)\"",
+    "\"x = 1 (een rekenfout bij 3x)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3x = 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 3 (9 : 3)\"\"? Dan deel je 9 door 3. 2x + x = 7 − 1, dus x = 2. Het goede antwoord is x = 2.",
+    "Koos je \"\"x = 6 (7 − 1)\"\"? Dan neem je 7 − 1. Deel nog door 3, dus x = 2. Door de stappen goed na te lopen kom je uit op x = 2.",
+    "Koos je \"\"x = 1 (een rekenfout bij 3x)\"\"? Dan trek je 2x en x verkeerd af. 3x = 6, dus x = 2. Controleer je stap: de juiste uitkomst is x = 2."
+   ],
+   "uh": "Bij welke x snijden de lijnen elkaar?",
+   "ctx": "Twee lijnen zijn gegeven: y = 2x + 1 en y = −x + 7. Een leerling bepaalt het snijpunt en controleert het in beide formules."
+  },
+  {
+   "v": "Welke nulpunten heeft f(x) = x² − 6x + 5?",
+   "o": [
+    "\"x = −1 en x = −5\"",
+    "\"x = 1 en x = −5\"",
+    "\"x = 1 en x = 5\"",
+    "\"x = 5\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = −1 en x = −5\"\"? Dan laat je de tekens fout. (x − 1)(x − 5) = 0 geeft positieve waarden, dus x = 1 en x = 5.",
+    "Koos je \"\"x = 1 en x = −5\"\"? Dan neem je een verkeerd teken bij één factor. Beide factoren hebben een min, dus x = 1 en x = 5.",
+    "Klopt: (x − 1)(x − 5) = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 5\"\"? Dan neem je maar één nulpunt. Een parabool heeft er hier twee, dus x = 1 en x = 5. Controleer je stap: de juiste uitkomst is x = 1 en x = 5."
+   ],
+   "uh": "Welke nulpunten heeft f(x) = x² − 6x + 5?",
+   "ctx": "Gegeven is de kwadratische functie f(x) = x² − 6x + 5. Een leerling bepaalt de snijpunten met de assen, de symmetrieas en de top en beschrijft de vorm van de grafiek."
+  },
+  {
+   "v": "Welke top heeft f(x) = x² − 6x + 5?",
+   "o": [
+    "\"(3, 4)\"",
+    "\"(3, −4)\"",
+    "\"(−3, −4)\"",
+    "\"(5, 0)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(3, 4)\"\"? Dan laat je het teken van f(3) fout. f(3) = −4, dus (3, −4). Het goede antwoord is (3, −4).",
+    "Klopt: x = 3 en f(3) = 9 − 18 + 5 = −4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(−3, −4)\"\"? Dan neem je het teken van de symmetrieas fout. Die ligt bij x = 3, dus (3, −4). Door de stappen goed na te lopen kom je uit op (3, −4).",
+    "Koos je \"\"(5, 0)\"\"? Dan neem je een nulpunt. De top ligt in het midden van de nulpunten, dus (3, −4). Controleer je stap: de juiste uitkomst is (3, −4)."
+   ],
+   "uh": "Welke top heeft f(x) = x² − 6x + 5?",
+   "ctx": "Gegeven is de kwadratische functie f(x) = x² − 6x + 5. Een leerling bepaalt de snijpunten met de assen, de symmetrieas en de top en beschrijft de vorm van de grafiek."
+  },
+  {
+   "v": "Waar snijdt de grafiek van f de y-as?",
+   "o": [
+    "\"in het punt (5, 0)\"",
+    "\"in het punt (0, −6)\"",
+    "\"in het punt (0, 0)\"",
+    "\"in het punt (0, 5)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"in het punt (5, 0)\"\"? Dan wissel je de coördinaten. De y-as heeft x = 0, dus (0, 5). Het goede antwoord is in het punt (0, 5).",
+    "Koos je \"\"in het punt (0, −6)\"\"? Dan neem je de coëfficiënt van x. Vul x = 0 in, dus (0, 5). Door de stappen goed na te lopen kom je uit op in het punt (0, 5).",
+    "Koos je \"\"in het punt (0, 0)\"\"? Dan denk je dat elke grafiek door de oorsprong gaat. f(0) = 5, dus (0, 5). Controleer je stap: de juiste uitkomst is in het punt (0, 5).",
+    "Klopt: f(0) = 5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waar snijdt de grafiek van f de y-as?",
+   "ctx": "Gegeven is de kwadratische functie f(x) = x² − 6x + 5. Een leerling bepaalt de snijpunten met de assen, de symmetrieas en de top en beschrijft de vorm van de grafiek."
+  },
+  {
+   "v": "Welke symmetrieas heeft de grafiek van f?",
+   "o": [
+    "\"x = 3\"",
+    "\"x = 5\"",
+    "\"x = −3\"",
+    "\"y = 3\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het midden van de nulpunten 1 en 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 5\"\"? Dan neem je het grootste nulpunt. De symmetrieas ligt in het midden, dus x = 3. Het goede antwoord is x = 3.",
+    "Koos je \"\"x = −3\"\"? Dan laat je het teken fout. De symmetrieas ligt bij x = 3, dus x = 3. Door de stappen goed na te lopen kom je uit op x = 3.",
+    "Koos je \"\"y = 3\"\"? Dan verwar je een verticale met een horizontale lijn. De as is verticaal, dus x = 3. Controleer je stap: de juiste uitkomst is x = 3."
+   ],
+   "uh": "Welke symmetrieas heeft de grafiek van f?",
+   "ctx": "Gegeven is de kwadratische functie f(x) = x² − 6x + 5. Een leerling bepaalt de snijpunten met de assen, de symmetrieas en de top en beschrijft de vorm van de grafiek."
+  },
+  {
+   "v": "Wat is de kleinste waarde van f?",
+   "o": [
+    "\"3 (de x van de top)\"",
+    "\"5 (de waarde f(0))\"",
+    "\"−4\"",
+    "\"0 (de waarde bij een nulpunt)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3 (de x van de top)\"\"? Dan neem je de x-coördinaat van de top. De waarde is de y-coördinaat, dus −4. Het goede antwoord is −4.",
+    "Koos je \"\"5 (de waarde f(0))\"\"? Dan neem je f(0). De laagste waarde is bij de top, dus −4. Door de stappen goed na te lopen kom je uit op −4.",
+    "Klopt: de top is een dal, de laagste waarde is −4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0 (de waarde bij een nulpunt)\"\"? Dan neem je de waarde bij een nulpunt. De top ligt lager, dus −4. Controleer je stap: de juiste uitkomst is −4."
+   ],
+   "uh": "Wat is de kleinste waarde van f?",
+   "ctx": "Gegeven is de kwadratische functie f(x) = x² − 6x + 5. Een leerling bepaalt de snijpunten met de assen, de symmetrieas en de top en beschrijft de vorm van de grafiek."
+  },
+  {
+   "v": "Wanneer is h(t) = −5t² + 20t gelijk aan 0?",
+   "o": [
+    "\"alleen bij t = 4\"",
+    "\"bij t = 0 en bij t = 4\"",
+    "\"bij t = 0 en bij t = −4\"",
+    "\"bij t = 5 en bij t = 20\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen bij t = 4\"\"? Dan laat je t = 0 weg. De bal begint op de grond, dus ook t = 0. Het goede antwoord is bij t = 0 en bij t = 4.",
+    "Klopt: −5t(t − 4) = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"bij t = 0 en bij t = −4\"\"? Dan laat je het teken fout. −5t(t − 4) = 0 geeft t = 4, dus t = 4. Door de stappen goed na te lopen kom je uit op bij t = 0 en bij t = 4.",
+    "Koos je \"\"bij t = 5 en bij t = 20\"\"? Dan neem je de coëfficiënten. Breng −5t buiten haakjes, dus t = 0 en t = 4. Controleer je stap: de juiste uitkomst is bij t = 0 en bij t = 4."
+   ],
+   "uh": "Wanneer is h(t) = −5t² + 20t gelijk aan 0?",
+   "ctx": "De hoogte van een bal in meter na t seconden is h(t) = −5t² + 20t. Een leerling bepaalt wanneer de bal de grond raakt en wat de grootste hoogte is."
+  },
+  {
+   "v": "Wat zegt de oplossing t = 4 van h(t) = 0 over de bal?",
+   "o": [
+    "\"de bal wordt 4 meter hoog\"",
+    "\"de bal start na 4 seconden\"",
+    "\"de bal blijft 4 seconden in de lucht en valt dan oneindig\"",
+    "\"na 4 seconden landt de bal weer op de grond\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de bal wordt 4 meter hoog\"\"? Dan neem je 4 als hoogte. t = 4 is een tijdstip, dus na 4 seconden landt de bal. Het goede antwoord is na 4 seconden landt de bal weer op de grond.",
+    "Koos je \"\"de bal start na 4 seconden\"\"? Dan neem je t = 4 als starttijd. De bal begint bij t = 0, dus na 4 seconden landt de bal.",
+    "Koos je \"\"de bal blijft 4 seconden in de lucht en valt dan oneindig\"\"? Dan denk je aan een ander verloop. De hoogte is 0 bij t = 4, dus de bal landt.",
+    "Klopt: bij t = 4 is de hoogte weer 0. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat zegt de oplossing t = 4 van h(t) = 0 over de bal?",
+   "ctx": "De hoogte van een bal in meter na t seconden is h(t) = −5t² + 20t. Een leerling bepaalt wanneer de bal de grond raakt en wat de grootste hoogte is."
+  },
+  {
+   "v": "Op welk tijdstip is de bal het hoogst?",
+   "o": [
+    "\"na 2 seconden\"",
+    "\"na 4 seconden\"",
+    "\"na 20 seconden\"",
+    "\"na 1 seconde\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de top ligt midden tussen t = 0 en t = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"na 4 seconden\"\"? Dan neem je het tijdstip van landen. De top ligt in het midden, dus na 2 seconden. Het goede antwoord is na 2 seconden.",
+    "Koos je \"\"na 20 seconden\"\"? Dan neem je de coëfficiënt 20. De top ligt in het midden, dus na 2 seconden. Door de stappen goed na te lopen kom je uit op na 2 seconden.",
+    "Koos je \"\"na 1 seconde\"\"? Dan neem je de helft van het midden. Het midden van 0 en 4 is 2, dus na 2 seconden. Controleer je stap: de juiste uitkomst is na 2 seconden."
+   ],
+   "uh": "Op welk tijdstip is de bal het hoogst?",
+   "ctx": "De hoogte van een bal in meter na t seconden is h(t) = −5t² + 20t. Een leerling bepaalt wanneer de bal de grond raakt en wat de grootste hoogte is."
+  },
+  {
+   "v": "Wat is de grootste hoogte van de bal?",
+   "o": [
+    "\"40 meter\"",
+    "\"2 meter\"",
+    "\"20 meter\"",
+    "\"−20 meter\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 meter\"\"? Dan vergeet je −5t² = −20. h(2) = −20 + 40, dus 20 meter. Het goede antwoord is 20 meter.",
+    "Koos je \"\"2 meter\"\"? Dan neem je de tijd. De hoogte is h(2), dus 20 meter. Door de stappen goed na te lopen kom je uit op 20 meter.",
+    "Klopt: h(2) = −20 + 40 = 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−20 meter\"\"? Dan neem je alleen de eerste term. h(2) = −20 + 40, dus 20 meter. Controleer je stap: de juiste uitkomst is 20 meter."
+   ],
+   "uh": "Wat is de grootste hoogte van de bal?",
+   "ctx": "De hoogte van een bal in meter na t seconden is h(t) = −5t² + 20t. Een leerling bepaalt wanneer de bal de grond raakt en wat de grootste hoogte is."
+  },
+  {
+   "v": "Bij welke producties is de winst 0 volgens W(q) = −q² + 10q − 16?",
+   "o": [
+    "\"bij q = 5\"",
+    "\"bij q = 2 en bij q = 8\"",
+    "\"bij q = −2 en q = −8\"",
+    "\"bij q = 16\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij q = 5\"\"? Dan neem je de top. De winst is 0 bij de nulpunten, dus q = 2 en q = 8. Het goede antwoord is bij q = 2 en bij q = 8.",
+    "Klopt: −(q − 2)(q − 8) = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"bij q = −2 en q = −8\"\"? Dan laat je de tekens fout. −(q − 2)(q − 8) = 0 geeft positieve waarden, dus q = 2 en q = 8.",
+    "Koos je \"\"bij q = 16\"\"? Dan neem je de constante. Los de vergelijking op, dus q = 2 en q = 8. Controleer je stap: de juiste uitkomst is bij q = 2 en bij q = 8."
+   ],
+   "uh": "Bij welke producties is de winst 0 volgens W(q) = −q² + 10q − 16?",
+   "ctx": "De winst in duizenden euro's van een bedrijf is W(q) = −q² + 10q − 16 bij een productie van q honderd stuks. Een leerling zoekt de break-evenpunten en de maximale winst."
+  },
+  {
+   "v": "Bij welke productie is de winst maximaal en hoeveel is die?",
+   "o": [
+    "\"bij q = 5: 5 duizend euro\"",
+    "\"bij q = 9: 5 duizend euro\"",
+    "\"bij q = 10: 16 duizend euro\"",
+    "\"bij q = 5: 9 duizend euro\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij q = 5: 5 duizend euro\"\"? Dan neem je q als winst. W(5) is de winst, dus 9 duizend euro. Het goede antwoord is bij q = 5: 9 duizend euro.",
+    "Koos je \"\"bij q = 9: 5 duizend euro\"\"? Dan wissel je de waarden. De top ligt bij q = 5, dus 9 duizend euro. Door de stappen goed na te lopen kom je uit op bij q = 5: 9 duizend euro.",
+    "Koos je \"\"bij q = 10: 16 duizend euro\"\"? Dan neem je coëfficiënt en constante. Vul de top in, dus q = 5 en 9 duizend euro.",
+    "Klopt: W(5) = −25 + 50 − 16 = 9. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bij welke productie is de winst maximaal en hoeveel is die?",
+   "ctx": "De winst in duizenden euro's van een bedrijf is W(q) = −q² + 10q − 16 bij een productie van q honderd stuks. Een leerling zoekt de break-evenpunten en de maximale winst."
+  },
+  {
+   "v": "Tussen welke producties is de winst positief?",
+   "o": [
+    "\"tussen q = 2 en q = 8\"",
+    "\"voor q kleiner dan 2\"",
+    "\"voor q groter dan 5\"",
+    "\"alleen bij q = 5\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Lees uit de formule de beginwaarde en de richtingscoëfficiënt of de nulpunten en de top, controleer met een tabel of grafiek en vertaal het antwoord terug naar de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de bergparabool is boven de x-as tussen de nulpunten.",
+    "Koos je \"\"voor q kleiner dan 2\"\"? Dan neem je het stuk vóór het eerste nulpunt, waar de winst nog negatief is, dus tussen 2 en 8.",
+    "Koos je \"\"voor q groter dan 5\"\"? Dan denk je dat de winst positief blijft na de top. Na q = 8 wordt de winst weer negatief, dus tussen 2 en 8.",
+    "Koos je \"\"alleen bij q = 5\"\"? Dan neem je alleen de top. Rondom de top is de winst ook positief, dus tussen 2 en 8. Controleer je stap: de juiste uitkomst is tussen q = 2 en q = 8."
+   ],
+   "uh": "Tussen welke producties is de winst positief?",
+   "ctx": "De winst in duizenden euro's van een bedrijf is W(q) = −q² + 10q − 16 bij een productie van q honderd stuks. Een leerling zoekt de break-evenpunten en de maximale winst."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een autoverhuurder rekent K = 30 + 0,20d euro voor een rit van d kilometer. Een leerling berekent de kosten bij 150 kilometer en legt uit wat 30 en 0,20 betekenen. Hij noteert zijn antwoord met eenheid.",
+   "v": "Bereken de kosten bij 150 km en leg uit wat 0,20 betekent.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "K(150) = 30 + 0,20 · 150 (1p). K = €60 (1p). 0,20 zijn de kosten per kilometer in euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tabel toont een lineair verband: bij x = 0 is y = 4, bij x = 3 is y = 13 en bij x = 6 is y = 22. Een leerling bepaalt de richtingscoëfficiënt, de beginwaarde en de formule en controleert met x = 6.",
+   "v": "Bepaal de formule van het verband.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Rc = (13 − 4) : 3 = 3 (1p). Beginwaarde 4 (1p). y = 3x + 4 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is f(x) = x² − 8x + 12. Een leerling bepaalt de nulpunten, de symmetrieas en de top van de grafiek en schrijft zijn berekening stap voor stap op. Hij controleert met een tabel.",
+   "v": "Bepaal de nulpunten en de top.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(x − 2)(x − 6) = 0 geeft x = 2 en x = 6 (1p). Symmetrieas x = 4 (1p). f(4) = 16 − 32 + 12 = −4, dus top (4, −4) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De hoogte van een bal in meter na t seconden is h(t) = −5t² + 10t. Een leerling bepaalt wanneer de bal de grond raakt en wat de grootste hoogte is. Hij schrijft zijn antwoord met eenheid op.",
+   "v": "Bepaal wanneer de bal landt en de grootste hoogte.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "−5t(t − 2) = 0 geeft t = 0 of t = 2 (1p). De bal landt na 2 seconden en de top ligt bij t = 1 (1p). h(1) = 5, dus 5 meter (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Twee lijnen zijn gegeven: y = 3x − 2 en y = −2x + 8. Een leerling bepaalt het snijpunt algebraïsch en controleert het in beide formules. Hij noteert de coördinaten van het snijpunt.",
+   "v": "Bepaal het snijpunt van de twee lijnen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "3x − 2 = −2x + 8 geeft 5x = 10 (1p). x = 2 (1p). y = 4, dus het snijpunt is (2, 4) (1p)."
+  }
+ ]
+}
