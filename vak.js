@@ -531,9 +531,10 @@ const UITLEG_VIDEOS = {
 function initSamInteractive(container, d) {
   // 1. Collapsible sam-head sections
   const samEl = container.querySelector('.sam');
-  try{ if(samEl&&typeof samMooi==='function')samMooi(samEl); }catch(e){}
+  try{ if(samEl&&typeof samMooi==='function')samMooi(samEl,{leesKey:`slagio_read_${(typeof ST!=='undefined'&&ST.vak)?ST.vak.id:'x'}_${d.id||'x'}`}); }catch(e){}
   if (samEl) {
-    samEl.querySelectorAll('.sam-head').forEach(h => {
+    // Nieuwe opmaak (sam-mooi.js): koppen klappen niet meer in; je springt via de inhoud en vinkt af.
+    if (!samEl.classList.contains('sam-v2')) samEl.querySelectorAll('.sam-head').forEach(h => {
       h.addEventListener('click', () => {
         const collapsed = h.classList.toggle('sh-collapsed');
         // toggle ALL siblings until next sam-head (ul, tip, warn, check, onthoud, etc.)
@@ -554,8 +555,8 @@ function initSamInteractive(container, d) {
       });
     });
 
-    // 1b. Leesvoortgang - progress bar + per-sectie vinkje
-    {
+    // 1b. Leesvoortgang - progress bar + per-sectie vinkje (alleen als sam-mooi.js het niet al doet)
+    if (samEl.dataset.lees !== '1') {
       const vakId = (typeof ST!=='undefined'&&ST.vak)?ST.vak.id:'x';
       const domId = d.id||'x';
       const key = `slagio_read_${vakId}_${domId}`;
@@ -611,7 +612,7 @@ function initSamInteractive(container, d) {
         const ci = sh.findIndex(s=>s.i===q.c);
         const ck = document.createElement('div');
         ck.className = 'sam-check';
-        ck.innerHTML = `<div class="sam-check-label">✓ Check je begrip</div><div class="sam-check-q">${q.v}</div><div class="sam-check-opts">${sh.map((s,i)=>`<button class="sam-check-opt" data-i="${i}">${s.t}</button>`).join('')}</div>`;
+        ck.innerHTML = `<div class="sam-check-label">Check je begrip</div><div class="sam-check-q">${q.v}</div><div class="sam-check-opts">${sh.map((s,i)=>`<button class="sam-check-opt" data-i="${i}">${s.t}</button>`).join('')}</div>`;
         last.insertAdjacentElement('afterend', ck);
         added++;
         ck.querySelectorAll('.sam-check-opt').forEach(btn => {
@@ -626,7 +627,7 @@ function initSamInteractive(container, d) {
             // Slimme, keuze-specifieke uitleg (zelfde als de hoofd-quiz). sh[i].i = originele optie-index.
             const chosenOrig = sh[i] ? sh[i].i : q.c;
             const smart = (typeof fbChoiceHTML === 'function') ? fbChoiceHTML(q, chosenOrig) : '';
-            if (smart) fb.innerHTML = `<div class="sam-check-head">${ok?'✓ Goed!':'✗ Niet helemaal'}</div>${smart}`;
+            if (smart) fb.innerHTML = `<div class="sam-check-head">${ok?'Goed':'Niet helemaal'}</div>${smart}`;
             else fb.textContent = ok ? '✓ Goed!' : `✗ ${(q.u||'').split('.')[0]||'Niet helemaal'}.`;
             ck.querySelector('.sam-check-opts').after(fb);
           });

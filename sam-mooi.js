@@ -151,36 +151,122 @@
   }
 
   // ── Structuur ──
-  function tekstVan(el){var k=el.cloneNode(true);k.querySelectorAll('.sam-ch-n,.sam-head-ck,button').forEach(function(x){x.remove();});return k.textContent.replace(/\s+/g,' ').trim();}
+  function tekstVan(el){var k=el.cloneNode(true);k.querySelectorAll('.sam-ch-n,.sam-head-n,.sam-head-ck,.sam-vink,button').forEach(function(x){x.remove();});return k.textContent.replace(/\s+/g,' ').trim();}
+  var MINDER=function(){try{return matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){return false;}};
+  var VINK='<svg viewBox="0 0 24 24" aria-hidden="true"><path class="sam-vink-p" d="M6.5 12.5l3.6 3.6 7.4-8"/></svg>';
 
-  function inhoud(sam){
-    if(sam.querySelector('.sam-inhoud'))return;
-    var delen=[].slice.call(sam.querySelectorAll('.sam-chapter>.sam-ch-title,.sam-head'));
-    if(delen.length<3)return;
-    var woorden=(sam.textContent||'').split(/\s+/).length;
-    var min=Math.max(1,Math.round(woorden/180));
-    var nFig=sam.querySelectorAll('.sam-figure').length;
-    var nav=document.createElement('nav');nav.className='sam-inhoud';nav.setAttribute('aria-label','Inhoud van deze samenvatting');
-    var kop='<div class="sam-inhoud-kop"><span>In deze samenvatting</span><span class="sam-inhoud-meta">'+delen.length+' onderdelen · '+(nFig?nFig+(nFig===1?' figuur':' figuren')+' · ':'')+'± '+min+' min lezen</span></div>';
-    nav.innerHTML=kop+'<ol></ol>';
-    var ol=nav.querySelector('ol');
-    delen.forEach(function(d,i){
-      var li=document.createElement('li');var b=document.createElement('button');b.type='button';
-      b.innerHTML='<span class="sam-inhoud-n">'+(i+1)+'</span><span class="sam-inhoud-t"></span>';
-      b.querySelector('.sam-inhoud-t').textContent=tekstVan(d);
-      b.addEventListener('click',function(){
-        var doel=d.classList.contains('sam-ch-title')?d.parentNode:d;
-        if(d.classList.contains('sh-collapsed'))d.click();
-        try{doel.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});}catch(e){doel.scrollIntoView();}
-        doel.classList.remove('sam-flits');void doel.offsetWidth;doel.classList.add('sam-flits');
-        try{if(typeof trackEvent==='function')trackEvent('sam_inhoud',{n:i+1});}catch(e){}
-      });
-      li.appendChild(b);ol.appendChild(li);
-      // Nummer bij een sam-head zodat de inhoud en de kop bij elkaar horen.
-      if(d.classList.contains('sam-head')&&!d.querySelector('.sam-head-n')){var n=document.createElement('span');n.className='sam-head-n';n.textContent=i+1;d.insertBefore(n,d.firstChild);}
+  // Emoji's weg uit de lopende tekst (✍ ✅ enz.); pijlen en wiskundige tekens blijven.
+  function zonderEmoji(sam){
+    var re=/(?:[☀-➿⭐⬆⬇⬅➡⤴⤵]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|\uD83E[\uDC00-\uDFFF])️?\s?/g;
+    var houd=/[←-⇿∀-⋿✓✗×]/; // pijlen, wiskunde, ✓ ✗ ×
+    var w=document.createTreeWalker(sam,NodeFilter.SHOW_TEXT,null),n,lijst=[];
+    while((n=w.nextNode())){if(n.parentNode&&n.parentNode.closest&&n.parentNode.closest('svg'))continue;lijst.push(n);}
+    lijst.forEach(function(t){var v=t.nodeValue;if(!re.test(v))return;re.lastIndex=0;
+      t.nodeValue=v.replace(re,function(m){return houd.test(m)?m:'';}).replace(/^\s+/,t.previousSibling?' ':'');});
+  }
+
+  // Onderdelen: een sam-chapter, of een sam-head met alles tot de volgende kop.
+  function onderdelen(sam){
+    var koppen=[].slice.call(sam.querySelectorAll(':scope>.sam-chapter>.sam-ch-title,:scope>.sam-head,:scope>.sam-chapter>.sam-head'));
+    return koppen.map(function(k,i){
+      var o={kop:k,titel:tekstVan(k),nr:i+1};
+      if(k.classList.contains('sam-ch-title')){o.blok=k.parentNode;o.eind=null;}
+      else{o.blok=k;var s=k.nextElementSibling;while(s&&!s.classList.contains('sam-head')&&!s.classList.contains('sam-chapter')&&!s.classList.contains('sam-recap'))s=s.nextElementSibling;o.eind=s;}
+      return o;
     });
+  }
+
+  function opslag(key){
+    var lees=function(){try{return new Set(JSON.parse(localStorage.getItem(key)||'[]'));}catch(e){return new Set();}};
+    return{lees:lees,zet:function(set){try{localStorage.setItem(key,JSON.stringify([].slice.call(set)));}catch(e){}}};
+  }
+
+  function voortgang(sam,delen,o){
+    var key=(o&&o.leesKey)||('slagio_read_pagina_'+location.pathname);
+    var st=opslag(key),gelezen=st.lees();
+    var woorden=(sam.textContent||'').split(/\s+/).length,min=Math.max(1,Math.round(woorden/180));
+    var nFig=sam.querySelectorAll('.sam-figure').length;
+
+    // ── Donkere kop: in het kort + voortgang + onderdelen ──
     var intro=sam.querySelector(':scope>.sam-intro');
-    if(intro)intro.after(nav);else sam.insertBefore(nav,sam.firstChild);
+    var kop=document.createElement('section');kop.className='sam-kop';
+    kop.innerHTML='<div class="sam-kop-meta"><span>'+delen.length+' onderdelen</span>'+(nFig?'<span>'+nFig+(nFig===1?' figuur':' figuren')+'</span>':'')+'<span>± '+min+' min</span></div>'+
+      '<div class="sam-kop-bar" role="progressbar" aria-valuemin="0" aria-valuemax="'+delen.length+'"><span class="sam-kop-vul"></span></div>'+
+      '<div class="sam-kop-stand"><span class="sam-kop-tel"></span><span class="sam-kop-klaar"></span></div>'+
+      '<ol class="sam-kop-lijst"></ol>';
+    if(intro){intro.classList.add('sam-kop-intro');kop.insertBefore(intro,kop.firstChild);}
+    sam.insertBefore(kop,sam.firstChild);
+    var lijst=kop.querySelector('.sam-kop-lijst');
+
+    function spring(d){
+      if(d.kop.classList.contains('sh-collapsed'))d.kop.click();
+      var doel=d.blok;try{doel.scrollIntoView({behavior:MINDER()?'auto':'smooth',block:'start'});}catch(e){doel.scrollIntoView();}
+    }
+
+    delen.forEach(function(d,i){
+      // rij in de kop
+      var li=document.createElement('li');var b=document.createElement('button');b.type='button';b.className='sam-kop-rij';
+      b.innerHTML='<span class="sam-kop-n"><span class="sam-kop-nr">'+d.nr+'</span>'+VINK+'</span><span class="sam-kop-t"></span>';
+      b.querySelector('.sam-kop-t').textContent=d.titel;
+      b.addEventListener('click',function(){spring(d);try{if(typeof trackEvent==='function')trackEvent('sam_inhoud',{n:d.nr});}catch(e){}});
+      li.appendChild(b);lijst.appendChild(li);d.rij=b;
+
+      // één nummering: hoofdstuknummers uit de inhoud volgen de volgorde van de onderdelen
+      var chn=d.kop.querySelector('.sam-ch-n');if(chn)chn.textContent=d.nr;
+      // nummer in de kantlijn bij een sam-head
+      if(d.kop.classList.contains('sam-head')&&!d.kop.querySelector('.sam-head-n')){var n=document.createElement('span');n.className='sam-head-n';n.textContent=d.nr;d.kop.insertBefore(n,d.kop.firstChild);}
+
+      // vinkje rechts in de kop
+      var v=document.createElement('button');v.type='button';v.className='sam-vink';v.setAttribute('aria-label','Markeer '+d.titel+' als gelezen');
+      v.innerHTML=VINK;v.addEventListener('click',function(e){e.stopPropagation();wissel(d,true);});
+      d.kop.appendChild(v);d.vink=v;
+
+      // "Klaar met dit deel" onderaan het onderdeel
+      var k=document.createElement('button');k.type='button';k.className='sam-klaar';
+      k.innerHTML='<span class="sam-klaar-c">'+VINK+'</span><span class="sam-klaar-t">Gelezen</span><span class="sam-klaar-door"></span>';
+      k.addEventListener('click',function(){
+        var was=gelezen.has(d.titel);wissel(d,true);
+        if(!was&&delen[i+1]){setTimeout(function(){spring(delen[i+1]);},MINDER()?0:520);}
+      });
+      if(d.eind===null)d.blok.appendChild(k);else if(d.eind)sam.insertBefore(k,d.eind);else{var rc=sam.querySelector(':scope>.sam-recap');rc?sam.insertBefore(k,rc):sam.appendChild(k);}
+      d.klaar=k;
+    });
+
+    function teken(d,feest){
+      var aan=gelezen.has(d.titel);
+      [d.vink,d.klaar,d.rij].forEach(function(el){if(!el)return;el.classList.toggle('aan',aan);if(feest&&aan){el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop');}});
+      d.vink.setAttribute('aria-pressed',aan?'true':'false');
+      var volgende=delen[d.nr];
+      d.klaar.querySelector('.sam-klaar-t').textContent=aan?'Gelezen':'Klaar met dit deel';
+      d.klaar.querySelector('.sam-klaar-door').textContent=aan&&volgende?'Verder: '+volgende.titel:'';
+    }
+    function stand(feest){
+      var n=delen.filter(function(d){return gelezen.has(d.titel);}).length,tot=delen.length;
+      kop.querySelector('.sam-kop-vul').style.width=(tot?n/tot*100:0)+'%';
+      kop.querySelector('.sam-kop-bar').setAttribute('aria-valuenow',n);
+      kop.querySelector('.sam-kop-tel').textContent=n===tot?'Alles gelezen':n+' van '+tot+' gelezen';
+      var klaar=n===tot&&tot>0;kop.classList.toggle('af',klaar);sam.classList.toggle('sam-af',klaar);
+      kop.querySelector('.sam-kop-klaar').textContent=klaar?'Tijd om te oefenen':(n?'Nog '+(tot-n)+' te gaan':'Vink af wat je gelezen hebt');
+      if(feest&&klaar)afgerond();
+    }
+    function afgerond(){
+      var a=sam.querySelector('.sam-af-kaart');if(a)return;
+      a=document.createElement('div');a.className='sam-af-kaart';
+      var cta=document.querySelector('.sc.on .sam-cta-btn');
+      a.innerHTML='<span class="sam-af-c">'+VINK+'</span><div><div class="sam-af-t">Alles gelezen</div><div class="sam-af-s">Zet het vast met een paar vragen.</div></div>'+(cta?'<button type="button" class="sam-af-knop">Oefen dit</button>':'');
+      var b=a.querySelector('.sam-af-knop');if(b)b.addEventListener('click',function(){cta.click();});
+      sam.appendChild(a);
+      try{a.scrollIntoView({behavior:MINDER()?'auto':'smooth',block:'nearest'});}catch(e){}
+    }
+    function wissel(d,feest){
+      if(gelezen.has(d.titel))gelezen.delete(d.titel);else{gelezen.add(d.titel);
+        try{if(navigator.vibrate)navigator.vibrate(12);}catch(e){}
+        try{if(typeof trackEvent==='function')trackEvent('sam_gelezen',{n:d.nr,totaal:delen.length});}catch(e){}
+      }
+      st.zet(gelezen);teken(d,feest&&gelezen.has(d.titel));stand(feest);
+    }
+    delen.forEach(function(d){teken(d,false);});stand(false);
+    sam.dataset.lees='1';
   }
 
   function opEenRij(sam){
@@ -190,7 +276,6 @@
       if(s&&s.tagName==='STRONG'&&/^\s*onthoud\b/i.test(s.textContent))s.remove();
       return k.innerHTML.replace(/^\s*[:.\-–]\s*/,'').trim();
     }).filter(function(h){return h&&h.replace(/<[^>]+>/g,'').trim().length>12;});
-    // Formules en definities horen er ook bij: die moet je paraat hebben.
     sam.querySelectorAll('.sam-formula-box').forEach(function(b){
       var l=b.querySelector('.sam-formula-label'),e=b.querySelector('.sam-formula-eq');
       if(e)punten.push((l?'<strong>'+l.textContent.trim()+'</strong>':'')+'<span class="sam-recap-f">'+e.innerHTML+'</span>');
@@ -201,24 +286,26 @@
     });
     if(punten.length<3)return;
     var box=document.createElement('div');box.className='sam-recap';
-    box.innerHTML='<div class="sam-recap-kop">Alles op een rij</div><div class="sam-recap-sub">De kern van deze samenvatting. Ken je dit allemaal? Dan zit de basis erin.</div><ol>'+punten.slice(0,12).map(function(p){return '<li>'+p+'</li>';}).join('')+'</ol>';
+    box.innerHTML='<div class="sam-recap-kop">Alles op een rij</div><div class="sam-recap-sub">Ken je dit allemaal? Dan zit de basis erin.</div><ol>'+punten.slice(0,12).map(function(p){return '<li>'+p+'</li>';}).join('')+'</ol>';
     sam.appendChild(box);
   }
 
-  window.samMooi=function(root){
+  window.samMooi=function(root,o){
     try{
       var sams=root&&root.classList&&root.classList.contains('sam')?[root]:[].slice.call((root||document).querySelectorAll('.sam'));
       sams.forEach(function(sam){
-        if(sam.dataset.mooi||!sam.firstElementChild)return;sam.dataset.mooi='1';
+        if(sam.dataset.mooi||!sam.firstElementChild)return;sam.dataset.mooi='1';sam.classList.add('sam-v2');
         var br=sam.clientWidth||Math.min(window.innerWidth-32,720);
+        zonderEmoji(sam);
         sam.querySelectorAll('.sam-figure').forEach(function(fig){
           var svg=fig.querySelector(':scope>svg');
           kleurwoorden(fig,svg);
           if(!fig.classList.contains('sam-frag')&&!fig.classList.contains('sam-clip'))figuurKop(fig);
           if(svg)svgMooi(svg,br-24);
         });
-        inhoud(sam);
         opEenRij(sam);
+        var delen=onderdelen(sam);
+        if(delen.length>=2)voortgang(sam,delen,o);
       });
     }catch(e){try{console.warn('samMooi',e);}catch(_){}}
   };

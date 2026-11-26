@@ -52,6 +52,16 @@ Volgorde bij twijfel: jouw woorden in een gesprek → dit document → `CLAUDE.m
 - Vonk is het maatje en de stem van Slagio. **Eén Vonk tegelijk in beeld.**
 - Geen stockfoto's en geen door AI gemaakte afbeeldingen van mensen.
 
+## 5b. Samenvattingen
+
+- **Strak en duidelijk**: één kantlijn met de nummers van de onderdelen, alle inhoud daaronder
+  uitgelijnd. Vlakken (onthoud, tip, formule, voorbeeld) zijn een zacht vlak met een klein label,
+  **geen gekleurde lijn opzij**. Formules in de gewone letter (Inter), niet in een typemachineletter.
+- Bovenaan de **donkere menukop** met "In het kort", de voortgang en de onderdelen.
+- **Weinig emoji's** in leerstof en uitleg. Beloning is **subtiel**: afvinken wat je gelezen hebt,
+  met een vinkje dat zich tekent, een korte veer en een balk die voller loopt. Alles gelezen geeft
+  één rustige kaart met "Oefen dit".
+
 ## 6. Beweging
 
 - Kort en met een reden: 150–350 ms voor knoppen en panelen, veer voor beloningen.
@@ -77,4 +87,4 @@ en het voortgangsrapport hebben een eigen karakter. Niet gelijktrekken zonder ov
 - **Jarvis** draait elke week `scripts/social/schermen.mjs`, bekijkt de screenshots tegen
   dit document en zet afwijkingen als opdracht in de backlog.
 
-*Laatst bijgewerkt: 22 okt 2026 (eerste versie, samengesteld uit de huidige app).*
+*Laatst bijgewerkt: 26 nov 2026 (samenvattingen, §5b).*
