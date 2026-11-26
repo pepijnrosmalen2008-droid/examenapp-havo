@@ -531,7 +531,7 @@ const UITLEG_VIDEOS = {
 function initSamInteractive(container, d) {
   // 1. Collapsible sam-head sections
   const samEl = container.querySelector('.sam');
-  try{ if(samEl&&typeof samMooi==='function')samMooi(samEl,{leesKey:`slagio_read_${(typeof ST!=='undefined'&&ST.vak)?ST.vak.id:'x'}_${d.id||'x'}`}); }catch(e){}
+  try{ if(samEl&&typeof samMooi==='function')samMooi(samEl,{leesKey:`slagio_read_${(typeof ST!=='undefined'&&ST.vak)?ST.vak.id:'x'}_${d.id||'x'}`,samKey:(typeof APP_LEVEL!=='undefined'&&typeof ST!=='undefined'&&ST.vak)?APP_LEVEL+'_'+ST.vak.id+'_'+d.id:''}); }catch(e){}
   if (samEl) {
     // Nieuwe opmaak (sam-mooi.js): koppen klappen niet meer in; je springt via de inhoud en vinkt af.
     if (!samEl.classList.contains('sam-v2')) samEl.querySelectorAll('.sam-head').forEach(h => {

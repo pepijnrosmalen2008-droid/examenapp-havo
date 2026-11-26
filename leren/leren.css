@@ -462,6 +462,25 @@ html.dark{--kn-glas:rgba(44,48,62,.62);--kn-rand:rgba(255,255,255,.09);--kn-scha
 .dark .sam-af-kaart{box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
 .dark .sam-kop{box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),0 14px 30px -18px rgba(var(--or-rgb),.7)}
 .sam-v2 .sam-clip{border:none!important;border-radius:18px;background:var(--zacht)}
+.sam-v2 .sam-f-regels{display:flex;flex-direction:column;gap:6px;margin:4px 0 2px}
+.sam-v2 .sam-f-regel{font-family:var(--font);font-weight:650;font-size:19px;line-height:1.35;letter-spacing:-.01em;color:var(--dk);font-variant-numeric:tabular-nums;overflow-x:auto;overflow-y:hidden;padding:8px 12px;background:var(--s);border-radius:10px}
+.sam-v2 .sam-f-regel sub,.sam-v2 .sam-f-leg sub{font-size:.68em}
+.sam-v2 .sam-f-leg{display:grid;grid-template-columns:minmax(28px,max-content) 1fr auto;column-gap:14px;margin:12px 0 4px;font-size:14px;line-height:1.4}
+.sam-v2 .sam-f-rij{display:contents}
+.sam-v2 .sam-f-leg dt,.sam-v2 .sam-f-leg dd{margin:0;padding:7px 0;border-top:1px solid color-mix(in srgb,var(--bo) 80%,transparent)}
+.sam-v2 .sam-f-rij:first-child dt,.sam-v2 .sam-f-rij:first-child dd{border-top:none}
+.sam-v2 .sam-f-leg dt{font-weight:750;color:var(--or);max-width:9.5em;font-variant-numeric:tabular-nums}
+.sam-v2 .sam-f-leg dd{color:var(--dk)}
+.sam-v2 .sam-f-eenh-c{text-align:right}
+.sam-v2 .sam-f-eenh{flex-shrink:0;font-size:12px;font-weight:650;color:var(--mu);background:var(--s);border-radius:6px;padding:1px 7px;white-space:nowrap}
+.sam-v2 .sam-f-leg-aan .sam-formula-note{margin-top:8px}
+.sam-v2 .sam-f-stapel{grid-template-columns:1fr auto}
+.sam-v2 .sam-f-stapel .sam-f-rij{display:grid;grid-column:1/-1;grid-template-columns:subgrid;border-top:1px solid color-mix(in srgb,var(--bo) 80%,transparent);padding:8px 0}
+.sam-v2 .sam-f-stapel .sam-f-rij:first-child{border-top:none}
+.sam-v2 .sam-f-stapel dt,.sam-v2 .sam-f-stapel dd{border-top:none!important;padding:0}
+.sam-v2 .sam-f-stapel dt{grid-column:1;max-width:none}
+.sam-v2 .sam-f-stapel .sam-f-eenh-c{grid-column:2;grid-row:1}
+.sam-v2 .sam-f-stapel .sam-f-bet{grid-column:1/-1;color:var(--fig-tekst2);margin-top:1px}
 
 :root{--pg-bg:#f6f7fb;--pg-kaart:#fff;--pg-tekst:#141a26;--pg-zacht:#5b6476;--pg-lijn:#e3e6ee;--pg-accent:#2563eb;--pg-goed:#15803d;--pg-fout:#b42318}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--pg-bg:#0f1420;--pg-kaart:#171e2c;--pg-tekst:#e8ecf3;--pg-zacht:#9aa4b6;--pg-lijn:#283043;--pg-accent:#6ea0ff;--pg-goed:#4ade80;--pg-fout:#f87171}}

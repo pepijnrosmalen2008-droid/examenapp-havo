@@ -150,6 +150,39 @@
     return true;
   }
 
+
+  // ── Formules: onder elkaar, met een legenda per letter (data in sam-formules.js) ──
+  function schoonLabel(t){return String(t||'').replace(/\u00AD/g,'').replace(/\s+/g,' ').trim();}
+  function zoekLegenda(key,label){
+    if(typeof SAM_FORMULES==='undefined')return null;
+    if(key&&SAM_FORMULES[key+'|'+label])return SAM_FORMULES[key+'|'+label];
+    var hit=null,n=0;for(var k in SAM_FORMULES){if(k.slice(k.indexOf('|')+1)===label){hit=SAM_FORMULES[k];n++;}}
+    return n===1?hit:null;
+  }
+  function formulesMooi(sam,key){
+    sam.querySelectorAll('.sam-formula-box').forEach(function(b){
+      if(b.dataset.f)return;b.dataset.f='1';
+      var lab=b.querySelector('.sam-formula-label'),eq=b.querySelector('.sam-formula-eq'),noot=b.querySelector('.sam-formula-note');
+      if(!eq)return;
+      var leg=zoekLegenda(key,schoonLabel(lab&&lab.textContent));
+      var regels=leg&&leg.r?leg.r.map(function(r){return r.replace(/&/g,'&amp;').replace(/</g,'&lt;');}):eq.innerHTML.split(/<br\s*\/?>/i).map(function(x){return x.trim();}).filter(Boolean);
+      var box=document.createElement('div');box.className='sam-f-regels';
+      regels.forEach(function(r){var d=document.createElement('div');d.className='sam-f-regel';d.innerHTML=r.replace(/(&nbsp;|\s){2,}/g,' ');box.appendChild(d);});
+      eq.replaceWith(box);
+      if(leg&&leg.l&&leg.l.length){
+        var lang=leg.l.some(function(x){return String(x[0]).replace(/<[^>]+>/g,'').length>7;});
+        var dl=document.createElement('dl');dl.className='sam-f-leg'+(lang?' sam-f-stapel':'');
+        leg.l.forEach(function(x){var rij=document.createElement('div');rij.className='sam-f-rij';
+          rij.innerHTML='<dt>'+x[0]+'</dt><dd class="sam-f-bet"></dd><dd class="sam-f-eenh-c">'+(x[2]&&x[2]!=='geen eenheid'?'<span class="sam-f-eenh"></span>':'')+'</dd>';
+          rij.querySelector('.sam-f-bet').textContent=x[1];var eh=rij.querySelector('.sam-f-eenh');if(eh)eh.textContent=x[2];
+          dl.appendChild(rij);});
+        box.after(dl);
+        if(leg.n!=null){if(noot){if(leg.n)noot.innerHTML=leg.n;else noot.remove();}else if(leg.n){var nn=document.createElement('div');nn.className='sam-formula-note';nn.innerHTML=leg.n;dl.after(nn);}}
+        b.classList.add('sam-f-leg-aan');
+      }
+    });
+  }
+
   // ── Structuur ──
   function tekstVan(el){var k=el.cloneNode(true);k.querySelectorAll('.sam-ch-n,.sam-head-n,.sam-head-ck,.sam-vink,button').forEach(function(x){x.remove();});return k.textContent.replace(/\s+/g,' ').trim();}
   var MINDER=function(){try{return matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){return false;}};
@@ -277,8 +310,8 @@
       return k.innerHTML.replace(/^\s*[:.\-–]\s*/,'').trim();
     }).filter(function(h){return h&&h.replace(/<[^>]+>/g,'').trim().length>12;});
     sam.querySelectorAll('.sam-formula-box').forEach(function(b){
-      var l=b.querySelector('.sam-formula-label'),e=b.querySelector('.sam-formula-eq');
-      if(e)punten.push((l?'<strong>'+l.textContent.trim()+'</strong>':'')+'<span class="sam-recap-f">'+e.innerHTML+'</span>');
+      var l=b.querySelector('.sam-formula-label'),e=b.querySelector('.sam-formula-eq,.sam-f-regels');
+      if(e)punten.push((l?'<strong>'+l.textContent.trim()+'</strong>':'')+'<span class="sam-recap-f">'+(e.classList.contains('sam-f-regels')?[].map.call(e.children,function(x){return x.innerHTML;}).join('<br>'):e.innerHTML)+'</span>');
     });
     sam.querySelectorAll('.sam-definitie').forEach(function(b){
       var t=b.querySelector('.sam-definitie-term'),d=b.querySelector('.sam-definitie-body');
@@ -303,6 +336,7 @@
           if(!fig.classList.contains('sam-frag')&&!fig.classList.contains('sam-clip'))figuurKop(fig);
           if(svg)svgMooi(svg,br-24);
         });
+        formulesMooi(sam,o&&o.samKey);
         opEenRij(sam);
         var delen=onderdelen(sam);
         if(delen.length>=2)voortgang(sam,delen,o);
