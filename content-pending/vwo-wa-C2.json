@@ -1,0 +1,682 @@
+{
+ "id": "C2",
+ "lo": "wa.C.2",
+ "gs": 2,
+ "naam": "Machtsfuncties en (omgekeerd) evenredige verbanden",
+ "beschrijving": "Je herkent recht evenredige, omgekeerd evenredige en machtsverbanden in tabel, grafiek en formule, stelt de formule op en interpreteert de evenredigheidsconstante in een context.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Recht evenredig",
+  "Omgekeerd evenredig",
+  "Machtsverbanden",
+  "Een tabel onderzoeken",
+  "Interpreteren in de context"
+ ],
+ "sam": "Onderzoek een tabel met y : x (recht evenredig), x · y (omgekeerd evenredig) of y : x² (machtsverband). Stel de formule op, controleer met een tweede getal en benoem de constante met eenheid.",
+ "begrippen": [
+  {
+   "t": "Recht evenredig",
+   "d": "y = ax: het quotiënt y : x is constant en bij x verdubbelen verdubbelt y."
+  },
+  {
+   "t": "Omgekeerd evenredig",
+   "d": "y = a/x: het product x · y is constant en bij x verdubbelen halveert y."
+  },
+  {
+   "t": "Machtsverband",
+   "d": "y = ax^n, zoals y = 3x²: y is evenredig met een macht van x."
+  },
+  {
+   "t": "Evenredigheidsconstante",
+   "d": "Het getal a in y = ax of y = a/x."
+  },
+  {
+   "t": "Verdubbelen van x",
+   "d": "Bij y = ax² wordt y vier keer zo groot, bij y = a/x de helft."
+  },
+  {
+   "t": "Asymptoot",
+   "d": "Een lijn die de grafiek benadert zonder te raken, bij y = a/x de assen."
+  },
+  {
+   "t": "Quotiënt y : x",
+   "d": "Constant bij een recht evenredig verband."
+  },
+  {
+   "t": "Product x · y",
+   "d": "Constant bij een omgekeerd evenredig verband."
+  },
+  {
+   "t": "Quotiënt y : x²",
+   "d": "Constant bij een machtsverband met n = 2."
+  },
+  {
+   "t": "Tabel onderzoeken",
+   "d": "Het soort verband bepalen door quotiënten en producten te berekenen."
+  },
+  {
+   "t": "Formule opstellen",
+   "d": "Uit de constante de formule opschrijven: y = 6/x of y = 2x²."
+  },
+  {
+   "t": "Interpreteren",
+   "d": "De constante en de eenheid in de context benoemen, zoals uurloon."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Je verdubbelt x in het verband y = 5x. Welke verandering zie je in y?",
+   "o": [
+    "\"y halveert\"",
+    "\"y verdubbelt ook\"",
+    "\"y wordt vier keer zo groot\"",
+    "\"y blijft gelijk\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y halveert\"\"? Dan denk je aan een omgekeerd evenredig verband. Bij y = 5x groeien x en y samen, dus y verdubbelt.",
+    "Klopt: bij een recht evenredig verband is y/x constant. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y wordt vier keer zo groot\"\"? Dan denk je aan een kwadraat. Er staat geen x², dus y verdubbelt. Door de stappen goed na te lopen kom je uit op y verdubbelt ook.",
+    "Koos je \"\"y blijft gelijk\"\"? Dan denk je dat y niet verandert. Bij y = 5x hoort een grotere x bij een grotere y, dus y verdubbelt."
+   ],
+   "uh": "Je verdubbelt x in het verband y = 5x. Welke verandering zie je in y?"
+  },
+  {
+   "v": "In y = 12/x neemt x toe tot het dubbele. Wat doet y dan?",
+   "o": [
+    "\"y verdubbelt\"",
+    "\"y wordt vier keer zo klein\"",
+    "\"y blijft gelijk\"",
+    "\"y halveert\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y verdubbelt\"\"? Dan denk je aan een recht evenredig verband. Bij y = 12/x is het omgekeerd, dus y halveert. Het goede antwoord is y halveert.",
+    "Koos je \"\"y wordt vier keer zo klein\"\"? Dan denk je aan een kwadraat. Er staat geen x², dus y halveert. Door de stappen goed na te lopen kom je uit op y halveert.",
+    "Koos je \"\"y blijft gelijk\"\"? Dan denk je dat y niet verandert. Bij y = 12/x hoort een grotere x bij een kleinere y, dus y halveert.",
+    "Klopt: bij een omgekeerd evenredig verband is x · y constant."
+   ],
+   "uh": "In y = 12/x neemt x toe tot het dubbele. Wat doet y dan?"
+  },
+  {
+   "v": "Waaraan herken je een omgekeerd evenredig verband in een tabel?",
+   "o": [
+    "\"het product x · y is voor alle paren gelijk\"",
+    "\"het quotiënt y : x is voor alle paren gelijk\"",
+    "\"de som x + y is voor alle paren gelijk\"",
+    "\"het verschil y − x is voor alle paren gelijk\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x · y = a. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"het quotiënt y : x is voor alle paren gelijk\"\"? Dan verwar je het met recht evenredig. Daar is y : x constant, dus x · y.",
+    "Koos je \"\"de som x + y is voor alle paren gelijk\"\"? Dan denk je dat de som constant blijft. Bij 1 · 6 en 2 · 3 is de som 7 en 5, dus x · y.",
+    "Koos je \"\"het verschil y − x is voor alle paren gelijk\"\"? Dan kijk je naar het verschil tussen y en x. Dat wisselt in zo'n tabel, namelijk 5 en 1, dus het product x · y."
+   ],
+   "uh": "Waaraan herken je een omgekeerd evenredig verband in een tabel?"
+  },
+  {
+   "v": "Waaraan herken je een recht evenredig verband in een tabel?",
+   "o": [
+    "\"het product x · y is voor alle paren gelijk\"",
+    "\"de som x + y is voor alle paren gelijk\"",
+    "\"het quotiënt y : x is voor alle paren gelijk\"",
+    "\"het verschil y − x is voor alle paren gelijk\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het product x · y is voor alle paren gelijk\"\"? Dan verwar je het met omgekeerd evenredig. Daar is x · y constant, dus y : x.",
+    "Koos je \"\"de som x + y is voor alle paren gelijk\"\"? Dan denk je dat de som constant blijft. Bij y = 5x geeft x + y steeds een andere waarde, dus y : x.",
+    "Klopt: y : x = a. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"het verschil y − x is voor alle paren gelijk\"\"? Dan denk je dat het verschil constant is. Bij y = 5x is y − x gelijk aan 4x en dat wisselt, dus y : x."
+   ],
+   "uh": "Waaraan herken je een recht evenredig verband in een tabel?"
+  },
+  {
+   "v": "Bij y = 3x² verdubbelt x. Hoeveel keer zo groot wordt y?",
+   "o": [
+    "\"2 keer (recht evenredig)\"",
+    "\"4 keer\"",
+    "\"8 keer (2³)\"",
+    "\"6 keer (3 · 2)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2 keer (recht evenredig)\"\"? Dan denk je aan een recht evenredig verband. Bij x² wordt y 2² keer zo groot, dus 4 keer.",
+    "Klopt: (2x)² = 4x². Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8 keer (2³)\"\"? Dan kubeer je de factor 2. Het is een kwadraat, dus 4 keer. Door de stappen goed na te lopen kom je uit op 4 keer.",
+    "Koos je \"\"6 keer (3 · 2)\"\"? Dan vermenigvuldig je 3 met 2. De factor is 2², dus 4 keer. Controleer je stap: de juiste uitkomst is 4 keer."
+   ],
+   "uh": "Bij y = 3x² verdubbelt x. Hoeveel keer zo groot wordt y?"
+  },
+  {
+   "v": "Welke asymptoten heeft de grafiek van y = a/x?",
+   "o": [
+    "\"geen asymptoten\"",
+    "\"alleen de y-as als asymptoot\"",
+    "\"de diagonaal y = x als asymptoot\"",
+    "\"de x-as en de y-as\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"geen asymptoten\"\"? Dan denk je dat er geen asymptoten zijn. y = a/x nadert de assen, dus de x-as en de y-as. Het goede antwoord is de x-as en de y-as.",
+    "Koos je \"\"alleen de y-as als asymptoot\"\"? Dan vergeet je de x-as. Bij grote x nadert y tot 0, dus beide assen. Door de stappen goed na te lopen kom je uit op de x-as en de y-as.",
+    "Koos je \"\"de diagonaal y = x als asymptoot\"\"? Dan neem je de diagonaal. De grafiek heeft de assen als asymptoten, dus de x-as en de y-as.",
+    "Klopt: de grafiek komt de assen willekeurig dicht nabij zonder ze te raken."
+   ],
+   "uh": "Welke asymptoten heeft de grafiek van y = a/x?"
+  },
+  {
+   "v": "Hoe noem je een verband van de vorm y = ax²?",
+   "o": [
+    "\"een machtsverband, y is evenredig met x²\"",
+    "\"een recht evenredig verband (y = ax)\"",
+    "\"een omgekeerd evenredig verband (y = a/x)\"",
+    "\"een lineair verband (y = ax + b)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: y is evenredig met een macht van x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"een recht evenredig verband (y = ax)\"\"? Dan denk je aan een rechte lijn door de oorsprong. Hier staat x², dus een machtsverband.",
+    "Koos je \"\"een omgekeerd evenredig verband (y = a/x)\"\"? Dan denk je aan een dalende kromme met asymptoten. Hier staat x², dus een machtsverband.",
+    "Koos je \"\"een lineair verband (y = ax + b)\"\"? Dan denk je aan y = ax + b. Hier staat x², dus een machtsverband. Controleer je stap: de juiste uitkomst is een machtsverband, y is evenredig met x²."
+   ],
+   "uh": "Hoe noem je een verband van de vorm y = ax²?"
+  },
+  {
+   "v": "Hoeveel loon hoort bij 8 uur?",
+   "o": [
+    "\"€20,50\"",
+    "\"€1,56\"",
+    "\"€100\"",
+    "\"€80\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€20,50\"\"? Dan tel je 12,50 en 8 op. Het loon is recht evenredig met de uren, dus €100. Het goede antwoord is €100.",
+    "Koos je \"\"€1,56\"\"? Dan deel je 12,50 door 8. Vermenigvuldig, dus €100. Door de stappen goed na te lopen kom je uit op €100.",
+    "Klopt: 12,50 · 8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€80\"\"? Dan reken je met €10 per uur. Het uurloon is 12,50, dus €100. Controleer je stap: de juiste uitkomst is €100."
+   ],
+   "uh": "Hoeveel loon hoort bij 8 uur?",
+   "ctx": "Een bijbaan betaalt 12,50 euro per uur. Het loon L in euro is recht evenredig met het aantal uren u. Een leerling berekent lonen en controleert of de verhouding L : u constant is."
+  },
+  {
+   "v": "Een leerling werkt 20 uur in de week. Wat verdient hij?",
+   "o": [
+    "\"€32,50\"",
+    "\"€250\"",
+    "\"€2500\"",
+    "\"€125\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€32,50\"\"? Dan tel je 12,50 en 20 op. Het loon is recht evenredig met de uren, dus €250. Het goede antwoord is €250.",
+    "Klopt: 12,50 · 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€2500\"\"? Dan verplaats je de komma verkeerd. 12,50 · 20 = 250, dus €250. Door de stappen goed na te lopen kom je uit op €250.",
+    "Koos je \"\"€125\"\"? Dan neem je 12,50 · 10. Het zijn 20 uur, dus €250. Controleer je stap: de juiste uitkomst is €250."
+   ],
+   "uh": "Een leerling werkt 20 uur in de week. Wat verdient hij?",
+   "ctx": "Een bijbaan betaalt 12,50 euro per uur. Het loon L in euro is recht evenredig met het aantal uren u. Een leerling berekent lonen en controleert of de verhouding L : u constant is."
+  },
+  {
+   "v": "Controleer: welke grootheid is constant bij de gegevens L en u?",
+   "o": [
+    "\"L · u\"",
+    "\"L + u\"",
+    "\"L − u\"",
+    "\"L : u = 12,50\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"L · u\"\"? Dan neem je het product. Bij recht evenredig is het quotiënt constant, dus L : u. Het goede antwoord is L : u = 12,50.",
+    "Koos je \"\"L + u\"\"? Dan neem je de som. Bij recht evenredig is het quotiënt constant, dus L : u. Door de stappen goed na te lopen kom je uit op L : u = 12,50.",
+    "Koos je \"\"L − u\"\"? Dan neem je het verschil. Bij recht evenredig is het quotiënt constant, dus L : u. Controleer je stap: de juiste uitkomst is L : u = 12,50.",
+    "Klopt: dat is het uurloon. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Controleer: welke grootheid is constant bij de gegevens L en u?",
+   "ctx": "Een bijbaan betaalt 12,50 euro per uur. Het loon L in euro is recht evenredig met het aantal uren u. Een leerling berekent lonen en controleert of de verhouding L : u constant is."
+  },
+  {
+   "v": "Wat betekent het getal 12,50 in L = 12,50u?",
+   "o": [
+    "\"het loon per uur in euro\"",
+    "\"het aantal uren dat je werkt\"",
+    "\"het totale loon in euro\"",
+    "\"een vast bedrag per week\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de evenredigheidsconstante is het uurloon. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"het aantal uren dat je werkt\"\"? Dan verwar je 12,50 met u. u is het aantal uren, dus het uurloon. Het goede antwoord is het loon per uur in euro.",
+    "Koos je \"\"het totale loon in euro\"\"? Dan verwar je 12,50 met L. L is het totale loon, dus het uurloon. Door de stappen goed na te lopen kom je uit op het loon per uur in euro.",
+    "Koos je \"\"een vast bedrag per week\"\"? Dan verwar je het met een beginwaarde. Bij recht evenredig is er geen vast bedrag, dus het uurloon."
+   ],
+   "uh": "Wat betekent het getal 12,50 in L = 12,50u?",
+   "ctx": "Een bijbaan betaalt 12,50 euro per uur. Het loon L in euro is recht evenredig met het aantal uren u. Een leerling berekent lonen en controleert of de verhouding L : u constant is."
+  },
+  {
+   "v": "Bereken de reistijd van de reis van 120 km bij 60 km/u.",
+   "o": [
+    "\"180 uur\"",
+    "\"7200 uur\"",
+    "\"2 uur\"",
+    "\"0,5 uur\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"180 uur\"\"? Dan tel je 120 en 60 op. t = 120/v, dus 2 uur. Het goede antwoord is 2 uur.",
+    "Koos je \"\"7200 uur\"\"? Dan vermenigvuldig je 120 en 60. t = 120/v, dus 2 uur. Door de stappen goed na te lopen kom je uit op 2 uur.",
+    "Klopt: 120 : 60. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,5 uur\"\"? Dan deel je 60 door 120. t = 120/v, dus 2 uur. Controleer je stap: de juiste uitkomst is 2 uur."
+   ],
+   "uh": "Bereken de reistijd van de reis van 120 km bij 60 km/u.",
+   "ctx": "Een reis van 120 kilometer duurt t uur bij een gemiddelde snelheid van v km/u. De tijd is omgekeerd evenredig met de snelheid: t = 120/v. Een leerling berekent reistijden en onderzoekt wat er gebeurt als de snelheid verdubbelt."
+  },
+  {
+   "v": "En als de gemiddelde snelheid 80 km/u is, hoe lang is de reistijd dan?",
+   "o": [
+    "\"40 uur\"",
+    "\"1,5 uur\"",
+    "\"9600 uur\"",
+    "\"0,67 uur\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 uur\"\"? Dan trek je 80 af van 120. t = 120/v, dus 1,5 uur. Het goede antwoord is 1,5 uur.",
+    "Klopt: 120 : 80. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"9600 uur\"\"? Dan vermenigvuldig je 120 en 80. t = 120/v, dus 1,5 uur. Door de stappen goed na te lopen kom je uit op 1,5 uur.",
+    "Koos je \"\"0,67 uur\"\"? Dan deel je 80 door 120. t = 120/v, dus 1,5 uur. Controleer je stap: de juiste uitkomst is 1,5 uur."
+   ],
+   "uh": "En als de gemiddelde snelheid 80 km/u is, hoe lang is de reistijd dan?",
+   "ctx": "Een reis van 120 kilometer duurt t uur bij een gemiddelde snelheid van v km/u. De tijd is omgekeerd evenredig met de snelheid: t = 120/v. Een leerling berekent reistijden en onderzoekt wat er gebeurt als de snelheid verdubbelt."
+  },
+  {
+   "v": "Wat gebeurt er met de reistijd als de snelheid verdubbelt?",
+   "o": [
+    "\"de reistijd verdubbelt\"",
+    "\"de reistijd blijft gelijk\"",
+    "\"de reistijd wordt vier keer zo klein\"",
+    "\"de reistijd halveert\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de reistijd verdubbelt\"\"? Dan denk je aan een recht evenredig verband. Hier geldt v · t = 120, dus de tijd halveert.",
+    "Koos je \"\"de reistijd blijft gelijk\"\"? Dan denk je dat de tijd niet verandert. Bij hogere snelheid is de tijd korter, dus de tijd halveert.",
+    "Koos je \"\"de reistijd wordt vier keer zo klein\"\"? Dan denk je aan een kwadraat. Er staat geen kwadraat, dus de tijd halveert.",
+    "Klopt: omgekeerd evenredig, v · t = 120. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat gebeurt er met de reistijd als de snelheid verdubbelt?",
+   "ctx": "Een reis van 120 kilometer duurt t uur bij een gemiddelde snelheid van v km/u. De tijd is omgekeerd evenredig met de snelheid: t = 120/v. Een leerling berekent reistijden en onderzoekt wat er gebeurt als de snelheid verdubbelt."
+  },
+  {
+   "v": "Welke waarde heeft y bij x = 2?",
+   "o": [
+    "\"12\"",
+    "\"36 (3 · 2 in het kwadraat)\"",
+    "\"18 (3 · 2 · 3)\"",
+    "\"6 (3 · 2)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3 · 2² = 12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"36 (3 · 2 in het kwadraat)\"\"? Dan kwadrateer je 3 · 2. Alleen x wordt gekwadrateerd, dus 12. Het goede antwoord is 12.",
+    "Koos je \"\"18 (3 · 2 · 3)\"\"? Dan vermenigvuldig je 3 · 2 · 3. De macht is 2, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"6 (3 · 2)\"\"? Dan reken je 3 · 2. Kwadrateer eerst x, dus 12. Controleer je stap: de juiste uitkomst is 12."
+   ],
+   "uh": "Welke waarde heeft y bij x = 2?",
+   "ctx": "Gegeven is het verband y = 3x². Een leerling berekent functiewaarden en onderzoekt wat er met y gebeurt als x verdubbelt."
+  },
+  {
+   "v": "Bereken y voor x = 4 in hetzelfde verband.",
+   "o": [
+    "\"144\"",
+    "\"24\"",
+    "\"48\"",
+    "\"12\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"144\"\"? Dan kwadrateer je 3 · 4. Alleen x wordt gekwadrateerd, dus 48. Het goede antwoord is 48.",
+    "Koos je \"\"24\"\"? Dan reken je 3 · 8. Het is 4² = 16, dus 48. Door de stappen goed na te lopen kom je uit op 48.",
+    "Klopt: 3 · 4² = 48. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12\"\"? Dan reken je 3 · 4. Kwadrateer eerst x, dus 48. Controleer je stap: de juiste uitkomst is 48."
+   ],
+   "uh": "Bereken y voor x = 4 in hetzelfde verband.",
+   "ctx": "Gegeven is het verband y = 3x². Een leerling berekent functiewaarden en onderzoekt wat er met y gebeurt als x verdubbelt."
+  },
+  {
+   "v": "Hoeveel keer zo groot wordt y als x verdubbelt van 2 naar 4?",
+   "o": [
+    "\"2 keer (recht evenredig)\"",
+    "\"4 keer\"",
+    "\"8 keer (2³)\"",
+    "\"36 keer\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2 keer (recht evenredig)\"\"? Dan denk je aan een recht evenredig verband. Bij x² is de factor 2², dus 4 keer. Het goede antwoord is 4 keer.",
+    "Klopt: 48 : 12 = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8 keer (2³)\"\"? Dan kubeer je de factor 2. Het is een kwadraat, dus 4 keer. Door de stappen goed na te lopen kom je uit op 4 keer.",
+    "Koos je \"\"36 keer\"\"? Dan neem je 48 − 12. Deel 48 door 12, dus 4 keer. Controleer je stap: de juiste uitkomst is 4 keer."
+   ],
+   "uh": "Hoeveel keer zo groot wordt y als x verdubbelt van 2 naar 4?",
+   "ctx": "Gegeven is het verband y = 3x². Een leerling berekent functiewaarden en onderzoekt wat er met y gebeurt als x verdubbelt."
+  },
+  {
+   "v": "Welke grootheid is constant in de tabel van Z4?",
+   "o": [
+    "\"y : x\"",
+    "\"x + y\"",
+    "\"y − x\"",
+    "\"x · y = 6\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y : x\"\"? Dan neem je het quotiënt. Dat is hier niet constant: 6, 1,5 en 0,375, dus x · y. Het goede antwoord is x · y = 6.",
+    "Koos je \"\"x + y\"\"? Dan neem je de som. Die is 7, 5 en 5,5, dus x · y. Door de stappen goed na te lopen kom je uit op x · y = 6.",
+    "Koos je \"\"y − x\"\"? Dan neem je het verschil. Dat is 5, 1 en −2,5, dus x · y. Controleer je stap: de juiste uitkomst is x · y = 6.",
+    "Klopt: 1 · 6 = 2 · 3 = 4 · 1,5 = 6. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke grootheid is constant in de tabel van Z4?",
+   "ctx": "Een tabel toont: bij x = 1 is y = 6, bij x = 2 is y = 3 en bij x = 4 is y = 1,5. Een leerling onderzoekt welk verband erbij hoort en stelt de formule op."
+  },
+  {
+   "v": "Welke formule hoort bij de tabel?",
+   "o": [
+    "\"y = 6/x\"",
+    "\"y = 6x\"",
+    "\"y = x/6\"",
+    "\"y = x + 5\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x · y = 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = 6x\"\"? Dan neem je een recht evenredig verband. Bij y = 6x is y bij x = 2 gelijk aan 12, dus y = 6/x. Het goede antwoord is y = 6/x.",
+    "Koos je \"\"y = x/6\"\"? Dan wissel je teller en noemer. y = 6/x geeft y = 3 bij x = 2, dus y = 6/x. Door de stappen goed na te lopen kom je uit op y = 6/x.",
+    "Koos je \"\"y = x + 5\"\"? Dan neem je een lineair verband. Dat past niet bij 3 en 1,5, dus y = 6/x. Controleer je stap: de juiste uitkomst is y = 6/x."
+   ],
+   "uh": "Welke formule hoort bij de tabel?",
+   "ctx": "Een tabel toont: bij x = 1 is y = 6, bij x = 2 is y = 3 en bij x = 4 is y = 1,5. Een leerling onderzoekt welk verband erbij hoort en stelt de formule op."
+  },
+  {
+   "v": "Welke waarde heeft y bij x = 3?",
+   "o": [
+    "\"18\"",
+    "\"9\"",
+    "\"2\"",
+    "\"0,5\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"18\"\"? Dan vermenigvuldig je 6 en 3. y = 6/x, dus 2. Het goede antwoord is 2.",
+    "Koos je \"\"9\"\"? Dan tel je 6 en 3 op. y = 6/x, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Klopt: 6 : 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,5\"\"? Dan deel je 3 door 6. y = 6/x, dus 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Welke waarde heeft y bij x = 3?",
+   "ctx": "Een tabel toont: bij x = 1 is y = 6, bij x = 2 is y = 3 en bij x = 4 is y = 1,5. Een leerling onderzoekt welk verband erbij hoort en stelt de formule op."
+  },
+  {
+   "v": "Hoeveel is y bij x = 12?",
+   "o": [
+    "\"72\"",
+    "\"0,5\"",
+    "\"2\"",
+    "\"18\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"72\"\"? Dan vermenigvuldig je 6 en 12. y = 6/x, dus 0,5. Het goede antwoord is 0,5.",
+    "Klopt: 6 : 12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2\"\"? Dan neem je y bij x = 3. Bij x = 12 is het kleiner, dus 0,5. Door de stappen goed na te lopen kom je uit op 0,5.",
+    "Koos je \"\"18\"\"? Dan tel je 6 en 12 op. y = 6/x, dus 0,5. Controleer je stap: de juiste uitkomst is 0,5."
+   ],
+   "uh": "Hoeveel is y bij x = 12?",
+   "ctx": "Een tabel toont: bij x = 1 is y = 6, bij x = 2 is y = 3 en bij x = 4 is y = 1,5. Een leerling onderzoekt welk verband erbij hoort en stelt de formule op."
+  },
+  {
+   "v": "Is het verband in de tabel recht evenredig? Controleer met y : x.",
+   "o": [
+    "\"ja, want y wordt groter\"",
+    "\"ja, want y : x is gelijk\"",
+    "\"niet te zeggen\"",
+    "\"nee, y : x is 2, 4 en 6 en dus niet constant\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ja, want y wordt groter\"\"? Dan denk je dat groeien genoeg is. Ook een machtsverband groeit, dus niet recht evenredig.",
+    "Koos je \"\"ja, want y : x is gelijk\"\"? Dan reken je y : x niet uit. Het is 2, 4 en 6, dus niet recht evenredig. Door de stappen goed na te lopen kom je uit op nee, y : x is 2, 4 en 6 en dus niet constant.",
+    "Koos je \"\"niet te zeggen\"\"? Dan denk je dat er te weinig gegevens zijn. Drie waarden tonen het al, dus niet recht evenredig.",
+    "Klopt: bij recht evenredig is y : x constant. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Is het verband in de tabel recht evenredig? Controleer met y : x.",
+   "ctx": "Een tabel toont: bij x = 1 is y = 2, bij x = 2 is y = 8 en bij x = 3 is y = 18. Een leerling onderzoekt of het verband recht evenredig of een machtsverband is."
+  },
+  {
+   "v": "Welke grootheid is constant in de tabel van Z5?",
+   "o": [
+    "\"y : x²\"",
+    "\"y : x zonder kwadraat\"",
+    "\"x · y als product\"",
+    "\"y − x als verschil\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2 : 1 = 8 : 4 = 18 : 9 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y : x zonder kwadraat\"\"? Dan neem je het quotiënt zonder kwadraat. Dat is 2, 4 en 6, dus y : x². Het goede antwoord is y : x².",
+    "Koos je \"\"x · y als product\"\"? Dan neem je het product. Dat is 2, 16 en 54, dus y : x². Door de stappen goed na te lopen kom je uit op y : x².",
+    "Koos je \"\"y − x als verschil\"\"? Dan neem je het verschil. Dat is 1, 6 en 15, dus y : x². Controleer je stap: de juiste uitkomst is y : x²."
+   ],
+   "uh": "Welke grootheid is constant in de tabel van Z5?",
+   "ctx": "Een tabel toont: bij x = 1 is y = 2, bij x = 2 is y = 8 en bij x = 3 is y = 18. Een leerling onderzoekt of het verband recht evenredig of een machtsverband is."
+  },
+  {
+   "v": "Welke formule hoort bij de tabel?",
+   "o": [
+    "\"y = 2x\"",
+    "\"y = x² + 1\"",
+    "\"y = 2x²\"",
+    "\"y = 2/x\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 2x\"\"? Dan neem je een recht evenredig verband. Bij x = 2 is dan y = 4, dus y = 2x². Het goede antwoord is y = 2x².",
+    "Koos je \"\"y = x² + 1\"\"? Dan neem je een kwadraat met een constante. Bij x = 1 is dan y = 2, maar bij x = 2 is y = 5, dus y = 2x².",
+    "Klopt: y : x² = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = 2/x\"\"? Dan neem je een omgekeerd evenredig verband. De tabel stijgt, dus y = 2x². Controleer je stap: de juiste uitkomst is y = 2x²."
+   ],
+   "uh": "Welke formule hoort bij de tabel?",
+   "ctx": "Een tabel toont: bij x = 1 is y = 2, bij x = 2 is y = 8 en bij x = 3 is y = 18. Een leerling onderzoekt of het verband recht evenredig of een machtsverband is."
+  },
+  {
+   "v": "Welke waarde heeft y volgens het verband bij x = 5?",
+   "o": [
+    "\"10\"",
+    "\"50\"",
+    "\"100\"",
+    "\"25\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10\"\"? Dan reken je 2 · 5. Kwadrateer eerst x, dus 50. Het goede antwoord is 50.",
+    "Klopt: 2 · 5² = 50. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"100\"\"? Dan kwadrateer je 2 · 5. Alleen x wordt gekwadrateerd, dus 50. Door de stappen goed na te lopen kom je uit op 50.",
+    "Koos je \"\"25\"\"? Dan neem je 5². Vermenigvuldig met 2, dus 50. Controleer je stap: de juiste uitkomst is 50."
+   ],
+   "uh": "Welke waarde heeft y volgens het verband bij x = 5?",
+   "ctx": "Een tabel toont: bij x = 1 is y = 2, bij x = 2 is y = 8 en bij x = 3 is y = 18. Een leerling onderzoekt of het verband recht evenredig of een machtsverband is."
+  },
+  {
+   "v": "Hoeveel liter is het volume bij een druk van 3 bar?",
+   "o": [
+    "\"720 liter\"",
+    "\"243 liter\"",
+    "\"0,0125 liter\"",
+    "\"80 liter\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"720 liter\"\"? Dan vermenigvuldig je 240 met 3. V = 240/p, dus 80 liter. Het goede antwoord is 80 liter.",
+    "Koos je \"\"243 liter\"\"? Dan tel je 240 en 3 op. V = 240/p, dus 80 liter. Door de stappen goed na te lopen kom je uit op 80 liter.",
+    "Koos je \"\"0,0125 liter\"\"? Dan deel je 3 door 240. V = 240/p, dus 80 liter. Controleer je stap: de juiste uitkomst is 80 liter.",
+    "Klopt: 240 : 3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel liter is het volume bij een druk van 3 bar?",
+   "ctx": "Bij een vaste hoeveelheid gas is de druk p (in bar) omgekeerd evenredig met het volume V (in liter): p · V = 240. Een leerling berekent volumes bij verschillende drukken."
+  },
+  {
+   "v": "Wat gebeurt er met het volume als de druk verdubbelt van 3 naar 6 bar?",
+   "o": [
+    "\"het volume halveert van 80 naar 40 liter\"",
+    "\"het volume verdubbelt van 80 naar 160 liter\"",
+    "\"het volume blijft 80 liter\"",
+    "\"het volume wordt 20 liter\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Controleer in een tabel of y/x constant is (recht evenredig), x · y constant is (omgekeerd evenredig) of y/x² constant is (macht), en schrijf dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: omgekeerd evenredig. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"het volume verdubbelt van 80 naar 160 liter\"\"? Dan denk je aan een recht evenredig verband. Hier geldt p · V = 240, dus 80 naar 40.",
+    "Koos je \"\"het volume blijft 80 liter\"\"? Dan denk je dat het volume niet verandert. Bij hogere druk past er minder gas, dus 80 naar 40.",
+    "Koos je \"\"het volume wordt 20 liter\"\"? Dan denk je aan een kwadraat. Er staat geen kwadraat, dus 80 naar 40. Controleer je stap: de juiste uitkomst is het volume halveert van 80 naar 40 liter."
+   ],
+   "uh": "Wat gebeurt er met het volume als de druk verdubbelt van 3 naar 6 bar?",
+   "ctx": "Bij een vaste hoeveelheid gas is de druk p (in bar) omgekeerd evenredig met het volume V (in liter): p · V = 240. Een leerling berekent volumes bij verschillende drukken."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bijbaan betaalt een vast bedrag per uur. Voor 16 uur ontvangt een leerling €200. Het loon L is recht evenredig met het aantal uren u. Hij berekent het uurloon en het loon bij 35 uur en noteert zijn antwoord met eenheid.",
+   "v": "Bereken het uurloon en het loon bij 35 uur.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "200 : 16 = 12,50 euro per uur (1p). L = 12,50u (1p). L(35) = 437,50 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een reis van 150 kilometer duurt t uur bij een gemiddelde snelheid van v km/u. De tijd is omgekeerd evenredig met de snelheid. Een leerling berekent reistijden en onderzoekt wat er gebeurt als de snelheid verdubbelt.",
+   "v": "Bereken de reistijd bij 75 en bij 100 km/u en leg uit wat er bij verdubbelen gebeurt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "t = 150/v (1p). t(75) = 2 en t(100) = 1,5 uur (1p). Bij verdubbeling van v halveert t (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven is y = 0,5x². Een leerling berekent y bij x = 6 en onderzoekt wat er met y gebeurt als x verdrievoudigt. Hij schrijft de berekeningen stap voor stap op.",
+   "v": "Bereken y bij x = 6 en leg uit wat er bij verdrievoudigen van x gebeurt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "0,5 · 36 = 18 (1p). Als x drie keer zo groot wordt, wordt x² negen keer zo groot (1p). y wordt dus negen keer zo groot (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tabel toont: bij x = 2 is y = 12, bij x = 4 is y = 6 en bij x = 8 is y = 3. Een leerling onderzoekt welk verband erbij hoort, stelt de formule op en berekent y bij x = 6.",
+   "v": "Bepaal het soort verband, de formule en y bij x = 6.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "x · y = 24 is constant, dus omgekeerd evenredig (1p). y = 24/x (1p). y(6) = 4 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tabel toont: bij x = 1 is y = 3, bij x = 2 is y = 12, bij x = 3 is y = 27 en bij x = 4 is y = 48. Een leerling onderzoekt of het verband een machtsverband is en stelt een formule op.",
+   "v": "Toon aan dat het een machtsverband is en bereken y bij x = 5.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "y : x² = 3 voor alle waarden (1p). y = 3x² (1p). y(5) = 75 (1p)."
+  }
+ ]
+}
