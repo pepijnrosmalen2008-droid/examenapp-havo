@@ -1,0 +1,682 @@
+{
+ "id": "D2",
+ "lo": "wa.D.2",
+ "gs": 2,
+ "naam": "Directe en recursieve formules van rijen opstellen en gebruiken",
+ "beschrijving": "Je beschrijft een rij met een directe en een recursieve formule, zet de ene vorm om in de andere, let op de nummering en rekent met termen in een context.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Directe formule",
+  "Recursieve formule",
+  "Van recursief naar direct",
+  "Nummering bij n = 1",
+  "Formules in een context"
+ ],
+ "sam": "Een rij beschrijf je direct met u_n = … of recursief met een beginwaarde en een regel voor u_(n+1). Bij een rekenkundige rij is u_n = u_0 + v · n en u_(n+1) = u_n + v, bij een meetkundige rij is u_n = u_0 · g^n en u_(n+1) = g · u_n. Begint de rij bij n = 1, dan staat er n − 1 in de formule. Reken bij rente altijd met een factor, controleer elke formule met een term uit de rij en vertaal het antwoord terug naar de context met een eenheid.",
+ "begrippen": [
+  {
+   "t": "Directe formule",
+   "d": "Een formule waarmee je u_n uit n berekent, zonder eerst eerdere termen te kennen."
+  },
+  {
+   "t": "Recursieve formule",
+   "d": "Een formule die u_(n+1) uit de vorige term u_n berekent, samen met een beginwaarde."
+  },
+  {
+   "t": "Beginwaarde",
+   "d": "De eerste term van de rij, zoals u_0 of u_1, waarmee een recursieve formule start."
+  },
+  {
+   "t": "Rekenkundige rij",
+   "d": "Een rij met een constant verschil v: u_(n+1) = u_n + v en u_n = u_0 + v · n."
+  },
+  {
+   "t": "Meetkundige rij",
+   "d": "Een rij met een constante factor g: u_(n+1) = g · u_n en u_n = u_0 · g^n."
+  },
+  {
+   "t": "Verschil",
+   "d": "Het vaste getal v dat je bij elke term van een rekenkundige rij optelt."
+  },
+  {
+   "t": "Groeifactor",
+   "d": "Het getal g waarmee je elke term vermenigvuldigt; bij 3% groei per jaar is g = 1,03."
+  },
+  {
+   "t": "Term",
+   "d": "Een getal uit de rij, zoals u_4, de vijfde term als de rij bij u_0 begint."
+  },
+  {
+   "t": "Nummering",
+   "d": "De afspraak waarmee de rij begint, bij n = 0 of bij n = 1; die bepaalt de formule."
+  },
+  {
+   "t": "Recursiestap",
+   "d": "Een stap van u_n naar u_(n+1) met de recursieve formule."
+  },
+  {
+   "t": "Omzetten",
+   "d": "Een recursieve formule schrijven als directe formule, of andersom."
+  },
+  {
+   "t": "Controle",
+   "d": "Een term uit de rij invullen in de formule om te zien of die klopt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is u_4 als u_n = 6 + 2n?",
+   "o": [
+    "\"12 (u_3)\"",
+    "\"14\"",
+    "\"16 (u_5)\"",
+    "\"24 (6 · 4)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12 (u_3)\"\"? Dan neem je u_3 in plaats van u_4. Let op de nummering, dus 14. Het goede antwoord is 14.",
+    "Klopt: 6 + 2 · 4 = 14. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"16 (u_5)\"\"? Dan neem je u_5. Vul n = 4 in, dus 14. Door de stappen goed na te lopen kom je uit op 14.",
+    "Koos je \"\"24 (6 · 4)\"\"? Dan vermenigvuldig je 6 met 4. De formule heeft een plus, dus 14. Controleer je stap: de juiste uitkomst is 14."
+   ],
+   "uh": "Wat is u_4 als u_n = 6 + 2n?"
+  },
+  {
+   "v": "Welke waarde heeft u_3 bij de formule u_n = 3 · 2^n?",
+   "o": [
+    "\"18 (3 · 2 · 3)\"",
+    "\"9 (3 + 2 · 3)\"",
+    "\"12 (u_2)\"",
+    "\"24\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"18 (3 · 2 · 3)\"\"? Dan reken je 2^3 als 2 · 3. Een macht is herhaald vermenigvuldigen, dus 24. Het goede antwoord is 24.",
+    "Koos je \"\"9 (3 + 2 · 3)\"\"? Dan tel je op in plaats van een macht te nemen. De formule is meetkundig, dus 24. Door de stappen goed na te lopen kom je uit op 24.",
+    "Koos je \"\"12 (u_2)\"\"? Dan neem je u_2. Vul n = 3 in, dus 24. Controleer je stap: de juiste uitkomst is 24.",
+    "Klopt: 3 · 2³ = 3 · 8 = 24. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft u_3 bij de formule u_n = 3 · 2^n?"
+  },
+  {
+   "v": "Wat betekent u_(n+1) = u_n + 4 met u_0 = 1?",
+   "o": [
+    "\"elke term is de vorige term plus 4\"",
+    "\"elke term is 4 keer de vorige term\"",
+    "\"elke term is 4 meer dan het nummer n\"",
+    "\"de rij begint bij 4\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je telt telkens 4 op bij de vorige term. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"elke term is 4 keer de vorige term\"\"? Dan lees je plus als keer. Een plus betekent optellen, dus elke term is de vorige term plus 4.",
+    "Koos je \"\"elke term is 4 meer dan het nummer n\"\"? Dan koppel je 4 aan n. De 4 hoort bij de vorige term, dus elke term is de vorige term plus 4.",
+    "Koos je \"\"de rij begint bij 4\"\"? Dan neem je 4 als beginwaarde. De beginwaarde is u_0 = 1, dus elke term is de vorige term plus 4."
+   ],
+   "uh": "Wat betekent u_(n+1) = u_n + 4 met u_0 = 1?"
+  },
+  {
+   "v": "Welke recursieve formule hoort bij een rij met begin 2 en factor 3?",
+   "o": [
+    "\"u_0 = 3 en u_(n+1) = 2 · u_n\"",
+    "\"u_0 = 2 en u_(n+1) = u_n + 3\"",
+    "\"u_0 = 2 en u_(n+1) = 3 · u_n\"",
+    "\"u_0 = 2 en u_n = 3 · n\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"u_0 = 3 en u_(n+1) = 2 · u_n\"\"? Dan wissel je begin en factor. Het begin is 2, dus u_0 = 2 en u_(n+1) = 3 · u_n.",
+    "Koos je \"\"u_0 = 2 en u_(n+1) = u_n + 3\"\"? Dan neem je een verschil in plaats van een factor. Factor betekent keer, dus u_0 = 2 en u_(n+1) = 3 · u_n.",
+    "Klopt: begin 2, elke term 3 keer de vorige. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_0 = 2 en u_n = 3 · n\"\"? Dan schrijf je een directe formule. Je zoekt een recursieve met u_(n+1), dus u_0 = 2 en u_(n+1) = 3 · u_n."
+   ],
+   "uh": "Welke recursieve formule hoort bij een rij met begin 2 en factor 3?"
+  },
+  {
+   "v": "Welke directe formule hoort bij u_0 = 4 en u_(n+1) = u_n + 5?",
+   "o": [
+    "\"u_n = 5 + 4n\"",
+    "\"u_n = 4 + 5n\"",
+    "\"u_n = 4 · 5^n\"",
+    "\"u_n = 5 · 4^n\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"u_n = 5 + 4n\"\"? Dan wissel je begin en verschil. Het begin is u_0 = 4, dus u_n = 4 + 5n. Het goede antwoord is u_n = 4 + 5n.",
+    "Klopt: begin 4, verschil 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_n = 4 · 5^n\"\"? Dan neem je een meetkundige formule. Er wordt opgeteld, dus u_n = 4 + 5n. Door de stappen goed na te lopen kom je uit op u_n = 4 + 5n.",
+    "Koos je \"\"u_n = 5 · 4^n\"\"? Dan neem je een meetkundige formule met omgewisselde getallen. Er wordt opgeteld, dus u_n = 4 + 5n."
+   ],
+   "uh": "Welke directe formule hoort bij u_0 = 4 en u_(n+1) = u_n + 5?"
+  },
+  {
+   "v": "Een rij begint bij u_1 = 5 met verschil 3. Wat is u_3?",
+   "o": [
+    "\"14 (u_4)\"",
+    "\"8 (u_2)\"",
+    "\"17 (u_5)\"",
+    "\"11\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"14 (u_4)\"\"? Dan neem je u_4. De rij begint bij u_1, dus 11. Het goede antwoord is 11.",
+    "Koos je \"\"8 (u_2)\"\"? Dan neem je u_2. Tel nog een stap, dus 11. Door de stappen goed na te lopen kom je uit op 11.",
+    "Koos je \"\"17 (u_5)\"\"? Dan tel je te veel stappen. Van u_1 naar u_3 zijn het twee stappen, dus 11. Controleer je stap: de juiste uitkomst is 11.",
+    "Klopt: u_2 = 8 en u_3 = 11. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een rij begint bij u_1 = 5 met verschil 3. Wat is u_3?"
+  },
+  {
+   "v": "Een bedrag van €200 groeit elk jaar met €15. Welke directe formule geldt?",
+   "o": [
+    "\"u_n = 200 + 15n\"",
+    "\"u_n = 15 + 200n\"",
+    "\"u_n = 200 · 15^n\"",
+    "\"u_n = 215n\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: begin 200 en elk jaar 15 erbij. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_n = 15 + 200n\"\"? Dan wissel je begin en stap. Het begin is 200, dus u_n = 200 + 15n. Het goede antwoord is u_n = 200 + 15n.",
+    "Koos je \"\"u_n = 200 · 15^n\"\"? Dan neem je een factor. Er komt een vast bedrag bij, dus u_n = 200 + 15n. Door de stappen goed na te lopen kom je uit op u_n = 200 + 15n.",
+    "Koos je \"\"u_n = 215n\"\"? Dan neem je het begin plus de stap als vast verschil. Het begin staat los van n, dus u_n = 200 + 15n."
+   ],
+   "uh": "Een bedrag van €200 groeit elk jaar met €15. Welke directe formule geldt?"
+  },
+  {
+   "v": "Welke directe formule hoort bij de rij?",
+   "o": [
+    "\"u_n = 4 + 7n\"",
+    "\"u_n = 7 · 4^n\"",
+    "\"u_n = 7 + 4n\"",
+    "\"u_n = 7 + 4(n − 1)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"u_n = 4 + 7n\"\"? Dan wissel je begin en verschil. Het begin is u_0 = 7, dus u_n = 7 + 4n. Het goede antwoord is u_n = 7 + 4n.",
+    "Koos je \"\"u_n = 7 · 4^n\"\"? Dan neem je een meetkundige formule. De rij heeft een constant verschil, dus u_n = 7 + 4n. Door de stappen goed na te lopen kom je uit op u_n = 7 + 4n.",
+    "Klopt: u_0 = 7 en het verschil is 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_n = 7 + 4(n − 1)\"\"? Dan gebruik je de nummering vanaf n = 1. Deze rij begint bij u_0, dus u_n = 7 + 4n. Controleer je stap: de juiste uitkomst is u_n = 7 + 4n."
+   ],
+   "uh": "Welke directe formule hoort bij de rij?",
+   "ctx": "Een rij begint met u_0 = 7 en elke volgende term is 4 meer dan de vorige. Een leerling schrijft de recursieve formule op, stelt de directe formule op en berekent een term ver in de rij. Hij controleert zijn formule met de tweede term."
+  },
+  {
+   "v": "Welke recursieve formule past bij deze rij?",
+   "o": [
+    "\"u_0 = 4 en u_(n+1) = u_n + 7\"",
+    "\"u_0 = 7 en u_(n+1) = u_n + 4\"",
+    "\"u_0 = 7 en u_(n+1) = 4 · u_n\"",
+    "\"u_0 = 7 en u_n = u_(n+1) + 4\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"u_0 = 4 en u_(n+1) = u_n + 7\"\"? Dan wissel je begin en verschil. Het begin is 7, dus u_0 = 7 en u_(n+1) = u_n + 4.",
+    "Klopt: begin 7, elke term 4 meer. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_0 = 7 en u_(n+1) = 4 · u_n\"\"? Dan vermenigvuldig je in plaats van op te tellen. Het verschil is constant, dus u_0 = 7 en u_(n+1) = u_n + 4.",
+    "Koos je \"\"u_0 = 7 en u_n = u_(n+1) + 4\"\"? Dan draai je de volgorde om. De volgende term is groter, niet de vorige, dus u_0 = 7 en u_(n+1) = u_n + 4."
+   ],
+   "uh": "Welke recursieve formule past bij deze rij?",
+   "ctx": "Een rij begint met u_0 = 7 en elke volgende term is 4 meer dan de vorige. Een leerling schrijft de recursieve formule op, stelt de directe formule op en berekent een term ver in de rij. Hij controleert zijn formule met de tweede term."
+  },
+  {
+   "v": "Welke waarde heeft u_3 volgens de directe formule?",
+   "o": [
+    "\"30 (5 · 2 · 3)\"",
+    "\"125 (5^3)\"",
+    "\"11 (5 + 2 · 3)\"",
+    "\"40\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"30 (5 · 2 · 3)\"\"? Dan vermenigvuldig je alles met 3. Een macht is herhaald vermenigvuldigen, dus 40. Het goede antwoord is 40.",
+    "Koos je \"\"125 (5^3)\"\"? Dan neem je 5 tot de macht 3. De grondtal is 2, dus 40. Door de stappen goed na te lopen kom je uit op 40.",
+    "Koos je \"\"11 (5 + 2 · 3)\"\"? Dan tel je op. De rij is meetkundig, dus 40. Controleer je stap: de juiste uitkomst is 40.",
+    "Klopt: u_n = 5 · 2^n geeft 5 · 8 = 40. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft u_3 volgens de directe formule?",
+   "ctx": "Een rij begint met u_0 = 5 en elke volgende term is 2 keer zo groot als de vorige. Een leerling schrijft de recursieve formule op, stelt de directe formule op en berekent een term. Hij vergelijkt de uitkomst met de eerste termen."
+  },
+  {
+   "v": "Hoeveel is u_3 als je uitgaat van u_2 = 20?",
+   "o": [
+    "\"40\"",
+    "\"22 (20 + 2)\"",
+    "\"25 (20 + 5)\"",
+    "\"10 (20 : 2)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: u_3 = 2 · u_2 = 2 · 20 = 40. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"22 (20 + 2)\"\"? Dan tel je 2 op. De factor 2 vermenigvuldigt, dus 40. Het goede antwoord is 40.",
+    "Koos je \"\"25 (20 + 5)\"\"? Dan tel je de beginwaarde op. Je vermenigvuldigt met 2, dus 40. Door de stappen goed na te lopen kom je uit op 40.",
+    "Koos je \"\"10 (20 : 2)\"\"? Dan deel je door 2. De rij wordt telkens 2 keer zo groot, dus 40. Controleer je stap: de juiste uitkomst is 40."
+   ],
+   "uh": "Hoeveel is u_3 als je uitgaat van u_2 = 20?",
+   "ctx": "Een rij begint met u_0 = 5 en elke volgende term is 2 keer zo groot als de vorige. Een leerling schrijft de recursieve formule op, stelt de directe formule op en berekent een term. Hij vergelijkt de uitkomst met de eerste termen."
+  },
+  {
+   "v": "Welke directe formule volgt uit u_(n+1) = 2 · u_n met u_0 = 5?",
+   "o": [
+    "\"u_n = 5 + 2n\"",
+    "\"u_n = 2 · 5^n\"",
+    "\"u_n = 5 · 2^n\"",
+    "\"u_n = 5 · 2n\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"u_n = 5 + 2n\"\"? Dan neem je een rekenkundige formule. Er wordt vermenigvuldigd, dus u_n = 5 · 2^n. Het goede antwoord is u_n = 5 · 2^n.",
+    "Koos je \"\"u_n = 2 · 5^n\"\"? Dan wissel je begin en factor. Het begin is 5, dus u_n = 5 · 2^n. Door de stappen goed na te lopen kom je uit op u_n = 5 · 2^n.",
+    "Klopt: begin 5 en factor 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_n = 5 · 2n\"\"? Dan neem je 2n in plaats van 2^n. Dat is een lineaire formule, dus u_n = 5 · 2^n. Controleer je stap: de juiste uitkomst is u_n = 5 · 2^n."
+   ],
+   "uh": "Welke directe formule volgt uit u_(n+1) = 2 · u_n met u_0 = 5?",
+   "ctx": "Een rij begint met u_0 = 5 en elke volgende term is 2 keer zo groot als de vorige. Een leerling schrijft de recursieve formule op, stelt de directe formule op en berekent een term. Hij vergelijkt de uitkomst met de eerste termen."
+  },
+  {
+   "v": "Welke directe formule hoort bij deze rij met begin u_1 = 10?",
+   "o": [
+    "\"u_n = 10 − 2n\"",
+    "\"u_n = 10 − 2(n − 1)\"",
+    "\"u_n = 10 + 2(n − 1)\"",
+    "\"u_n = 2 − 10(n − 1)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"u_n = 10 − 2n\"\"? Dan laat je de nummering vanaf n = 1 weg. Dan wordt u_1 = 8, dus u_n = 10 − 2(n − 1). Het goede antwoord is u_n = 10 − 2(n − 1).",
+    "Klopt: u_1 = 10 en elke stap −2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_n = 10 + 2(n − 1)\"\"? Dan neem je plus in plaats van min. De rij daalt, dus u_n = 10 − 2(n − 1). Door de stappen goed na te lopen kom je uit op u_n = 10 − 2(n − 1).",
+    "Koos je \"\"u_n = 2 − 10(n − 1)\"\"? Dan wissel je begin en verschil. Het begin is 10, dus u_n = 10 − 2(n − 1). Controleer je stap: de juiste uitkomst is u_n = 10 − 2(n − 1)."
+   ],
+   "uh": "Welke directe formule hoort bij deze rij met begin u_1 = 10?",
+   "ctx": "Een rij begint bij n = 1 met u_1 = 10 en elke term is 2 kleiner dan de vorige. Een leerling stelt de directe formule op, let op de nummering vanaf n = 1 en berekent een term. Hij controleert zijn formule met de tweede term."
+  },
+  {
+   "v": "Wat is u_5 van deze rij?",
+   "o": [
+    "\"0 (10 − 2 · 5)\"",
+    "\"4 (u_4)\"",
+    "\"6 (u_3)\"",
+    "\"2\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0 (10 − 2 · 5)\"\"? Dan reken je met n = 5 zonder n − 1. De rij begint bij n = 1, dus 2. Het goede antwoord is 2.",
+    "Koos je \"\"4 (u_4)\"\"? Dan neem je u_4. Tel nog een stap, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Koos je \"\"6 (u_3)\"\"? Dan neem je u_3. Vul n = 5 in, dus 2. Controleer je stap: de juiste uitkomst is 2.",
+    "Klopt: u_5 = 10 − 2 · 4 = 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat is u_5 van deze rij?",
+   "ctx": "Een rij begint bij n = 1 met u_1 = 10 en elke term is 2 kleiner dan de vorige. Een leerling stelt de directe formule op, let op de nummering vanaf n = 1 en berekent een term. Hij controleert zijn formule met de tweede term."
+  },
+  {
+   "v": "Met welke factor groeit het saldo elk jaar?",
+   "o": [
+    "\"1,03\"",
+    "\"0,03 (alleen de rente)\"",
+    "\"3 (het percentage)\"",
+    "\"1,3 (3% als 0,3)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 100% + 3% = 103% = 1,03. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,03 (alleen de rente)\"\"? Dan neem je alleen de rente. Het oude saldo blijft staan, dus 1,03. Het goede antwoord is 1,03.",
+    "Koos je \"\"3 (het percentage)\"\"? Dan neem je het percentage als factor. Deel door 100 en tel 1 op, dus 1,03. Door de stappen goed na te lopen kom je uit op 1,03.",
+    "Koos je \"\"1,3 (3% als 0,3)\"\"? Dan zet dit je 3% om als 0,3. Het is 0,03, dus 1,03. Controleer je stap: de juiste uitkomst is 1,03."
+   ],
+   "uh": "Met welke factor groeit het saldo elk jaar?",
+   "ctx": "Op een spaarrekening staat €500 en elk jaar komt er 3% rente bij. Een leerling noemt het saldo na n jaar u_n, schrijft de recursieve en de directe formule op en berekent het saldo na 2 jaar. Hij rondt af op centen."
+  },
+  {
+   "v": "Welke directe formule geeft de schuld u_n na n maanden?",
+   "o": [
+    "\"u_n = 1200 + 100n\"",
+    "\"u_n = 100 − 1200n\"",
+    "\"u_n = 1200 − 100n\"",
+    "\"u_n = 1200 · 0,9^n\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"u_n = 1200 + 100n\"\"? Dan neem je plus. De schuld wordt kleiner, dus u_n = 1200 − 100n. Het goede antwoord is u_n = 1200 − 100n.",
+    "Koos je \"\"u_n = 100 − 1200n\"\"? Dan wissel je begin en stap. De schuld begint bij 1200, dus u_n = 1200 − 100n. Door de stappen goed na te lopen kom je uit op u_n = 1200 − 100n.",
+    "Klopt: begin 1200 en elke maand 100 minder. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_n = 1200 · 0,9^n\"\"? Dan neem je een factor. Er gaat elke maand een vast bedrag af, dus u_n = 1200 − 100n. Controleer je stap: de juiste uitkomst is u_n = 1200 − 100n."
+   ],
+   "uh": "Welke directe formule geeft de schuld u_n na n maanden?",
+   "ctx": "Een schuld is €1200 en elke maand wordt €100 afbetaald. Een leerling noemt de schuld na n maanden u_n, schrijft de recursieve en de directe formule op en berekent na hoeveel maanden de schuld nul is. Hij schrijft de eenheid op."
+  },
+  {
+   "v": "Na hoeveel maanden is de schuld afbetaald?",
+   "o": [
+    "\"13 (12 + 1)\"",
+    "\"12\"",
+    "\"100 (het maandbedrag)\"",
+    "\"1100 (u_1)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"13 (12 + 1)\"\"? Dan tel je een maand extra. Na 12 maanden is de schuld nul, dus 12. Het goede antwoord is 12.",
+    "Klopt: 1200 − 100n = 0 geeft n = 12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"100 (het maandbedrag)\"\"? Dan neem je het maandbedrag. Je zoekt het aantal maanden, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"1100 (u_1)\"\"? Dan neem je de schuld na een maand. Je zoekt n, dus 12. Controleer je stap: de juiste uitkomst is 12."
+   ],
+   "uh": "Na hoeveel maanden is de schuld afbetaald?",
+   "ctx": "Een schuld is €1200 en elke maand wordt €100 afbetaald. Een leerling noemt de schuld na n maanden u_n, schrijft de recursieve en de directe formule op en berekent na hoeveel maanden de schuld nul is. Hij schrijft de eenheid op."
+  },
+  {
+   "v": "Bereken u_25 met de directe formule.",
+   "o": [
+    "\"103 (u_24)\"",
+    "\"111 (u_26)\"",
+    "\"700 (7 · 100)\"",
+    "\"107\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"103 (u_24)\"\"? Dan neem je u_24. Vul n = 25 in, dus 107. Het goede antwoord is 107.",
+    "Koos je \"\"111 (u_26)\"\"? Dan neem je u_26. Vul n = 25 in, dus 107. Door de stappen goed na te lopen kom je uit op 107.",
+    "Koos je \"\"700 (7 · 100)\"\"? Dan vermenigvuldig je 7 met 4 · 25. Je moet optellen, dus 107. Controleer je stap: de juiste uitkomst is 107.",
+    "Klopt: 7 + 4 · 25 = 107. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken u_25 met de directe formule.",
+   "ctx": "Een rij begint met u_0 = 7 en elke volgende term is 4 meer dan de vorige. Een leerling schrijft de recursieve formule op, stelt de directe formule op en berekent een term ver in de rij. Hij controleert zijn formule met de tweede term."
+  },
+  {
+   "v": "Bereken u_6 met de directe formule.",
+   "o": [
+    "\"320\"",
+    "\"160 (u_5)\"",
+    "\"640 (u_7)\"",
+    "\"30 (5 · 6)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 5 · 2^6 = 5 · 64 = 320. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"160 (u_5)\"\"? Dan neem je u_5. Vul n = 6 in, dus 320. Het goede antwoord is 320.",
+    "Koos je \"\"640 (u_7)\"\"? Dan neem je u_7. Vul n = 6 in, dus 320. Door de stappen goed na te lopen kom je uit op 320.",
+    "Koos je \"\"30 (5 · 6)\"\"? Dan vermenigvuldig je 5 met 6. Het is een macht van 2, dus 320. Controleer je stap: de juiste uitkomst is 320."
+   ],
+   "uh": "Bereken u_6 met de directe formule.",
+   "ctx": "Een rij begint met u_0 = 5 en elke volgende term is 2 keer zo groot als de vorige. Een leerling schrijft de recursieve formule op, stelt de directe formule op en berekent een term. Hij vergelijkt de uitkomst met de eerste termen."
+  },
+  {
+   "v": "Bereken u_3 met de recursieve formule van deze rij.",
+   "o": [
+    "\"24 (3 · 2³)\"",
+    "\"30 (2 · 15)\"",
+    "\"31\"",
+    "\"63 (u_4)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"24 (3 · 2³)\"\"? Dan reken je meetkundig zonder de +1. De rij is geen meetkundige rij, dus 31. Het goede antwoord is 31.",
+    "Koos je \"\"30 (2 · 15)\"\"? Dan vergeet je de +1 in de laatste stap. Elke stap is 2 · u_n + 1, dus 31. Door de stappen goed na te lopen kom je uit op 31.",
+    "Klopt: u_1 = 7, u_2 = 15, u_3 = 31. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"63 (u_4)\"\"? Dan neem je u_4. Je zoekt u_3, dus 31. Controleer je stap: de juiste uitkomst is 31."
+   ],
+   "uh": "Bereken u_3 met de recursieve formule van deze rij.",
+   "ctx": "Een rij is recursief gegeven door u_0 = 3 en u_(n+1) = 2 · u_n + 1. Een leerling rekent de eerste termen een voor een uit en onderzoekt of de rij rekenkundig of meetkundig is. Hij kijkt daarbij naar verschillen en quotiënten."
+  },
+  {
+   "v": "Is deze rij rekenkundig, meetkundig of geen van beide?",
+   "o": [
+    "\"meetkundig met factor 2, want elke term wordt met 2 vermenigvuldigd\"",
+    "\"geen van beide: verschillen en quotiënten zijn niet constant\"",
+    "\"rekenkundig met verschil 4, want het eerste verschil is 4\"",
+    "\"meetkundig met factor 3, want de eerste term is 3\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"meetkundig met factor 2, want elke term wordt met 2 vermenigvuldigd\"\"? Dan let je alleen op de factor 2. Er komt ook 1 bij, dus geen van beide: verschillen en quotiënten zijn niet constant.",
+    "Klopt: verschillen 4, 8, 16 en quotiënten ongeveer 2,33, 2,14 en 2,07.",
+    "Koos je \"\"rekenkundig met verschil 4, want het eerste verschil is 4\"\"? Dan kijk je naar een verschil. De verschillen zijn 4, 8 en 16, dus geen van beide: verschillen en quotiënten zijn niet constant.",
+    "Koos je \"\"meetkundig met factor 3, want de eerste term is 3\"\"? Dan neem je de beginwaarde als factor. Die staat los van de rest, dus geen van beide: verschillen en quotiënten zijn niet constant."
+   ],
+   "uh": "Is deze rij rekenkundig, meetkundig of geen van beide?",
+   "ctx": "Een rij is recursief gegeven door u_0 = 3 en u_(n+1) = 2 · u_n + 1. Een leerling rekent de eerste termen een voor een uit en onderzoekt of de rij rekenkundig of meetkundig is. Hij kijkt daarbij naar verschillen en quotiënten."
+  },
+  {
+   "v": "Zet de recursieve formule om naar een directe formule en bereken u_10.",
+   "o": [
+    "\"40 (4 · 10)\"",
+    "\"70 (7 · 10)\"",
+    "\"51 (u_11)\"",
+    "\"47\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 (4 · 10)\"\"? Dan laat je de beginwaarde weg. Tel 7 op, dus 47. Het goede antwoord is 47.",
+    "Koos je \"\"70 (7 · 10)\"\"? Dan vermenigvuldig je het begin met n. Het verschil is 4, dus 47. Door de stappen goed na te lopen kom je uit op 47.",
+    "Koos je \"\"51 (u_11)\"\"? Dan neem je u_11. Vul n = 10 in, dus 47. Controleer je stap: de juiste uitkomst is 47.",
+    "Klopt: u_n = 7 + 4n, dus u_10 = 47. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Zet de recursieve formule om naar een directe formule en bereken u_10.",
+   "ctx": "Een rij begint met u_0 = 7 en elke volgende term is 4 meer dan de vorige. Een leerling schrijft de recursieve formule op, stelt de directe formule op en berekent een term ver in de rij. Hij controleert zijn formule met de tweede term."
+  },
+  {
+   "v": "Welke recursieve formule hoort bij u_n = 1200 − 100n?",
+   "o": [
+    "\"u_0 = 1200 en u_(n+1) = u_n − 100\"",
+    "\"u_0 = 100 en u_(n+1) = u_n − 1200\"",
+    "\"u_0 = 1200 en u_(n+1) = 0,1 · u_n\"",
+    "\"u_0 = 1200 en u_(n+1) = u_n + 100\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de schuld begint bij 1200 en daalt telkens met 100.",
+    "Koos je \"\"u_0 = 100 en u_(n+1) = u_n − 1200\"\"? Dan wissel je begin en stap. Het begin is 1200, dus u_0 = 1200 en u_(n+1) = u_n − 100.",
+    "Koos je \"\"u_0 = 1200 en u_(n+1) = 0,1 · u_n\"\"? Dan neem je een factor. De stap is een vast verschil, dus u_0 = 1200 en u_(n+1) = u_n − 100.",
+    "Koos je \"\"u_0 = 1200 en u_(n+1) = u_n + 100\"\"? Dan neem je plus. De schuld wordt kleiner, dus u_0 = 1200 en u_(n+1) = u_n − 100."
+   ],
+   "uh": "Welke recursieve formule hoort bij u_n = 1200 − 100n?",
+   "ctx": "Een schuld is €1200 en elke maand wordt €100 afbetaald. Een leerling noemt de schuld na n maanden u_n, schrijft de recursieve en de directe formule op en berekent na hoeveel maanden de schuld nul is. Hij schrijft de eenheid op."
+  },
+  {
+   "v": "Voor welke n is de term gelijk aan 0 in deze rij?",
+   "o": [
+    "\"5 (10 : 2)\"",
+    "\"7 (6 + 1)\"",
+    "\"6\"",
+    "\"4 (u_4 = 4)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5 (10 : 2)\"\"? Dan deel je 10 door 2 zonder de nummering. Los 10 − 2(n − 1) = 0 op, dus 6. Het goede antwoord is 6.",
+    "Koos je \"\"7 (6 + 1)\"\"? Dan tel je een stap extra op. Los n − 1 = 5 op, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+    "Klopt: 10 − 2(n − 1) = 0 geeft n − 1 = 5, dus n = 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"4 (u_4 = 4)\"\"? Dan neem je de term die 4 is. Je zoekt de term 0, dus 6. Controleer je stap: de juiste uitkomst is 6."
+   ],
+   "uh": "Voor welke n is de term gelijk aan 0 in deze rij?",
+   "ctx": "Een rij begint bij n = 1 met u_1 = 10 en elke term is 2 kleiner dan de vorige. Een leerling stelt de directe formule op, let op de nummering vanaf n = 1 en berekent een term. Hij controleert zijn formule met de tweede term."
+  },
+  {
+   "v": "Een leerling gebruikt u_n = 10 − 2n voor deze rij. Welke fout maakt hij?",
+   "o": [
+    "\"het verschil moet +2 zijn, omdat de rij begint bij 10\"",
+    "\"de nummering: bij u_1 = 10 moet er n − 1 staan\"",
+    "\"de beginwaarde moet 2 zijn, want u_n = 2 − 10n\"",
+    "\"er is geen fout, want de formule geeft ook 10 bij n = 0\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het verschil moet +2 zijn, omdat de rij begint bij 10\"\"? Dan denk je dat het verschil positief is. De rij daalt, dus −2, dus de nummering: bij u_1 = 10 moet er n − 1 staan.",
+    "Klopt: met u_n = 10 − 2n is u_1 = 8 in plaats van 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de beginwaarde moet 2 zijn, want u_n = 2 − 10n\"\"? Dan wissel je begin en verschil. Het begin is 10, dus de nummering: bij u_1 = 10 moet er n − 1 staan.",
+    "Koos je \"\"er is geen fout, want de formule geeft ook 10 bij n = 0\"\"? Dan let je niet op de nummering. De rij begint bij n = 1, dus de nummering: bij u_1 = 10 moet er n − 1 staan."
+   ],
+   "uh": "Een leerling gebruikt u_n = 10 − 2n voor deze rij. Welke fout maakt hij?",
+   "ctx": "Een rij begint bij n = 1 met u_1 = 10 en elke term is 2 kleiner dan de vorige. Een leerling stelt de directe formule op, let op de nummering vanaf n = 1 en berekent een term. Hij controleert zijn formule met de tweede term."
+  },
+  {
+   "v": "Bereken het saldo na 2 jaar, afgerond op centen.",
+   "o": [
+    "\"€530,00 (500 + 2 · 15)\"",
+    "\"€515,00 (u_1)\"",
+    "\"€1,0609 (de factor in twee jaar)\"",
+    "\"€530,45\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€530,00 (500 + 2 · 15)\"\"? Dan reken je rekenkundig met 15 per jaar. Rente is een factor, dus €530,45. Het goede antwoord is €530,45.",
+    "Koos je \"\"€515,00 (u_1)\"\"? Dan neem je het saldo na 1 jaar. Je zoekt n = 2, dus €530,45. Door de stappen goed na te lopen kom je uit op €530,45.",
+    "Koos je \"\"€1,0609 (de factor in twee jaar)\"\"? Dan neem je alleen de factor. Vermenigvuldig met 500, dus €530,45. Controleer je stap: de juiste uitkomst is €530,45.",
+    "Klopt: 500 · 1,03² = 500 · 1,0609 = 530,45. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken het saldo na 2 jaar, afgerond op centen.",
+   "ctx": "Op een spaarrekening staat €500 en elk jaar komt er 3% rente bij. Een leerling noemt het saldo na n jaar u_n, schrijft de recursieve en de directe formule op en berekent het saldo na 2 jaar. Hij rondt af op centen."
+  },
+  {
+   "v": "Hoe luidt de recursieve formule voor het saldo u_n op deze spaarrekening?",
+   "o": [
+    "\"u_0 = 500 en u_(n+1) = 1,03 · u_n\"",
+    "\"u_0 = 500 en u_(n+1) = u_n + 0,03\"",
+    "\"u_0 = 500 en u_(n+1) = 0,03 · u_n\"",
+    "\"u_0 = 1,03 en u_(n+1) = 500 · u_n\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf de rij met een beginwaarde en een regel: recursief rekent u_(n+1) uit u_n, direct rekent u_n uit n. Controleer de formule altijd met een term uit de rij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: elk jaar is het saldo 1,03 keer zo groot. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_0 = 500 en u_(n+1) = u_n + 0,03\"\"? Dan tel je 0,03 op. De rente is een percentage van het saldo, dus u_0 = 500 en u_(n+1) = 1,03 · u_n.",
+    "Koos je \"\"u_0 = 500 en u_(n+1) = 0,03 · u_n\"\"? Dan gebruik je alleen de rente. Het saldo blijft staan, dus u_0 = 500 en u_(n+1) = 1,03 · u_n.",
+    "Koos je \"\"u_0 = 1,03 en u_(n+1) = 500 · u_n\"\"? Dan wissel je begin en factor. Het begin is 500, dus u_0 = 500 en u_(n+1) = 1,03 · u_n."
+   ],
+   "uh": "Hoe luidt de recursieve formule voor het saldo u_n op deze spaarrekening?",
+   "ctx": "Op een spaarrekening staat €500 en elk jaar komt er 3% rente bij. Een leerling noemt het saldo na n jaar u_n, schrijft de recursieve en de directe formule op en berekent het saldo na 2 jaar. Hij rondt af op centen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rij begint met u_0 = 6 en elke term is 5 meer dan de vorige. Een leerling schrijft de recursieve formule op, stelt de directe formule op en berekent u_12. Hij controleert zijn formule met de tweede term van de rij.",
+   "v": "Geef de recursieve en de directe formule en bereken u_12.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "u_0 = 6 en u_(n+1) = u_n + 5 (1p). u_n = 6 + 5n (1p). u_12 = 66 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rij begint met u_0 = 2 en elke term is 3 keer zo groot als de vorige. Een leerling schrijft de recursieve formule op, stelt de directe formule op en berekent u_5. Hij controleert de formule met de tweede term van de rij.",
+   "v": "Geef de recursieve en de directe formule en bereken u_5.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "u_0 = 2 en u_(n+1) = 3 · u_n (1p). u_n = 2 · 3^n (1p). u_5 = 486 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rij is recursief gegeven door u_0 = 1 en u_(n+1) = 2 · u_n + 3. Een leerling berekent de eerste termen en onderzoekt of de rij rekenkundig of meetkundig is. Daarna berekent hij u_4 en schrijft de stappen op.",
+   "v": "Bereken u_1 tot en met u_4 en onderzoek het soort rij.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "u_1 = 5, u_2 = 13, u_3 = 29, u_4 = 61 (1p). Verschillen 4, 8, 16: niet constant (1p). Quotiënten 5, 2,6, 2,23: niet constant, dus geen van beide (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rij begint bij n = 1 met u_1 = 12 en elke term is 3 kleiner dan de vorige. Een leerling stelt de directe formule op, let op de nummering en berekent u_6. Hij controleert de formule met de tweede term van de rij.",
+   "v": "Stel de directe formule op en bereken u_6.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "u_n = 12 − 3(n − 1) (1p). Controle: u_2 = 9 (1p). u_6 = 12 − 15 = −3 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een spaarrekening heeft €800 en krijgt elk jaar 2% rente. Een leerling noemt het saldo na n jaar u_n, stelt de recursieve en de directe formule op en berekent het saldo na 3 jaar. Hij schrijft het antwoord op in euro.",
+   "v": "Stel beide formules op en bereken het saldo na 3 jaar.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "u_0 = 800 en u_(n+1) = 1,02 · u_n (1p). u_n = 800 · 1,02^n (1p). u_3 = 848,97 euro (1p)."
+  }
+ ]
+}
