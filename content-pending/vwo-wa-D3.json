@@ -1,0 +1,682 @@
+{
+ "id": "D3",
+ "lo": "wa.D.3",
+ "gs": 2,
+ "naam": "Somrijen en het sigma-teken",
+ "beschrijving": "Je berekent de som van de eerste termen van een rekenkundige of meetkundige rij met een formule, leest en schrijft het sigma-teken en lost sommen in een context op.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Somrij en notatie",
+  "Som van een rekenkundige rij",
+  "Som van een meetkundige rij",
+  "Het sigma-teken",
+  "Sommen in een context"
+ ],
+ "sam": "Een somrij telt de eerste n termen van een rij op: S_n = u_1 + … + u_n. Bij een rekenkundige rij is S_n = n/2 · (u_1 + u_n), bij een meetkundige rij met factor g is S_n = u_1 · (1 − g^n)/(1 − g). Het sigma-teken Σ schrijft zo'n som kort op met een index, een ondergrens en een bovengrens. Schrijf eerst de termen op, tel het aantal termen goed, kies dan de formule en controleer met optellen. Vertaal het antwoord terug naar de context met een eenheid.",
+ "begrippen": [
+  {
+   "t": "Somrij",
+   "d": "De rij S_1, S_2, S_3, … van sommen van de eerste termen van een rij."
+  },
+  {
+   "t": "Som S_n",
+   "d": "De som van de eerste n termen: S_n = u_1 + u_2 + … + u_n."
+  },
+  {
+   "t": "Sigma-teken Σ",
+   "d": "Het teken voor een som; Σ_(k=1)^5 (3k − 1) telt de termen voor k = 1 tot 5 op."
+  },
+  {
+   "t": "Ondergrens en bovengrens",
+   "d": "De waarden waar k begint en eindigt in een sigma-som, onder en boven de Σ."
+  },
+  {
+   "t": "Index k",
+   "d": "De teller in een sigma-som die telkens met 1 omhoog gaat."
+  },
+  {
+   "t": "Rekenkundige som",
+   "d": "S_n = n/2 · (u_1 + u_n): aantal gedeeld door 2 keer eerste plus laatste term."
+  },
+  {
+   "t": "Meetkundige som",
+   "d": "S_n = u_1 · (1 − g^n)/(1 − g) voor een meetkundige rij met factor g."
+  },
+  {
+   "t": "Aantal termen",
+   "d": "Het aantal getallen in de som; bereken het met u_n = u_1 + v(n − 1)."
+  },
+  {
+   "t": "Eerste term",
+   "d": "Het begin van de som, zoals u_1; die telt altijd mee."
+  },
+  {
+   "t": "Laatste term",
+   "d": "Het einde van de som, zoals u_n; die telt altijd mee."
+  },
+  {
+   "t": "Rekenkundige rij",
+   "d": "Een rij met een constant verschil tussen opeenvolgende termen."
+  },
+  {
+   "t": "Meetkundige rij",
+   "d": "Een rij met een constante factor tussen opeenvolgende termen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is S_3 van de rij 2, 5, 8, 11, …?",
+   "o": [
+    "\"8 (u_3)\"",
+    "\"15\"",
+    "\"26 (S_4)\"",
+    "\"7 (2 + 5)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8 (u_3)\"\"? Dan neem je alleen de derde term. S_3 is de som van de eerste drie termen, dus 15. Het goede antwoord is 15.",
+    "Klopt: 2 + 5 + 8 = 15. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"26 (S_4)\"\"? Dan tel je vier termen op. S_3 heeft drie termen, dus 15. Door de stappen goed na te lopen kom je uit op 15.",
+    "Koos je \"\"7 (2 + 5)\"\"? Dan tel je maar twee termen op. De som heeft drie termen, dus 15. Controleer je stap: de juiste uitkomst is 15."
+   ],
+   "uh": "Wat is S_3 van de rij 2, 5, 8, 11, …?"
+  },
+  {
+   "v": "Wat betekent S_n bij een rij?",
+   "o": [
+    "\"de n-de term van de rij\"",
+    "\"het verschil van de eerste n termen\"",
+    "\"het gemiddelde van n termen\"",
+    "\"de som van de eerste n termen\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de n-de term van de rij\"\"? Dan verwar je de som met een term. Een term schrijf je als u_n, dus de som van de eerste n termen.",
+    "Koos je \"\"het verschil van de eerste n termen\"\"? Dan lees je de S als een verschil. S staat voor som, dus de som van de eerste n termen.",
+    "Koos je \"\"het gemiddelde van n termen\"\"? Dan deel je door n. S_n is niet gedeeld, dus de som van de eerste n termen. Controleer je stap: de juiste uitkomst is de som van de eerste n termen.",
+    "Klopt: S_n telt u_1 tot en met u_n op. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat betekent S_n bij een rij?"
+  },
+  {
+   "v": "Hoeveel is 1 + 2 + 3 + 4 + 5 + 6?",
+   "o": [
+    "\"21\"",
+    "\"15 (1 + … + 5)\"",
+    "\"36 (6 · 6)\"",
+    "\"42 (6 · 7)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 6/2 · (1 + 6) = 21. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"15 (1 + … + 5)\"\"? Dan tel je een term te weinig op. Er zijn zes termen, dus 21. Het goede antwoord is 21.",
+    "Koos je \"\"36 (6 · 6)\"\"? Dan vermenigvuldig je het aantal met zichzelf. Gebruik n/2 · (eerste + laatste), dus 21. Door de stappen goed na te lopen kom je uit op 21.",
+    "Koos je \"\"42 (6 · 7)\"\"? Dan vergeet je de deling door 2. De formule is n/2 · (eerste + laatste), dus 21. Controleer je stap: de juiste uitkomst is 21."
+   ],
+   "uh": "Hoeveel is 1 + 2 + 3 + 4 + 5 + 6?"
+  },
+  {
+   "v": "Bereken Σ_(k=1)^4 k.",
+   "o": [
+    "\"4 (de bovengrens)\"",
+    "\"24 (1 · 2 · 3 · 4)\"",
+    "\"10\"",
+    "\"6 (1 + 2 + 3)\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4 (de bovengrens)\"\"? Dan neem je de bovengrens. Het sigma-teken telt alle termen op, dus 10. Het goede antwoord is 10.",
+    "Koos je \"\"24 (1 · 2 · 3 · 4)\"\"? Dan vermenigvuldig je de termen. Sigma betekent optellen, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+    "Klopt: 1 + 2 + 3 + 4 = 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6 (1 + 2 + 3)\"\"? Dan laat je k = 4 weg. De bovengrens 4 hoort erbij, dus 10. Controleer je stap: de juiste uitkomst is 10."
+   ],
+   "uh": "Bereken Σ_(k=1)^4 k."
+  },
+  {
+   "v": "Wat is de som 1 + 2 + 4 + 8?",
+   "o": [
+    "\"16 (de volgende term)\"",
+    "\"15\"",
+    "\"7 (1 + 2 + 4)\"",
+    "\"11 (1 + 2 + 8)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"16 (de volgende term)\"\"? Dan neem je de volgende term. De som is de optelling van de vier termen, dus 15. Het goede antwoord is 15.",
+    "Klopt: 1 + 2 + 4 + 8 = 15. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7 (1 + 2 + 4)\"\"? Dan laat je de laatste term weg. Er zijn vier termen, dus 15. Door de stappen goed na te lopen kom je uit op 15.",
+    "Koos je \"\"11 (1 + 2 + 8)\"\"? Dan sla je een term over. Tel alle vier de termen op, dus 15. Controleer je stap: de juiste uitkomst is 15."
+   ],
+   "uh": "Wat is de som 1 + 2 + 4 + 8?"
+  },
+  {
+   "v": "Een rij stijgt elke dag met 2: 2, 4, 6. Wat is de som na drie dagen?",
+   "o": [
+    "\"6 (alleen u_3)\"",
+    "\"8 (2 + 6)\"",
+    "\"9 (3 · 3)\"",
+    "\"12\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6 (alleen u_3)\"\"? Dan neem je alleen de laatste term. De som telt alle drie de termen op, dus 12. Het goede antwoord is 12.",
+    "Koos je \"\"8 (2 + 6)\"\"? Dan tel je alleen de eerste en de laatste term op. Ook de middelste telt mee, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"9 (3 · 3)\"\"? Dan vermenigvuldig je het aantal termen met zichzelf. Tel de termen op, dus 12. Controleer je stap: de juiste uitkomst is 12.",
+    "Klopt: 2 + 4 + 6 = 12. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een rij stijgt elke dag met 2: 2, 4, 6. Wat is de som na drie dagen?"
+  },
+  {
+   "v": "Hoeveel termen telt de som 5 + 10 + 15 + … + 50?",
+   "o": [
+    "\"10\"",
+    "\"9 (50 : 5 − 1)\"",
+    "\"11 (50 : 5 + 1)\"",
+    "\"50 (de laatste term)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 50 : 5 = 10 termen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"9 (50 : 5 − 1)\"\"? Dan trek je een term af. De eerste term telt ook mee, dus 10. Het goede antwoord is 10.",
+    "Koos je \"\"11 (50 : 5 + 1)\"\"? Dan tel je een term bij. De laatste term is 50 = 10 · 5, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+    "Koos je \"\"50 (de laatste term)\"\"? Dan neem je de laatste term als aantal. Deel 50 door 5, dus 10. Controleer je stap: de juiste uitkomst is 10."
+   ],
+   "uh": "Hoeveel termen telt de som 5 + 10 + 15 + … + 50?"
+  },
+  {
+   "v": "Bereken S_4 door de eerste vier termen op te tellen.",
+   "o": [
+    "\"15 (u_4)\"",
+    "\"21 (3 + 7 + 11)\"",
+    "\"36\"",
+    "\"40 (4 · 10)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15 (u_4)\"\"? Dan neem je alleen de vierde term. S_4 telt alle vier de termen op, dus 36. Het goede antwoord is 36.",
+    "Koos je \"\"21 (3 + 7 + 11)\"\"? Dan tel je maar drie termen op. S_4 heeft vier termen, dus 36. Door de stappen goed na te lopen kom je uit op 36.",
+    "Klopt: 3 + 7 + 11 + 15 = 36. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"40 (4 · 10)\"\"? Dan vermenigvuldig je het aantal met een getal. Tel de termen op, dus 36. Controleer je stap: de juiste uitkomst is 36."
+   ],
+   "uh": "Bereken S_4 door de eerste vier termen op te tellen.",
+   "ctx": "Een rekenkundige rij is 3, 7, 11, 15, … met u_1 = 3 en verschil 4. Een leerling berekent de som van de eerste termen op twee manieren: door op te tellen en met de formule voor de som. Hij controleert de uitkomst met de eerste drie termen."
+  },
+  {
+   "v": "Welke formule geeft de som van de eerste n termen van deze rij?",
+   "o": [
+    "\"S_n = n · (u_1 + u_n)\"",
+    "\"S_n = n/2 · (u_1 + u_n)\"",
+    "\"S_n = (u_1 + u_n)/2\"",
+    "\"S_n = u_1 · u_n / 2\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"S_n = n · (u_1 + u_n)\"\"? Dan vergeet je de deling door 2. De som is een gemiddelde keer het aantal, dus S_n = n/2 · (u_1 + u_n).",
+    "Klopt: aantal gedeeld door 2 keer eerste plus laatste term.",
+    "Koos je \"\"S_n = (u_1 + u_n)/2\"\"? Dan vergeet je het aantal termen. Vermenigvuldig met n, dus S_n = n/2 · (u_1 + u_n). Door de stappen goed na te lopen kom je uit op S_n = n/2 · (u_1 + u_n).",
+    "Koos je \"\"S_n = u_1 · u_n / 2\"\"? Dan vermenigvuldig je de termen. Je moet ze optellen, dus S_n = n/2 · (u_1 + u_n). Controleer je stap: de juiste uitkomst is S_n = n/2 · (u_1 + u_n)."
+   ],
+   "uh": "Welke formule geeft de som van de eerste n termen van deze rij?",
+   "ctx": "Een rekenkundige rij is 3, 7, 11, 15, … met u_1 = 3 en verschil 4. Een leerling berekent de som van de eerste termen op twee manieren: door op te tellen en met de formule voor de som. Hij controleert de uitkomst met de eerste drie termen."
+  },
+  {
+   "v": "Bereken de som van de eerste 10 termen van deze rij.",
+   "o": [
+    "\"420 (10 · 42)\"",
+    "\"42 (u_1 + u_10)\"",
+    "\"171 (S_9)\"",
+    "\"210\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"420 (10 · 42)\"\"? Dan vergeet je de deling door 2. Gebruik 10/2 · 42, dus 210. Het goede antwoord is 210.",
+    "Koos je \"\"42 (u_1 + u_10)\"\"? Dan neem je alleen eerste plus laatste term. Vermenigvuldig met 10/2, dus 210. Door de stappen goed na te lopen kom je uit op 210.",
+    "Koos je \"\"171 (S_9)\"\"? Dan tel je negen termen. Er zijn tien termen, dus 210. Controleer je stap: de juiste uitkomst is 210.",
+    "Klopt: u_10 = 39 en S_10 = 10/2 · (3 + 39) = 210. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken de som van de eerste 10 termen van deze rij.",
+   "ctx": "Een rekenkundige rij is 3, 7, 11, 15, … met u_1 = 3 en verschil 4. Een leerling berekent de som van de eerste termen op twee manieren: door op te tellen en met de formule voor de som. Hij controleert de uitkomst met de eerste drie termen."
+  },
+  {
+   "v": "Hoeveel is de som van de eerste 3 termen?",
+   "o": [
+    "\"26\"",
+    "\"18 (u_3)\"",
+    "\"80 (S_4)\"",
+    "\"54 (u_4)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2 + 6 + 18 = 26. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"18 (u_3)\"\"? Dan neem je alleen de derde term. Tel alle drie de termen op, dus 26. Het goede antwoord is 26.",
+    "Koos je \"\"80 (S_4)\"\"? Dan tel je vier termen. Er zijn drie termen, dus 26. Door de stappen goed na te lopen kom je uit op 26.",
+    "Koos je \"\"54 (u_4)\"\"? Dan neem je de vierde term. Je zoekt de som van drie termen, dus 26. Controleer je stap: de juiste uitkomst is 26."
+   ],
+   "uh": "Hoeveel is de som van de eerste 3 termen?",
+   "ctx": "Een meetkundige rij is 2, 6, 18, 54, … met u_1 = 2 en factor 3. Een leerling berekent de som van de eerste termen met de formule voor de som van een meetkundige rij en controleert die met optellen van de eerste termen."
+  },
+  {
+   "v": "Welke waarde heeft de som van de eerste 5 termen?",
+   "o": [
+    "\"80 (S_4)\"",
+    "\"162 (u_5)\"",
+    "\"242\"",
+    "\"728 (S_6)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"80 (S_4)\"\"? Dan tel je vier termen. Er zijn vijf termen, dus 242. Het goede antwoord is 242.",
+    "Koos je \"\"162 (u_5)\"\"? Dan neem je alleen de vijfde term. De som telt alle termen, dus 242. Door de stappen goed na te lopen kom je uit op 242.",
+    "Klopt: 2 · (1 − 3^5)/(1 − 3) = 242. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"728 (S_6)\"\"? Dan tel je zes termen. Er zijn vijf termen, dus 242. Controleer je stap: de juiste uitkomst is 242."
+   ],
+   "uh": "Welke waarde heeft de som van de eerste 5 termen?",
+   "ctx": "Een meetkundige rij is 2, 6, 18, 54, … met u_1 = 2 en factor 3. Een leerling berekent de som van de eerste termen met de formule voor de som van een meetkundige rij en controleert die met optellen van de eerste termen."
+  },
+  {
+   "v": "Welke termen heeft Σ_(k=1)^5 (3k − 1)?",
+   "o": [
+    "\"3, 6, 9, 12, 15 (zonder de −1)\"",
+    "\"2, 5, 8, 11, 14\"",
+    "\"2, 5, 8, 11 (maar vier termen)\"",
+    "\"−1, 2, 5, 8, 11 (begin bij k = 0)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3, 6, 9, 12, 15 (zonder de −1)\"\"? Dan laat je de −1 weg. De term is 3k − 1, dus 2, 5, 8, 11, 14. Het goede antwoord is 2, 5, 8, 11, 14.",
+    "Klopt: k = 1 geeft 2 en k = 5 geeft 14. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2, 5, 8, 11 (maar vier termen)\"\"? Dan stop je bij k = 4. De bovengrens is 5, dus 2, 5, 8, 11, 14. Door de stappen goed na te lopen kom je uit op 2, 5, 8, 11, 14.",
+    "Koos je \"\"−1, 2, 5, 8, 11 (begin bij k = 0)\"\"? Dan begin je bij k = 0. De ondergrens is k = 1, dus 2, 5, 8, 11, 14. Controleer je stap: de juiste uitkomst is 2, 5, 8, 11, 14."
+   ],
+   "uh": "Welke termen heeft Σ_(k=1)^5 (3k − 1)?",
+   "ctx": "Een leerling krijgt de som Σ_(k=1)^5 (3k − 1) en schrijft de termen een voor een op. Hij berekent de som door op te tellen, controleert met de formule voor een rekenkundige som en onderzoekt ook een langere som met meer termen."
+  },
+  {
+   "v": "Bereken Σ_(k=1)^5 (3k − 1).",
+   "o": [
+    "\"45 (3 · 15)\"",
+    "\"14 (de laatste term)\"",
+    "\"26 (zonder de laatste term)\"",
+    "\"40\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"45 (3 · 15)\"\"? Dan laat je de −1 weg in elke term. Trek 5 keer 1 af, dus 40. Het goede antwoord is 40.",
+    "Koos je \"\"14 (de laatste term)\"\"? Dan neem je alleen de laatste term. Sigma telt alle termen op, dus 40. Door de stappen goed na te lopen kom je uit op 40.",
+    "Koos je \"\"26 (zonder de laatste term)\"\"? Dan laat je k = 5 weg. De bovengrens telt mee, dus 40. Controleer je stap: de juiste uitkomst is 40.",
+    "Klopt: 2 + 5 + 8 + 11 + 14 = 40. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken Σ_(k=1)^5 (3k − 1).",
+   "ctx": "Een leerling krijgt de som Σ_(k=1)^5 (3k − 1) en schrijft de termen een voor een op. Hij berekent de som door op te tellen, controleert met de formule voor een rekenkundige som en onderzoekt ook een langere som met meer termen."
+  },
+  {
+   "v": "Hoeveel blokken liggen er in totaal in de toren van 10 lagen?",
+   "o": [
+    "\"55\"",
+    "\"50 (10 · 5)\"",
+    "\"100 (10 · 10)\"",
+    "\"45 (9 · 10 : 2)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 10/2 · (10 + 1) = 55. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"50 (10 · 5)\"\"? Dan vermenigvuldig je het aantal lagen met 5. Gebruik 10/2 · (10 + 1), dus 55. Het goede antwoord is 55.",
+    "Koos je \"\"100 (10 · 10)\"\"? Dan vermenigvuldig je 10 met 10. Het aantal blokken wordt per laag minder, dus 55. Door de stappen goed na te lopen kom je uit op 55.",
+    "Koos je \"\"45 (9 · 10 : 2)\"\"? Dan laat je de bovenste laag weg. Er zijn tien lagen, dus 55. Controleer je stap: de juiste uitkomst is 55."
+   ],
+   "uh": "Hoeveel blokken liggen er in totaal in de toren van 10 lagen?",
+   "ctx": "Bij een toren van blokken liggen 10 blokken op de onderste laag en op elke hogere laag 1 blok minder, tot 1 blok op de bovenste laag. Een leerling berekent het totaal aantal blokken met een somformule en onderzoekt ook grotere torens."
+  },
+  {
+   "v": "Hoeveel blokken liggen er als de onderste laag 20 blokken telt?",
+   "o": [
+    "\"200 (10 · 20)\"",
+    "\"420 (20 · 21)\"",
+    "\"210\"",
+    "\"190 (19 · 20 : 2)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"200 (10 · 20)\"\"? Dan vermenigvuldig je 10 met 20. Gebruik 20/2 · (20 + 1), dus 210. Het goede antwoord is 210.",
+    "Koos je \"\"420 (20 · 21)\"\"? Dan vergeet je de deling door 2. De formule is n/2 · (eerste + laatste), dus 210. Door de stappen goed na te lopen kom je uit op 210.",
+    "Klopt: 20/2 · (20 + 1) = 210. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"190 (19 · 20 : 2)\"\"? Dan laat je een laag weg. Er zijn twintig lagen, dus 210. Controleer je stap: de juiste uitkomst is 210."
+   ],
+   "uh": "Hoeveel blokken liggen er als de onderste laag 20 blokken telt?",
+   "ctx": "Bij een toren van blokken liggen 10 blokken op de onderste laag en op elke hogere laag 1 blok minder, tot 1 blok op de bovenste laag. Een leerling berekent het totaal aantal blokken met een somformule en onderzoekt ook grotere torens."
+  },
+  {
+   "v": "Bereken het totaal aantal mensen dat het bericht kent na 6 dagen.",
+   "o": [
+    "\"32 (alleen dag 6)\"",
+    "\"63\"",
+    "\"64 (2^6)\"",
+    "\"12 (6 · 2)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"32 (alleen dag 6)\"\"? Dan neem je alleen de nieuwe mensen van dag 6. Het totaal telt alle dagen op, dus 63. Het goede antwoord is 63.",
+    "Klopt: 1 + 2 + 4 + 8 + 16 + 32 = 63. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"64 (2^6)\"\"? Dan neem je 2^6. Het totaal is 2^6 − 1, dus 63. Door de stappen goed na te lopen kom je uit op 63.",
+    "Koos je \"\"12 (6 · 2)\"\"? Dan vermenigvuldig je het aantal dagen met 2. De groei is een factor, dus 63. Controleer je stap: de juiste uitkomst is 63."
+   ],
+   "uh": "Bereken het totaal aantal mensen dat het bericht kent na 6 dagen.",
+   "ctx": "Een nieuwsbericht verspreidt zich: op dag 1 hoort 1 persoon het, op dag 2 komen er 2 nieuwe mensen bij, op dag 3 komen er 4 bij, enzovoort, elke dag twee keer zoveel nieuwe mensen. Een leerling berekent het totaal aantal mensen dat het weet."
+  },
+  {
+   "v": "Hoeveel termen telt de som 3 + 7 + 11 + … + 43?",
+   "o": [
+    "\"10 (43 : 4)\"",
+    "\"12 (11 + 1)\"",
+    "\"40 (43 − 3)\"",
+    "\"11\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10 (43 : 4)\"\"? Dan deel je 43 door 4 en rondt af. Los 3 + 4(n − 1) = 43 op, dus 11. Het goede antwoord is 11.",
+    "Koos je \"\"12 (11 + 1)\"\"? Dan tel je een term bij. Los de vergelijking op, dus 11. Door de stappen goed na te lopen kom je uit op 11.",
+    "Koos je \"\"40 (43 − 3)\"\"? Dan neem je het verschil tussen laatste en eerste term. Deel nog door 4 en tel 1 op, dus 11. Controleer je stap: de juiste uitkomst is 11.",
+    "Klopt: 3 + 4(n − 1) = 43 geeft n = 11. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel termen telt de som 3 + 7 + 11 + … + 43?",
+   "ctx": "Een rekenkundige rij is 3, 7, 11, 15, … met u_1 = 3 en verschil 4. Een leerling berekent de som van de eerste termen op twee manieren: door op te tellen en met de formule voor de som. Hij controleert de uitkomst met de eerste drie termen."
+  },
+  {
+   "v": "Bereken de som 3 + 7 + 11 + … + 43.",
+   "o": [
+    "\"253\"",
+    "\"230 (10 · 23)\"",
+    "\"276 (12 · 23)\"",
+    "\"506 (11 · 46)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 11/2 · (3 + 43) = 253. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"230 (10 · 23)\"\"? Dan tel je tien termen. Er zijn elf termen, dus 253. Het goede antwoord is 253.",
+    "Koos je \"\"276 (12 · 23)\"\"? Dan tel je twaalf termen. Er zijn elf termen, dus 253. Door de stappen goed na te lopen kom je uit op 253.",
+    "Koos je \"\"506 (11 · 46)\"\"? Dan vergeet je de deling door 2. Gebruik 11/2 · 46, dus 253. Controleer je stap: de juiste uitkomst is 253."
+   ],
+   "uh": "Bereken de som 3 + 7 + 11 + … + 43.",
+   "ctx": "Een rekenkundige rij is 3, 7, 11, 15, … met u_1 = 3 en verschil 4. Een leerling berekent de som van de eerste termen op twee manieren: door op te tellen en met de formule voor de som. Hij controleert de uitkomst met de eerste drie termen."
+  },
+  {
+   "v": "Bereken het bedrag dat in de 12e maand wordt gespaard.",
+   "o": [
+    "\"€700 (100 + 12 · 50)\"",
+    "\"€600 (12 · 50)\"",
+    "\"€650\"",
+    "\"€550 (100 + 9 · 50)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€700 (100 + 12 · 50)\"\"? Dan gebruik je n in plaats van n − 1. De rij begint bij u_1, dus €650. Het goede antwoord is €650.",
+    "Koos je \"\"€600 (12 · 50)\"\"? Dan laat je het beginbedrag weg. Tel 100 erbij op, dus €650. Door de stappen goed na te lopen kom je uit op €650.",
+    "Klopt: u_12 = 100 + 11 · 50 = 650. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€550 (100 + 9 · 50)\"\"? Dan tel je te weinig stappen. Van u_1 naar u_12 zijn het elf stappen, dus €650. Controleer je stap: de juiste uitkomst is €650."
+   ],
+   "uh": "Bereken het bedrag dat in de 12e maand wordt gespaard.",
+   "ctx": "Iemand spaart elke maand €50 meer dan de vorige maand: €100, €150, €200, … Een leerling berekent het bedrag van de 12e maand en het totaal dat in 12 maanden is gespaard. Daarna zoekt hij wanneer het totaal boven een grens komt."
+  },
+  {
+   "v": "Hoeveel is er in 12 maanden in totaal gespaard?",
+   "o": [
+    "\"€7800 (12 · 650)\"",
+    "\"€4500\"",
+    "\"€750 (100 + 650)\"",
+    "\"€9000 (12 · 750)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€7800 (12 · 650)\"\"? Dan vermenigvuldig je het aantal met de laatste term. Gebruik 12/2 · (100 + 650), dus €4500.",
+    "Klopt: 12/2 · (100 + 650) = 4500. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€750 (100 + 650)\"\"? Dan neem je alleen eerste plus laatste term. Vermenigvuldig met 12/2, dus €4500. Door de stappen goed na te lopen kom je uit op €4500.",
+    "Koos je \"\"€9000 (12 · 750)\"\"? Dan vergeet je de deling door 2. De formule is n/2 · (eerste + laatste), dus €4500. Controleer je stap: de juiste uitkomst is €4500."
+   ],
+   "uh": "Hoeveel is er in 12 maanden in totaal gespaard?",
+   "ctx": "Iemand spaart elke maand €50 meer dan de vorige maand: €100, €150, €200, … Een leerling berekent het bedrag van de 12e maand en het totaal dat in 12 maanden is gespaard. Daarna zoekt hij wanneer het totaal boven een grens komt."
+  },
+  {
+   "v": "Vanaf welke dag is het totaal aantal bereikte mensen groter dan 1000?",
+   "o": [
+    "\"9 (S_9 = 511)\"",
+    "\"11 (S_11 = 2047)\"",
+    "\"500 (de helft van 1000)\"",
+    "\"10\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9 (S_9 = 511)\"\"? Dan kies je een dag te vroeg. S_9 is nog kleiner dan 1000, dus 10. Het goede antwoord is 10.",
+    "Koos je \"\"11 (S_11 = 2047)\"\"? Dan kies je een dag te laat. Al op dag 10 is de som groter dan 1000, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+    "Koos je \"\"500 (de helft van 1000)\"\"? Dan neem je de helft van 1000. Je zoekt het aantal dagen, dus 10. Controleer je stap: de juiste uitkomst is 10.",
+    "Klopt: S_10 = 1023 en S_9 = 511. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Vanaf welke dag is het totaal aantal bereikte mensen groter dan 1000?",
+   "ctx": "Een nieuwsbericht verspreidt zich: op dag 1 hoort 1 persoon het, op dag 2 komen er 2 nieuwe mensen bij, op dag 3 komen er 4 bij, enzovoort, elke dag twee keer zoveel nieuwe mensen. Een leerling berekent het totaal aantal mensen dat het weet."
+  },
+  {
+   "v": "Hoeveel is de som van de termen u_3 tot en met u_5?",
+   "o": [
+    "\"234\"",
+    "\"242 (S_5)\"",
+    "\"216 (18 · 12)\"",
+    "\"72 (18 + 54)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 18 + 54 + 162 = 234. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"242 (S_5)\"\"? Dan neem je de som vanaf u_1. Begin bij u_3, dus 234. Het goede antwoord is 234.",
+    "Koos je \"\"216 (18 · 12)\"\"? Dan vermenigvuldig je u_3 met 12. Tel de drie termen op, dus 234. Door de stappen goed na te lopen kom je uit op 234.",
+    "Koos je \"\"72 (18 + 54)\"\"? Dan laat je u_5 weg. De som loopt tot en met u_5, dus 234. Controleer je stap: de juiste uitkomst is 234."
+   ],
+   "uh": "Hoeveel is de som van de termen u_3 tot en met u_5?",
+   "ctx": "Een meetkundige rij is 2, 6, 18, 54, … met u_1 = 2 en factor 3. Een leerling berekent de som van de eerste termen met de formule voor de som van een meetkundige rij en controleert die met optellen van de eerste termen."
+  },
+  {
+   "v": "Schrijf 2 + 5 + 8 + 11 + 14 met het sigma-teken.",
+   "o": [
+    "\"Σ_(k=1)^5 (3k + 1) (met plus)\"",
+    "\"Σ_(k=1)^4 (3k − 1) (tot k = 4)\"",
+    "\"Σ_(k=1)^5 (3k − 1)\"",
+    "\"Σ_(k=1)^5 3k (zonder −1)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Σ_(k=1)^5 (3k + 1) (met plus)\"\"? Dan gebruik je +1 in plaats van −1. Dan is de eerste term 4, dus Σ_(k=1)^5 (3k − 1).",
+    "Koos je \"\"Σ_(k=1)^4 (3k − 1) (tot k = 4)\"\"? Dan stop je bij k = 4. De som heeft vijf termen, dus Σ_(k=1)^5 (3k − 1). Door de stappen goed na te lopen kom je uit op Σ_(k=1)^5 (3k − 1).",
+    "Klopt: k loopt van 1 tot 5 en elke term is 3k − 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"Σ_(k=1)^5 3k (zonder −1)\"\"? Dan laat je de −1 weg. Dan zijn de termen 3, 6, 9, 12, 15, dus Σ_(k=1)^5 (3k − 1)."
+   ],
+   "uh": "Schrijf 2 + 5 + 8 + 11 + 14 met het sigma-teken.",
+   "ctx": "Een leerling krijgt de som Σ_(k=1)^5 (3k − 1) en schrijft de termen een voor een op. Hij berekent de som door op te tellen, controleert met de formule voor een rekenkundige som en onderzoekt ook een langere som met meer termen."
+  },
+  {
+   "v": "Bereken Σ_(k=1)^10 (3k − 1) met een somformule.",
+   "o": [
+    "\"126 (S_9)\"",
+    "\"155\"",
+    "\"310 (10 · 31)\"",
+    "\"29 (u_10)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"126 (S_9)\"\"? Dan neem je negen termen. Er zijn tien termen, dus 155. Het goede antwoord is 155.",
+    "Klopt: de termen lopen van 2 tot 29 en 10/2 · 31 = 155. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"310 (10 · 31)\"\"? Dan vergeet je de deling door 2. Gebruik 10/2 · (2 + 29), dus 155. Door de stappen goed na te lopen kom je uit op 155.",
+    "Koos je \"\"29 (u_10)\"\"? Dan neem je alleen de laatste term. Sigma telt alle termen op, dus 155. Controleer je stap: de juiste uitkomst is 155."
+   ],
+   "uh": "Bereken Σ_(k=1)^10 (3k − 1) met een somformule.",
+   "ctx": "Een leerling krijgt de som Σ_(k=1)^5 (3k − 1) en schrijft de termen een voor een op. Hij berekent de som door op te tellen, controleert met de formule voor een rekenkundige som en onderzoekt ook een langere som met meer termen."
+  },
+  {
+   "v": "Een toren heeft n lagen met n, n − 1, …, 1 blokken. Bij welke n zijn er 120 blokken?",
+   "o": [
+    "\"12 (120 : 10)\"",
+    "\"16 (15 + 1)\"",
+    "\"14 (S_14 = 105)\"",
+    "\"15\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12 (120 : 10)\"\"? Dan deel je 120 door 10. Los n/2 · (n + 1) = 120 op, dus 15. Het goede antwoord is 15.",
+    "Koos je \"\"16 (15 + 1)\"\"? Dan neem je n + 1. Dat is de laatste term plus 1, dus 15. Door de stappen goed na te lopen kom je uit op 15.",
+    "Koos je \"\"14 (S_14 = 105)\"\"? Dan neem je een laag te weinig. S_14 is nog 105, dus 15. Controleer je stap: de juiste uitkomst is 15.",
+    "Klopt: 15/2 · 16 = 120. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een toren heeft n lagen met n, n − 1, …, 1 blokken. Bij welke n zijn er 120 blokken?",
+   "ctx": "Bij een toren van blokken liggen 10 blokken op de onderste laag en op elke hogere laag 1 blok minder, tot 1 blok op de bovenste laag. Een leerling berekent het totaal aantal blokken met een somformule en onderzoekt ook grotere torens."
+  },
+  {
+   "v": "Na hoeveel maanden is er in totaal meer dan €2000 gespaard?",
+   "o": [
+    "\"8\"",
+    "\"7 (S_7 = 1750)\"",
+    "\"9 (S_9 = 2700)\"",
+    "\"4 (2000 : 500)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Schrijf eerst de termen op, bepaal of de rij rekenkundig of meetkundig is, kies dan de somformule en controleer met optellen. Let op het aantal termen en op de eerste en laatste term. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: S_8 = 2200 en S_7 = 1750. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7 (S_7 = 1750)\"\"? Dan kies je een maand te vroeg. S_7 is nog onder 2000, dus 8. Het goede antwoord is 8.",
+    "Koos je \"\"9 (S_9 = 2700)\"\"? Dan kies je een maand te laat. Al in maand 8 is het totaal boven 2000, dus 8. Door de stappen goed na te lopen kom je uit op 8.",
+    "Koos je \"\"4 (2000 : 500)\"\"? Dan deel je 2000 door het maandbedrag. Het bedrag stijgt elke maand, dus 8. Controleer je stap: de juiste uitkomst is 8."
+   ],
+   "uh": "Na hoeveel maanden is er in totaal meer dan €2000 gespaard?",
+   "ctx": "Iemand spaart elke maand €50 meer dan de vorige maand: €100, €150, €200, … Een leerling berekent het bedrag van de 12e maand en het totaal dat in 12 maanden is gespaard. Daarna zoekt hij wanneer het totaal boven een grens komt."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rij is 5, 9, 13, 17, … met u_1 = 5. Een leerling berekent de som van de eerste 20 termen met de formule voor de som van een rekenkundige rij. Hij controleert de formule met de som van de eerste drie termen.",
+   "v": "Bereken de som van de eerste 20 termen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "u_20 = 5 + 19 · 4 = 81 (1p). S_20 = 20/2 · (5 + 81) (1p). S_20 = 860 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rij is 4, 8, 16, 32, … met u_1 = 4. Een leerling berekent de som van de eerste 7 termen met de formule voor de som van een meetkundige rij. Hij controleert zijn uitkomst met de som van de eerste drie termen.",
+   "v": "Bereken de som van de eerste 7 termen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Factor 2 (1p). S_7 = 4 · (1 − 2^7)/(1 − 2) (1p). S_7 = 508 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling krijgt de som Σ_(k=1)^6 (2k + 3). Hij schrijft de termen op, bepaalt het soort rij en berekent de som op twee manieren: door op te tellen en met een formule. Daarna vergelijkt hij beide uitkomsten.",
+   "v": "Schrijf de termen op en bereken de som op twee manieren.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Termen 5, 7, 9, 11, 13, 15: rekenkundig met verschil 2 (1p). Optellen geeft 60 (1p). Formule: 6/2 · (5 + 15) = 60 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bibliotheek zet op dag 1 tien boeken uit en elke volgende dag 3 boeken meer dan de vorige dag. Een leerling berekent het aantal boeken op dag 14 en het totaal aantal boeken dat in 14 dagen is uitgezet. Hij noteert zijn antwoord met eenheid.",
+   "v": "Bereken het aantal boeken op dag 14 en het totaal over 14 dagen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Rekenkundig met u_1 = 10 en verschil 3 (1p). u_14 = 49 (1p). S_14 = 14/2 · (10 + 49) = 413 boeken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een gerucht verspreidt zich: op dag 1 hoort 1 persoon het en elke dag hoort het drie keer zoveel nieuwe mensen als de dag ervoor. Een leerling berekent het totaal aantal mensen dat het gerucht na 5 dagen kent. Hij controleert met optellen.",
+   "v": "Bereken het totaal aantal mensen na 5 dagen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Meetkundig met u_1 = 1 en factor 3 (1p). S_5 = 1 · (1 − 3^5)/(1 − 3) (1p). S_5 = 121 mensen (1p)."
+  }
+ ]
+}
