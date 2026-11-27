@@ -1,0 +1,682 @@
+{
+ "id": "D1",
+ "lo": "wa.D.1",
+ "gs": 2,
+ "naam": "Rekenkundige en meetkundige rijen herkennen en beschrijven",
+ "beschrijving": "Je herkent of een rij rekenkundig of meetkundig is met verschillen en quotiënten, stelt de directe formule op, rekent met termen en past rijen toe in een context.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Rijen en notatie",
+  "Rekenkundige rijen",
+  "Meetkundige rijen",
+  "De rij van verschillen",
+  "Rijen in een context"
+ ],
+ "sam": "Een rij is rekenkundig bij een constant verschil en meetkundig bij een constante factor. Bereken eerst verschillen en dan quotiënten, stel de directe formule op en controleer met een term. Vertaal het antwoord terug naar de context. Een rij heeft alleen gehele n; als de nummering bij u_0 begint is u_3 de vierde term, dus let op de nummering. Gebruik voor het soort rij altijd twee controles: verschillen en quotiënten, en schrijf het soort rij op in een volledige zin.",
+ "begrippen": [
+  {
+   "t": "Rij",
+   "d": "Een lijst getallen u_0, u_1, u_2, … of u_1, u_2, …; u_n is de n-de term."
+  },
+  {
+   "t": "Notatie u_n en u(n)",
+   "d": "Twee schrijfwijzen voor de n-de term van een rij."
+  },
+  {
+   "t": "Rekenkundige rij",
+   "d": "Een rij met een constant verschil tussen opeenvolgende termen."
+  },
+  {
+   "t": "Verschil",
+   "d": "Het constante getal v bij een rekenkundige rij: u_n = u_0 + v · n."
+  },
+  {
+   "t": "Meetkundige rij",
+   "d": "Een rij met een constante factor tussen opeenvolgende termen."
+  },
+  {
+   "t": "Factor",
+   "d": "Het constante getal g bij een meetkundige rij: u_n = u_0 · g^n."
+  },
+  {
+   "t": "Directe formule",
+   "d": "Een formule waarmee je u_n direct uit n berekent."
+  },
+  {
+   "t": "Rij van verschillen",
+   "d": "De rij van u_(n+1) − u_n; bij rekenkundig constant."
+  },
+  {
+   "t": "Rij van quotiënten",
+   "d": "De rij van u_(n+1) : u_n; bij meetkundig constant."
+  },
+  {
+   "t": "Beginterm",
+   "d": "De eerste term, u_0 of u_1."
+  },
+  {
+   "t": "Herkennen uit tabel",
+   "d": "Verschillen en quotiënten berekenen om het soort rij te bepalen."
+  },
+  {
+   "t": "Rij in een context",
+   "d": "Spaarplan (rekenkundig) en groei (meetkundig)."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een rij heeft tussen opeenvolgende termen steeds hetzelfde verschil. Welk soort rij is dat?",
+   "o": [
+    "\"een meetkundige rij\"",
+    "\"een rekenkundige rij\"",
+    "\"een kwadratische rij\"",
+    "\"een willekeurige rij\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een meetkundige rij\"\"? Dan verwar je verschil met verhouding. Bij een meetkundige rij is de factor constant, dus rekenkundig.",
+    "Klopt: het verschil is constant. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"een kwadratische rij\"\"? Dan denk je dat het verschil van de verschillen telt. Hier is het verschil zelf constant, dus rekenkundig.",
+    "Koos je \"\"een willekeurige rij\"\"? Dan denk je dat elk patroon willekeurig is. Een vast verschil geeft een rekenkundige rij, dus rekenkundig."
+   ],
+   "uh": "Een rij heeft tussen opeenvolgende termen steeds hetzelfde verschil. Welk soort rij is dat?"
+  },
+  {
+   "v": "Een rij heeft tussen opeenvolgende termen steeds dezelfde factor. Welk soort rij is dat?",
+   "o": [
+    "\"een rekenkundige rij\"",
+    "\"een constante rij\"",
+    "\"een dalende rij\"",
+    "\"een meetkundige rij\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een rekenkundige rij\"\"? Dan verwar je factor met verschil. Bij een rekenkundige rij is het verschil constant, dus meetkundig.",
+    "Koos je \"\"een constante rij\"\"? Dan denk je dat alle termen gelijk zijn. De termen veranderen met een factor, dus meetkundig.",
+    "Koos je \"\"een dalende rij\"\"? Dan denk je dat de rij altijd daalt. Een factor groter dan 1 laat de rij stijgen, dus meetkundig.",
+    "Klopt: de verhouding is constant. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een rij heeft tussen opeenvolgende termen steeds dezelfde factor. Welk soort rij is dat?"
+  },
+  {
+   "v": "Wat is u_3 in de rij 5, 8, 11, 14, … als u_0 = 5?",
+   "o": [
+    "\"14\"",
+    "\"11 (u_2)\"",
+    "\"8 (u_1)\"",
+    "\"3 (het verschil)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: u_0 = 5, u_1 = 8, u_2 = 11, u_3 = 14. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"11 (u_2)\"\"? Dan neem je u_2. De nummering begint bij u_0, dus u_3 = 14. Het goede antwoord is 14.",
+    "Koos je \"\"8 (u_1)\"\"? Dan neem je u_1. De nummering begint bij u_0, dus u_3 = 14. Door de stappen goed na te lopen kom je uit op 14.",
+    "Koos je \"\"3 (het verschil)\"\"? Dan neem je het verschil. u_3 is de vierde term, dus 14. Controleer je stap: de juiste uitkomst is 14."
+   ],
+   "uh": "Wat is u_3 in de rij 5, 8, 11, 14, … als u_0 = 5?"
+  },
+  {
+   "v": "Welk verschil hebben de opeenvolgende termen van 5, 8, 11, 14?",
+   "o": [
+    "\"5\"",
+    "\"11\"",
+    "\"3\"",
+    "\"13\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5\"\"? Dan neem je de eerste term. Het verschil is 8 − 5, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"11\"\"? Dan neem je een term. Het verschil is het verschil van twee termen, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Klopt: 8 − 5 = 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"13\"\"? Dan tel je 5 en 8 op. Het verschil is 8 − 5, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Welk verschil hebben de opeenvolgende termen van 5, 8, 11, 14?"
+  },
+  {
+   "v": "Welke factor hebben de opeenvolgende termen van 3, 6, 12, 24?",
+   "o": [
+    "\"3 (de eerste term)\"",
+    "\"2\"",
+    "\"9 (3 + 6)\"",
+    "\"6 (de tweede term)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3 (de eerste term)\"\"? Dan neem je de eerste term. De factor is 6 : 3, dus 2. Het goede antwoord is 2.",
+    "Klopt: 6 : 3 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"9 (3 + 6)\"\"? Dan tel je 3 en 6 op. De factor is een quotiënt, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Koos je \"\"6 (de tweede term)\"\"? Dan neem je de tweede term. De factor is 6 : 3, dus 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Welke factor hebben de opeenvolgende termen van 3, 6, 12, 24?"
+  },
+  {
+   "v": "Is de rij 2, 4, 6, 8 rekenkundig?",
+   "o": [
+    "\"nee, de rij stijgt\"",
+    "\"nee, het is een meetkundige rij\"",
+    "\"ja, de factor is steeds 2\"",
+    "\"ja, het verschil is steeds 2\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nee, de rij stijgt\"\"? Dan denk je dat stijgen niet rekenkundig is. Een vast verschil maakt hem rekenkundig, dus ja.",
+    "Koos je \"\"nee, het is een meetkundige rij\"\"? Dan verwar je een vast verschil met een vaste factor. De factoren zijn 2, 1,5 en 1,33, dus ja, rekenkundig.",
+    "Koos je \"\"ja, de factor is steeds 2\"\"? Dan verwar je verschil en factor. Het verschil is 2, de factor niet constant, dus ja, door het verschil.",
+    "Klopt: 4 − 2 = 6 − 4 = 8 − 6. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Is de rij 2, 4, 6, 8 rekenkundig?"
+  },
+  {
+   "v": "Is de rij 1, 2, 4, 8 rekenkundig of meetkundig?",
+   "o": [
+    "\"meetkundig, de factor is steeds 2\"",
+    "\"rekenkundig, het verschil is steeds 1\"",
+    "\"rekenkundig, want de rij stijgt\"",
+    "\"geen van beide\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2 : 1 = 4 : 2 = 8 : 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"rekenkundig, het verschil is steeds 1\"\"? Dan neem je het eerste verschil. De verschillen zijn 1, 2 en 4, dus meetkundig.",
+    "Koos je \"\"rekenkundig, want de rij stijgt\"\"? Dan denk je dat stijgen rekenkundig betekent. De verschillen zijn niet gelijk, dus meetkundig.",
+    "Koos je \"\"geen van beide\"\"? Dan denk je dat het geen patroon is. De factor is steeds 2, dus meetkundig. Controleer je stap: de juiste uitkomst is meetkundig, de factor is steeds 2."
+   ],
+   "uh": "Is de rij 1, 2, 4, 8 rekenkundig of meetkundig?"
+  },
+  {
+   "v": "Welk verschil hebben de opeenvolgende termen?",
+   "o": [
+    "\"5\"",
+    "\"2\"",
+    "\"3\"",
+    "\"14\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5\"\"? Dan neem je de eerste term. Het verschil is 8 − 5, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"2\"\"? Dan neem je een verkeerd verschil. 8 − 5 = 3, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Klopt: 8 − 5 = 11 − 8 = 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"14\"\"? Dan neem je de laatste term. Het verschil is 8 − 5, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Welk verschil hebben de opeenvolgende termen?",
+   "ctx": "Een rij getallen is 5, 8, 11, 14, … met u_0 = 5. Een leerling onderzoekt het verschil tussen opeenvolgende termen, stelt een formule voor u_n op en berekent enkele termen. Hij controleert zijn formule met een term uit de rij."
+  },
+  {
+   "v": "Welke waarde heeft u_4?",
+   "o": [
+    "\"14 (u_3)\"",
+    "\"17\"",
+    "\"20 (twee keer 3 erbij)\"",
+    "\"12 (5 + 7)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"14 (u_3)\"\"? Dan neem je u_3. u_4 is de vijfde term, dus 17. Het goede antwoord is 17.",
+    "Klopt: 14 + 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"20 (twee keer 3 erbij)\"\"? Dan tel je twee keer 3 bij 14 op. u_4 = 14 + 3, dus 17. Door de stappen goed na te lopen kom je uit op 17.",
+    "Koos je \"\"12 (5 + 7)\"\"? Dan tel je 5 + 7. u_4 = 5 + 4 · 3, dus 17. Controleer je stap: de juiste uitkomst is 17."
+   ],
+   "uh": "Welke waarde heeft u_4?",
+   "ctx": "Een rij getallen is 5, 8, 11, 14, … met u_0 = 5. Een leerling onderzoekt het verschil tussen opeenvolgende termen, stelt een formule voor u_n op en berekent enkele termen. Hij controleert zijn formule met een term uit de rij."
+  },
+  {
+   "v": "Schrijf de rij 5, 8, 11, 14 als een formule u_n = …",
+   "o": [
+    "\"u_n = 3 + 5n\"",
+    "\"u_n = 5 · 3^n\"",
+    "\"u_n = 5n + 3\"",
+    "\"u_n = 5 + 3n\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"u_n = 3 + 5n\"\"? Dan wissel je begin en verschil. De eerste term is 5, dus u_n = 5 + 3n. Het goede antwoord is u_n = 5 + 3n.",
+    "Koos je \"\"u_n = 5 · 3^n\"\"? Dan neem je een meetkundige formule. Het verschil is constant, dus u_n = 5 + 3n. Door de stappen goed na te lopen kom je uit op u_n = 5 + 3n.",
+    "Koos je \"\"u_n = 5n + 3\"\"? Dan neem je u_0 = 3. De eerste term is 5, dus u_n = 5 + 3n. Controleer je stap: de juiste uitkomst is u_n = 5 + 3n.",
+    "Klopt: u_0 = 5 en elke stap +3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Schrijf de rij 5, 8, 11, 14 als een formule u_n = …",
+   "ctx": "Een rij getallen is 5, 8, 11, 14, … met u_0 = 5. Een leerling onderzoekt het verschil tussen opeenvolgende termen, stelt een formule voor u_n op en berekent enkele termen. Hij controleert zijn formule met een term uit de rij."
+  },
+  {
+   "v": "Bereken u_10 met de formule u_n = 5 + 3n.",
+   "o": [
+    "\"35\"",
+    "\"38\"",
+    "\"30\"",
+    "\"150\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 5 + 3 · 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"38\"\"? Dan neem je 5 + 3 · 11. De formule heeft n = 10, dus 35. Het goede antwoord is 35.",
+    "Koos je \"\"30\"\"? Dan vergeet je de beginwaarde 5. u_10 = 5 + 30, dus 35. Door de stappen goed na te lopen kom je uit op 35.",
+    "Koos je \"\"150\"\"? Dan vermenigvuldig je 5 en 3 en 10. u_10 = 5 + 3 · 10, dus 35. Controleer je stap: de juiste uitkomst is 35."
+   ],
+   "uh": "Bereken u_10 met de formule u_n = 5 + 3n.",
+   "ctx": "Een rij getallen is 5, 8, 11, 14, … met u_0 = 5. Een leerling onderzoekt het verschil tussen opeenvolgende termen, stelt een formule voor u_n op en berekent enkele termen. Hij controleert zijn formule met een term uit de rij."
+  },
+  {
+   "v": "Welk nummer n heeft de term 29?",
+   "o": [
+    "\"n = 7\"",
+    "\"n = 9\"",
+    "\"n = 8\"",
+    "\"n = 24\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"n = 7\"\"? Dan neem je n = 7 omdat de eerste term nummer 1 is. De rij begint bij n = 0, dus n = 8. Het goede antwoord is n = 8.",
+    "Koos je \"\"n = 9\"\"? Dan neem je de negende term. 5 + 3 · 8 = 29, dus n = 8. Door de stappen goed na te lopen kom je uit op n = 8.",
+    "Klopt: 5 + 3n = 29. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"n = 24\"\"? Dan trek je 5 af en deel niet door 3. 3n = 24, dus n = 8. Controleer je stap: de juiste uitkomst is n = 8."
+   ],
+   "uh": "Welk nummer n heeft de term 29?",
+   "ctx": "Een rij getallen is 5, 8, 11, 14, … met u_0 = 5. Een leerling onderzoekt het verschil tussen opeenvolgende termen, stelt een formule voor u_n op en berekent enkele termen. Hij controleert zijn formule met een term uit de rij."
+  },
+  {
+   "v": "Welke factor hebben de opeenvolgende termen?",
+   "o": [
+    "\"3 (de eerste term)\"",
+    "\"2\"",
+    "\"12\"",
+    "\"6 (de tweede term)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3 (de eerste term)\"\"? Dan neem je de eerste term. De factor is 6 : 3, dus 2. Het goede antwoord is 2.",
+    "Klopt: 6 : 3 = 12 : 6 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12\"\"? Dan neem je een term. De factor is een quotiënt, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Koos je \"\"6 (de tweede term)\"\"? Dan neem je de tweede term. De factor is 6 : 3, dus 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Welke factor hebben de opeenvolgende termen?",
+   "ctx": "Een rij getallen is 3, 6, 12, 24, … met u_0 = 3. Een leerling onderzoekt de verhouding tussen opeenvolgende termen en stelt een formule voor u_n op. Hij controleert de formule met een term uit de rij."
+  },
+  {
+   "v": "Welke term volgt na 24?",
+   "o": [
+    "\"27 (3 erbij)\"",
+    "\"36 (12 erbij)\"",
+    "\"72 (maal 3)\"",
+    "\"48\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"27 (3 erbij)\"\"? Dan tel je 3 bij 24 op. De rij is meetkundig, dus maal 2, dus 48. Het goede antwoord is 48.",
+    "Koos je \"\"36 (12 erbij)\"\"? Dan tel je 12 bij 24 op. De rij is meetkundig, dus maal 2, dus 48. Door de stappen goed na te lopen kom je uit op 48.",
+    "Koos je \"\"72 (maal 3)\"\"? Dan vermenigvuldig je met 3. De factor is 2, dus 48. Controleer je stap: de juiste uitkomst is 48.",
+    "Klopt: 24 · 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke term volgt na 24?",
+   "ctx": "Een rij getallen is 3, 6, 12, 24, … met u_0 = 3. Een leerling onderzoekt de verhouding tussen opeenvolgende termen en stelt een formule voor u_n op. Hij controleert de formule met een term uit de rij."
+  },
+  {
+   "v": "Hoe luidt de formule u_n voor de rij met u_0 = 3 en factor 2?",
+   "o": [
+    "\"u_n = 3 · 2^n\"",
+    "\"u_n = 3 + 2n\"",
+    "\"u_n = 2 · 3^n\"",
+    "\"u_n = 3 · 2n\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: u_0 = 3 en factor 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_n = 3 + 2n\"\"? Dan neem je een rekenkundige formule. De factor is constant, dus u_n = 3 · 2^n. Het goede antwoord is u_n = 3 · 2^n.",
+    "Koos je \"\"u_n = 2 · 3^n\"\"? Dan wissel je begin en factor. De eerste term is 3, dus u_n = 3 · 2^n. Door de stappen goed na te lopen kom je uit op u_n = 3 · 2^n.",
+    "Koos je \"\"u_n = 3 · 2n\"\"? Dan neem je 2n als macht. De formule heeft 2^n, dus u_n = 3 · 2^n. Controleer je stap: de juiste uitkomst is u_n = 3 · 2^n."
+   ],
+   "uh": "Hoe luidt de formule u_n voor de rij met u_0 = 3 en factor 2?",
+   "ctx": "Een rij getallen is 3, 6, 12, 24, … met u_0 = 3. Een leerling onderzoekt de verhouding tussen opeenvolgende termen en stelt een formule voor u_n op. Hij controleert de formule met een term uit de rij."
+  },
+  {
+   "v": "Bereken de zesde term u_5 van deze meetkundige rij.",
+   "o": [
+    "\"48\"",
+    "\"30\"",
+    "\"96\"",
+    "\"192\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"48\"\"? Dan neem je u_4. u_5 is de zesde term, dus 96. Het goede antwoord is 96.",
+    "Koos je \"\"30\"\"? Dan neem je 3 · 10. De formule is 3 · 2⁵, dus 96. Door de stappen goed na te lopen kom je uit op 96.",
+    "Klopt: 3 · 2⁵. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"192\"\"? Dan neem je u_6. u_5 = 3 · 2⁵, dus 96. Controleer je stap: de juiste uitkomst is 96."
+   ],
+   "uh": "Bereken de zesde term u_5 van deze meetkundige rij.",
+   "ctx": "Een rij getallen is 3, 6, 12, 24, … met u_0 = 3. Een leerling onderzoekt de verhouding tussen opeenvolgende termen en stelt een formule voor u_n op. Hij controleert de formule met een term uit de rij."
+  },
+  {
+   "v": "Is de rij 3, 6, 12, 24 rekenkundig?",
+   "o": [
+    "\"ja, want de rij stijgt\"",
+    "\"nee, de verschillen zijn 3, 6 en 12 en dus niet constant\"",
+    "\"ja, want 6 − 3 = 3\"",
+    "\"nee, want de termen zijn even\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ja, want de rij stijgt\"\"? Dan denk je dat stijgen genoeg is. Het verschil moet constant zijn, dus nee. Het goede antwoord is nee, de verschillen zijn 3, 6 en 12 en dus niet constant.",
+    "Klopt: bij een rekenkundige rij is het verschil constant.",
+    "Koos je \"\"ja, want 6 − 3 = 3\"\"? Dan kijk je naar één verschil. De volgende verschillen zijn 6 en 12, dus nee. Door de stappen goed na te lopen kom je uit op nee, de verschillen zijn 3, 6 en 12 en dus niet constant.",
+    "Koos je \"\"nee, want de termen zijn even\"\"? Dan denk je dat het om even getallen gaat. De verschillen zijn niet constant, dus nee."
+   ],
+   "uh": "Is de rij 3, 6, 12, 24 rekenkundig?",
+   "ctx": "Een rij getallen is 3, 6, 12, 24, … met u_0 = 3. Een leerling onderzoekt de verhouding tussen opeenvolgende termen en stelt een formule voor u_n op. Hij controleert de formule met een term uit de rij."
+  },
+  {
+   "v": "Welke factor hebben de opeenvolgende termen van 100, 90, 81, 72,9?",
+   "o": [
+    "\"10 (het verschil)\"",
+    "\"1,1 (het omgekeerde)\"",
+    "\"−10 (het verschil)\"",
+    "\"0,9\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10 (het verschil)\"\"? Dan neem je het verschil. De factor is een quotiënt, dus 0,9. Het goede antwoord is 0,9.",
+    "Koos je \"\"1,1 (het omgekeerde)\"\"? Dan neem je het omgekeerde. 90 : 100 = 0,9, dus 0,9. Door de stappen goed na te lopen kom je uit op 0,9.",
+    "Koos je \"\"−10 (het verschil)\"\"? Dan neem je het verschil 90 − 100. Het verschil is niet constant, dus 0,9. Controleer je stap: de juiste uitkomst is 0,9.",
+    "Klopt: 90 : 100 = 81 : 90 = 0,9. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke factor hebben de opeenvolgende termen van 100, 90, 81, 72,9?",
+   "ctx": "Een rij is 100, 90, 81, 72,9, … Een leerling onderzoekt of de rij rekenkundig of meetkundig is, stelt een formule op en berekent de vijfde term."
+  },
+  {
+   "v": "Welke formule hoort bij de rij?",
+   "o": [
+    "\"u_n = 100 · 0,9^n\"",
+    "\"u_n = 100 − 10n\"",
+    "\"u_n = 90 · 0,9^n\"",
+    "\"u_n = 0,9 · 100^n\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: u_0 = 100 en factor 0,9. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_n = 100 − 10n\"\"? Dan neem je een rekenkundige formule. De verschillen zijn 10, 9, 8,1, dus u_n = 100 · 0,9^n.",
+    "Koos je \"\"u_n = 90 · 0,9^n\"\"? Dan neem je u_1 als begin. u_0 = 100, dus u_n = 100 · 0,9^n. Door de stappen goed na te lopen kom je uit op u_n = 100 · 0,9^n.",
+    "Koos je \"\"u_n = 0,9 · 100^n\"\"? Dan wissel je begin en factor. De factor staat bij n in de macht, dus u_n = 100 · 0,9^n. Controleer je stap: de juiste uitkomst is u_n = 100 · 0,9^n."
+   ],
+   "uh": "Welke formule hoort bij de rij?",
+   "ctx": "Een rij is 100, 90, 81, 72,9, … Een leerling onderzoekt of de rij rekenkundig of meetkundig is, stelt een formule op en berekent de vijfde term."
+  },
+  {
+   "v": "Welke waarde heeft u_5, op twee decimalen?",
+   "o": [
+    "\"50,00 (100 − 5 · 10)\"",
+    "\"65,61 (u_4)\"",
+    "\"59,05\"",
+    "\"45,00 (100 · 0,9 · 5)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"50,00 (100 − 5 · 10)\"\"? Dan neem je 100 − 5 · 10. De rij is meetkundig, dus 59,05. Het goede antwoord is 59,05.",
+    "Koos je \"\"65,61 (u_4)\"\"? Dan neem je u_4. u_5 is de zesde term, dus 59,05. Door de stappen goed na te lopen kom je uit op 59,05.",
+    "Klopt: 100 · 0,9⁵ = 59,049. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"45,00 (100 · 0,9 · 5)\"\"? Dan neem je 100 · 0,9 · 5. De factor wordt 5 keer toegepast, dus 59,05. Controleer je stap: de juiste uitkomst is 59,05."
+   ],
+   "uh": "Welke waarde heeft u_5, op twee decimalen?",
+   "ctx": "Een rij is 100, 90, 81, 72,9, … Een leerling onderzoekt of de rij rekenkundig of meetkundig is, stelt een formule op en berekent de vijfde term."
+  },
+  {
+   "v": "Welke verschillen hebben de opeenvolgende termen van 2, 5, 10, 17?",
+   "o": [
+    "\"3, 3 en 3\"",
+    "\"3, 5 en 7\"",
+    "\"2, 5 en 10\"",
+    "\"7, 5 en 3\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3, 3 en 3\"\"? Dan neem je alleen het eerste verschil. De verschillen groeien, dus 3, 5 en 7. Het goede antwoord is 3, 5 en 7.",
+    "Klopt: 5 − 2, 10 − 5 en 17 − 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2, 5 en 10\"\"? Dan neem je de termen. De verschillen zijn tussen termen, dus 3, 5 en 7. Door de stappen goed na te lopen kom je uit op 3, 5 en 7.",
+    "Koos je \"\"7, 5 en 3\"\"? Dan draai je de volgorde om. De verschillen nemen toe, dus 3, 5 en 7. Controleer je stap: de juiste uitkomst is 3, 5 en 7."
+   ],
+   "uh": "Welke verschillen hebben de opeenvolgende termen van 2, 5, 10, 17?",
+   "ctx": "Een rij is 2, 5, 10, 17, … Een leerling onderzoekt of de rij rekenkundig of meetkundig is en kijkt naar de rij van verschillen."
+  },
+  {
+   "v": "Is de rij 2, 5, 10, 17 meetkundig?",
+   "o": [
+    "\"ja, want de rij stijgt snel\"",
+    "\"ja, want 5 : 2 = 2,5\"",
+    "\"ja, want de termen zijn gehele getallen\"",
+    "\"nee, de quotiënten zijn 2,5, 2 en 1,7 en dus niet constant\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ja, want de rij stijgt snel\"\"? Dan denk je dat snel stijgen genoeg is. De factor moet constant zijn, dus nee. Het goede antwoord is nee, de quotiënten zijn 2,5, 2 en 1,7 en dus niet constant.",
+    "Koos je \"\"ja, want 5 : 2 = 2,5\"\"? Dan kijk je naar één quotiënt. De volgende zijn 2 en 1,7, dus nee. Door de stappen goed na te lopen kom je uit op nee, de quotiënten zijn 2,5, 2 en 1,7 en dus niet constant.",
+    "Koos je \"\"ja, want de termen zijn gehele getallen\"\"? Dan denk je dat gehele getallen genoeg zijn. De factor moet constant zijn, dus nee.",
+    "Klopt: een meetkundige rij heeft een constante factor. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Is de rij 2, 5, 10, 17 meetkundig?",
+   "ctx": "Een rij is 2, 5, 10, 17, … Een leerling onderzoekt of de rij rekenkundig of meetkundig is en kijkt naar de rij van verschillen."
+  },
+  {
+   "v": "Welke eigenschap heeft de rij van verschillen 3, 5, 7 van de rij 2, 5, 10, 17?",
+   "o": [
+    "\"de verschillen vormen zelf een rekenkundige rij met verschil 2\"",
+    "\"de verschillen vormen een meetkundige rij\"",
+    "\"de verschillen zijn constant\"",
+    "\"de verschillen dalen\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 5 − 3 = 7 − 5 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de verschillen vormen een meetkundige rij\"\"? Dan verwar je een vast verschil met een vaste factor. De verschillen stijgen met 2, dus rekenkundig.",
+    "Koos je \"\"de verschillen zijn constant\"\"? Dan denk je dat 3, 5 en 7 gelijk zijn. Ze stijgen, dus zelf rekenkundig. Door de stappen goed na te lopen kom je uit op de verschillen vormen zelf een rekenkundige rij met verschil 2.",
+    "Koos je \"\"de verschillen dalen\"\"? Dan denk je dat ze afnemen. Ze nemen toe, dus zelf rekenkundig. Controleer je stap: de juiste uitkomst is de verschillen vormen zelf een rekenkundige rij met verschil 2."
+   ],
+   "uh": "Welke eigenschap heeft de rij van verschillen 3, 5, 7 van de rij 2, 5, 10, 17?",
+   "ctx": "Een rij is 2, 5, 10, 17, … Een leerling onderzoekt of de rij rekenkundig of meetkundig is en kijkt naar de rij van verschillen."
+  },
+  {
+   "v": "Welke formule geeft het bedrag u_n na n maanden?",
+   "o": [
+    "\"u_n = 100 · 25^n\"",
+    "\"u_n = 25 + 100n\"",
+    "\"u_n = 100 + 25n\"",
+    "\"u_n = 125n\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"u_n = 100 · 25^n\"\"? Dan neem je een meetkundige formule. Er komt een vast bedrag bij, dus u_n = 100 + 25n. Het goede antwoord is u_n = 100 + 25n.",
+    "Koos je \"\"u_n = 25 + 100n\"\"? Dan wissel je begin en verschil. Het begin is 100, dus u_n = 100 + 25n. Door de stappen goed na te lopen kom je uit op u_n = 100 + 25n.",
+    "Klopt: begin 100 en elke maand 25 erbij. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"u_n = 125n\"\"? Dan tel je 100 en 25 op. Het begin staat los van n, dus u_n = 100 + 25n. Controleer je stap: de juiste uitkomst is u_n = 100 + 25n."
+   ],
+   "uh": "Welke formule geeft het bedrag u_n na n maanden?",
+   "ctx": "Een spaarplan begint met €100 en elke maand komt er €25 bij. Een leerling noemt het bedrag na n maanden u_n en stelt een formule op. Hij berekent het bedrag na een jaar en schrijft het antwoord met eenheid op."
+  },
+  {
+   "v": "Hoeveel euro is er na 12 maanden gespaard?",
+   "o": [
+    "\"€300\"",
+    "\"€400\"",
+    "\"€125\"",
+    "\"€1500\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€300\"\"? Dan vergeet je de beginwaarde 100. u_12 = 100 + 300, dus €400. Het goede antwoord is €400.",
+    "Klopt: 100 + 25 · 12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€125\"\"? Dan neem je u_1. Vul n = 12 in, dus €400. Door de stappen goed na te lopen kom je uit op €400.",
+    "Koos je \"\"€1500\"\"? Dan vermenigvuldig je 100 en 12 en 25 niet goed. u_12 = 100 + 25 · 12, dus €400. Controleer je stap: de juiste uitkomst is €400."
+   ],
+   "uh": "Hoeveel euro is er na 12 maanden gespaard?",
+   "ctx": "Een spaarplan begint met €100 en elke maand komt er €25 bij. Een leerling noemt het bedrag na n maanden u_n en stelt een formule op. Hij berekent het bedrag na een jaar en schrijft het antwoord met eenheid op."
+  },
+  {
+   "v": "Welke formule geeft het aantal bacteriën u_n na n uur?",
+   "o": [
+    "\"u_n = 500 + 1,2n\"",
+    "\"u_n = 1,2 · 500^n\"",
+    "\"u_n = 500 · 0,2^n\"",
+    "\"u_n = 500 · 1,2^n\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"u_n = 500 + 1,2n\"\"? Dan neem je een rekenkundige formule. De groei is een factor, dus u_n = 500 · 1,2^n. Het goede antwoord is u_n = 500 · 1,2^n.",
+    "Koos je \"\"u_n = 1,2 · 500^n\"\"? Dan wissel je begin en factor. Het begin is 500, dus u_n = 500 · 1,2^n. Door de stappen goed na te lopen kom je uit op u_n = 500 · 1,2^n.",
+    "Koos je \"\"u_n = 500 · 0,2^n\"\"? Dan neem je alleen het groeipercentage. De factor is 1,2, dus u_n = 500 · 1,2^n. Controleer je stap: de juiste uitkomst is u_n = 500 · 1,2^n.",
+    "Klopt: begin 500 en factor 1,2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke formule geeft het aantal bacteriën u_n na n uur?",
+   "ctx": "Een bacteriekolonie heeft 500 bacteriën en groeit elk uur met factor 1,2. Een leerling noemt het aantal na n uur u_n en berekent het aantal na 3 uur."
+  },
+  {
+   "v": "Hoeveel bacteriën zijn er na 3 uur?",
+   "o": [
+    "\"864\"",
+    "\"600\"",
+    "\"1500\"",
+    "\"720\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bereken de verschillen en de quotiënten van opeenvolgende termen: een vast verschil geeft een rekenkundige rij, een vaste factor een meetkundige rij. Schrijf het antwoord met de notatie u_n. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 500 · 1,2³. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"600\"\"? Dan neem je u_1. Het zijn 3 uur, dus 864. Het goede antwoord is 864.",
+    "Koos je \"\"1500\"\"? Dan neem je 500 · 3. De factor wordt 3 keer toegepast, dus 864. Door de stappen goed na te lopen kom je uit op 864.",
+    "Koos je \"\"720\"\"? Dan neem je u_2. Het zijn 3 uur, dus 864. Controleer je stap: de juiste uitkomst is 864."
+   ],
+   "uh": "Hoeveel bacteriën zijn er na 3 uur?",
+   "ctx": "Een bacteriekolonie heeft 500 bacteriën en groeit elk uur met factor 1,2. Een leerling noemt het aantal na n uur u_n en berekent het aantal na 3 uur."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rij begint met 7, 11, 15, 19, … en heeft u_0 = 7. Een leerling onderzoekt of de rij rekenkundig of meetkundig is, stelt de directe formule op en berekent u_10. Hij controleert zijn formule met de tweede term van de rij.",
+   "v": "Onderzoek het soort rij, stel u_n op en bereken u_10.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Verschil 4 constant, dus rekenkundig (1p). u_n = 7 + 4n (1p). u_10 = 47 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rij begint met 4, 12, 36, … en heeft u_0 = 4. Een leerling onderzoekt het soort rij, stelt de directe formule op en berekent u_4. Hij controleert zijn formule met de derde term van de rij en schrijft de stappen op.",
+   "v": "Onderzoek het soort rij, stel u_n op en bereken u_4.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Factor 3 constant, dus meetkundig (1p). u_n = 4 · 3^n (1p). u_4 = 324 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rij is 80, 72, 64,8, … Een leerling onderzoekt de factor tussen opeenvolgende termen en berekent de volgende term. Hij schrijft de formule voor u_n op en controleert die met de tweede term van de rij.",
+   "v": "Bepaal de factor, de formule en de vierde term.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "72 : 80 = 64,8 : 72 = 0,9 (1p). u_n = 80 · 0,9^n (1p). Volgende term 58,32 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rij is 1, 3, 6, 10, … Een leerling onderzoekt of de rij rekenkundig of meetkundig is en kijkt naar de rij van verschillen. Daarna schrijft hij de volgende term op.",
+   "v": "Bepaal het soort rij en de volgende term.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Verschillen 2, 3, 4: niet constant (1p). Quotiënten 3, 2, 1,67: niet constant (1p). De verschillen stijgen met 1, dus de volgende term is 15 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een salaris begint op €2000 en stijgt elk jaar met €100. Een leerling noemt het salaris na n jaar u_n, stelt een formule op en berekent u_5. Hij noteert zijn antwoord met eenheid en controleert de formule met het salaris na één jaar.",
+   "v": "Stel u_n op en bereken u_5.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Rekenkundig met verschil 100 (1p). u_n = 2000 + 100n (1p). u_5 = 2500 euro (1p)."
+  }
+ ]
+}
