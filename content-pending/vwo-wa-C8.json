@@ -1,0 +1,682 @@
+{
+ "id": "C8",
+ "lo": "wa.C.8",
+ "gs": 2,
+ "naam": "Functies combineren: optellen, vermenigvuldigen en samenstellen",
+ "beschrijving": "Je stelt som-, verschil-, product-, quotiënt- en samengestelde functies op, let op de volgorde en op waarden waarvoor een quotiënt niet bestaat en interpreteert de combinatie in een context.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Som en verschil",
+  "Product en quotiënt",
+  "Samenstellen",
+  "Winst en andere toepassingen",
+  "Voorwaarden en controleren"
+ ],
+ "sam": "Combineer functies met een som, verschil, product, quotiënt of samenstelling. Bij een quotiënt mag de noemer niet nul zijn, bij samenstellen gaat de binnenste functie eerst. Stel de formule op, controleer met een getal en geef de combinatie een betekenis in de context.",
+ "begrippen": [
+  {
+   "t": "Somfunctie",
+   "d": "(f + g)(x) = f(x) + g(x)."
+  },
+  {
+   "t": "Verschilfunctie",
+   "d": "(f − g)(x) = f(x) − g(x)."
+  },
+  {
+   "t": "Productfunctie",
+   "d": "(f · g)(x) = f(x) · g(x)."
+  },
+  {
+   "t": "Quotiëntfunctie",
+   "d": "(f : g)(x) = f(x) : g(x), alleen als g(x) ≠ 0."
+  },
+  {
+   "t": "Samengestelde functie",
+   "d": "g(f(x)): eerst f toepassen, daarna g."
+  },
+  {
+   "t": "Volgorde bij samenstellen",
+   "d": "g(f(x)) en f(g(x)) zijn meestal niet gelijk."
+  },
+  {
+   "t": "Winstfunctie",
+   "d": "W = opbrengst − kosten, een verschilfunctie."
+  },
+  {
+   "t": "Break-even",
+   "d": "De productie waarbij de winst 0 is."
+  },
+  {
+   "t": "Voorwaarde bij een quotiënt",
+   "d": "Een waarde waarvoor de noemer 0 is, bestaat niet."
+  },
+  {
+   "t": "Verticale asymptoot",
+   "d": "Een lijn x = a waarbij de noemer nul is en de grafiek niet bestaat."
+  },
+  {
+   "t": "Grafiek van een combinatie",
+   "d": "Waarde per x berekenen uit de twee functies."
+  },
+  {
+   "t": "Interpreteren",
+   "d": "De combinatie in de context betekenis geven, zoals winst of oppervlakte."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Schrijf (f + g)(x) uit voor f(x) = 2x + 1 en g(x) = x².",
+   "o": [
+    "\"2x³ + x² (het product)\"",
+    "\"x² + 2x + 1\"",
+    "\"2x + 1 + x (x in plaats van x²)\"",
+    "\"2x² + 1 (ongelijksoortig opgeteld)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2x³ + x² (het product)\"\"? Dan neem je het product. Bij de som tel je op, dus x² + 2x + 1. Het goede antwoord is x² + 2x + 1.",
+    "Klopt: f(x) + g(x). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2x + 1 + x (x in plaats van x²)\"\"? Dan tel je x op in plaats van x². g(x) = x², dus x² + 2x + 1. Door de stappen goed na te lopen kom je uit op x² + 2x + 1.",
+    "Koos je \"\"2x² + 1 (ongelijksoortig opgeteld)\"\"? Dan tel je 2x en x² bij elkaar op als 2x². Het zijn ongelijksoortige termen, dus x² + 2x + 1."
+   ],
+   "uh": "Schrijf (f + g)(x) uit voor f(x) = 2x + 1 en g(x) = x²."
+  },
+  {
+   "v": "Bereken de verschilfunctie f − g voor f(x) = 2x + 1 en g(x) = x².",
+   "o": [
+    "\"x² + 2x + 1 (zonder minteken)\"",
+    "\"x² − 2x − 1 (omgedraaid)\"",
+    "\"2x + 1 − x (x in plaats van x²)\"",
+    "\"−x² + 2x + 1\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² + 2x + 1 (zonder minteken)\"\"? Dan laat je het minteken weg. Trek g(x) af, dus −x² + 2x + 1. Het goede antwoord is −x² + 2x + 1.",
+    "Koos je \"\"x² − 2x − 1 (omgedraaid)\"\"? Dan draai je de volgorde om. Het is f − g, dus −x² + 2x + 1. Door de stappen goed na te lopen kom je uit op −x² + 2x + 1.",
+    "Koos je \"\"2x + 1 − x (x in plaats van x²)\"\"? Dan trek je x af in plaats van x². g(x) = x², dus −x² + 2x + 1. Controleer je stap: de juiste uitkomst is −x² + 2x + 1.",
+    "Klopt: f(x) − g(x). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken de verschilfunctie f − g voor f(x) = 2x + 1 en g(x) = x²."
+  },
+  {
+   "v": "Vermenigvuldig de twee functies: welke formule heeft f · g voor f(x) = 2x + 1 en g(x) = x²?",
+   "o": [
+    "\"2x³ + x²\"",
+    "\"x² + 2x + 1\"",
+    "\"2x² + 1\"",
+    "\"2x + x²\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (2x + 1) · x². Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x² + 2x + 1\"\"? Dan neem je de som. Bij het product vermenigvuldig je, dus 2x³ + x². Het goede antwoord is 2x³ + x².",
+    "Koos je \"\"2x² + 1\"\"? Dan vermenigvuldig je alleen 2x met x. Elke term krijgt x², dus 2x³ + x². Door de stappen goed na te lopen kom je uit op 2x³ + x².",
+    "Koos je \"\"2x + x²\"\"? Dan laat je de factor x² bij 2x weg. (2x + 1) · x², dus 2x³ + x². Controleer je stap: de juiste uitkomst is 2x³ + x²."
+   ],
+   "uh": "Vermenigvuldig de twee functies: welke formule heeft f · g voor f(x) = 2x + 1 en g(x) = x²?"
+  },
+  {
+   "v": "In welke volgorde werk je bij g(f(x))?",
+   "o": [
+    "\"eerst g toepassen en daarna f\"",
+    "\"f(x) en g(x) optellen\"",
+    "\"eerst f toepassen en daarna g op het resultaat\"",
+    "\"f(x) en g(x) vermenigvuldigen\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"eerst g toepassen en daarna f\"\"? Dan draai je de volgorde om. In g(f(x)) staat f binnen, dus eerst f. Het goede antwoord is eerst f toepassen en daarna g op het resultaat.",
+    "Koos je \"\"f(x) en g(x) optellen\"\"? Dan verwar je samenstellen met de som. g(f(x)) is een keten, dus eerst f en dan g. Door de stappen goed na te lopen kom je uit op eerst f toepassen en daarna g op het resultaat.",
+    "Klopt: de binnenste functie gaat eerst. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f(x) en g(x) vermenigvuldigen\"\"? Dan verwar je samenstellen met het product. Het is een keten, dus eerst f en dan g."
+   ],
+   "uh": "In welke volgorde werk je bij g(f(x))?"
+  },
+  {
+   "v": "Hoe bereken je f(g(x)) stap voor stap?",
+   "o": [
+    "\"eerst f toepassen en daarna g\"",
+    "\"eerst g toepassen en daarna f op het resultaat\"",
+    "\"g(x) door f(x) delen\"",
+    "\"g(x) van f(x) aftrekken\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"eerst f toepassen en daarna g\"\"? Dan draai je de volgorde om. In f(g(x)) staat g binnen, dus eerst g. Het goede antwoord is eerst g toepassen en daarna f op het resultaat.",
+    "Klopt: g staat binnen de haakjes. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"g(x) door f(x) delen\"\"? Dan verwar je samenstellen met een quotiënt. Het is een keten, dus eerst g en dan f. Door de stappen goed na te lopen kom je uit op eerst g toepassen en daarna f op het resultaat.",
+    "Koos je \"\"g(x) van f(x) aftrekken\"\"? Dan verwar je samenstellen met een verschil. Het is een keten, dus eerst g en dan f."
+   ],
+   "uh": "Hoe bereken je f(g(x)) stap voor stap?"
+  },
+  {
+   "v": "Wanneer bestaat het quotiënt (f : g)(x) niet?",
+   "o": [
+    "\"als f(x) = 0 is\"",
+    "\"als g(x) negatief is\"",
+    "\"als f en g gelijk zijn\"",
+    "\"als g(x) = 0 is\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"als f(x) = 0 is\"\"? Dan denk je dat een teller nul problemen geeft. 0 gedeeld door iets is 0, dus als g(x) = 0.",
+    "Koos je \"\"als g(x) negatief is\"\"? Dan denk je dat een negatief getal niet kan. Delen door een negatief getal mag, dus als g(x) = 0.",
+    "Koos je \"\"als f en g gelijk zijn\"\"? Dan denk je dat gelijkheid een probleem is. Alleen een noemer 0 niet, dus als g(x) = 0.",
+    "Klopt: delen door 0 kan niet. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wanneer bestaat het quotiënt (f : g)(x) niet?"
+  },
+  {
+   "v": "Welke waarde heeft (f + g)(2) voor f(x) = 2x + 1 en g(x) = x²?",
+   "o": [
+    "\"9\"",
+    "\"20\"",
+    "\"1\"",
+    "\"5\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 5 + 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"20\"\"? Dan neem je het product 5 · 4. Bij de som tel je op, dus 9. Het goede antwoord is 9.",
+    "Koos je \"\"1\"\"? Dan neem je het verschil 5 − 4. Bij de som tel je op, dus 9. Door de stappen goed na te lopen kom je uit op 9.",
+    "Koos je \"\"5\"\"? Dan neem je alleen f(2). Tel g(2) = 4 erbij, dus 9. Controleer je stap: de juiste uitkomst is 9."
+   ],
+   "uh": "Welke waarde heeft (f + g)(2) voor f(x) = 2x + 1 en g(x) = x²?"
+  },
+  {
+   "v": "Welke formule heeft de winstfunctie W(q) = R(q) − K(q)?",
+   "o": [
+    "\"W(q) = 11q + 20\"",
+    "\"W(q) = 5q + 20\"",
+    "\"W(q) = 5q − 20\"",
+    "\"W(q) = 3q − 20\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"W(q) = 11q + 20\"\"? Dan tel je op. Winst is opbrengst min kosten, dus 5q − 20. Het goede antwoord is W(q) = 5q − 20.",
+    "Koos je \"\"W(q) = 5q + 20\"\"? Dan laat je het teken van de vaste kosten fout. −(20 + 3q) = −20 − 3q, dus 5q − 20. Door de stappen goed na te lopen kom je uit op W(q) = 5q − 20.",
+    "Klopt: 8q − (20 + 3q). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"W(q) = 3q − 20\"\"? Dan trek je alleen de vaste kosten af. Ook 3q hoort erbij, dus 5q − 20. Controleer je stap: de juiste uitkomst is W(q) = 5q − 20."
+   ],
+   "uh": "Welke formule heeft de winstfunctie W(q) = R(q) − K(q)?",
+   "ctx": "Een bedrijf heeft de kosten K(q) = 20 + 3q en de opbrengst R(q) = 8q bij een productie van q stuks, in euro. Een leerling stelt de winstfunctie W = R − K op en onderzoekt break-even en winst."
+  },
+  {
+   "v": "Bij welke productie q is de winst 0 (break-even)?",
+   "o": [
+    "\"q = 20\"",
+    "\"q = 4\"",
+    "\"q = 5\"",
+    "\"q = 8\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"q = 20\"\"? Dan neem je de vaste kosten. Los 5q − 20 = 0 op, dus q = 4. Het goede antwoord is q = 4.",
+    "Klopt: 5q − 20 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"q = 5\"\"? Dan neem je de coëfficiënt 5. Los 5q = 20 op, dus q = 4. Door de stappen goed na te lopen kom je uit op q = 4.",
+    "Koos je \"\"q = 8\"\"? Dan neem je de prijs per stuk. Los 5q − 20 = 0 op, dus q = 4. Controleer je stap: de juiste uitkomst is q = 4."
+   ],
+   "uh": "Bij welke productie q is de winst 0 (break-even)?",
+   "ctx": "Een bedrijf heeft de kosten K(q) = 20 + 3q en de opbrengst R(q) = 8q bij een productie van q stuks, in euro. Een leerling stelt de winstfunctie W = R − K op en onderzoekt break-even en winst."
+  },
+  {
+   "v": "Welke winst hoort bij q = 10?",
+   "o": [
+    "\"€50\"",
+    "\"€80\"",
+    "\"−€30\"",
+    "\"€30\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€50\"\"? Dan vergeet je de vaste kosten van 20. W(10) = 50 − 20, dus €30. Het goede antwoord is €30.",
+    "Koos je \"\"€80\"\"? Dan neem je de opbrengst. De winst is opbrengst min kosten, dus €30. Door de stappen goed na te lopen kom je uit op €30.",
+    "Koos je \"\"−€30\"\"? Dan draai je het teken om. W(10) is positief, dus €30. Controleer je stap: de juiste uitkomst is €30.",
+    "Klopt: 5 · 10 − 20. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke winst hoort bij q = 10?",
+   "ctx": "Een bedrijf heeft de kosten K(q) = 20 + 3q en de opbrengst R(q) = 8q bij een productie van q stuks, in euro. Een leerling stelt de winstfunctie W = R − K op en onderzoekt break-even en winst."
+  },
+  {
+   "v": "Welke betekenis heeft W(q) < 0 in de situatie?",
+   "o": [
+    "\"er wordt verlies gemaakt, dat is bij q kleiner dan 4\"",
+    "\"er wordt winst gemaakt\"",
+    "\"er is niets verkocht\"",
+    "\"de kosten zijn 0\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de opbrengst is dan lager dan de kosten. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"er wordt winst gemaakt\"\"? Dan verwar je negatief met positief. W < 0 is verlies, dus verlies. Het goede antwoord is er wordt verlies gemaakt, dat is bij q kleiner dan 4.",
+    "Koos je \"\"er is niets verkocht\"\"? Dan denk je dat q = 0 bedoeld is. W < 0 geldt ook bij q = 1, 2 en 3, dus verlies. Door de stappen goed na te lopen kom je uit op er wordt verlies gemaakt, dat is bij q kleiner dan 4.",
+    "Koos je \"\"de kosten zijn 0\"\"? Dan denk je dat de kosten verdwijnen. W < 0 betekent K > R, dus verlies. Controleer je stap: de juiste uitkomst is er wordt verlies gemaakt, dat is bij q kleiner dan 4."
+   ],
+   "uh": "Welke betekenis heeft W(q) < 0 in de situatie?",
+   "ctx": "Een bedrijf heeft de kosten K(q) = 20 + 3q en de opbrengst R(q) = 8q bij een productie van q stuks, in euro. Een leerling stelt de winstfunctie W = R − K op en onderzoekt break-even en winst."
+  },
+  {
+   "v": "Hoe luidt de formule van g(f(x)) als f(x) = x + 3 en g(x) = 2x?",
+   "o": [
+    "\"2x + 3 (zonder factor 2 bij 3)\"",
+    "\"2x + 5 (3 en 2 opgeteld)\"",
+    "\"2x + 6\"",
+    "\"x + 6 (zonder factor 2)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2x + 3 (zonder factor 2 bij 3)\"\"? Dan vervang je f door x in g. g(f(x)) = 2 · (x + 3), dus 2x + 6. Het goede antwoord is 2x + 6.",
+    "Koos je \"\"2x + 5 (3 en 2 opgeteld)\"\"? Dan tel je 3 en 2 op. Vermenigvuldig (x + 3) met 2, dus 2x + 6. Door de stappen goed na te lopen kom je uit op 2x + 6.",
+    "Klopt: 2 · (x + 3). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x + 6 (zonder factor 2)\"\"? Dan laat je de factor 2 bij x weg. g(f(x)) = 2 · (x + 3), dus 2x + 6. Controleer je stap: de juiste uitkomst is 2x + 6."
+   ],
+   "uh": "Hoe luidt de formule van g(f(x)) als f(x) = x + 3 en g(x) = 2x?",
+   "ctx": "Gegeven zijn f(x) = x + 3 en g(x) = 2x. Een leerling stelt de samengestelde functies g(f(x)) en f(g(x)) op en berekent waarden in x = 1."
+  },
+  {
+   "v": "Welke uitdrukking krijg je als je in f(x) = x + 3 de x vervangt door 2x?",
+   "o": [
+    "\"2x + 6\"",
+    "\"2x + 3\"",
+    "\"2(x + 3)\"",
+    "\"3x\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2x + 6\"\"? Dan draai je de volgorde om. Bij f(g(x)) gaat g eerst, dus 2x + 3. Het goede antwoord is 2x + 3.",
+    "Klopt: f(2x) = 2x + 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2(x + 3)\"\"? Dan vermenigvuldig je het resultaat met 2. Bij f(g(x)) tel je 3 op bij 2x, dus 2x + 3. Door de stappen goed na te lopen kom je uit op 2x + 3.",
+    "Koos je \"\"3x\"\"? Dan tel je 2x en x op. f(g(x)) = 2x + 3, dus 2x + 3. Controleer je stap: de juiste uitkomst is 2x + 3."
+   ],
+   "uh": "Welke uitdrukking krijg je als je in f(x) = x + 3 de x vervangt door 2x?",
+   "ctx": "Gegeven zijn f(x) = x + 3 en g(x) = 2x. Een leerling stelt de samengestelde functies g(f(x)) en f(g(x)) op en berekent waarden in x = 1."
+  },
+  {
+   "v": "Bereken g(f(1)): eerst f(1), dan g.",
+   "o": [
+    "\"5 (f(g(1)))\"",
+    "\"4 (alleen f(1))\"",
+    "\"6 (g(1) + 4)\"",
+    "\"8\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5 (f(g(1)))\"\"? Dan neem je f(g(1)). Bij g(f(1)) gaat f eerst, dus 8. Het goede antwoord is 8.",
+    "Koos je \"\"4 (alleen f(1))\"\"? Dan neem je alleen f(1). Pas daarna g toe, dus 8. Door de stappen goed na te lopen kom je uit op 8.",
+    "Koos je \"\"6 (g(1) + 4)\"\"? Dan neem je g(1) + 4. Pas g toe op f(1) = 4, dus 8. Controleer je stap: de juiste uitkomst is 8.",
+    "Klopt: f(1) = 4 en g(4) = 8. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken g(f(1)): eerst f(1), dan g.",
+   "ctx": "Gegeven zijn f(x) = x + 3 en g(x) = 2x. Een leerling stelt de samengestelde functies g(f(x)) en f(g(x)) op en berekent waarden in x = 1."
+  },
+  {
+   "v": "Neem x = 1: welke uitkomst krijg je als je eerst g en dan f toepast?",
+   "o": [
+    "\"5\"",
+    "\"8 (g(f(1)))\"",
+    "\"2 (alleen g(1))\"",
+    "\"4 (f(1))\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: g(1) = 2 en f(2) = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8 (g(f(1)))\"\"? Dan neem je g(f(1)). Bij f(g(1)) gaat g eerst, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"2 (alleen g(1))\"\"? Dan neem je alleen g(1). Pas daarna f toe, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Koos je \"\"4 (f(1))\"\"? Dan neem je f(1). Bij f(g(1)) gaat g eerst, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Neem x = 1: welke uitkomst krijg je als je eerst g en dan f toepast?",
+   "ctx": "Gegeven zijn f(x) = x + 3 en g(x) = 2x. Een leerling stelt de samengestelde functies g(f(x)) en f(g(x)) op en berekent waarden in x = 1."
+  },
+  {
+   "v": "Tel f(2) en g(2) op: welke waarde krijg je voor (f + g)(2)?",
+   "o": [
+    "\"20\"",
+    "\"1\"",
+    "\"9\"",
+    "\"6\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20\"\"? Dan neem je het product. Bij de som tel je op, dus 9. Het goede antwoord is 9.",
+    "Koos je \"\"1\"\"? Dan neem je het verschil. Bij de som tel je op, dus 9. Door de stappen goed na te lopen kom je uit op 9.",
+    "Klopt: f(2) + g(2) = 5 + 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6\"\"? Dan tel je 2 · 2 + 2 op. g(2) = 4 en f(2) = 5, dus 9. Controleer je stap: de juiste uitkomst is 9."
+   ],
+   "uh": "Tel f(2) en g(2) op: welke waarde krijg je voor (f + g)(2)?",
+   "ctx": "Gegeven zijn f(x) = 2x + 1 en g(x) = x². Een leerling stelt de somfunctie en de verschilfunctie op en berekent waarden in x = 2."
+  },
+  {
+   "v": "Trek g(2) af van f(2): welke waarde krijg je voor (f − g)(2)?",
+   "o": [
+    "\"9\"",
+    "\"1\"",
+    "\"−1\"",
+    "\"20\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9\"\"? Dan tel je op. Bij het verschil trek je af, dus 1. Het goede antwoord is 1.",
+    "Klopt: f(2) − g(2) = 5 − 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−1\"\"? Dan draai je de volgorde om. Het is f − g, dus 1. Door de stappen goed na te lopen kom je uit op 1.",
+    "Koos je \"\"20\"\"? Dan neem je het product. Bij het verschil trek je af, dus 1. Controleer je stap: de juiste uitkomst is 1."
+   ],
+   "uh": "Trek g(2) af van f(2): welke waarde krijg je voor (f − g)(2)?",
+   "ctx": "Gegeven zijn f(x) = 2x + 1 en g(x) = x². Een leerling stelt de somfunctie en de verschilfunctie op en berekent waarden in x = 2."
+  },
+  {
+   "v": "Welke formule heeft p(x) = f(x) · g(x)?",
+   "o": [
+    "\"p(x) = 4\"",
+    "\"p(x) = 4 − x²\"",
+    "\"p(x) = 4x + x²\"",
+    "\"p(x) = 4x − x²\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"p(x) = 4\"\"? Dan tel je x en 4 − x op. Bij het product vermenigvuldig je, dus 4x − x². Het goede antwoord is p(x) = 4x − x².",
+    "Koos je \"\"p(x) = 4 − x²\"\"? Dan vergeet je de factor x bij 4. x · (4 − x) = 4x − x², dus 4x − x². Door de stappen goed na te lopen kom je uit op p(x) = 4x − x².",
+    "Koos je \"\"p(x) = 4x + x²\"\"? Dan laat je het teken fout. x · (−x) = −x², dus 4x − x². Controleer je stap: de juiste uitkomst is p(x) = 4x − x².",
+    "Klopt: x · (4 − x). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke formule heeft p(x) = f(x) · g(x)?",
+   "ctx": "Gegeven zijn f(x) = x en g(x) = 4 − x. Een leerling stelt de productfunctie p(x) = f(x) · g(x) op en bepaalt nulpunten, waarden en het maximum."
+  },
+  {
+   "v": "Welke waarde heeft p(1)?",
+   "o": [
+    "\"3\"",
+    "\"4 (zonder −x²)\"",
+    "\"5 (4 + 1)\"",
+    "\"1 (f(1))\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 4 − 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"4 (zonder −x²)\"\"? Dan neem je 4x zonder −x². p(1) = 4 − 1, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"5 (4 + 1)\"\"? Dan tel je 4 en 1 op. p(1) = 4 − 1, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"1 (f(1))\"\"? Dan neem je f(1). p(1) = 1 · 3, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Welke waarde heeft p(1)?",
+   "ctx": "Gegeven zijn f(x) = x en g(x) = 4 − x. Een leerling stelt de productfunctie p(x) = f(x) · g(x) op en bepaalt nulpunten, waarden en het maximum."
+  },
+  {
+   "v": "Bij welke x heeft p(x) = 4x − x² zijn nulpunten?",
+   "o": [
+    "\"alleen x = 4\"",
+    "\"x = 2\"",
+    "\"x = 0 en x = 4\"",
+    "\"x = −4 en x = 4\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen x = 4\"\"? Dan vergeet je x = 0. x(4 − x) = 0 heeft twee oplossingen, dus x = 0 en x = 4. Het goede antwoord is x = 0 en x = 4.",
+    "Koos je \"\"x = 2\"\"? Dan neem je de top. De nulpunten zijn 0 en 4, dus x = 0 en x = 4. Door de stappen goed na te lopen kom je uit op x = 0 en x = 4.",
+    "Klopt: x(4 − x) = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = −4 en x = 4\"\"? Dan laat je het teken fout. 4 − x = 0 geeft x = 4, dus x = 0 en x = 4. Controleer je stap: de juiste uitkomst is x = 0 en x = 4."
+   ],
+   "uh": "Bij welke x heeft p(x) = 4x − x² zijn nulpunten?",
+   "ctx": "Gegeven zijn f(x) = x en g(x) = 4 − x. Een leerling stelt de productfunctie p(x) = f(x) · g(x) op en bepaalt nulpunten, waarden en het maximum."
+  },
+  {
+   "v": "Bepaal het maximum van p(x) = 4x − x².",
+   "o": [
+    "\"2 bij x = 4 (omgewisseld)\"",
+    "\"4 bij x = 2\"",
+    "\"0 bij x = 0 (een nulpunt)\"",
+    "\"8 bij x = 2 (zonder −x²)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2 bij x = 4 (omgewisseld)\"\"? Dan wissel je x en p(x). De top is bij x = 2, dus 4 bij x = 2. Het goede antwoord is 4 bij x = 2.",
+    "Klopt: de top ligt midden tussen 0 en 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0 bij x = 0 (een nulpunt)\"\"? Dan neem je een nulpunt. De top ligt hoger, dus 4 bij x = 2. Door de stappen goed na te lopen kom je uit op 4 bij x = 2.",
+    "Koos je \"\"8 bij x = 2 (zonder −x²)\"\"? Dan vergeet je −x². p(2) = 8 − 4, dus 4 bij x = 2. Controleer je stap: de juiste uitkomst is 4 bij x = 2."
+   ],
+   "uh": "Bepaal het maximum van p(x) = 4x − x².",
+   "ctx": "Gegeven zijn f(x) = x en g(x) = 4 − x. Een leerling stelt de productfunctie p(x) = f(x) · g(x) op en bepaalt nulpunten, waarden en het maximum."
+  },
+  {
+   "v": "Bereken q(3) voor q(x) = (x + 2) : (x − 1).",
+   "o": [
+    "\"5 (alleen f(3))\"",
+    "\"2 (g(3))\"",
+    "\"10 (5 · 2)\"",
+    "\"2,5\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5 (alleen f(3))\"\"? Dan neem je alleen f(3). Deel door g(3) = 2, dus 2,5. Het goede antwoord is 2,5.",
+    "Koos je \"\"2 (g(3))\"\"? Dan neem je g(3). Deel f(3) = 5 door g(3), dus 2,5. Door de stappen goed na te lopen kom je uit op 2,5.",
+    "Koos je \"\"10 (5 · 2)\"\"? Dan vermenigvuldig je 5 en 2. Het is een quotiënt, dus 2,5. Controleer je stap: de juiste uitkomst is 2,5.",
+    "Klopt: 5 : 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken q(3) voor q(x) = (x + 2) : (x − 1).",
+   "ctx": "Gegeven zijn f(x) = x + 2 en g(x) = x − 1. Een leerling onderzoekt het quotiënt q(x) = f(x) : g(x), bepaalt waarden en onderzoekt waar q niet bestaat."
+  },
+  {
+   "v": "Vul x = 0 in bij het quotiënt q: welke waarde krijg je?",
+   "o": [
+    "\"−2\"",
+    "\"2 (zonder minteken)\"",
+    "\"−1 (g(0))\"",
+    "\"0 (een gok)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2 : (−1). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2 (zonder minteken)\"\"? Dan vergeet je het minteken van g(0) = −1. q(0) = 2 : (−1), dus −2. Het goede antwoord is −2.",
+    "Koos je \"\"−1 (g(0))\"\"? Dan neem je g(0). Deel f(0) = 2 door −1, dus −2. Door de stappen goed na te lopen kom je uit op −2.",
+    "Koos je \"\"0 (een gok)\"\"? Dan neem je x = 0 als uitkomst. q(0) = 2 : (−1), dus −2. Controleer je stap: de juiste uitkomst is −2."
+   ],
+   "uh": "Vul x = 0 in bij het quotiënt q: welke waarde krijg je?",
+   "ctx": "Gegeven zijn f(x) = x + 2 en g(x) = x − 1. Een leerling onderzoekt het quotiënt q(x) = f(x) : g(x), bepaalt waarden en onderzoekt waar q niet bestaat."
+  },
+  {
+   "v": "Voor welke x bestaat q(x) niet?",
+   "o": [
+    "\"voor x = −2\"",
+    "\"voor x = 0\"",
+    "\"voor x = 1\"",
+    "\"voor x = 2\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"voor x = −2\"\"? Dan neem je het nulpunt van de teller. Alleen een noemer 0 is verboden, dus x = 1. Het goede antwoord is voor x = 1.",
+    "Koos je \"\"voor x = 0\"\"? Dan neem je x = 0 als verboden waarde. q(0) = −2 bestaat, dus x = 1. Door de stappen goed na te lopen kom je uit op voor x = 1.",
+    "Klopt: dan is de noemer g(1) = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"voor x = 2\"\"? Dan neem je f(0). De noemer is nul bij x = 1, dus x = 1. Controleer je stap: de juiste uitkomst is voor x = 1."
+   ],
+   "uh": "Voor welke x bestaat q(x) niet?",
+   "ctx": "Gegeven zijn f(x) = x + 2 en g(x) = x − 1. Een leerling onderzoekt het quotiënt q(x) = f(x) : g(x), bepaalt waarden en onderzoekt waar q niet bestaat."
+  },
+  {
+   "v": "Welke verticale asymptoot heeft de grafiek van q?",
+   "o": [
+    "\"de lijn y = 1\"",
+    "\"de lijn x = 1\"",
+    "\"de lijn x = −2\"",
+    "\"de lijn x = 0\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de lijn y = 1\"\"? Dan verwar je horizontaal met verticaal. De noemer geeft een verticale lijn, dus x = 1. Het goede antwoord is de lijn x = 1.",
+    "Klopt: bij x = 1 is de noemer 0 en de teller 3 ≠ 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de lijn x = −2\"\"? Dan neem je het nulpunt van de teller. De noemer bepaalt de asymptoot, dus x = 1. Door de stappen goed na te lopen kom je uit op de lijn x = 1.",
+    "Koos je \"\"de lijn x = 0\"\"? Dan neem je de y-as. De noemer is nul bij x = 1, dus x = 1. Controleer je stap: de juiste uitkomst is de lijn x = 1."
+   ],
+   "uh": "Welke verticale asymptoot heeft de grafiek van q?",
+   "ctx": "Gegeven zijn f(x) = x + 2 en g(x) = x − 1. Een leerling onderzoekt het quotiënt q(x) = f(x) : g(x), bepaalt waarden en onderzoekt waar q niet bestaat."
+  },
+  {
+   "v": "Welke formule heeft A(r(t)) voor r(t) = 2t en A(r) = πr²?",
+   "o": [
+    "\"2πt²\"",
+    "\"2πt\"",
+    "\"π · 2t²\"",
+    "\"4πt²\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2πt²\"\"? Dan kwadrateer je 2 niet. (2t)² = 4t², dus 4πt². Het goede antwoord is 4πt².",
+    "Koos je \"\"2πt\"\"? Dan vergeet je het kwadraat. A = π(2t)², dus 4πt². Door de stappen goed na te lopen kom je uit op 4πt².",
+    "Koos je \"\"π · 2t²\"\"? Dan kwadrateer je alleen t. (2t)² = 4t², dus 4πt². Controleer je stap: de juiste uitkomst is 4πt².",
+    "Klopt: π · (2t)². Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke formule heeft A(r(t)) voor r(t) = 2t en A(r) = πr²?",
+   "ctx": "De straal van een cirkelvormige vlek groeit met r(t) = 2t cm na t seconden. De oppervlakte is A(r) = πr². Een leerling stelt A(r(t)) op en berekent de oppervlakte na 3 seconden."
+  },
+  {
+   "v": "Hoe groot is de oppervlakte na 3 seconden, op twee decimalen?",
+   "o": [
+    "\"113,10 cm²\"",
+    "\"37,70 cm² (π · 2 · 6)\"",
+    "\"28,27 cm² (π · 3²)\"",
+    "\"18,85 cm² (π · 6)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Schrijf de combinatie van twee functies uit als formule, let bij samenstellen op de volgorde (eerst binnen, dan buiten), noteer waar een quotiënt niet bestaat en controleer met een getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 4π · 9 = 36π ≈ 113,10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"37,70 cm² (π · 2 · 6)\"\"? Dan neem je π · 2 · 6. De straal is 6, dus 113,10 cm². Het goede antwoord is 113,10 cm².",
+    "Koos je \"\"28,27 cm² (π · 3²)\"\"? Dan neem je π · 3². De straal is r = 6, dus 113,10 cm². Door de stappen goed na te lopen kom je uit op 113,10 cm².",
+    "Koos je \"\"18,85 cm² (π · 6)\"\"? Dan neem je π · 6. Het is πr², dus 113,10 cm². Controleer je stap: de juiste uitkomst is 113,10 cm²."
+   ],
+   "uh": "Hoe groot is de oppervlakte na 3 seconden, op twee decimalen?",
+   "ctx": "De straal van een cirkelvormige vlek groeit met r(t) = 2t cm na t seconden. De oppervlakte is A(r) = πr². Een leerling stelt A(r(t)) op en berekent de oppervlakte na 3 seconden."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven zijn f(x) = 3x − 2 en g(x) = x². Een leerling stelt de somfunctie op en berekent (f + g)(2). Hij schrijft de formule zo eenvoudig mogelijk.",
+   "v": "Stel (f + g)(x) op en bereken (f + g)(2).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(f + g)(x) = x² + 3x − 2 (1p). Invullen x = 2 geeft 4 + 6 − 2 (1p). (f + g)(2) = 8 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bedrijf heeft de kosten K(q) = 50 + 4q en de opbrengst R(q) = 9q bij q stuks, in euro. Een leerling stelt de winstfunctie op en bepaalt de break-evenproductie en de winst bij 20 stuks.",
+   "v": "Bepaal W(q), de break-evenproductie en W(20).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "W(q) = 9q − 50 − 4q = 5q − 50 (1p). 5q − 50 = 0 geeft q = 10 (1p). W(20) = 100 − 50 = 50 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven zijn f(x) = x en g(x) = 6 − x. Een leerling stelt de productfunctie op en bepaalt het maximum. Hij gebruikt dat de top midden tussen de nulpunten ligt.",
+   "v": "Stel p(x) op en bepaal het maximum.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "p(x) = x(6 − x) = 6x − x² (1p). Nulpunten x = 0 en x = 6, top bij x = 3 (1p). p(3) = 9, dus het maximum is 9 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven zijn f(x) = x + 1 en g(x) = x − 3. Een leerling stelt het quotiënt q(x) = f(x) : g(x) op, berekent q(5) en geeft aan voor welke x het quotiënt niet bestaat.",
+   "v": "Bereken q(5) en geef de waarde waarvoor q niet bestaat.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "q(5) = 6 : 2 (1p). q(5) = 3 (1p). Voor x = 3 is de noemer 0, dus q(3) bestaat niet (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gegeven zijn f(x) = x² en g(x) = x + 2. Een leerling stelt g(f(x)) en f(g(x)) op en berekent beide in x = 3. Hij legt uit waarom de uitkomsten verschillen.",
+   "v": "Stel beide samengestelde functies op en bereken ze in x = 3.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "g(f(x)) = x² + 2 en f(g(x)) = (x + 2)² (1p). g(f(3)) = 11 en f(g(3)) = 25 (1p). De volgorde bepaalt de uitkomst: bij g(f(x)) gaat f eerst en bij f(g(x)) gaat g eerst (1p)."
+  }
+ ]
+}

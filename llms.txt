@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 29.191 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 29.218 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -301,6 +301,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Logaritmische functies en rekenregels voor logaritmen (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/logaritmische-functies-en-rekenregels-voor-logaritmen.html): Je ziet een logaritme als exponent, gebruikt de rekenregels, lost vergelijkingen met een exponent op, tekent de grafiek van een logaritmische functie en werkt…
 - [Transformaties: een grafiek verschuiven of herschalen en de formule opstellen (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/transformaties-een-grafiek-verschuiven-of-herschalen-en-de-formule-ops.html): Je verschuift en herschaalt grafieken van basisfuncties, bepaalt de nieuwe top, het beginpunt of de asymptoot, stelt de formule op en controleert met een punt.
 - [Vergelijkingen en ongelijkheden oplossen, en lineair interpoleren en extrapoleren (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/vergelijkingen-en-ongelijkheden-oplossen-en-lineair-interpoleren-en-ex.html): Je lost vergelijkingen op met ontbinden, de abc-formule en de grafische rekenmachine, lost ongelijkheden op met een schets en intervalnotatie en rekent met…
+- [Functies combineren: optellen, vermenigvuldigen en samenstellen (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/functies-combineren-optellen-vermenigvuldigen-en-samenstellen.html): Je stelt som-, verschil-, product-, quotiënt- en samengestelde functies op, let op de volgorde en op waarden waarvoor een quotiënt niet bestaat en…
 - [Feit en mening onderscheiden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/feit-en-mening-onderscheiden.html): Je hoort of ziet een tekst en weet of een uitspraak een feit of een mening is. Je let op woorden die een oordeel geven en je controleert wat te controleren is.
 - [De hoofdzaak en de kernboodschap vinden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/de-hoofdzaak-en-de-kernboodschap-vinden.html): Je luistert naar een gesproken tekst en vindt de hoofdzaak, de bijzaken en de kernboodschap, zodat je die kort en volledig kunt samenvatten.
 - [Het doel van de spreker herkennen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/het-doel-van-de-spreker-herkennen.html): Je hoort of ziet een tekst en herkent wat de spreker wil: informeren, overtuigen of amuseren. Je let op signalen zoals oproepen, meningen en grapjes.
