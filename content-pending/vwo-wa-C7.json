@@ -1,0 +1,682 @@
+{
+ "id": "C7",
+ "lo": "wa.C.7",
+ "gs": 2,
+ "naam": "Vergelijkingen en ongelijkheden oplossen, en lineair interpoleren en extrapoleren",
+ "beschrijving": "Je lost vergelijkingen op met ontbinden, de abc-formule en de grafische rekenmachine, lost ongelijkheden op met een schets en intervalnotatie en rekent met lineair interpoleren en extrapoleren.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Een vergelijking opstellen",
+  "Algebraïsch oplossen",
+  "Ongelijkheden en intervallen",
+  "Oplossen met de GR",
+  "Interpoleren en extrapoleren"
+ ],
+ "sam": "Stel een vergelijking op door formules gelijk te stellen en los hem op met ontbinden, de abc-formule of de GR. Los een ongelijkheid op met een schets en schrijf een interval. Interpoleer binnen de gegevens, extrapoleer er buiten met een aanname en controleer door in te vullen.",
+ "begrippen": [
+  {
+   "t": "Vergelijking oplossen",
+   "d": "De waarde van x zoeken waarvoor een gelijkheid klopt."
+  },
+  {
+   "t": "f(x) = g(x)",
+   "d": "De x-coördinaat van het snijpunt van de twee grafieken."
+  },
+  {
+   "t": "Ontbinden",
+   "d": "x² − 5x + 6 = 0 geeft (x − 2)(x − 3) = 0, dus x = 2 of x = 3."
+  },
+  {
+   "t": "abc-formule",
+   "d": "x = (−b ± √(b² − 4ac)) : 2a voor ax² + bx + c = 0."
+  },
+  {
+   "t": "Ongelijkheid oplossen",
+   "d": "Het gebied van x zoeken waarvoor f(x) groter of kleiner is dan g(x)."
+  },
+  {
+   "t": "Intervalnotatie",
+   "d": "x > 5 schrijf je als ⟨5, →⟩; bij ≤ hoort een rechte haak."
+  },
+  {
+   "t": "Snijpunt met de GR",
+   "d": "Met twee grafieken de x-waarde van het snijpunt bepalen."
+  },
+  {
+   "t": "Lineair interpoleren",
+   "d": "Een waarde tussen twee gegevens berekenen met een rechte lijn."
+  },
+  {
+   "t": "Lineair extrapoleren",
+   "d": "Een waarde buiten de gegevens berekenen met een rechte lijn."
+  },
+  {
+   "t": "Constante verandering",
+   "d": "Bij lineair is de toename per eenheid vast, zoals 2 graden per uur."
+  },
+  {
+   "t": "Aanname bij extrapoleren",
+   "d": "Het verband blijft buiten het bereik lineair: dat is onzeker."
+  },
+  {
+   "t": "Controleren",
+   "d": "Het antwoord invullen in de oorspronkelijke vergelijking."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Los 3x + 6 = 21 op.",
+   "o": [
+    "\"x = 9\"",
+    "\"x = 5\"",
+    "\"x = 7\"",
+    "\"x = 27\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 9\"\"? Dan tel je 6 bij 21 op. Trek 6 af, dus x = 5. Het goede antwoord is x = 5.",
+    "Klopt: 3x = 15. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 7\"\"? Dan deel je 21 door 3. Trek eerst 6 af, dus x = 5. Door de stappen goed na te lopen kom je uit op x = 5.",
+    "Koos je \"\"x = 27\"\"? Dan vermenigvuldig je 21 met 3 en vergeet 6. Los 3x = 15 op, dus x = 5. Controleer je stap: de juiste uitkomst is x = 5."
+   ],
+   "uh": "Los 3x + 6 = 21 op."
+  },
+  {
+   "v": "Los de ongelijkheid 2x − 3 > 7 op.",
+   "o": [
+    "\"x > 2 (3 afgetrokken)\"",
+    "\"x < 5 (teken omgedraaid)\"",
+    "\"x = 5 (als vergelijking)\"",
+    "\"x > 5\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x > 2 (3 afgetrokken)\"\"? Dan trek je 3 af van 7 en deel door 2. Je moet 3 optellen, dus x > 5. Het goede antwoord is x > 5.",
+    "Koos je \"\"x < 5 (teken omgedraaid)\"\"? Dan draai je het teken om. Delen door 2 laat het teken staan, dus x > 5. Door de stappen goed na te lopen kom je uit op x > 5.",
+    "Koos je \"\"x = 5 (als vergelijking)\"\"? Dan maak je er een vergelijking van. De ongelijkheid heeft een bereik, dus x > 5. Controleer je stap: de juiste uitkomst is x > 5.",
+    "Klopt: 2x > 10. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Los de ongelijkheid 2x − 3 > 7 op."
+  },
+  {
+   "v": "Welke getallen hebben kwadraat 16?",
+   "o": [
+    "\"x = −4 of x = 4\"",
+    "\"x = 4 (zonder x = −4)\"",
+    "\"x = 8 (16 : 2)\"",
+    "\"x = 256 (16²)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: beide getallen hebben kwadraat 16. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 4 (zonder x = −4)\"\"? Dan vergeet je x = −4. (−4)² = 16 klopt ook, dus x = −4 of x = 4. Het goede antwoord is x = −4 of x = 4.",
+    "Koos je \"\"x = 8 (16 : 2)\"\"? Dan deel je 16 door 2. x² = 16 betekent x = ±4, dus x = −4 of x = 4. Door de stappen goed na te lopen kom je uit op x = −4 of x = 4.",
+    "Koos je \"\"x = 256 (16²)\"\"? Dan kwadrateer je 16. x² = 16 betekent x = ±4, dus x = −4 of x = 4. Controleer je stap: de juiste uitkomst is x = −4 of x = 4."
+   ],
+   "uh": "Welke getallen hebben kwadraat 16?"
+  },
+  {
+   "v": "Hoe los je f(x) = g(x) grafisch op?",
+   "o": [
+    "\"bepaal de y-coördinaat van het snijpunt\"",
+    "\"bepaal het snijpunt met de y-as\"",
+    "\"bepaal de x-coördinaat van het snijpunt van de grafieken\"",
+    "\"bepaal het hoogste punt\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bepaal de y-coördinaat van het snijpunt\"\"? Dan neem je de y-waarde. De oplossing is de x-waarde, dus de x-coördinaat.",
+    "Koos je \"\"bepaal het snijpunt met de y-as\"\"? Dan kijk je naar de y-as. Je vergelijkt de twee grafieken, dus het snijpunt van de grafieken.",
+    "Klopt: daar zijn de functiewaarden gelijk. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"bepaal het hoogste punt\"\"? Dan zoek je een top. Je zoekt waar f en g gelijk zijn, dus het snijpunt. Controleer je stap: de juiste uitkomst is bepaal de x-coördinaat van het snijpunt van de grafieken."
+   ],
+   "uh": "Hoe los je f(x) = g(x) grafisch op?"
+  },
+  {
+   "v": "Wat betekent lineair interpoleren?",
+   "o": [
+    "\"een waarde buiten het gegeven bereik berekenen\"",
+    "\"een waarde tussen twee gegevens berekenen met een rechte lijn\"",
+    "\"de helling van een kromme berekenen\"",
+    "\"twee getallen optellen\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 4,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een waarde buiten het gegeven bereik berekenen\"\"? Dan verwar je het met extrapoleren. Interpoleren is binnen het bereik, dus tussen twee gegevens.",
+    "Klopt: je neemt een constante verandering aan. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de helling van een kromme berekenen\"\"? Dan denk je aan differentiëren. Interpoleren gebruikt een rechte lijn, dus tussen twee gegevens.",
+    "Koos je \"\"twee getallen optellen\"\"? Dan denk je aan optellen. Interpoleren is een waarde schatten tussen punten, dus met een rechte lijn."
+   ],
+   "uh": "Wat betekent lineair interpoleren?"
+  },
+  {
+   "v": "Wat betekent lineair extrapoleren?",
+   "o": [
+    "\"een waarde tussen twee gegevens berekenen\"",
+    "\"een kromme tekenen\"",
+    "\"een meetfout verbeteren\"",
+    "\"een waarde buiten de gegeven waarden berekenen met een rechte lijn\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een waarde tussen twee gegevens berekenen\"\"? Dan verwar je het met interpoleren. Extrapoleren is buiten het bereik, dus buiten de gegeven waarden.",
+    "Koos je \"\"een kromme tekenen\"\"? Dan denk je aan een kromme. Extrapoleren gebruikt een rechte lijn, dus een lijn buiten het bereik.",
+    "Koos je \"\"een meetfout verbeteren\"\"? Dan denk je dat het om meetfouten gaat. Het is een voorspelling buiten het bereik, dus buiten de gegeven waarden.",
+    "Klopt: je verlengt de lijn buiten het bereik. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat betekent lineair extrapoleren?"
+  },
+  {
+   "v": "Hoe lees je de ongelijkheid f(x) > g(x) uit de grafieken af?",
+   "o": [
+    "\"de x-waarden waar de grafiek van f boven die van g ligt\"",
+    "\"de x-waarden waar de grafieken elkaar snijden\"",
+    "\"de x-waarden waar f onder g ligt\"",
+    "\"de y-waarden waar f en g gelijk zijn\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: f(x) is dan groter dan g(x). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de x-waarden waar de grafieken elkaar snijden\"\"? Dan neem je de oplossing van de vergelijking. Bij een ongelijkheid zoek je een gebied, dus waar f boven g ligt.",
+    "Koos je \"\"de x-waarden waar f onder g ligt\"\"? Dan draai je het teken om. f(x) > g(x) betekent f boven g, dus waar f boven g ligt.",
+    "Koos je \"\"de y-waarden waar f en g gelijk zijn\"\"? Dan neem je het snijpunt in y. Je leest x-waarden af, dus waar f boven g ligt."
+   ],
+   "uh": "Hoe lees je de ongelijkheid f(x) > g(x) uit de grafieken af?"
+  },
+  {
+   "v": "Welke vergelijking los je op om te weten wanneer de kosten gelijk zijn?",
+   "o": [
+    "\"40 + 0,25d = 0\"",
+    "\"40 + 20 = 0,25d + 0,35d\"",
+    "\"40 + 0,25d = 20 + 0,35d\"",
+    "\"0,25d = 0,35d\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 + 0,25d = 0\"\"? Dan stel je alleen A gelijk aan 0. Je vergelijkt A en B, dus 40 + 0,25d = 20 + 0,35d. Het goede antwoord is 40 + 0,25d = 20 + 0,35d.",
+    "Koos je \"\"40 + 20 = 0,25d + 0,35d\"\"? Dan tel je de delen apart op. Vergelijk de totale kosten, dus 40 + 0,25d = 20 + 0,35d.",
+    "Klopt: beide kosten zijn gelijk. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,25d = 0,35d\"\"? Dan laat je de vaste kosten weg. Die horen erbij, dus 40 + 0,25d = 20 + 0,35d. Controleer je stap: de juiste uitkomst is 40 + 0,25d = 20 + 0,35d."
+   ],
+   "uh": "Welke vergelijking los je op om te weten wanneer de kosten gelijk zijn?",
+   "ctx": "Twee autoverhuurders rekenen K = 40 + 0,25d euro (A) en K = 20 + 0,35d euro (B) voor een rit van d kilometer. Een leerling zoekt wanneer de kosten gelijk zijn en welke verhuurder goedkoper is."
+  },
+  {
+   "v": "Bij hoeveel kilometer zijn de kosten gelijk?",
+   "o": [
+    "\"20 km (komma verschoven)\"",
+    "\"200 km\"",
+    "\"100 km (20 : 0,20)\"",
+    "\"600 km (opgeteld)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 km (komma verschoven)\"\"? Dan verplaats je de komma verkeerd. 20 : 0,10 = 200, dus 200 km. Het goede antwoord is 200 km.",
+    "Klopt: 20 = 0,10d. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"100 km (20 : 0,20)\"\"? Dan deel je 20 door 0,20. Het verschil in prijs per km is 0,10, dus 200 km. Door de stappen goed na te lopen kom je uit op 200 km.",
+    "Koos je \"\"600 km (opgeteld)\"\"? Dan tel je de getallen op. Het is 20 : 0,10, dus 200 km. Controleer je stap: de juiste uitkomst is 200 km."
+   ],
+   "uh": "Bij hoeveel kilometer zijn de kosten gelijk?",
+   "ctx": "Twee autoverhuurders rekenen K = 40 + 0,25d euro (A) en K = 20 + 0,35d euro (B) voor een rit van d kilometer. Een leerling zoekt wanneer de kosten gelijk zijn en welke verhuurder goedkoper is."
+  },
+  {
+   "v": "Hoe hoog zijn de kosten bij 200 kilometer?",
+   "o": [
+    "\"€50\"",
+    "\"€110\"",
+    "\"€20\"",
+    "\"€90\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€50\"\"? Dan vergeet je de vaste kosten. 40 + 0,25 · 200, dus €90. Het goede antwoord is €90.",
+    "Koos je \"\"€110\"\"? Dan tel je 20 en 90 op. Vul in bij A, dus €90. Door de stappen goed na te lopen kom je uit op €90.",
+    "Koos je \"\"€20\"\"? Dan neem je de vaste kosten van B. Vul d = 200 in, dus €90. Controleer je stap: de juiste uitkomst is €90.",
+    "Klopt: 40 + 0,25 · 200 = 90. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe hoog zijn de kosten bij 200 kilometer?",
+   "ctx": "Twee autoverhuurders rekenen K = 40 + 0,25d euro (A) en K = 20 + 0,35d euro (B) voor een rit van d kilometer. Een leerling zoekt wanneer de kosten gelijk zijn en welke verhuurder goedkoper is."
+  },
+  {
+   "v": "Welke verhuurder is goedkoper bij meer dan 200 kilometer?",
+   "o": [
+    "\"A, want A heeft de lagere prijs per kilometer\"",
+    "\"B, want B heeft lagere vaste kosten\"",
+    "\"beide even duur\"",
+    "\"B, want B is goedkoper bij 100 km\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij 300 km kost A 115 en B 125. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"B, want B heeft lagere vaste kosten\"\"? Dan kijk je alleen naar de vaste kosten. Bij veel kilometers telt de prijs per km, dus A.",
+    "Koos je \"\"beide even duur\"\"? Dan denk je dat het gelijk blijft. Dat geldt alleen bij 200 km, dus A. Door de stappen goed na te lopen kom je uit op A, want A heeft de lagere prijs per kilometer.",
+    "Koos je \"\"B, want B is goedkoper bij 100 km\"\"? Dan gebruik je een kleiner aantal kilometers. Boven 200 km is A goedkoper, dus A."
+   ],
+   "uh": "Welke verhuurder is goedkoper bij meer dan 200 kilometer?",
+   "ctx": "Twee autoverhuurders rekenen K = 40 + 0,25d euro (A) en K = 20 + 0,35d euro (B) voor een rit van d kilometer. Een leerling zoekt wanneer de kosten gelijk zijn en welke verhuurder goedkoper is."
+  },
+  {
+   "v": "Ontbind en los op: x² − 5x + 6 = 0.",
+   "o": [
+    "\"x = −2 of x = −3\"",
+    "\"x = 1 of x = 6\"",
+    "\"x = 2 of x = 3\"",
+    "\"x = 5 of x = 6\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = −2 of x = −3\"\"? Dan neem je plustekens. (x − 2)(x − 3) = 0 geeft positieve waarden, dus x = 2 of x = 3. Het goede antwoord is x = 2 of x = 3.",
+    "Koos je \"\"x = 1 of x = 6\"\"? Dan kies je factoren met product 6 maar som 7. De som moet 5 zijn, dus x = 2 of x = 3. Door de stappen goed na te lopen kom je uit op x = 2 of x = 3.",
+    "Klopt: (x − 2)(x − 3) = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 5 of x = 6\"\"? Dan neem je coëfficiënten over. Ontbind in (x − 2)(x − 3), dus x = 2 of x = 3. Controleer je stap: de juiste uitkomst is x = 2 of x = 3."
+   ],
+   "uh": "Ontbind en los op: x² − 5x + 6 = 0.",
+   "ctx": "Een leerling lost kwadratische vergelijkingen op: x² − 5x + 6 = 0 door ontbinden, x² − 4x − 5 = 0 door ontbinden en x² + 2x − 4 = 0 met de abc-formule. Hij rondt af op twee decimalen."
+  },
+  {
+   "v": "Wat zijn de nulpunten van de parabool y = x² − 4x − 5?",
+   "o": [
+    "\"x = −5 of x = 1 (tekens omgedraaid)\"",
+    "\"x = 5 of x = −1\"",
+    "\"x = 4 of x = 5 (de coëfficiënt −4)\"",
+    "\"x = 5 (zonder x = −1)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = −5 of x = 1 (tekens omgedraaid)\"\"? Dan neem je de tekens verkeerd. (x − 5)(x + 1) = 0, dus x = 5 of x = −1.",
+    "Klopt: (x − 5)(x + 1) = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 4 of x = 5 (de coëfficiënt −4)\"\"? Dan neem je de coëfficiënt −4. Ontbind in (x − 5)(x + 1), dus x = 5 of x = −1.",
+    "Koos je \"\"x = 5 (zonder x = −1)\"\"? Dan vergeet je x = −1. Het zijn twee oplossingen, dus x = 5 of x = −1. Controleer je stap: de juiste uitkomst is x = 5 of x = −1."
+   ],
+   "uh": "Wat zijn de nulpunten van de parabool y = x² − 4x − 5?",
+   "ctx": "Een leerling lost kwadratische vergelijkingen op: x² − 5x + 6 = 0 door ontbinden, x² − 4x − 5 = 0 door ontbinden en x² + 2x − 4 = 0 met de abc-formule. Hij rondt af op twee decimalen."
+  },
+  {
+   "v": "Los x² + 2x − 4 = 0 op met de abc-formule, afgerond op twee decimalen.",
+   "o": [
+    "\"x ≈ 2,24 of x ≈ −2,24 (zonder −1)\"",
+    "\"x ≈ 1,24 (maar één oplossing)\"",
+    "\"x ≈ 4,47 of x ≈ −4,47 (√20 niet gedeeld)\"",
+    "\"x ≈ 1,24 of x ≈ −3,24\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x ≈ 2,24 of x ≈ −2,24 (zonder −1)\"\"? Dan vergeet je −b : 2a = −1. De wortel is √5, dus x = −1 ± √5. Het goede antwoord is x ≈ 1,24 of x ≈ −3,24.",
+    "Koos je \"\"x ≈ 1,24 (maar één oplossing)\"\"? Dan vergeet je de tweede oplossing. De abc-formule geeft twee oplossingen, dus x ≈ 1,24 of x ≈ −3,24.",
+    "Koos je \"\"x ≈ 4,47 of x ≈ −4,47 (√20 niet gedeeld)\"\"? Dan neem je √20 zonder te delen door 2. x = (−2 ± √20) : 2, dus x = −1 ± √5.",
+    "Klopt: x = −1 ± √5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Los x² + 2x − 4 = 0 op met de abc-formule, afgerond op twee decimalen.",
+   "ctx": "Een leerling lost kwadratische vergelijkingen op: x² − 5x + 6 = 0 door ontbinden, x² − 4x − 5 = 0 door ontbinden en x² + 2x − 4 = 0 met de abc-formule. Hij rondt af op twee decimalen."
+  },
+  {
+   "v": "Los 2x − 3 > 7 op.",
+   "o": [
+    "\"x > 5\"",
+    "\"x < 5 (teken omgedraaid)\"",
+    "\"x > 2 (3 afgetrokken)\"",
+    "\"x > 10\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2x > 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x < 5 (teken omgedraaid)\"\"? Dan draai je het teken om. Delen door 2 laat het teken staan, dus x > 5. Het goede antwoord is x > 5.",
+    "Koos je \"\"x > 2 (3 afgetrokken)\"\"? Dan trek je 3 af van 7. Tel 3 op, dus x > 5. Door de stappen goed na te lopen kom je uit op x > 5.",
+    "Koos je \"\"x > 10\"\"? Dan vergeet je te delen door 2. 2x > 10, dus x > 5. Controleer je stap: de juiste uitkomst is x > 5."
+   ],
+   "uh": "Los 2x − 3 > 7 op.",
+   "ctx": "Een leerling lost ongelijkheden op: 2x − 3 > 7 algebraïsch en x² − 4 ≤ 0 met een schets van de parabool. Hij schrijft het antwoord als ongelijkheid en als interval."
+  },
+  {
+   "v": "Los x² − 4 ≤ 0 op met een schets van de parabool.",
+   "o": [
+    "\"x ≤ −2 of x ≥ 2\"",
+    "\"x ≤ 2\"",
+    "\"−2 ≤ x ≤ 2\"",
+    "\"x = −2 of x = 2\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x ≤ −2 of x ≥ 2\"\"? Dan neem je het gebied buiten de nulpunten. Daar ligt de parabool boven de x-as, dus tussen −2 en 2.",
+    "Koos je \"\"x ≤ 2\"\"? Dan vergeet je de ondergrens −2. De oplossing is een interval, dus −2 ≤ x ≤ 2. Door de stappen goed na te lopen kom je uit op −2 ≤ x ≤ 2.",
+    "Klopt: de parabool ligt onder of op de x-as tussen de nulpunten.",
+    "Koos je \"\"x = −2 of x = 2\"\"? Dan neem je alleen de nulpunten. Bij ≤ hoort ook het gebied ertussen, dus −2 ≤ x ≤ 2. Controleer je stap: de juiste uitkomst is −2 ≤ x ≤ 2."
+   ],
+   "uh": "Los x² − 4 ≤ 0 op met een schets van de parabool.",
+   "ctx": "Een leerling lost ongelijkheden op: 2x − 3 > 7 algebraïsch en x² − 4 ≤ 0 met een schets van de parabool. Hij schrijft het antwoord als ongelijkheid en als interval."
+  },
+  {
+   "v": "Hoe schrijf je x > 5 als interval?",
+   "o": [
+    "\"[5, →⟩ (met 5 erbij)\"",
+    "\"⟨5, →⟩\"",
+    "\"⟨←, 5⟩ (de andere kant op)\"",
+    "\"{5} (alleen het getal 5)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"[5, →⟩ (met 5 erbij)\"\"? Dan neem je 5 mee. Bij > hoort 5 er niet bij, dus ⟨5, →⟩. Het goede antwoord is ⟨5, →⟩.",
+    "Klopt: alle getallen groter dan 5, zonder 5 zelf. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"⟨←, 5⟩ (de andere kant op)\"\"? Dan neem je het gebied kleiner dan 5. Het gaat om x > 5, dus ⟨5, →⟩. Door de stappen goed na te lopen kom je uit op ⟨5, →⟩.",
+    "Koos je \"\"{5} (alleen het getal 5)\"\"? Dan neem je alleen 5. De oplossing is een interval, dus ⟨5, →⟩. Controleer je stap: de juiste uitkomst is ⟨5, →⟩."
+   ],
+   "uh": "Hoe schrijf je x > 5 als interval?",
+   "ctx": "Een leerling lost ongelijkheden op: 2x − 3 > 7 algebraïsch en x² − 4 ≤ 0 met een schets van de parabool. Hij schrijft het antwoord als ongelijkheid en als interval."
+  },
+  {
+   "v": "Schat de temperatuur om 3 uur met een rechte lijn tussen de twee metingen.",
+   "o": [
+    "\"12 graden (die van 2 uur)\"",
+    "\"16 graden (2 uur erbij)\"",
+    "\"13 graden (een halve stap)\"",
+    "\"14 graden\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12 graden (die van 2 uur)\"\"? Dan neem je de temperatuur van 2 uur. Het is een uur later, dus 14 graden. Het goede antwoord is 14 graden.",
+    "Koos je \"\"16 graden (2 uur erbij)\"\"? Dan tel je 2 uur erbij. Het is 1 uur na 2 uur, dus 14 graden. Door de stappen goed na te lopen kom je uit op 14 graden.",
+    "Koos je \"\"13 graden (een halve stap)\"\"? Dan neem je een halve stap. Per uur 2 graden, dus 14 graden. Controleer je stap: de juiste uitkomst is 14 graden.",
+    "Klopt: per uur 2 graden erbij. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Schat de temperatuur om 3 uur met een rechte lijn tussen de twee metingen.",
+   "ctx": "Op een dag is de temperatuur om 2 uur 12 graden en om 6 uur 20 graden. Een leerling neemt aan dat de temperatuur tussen die tijdstippen lineair verloopt en rekent met lineair interpoleren en extrapoleren."
+  },
+  {
+   "v": "Bereken de temperatuur om 5 uur door lineair te interpoleren.",
+   "o": [
+    "\"18 graden\"",
+    "\"16 graden (maar 2 uur erbij)\"",
+    "\"20 graden (die van 6 uur)\"",
+    "\"17 graden (een halve stap)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 12 + 3 · 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"16 graden (maar 2 uur erbij)\"\"? Dan tel je 2 uur. 5 uur is 3 uur na 2 uur, dus 18 graden. Het goede antwoord is 18 graden.",
+    "Koos je \"\"20 graden (die van 6 uur)\"\"? Dan neem je de temperatuur van 6 uur. Het is een uur eerder, dus 18 graden. Door de stappen goed na te lopen kom je uit op 18 graden.",
+    "Koos je \"\"17 graden (een halve stap)\"\"? Dan neem je een halve stap. Per uur 2 graden, dus 18 graden. Controleer je stap: de juiste uitkomst is 18 graden."
+   ],
+   "uh": "Bereken de temperatuur om 5 uur door lineair te interpoleren.",
+   "ctx": "Op een dag is de temperatuur om 2 uur 12 graden en om 6 uur 20 graden. Een leerling neemt aan dat de temperatuur tussen die tijdstippen lineair verloopt en rekent met lineair interpoleren en extrapoleren."
+  },
+  {
+   "v": "Welke temperatuur geeft lineair extrapoleren om 8 uur?",
+   "o": [
+    "\"22 graden (maar 1 uur)\"",
+    "\"28 graden (4 uur)\"",
+    "\"24 graden\"",
+    "\"20 graden (die van 6 uur)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"22 graden (maar 1 uur)\"\"? Dan tel je 1 uur. 8 uur is 2 uur na 6 uur, dus 24 graden. Het goede antwoord is 24 graden.",
+    "Koos je \"\"28 graden (4 uur)\"\"? Dan tel je 4 uur. 8 uur is 2 uur na 6 uur, dus 24 graden. Door de stappen goed na te lopen kom je uit op 24 graden.",
+    "Klopt: 20 + 2 · 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"20 graden (die van 6 uur)\"\"? Dan neem je de temperatuur van 6 uur. Extrapoleer 2 uur verder, dus 24 graden. Controleer je stap: de juiste uitkomst is 24 graden."
+   ],
+   "uh": "Welke temperatuur geeft lineair extrapoleren om 8 uur?",
+   "ctx": "Op een dag is de temperatuur om 2 uur 12 graden en om 6 uur 20 graden. Een leerling neemt aan dat de temperatuur tussen die tijdstippen lineair verloopt en rekent met lineair interpoleren en extrapoleren."
+  },
+  {
+   "v": "Waarom is extrapoleren onzekerder dan interpoleren?",
+   "o": [
+    "\"omdat de getallen groter zijn\"",
+    "\"je neemt aan dat de lijn ook buiten het gemeten bereik blijft gelden\"",
+    "\"omdat een rechte lijn niet bestaat\"",
+    "\"omdat je geen rekenmachine gebruikt\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat de getallen groter zijn\"\"? Dan denk je dat de grootte van de getallen het probleem is. Het gaat om de aanname, dus buiten het bereik.",
+    "Klopt: buiten het bereik kan het verloop veranderen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat een rechte lijn niet bestaat\"\"? Dan denk je dat lijnen niet mogen. Het gaat om de aanname buiten het bereik, dus de aanname.",
+    "Koos je \"\"omdat je geen rekenmachine gebruikt\"\"? Dan denk je aan het hulpmiddel. Het gaat om de aanname, dus buiten het bereik."
+   ],
+   "uh": "Waarom is extrapoleren onzekerder dan interpoleren?",
+   "ctx": "Op een dag is de temperatuur om 2 uur 12 graden en om 6 uur 20 graden. Een leerling neemt aan dat de temperatuur tussen die tijdstippen lineair verloopt en rekent met lineair interpoleren en extrapoleren."
+  },
+  {
+   "v": "Hoeveel inwoners krijg je in 2014 met lineair interpoleren?",
+   "o": [
+    "\"104 000 (halve toename)\"",
+    "\"120 000 (het aantal van 2020)\"",
+    "\"112 000 (6 jaar)\"",
+    "\"108 000\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"104 000 (halve toename)\"\"? Dan tel je 4000 in plaats van 8000. De groei is 2000 per jaar, dus 108 000. Het goede antwoord is 108 000.",
+    "Koos je \"\"120 000 (het aantal van 2020)\"\"? Dan neem je het aantal van 2020. 2014 ligt tussen 2010 en 2020, dus 108 000. Door de stappen goed na te lopen kom je uit op 108 000.",
+    "Koos je \"\"112 000 (6 jaar)\"\"? Dan tel je 6 jaar. 2014 is 4 jaar na 2010, dus 108 000. Controleer je stap: de juiste uitkomst is 108 000.",
+    "Klopt: 100 000 + 4 · 2000. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel inwoners krijg je in 2014 met lineair interpoleren?",
+   "ctx": "De bevolking van een gemeente was in 2010 gelijk aan 100 000 en in 2020 gelijk aan 120 000. Een leerling neemt aan dat de bevolking lineair groeit en berekent de bevolking in 2014 en in 2030."
+  },
+  {
+   "v": "Hoeveel inwoners geeft lineair extrapoleren voor 2030?",
+   "o": [
+    "\"140 000\"",
+    "\"160 000 (20 jaar)\"",
+    "\"130 000 (5 jaar)\"",
+    "\"120 000 (het aantal van 2020)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 120 000 + 10 · 2000. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"160 000 (20 jaar)\"\"? Dan tel je 20 jaar. 2030 is 10 jaar na 2020, dus 140 000. Het goede antwoord is 140 000.",
+    "Koos je \"\"130 000 (5 jaar)\"\"? Dan tel je 5 jaar. 2030 is 10 jaar na 2020, dus 140 000. Door de stappen goed na te lopen kom je uit op 140 000.",
+    "Koos je \"\"120 000 (het aantal van 2020)\"\"? Dan neem je het aantal van 2020. Extrapoleer 10 jaar verder, dus 140 000. Controleer je stap: de juiste uitkomst is 140 000."
+   ],
+   "uh": "Hoeveel inwoners geeft lineair extrapoleren voor 2030?",
+   "ctx": "De bevolking van een gemeente was in 2010 gelijk aan 100 000 en in 2020 gelijk aan 120 000. Een leerling neemt aan dat de bevolking lineair groeit en berekent de bevolking in 2014 en in 2030."
+  },
+  {
+   "v": "Hoeveel neemt de bevolking per jaar toe volgens het lineaire model?",
+   "o": [
+    "\"20 000 inwoners per jaar\"",
+    "\"200 inwoners per jaar\"",
+    "\"2000 inwoners per jaar\"",
+    "\"20 000 inwoners\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 000 inwoners per jaar\"\"? Dan neem je de totale toename. Deel door 10 jaar, dus 2000 per jaar. Het goede antwoord is 2000 inwoners per jaar.",
+    "Koos je \"\"200 inwoners per jaar\"\"? Dan verplaats je de komma verkeerd. 20 000 : 10 = 2000, dus 2000 per jaar. Door de stappen goed na te lopen kom je uit op 2000 inwoners per jaar.",
+    "Klopt: 20 000 : 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"20 000 inwoners\"\"? Dan vergeet je de eenheid per jaar. De groei is een rc, dus 2000 per jaar. Controleer je stap: de juiste uitkomst is 2000 inwoners per jaar."
+   ],
+   "uh": "Hoeveel neemt de bevolking per jaar toe volgens het lineaire model?",
+   "ctx": "De bevolking van een gemeente was in 2010 gelijk aan 100 000 en in 2020 gelijk aan 120 000. Een leerling neemt aan dat de bevolking lineair groeit en berekent de bevolking in 2014 en in 2030."
+  },
+  {
+   "v": "Welke oplossingen heeft x² = 2^x ongeveer?",
+   "o": [
+    "\"alleen x = 2 en x = 4 (zonder het negatieve snijpunt)\"",
+    "\"x = 2, x = 4 en x ≈ −0,77\"",
+    "\"alleen x = 2 (één snijpunt)\"",
+    "\"x = 0 en x = 2 (een gok)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen x = 2 en x = 4 (zonder het negatieve snijpunt)\"\"? Dan vergeet je het snijpunt bij negatieve x. De GR toont ook x ≈ −0,77, dus drie oplossingen.",
+    "Klopt: drie snijpunten van de grafieken. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"alleen x = 2 (één snijpunt)\"\"? Dan neem je maar één snijpunt. Er zijn er drie, dus x = 2, x = 4 en x ≈ −0,77. Door de stappen goed na te lopen kom je uit op x = 2, x = 4 en x ≈ −0,77.",
+    "Koos je \"\"x = 0 en x = 2 (een gok)\"\"? Dan neem je willekeurige waarden. Bij x = 0 is 0 ≠ 1, dus x = 2, x = 4 en x ≈ −0,77."
+   ],
+   "uh": "Welke oplossingen heeft x² = 2^x ongeveer?",
+   "ctx": "Een leerling lost x² = 2^x op met de grafische rekenmachine door de grafieken van y = x² en y = 2^x te tekenen en de snijpunten te bepalen."
+  },
+  {
+   "v": "Voor welke x tussen 2 en 4 geldt x² > 2^x?",
+   "o": [
+    "\"voor geen enkele x tussen 2 en 4\"",
+    "\"alleen voor x = 3 in het midden\"",
+    "\"voor x kleiner dan 2 en groter dan 0\"",
+    "\"voor alle x tussen 2 en 4\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"voor geen enkele x tussen 2 en 4\"\"? Dan denk je dat 2^x altijd groter is. Bij x = 3 is x² = 9 > 8, dus voor alle x tussen 2 en 4.",
+    "Koos je \"\"alleen voor x = 3 in het midden\"\"? Dan neem je maar één waarde. In het hele interval ligt x² boven 2^x, dus voor alle x tussen 2 en 4.",
+    "Koos je \"\"voor x kleiner dan 2 en groter dan 0\"\"? Dan neem je het gebied links van 2. Daar is 2^x groter dan x² nabij 0, dus tussen 2 en 4.",
+    "Klopt: bij x = 3 is 9 groter dan 8. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Voor welke x tussen 2 en 4 geldt x² > 2^x?",
+   "ctx": "Een leerling lost x² = 2^x op met de grafische rekenmachine door de grafieken van y = x² en y = 2^x te tekenen en de snijpunten te bepalen."
+  },
+  {
+   "v": "Hoeveel oplossingen heeft x² = 2^x?",
+   "o": [
+    "\"drie\"",
+    "\"twee\"",
+    "\"één\"",
+    "\"oneindig veel\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Stel de vergelijking of ongelijkheid op, los hem algebraïsch of met de grafische rekenmachine op, controleer door in te vullen en schrijf het antwoord met eenheid en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: drie snijpunten van de grafieken. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"twee\"\"? Dan tel je alleen de snijpunten voor x > 0. Er is er ook één bij x < 0, dus drie. Het goede antwoord is drie.",
+    "Koos je \"\"één\"\"? Dan tel je maar één snijpunt. De grafieken snijden drie keer, dus drie. Door de stappen goed na te lopen kom je uit op drie.",
+    "Koos je \"\"oneindig veel\"\"? Dan denk je dat ze samenvallen. De grafieken snijden slechts drie keer, dus drie. Controleer je stap: de juiste uitkomst is drie."
+   ],
+   "uh": "Hoeveel oplossingen heeft x² = 2^x?",
+   "ctx": "Een leerling lost x² = 2^x op met de grafische rekenmachine door de grafieken van y = x² en y = 2^x te tekenen en de snijpunten te bepalen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Twee abonnementen kosten K = 30 + 0,20m euro en K = 10 + 0,30m euro bij m belminuten. Een leerling zoekt het aantal minuten waarbij de kosten gelijk zijn en berekent die kosten.",
+   "v": "Bereken bij hoeveel minuten de kosten gelijk zijn en hoe hoog ze zijn.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "30 + 0,20m = 10 + 0,30m (1p). 20 = 0,10m geeft m = 200 (1p). K = 30 + 0,20 · 200 = 70 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling lost x² − 6x + 8 = 0 op door ontbinden en lost daarna x² − 6x + 8 < 0 op met een schets van de parabool. Hij schrijft het antwoord als interval.",
+   "v": "Los de vergelijking en de ongelijkheid op.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(x − 2)(x − 4) = 0 geeft x = 2 of x = 4 (1p). De parabool ligt onder de x-as tussen de nulpunten (1p). 2 < x < 4, dus het interval ⟨2, 4⟩ (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling lost 2x² + 3x − 2 = 0 op met de abc-formule. Hij schrijft de discriminant en de oplossingen op en controleert een oplossing door in te vullen.",
+   "v": "Los de vergelijking op met de abc-formule.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "D = 9 + 16 = 25 (1p). x = (−3 ± 5) : 4 (1p). x = 0,5 of x = −2 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De omzet van een bedrijf was in 2005 gelijk aan 80 duizend euro en in 2015 gelijk aan 100 duizend euro. Een leerling neemt een lineair verloop aan en berekent de omzet in 2009 en in 2025.",
+   "v": "Bereken de omzet in 2009 en 2025 en beoordeel de betrouwbaarheid.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Toename 2 duizend euro per jaar (1p). 2009: 88 duizend euro en 2025: 120 duizend euro (1p). 2025 is extrapoleren en dus onzekerder (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling lost de ongelijkheid 3x − 5 ≤ 10 op en schrijft het antwoord als interval. Hij controleert met een getal dat wel en een getal dat niet voldoet.",
+   "v": "Los de ongelijkheid op en geef het interval.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "3x − 5 ≤ 10 geeft 3x ≤ 15 door aan beide kanten 5 op te tellen (1p). Delen door 3 geeft x ≤ 5 en het teken blijft staan (1p). Interval ⟨←, 5] met een rechte haak bij 5 (1p)."
+  }
+ ]
+}
