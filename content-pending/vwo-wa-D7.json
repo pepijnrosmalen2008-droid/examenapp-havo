@@ -1,0 +1,682 @@
+{
+ "id": "D7",
+ "lo": "wa.D.7",
+ "gs": 2,
+ "naam": "De kettingregel en extreme waarden met de afgeleide",
+ "beschrijving": "Je leidt samengestelde functies af met de kettingregel, lost f′(x) = 0 op, maakt een tekenschema van f′ en vindt zo de maxima en minima van een functie en van een winst.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Samengestelde functies herkennen",
+  "De kettingregel gebruiken",
+  "Stationaire punten vinden",
+  "Tekenschema en extreme waarden",
+  "Maximale winst berekenen"
+ ],
+ "sam": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie: dat is de kettingregel. Een stationair punt vind je met f′(x) = 0. Een tekenschema van f′ laat zien of het een maximum is (plus naar min) of een minimum (min naar plus). Bereken daarna de extreme waarde met de functiewaarde. Bij een winstfunctie levert W′(q) = 0 het aantal eenheden met de grootste winst. Controleer altijd het teken van de afgeleide en schrijf het antwoord met eenheid op.",
+ "begrippen": [
+  {
+   "t": "Samengestelde functie",
+   "d": "Een functie in een functie, zoals (3x + 1)⁴: eerst de binnenfunctie, dan de buitenfunctie."
+  },
+  {
+   "t": "Binnenfunctie",
+   "d": "De functie die eerst wordt uitgerekend, vaak het deel tussen haakjes."
+  },
+  {
+   "t": "Buitenfunctie",
+   "d": "De functie die daarna op de uitkomst van de binnenfunctie wordt toegepast."
+  },
+  {
+   "t": "Kettingregel",
+   "d": "De afgeleide van f(g(x)) is f′(g(x)) · g′(x)."
+  },
+  {
+   "t": "Binnenafgeleide",
+   "d": "De afgeleide g′(x) van de binnenfunctie, waarmee je vermenigvuldigt."
+  },
+  {
+   "t": "Stationair punt",
+   "d": "Een punt waar f′(x) = 0 en de raaklijn horizontaal is."
+  },
+  {
+   "t": "Tekenschema van f′",
+   "d": "Een schema met de tekens van f′ voor en na de nulpunten."
+  },
+  {
+   "t": "Maximum",
+   "d": "Een top: f′ gaat van plus naar min."
+  },
+  {
+   "t": "Minimum",
+   "d": "Een dal: f′ gaat van min naar plus."
+  },
+  {
+   "t": "Extreme waarde",
+   "d": "De functiewaarde in een maximum of minimum."
+  },
+  {
+   "t": "Winstfunctie",
+   "d": "De opbrengst min de kosten, vaak een functie van het aantal eenheden q."
+  },
+  {
+   "t": "Horizontale raaklijn",
+   "d": "Een raaklijn met helling 0, zoals in een stationair punt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke is de binnenfunctie van f(x) = (5x − 2)³?",
+   "o": [
+    "\"u³ (de macht)\"",
+    "\"5x − 2\"",
+    "\"5x (zonder −2)\"",
+    "\"3 (de exponent)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"u³ (de macht)\"\"? Dan neem je de buitenfunctie. De binnenfunctie staat tussen de haakjes, dus 5x − 2. Het goede antwoord is 5x − 2.",
+    "Klopt: de binnenfunctie staat tussen de haakjes. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5x (zonder −2)\"\"? Dan laat je een deel van de haakjes weg. De hele uitdrukking 5x − 2 is de binnenfunctie, dus 5x − 2.",
+    "Koos je \"\"3 (de exponent)\"\"? Dan neem je de exponent. Die hoort bij de buitenfunctie, dus 5x − 2. Controleer je stap: de juiste uitkomst is 5x − 2."
+   ],
+   "uh": "Welke is de binnenfunctie van f(x) = (5x − 2)³?"
+  },
+  {
+   "v": "Welke regel gebruik je om f(x) = (2x + 1)² af te leiden zonder uit te werken?",
+   "o": [
+    "\"de productregel\"",
+    "\"de quotiëntregel\"",
+    "\"de somregel\"",
+    "\"de kettingregel\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de productregel\"\"? Dan denk je dat het een product is. Er staat één haakje met een macht, dus de kettingregel.",
+    "Koos je \"\"de quotiëntregel\"\"? Dan denk je aan een breuk. Er staat geen deling, dus de kettingregel. Door de stappen goed na te lopen kom je uit op de kettingregel.",
+    "Koos je \"\"de somregel\"\"? Dan let je alleen op de plus. De hele som staat onder een macht, dus de kettingregel. Controleer je stap: de juiste uitkomst is de kettingregel.",
+    "Klopt: er staat een functie in een functie. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke regel gebruik je om f(x) = (2x + 1)² af te leiden zonder uit te werken?"
+  },
+  {
+   "v": "Welke afgeleide heeft f(x) = e^(3x)?",
+   "o": [
+    "\"3e^(3x)\"",
+    "\"e^(3x) (zonder factor)\"",
+    "\"3x · e^(3x−1) (machtsregel)\"",
+    "\"3e^x (binnenfunctie weggelaten)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: e^(3x) blijft staan en je vermenigvuldigt met de binnenafgeleide 3.",
+    "Koos je \"\"e^(3x) (zonder factor)\"\"? Dan vergeet je de binnenafgeleide. Vermenigvuldig met 3, dus 3e^(3x). Het goede antwoord is 3e^(3x).",
+    "Koos je \"\"3x · e^(3x−1) (machtsregel)\"\"? Dan pas je de machtsregel toe. De x staat in de exponent, dus 3e^(3x). Door de stappen goed na te lopen kom je uit op 3e^(3x).",
+    "Koos je \"\"3e^x (binnenfunctie weggelaten)\"\"? Dan laat je 3x in de exponent weg. De binnenfunctie blijft staan, dus 3e^(3x)."
+   ],
+   "uh": "Welke afgeleide heeft f(x) = e^(3x)?"
+  },
+  {
+   "v": "Wat geldt voor f′(x) in een top of dal van de grafiek?",
+   "o": [
+    "\"f′(x) > 0\"",
+    "\"f′(x) < 0\"",
+    "\"f′(x) = 0\"",
+    "\"f′(x) is niet gedefinieerd\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f′(x) > 0\"\"? Dan denk je dat de grafiek stijgt. In een top stijgt hij niet, dus f′(x) = 0. Het goede antwoord is f′(x) = 0.",
+    "Koos je \"\"f′(x) < 0\"\"? Dan denk je dat de grafiek daalt. In een dal daalt hij niet, dus f′(x) = 0. Door de stappen goed na te lopen kom je uit op f′(x) = 0.",
+    "Klopt: de raaklijn is daar horizontaal. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f′(x) is niet gedefinieerd\"\"? Dan denk je dat een top geen afgeleide heeft. Die is gewoon 0, dus f′(x) = 0. Controleer je stap: de juiste uitkomst is f′(x) = 0."
+   ],
+   "uh": "Wat geldt voor f′(x) in een top of dal van de grafiek?"
+  },
+  {
+   "v": "Een tekenschema van f′ gaat van plus naar min. Wat heeft f daar?",
+   "o": [
+    "\"een minimum\"",
+    "\"een maximum\"",
+    "\"een nulpunt\"",
+    "\"geen extreme waarde\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een minimum\"\"? Dan draai je het om. Van plus naar min is een maximum, dus een maximum. Het goede antwoord is een maximum.",
+    "Klopt: f stijgt eerst en daalt daarna. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"een nulpunt\"\"? Dan verwar je f′ met f. Het teken van f′ zegt iets over stijgen en dalen, dus een maximum. Door de stappen goed na te lopen kom je uit op een maximum.",
+    "Koos je \"\"geen extreme waarde\"\"? Dan denk je dat een tekenwisseling niets zegt. Het geeft een top, dus een maximum. Controleer je stap: de juiste uitkomst is een maximum."
+   ],
+   "uh": "Een tekenschema van f′ gaat van plus naar min. Wat heeft f daar?"
+  },
+  {
+   "v": "Waarom los je W′(q) = 0 op om de maximale winst te vinden?",
+   "o": [
+    "\"omdat W(q) dan 0 is\"",
+    "\"omdat de winst dan negatief is\"",
+    "\"omdat W′ de winst zelf is\"",
+    "\"omdat de raaklijn in het hoogste punt horizontaal is\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat W(q) dan 0 is\"\"? Dan lees je W′ = 0 als geen winst. Het gaat om de hellingswaarde en niet om de winst, dus omdat de raaklijn in het hoogste punt horizontaal is.",
+    "Koos je \"\"omdat de winst dan negatief is\"\"? Dan koppel je een nulhelling aan een verlies. De winst zelf kan hoog zijn, dus omdat de raaklijn in het hoogste punt horizontaal is.",
+    "Koos je \"\"omdat W′ de winst zelf is\"\"? Dan zie je in W′ de winst zelf. W′ meet alleen hoe snel de winst verandert, dus omdat de raaklijn in het hoogste punt horizontaal is.",
+    "Klopt: bij het hoogste punt is de helling 0. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waarom los je W′(q) = 0 op om de maximale winst te vinden?"
+  },
+  {
+   "v": "Leid f(x) = (4x − 3)² af met de kettingregel.",
+   "o": [
+    "\"8(4x − 3)\"",
+    "\"2(4x − 3) (zonder binnenafgeleide)\"",
+    "\"8(4x − 3)² (exponent blijft)\"",
+    "\"4x − 3 (alleen de binnenfunctie)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2(4x − 3) · 4 = 8(4x − 3). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2(4x − 3) (zonder binnenafgeleide)\"\"? Dan vergeet je de binnenafgeleide 4. Vermenigvuldig met 4, dus 8(4x − 3).",
+    "Koos je \"\"8(4x − 3)² (exponent blijft)\"\"? Dan verlaag je de exponent niet. Van de macht 2 blijft 1 over, dus 8(4x − 3). Door de stappen goed na te lopen kom je uit op 8(4x − 3).",
+    "Koos je \"\"4x − 3 (alleen de binnenfunctie)\"\"? Dan geef je alleen de binnenfunctie. Leid de buitenfunctie af, dus 8(4x − 3)."
+   ],
+   "uh": "Leid f(x) = (4x − 3)² af met de kettingregel."
+  },
+  {
+   "v": "Welke functies vormen samen f(x) = (3x + 1)⁴?",
+   "o": [
+    "\"binnen u⁴ en buiten 3x + 1 (verwisseld)\"",
+    "\"binnen 3x en buiten (x + 1)⁴\"",
+    "\"binnen 3x + 1 en buiten u⁴\"",
+    "\"binnen x en buiten (3x + 1)⁴\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"binnen u⁴ en buiten 3x + 1 (verwisseld)\"\"? Dan verwissel je binnen en buiten. Het haakje is de binnenfunctie, dus binnen 3x + 1 en buiten u⁴.",
+    "Koos je \"\"binnen 3x en buiten (x + 1)⁴\"\"? Dan splits je het haakje verkeerd. De hele uitdrukking 3x + 1 zit binnen, dus binnen 3x + 1 en buiten u⁴.",
+    "Klopt: eerst 3x + 1, daarna tot de macht 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"binnen x en buiten (3x + 1)⁴\"\"? Dan neem je alleen x als binnenfunctie. De haakjes horen erbij, dus binnen 3x + 1 en buiten u⁴."
+   ],
+   "uh": "Welke functies vormen samen f(x) = (3x + 1)⁴?",
+   "ctx": "De functie is f(x) = (3x + 1)⁴. Een leerling herkent de binnenfunctie 3x + 1 en de buitenfunctie u⁴, bepaalt f′(x) met de kettingregel en berekent daarna f′(0). Hij onderzoekt ook waar f een minimum heeft."
+  },
+  {
+   "v": "Bepaal f′(x) met de kettingregel.",
+   "o": [
+    "\"4(3x + 1)³ (zonder binnenafgeleide)\"",
+    "\"12(3x + 1)³\"",
+    "\"12(3x + 1)⁴ (exponent blijft)\"",
+    "\"(3x + 1)³ · 3 (factor 4 vergeten)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4(3x + 1)³ (zonder binnenafgeleide)\"\"? Dan vergeet je de binnenafgeleide 3. Vermenigvuldig met 3, dus 12(3x + 1)³.",
+    "Klopt: 4(3x + 1)³ · 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12(3x + 1)⁴ (exponent blijft)\"\"? Dan verlaag je de exponent niet. 4 wordt 3, dus 12(3x + 1)³. Door de stappen goed na te lopen kom je uit op 12(3x + 1)³.",
+    "Koos je \"\"(3x + 1)³ · 3 (factor 4 vergeten)\"\"? Dan vergeet je de factor 4 van de macht. Die komt voor het haakje, dus 12(3x + 1)³."
+   ],
+   "uh": "Bepaal f′(x) met de kettingregel.",
+   "ctx": "De functie is f(x) = (3x + 1)⁴. Een leerling herkent de binnenfunctie 3x + 1 en de buitenfunctie u⁴, bepaalt f′(x) met de kettingregel en berekent daarna f′(0). Hij onderzoekt ook waar f een minimum heeft."
+  },
+  {
+   "v": "Bereken f′(0).",
+   "o": [
+    "\"4 (zonder binnenafgeleide)\"",
+    "\"1 (f(0))\"",
+    "\"36 (12 · 3)\"",
+    "\"12\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4 (zonder binnenafgeleide)\"\"? Dan vergeet je de binnenafgeleide. Vul in 12(3x + 1)³, dus 12. Het goede antwoord is 12.",
+    "Koos je \"\"1 (f(0))\"\"? Dan neem je f(0). Vul 0 in bij f′, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"36 (12 · 3)\"\"? Dan vermenigvuldig je nog eens met 3. De binnenafgeleide zit al in de 12, dus 12. Controleer je stap: de juiste uitkomst is 12.",
+    "Klopt: 12 · 1³ = 12. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken f′(0).",
+   "ctx": "De functie is f(x) = (3x + 1)⁴. Een leerling herkent de binnenfunctie 3x + 1 en de buitenfunctie u⁴, bepaalt f′(x) met de kettingregel en berekent daarna f′(0). Hij onderzoekt ook waar f een minimum heeft."
+  },
+  {
+   "v": "Bepaal g′(x).",
+   "o": [
+    "\"6x(x² + 1)²\"",
+    "\"3(x² + 1)² (zonder binnenafgeleide)\"",
+    "\"6x(x² + 1)³ (exponent blijft)\"",
+    "\"2x(x² + 1)² (factor 3 vergeten)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3(x² + 1)² · 2x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3(x² + 1)² (zonder binnenafgeleide)\"\"? Dan vergeet je de binnenafgeleide 2x. Vermenigvuldig met 2x, dus 6x(x² + 1)².",
+    "Koos je \"\"6x(x² + 1)³ (exponent blijft)\"\"? Dan verlaag je de exponent niet. 3 wordt 2, dus 6x(x² + 1)². Door de stappen goed na te lopen kom je uit op 6x(x² + 1)².",
+    "Koos je \"\"2x(x² + 1)² (factor 3 vergeten)\"\"? Dan vergeet je de factor 3 van de macht. Die komt voor het haakje, dus 6x(x² + 1)²."
+   ],
+   "uh": "Bepaal g′(x).",
+   "ctx": "De functie is g(x) = (x² + 1)³. Een leerling bepaalt g′(x) met de kettingregel, berekent g′(1) en onderzoekt voor welke x de afgeleide gelijk is aan 0. Hij let daarbij op de binnenafgeleide."
+  },
+  {
+   "v": "Bereken g′(1).",
+   "o": [
+    "\"12 (3 · 2²)\"",
+    "\"8 (g(1))\"",
+    "\"24\"",
+    "\"48 (6 · 8)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12 (3 · 2²)\"\"? Dan vergeet je de binnenafgeleide 2x. Vermenigvuldig met 2, dus 24. Het goede antwoord is 24.",
+    "Koos je \"\"8 (g(1))\"\"? Dan neem je g(1). Vul 1 in bij g′, dus 24. Door de stappen goed na te lopen kom je uit op 24.",
+    "Klopt: 6 · 1 · 2² = 24. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"48 (6 · 8)\"\"? Dan reken je 2³ in plaats van 2². De exponent is 2, dus 24. Controleer je stap: de juiste uitkomst is 24."
+   ],
+   "uh": "Bereken g′(1).",
+   "ctx": "De functie is g(x) = (x² + 1)³. Een leerling bepaalt g′(x) met de kettingregel, berekent g′(1) en onderzoekt voor welke x de afgeleide gelijk is aan 0. Hij let daarbij op de binnenafgeleide."
+  },
+  {
+   "v": "Voor welke x geldt g′(x) = 0?",
+   "o": [
+    "\"x = 1\"",
+    "\"x = 0\"",
+    "\"x = −1\"",
+    "\"nergens\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 1\"\"? Dan kies je een willekeurige waarde. Los 6x(x² + 1)² = 0 op, dus x = 0. Het goede antwoord is x = 0.",
+    "Klopt: 6x = 0 geeft x = 0 en (x² + 1)² is nooit 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = −1\"\"? Dan kies je een andere waarde. De factor x² + 1 is nooit 0, dus x = 0. Door de stappen goed na te lopen kom je uit op x = 0.",
+    "Koos je \"\"nergens\"\"? Dan denk je dat een product nooit 0 is. De factor 6x is 0 bij x = 0, dus x = 0. Controleer je stap: de juiste uitkomst is x = 0."
+   ],
+   "uh": "Voor welke x geldt g′(x) = 0?",
+   "ctx": "De functie is g(x) = (x² + 1)³. Een leerling bepaalt g′(x) met de kettingregel, berekent g′(1) en onderzoekt voor welke x de afgeleide gelijk is aan 0. Hij let daarbij op de binnenafgeleide."
+  },
+  {
+   "v": "Bepaal h′(x) voor h(x) = e^(x²).",
+   "o": [
+    "\"e^(x²) (zonder binnenafgeleide)\"",
+    "\"x² · e^(x²−1) (machtsregel)\"",
+    "\"2x · e^(2x) (exponent veranderd)\"",
+    "\"2x · e^(x²)\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"e^(x²) (zonder binnenafgeleide)\"\"? Dan vergeet je de binnenafgeleide 2x. Vermenigvuldig met 2x, dus 2x · e^(x²).",
+    "Koos je \"\"x² · e^(x²−1) (machtsregel)\"\"? Dan pas je de machtsregel toe. De x² staat in de exponent, dus 2x · e^(x²). Door de stappen goed na te lopen kom je uit op 2x · e^(x²).",
+    "Koos je \"\"2x · e^(2x) (exponent veranderd)\"\"? Dan verander je de exponent. De binnenfunctie x² blijft staan, dus 2x · e^(x²).",
+    "Klopt: e^(x²) blijft en je vermenigvuldigt met de binnenafgeleide 2x."
+   ],
+   "uh": "Bepaal h′(x) voor h(x) = e^(x²).",
+   "ctx": "De functies zijn h(x) = e^(x²) en p(x) = ln(x² + 1). Een leerling bepaalt h′(x) en p′(x) met de kettingregel en noemt bij elke functie de binnenfunctie en de buitenfunctie. Daarna controleert hij zijn uitkomsten met een getal."
+  },
+  {
+   "v": "Welke afgeleide heeft p(x) = ln(x² + 1)?",
+   "o": [
+    "\"2x/(x² + 1)\"",
+    "\"1/(x² + 1) (zonder binnenafgeleide)\"",
+    "\"2x (alleen de binnenafgeleide)\"",
+    "\"2x · ln(x² + 1) (product)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 1/(x² + 1) · 2x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1/(x² + 1) (zonder binnenafgeleide)\"\"? Dan vergeet je de binnenafgeleide 2x. Vermenigvuldig met 2x, dus 2x/(x² + 1).",
+    "Koos je \"\"2x (alleen de binnenafgeleide)\"\"? Dan vergeet je de buitenfunctie. De afgeleide van ln u is 1/u, dus 2x/(x² + 1).",
+    "Koos je \"\"2x · ln(x² + 1) (product)\"\"? Dan maak je er een product van. De ln wordt 1/u, dus 2x/(x² + 1). Controleer je stap: de juiste uitkomst is 2x/(x² + 1)."
+   ],
+   "uh": "Welke afgeleide heeft p(x) = ln(x² + 1)?",
+   "ctx": "De functies zijn h(x) = e^(x²) en p(x) = ln(x² + 1). Een leerling bepaalt h′(x) en p′(x) met de kettingregel en noemt bij elke functie de binnenfunctie en de buitenfunctie. Daarna controleert hij zijn uitkomsten met een getal."
+  },
+  {
+   "v": "Los f′(x) = 0 op voor f(x) = x³ − 6x² + 9x + 2.",
+   "o": [
+    "\"x = −1 of x = −3\"",
+    "\"x = 2\"",
+    "\"x = 1 of x = 3\"",
+    "\"x = 0 of x = 4\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = −1 of x = −3\"\"? Dan maak je een tekenfout. De factoren zijn (x − 1) en (x − 3), dus x = 1 of x = 3. Het goede antwoord is x = 1 of x = 3.",
+    "Koos je \"\"x = 2\"\"? Dan neem je het midden. Beide oplossingen zijn 1 en 3, dus x = 1 of x = 3. Door de stappen goed na te lopen kom je uit op x = 1 of x = 3.",
+    "Klopt: f′(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 0 of x = 4\"\"? Dan vul je willekeurige waarden in. Los 3x² − 12x + 9 = 0 op, dus x = 1 of x = 3. Controleer je stap: de juiste uitkomst is x = 1 of x = 3."
+   ],
+   "uh": "Los f′(x) = 0 op voor f(x) = x³ − 6x² + 9x + 2.",
+   "ctx": "De functie is f(x) = x³ − 6x² + 9x + 2. Een leerling bepaalt f′(x), lost f′(x) = 0 op, maakt een tekenschema van f′ en onderzoekt daarmee de extreme waarden van f. Hij berekent de bijbehorende functiewaarden."
+  },
+  {
+   "v": "Welk tekenschema hoort bij f′(x) = 3(x − 1)(x − 3)?",
+   "o": [
+    "\"− voor x < 1, + tussen 1 en 3, − voor x > 3\"",
+    "\"+ voor x < 1, − tussen 1 en 3, + voor x > 3\"",
+    "\"+ overal\"",
+    "\"+ voor x < 1, − voor x > 1\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"− voor x < 1, + tussen 1 en 3, − voor x > 3\"\"? Dan draai je alle tekens om. De parabool heeft een positieve coëfficiënt, dus + voor x < 1, − tussen 1 en 3, + voor x > 3.",
+    "Klopt: een dalparabool boven de x-as buiten de nulpunten.",
+    "Koos je \"\"+ overal\"\"? Dan let je niet op de nulpunten. Het teken wisselt bij x = 1 en x = 3, dus + voor x < 1, − tussen 1 en 3, + voor x > 3.",
+    "Koos je \"\"+ voor x < 1, − voor x > 1\"\"? Dan vergeet je het tweede nulpunt. Er zijn twee tekenwisselingen, dus + voor x < 1, − tussen 1 en 3, + voor x > 3."
+   ],
+   "uh": "Welk tekenschema hoort bij f′(x) = 3(x − 1)(x − 3)?",
+   "ctx": "De functie is f(x) = x³ − 6x² + 9x + 2. Een leerling bepaalt f′(x), lost f′(x) = 0 op, maakt een tekenschema van f′ en onderzoekt daarmee de extreme waarden van f. Hij berekent de bijbehorende functiewaarden."
+  },
+  {
+   "v": "Welke extreme waarden heeft f(x) = x³ − 6x² + 9x + 2?",
+   "o": [
+    "\"lokaal maximum 2 bij x = 3 en lokaal minimum 6 bij x = 1 (omgedraaid)\"",
+    "\"lokaal maximum 6 bij x = 3 en lokaal minimum 2 bij x = 1 (x-waarden verwisseld)\"",
+    "\"alleen een lokaal minimum 2 bij x = 3 (het maximum ontbreekt)\"",
+    "\"lokaal maximum 6 bij x = 1 en lokaal minimum 2 bij x = 3\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"lokaal maximum 2 bij x = 3 en lokaal minimum 6 bij x = 1 (omgedraaid)\"\"? Dan draai je maximum en minimum om. f′ gaat bij x = 1 van plus naar min, dus lokaal maximum 6 bij x = 1 en lokaal minimum 2 bij x = 3.",
+    "Koos je \"\"lokaal maximum 6 bij x = 3 en lokaal minimum 2 bij x = 1 (x-waarden verwisseld)\"\"? Dan wissel je de x-waarden. Bij x = 1 is f(x) = 6, dus lokaal maximum 6 bij x = 1 en lokaal minimum 2 bij x = 3.",
+    "Koos je \"\"alleen een lokaal minimum 2 bij x = 3 (het maximum ontbreekt)\"\"? Dan zie je alleen het dal. Er is ook een top bij x = 1, dus lokaal maximum 6 bij x = 1 en lokaal minimum 2 bij x = 3.",
+    "Klopt: f(1) = 6 en f(3) = 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke extreme waarden heeft f(x) = x³ − 6x² + 9x + 2?",
+   "ctx": "De functie is f(x) = x³ − 6x² + 9x + 2. Een leerling bepaalt f′(x), lost f′(x) = 0 op, maakt een tekenschema van f′ en onderzoekt daarmee de extreme waarden van f. Hij berekent de bijbehorende functiewaarden."
+  },
+  {
+   "v": "Hoe weet je dat f bij x = 1 een maximum heeft?",
+   "o": [
+    "\"f′ gaat bij x = 1 van plus naar min\"",
+    "\"f′(1) = 0, dus het is altijd een maximum\"",
+    "\"f′ gaat bij x = 1 van min naar plus\"",
+    "\"de grafiek is symmetrisch rond x = 1\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: f stijgt voor x < 1 en daalt erna. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f′(1) = 0, dus het is altijd een maximum\"\"? Dan neem je aan dat elk punt met helling 0 een top is. Ook een dal of een vlak punt heeft helling 0, dus f′ gaat bij x = 1 van plus naar min.",
+    "Koos je \"\"f′ gaat bij x = 1 van min naar plus\"\"? Dan zet dit je het schema op zijn kop. Dan stijgt f na x = 1 en dat past bij een dal, dus f′ gaat bij x = 1 van plus naar min.",
+    "Koos je \"\"de grafiek is symmetrisch rond x = 1\"\"? Dan neem je symmetrie aan. Kijk naar het teken van f′, dus f′ gaat bij x = 1 van plus naar min."
+   ],
+   "uh": "Hoe weet je dat f bij x = 1 een maximum heeft?",
+   "ctx": "De functie is f(x) = x³ − 6x² + 9x + 2. Een leerling bepaalt f′(x), lost f′(x) = 0 op, maakt een tekenschema van f′ en onderzoekt daarmee de extreme waarden van f. Hij berekent de bijbehorende functiewaarden."
+  },
+  {
+   "v": "Bepaal p′(x) voor p(x) = x · e^(−x).",
+   "o": [
+    "\"e^(−x) (productregel vergeten)\"",
+    "\"(1 + x)e^(−x) (teken fout)\"",
+    "\"(1 − x)e^(−x)\"",
+    "\"−x · e^(−x) (alleen het tweede deel)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"e^(−x) (productregel vergeten)\"\"? Dan leid je alleen de eerste factor af. Gebruik u′v + uv′, dus (1 − x)e^(−x).",
+    "Koos je \"\"(1 + x)e^(−x) (teken fout)\"\"? Dan vergeet je de min van de binnenafgeleide van −x. Die is −1, dus (1 − x)e^(−x).",
+    "Klopt: e^(−x) + x · (−e^(−x)) = (1 − x)e^(−x). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−x · e^(−x) (alleen het tweede deel)\"\"? Dan leid je alleen de tweede factor af. Beide delen tellen mee, dus (1 − x)e^(−x)."
+   ],
+   "uh": "Bepaal p′(x) voor p(x) = x · e^(−x).",
+   "ctx": "De functie is p(x) = x · e^(−x) voor x ≥ 0. Een leerling bepaalt p′(x) met de productregel en de kettingregel, lost p′(x) = 0 op en onderzoekt met een tekenschema het maximum van p."
+  },
+  {
+   "v": "Voor welke x is p′(x) = 0?",
+   "o": [
+    "\"x = 0\"",
+    "\"x = 1\"",
+    "\"x = −1\"",
+    "\"nergens, omdat e^(−x) nooit 0 is\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 0\"\"? Dan kies je het beginpunt. Daar is p′(0) = 1, dus x = 1. Het goede antwoord is x = 1.",
+    "Klopt: (1 − x)e^(−x) = 0 geeft x = 1 omdat e^(−x) nooit 0 is.",
+    "Koos je \"\"x = −1\"\"? Dan kies je een negatieve waarde. De factor 1 − x is 0 bij x = 1, dus x = 1. Door de stappen goed na te lopen kom je uit op x = 1.",
+    "Koos je \"\"nergens, omdat e^(−x) nooit 0 is\"\"? Dan let je niet op de factor 1 − x. Die is 0 bij x = 1, dus x = 1. Controleer je stap: de juiste uitkomst is x = 1."
+   ],
+   "uh": "Voor welke x is p′(x) = 0?",
+   "ctx": "De functie is p(x) = x · e^(−x) voor x ≥ 0. Een leerling bepaalt p′(x) met de productregel en de kettingregel, lost p′(x) = 0 op en onderzoekt met een tekenschema het maximum van p."
+  },
+  {
+   "v": "Wat is de maximale waarde van p(x) = x · e^(−x) voor x ≥ 0?",
+   "o": [
+    "\"1 (de x-waarde)\"",
+    "\"0 (p(0))\"",
+    "\"2,72 (e)\"",
+    "\"1/e ≈ 0,37\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1 (de x-waarde)\"\"? Dan neem je de x-waarde. Je zoekt de functiewaarde p(1), dus 1/e ≈ 0,37. Het goede antwoord is 1/e ≈ 0,37.",
+    "Koos je \"\"0 (p(0))\"\"? Dan neem je de waarde bij x = 0. Daar is p(0) = 0 geen maximum, dus 1/e ≈ 0,37. Door de stappen goed na te lopen kom je uit op 1/e ≈ 0,37.",
+    "Koos je \"\"2,72 (e)\"\"? Dan neem je e in plaats van 1/e. p(1) = e^(−1), dus 1/e ≈ 0,37. Controleer je stap: de juiste uitkomst is 1/e ≈ 0,37.",
+    "Klopt: p′ gaat bij x = 1 van plus naar min en p(1) = e^(−1)."
+   ],
+   "uh": "Wat is de maximale waarde van p(x) = x · e^(−x) voor x ≥ 0?",
+   "ctx": "De functie is p(x) = x · e^(−x) voor x ≥ 0. Een leerling bepaalt p′(x) met de productregel en de kettingregel, lost p′(x) = 0 op en onderzoekt met een tekenschema het maximum van p."
+  },
+  {
+   "v": "Bepaal W′(q) voor W(q) = −2q² + 40q − 50.",
+   "o": [
+    "\"−4q + 40\"",
+    "\"−2q + 40 (exponent niet verlaagd met factor)\"",
+    "\"−4q + 40 − 50 (de constante blijft)\"",
+    "\"−4q² + 40q (niets afgeleid)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: −2 · 2q + 40 en de constante verdwijnt. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−2q + 40 (exponent niet verlaagd met factor)\"\"? Dan vergeet je de factor 2 van de macht. Vermenigvuldig met 2, dus −4q + 40.",
+    "Koos je \"\"−4q + 40 − 50 (de constante blijft)\"\"? Dan laat je de constante staan. De afgeleide van −50 is 0, dus −4q + 40.",
+    "Koos je \"\"−4q² + 40q (niets afgeleid)\"\"? Dan verlaag je de exponenten niet. Trek 1 af, dus −4q + 40. Controleer je stap: de juiste uitkomst is −4q + 40."
+   ],
+   "uh": "Bepaal W′(q) voor W(q) = −2q² + 40q − 50.",
+   "ctx": "De winst in euro bij q eenheden is W(q) = −2q² + 40q − 50. Een leerling bepaalt W′(q), lost W′(q) = 0 op, controleert met een tekenschema dat het een maximum is en berekent de maximale winst."
+  },
+  {
+   "v": "Bij welke q is de winst maximaal?",
+   "o": [
+    "\"20 (40 : 2)\"",
+    "\"40 (de coëfficiënt)\"",
+    "\"10\"",
+    "\"0 (het begin)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 (40 : 2)\"\"? Dan deel je 40 door 2. Los −4q + 40 = 0 op, dus 10. Het goede antwoord is 10.",
+    "Koos je \"\"40 (de coëfficiënt)\"\"? Dan neem je de coëfficiënt van q. Los W′(q) = 0 op, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+    "Klopt: −4q + 40 = 0 geeft q = 10 en W′ gaat van plus naar min.",
+    "Koos je \"\"0 (het begin)\"\"? Dan kies je het begin. Daar is W′(0) = 40 positief, dus 10. Controleer je stap: de juiste uitkomst is 10."
+   ],
+   "uh": "Bij welke q is de winst maximaal?",
+   "ctx": "De winst in euro bij q eenheden is W(q) = −2q² + 40q − 50. Een leerling bepaalt W′(q), lost W′(q) = 0 op, controleert met een tekenschema dat het een maximum is en berekent de maximale winst."
+  },
+  {
+   "v": "Hoe groot is de maximale winst in euro?",
+   "o": [
+    "\"200 (zonder −50)\"",
+    "\"150\"",
+    "\"−50 (W(0))\"",
+    "\"10 (de q-waarde)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"200 (zonder −50)\"\"? Dan laat je de constante −50 weg. Trek 50 af, dus 150. Het goede antwoord is 150.",
+    "Klopt: W(10) = −200 + 400 − 50 = 150. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−50 (W(0))\"\"? Dan neem je de winst bij q = 0. Vul q = 10 in, dus 150. Door de stappen goed na te lopen kom je uit op 150.",
+    "Koos je \"\"10 (de q-waarde)\"\"? Dan neem je de q-waarde. Je zoekt de winst W(10), dus 150. Controleer je stap: de juiste uitkomst is 150."
+   ],
+   "uh": "Hoe groot is de maximale winst in euro?",
+   "ctx": "De winst in euro bij q eenheden is W(q) = −2q² + 40q − 50. Een leerling bepaalt W′(q), lost W′(q) = 0 op, controleert met een tekenschema dat het een maximum is en berekent de maximale winst."
+  },
+  {
+   "v": "Welke binnenfunctie en buitenfunctie heeft p(x) = ln(x² + 1)?",
+   "o": [
+    "\"binnen ln u en buiten x² + 1 (verwisseld)\"",
+    "\"binnen x² en buiten ln(u + 1)\"",
+    "\"binnen x en buiten ln(x² + 1)\"",
+    "\"binnen x² + 1 en buiten ln u\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"binnen ln u en buiten x² + 1 (verwisseld)\"\"? Dan verwissel je binnen en buiten. Het haakje is de binnenfunctie, dus binnen x² + 1 en buiten ln u.",
+    "Koos je \"\"binnen x² en buiten ln(u + 1)\"\"? Dan splits je de binnenfunctie. De hele uitdrukking x² + 1 zit binnen, dus binnen x² + 1 en buiten ln u.",
+    "Koos je \"\"binnen x en buiten ln(x² + 1)\"\"? Dan neem je alleen x als binnenfunctie. De haakjes horen erbij, dus binnen x² + 1 en buiten ln u.",
+    "Klopt: eerst x² + 1, daarna de logaritme. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke binnenfunctie en buitenfunctie heeft p(x) = ln(x² + 1)?",
+   "ctx": "De functies zijn h(x) = e^(x²) en p(x) = ln(x² + 1). Een leerling bepaalt h′(x) en p′(x) met de kettingregel en noemt bij elke functie de binnenfunctie en de buitenfunctie. Daarna controleert hij zijn uitkomsten met een getal."
+  },
+  {
+   "v": "Waar heeft f(x) = (3x + 1)⁴ een minimum?",
+   "o": [
+    "\"bij x = −1/3\"",
+    "\"bij x = 0\"",
+    "\"bij x = −3\"",
+    "\"f heeft geen minimum\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Bij een samengestelde functie leid je de buitenfunctie af en vermenigvuldig je met de afgeleide van de binnenfunctie. Een extreme waarde zoek je met f′(x) = 0 en een tekenschema van f′. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: f′(x) = 12(3x + 1)³ is 0 bij x = −1/3 en gaat daar van min naar plus.",
+    "Koos je \"\"bij x = 0\"\"? Dan kies je het punt x = 0. Daar is f′(0) = 12 positief, dus bij x = −1/3. Het goede antwoord is bij x = −1/3.",
+    "Koos je \"\"bij x = −3\"\"? Dan kies je een willekeurige waarde. Los 3x + 1 = 0 op, dus bij x = −1/3. Door de stappen goed na te lopen kom je uit op bij x = −1/3.",
+    "Koos je \"\"f heeft geen minimum\"\"? Dan denk je dat een macht geen minimum heeft. f′ wisselt van min naar plus, dus bij x = −1/3."
+   ],
+   "uh": "Waar heeft f(x) = (3x + 1)⁴ een minimum?",
+   "ctx": "De functie is f(x) = (3x + 1)⁴. Een leerling herkent de binnenfunctie 3x + 1 en de buitenfunctie u⁴, bepaalt f′(x) met de kettingregel en berekent daarna f′(0). Hij onderzoekt ook waar f een minimum heeft."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling bepaalt de afgeleide van f(x) = (2x − 5)³ met de kettingregel en berekent daarna f′(3). Hij noemt de binnenfunctie en de buitenfunctie en schrijft elke stap van de berekening op.",
+   "v": "Bepaal f′(x) met de kettingregel en bereken f′(3).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Binnen 2x − 5 en buiten u³ (1p). f′(x) = 3(2x − 5)² · 2 = 6(2x − 5)² (1p). f′(3) = 6 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling bepaalt de afgeleide van g(x) = ln(2x + 1) met de kettingregel en berekent daarna g′(0). Hij noemt de binnenfunctie en de buitenfunctie en controleert zijn antwoord met een tweede getal.",
+   "v": "Bepaal g′(x) met de kettingregel en bereken g′(0).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Binnen 2x + 1 en buiten ln u (1p). g′(x) = 1/(2x + 1) · 2 = 2/(2x + 1) (1p). g′(0) = 2 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt de functie f(x) = x³ − 3x² − 9x + 1. Hij bepaalt f′(x), lost f′(x) = 0 op, maakt een tekenschema van f′ en berekent de extreme waarden. Daarna schrijft hij op welk punt een maximum en welk punt een minimum is.",
+   "v": "Bepaal de extreme waarden van f met een tekenschema.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f′(x) = 3x² − 6x − 9 = 3(x − 3)(x + 1) (1p). f′ = 0 bij x = −1 en x = 3; tekenschema + − + (1p). Maximum f(−1) = 6 en minimum f(3) = −26 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt de functie p(x) = x² · e^(−x) voor x ≥ 0. Hij bepaalt p′(x) met de productregel en de kettingregel, lost p′(x) = 0 op en bepaalt het maximum van p met een tekenschema.",
+   "v": "Bepaal p′(x), de nulpunten van p′ en het maximum voor x ≥ 0.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "p′(x) = 2x · e^(−x) + x² · (−e^(−x)) = x(2 − x)e^(−x) (1p). p′ = 0 bij x = 0 en x = 2 (1p). Maximum voor x ≥ 0 bij x = 2 met p(2) = 4e^(−2) ≈ 0,54 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De opbrengst is O(q) = 100q − 2q² euro en de kosten zijn K(q) = 20q + 50 euro bij q eenheden. Een leerling stelt de winstfunctie op, bepaalt de afgeleide, lost die op en berekent de maximale winst. Hij controleert het maximum met een tekenschema.",
+   "v": "Bepaal de maximale winst en het aantal eenheden waarbij die optreedt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "W(q) = 80q − 2q² − 50 (1p). W′(q) = 80 − 4q = 0 geeft q = 20 (1p). Maximale winst W(20) = 750 euro (1p)."
+  }
+ ]
+}
