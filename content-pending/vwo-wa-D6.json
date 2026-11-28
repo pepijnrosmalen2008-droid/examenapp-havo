@@ -1,0 +1,682 @@
+{
+ "id": "D6",
+ "lo": "wa.D.6",
+ "gs": 2,
+ "naam": "De afgeleide van basisfuncties en de rekenregels voor differentiëren",
+ "beschrijving": "Je bepaalt de afgeleide van machtsfuncties, wortels, breuken, e^x en ln x met de machtsregel, de som- en verschilregel, de productregel en de quotiëntregel en gebruikt die voor raaklijnen en kosten.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Afgeleide van machten",
+  "Som- en verschilregel",
+  "Product- en quotiëntregel",
+  "Wortels, breuken, e^x en ln x",
+  "Afgeleide in een context"
+ ],
+ "sam": "De afgeleide f′ geeft de helling van f. De machtsregel zegt dat x^n afgeleid wordt tot n · x^(n−1), een constante factor blijft staan en een som leid je term voor term af. Bij een product gebruik je u′v + uv′ en bij een breuk (u′v − uv′)/v². Schrijf wortels en breuken eerst als machten. De afgeleide van e^x is e^x en die van ln x is 1/x. Controleer met een getal of door te herschrijven en vertaal de afgeleide in een context naar de extra verandering per eenheid.",
+ "begrippen": [
+  {
+   "t": "Afgeleide",
+   "d": "De functie f′ die bij elke x de helling van f geeft."
+  },
+  {
+   "t": "Machtsregel",
+   "d": "De afgeleide van x^n is n · x^(n−1)."
+  },
+  {
+   "t": "Constante factor",
+   "d": "Een vast getal voor een term; de afgeleide van c · f is c · f′."
+  },
+  {
+   "t": "Som- en verschilregel",
+   "d": "De afgeleide van f ± g is f′ ± g′: term voor term afleiden."
+  },
+  {
+   "t": "Productregel",
+   "d": "De afgeleide van u · v is u′v + uv′."
+  },
+  {
+   "t": "Quotiëntregel",
+   "d": "De afgeleide van u/v is (u′v − uv′)/v²."
+  },
+  {
+   "t": "Wortel als macht",
+   "d": "√x schrijf je als x^(1/2) om de machtsregel te kunnen gebruiken."
+  },
+  {
+   "t": "Breuk als macht",
+   "d": "1/x^n schrijf je als x^(−n) om de machtsregel te kunnen gebruiken."
+  },
+  {
+   "t": "Afgeleide van e^x",
+   "d": "De afgeleide van e^x is e^x zelf."
+  },
+  {
+   "t": "Afgeleide van ln x",
+   "d": "De afgeleide van ln x is 1/x, voor x > 0."
+  },
+  {
+   "t": "Raaklijn",
+   "d": "De lijn door (a, f(a)) met helling f′(a): y = f′(a)(x − a) + f(a)."
+  },
+  {
+   "t": "Marginale kosten",
+   "d": "De afgeleide K′ van de kostenfunctie: de extra kosten van een extra eenheid."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is de afgeleide van f(x) = x⁵?",
+   "o": [
+    "\"x⁴ (alleen de exponent −1)\"",
+    "\"5x⁴\"",
+    "\"5x⁵ (de exponent blijft)\"",
+    "\"4x⁵ (verwisseld)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x⁴ (alleen de exponent −1)\"\"? Dan laat je de factor 5 weg. De machtsregel geeft n · x^(n−1), dus 5x⁴. Het goede antwoord is 5x⁴.",
+    "Klopt: de exponent komt voor de x en gaat 1 omlaag. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5x⁵ (de exponent blijft)\"\"? Dan verlaag je de exponent niet. Trek 1 af van de exponent, dus 5x⁴. Door de stappen goed na te lopen kom je uit op 5x⁴.",
+    "Koos je \"\"4x⁵ (verwisseld)\"\"? Dan verwissel je factor en exponent. De factor is de oude exponent 5, dus 5x⁴. Controleer je stap: de juiste uitkomst is 5x⁴."
+   ],
+   "uh": "Wat is de afgeleide van f(x) = x⁵?"
+  },
+  {
+   "v": "Wat is de afgeleide van een constante, zoals f(x) = 7?",
+   "o": [
+    "\"7\"",
+    "\"1\"",
+    "\"7x\"",
+    "\"0\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7\"\"? Dan neem je de constante over. Een constante heeft helling 0, dus 0. Het goede antwoord is 0.",
+    "Koos je \"\"1\"\"? Dan denk je dat elke term helling 1 heeft. Dat geldt voor x, dus 0. Door de stappen goed na te lopen kom je uit op 0.",
+    "Koos je \"\"7x\"\"? Dan maak je er een lineaire functie van. De grafiek is een horizontale lijn, dus 0. Controleer je stap: de juiste uitkomst is 0.",
+    "Klopt: een constante verandert niet, dus de helling is 0."
+   ],
+   "uh": "Wat is de afgeleide van een constante, zoals f(x) = 7?"
+  },
+  {
+   "v": "Welke helling heeft de grafiek van f(x) = 6x overal?",
+   "o": [
+    "\"6\"",
+    "\"6x\"",
+    "\"x\"",
+    "\"0\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de helling van 6x is overal 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6x\"\"? Dan laat je de x staan. De afgeleide van x is 1, dus 6. Het goede antwoord is 6.",
+    "Koos je \"\"x\"\"? Dan laat je de factor 6 weg. De constante factor blijft staan, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+    "Koos je \"\"0\"\"? Dan denk je aan een constante. 6x is een stijgende rechte lijn, dus 6. Controleer je stap: de juiste uitkomst is 6."
+   ],
+   "uh": "Welke helling heeft de grafiek van f(x) = 6x overal?"
+  },
+  {
+   "v": "Leid f(x) = x³ + x² term voor term af.",
+   "o": [
+    "\"3x² · 2x\"",
+    "\"x⁴\"",
+    "\"3x² + 2x\"",
+    "\"3x + 2\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3x² · 2x\"\"? Dan vermenigvuldig je de afgeleiden. Bij een som tel je ze op, dus 3x² + 2x. Het goede antwoord is 3x² + 2x.",
+    "Koos je \"\"x⁴\"\"? Dan tel je de exponenten op. De machtsregel verlaagt de exponent, dus 3x² + 2x. Door de stappen goed na te lopen kom je uit op 3x² + 2x.",
+    "Klopt: je leidt term voor term af. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3x + 2\"\"? Dan verlaag je de exponent te veel. De machtsregel geeft 3x² en 2x, dus 3x² + 2x. Controleer je stap: de juiste uitkomst is 3x² + 2x."
+   ],
+   "uh": "Leid f(x) = x³ + x² term voor term af."
+  },
+  {
+   "v": "Waaraan is de afgeleide van e^x gelijk?",
+   "o": [
+    "\"aan x · e^(x−1)\"",
+    "\"aan e^x zelf\"",
+    "\"aan e (alleen het grondtal)\"",
+    "\"aan 1\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"aan x · e^(x−1)\"\"? Dan pas je de machtsregel toe. Het grondtal e is een constante, dus aan e^x zelf. Het goede antwoord is aan e^x zelf.",
+    "Klopt: e^x is zijn eigen afgeleide. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"aan e (alleen het grondtal)\"\"? Dan neem je alleen het grondtal. De afgeleide is e^x zelf, dus aan e^x zelf. Door de stappen goed na te lopen kom je uit op aan e^x zelf.",
+    "Koos je \"\"aan 1\"\"? Dan neem je de afgeleide van x. De variabele staat in de exponent, dus aan e^x zelf. Controleer je stap: de juiste uitkomst is aan e^x zelf."
+   ],
+   "uh": "Waaraan is de afgeleide van e^x gelijk?"
+  },
+  {
+   "v": "Differentieer f(x) = ln x voor x > 0.",
+   "o": [
+    "\"ln x (blijft hetzelfde)\"",
+    "\"e^x (verwisseld)\"",
+    "\"x (omgekeerd)\"",
+    "\"1/x\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ln x (blijft hetzelfde)\"\"? Dan verwar je ln met e^x. Alleen e^x is zijn eigen afgeleide, dus 1/x. Het goede antwoord is 1/x.",
+    "Koos je \"\"e^x (verwisseld)\"\"? Dan verwisselt je ln en e. De afgeleide van ln x is 1/x, dus 1/x. Door de stappen goed na te lopen kom je uit op 1/x.",
+    "Koos je \"\"x (omgekeerd)\"\"? Dan draai je de breuk om. De afgeleide is 1/x, dus 1/x. Controleer je stap: de juiste uitkomst is 1/x.",
+    "Klopt: de afgeleide van ln x is 1/x. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Differentieer f(x) = ln x voor x > 0."
+  },
+  {
+   "v": "Welke regel hoort bij f(x) = u(x) · v(x)?",
+   "o": [
+    "\"de productregel: f′ = u′v + uv′\"",
+    "\"f′ = u′ · v′\"",
+    "\"f′ = u′ + v′\"",
+    "\"f′ = u′v − uv′\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: elk deel afgeleid, het andere deel blijft staan. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f′ = u′ · v′\"\"? Dan vermenigvuldig je de afgeleiden. Die regel bestaat niet, dus de productregel: f′ = u′v + uv′.",
+    "Koos je \"\"f′ = u′ + v′\"\"? Dan pas je de somregel toe. Dit is een product, dus de productregel: f′ = u′v + uv′. Door de stappen goed na te lopen kom je uit op de productregel: f′ = u′v + uv′.",
+    "Koos je \"\"f′ = u′v − uv′\"\"? Dan gebruik je een min. Bij de productregel staat een plus, dus de productregel: f′ = u′v + uv′."
+   ],
+   "uh": "Welke regel hoort bij f(x) = u(x) · v(x)?"
+  },
+  {
+   "v": "Bepaal f′(x) van f(x) = 3x⁴ − 2x² + 5x − 7.",
+   "o": [
+    "\"12x³ − 4x + 5 − 7 (de −7 blijft)\"",
+    "\"3x³ − 2x + 5 (zonder factor)\"",
+    "\"12x³ − 4x + 5\"",
+    "\"12x⁴ − 4x² + 5x (exponenten blijven)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12x³ − 4x + 5 − 7 (de −7 blijft)\"\"? Dan laat je de constante staan. Een constante heeft afgeleide 0, dus 12x³ − 4x + 5.",
+    "Koos je \"\"3x³ − 2x + 5 (zonder factor)\"\"? Dan vergeet je de exponent als factor. Vermenigvuldig met de oude exponent, dus 12x³ − 4x + 5.",
+    "Klopt: 3 · 4x³, −2 · 2x, 5 en 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12x⁴ − 4x² + 5x (exponenten blijven)\"\"? Dan verlaag je de exponenten niet. Trek 1 af van elke exponent, dus 12x³ − 4x + 5."
+   ],
+   "uh": "Bepaal f′(x) van f(x) = 3x⁴ − 2x² + 5x − 7.",
+   "ctx": "De functie is f(x) = 3x⁴ − 2x² + 5x − 7. Een leerling bepaalt f′(x) met de machtsregel, de som- en verschilregel en de regel voor een constante factor. Daarna berekent hij f′(1) en stelt de raaklijn in x = 1 op."
+  },
+  {
+   "v": "Bereken f′(1).",
+   "o": [
+    "\"8 (12 − 4)\"",
+    "\"13\"",
+    "\"−1 (f(1))\"",
+    "\"17 (12 + 5)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8 (12 − 4)\"\"? Dan laat je de term 5 weg. Die telt mee, dus 13. Het goede antwoord is 13.",
+    "Klopt: 12 − 4 + 5 = 13. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−1 (f(1))\"\"? Dan neem je f(1). Vul 1 in bij f′, dus 13. Door de stappen goed na te lopen kom je uit op 13.",
+    "Koos je \"\"17 (12 + 5)\"\"? Dan laat je het teken van −4 weg. Tel 12 − 4 + 5, dus 13. Controleer je stap: de juiste uitkomst is 13."
+   ],
+   "uh": "Bereken f′(1).",
+   "ctx": "De functie is f(x) = 3x⁴ − 2x² + 5x − 7. Een leerling bepaalt f′(x) met de machtsregel, de som- en verschilregel en de regel voor een constante factor. Daarna berekent hij f′(1) en stelt de raaklijn in x = 1 op."
+  },
+  {
+   "v": "Welke uitkomst geeft de productregel voor g(x) = x² · (x + 3)?",
+   "o": [
+    "\"2x · 1 = 2x (afgeleiden vermenigvuldigd)\"",
+    "\"2x + 1 (afgeleiden opgeteld)\"",
+    "\"2x(x + 3) − x² = x² + 6x (min in plaats van plus)\"",
+    "\"g′(x) = 2x(x + 3) + x² · 1 = 3x² + 6x\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2x · 1 = 2x (afgeleiden vermenigvuldigd)\"\"? Dan vermenigvuldig je de afgeleiden. Gebruik u′v + uv′, dus g′(x) = 2x(x + 3) + x² · 1 = 3x² + 6x.",
+    "Koos je \"\"2x + 1 (afgeleiden opgeteld)\"\"? Dan tel je de afgeleiden op. Dat is de somregel, dus g′(x) = 2x(x + 3) + x² · 1 = 3x² + 6x.",
+    "Koos je \"\"2x(x + 3) − x² = x² + 6x (min in plaats van plus)\"\"? Dan gebruik je een min. De productregel heeft een plus, dus g′(x) = 2x(x + 3) + x² · 1 = 3x² + 6x.",
+    "Klopt: u′v + uv′ met u = x² en v = x + 3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke uitkomst geeft de productregel voor g(x) = x² · (x + 3)?",
+   "ctx": "De functie is g(x) = x² · (x + 3). Een leerling schrijft eerst de haakjes uit en gebruikt daarna de productregel om g′(x) te bepalen. Hij vergelijkt beide uitkomsten en berekent g′(2)."
+  },
+  {
+   "v": "Bereken g′(2).",
+   "o": [
+    "\"24\"",
+    "\"12 (alleen 3x²)\"",
+    "\"20 (g(2))\"",
+    "\"16 (3x² + 2x)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3 · 4 + 6 · 2 = 24. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12 (alleen 3x²)\"\"? Dan laat je 6x weg. Beide termen tellen mee, dus 24. Het goede antwoord is 24.",
+    "Koos je \"\"20 (g(2))\"\"? Dan neem je de functiewaarde. Vul 2 in bij g′, dus 24. Door de stappen goed na te lopen kom je uit op 24.",
+    "Koos je \"\"16 (3x² + 2x)\"\"? Dan gebruik je 2x in plaats van 6x. De afgeleide is 3x² + 6x, dus 24. Controleer je stap: de juiste uitkomst is 24."
+   ],
+   "uh": "Bereken g′(2).",
+   "ctx": "De functie is g(x) = x² · (x + 3). Een leerling schrijft eerst de haakjes uit en gebruikt daarna de productregel om g′(x) te bepalen. Hij vergelijkt beide uitkomsten en berekent g′(2)."
+  },
+  {
+   "v": "Bepaal h′(x) met de quotiëntregel.",
+   "o": [
+    "\"(2 · x + (2x + 1) · 1)/x² = (4x + 1)/x² (plus in plaats van min)\"",
+    "\"2/1 = 2 (teller en noemer apart afgeleid)\"",
+    "\"h′(x) = (2 · x − (2x + 1) · 1)/x² = −1/x²\"",
+    "\"−1/x (zonder kwadraat)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(2 · x + (2x + 1) · 1)/x² = (4x + 1)/x² (plus in plaats van min)\"\"? Dan gebruik je een plus. Bij de quotiëntregel staat u′v − uv′, dus h′(x) = (2 · x − (2x + 1) · 1)/x² = −1/x².",
+    "Koos je \"\"2/1 = 2 (teller en noemer apart afgeleid)\"\"? Dan leid je teller en noemer apart af. De quotiëntregel is anders, dus h′(x) = (2 · x − (2x + 1) · 1)/x² = −1/x².",
+    "Klopt: (u′v − uv′)/v² met u = 2x + 1 en v = x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−1/x (zonder kwadraat)\"\"? Dan laat je het kwadraat in de noemer weg. De noemer is v², dus h′(x) = (2 · x − (2x + 1) · 1)/x² = −1/x²."
+   ],
+   "uh": "Bepaal h′(x) met de quotiëntregel.",
+   "ctx": "De functie is h(x) = (2x + 1)/x. Een leerling gebruikt de quotiëntregel om h′(x) te bepalen en controleert zijn uitkomst door h te herschrijven tot 2 + 1/x. Daarna berekent hij h′(2)."
+  },
+  {
+   "v": "Controleer met h(x) = 2 + 1/x: welke afgeleide geeft dat?",
+   "o": [
+    "\"1/x² (zonder min)\"",
+    "\"−1/x²\"",
+    "\"−1/x (exponent blijft)\"",
+    "\"2 − 1/x² (de 2 blijft)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1/x² (zonder min)\"\"? Dan laat je het minteken weg. De exponent −1 wordt −2 met factor −1, dus −1/x². Het goede antwoord is −1/x².",
+    "Klopt: 2 verdwijnt en 1/x = x^(−1) geeft −x^(−2). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−1/x (exponent blijft)\"\"? Dan verlaag je de exponent niet. Van x^(−1) wordt x^(−2), dus −1/x². Door de stappen goed na te lopen kom je uit op −1/x².",
+    "Koos je \"\"2 − 1/x² (de 2 blijft)\"\"? Dan laat je de constante staan. De afgeleide van 2 is 0, dus −1/x². Controleer je stap: de juiste uitkomst is −1/x²."
+   ],
+   "uh": "Controleer met h(x) = 2 + 1/x: welke afgeleide geeft dat?",
+   "ctx": "De functie is h(x) = (2x + 1)/x. Een leerling gebruikt de quotiëntregel om h′(x) te bepalen en controleert zijn uitkomst door h te herschrijven tot 2 + 1/x. Daarna berekent hij h′(2)."
+  },
+  {
+   "v": "Schrijf k(x) = 4√x + 6/x als machten van x.",
+   "o": [
+    "\"4x² + 6x\"",
+    "\"4x^(−1/2) + 6x\"",
+    "\"4x^(1/2) + 6x (de breuk blijft)\"",
+    "\"4x^(1/2) + 6x^(−1)\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4x² + 6x\"\"? Dan lees je √ als kwadraat en / als keer. Een wortel is de macht 1/2, dus 4x^(1/2) + 6x^(−1). Het goede antwoord is 4x^(1/2) + 6x^(−1).",
+    "Koos je \"\"4x^(−1/2) + 6x\"\"? Dan zet dit je het minteken bij de verkeerde term. De breuk krijgt exponent −1, dus 4x^(1/2) + 6x^(−1).",
+    "Koos je \"\"4x^(1/2) + 6x (de breuk blijft)\"\"? Dan laat je de breuk staan. Schrijf 6/x als 6x^(−1), dus 4x^(1/2) + 6x^(−1).",
+    "Klopt: √x = x^(1/2) en 1/x = x^(−1). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Schrijf k(x) = 4√x + 6/x als machten van x.",
+   "ctx": "De functie is k(x) = 4√x + 6/x met x > 0. Een leerling schrijft de wortel en de breuk als machten van x, bepaalt k′(x) en berekent k′(4). Hij controleert zijn uitkomst met een tweede berekening."
+  },
+  {
+   "v": "Bepaal k′(x).",
+   "o": [
+    "\"2/√x − 6/x²\"",
+    "\"2/√x + 6/x² (zonder min)\"",
+    "\"2√x − 6/x² (√x in de teller)\"",
+    "\"2/√x − 6/x (exponent van x blijft 1)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 4 · ½ x^(−1/2) = 2/√x en 6 · (−1) x^(−2) = −6/x².",
+    "Koos je \"\"2/√x + 6/x² (zonder min)\"\"? Dan laat je het minteken weg. De afgeleide van 6x^(−1) is −6x^(−2), dus 2/√x − 6/x².",
+    "Koos je \"\"2√x − 6/x² (√x in de teller)\"\"? Dan zet dit je de wortel in de teller. Exponent −1/2 betekent onder de breuk, dus 2/√x − 6/x².",
+    "Koos je \"\"2/√x − 6/x (exponent van x blijft 1)\"\"? Dan verlaag je de exponent niet verder. x^(−1) wordt x^(−2), dus 2/√x − 6/x²."
+   ],
+   "uh": "Bepaal k′(x).",
+   "ctx": "De functie is k(x) = 4√x + 6/x met x > 0. Een leerling schrijft de wortel en de breuk als machten van x, bepaalt k′(x) en berekent k′(4). Hij controleert zijn uitkomst met een tweede berekening."
+  },
+  {
+   "v": "Bepaal p′(x) van p(x) = 5e^x − 3 ln x.",
+   "o": [
+    "\"5x · e^(x−1) − 3/x (machtsregel op e^x)\"",
+    "\"e^x − 3/x (factor 5 verdwenen)\"",
+    "\"5e^x − 3/x\"",
+    "\"5e^x + 3/x (teken verkeerd)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5x · e^(x−1) − 3/x (machtsregel op e^x)\"\"? Dan pas je de machtsregel toe op e^x. De afgeleide van e^x is e^x, dus 5e^x − 3/x.",
+    "Koos je \"\"e^x − 3/x (factor 5 verdwenen)\"\"? Dan laat je de constante factor weg. Die blijft staan, dus 5e^x − 3/x. Door de stappen goed na te lopen kom je uit op 5e^x − 3/x.",
+    "Klopt: 5 · e^x en −3 · 1/x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5e^x + 3/x (teken verkeerd)\"\"? Dan draai je het teken om. De afgeleide van −3 ln x is −3/x, dus 5e^x − 3/x. Controleer je stap: de juiste uitkomst is 5e^x − 3/x."
+   ],
+   "uh": "Bepaal p′(x) van p(x) = 5e^x − 3 ln x.",
+   "ctx": "De functie is p(x) = 5e^x − 3 ln x met x > 0. Een leerling gebruikt de afgeleide van e^x en van ln x samen met de regel voor een constante factor en de verschilregel. Daarna berekent hij p′(1) op twee decimalen."
+  },
+  {
+   "v": "Bepaal K′(q).",
+   "o": [
+    "\"0,3q² − 6q + 40 + 200 (constante blijft)\"",
+    "\"0,3q² − 6q + 40\"",
+    "\"0,1q² − 3q + 40 (zonder factor)\"",
+    "\"0,3q³ − 6q² + 40q (niets afgeleid)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,3q² − 6q + 40 + 200 (constante blijft)\"\"? Dan laat je de constante staan. De afgeleide van 200 is 0, dus 0,3q² − 6q + 40.",
+    "Klopt: 0,1 · 3q², −3 · 2q, 40 en 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,1q² − 3q + 40 (zonder factor)\"\"? Dan vergeet je de exponent als factor. Vermenigvuldig met de oude exponent, dus 0,3q² − 6q + 40.",
+    "Koos je \"\"0,3q³ − 6q² + 40q (niets afgeleid)\"\"? Dan verlaag je de exponenten niet. Trek 1 af, dus 0,3q² − 6q + 40. Controleer je stap: de juiste uitkomst is 0,3q² − 6q + 40."
+   ],
+   "uh": "Bepaal K′(q).",
+   "ctx": "De kosten in euro bij q eenheden zijn K(q) = 0,1q³ − 3q² + 40q + 200. Een leerling bepaalt K′(q), berekent K′(10) en K′(20) en legt uit wat die getallen betekenen voor de extra kosten van een extra eenheid."
+  },
+  {
+   "v": "Waarom verdwijnt de −7 uit f′(x)?",
+   "o": [
+    "\"omdat negatieve getallen geen helling hebben\"",
+    "\"omdat je alleen de term met de hoogste macht afleidt\"",
+    "\"omdat de constante samenvalt met de term 5x\"",
+    "\"de afgeleide van een constante is 0\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat negatieve getallen geen helling hebben\"\"? Dan denk je dat het teken de helling bepaalt. De constante heeft helling 0, dus de afgeleide van een constante is 0.",
+    "Koos je \"\"omdat je alleen de term met de hoogste macht afleidt\"\"? Dan leid je maar één term af. Elke term wordt apart afgeleid, dus de afgeleide van een constante is 0.",
+    "Koos je \"\"omdat de constante samenvalt met de term 5x\"\"? Dan denk je dat termen samenvallen. De constante heeft helling 0, dus de afgeleide van een constante is 0.",
+    "Klopt: een constante verandert niet. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waarom verdwijnt de −7 uit f′(x)?",
+   "ctx": "De functie is f(x) = 3x⁴ − 2x² + 5x − 7. Een leerling bepaalt f′(x) met de machtsregel, de som- en verschilregel en de regel voor een constante factor. Daarna berekent hij f′(1) en stelt de raaklijn in x = 1 op."
+  },
+  {
+   "v": "Waarom is de productregel bij g(x) = x² · (x + 3) niet verplicht?",
+   "o": [
+    "\"omdat je de haakjes kunt uitwerken tot x³ + 3x²\"",
+    "\"omdat een product altijd de som van afgeleiden is\"",
+    "\"omdat x² geen functie van x is\"",
+    "\"omdat de productregel alleen voor x³ geldt\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dan kun je met de machtsregel afleiden. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat een product altijd de som van afgeleiden is\"\"? Dan denk je dat een product een som is. Voor een product gebruik je u′v + uv′, dus omdat je de haakjes kunt uitwerken tot x³ + 3x².",
+    "Koos je \"\"omdat x² geen functie van x is\"\"? Dan denk je dat x² een constante is. Het is een machtsfunctie, dus omdat je de haakjes kunt uitwerken tot x³ + 3x².",
+    "Koos je \"\"omdat de productregel alleen voor x³ geldt\"\"? Dan denk je dat de regel beperkt is. Hij geldt voor elk product, dus omdat je de haakjes kunt uitwerken tot x³ + 3x²."
+   ],
+   "uh": "Waarom is de productregel bij g(x) = x² · (x + 3) niet verplicht?",
+   "ctx": "De functie is g(x) = x² · (x + 3). Een leerling schrijft eerst de haakjes uit en gebruikt daarna de productregel om g′(x) te bepalen. Hij vergelijkt beide uitkomsten en berekent g′(2)."
+  },
+  {
+   "v": "Bereken h′(2) met h′(x) = −1/x².",
+   "o": [
+    "\"−0,5 (−1/2)\"",
+    "\"0,25 (zonder min)\"",
+    "\"−0,25\"",
+    "\"−4 (x² in de teller)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−0,5 (−1/2)\"\"? Dan laat je het kwadraat weg. De noemer is x² = 4, dus −0,25. Het goede antwoord is −0,25.",
+    "Koos je \"\"0,25 (zonder min)\"\"? Dan laat je het teken weg. De afgeleide is negatief, dus −0,25. Door de stappen goed na te lopen kom je uit op −0,25.",
+    "Klopt: −1/4 = −0,25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−4 (x² in de teller)\"\"? Dan zet dit je x² in de teller. Het staat in de noemer, dus −0,25. Controleer je stap: de juiste uitkomst is −0,25."
+   ],
+   "uh": "Bereken h′(2) met h′(x) = −1/x².",
+   "ctx": "De functie is h(x) = (2x + 1)/x. Een leerling gebruikt de quotiëntregel om h′(x) te bepalen en controleert zijn uitkomst door h te herschrijven tot 2 + 1/x. Daarna berekent hij h′(2)."
+  },
+  {
+   "v": "Bereken k′(4) voor k(x) = 4√x + 6/x.",
+   "o": [
+    "\"1 (alleen de eerste term)\"",
+    "\"0,625\"",
+    "\"1,375 (1 + 6/16)\"",
+    "\"−0,375 (alleen de tweede term)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1 (alleen de eerste term)\"\"? Dan rekent alleen 4√x af en slaat 6/x over. Er staan twee termen in k, dus 0,625.",
+    "Klopt: 2/2 − 6/16 = 1 − 0,375 = 0,625. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,375 (1 + 6/16)\"\"? Dan gebruik je een plus. De tweede term is −6/x², dus 0,625. Door de stappen goed na te lopen kom je uit op 0,625.",
+    "Koos je \"\"−0,375 (alleen de tweede term)\"\"? Dan bepaalt alleen de afgeleide van 6/x en vergeet de wortelterm. k bestaat uit twee delen, dus 0,625."
+   ],
+   "uh": "Bereken k′(4) voor k(x) = 4√x + 6/x.",
+   "ctx": "De functie is k(x) = 4√x + 6/x met x > 0. Een leerling schrijft de wortel en de breuk als machten van x, bepaalt k′(x) en berekent k′(4). Hij controleert zijn uitkomst met een tweede berekening."
+  },
+  {
+   "v": "Bereken p′(1) voor p(x) = 5e^x − 3 ln x, afgerond op twee decimalen.",
+   "o": [
+    "\"13,59 (alleen 5e)\"",
+    "\"16,59 (5e + 3)\"",
+    "\"2,72 (e)\"",
+    "\"10,59\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"13,59 (alleen 5e)\"\"? Dan laat je de tweede term weg. Trek 3 af, dus 10,59. Het goede antwoord is 10,59.",
+    "Koos je \"\"16,59 (5e + 3)\"\"? Dan tel je 3 op. De tweede term is −3/x, dus 10,59. Door de stappen goed na te lopen kom je uit op 10,59.",
+    "Koos je \"\"2,72 (e)\"\"? Dan neem je e zelf. Er staat ook een factor 5, dus 10,59. Controleer je stap: de juiste uitkomst is 10,59.",
+    "Klopt: 5e − 3 ≈ 13,59 − 3 = 10,59. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken p′(1) voor p(x) = 5e^x − 3 ln x, afgerond op twee decimalen.",
+   "ctx": "De functie is p(x) = 5e^x − 3 ln x met x > 0. Een leerling gebruikt de afgeleide van e^x en van ln x samen met de regel voor een constante factor en de verschilregel. Daarna berekent hij p′(1) op twee decimalen."
+  },
+  {
+   "v": "Bereken K′(10) voor de kostenfunctie.",
+   "o": [
+    "\"10\"",
+    "\"30 (alleen 0,3q²)\"",
+    "\"70 (30 + 40)\"",
+    "\"−30 (30 − 60)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 0,3 · 100 − 6 · 10 + 40 = 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"30 (alleen 0,3q²)\"\"? Dan laat je de andere termen weg. Alle termen tellen mee, dus 10. Het goede antwoord is 10.",
+    "Koos je \"\"70 (30 + 40)\"\"? Dan laat je de term −6q weg. Trek 60 af, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+    "Koos je \"\"−30 (30 − 60)\"\"? Dan laat je de term +40 weg. Tel 40 erbij, dus 10. Controleer je stap: de juiste uitkomst is 10."
+   ],
+   "uh": "Bereken K′(10) voor de kostenfunctie.",
+   "ctx": "De kosten in euro bij q eenheden zijn K(q) = 0,1q³ − 3q² + 40q + 200. Een leerling bepaalt K′(q), berekent K′(10) en K′(20) en legt uit wat die getallen betekenen voor de extra kosten van een extra eenheid."
+  },
+  {
+   "v": "Wat betekent K′(20) = 40 voor het bedrijf?",
+   "o": [
+    "\"de totale kosten bij q = 20 zijn €40\"",
+    "\"de kosten dalen met €40 per eenheid\"",
+    "\"de kosten stijgen bij q = 20 met ongeveer €40 per extra eenheid\"",
+    "\"20 eenheden kosten €40 extra\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de totale kosten bij q = 20 zijn €40\"\"? Dan verwar je de afgeleide met de kosten zelf. K′ is een verandering, dus de kosten stijgen bij q = 20 met ongeveer €40 per extra eenheid.",
+    "Koos je \"\"de kosten dalen met €40 per eenheid\"\"? Dan lees je de afgeleide als daling. 40 is positief, dus de kosten stijgen bij q = 20 met ongeveer €40 per extra eenheid.",
+    "Klopt: de afgeleide is de verandering per eenheid. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"20 eenheden kosten €40 extra\"\"? Dan koppel je het getal aan het aantal eenheden. 40 is per eenheid, dus de kosten stijgen bij q = 20 met ongeveer €40 per extra eenheid."
+   ],
+   "uh": "Wat betekent K′(20) = 40 voor het bedrijf?",
+   "ctx": "De kosten in euro bij q eenheden zijn K(q) = 0,1q³ − 3q² + 40q + 200. Een leerling bepaalt K′(q), berekent K′(10) en K′(20) en legt uit wat die getallen betekenen voor de extra kosten van een extra eenheid."
+  },
+  {
+   "v": "Wat zegt K′(10) = 10 en K′(20) = 40 samen?",
+   "o": [
+    "\"bij 10 eenheden stijgen de kosten sneller dan bij 20\"",
+    "\"bij 20 eenheden stijgen de kosten sneller dan bij 10\"",
+    "\"de kosten stijgen bij beide even snel\"",
+    "\"de kosten dalen bij 10 en stijgen bij 20\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij 10 eenheden stijgen de kosten sneller dan bij 20\"\"? Dan draai je het om. 40 is groter dan 10, dus bij 20 eenheden stijgen de kosten sneller dan bij 10.",
+    "Klopt: 40 per eenheid is meer dan 10 per eenheid. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de kosten stijgen bij beide even snel\"\"? Dan let je niet op de getallen. 10 en 40 zijn verschillend, dus bij 20 eenheden stijgen de kosten sneller dan bij 10.",
+    "Koos je \"\"de kosten dalen bij 10 en stijgen bij 20\"\"? Dan lees je 10 als daling. Beide hellingen zijn positief, dus bij 20 eenheden stijgen de kosten sneller dan bij 10."
+   ],
+   "uh": "Wat zegt K′(10) = 10 en K′(20) = 40 samen?",
+   "ctx": "De kosten in euro bij q eenheden zijn K(q) = 0,1q³ − 3q² + 40q + 200. Een leerling bepaalt K′(q), berekent K′(10) en K′(20) en legt uit wat die getallen betekenen voor de extra kosten van een extra eenheid."
+  },
+  {
+   "v": "Bepaal de vergelijking van de raaklijn aan f in het punt met x = 1.",
+   "o": [
+    "\"y = 13x − 1 (f(1) als constante)\"",
+    "\"y = 13x + 14 (verkeerd teken)\"",
+    "\"y = −x + 13 (helling en waarde verwisseld)\"",
+    "\"y = 13x − 14\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 13x − 1 (f(1) als constante)\"\"? Dan gebruik je f(1) als constante. Stel b op met het punt (1, −1), dus y = 13x − 14.",
+    "Koos je \"\"y = 13x + 14 (verkeerd teken)\"\"? Dan maak je een tekenfout. Door (1, −1) geldt b = −14, dus y = 13x − 14. Door de stappen goed na te lopen kom je uit op y = 13x − 14.",
+    "Koos je \"\"y = −x + 13 (helling en waarde verwisseld)\"\"? Dan verwisselt je helling en functiewaarde. De helling is 13, dus y = 13x − 14.",
+    "Klopt: f(1) = −1 en f′(1) = 13, dus y = 13(x − 1) − 1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bepaal de vergelijking van de raaklijn aan f in het punt met x = 1.",
+   "ctx": "De functie is f(x) = 3x⁴ − 2x² + 5x − 7. Een leerling bepaalt f′(x) met de machtsregel, de som- en verschilregel en de regel voor een constante factor. Daarna berekent hij f′(1) en stelt de raaklijn in x = 1 op."
+  },
+  {
+   "v": "Welke werkwijze is voor h(x) = (2x + 1)/x eenvoudiger dan de quotiëntregel?",
+   "o": [
+    "\"herschrijf h(x) tot 2 + 1/x en gebruik de machtsregel\"",
+    "\"gebruik de kettingregel op de noemer\"",
+    "\"deel alleen de teller: h′(x) = 2/x\"",
+    "\"neem alleen de afgeleide van de noemer: 1\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: delen door x geeft een som van machten. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"gebruik de kettingregel op de noemer\"\"? Dan gebruik je de kettingregel. Er is geen samengestelde functie, dus herschrijf h(x) tot 2 + 1/x en gebruik de machtsregel.",
+    "Koos je \"\"deel alleen de teller: h′(x) = 2/x\"\"? Dan leid je alleen de teller af. De noemer doet mee, dus herschrijf h(x) tot 2 + 1/x en gebruik de machtsregel.",
+    "Koos je \"\"neem alleen de afgeleide van de noemer: 1\"\"? Dan negeer je de teller. Beide delen tellen mee, dus herschrijf h(x) tot 2 + 1/x en gebruik de machtsregel."
+   ],
+   "uh": "Welke werkwijze is voor h(x) = (2x + 1)/x eenvoudiger dan de quotiëntregel?",
+   "ctx": "De functie is h(x) = (2x + 1)/x. Een leerling gebruikt de quotiëntregel om h′(x) te bepalen en controleert zijn uitkomst door h te herschrijven tot 2 + 1/x. Daarna berekent hij h′(2)."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling bepaalt de afgeleide van f(x) = 2x³ − 5x² + 4x − 9 en berekent daarna f′(2). Hij gebruikt de machtsregel, de som- en verschilregel en de regel voor een constante factor en schrijft elke stap op.",
+   "v": "Bepaal f′(x) en bereken f′(2).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f′(x) = 6x² (1p), −10x (1p) en +4, waarbij de −9 verdwijnt (1p). f′(2) = 24 − 20 + 4 = 8 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling bepaalt de afgeleide van g(x) = (x + 1)(x² − 2) op twee manieren: met de productregel en door eerst de haakjes uit te werken. Hij vergelijkt beide uitkomsten en schrijft op wat hij ziet.",
+   "v": "Bepaal g′(x) met de productregel en controleer door uitwerken.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Productregel: 1 · (x² − 2) + (x + 1) · 2x (1p). Dat is 3x² + 2x − 2 (1p). Uitwerken: x³ + x² − 2x − 2 geeft 3x² + 2x − 2, dus gelijk (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling bepaalt de afgeleide van h(x) = (x² + 1)/x met de quotiëntregel. Daarna controleert hij zijn uitkomst door h te herschrijven tot x + 1/x en schrijft beide uitkomsten naast elkaar.",
+   "v": "Bepaal h′(x) met de quotiëntregel en controleer door herschrijven.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(2x · x − (x² + 1) · 1)/x² (1p). Dat is (x² − 1)/x² (1p). Herschrijven: x + 1/x geeft 1 − 1/x² = (x² − 1)/x², dus gelijk (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling bepaalt de raaklijn aan de grafiek van f(x) = x³ − 3x in het punt met x = 2. Hij berekent eerst de functiewaarde en de helling en stelt daarna de vergelijking van de raaklijn op.",
+   "v": "Bepaal de vergelijking van de raaklijn in x = 2.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f(2) = 2 (1p). f′(x) = 3x² − 3, dus f′(2) = 9 (1p). y = 9x − 16 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De kosten in euro bij q eenheden zijn K(q) = 0,2q³ − 4q² + 30q + 100. Een leerling bepaalt K′(q), berekent K′(5) en K′(15) en vergelijkt beide uitkomsten. Hij legt uit wat het verschil voor het bedrijf betekent.",
+   "v": "Bepaal K′(q), K′(5) en K′(15) en vergelijk.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "K′(q) = 0,6q² − 8q + 30 (1p). K′(5) = 5 en K′(15) = 45 (1p). De extra kosten per eenheid zijn bij 15 eenheden veel groter dan bij 5 (1p)."
+  }
+ ]
+}
