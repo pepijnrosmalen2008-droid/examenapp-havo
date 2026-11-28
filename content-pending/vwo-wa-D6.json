@@ -180,7 +180,7 @@
    "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
    "uo": [
     "Koos je \"\"ln x (blijft hetzelfde)\"\"? Dan verwar je ln met e^x. Alleen e^x is zijn eigen afgeleide, dus 1/x. Het goede antwoord is 1/x.",
-    "Koos je \"\"e^x (verwisseld)\"\"? Dan verwisselt je ln en e. De afgeleide van ln x is 1/x, dus 1/x. Door de stappen goed na te lopen kom je uit op 1/x.",
+    "Koos je \"\"e^x (verwisseld)\"\"? Dan verwissel je ln en e. De afgeleide van ln x is 1/x, dus 1/x. Door de stappen goed na te lopen kom je uit op 1/x.",
     "Koos je \"\"x (omgekeerd)\"\"? Dan draai je de breuk om. De afgeleide is 1/x, dus 1/x. Controleer je stap: de juiste uitkomst is 1/x.",
     "Klopt: de afgeleide van ln x is 1/x. Reken dit na met de gegeven gegevens."
    ],
@@ -492,10 +492,10 @@
    "s": 3,
    "u": "Herschrijf eerst wortels en breuken als machten, kies dan de regel: machtsregel, som- en verschilregel, productregel of quotiëntregel. Controleer met invullen of met herschrijven. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"1 (alleen de eerste term)\"\"? Dan rekent alleen 4√x af en slaat 6/x over. Er staan twee termen in k, dus 0,625.",
+    "Koos je \"\"1 (alleen de eerste term)\"\"? Dan reken je alleen 4√x af en sla je 6/x over. Er staan twee termen in k, dus 0,625.",
     "Klopt: 2/2 − 6/16 = 1 − 0,375 = 0,625. Reken dit na met de gegeven gegevens.",
     "Koos je \"\"1,375 (1 + 6/16)\"\"? Dan gebruik je een plus. De tweede term is −6/x², dus 0,625. Door de stappen goed na te lopen kom je uit op 0,625.",
-    "Koos je \"\"−0,375 (alleen de tweede term)\"\"? Dan bepaalt alleen de afgeleide van 6/x en vergeet de wortelterm. k bestaat uit twee delen, dus 0,625."
+    "Koos je \"\"−0,375 (alleen de tweede term)\"\"? Dan bepaal je alleen de afgeleide van 6/x en vergeet je de wortelterm. k bestaat uit twee delen, dus 0,625."
    ],
    "uh": "Bereken k′(4) voor k(x) = 4√x + 6/x.",
    "ctx": "De functie is k(x) = 4√x + 6/x met x > 0. Een leerling schrijft de wortel en de breuk als machten van x, bepaalt k′(x) en berekent k′(4). Hij controleert zijn uitkomst met een tweede berekening."
@@ -599,7 +599,7 @@
    "uo": [
     "Koos je \"\"y = 13x − 1 (f(1) als constante)\"\"? Dan gebruik je f(1) als constante. Stel b op met het punt (1, −1), dus y = 13x − 14.",
     "Koos je \"\"y = 13x + 14 (verkeerd teken)\"\"? Dan maak je een tekenfout. Door (1, −1) geldt b = −14, dus y = 13x − 14. Door de stappen goed na te lopen kom je uit op y = 13x − 14.",
-    "Koos je \"\"y = −x + 13 (helling en waarde verwisseld)\"\"? Dan verwisselt je helling en functiewaarde. De helling is 13, dus y = 13x − 14.",
+    "Koos je \"\"y = −x + 13 (helling en waarde verwisseld)\"\"? Dan verwissel je helling en functiewaarde. De helling is 13, dus y = 13x − 14.",
     "Klopt: f(1) = −1 en f′(1) = 13, dus y = 13(x − 1) − 1. Reken dit na met de gegeven gegevens."
    ],
    "uh": "Bepaal de vergelijking van de raaklijn aan f in het punt met x = 1.",
