@@ -1,0 +1,682 @@
+{
+ "id": "D5",
+ "lo": "wa.D.5",
+ "gs": 2,
+ "naam": "Helling in een punt en de hellinggrafiek",
+ "beschrijving": "Je bepaalt de helling in een punt met de raaklijn en met steeds kleinere stappen, tekent en leest een hellinggrafiek en gebruikt het teken van de helling om stijgen, dalen en toppen te vinden.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Raaklijn en helling in een punt",
+  "Helling benaderen met kleine stappen",
+  "De hellinggrafiek lezen",
+  "Stijgen, dalen en toppen",
+  "Helling in een context"
+ ],
+ "sam": "De helling in een punt is de helling van de raaklijn. Je benadert haar met de gemiddelde verandering Δf/Δx op een steeds kleiner interval of leest haar af uit een raaklijn door twee punten. In een hellinggrafiek zet je de helling uit tegen x: boven de x-as stijgt de functie, eronder daalt hij en waar de lijn de x-as snijdt kan een top of dal zitten. Schrijf altijd de berekening met Δf/Δx op, let op de volgorde van aftrekken en vertaal de helling terug naar de situatie met een eenheid.",
+ "begrippen": [
+  {
+   "t": "Raaklijn",
+   "d": "Een lijn die de grafiek in één punt raakt en daar dezelfde richting heeft."
+  },
+  {
+   "t": "Helling in een punt",
+   "d": "De helling van de raaklijn in dat punt; hoe snel de grafiek daar stijgt of daalt."
+  },
+  {
+   "t": "Koorde",
+   "d": "Een lijn door twee punten van de grafiek; haar helling is de gemiddelde verandering."
+  },
+  {
+   "t": "Gemiddelde verandering",
+   "d": "De toename gedeeld door de stapgrootte op een interval: Δf/Δx."
+  },
+  {
+   "t": "Steeds kleinere stap",
+   "d": "Een interval dat je steeds kleiner maakt, zodat Δf/Δx de helling in het punt benadert."
+  },
+  {
+   "t": "Hellinggrafiek",
+   "d": "De grafiek waarin je bij elke x de helling van de functie uitzet."
+  },
+  {
+   "t": "Notatie f′",
+   "d": "Het teken voor de hellingfunctie: f′(x) is de helling van f in x."
+  },
+  {
+   "t": "Top of dal",
+   "d": "Een hoogste of laagste punt van de grafiek, met een horizontale raaklijn."
+  },
+  {
+   "t": "Positieve helling",
+   "d": "De grafiek stijgt; de hellinggrafiek ligt boven de x-as."
+  },
+  {
+   "t": "Negatieve helling",
+   "d": "De grafiek daalt; de hellinggrafiek ligt onder de x-as."
+  },
+  {
+   "t": "Horizontale raaklijn",
+   "d": "Een raaklijn met helling 0, zoals in een top of dal."
+  },
+  {
+   "t": "Nulpunt van f′",
+   "d": "Een x-waarde waar de hellinggrafiek de x-as snijdt; daar kan f een top of dal hebben."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke lijn gebruik je om de helling van een grafiek in één punt te bepalen?",
+   "o": [
+    "\"de lijn door het eerste en laatste punt van het interval\"",
+    "\"de raaklijn in dat punt\"",
+    "\"de x-as\"",
+    "\"de verticale lijn door het punt\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de lijn door het eerste en laatste punt van het interval\"\"? Dan neem je een lijn door twee punten op afstand. Die geeft de gemiddelde verandering, dus de raaklijn in dat punt.",
+    "Klopt: de helling in een punt is de helling van de raaklijn.",
+    "Koos je \"\"de x-as\"\"? Dan neem je de x-as. De raaklijn raakt de grafiek in het punt, dus de raaklijn in dat punt. Door de stappen goed na te lopen kom je uit op de raaklijn in dat punt.",
+    "Koos je \"\"de verticale lijn door het punt\"\"? Dan neem je een verticale lijn. Die heeft geen helling, dus de raaklijn in dat punt."
+   ],
+   "uh": "Welke lijn gebruik je om de helling van een grafiek in één punt te bepalen?"
+  },
+  {
+   "v": "Een raaklijn gaat door (1, 2) en (3, 8). Wat is de helling?",
+   "o": [
+    "\"6 (alleen Δy)\"",
+    "\"2 (alleen Δx)\"",
+    "\"0,33 (Δx : Δy)\"",
+    "\"3\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6 (alleen Δy)\"\"? Dan vergeet je te delen door Δx. De helling is Δy : Δx, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"2 (alleen Δx)\"\"? Dan neem je alleen het verschil van de x-waarden. De helling is Δy : Δx, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"0,33 (Δx : Δy)\"\"? Dan draai je de deling om. De helling is Δy : Δx, dus 3. Controleer je stap: de juiste uitkomst is 3.",
+    "Klopt: (8 − 2)/(3 − 1) = 6/2 = 3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een raaklijn gaat door (1, 2) en (3, 8). Wat is de helling?"
+  },
+  {
+   "v": "Welk teken heeft de helling op een plek waar de grafiek stijgt?",
+   "o": [
+    "\"positief\"",
+    "\"negatief\"",
+    "\"nul\"",
+    "\"niet te bepalen\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij stijgen is de helling groter dan nul. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"negatief\"\"? Dan verwar je stijgen met dalen. Bij dalen is de helling negatief, dus positief. Het goede antwoord is positief.",
+    "Koos je \"\"nul\"\"? Dan denk je aan een horizontale raaklijn. Die hoort bij een top of dal, dus positief. Door de stappen goed na te lopen kom je uit op positief.",
+    "Koos je \"\"niet te bepalen\"\"? Dan denk je dat het teken niet af te lezen is. Een stijgende grafiek heeft positieve helling, dus positief."
+   ],
+   "uh": "Welk teken heeft de helling op een plek waar de grafiek stijgt?"
+  },
+  {
+   "v": "Welke helling heeft de raaklijn in de top van een grafiek?",
+   "o": [
+    "\"1 (de raaklijn is schuin)\"",
+    "\"positief (de grafiek stijgt nog)\"",
+    "\"0 (de raaklijn is horizontaal)\"",
+    "\"niet te bepalen (er is geen raaklijn)\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1 (de raaklijn is schuin)\"\"? Dan denk je dat elke raaklijn schuin loopt. In een top is hij horizontaal, dus 0 (de raaklijn is horizontaal).",
+    "Koos je \"\"positief (de grafiek stijgt nog)\"\"? Dan denk je dat de grafiek nog stijgt. In de top stijgt hij niet meer, dus 0 (de raaklijn is horizontaal).",
+    "Klopt: in een top loopt de raaklijn horizontaal. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"niet te bepalen (er is geen raaklijn)\"\"? Dan denk je dat een top geen raaklijn heeft. Die is horizontaal, dus 0 (de raaklijn is horizontaal)."
+   ],
+   "uh": "Welke helling heeft de raaklijn in de top van een grafiek?"
+  },
+  {
+   "v": "Wat staat op de y-as van een hellinggrafiek?",
+   "o": [
+    "\"de functiewaarde van de oorspronkelijke grafiek\"",
+    "\"de helling van de oorspronkelijke grafiek\"",
+    "\"de toename per stap van de x-as\"",
+    "\"de oppervlakte onder de grafiek\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de functiewaarde van de oorspronkelijke grafiek\"\"? Dan neem je de functiewaarde. Een hellinggrafiek toont hellingen, dus de helling van de oorspronkelijke grafiek.",
+    "Klopt: je zet de helling uit tegen x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de toename per stap van de x-as\"\"? Dan neem je de stapgrootte. De y-as toont de helling, dus de helling van de oorspronkelijke grafiek.",
+    "Koos je \"\"de oppervlakte onder de grafiek\"\"? Dan neem je de oppervlakte. Die hoort niet bij een hellinggrafiek, dus de helling van de oorspronkelijke grafiek."
+   ],
+   "uh": "Wat staat op de y-as van een hellinggrafiek?"
+  },
+  {
+   "v": "Een bal heeft op het hoogste punt helling 0 m/s. Wat zegt dat?",
+   "o": [
+    "\"de bal ligt op de grond\"",
+    "\"de bal beweegt het snelst\"",
+    "\"de bal is er niet meer\"",
+    "\"de bal stijgt niet en daalt niet op dat moment\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de bal ligt op de grond\"\"? Dan denk je dat helling 0 stilstaan op de grond is. Het gaat om het hoogste punt, dus de bal stijgt niet en daalt niet op dat moment.",
+    "Koos je \"\"de bal beweegt het snelst\"\"? Dan denk je dat helling 0 snel is. Helling 0 is geen verandering, dus de bal stijgt niet en daalt niet op dat moment.",
+    "Koos je \"\"de bal is er niet meer\"\"? Dan denk je dat 0 betekent dat er niets is. De helling is 0, niet de hoogte, dus de bal stijgt niet en daalt niet op dat moment.",
+    "Klopt: bij helling 0 is de hoogte even constant. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een bal heeft op het hoogste punt helling 0 m/s. Wat zegt dat?"
+  },
+  {
+   "v": "De gemiddelde verandering is 4,01 op [2; 2,01] en 4,001 op [2; 2,001]. Welke helling in x = 2 volgt?",
+   "o": [
+    "\"4\"",
+    "\"4,01\"",
+    "\"0,01\"",
+    "\"2\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de uitkomsten komen steeds dichter bij 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"4,01\"\"? Dan neem je de eerste uitkomst. Kijk waar de uitkomsten heen gaan, dus 4. Het goede antwoord is 4.",
+    "Koos je \"\"0,01\"\"? Dan neem je de stapgrootte. Je zoekt de helling, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+    "Koos je \"\"2\"\"? Dan neem je de x-waarde. De helling is 4, dus 4. Controleer je stap: de juiste uitkomst is 4."
+   ],
+   "uh": "De gemiddelde verandering is 4,01 op [2; 2,01] en 4,001 op [2; 2,001]. Welke helling in x = 2 volgt?"
+  },
+  {
+   "v": "Wat levert de gemiddelde verandering op [1; 1,1] voor f(x) = x² op?",
+   "o": [
+    "\"0,21 (alleen de toename)\"",
+    "\"1,21 (f(1,1))\"",
+    "\"2,1\"",
+    "\"21 (0,21 : 0,01)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,21 (alleen de toename)\"\"? Dan vergeet je te delen door 0,1. De gemiddelde verandering is Δf : Δx, dus 2,1. Het goede antwoord is 2,1.",
+    "Koos je \"\"1,21 (f(1,1))\"\"? Dan neem je de eindwaarde. Trek de beginwaarde af en deel door de stap, dus 2,1. Door de stappen goed na te lopen kom je uit op 2,1.",
+    "Klopt: (1,21 − 1)/0,1 = 2,1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"21 (0,21 : 0,01)\"\"? Dan deel je door 0,01. De stap is 0,1, dus 2,1. Controleer je stap: de juiste uitkomst is 2,1."
+   ],
+   "uh": "Wat levert de gemiddelde verandering op [1; 1,1] voor f(x) = x² op?",
+   "ctx": "De functie is f(x) = x². Een leerling berekent de gemiddelde verandering op [1; 1,1], op [1; 1,01] en op [1; 1,001] om de helling van de grafiek in x = 1 te benaderen. Daarna trekt hij een conclusie over die helling."
+  },
+  {
+   "v": "Waar gaan de uitkomsten 2,1; 2,01 en 2,001 heen als de stap kleiner wordt?",
+   "o": [
+    "\"naar 0\"",
+    "\"naar 2\"",
+    "\"naar 2,1\"",
+    "\"naar 1 (het beginpunt x = 1)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"naar 0\"\"? Dan denk je dat een kleinere stap een kleinere uitkomst geeft. De uitkomst blijft bij 2, dus naar 2.",
+    "Klopt: de uitkomsten komen steeds dichter bij 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"naar 2,1\"\"? Dan neem je de eerste uitkomst. De volgende zijn kleiner, dus naar 2. Door de stappen goed na te lopen kom je uit op naar 2.",
+    "Koos je \"\"naar 1 (het beginpunt x = 1)\"\"? Dan neem je de x-waarde. De uitkomst is een helling, dus naar 2. Controleer je stap: de juiste uitkomst is naar 2."
+   ],
+   "uh": "Waar gaan de uitkomsten 2,1; 2,01 en 2,001 heen als de stap kleiner wordt?",
+   "ctx": "De functie is f(x) = x². Een leerling berekent de gemiddelde verandering op [1; 1,1], op [1; 1,01] en op [1; 1,001] om de helling van de grafiek in x = 1 te benaderen. Daarna trekt hij een conclusie over die helling."
+  },
+  {
+   "v": "Welke helling heeft de raaklijn in A(2, 4)?",
+   "o": [
+    "\"2 (4 : 2)\"",
+    "\"1 (2 − 1)\"",
+    "\"8 (4 · 2)\"",
+    "\"4\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2 (4 : 2)\"\"? Dan deel je de y-waarde door de x-waarde van A. Gebruik twee punten van de raaklijn, dus 4. Het goede antwoord is 4.",
+    "Koos je \"\"1 (2 − 1)\"\"? Dan neem je alleen Δx. De helling is Δy : Δx, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+    "Koos je \"\"8 (4 · 2)\"\"? Dan vermenigvuldig je de coördinaten. De helling is Δy : Δx, dus 4. Controleer je stap: de juiste uitkomst is 4.",
+    "Klopt: (4 − 0)/(2 − 1) = 4. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke helling heeft de raaklijn in A(2, 4)?",
+   "ctx": "De grafiek van f(x) = x² heeft in het punt A(2, 4) een raaklijn die ook door het punt (1, 0) gaat. Een leerling bepaalt de helling van de raaklijn met die twee punten en stelt de vergelijking van de raaklijn op."
+  },
+  {
+   "v": "Welke vergelijking heeft de raaklijn in A(2, 4)?",
+   "o": [
+    "\"y = 4x − 4\"",
+    "\"y = 4x + 4\"",
+    "\"y = 2x\"",
+    "\"y = 4x\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: helling 4 en door (2, 4) geeft b = −4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = 4x + 4\"\"? Dan maak je een fout bij de constante. Door (2, 4) geldt b = −4, dus y = 4x − 4. Het goede antwoord is y = 4x − 4.",
+    "Koos je \"\"y = 2x\"\"? Dan neem je de verkeerde helling. De helling is 4, dus y = 4x − 4. Door de stappen goed na te lopen kom je uit op y = 4x − 4.",
+    "Koos je \"\"y = 4x\"\"? Dan vergeet je de constante. Door (2, 4) is b = −4, dus y = 4x − 4. Controleer je stap: de juiste uitkomst is y = 4x − 4."
+   ],
+   "uh": "Welke vergelijking heeft de raaklijn in A(2, 4)?",
+   "ctx": "De grafiek van f(x) = x² heeft in het punt A(2, 4) een raaklijn die ook door het punt (1, 0) gaat. Een leerling bepaalt de helling van de raaklijn met die twee punten en stelt de vergelijking van de raaklijn op."
+  },
+  {
+   "v": "Welke punten liggen op de hellinggrafiek van g?",
+   "o": [
+    "\"(0, 0), (1, −3), (2, −4), (3, −3), (4, 0) (de functiewaarden van g)\"",
+    "\"(0, −4), (1, −2), (2, 0) (maar twee punten missen)\"",
+    "\"(0, −4), (1, −2), (2, 0), (3, 2), (4, 4)\"",
+    "\"(−4, 0), (−2, 1), (0, 2), (2, 3), (4, 4) (x en y omgewisseld)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(0, 0), (1, −3), (2, −4), (3, −3), (4, 0) (de functiewaarden van g)\"\"? Dan zet dit je de functiewaarden uit. De hellinggrafiek toont hellingen, dus (0, −4), (1, −2), (2, 0), (3, 2), (4, 4).",
+    "Koos je \"\"(0, −4), (1, −2), (2, 0) (maar twee punten missen)\"\"? Dan neem je maar drie punten. Er zijn vijf waarden gegeven, dus (0, −4), (1, −2), (2, 0), (3, 2), (4, 4).",
+    "Klopt: elk punt is x met de helling bij x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(−4, 0), (−2, 1), (0, 2), (2, 3), (4, 4) (x en y omgewisseld)\"\"? Dan wissel je x en y om. De x-waarde komt eerst, dus (0, −4), (1, −2), (2, 0), (3, 2), (4, 4)."
+   ],
+   "uh": "Welke punten liggen op de hellinggrafiek van g?",
+   "ctx": "De functie g(x) = x² − 4x heeft helling −4 bij x = 0, −2 bij x = 1, 0 bij x = 2, 2 bij x = 3 en 4 bij x = 4. Een leerling tekent de hellinggrafiek met die punten en leest af waar g stijgt, daalt en een laagste punt heeft."
+  },
+  {
+   "v": "Voor welke x-waarden geldt dat de helling van g negatief is?",
+   "o": [
+    "\"x > 2\"",
+    "\"x < 2\"",
+    "\"x < 4\"",
+    "\"x = 2\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x > 2\"\"? Dan draai je het om. Daar zijn de hellingen positief, dus x < 2. Het goede antwoord is x < 2.",
+    "Klopt: de hellingen −4 en −2 horen bij x = 0 en x = 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x < 4\"\"? Dan kies je een te groot gebied. Bij x = 3 is de helling 2, dus x < 2. Door de stappen goed na te lopen kom je uit op x < 2.",
+    "Koos je \"\"x = 2\"\"? Dan kies je het punt met helling 0. Negatief betekent kleiner dan 0, dus x < 2. Controleer je stap: de juiste uitkomst is x < 2."
+   ],
+   "uh": "Voor welke x-waarden geldt dat de helling van g negatief is?",
+   "ctx": "De functie g(x) = x² − 4x heeft helling −4 bij x = 0, −2 bij x = 1, 0 bij x = 2, 2 bij x = 3 en 4 bij x = 4. Een leerling tekent de hellinggrafiek met die punten en leest af waar g stijgt, daalt en een laagste punt heeft."
+  },
+  {
+   "v": "Waar heeft g een laagste punt?",
+   "o": [
+    "\"bij x = 0, want de helling is daar het kleinst\"",
+    "\"bij x = 4, want de helling is daar het grootst\"",
+    "\"bij x = 1, want de helling is daar −2\"",
+    "\"bij x = 2, want de helling is daar 0 en wisselt van min naar plus\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij x = 0, want de helling is daar het kleinst\"\"? Dan zie je de sterkste daling als laagste punt. Een laagste punt heeft helling 0, dus bij x = 2, want de helling is daar 0 en wisselt van min naar plus.",
+    "Koos je \"\"bij x = 4, want de helling is daar het grootst\"\"? Dan verwar je je het eindpunt van het interval met het laagste punt. Daar stijgt g juist het steilst, dus bij x = 2, want de helling is daar 0 en wisselt van min naar plus.",
+    "Koos je \"\"bij x = 1, want de helling is daar −2\"\"? Dan neem je een punt met negatieve helling. Daar daalt g nog, dus bij x = 2, want de helling is daar 0 en wisselt van min naar plus.",
+    "Klopt: de grafiek daalt eerst en stijgt daarna. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waar heeft g een laagste punt?",
+   "ctx": "De functie g(x) = x² − 4x heeft helling −4 bij x = 0, −2 bij x = 1, 0 bij x = 2, 2 bij x = 3 en 4 bij x = 4. Een leerling tekent de hellinggrafiek met die punten en leest af waar g stijgt, daalt en een laagste punt heeft."
+  },
+  {
+   "v": "Op welk moment is de bal op het hoogste punt?",
+   "o": [
+    "\"t = 2\"",
+    "\"t = 0\"",
+    "\"t = 4\"",
+    "\"t = 1\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij t = 2 is de helling 0 en wisselt van plus naar min.",
+    "Koos je \"\"t = 0\"\"? Dan kies je het begin. Daar stijgt de bal het snelst, dus t = 2. Het goede antwoord is t = 2.",
+    "Koos je \"\"t = 4\"\"? Dan kies je het eind. Daar daalt de bal het snelst, dus t = 2. Door de stappen goed na te lopen kom je uit op t = 2.",
+    "Koos je \"\"t = 1\"\"? Dan kies je een moment met positieve helling. De bal stijgt dan nog, dus t = 2. Controleer je stap: de juiste uitkomst is t = 2."
+   ],
+   "uh": "Op welk moment is de bal op het hoogste punt?",
+   "ctx": "De hoogte h in meter van een bal is h(t) = 20t − 5t² met t in seconden. De helling van de grafiek is 20 bij t = 0, 10 bij t = 1, 0 bij t = 2, −10 bij t = 3 en −20 bij t = 4. Een leerling gebruikt de hellingen om het gedrag van de bal te beschrijven."
+  },
+  {
+   "v": "Wat betekent de helling −20 bij t = 4?",
+   "o": [
+    "\"de bal is 20 m hoog\"",
+    "\"de bal stijgt met 20 m per seconde\"",
+    "\"de bal daalt met 20 m per seconde\"",
+    "\"de bal landt na 20 s\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de bal is 20 m hoog\"\"? Dan verwar je de helling met de hoogte. De helling is een snelheid, dus de bal daalt met 20 m per seconde.",
+    "Koos je \"\"de bal stijgt met 20 m per seconde\"\"? Dan lees je de min niet. Negatief is dalen, dus de bal daalt met 20 m per seconde.",
+    "Klopt: een negatieve helling is dalen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de bal landt na 20 s\"\"? Dan koppel je het getal aan de tijd. Het is de helling bij t = 4, dus de bal daalt met 20 m per seconde."
+   ],
+   "uh": "Wat betekent de helling −20 bij t = 4?",
+   "ctx": "De hoogte h in meter van een bal is h(t) = 20t − 5t² met t in seconden. De helling van de grafiek is 20 bij t = 0, 10 bij t = 1, 0 bij t = 2, −10 bij t = 3 en −20 bij t = 4. Een leerling gebruikt de hellingen om het gedrag van de bal te beschrijven."
+  },
+  {
+   "v": "Bereken de gemiddelde verandering van f(x) = x³ op [1; 2].",
+   "o": [
+    "\"8 (f(2))\"",
+    "\"7\"",
+    "\"1 (de stap)\"",
+    "\"3 (de helling in x = 1)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8 (f(2))\"\"? Dan neem je de eindwaarde. Trek de beginwaarde af, dus 7. Het goede antwoord is 7.",
+    "Klopt: (8 − 1)/(2 − 1) = 7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1 (de stap)\"\"? Dan neem je de stapgrootte. Deel de toename 7 door de stap, dus 7. Door de stappen goed na te lopen kom je uit op 7.",
+    "Koos je \"\"3 (de helling in x = 1)\"\"? Dan neem je de helling in x = 1. Je zoekt de gemiddelde verandering op [1; 2], dus 7."
+   ],
+   "uh": "Bereken de gemiddelde verandering van f(x) = x³ op [1; 2].",
+   "ctx": "Voor f(x) = x³ benadert een leerling de helling in x = 1 met steeds kleinere stappen. De gemiddelde verandering is 7 op [1; 2], 3,31 op [1; 1,1] en ongeveer 3,03 op [1; 1,01]. Hij legt uit wat dit zegt over de helling in x = 1."
+  },
+  {
+   "v": "Welke helling in x = 1 past bij de gemiddelde veranderingen 7; 3,31 en 3,03 voor kleiner wordende stappen?",
+   "o": [
+    "\"7\"",
+    "\"3,31\"",
+    "\"0\"",
+    "\"ongeveer 3\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7\"\"? Dan neem je de eerste uitkomst. De stap was nog groot, dus ongeveer 3. Het goede antwoord is ongeveer 3.",
+    "Koos je \"\"3,31\"\"? Dan neem je de tweede uitkomst. De volgende stap geeft een kleinere waarde, dus ongeveer 3. Door de stappen goed na te lopen kom je uit op ongeveer 3.",
+    "Koos je \"\"0\"\"? Dan denk je dat de uitkomsten naar 0 gaan. Ze naderen 3, dus ongeveer 3. Controleer je stap: de juiste uitkomst is ongeveer 3.",
+    "Klopt: de uitkomsten komen steeds dichter bij 3. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke helling in x = 1 past bij de gemiddelde veranderingen 7; 3,31 en 3,03 voor kleiner wordende stappen?",
+   "ctx": "Voor f(x) = x³ benadert een leerling de helling in x = 1 met steeds kleinere stappen. De gemiddelde verandering is 7 op [1; 2], 3,31 op [1; 1,1] en ongeveer 3,03 op [1; 1,01]. Hij legt uit wat dit zegt over de helling in x = 1."
+  },
+  {
+   "v": "Waarom neemt de leerling steeds kleinere stappen?",
+   "o": [
+    "\"omdat de gemiddelde verandering dan steeds dichter bij de helling in het punt komt\"",
+    "\"omdat de functie dan dalend wordt\"",
+    "\"omdat de uitkomst dan altijd 0 wordt\"",
+    "\"omdat de stap anders niet te berekenen is\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een kleiner interval volgt de raaklijn beter. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat de functie dan dalend wordt\"\"? Dan denk je dat de stap het gedrag verandert. De functie blijft gelijk, dus omdat de gemiddelde verandering dan steeds dichter bij de helling in het punt komt.",
+    "Koos je \"\"omdat de uitkomst dan altijd 0 wordt\"\"? Dan denk je dat een kleine stap 0 geeft. Het quotiënt blijft ongeveer 3, dus omdat de gemiddelde verandering dan steeds dichter bij de helling in het punt komt.",
+    "Koos je \"\"omdat de stap anders niet te berekenen is\"\"? Dan denk je dat een grote stap niet kan. Hij geeft alleen een grove schatting, dus omdat de gemiddelde verandering dan steeds dichter bij de helling in het punt komt."
+   ],
+   "uh": "Waarom neemt de leerling steeds kleinere stappen?",
+   "ctx": "Voor f(x) = x³ benadert een leerling de helling in x = 1 met steeds kleinere stappen. De gemiddelde verandering is 7 op [1; 2], 3,31 op [1; 1,1] en ongeveer 3,03 op [1; 1,01]. Hij legt uit wat dit zegt over de helling in x = 1."
+  },
+  {
+   "v": "Wat betekent het dat de hellinggrafiek voor x < 3 boven de x-as ligt?",
+   "o": [
+    "\"f daalt voor x < 3\"",
+    "\"f is negatief voor x < 3\"",
+    "\"f stijgt voor x < 3\"",
+    "\"f heeft een top voor x < 3\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"f daalt voor x < 3\"\"? Dan draai je het om. Boven de x-as is de helling positief, dus f stijgt voor x < 3. Het goede antwoord is f stijgt voor x < 3.",
+    "Koos je \"\"f is negatief voor x < 3\"\"? Dan verwar je de helling met de functiewaarde. Boven de x-as is f′ positief, dus f stijgt voor x < 3.",
+    "Klopt: een positieve helling is stijgen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"f heeft een top voor x < 3\"\"? Dan denk je dat positieve helling een top is. Een top heeft helling 0, dus f stijgt voor x < 3."
+   ],
+   "uh": "Wat betekent het dat de hellinggrafiek voor x < 3 boven de x-as ligt?",
+   "ctx": "De grafiek van f′ (de hellinggrafiek van f) is een rechte lijn door (0, 3), (3, 0) en (6, −3). Een leerling leest af waar f stijgt en daalt, bepaalt de helling van f in x = 5 en zoekt een top van f."
+  },
+  {
+   "v": "Waar heeft f een hoogste punt?",
+   "o": [
+    "\"bij x = 0, want f′ is daar het grootst\"",
+    "\"bij x = 3, want f′ wisselt daar van plus naar min\"",
+    "\"bij x = 6, want f′ is daar het kleinst\"",
+    "\"nergens, want f′ is nooit 0\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij x = 0, want f′ is daar het grootst\"\"? Dan zie je de steilste stijging als hoogste punt. In een hoogste punt is f′ juist 0, dus bij x = 3, want f′ wisselt daar van plus naar min.",
+    "Klopt: f stijgt eerst en daalt daarna. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"bij x = 6, want f′ is daar het kleinst\"\"? Dan verwar je je het eind van het interval met het hoogste punt. Daar daalt f juist het steilst, dus bij x = 3, want f′ wisselt daar van plus naar min.",
+    "Koos je \"\"nergens, want f′ is nooit 0\"\"? Dan let je niet op het snijpunt met de x-as. f′ is 0 bij x = 3, dus bij x = 3, want f′ wisselt daar van plus naar min."
+   ],
+   "uh": "Waar heeft f een hoogste punt?",
+   "ctx": "De grafiek van f′ (de hellinggrafiek van f) is een rechte lijn door (0, 3), (3, 0) en (6, −3). Een leerling leest af waar f stijgt en daalt, bepaalt de helling van f in x = 5 en zoekt een top van f."
+  },
+  {
+   "v": "Welke helling heeft f in x = 5?",
+   "o": [
+    "\"2 (zonder min)\"",
+    "\"−3 (de waarde bij x = 6)\"",
+    "\"5 (de x-waarde)\"",
+    "\"−2\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2 (zonder min)\"\"? Dan laat je het teken weg. De lijn ligt onder de x-as, dus −2. Het goede antwoord is −2.",
+    "Koos je \"\"−3 (de waarde bij x = 6)\"\"? Dan lees je het verkeerde punt af. Kijk bij x = 5, dus −2. Door de stappen goed na te lopen kom je uit op −2.",
+    "Koos je \"\"5 (de x-waarde)\"\"? Dan neem je de x-waarde. Je zoekt de y-waarde van de hellinggrafiek, dus −2. Controleer je stap: de juiste uitkomst is −2.",
+    "Klopt: de hellinggrafiek heeft bij x = 5 de waarde 3 − 5 = −2."
+   ],
+   "uh": "Welke helling heeft f in x = 5?",
+   "ctx": "De grafiek van f′ (de hellinggrafiek van f) is een rechte lijn door (0, 3), (3, 0) en (6, −3). Een leerling leest af waar f stijgt en daalt, bepaalt de helling van f in x = 5 en zoekt een top van f."
+  },
+  {
+   "v": "Een leerling leest bij het punt (3, −3) van g de helling 2 af. Welk punt hoort daarbij op de hellinggrafiek?",
+   "o": [
+    "\"(3, 2)\"",
+    "\"(3, −3)\"",
+    "\"(2, 3)\"",
+    "\"(−3, 2)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de x-waarde blijft 3 en de y-waarde is de helling 2.",
+    "Koos je \"\"(3, −3)\"\"? Dan neem je het punt van g zelf. De hellinggrafiek toont de helling, dus (3, 2). Het goede antwoord is (3, 2).",
+    "Koos je \"\"(2, 3)\"\"? Dan wissel je x en y om. Eerst de x-waarde, dus (3, 2). Door de stappen goed na te lopen kom je uit op (3, 2).",
+    "Koos je \"\"(−3, 2)\"\"? Dan neem je de y-waarde van g als x. Gebruik de x-waarde van het punt, dus (3, 2). Controleer je stap: de juiste uitkomst is (3, 2)."
+   ],
+   "uh": "Een leerling leest bij het punt (3, −3) van g de helling 2 af. Welk punt hoort daarbij op de hellinggrafiek?",
+   "ctx": "De functie g(x) = x² − 4x heeft helling −4 bij x = 0, −2 bij x = 1, 0 bij x = 2, 2 bij x = 3 en 4 bij x = 4. Een leerling tekent de hellinggrafiek met die punten en leest af waar g stijgt, daalt en een laagste punt heeft."
+  },
+  {
+   "v": "Hoe lees je uit de hellinggrafiek af waar g stijgt?",
+   "o": [
+    "\"waar de hellinggrafiek onder de x-as ligt\"",
+    "\"waar de hellinggrafiek de x-as snijdt\"",
+    "\"waar de hellinggrafiek boven de x-as ligt (x > 2)\"",
+    "\"waar de hellinggrafiek het grootst is\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"waar de hellinggrafiek onder de x-as ligt\"\"? Dan draai je het om. Onder de x-as is de helling negatief, dus waar de hellinggrafiek boven de x-as ligt (x > 2).",
+    "Koos je \"\"waar de hellinggrafiek de x-as snijdt\"\"? Dan neem je het punt met helling 0. Daar is g niet stijgend, dus waar de hellinggrafiek boven de x-as ligt (x > 2).",
+    "Klopt: positieve helling betekent stijgen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"waar de hellinggrafiek het grootst is\"\"? Dan kijk je naar de grootste helling. Stijgen betekent positieve helling, dus waar de hellinggrafiek boven de x-as ligt (x > 2)."
+   ],
+   "uh": "Hoe lees je uit de hellinggrafiek af waar g stijgt?",
+   "ctx": "De functie g(x) = x² − 4x heeft helling −4 bij x = 0, −2 bij x = 1, 0 bij x = 2, 2 bij x = 3 en 4 bij x = 4. Een leerling tekent de hellinggrafiek met die punten en leest af waar g stijgt, daalt en een laagste punt heeft."
+  },
+  {
+   "v": "Op welk moment stijgt de bal het snelst?",
+   "o": [
+    "\"bij t = 2, want dat is het hoogste punt\"",
+    "\"bij t = 0, want de helling 20 is het grootst\"",
+    "\"bij t = 4, want de helling is −20\"",
+    "\"bij t = 1, want de helling is 10\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij t = 2, want dat is het hoogste punt\"\"? Dan verwar je het hoogste punt met de snelste stijging. Daar is de helling 0, dus bij t = 0, want de helling 20 is het grootst.",
+    "Klopt: de grootste positieve helling hoort bij de snelste stijging.",
+    "Koos je \"\"bij t = 4, want de helling is −20\"\"? Dan kies je een daling. Snelste stijging heeft de grootste positieve helling, dus bij t = 0, want de helling 20 is het grootst.",
+    "Koos je \"\"bij t = 1, want de helling is 10\"\"? Dan kies je een middelste waarde. De helling 20 is groter, dus bij t = 0, want de helling 20 is het grootst."
+   ],
+   "uh": "Op welk moment stijgt de bal het snelst?",
+   "ctx": "De hoogte h in meter van een bal is h(t) = 20t − 5t² met t in seconden. De helling van de grafiek is 20 bij t = 0, 10 bij t = 1, 0 bij t = 2, −10 bij t = 3 en −20 bij t = 4. Een leerling gebruikt de hellingen om het gedrag van de bal te beschrijven."
+  },
+  {
+   "v": "Hoeveel meter hoog is de bal op t = 2 volgens h(t) = 20t − 5t²?",
+   "o": [
+    "\"40 m (20 · 2)\"",
+    "\"0 m (de helling)\"",
+    "\"30 m (20 · 2 − 5 · 2)\"",
+    "\"20 m\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 m (20 · 2)\"\"? Dan vergeet je de term −5t². Trek 20 af, dus 20 m. Het goede antwoord is 20 m.",
+    "Koos je \"\"0 m (de helling)\"\"? Dan neem je de helling bij t = 2. Je zoekt de hoogte, dus 20 m. Door de stappen goed na te lopen kom je uit op 20 m.",
+    "Koos je \"\"30 m (20 · 2 − 5 · 2)\"\"? Dan vergeet je het kwadraat. t² is 4, dus 20 m. Controleer je stap: de juiste uitkomst is 20 m.",
+    "Klopt: 20 · 2 − 5 · 4 = 40 − 20 = 20. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel meter hoog is de bal op t = 2 volgens h(t) = 20t − 5t²?",
+   "ctx": "De hoogte h in meter van een bal is h(t) = 20t − 5t² met t in seconden. De helling van de grafiek is 20 bij t = 0, 10 bij t = 1, 0 bij t = 2, −10 bij t = 3 en −20 bij t = 4. Een leerling gebruikt de hellingen om het gedrag van de bal te beschrijven."
+  },
+  {
+   "v": "Hoeveel groter dan de helling 2 is de benadering op [1; 1,01]?",
+   "o": [
+    "\"0,01\"",
+    "\"0,1\"",
+    "\"1,01\"",
+    "\"0,0201\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "De helling in een punt is de helling van de raaklijn. Benader haar met de gemiddelde verandering op steeds kleinere intervallen. Het teken van de helling zegt of de grafiek stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (1,0201 − 1)/0,01 = 2,01 en 2,01 − 2 = 0,01. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,1\"\"? Dan neem je de benadering op [1; 1,1]. Hier is de stap 0,01, dus 0,01. Het goede antwoord is 0,01.",
+    "Koos je \"\"1,01\"\"? Dan neem je de eindwaarde van het interval. Trek 2 af van de benadering, dus 0,01. Door de stappen goed na te lopen kom je uit op 0,01.",
+    "Koos je \"\"0,0201\"\"? Dan neem je de toename. Deel door 0,01 en trek 2 af, dus 0,01. Controleer je stap: de juiste uitkomst is 0,01."
+   ],
+   "uh": "Hoeveel groter dan de helling 2 is de benadering op [1; 1,01]?",
+   "ctx": "De functie is f(x) = x². Een leerling berekent de gemiddelde verandering op [1; 1,1], op [1; 1,01] en op [1; 1,001] om de helling van de grafiek in x = 1 te benaderen. Daarna trekt hij een conclusie over die helling."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling benadert de helling van f(x) = x² in x = 3 met de gemiddelde verandering op het interval [3; 3,1] en op het interval [3; 3,01]. Hij schrijft de berekeningen op en trekt daarna een conclusie over de helling in x = 3.",
+   "v": "Benader de helling in x = 3 met beide intervallen en trek een conclusie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(9,61 − 9)/0,1 = 6,1 (1p). (9,0601 − 9)/0,01 = 6,01 (1p). De helling in x = 3 is ongeveer 6 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een raaklijn aan de grafiek van f in het punt (2, 5) gaat ook door het punt (4, 11). Een leerling bepaalt de helling van de raaklijn, stelt de vergelijking op en gebruikt die om de waarde van de raaklijn bij x = 3 te berekenen.",
+   "v": "Bepaal de helling, de vergelijking en de waarde bij x = 3.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Helling (11 − 5)/(4 − 2) = 3 (1p). y = 3x − 1 (1p). Bij x = 3 geeft de raaklijn 8 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De grafiek van f′ (de hellinggrafiek van f) is een rechte lijn door (0, 4), (2, 0) en (4, −4). Een leerling bepaalt waar f stijgt en daalt en waar f een hoogste punt heeft. Hij legt zijn antwoord uit met het teken van de helling.",
+   "v": "Bepaal waar f stijgt, daalt en een hoogste punt heeft.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f′ > 0 voor x < 2, dus f stijgt voor x < 2 (1p). f′ < 0 voor x > 2, dus f daalt voor x > 2 (1p). Bij x = 2 is f′ = 0 en wisselt van plus naar min, dus f heeft daar een hoogste punt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De helling van de hoogte van een bal in m/s is 15 bij t = 0, 5 bij t = 1, −5 bij t = 2 en −15 bij t = 3. De hellingen vormen een rechte lijn. Een leerling bepaalt tussen welke tijdstippen het hoogste punt zit en bepaalt het moment waarop de bal het hoogst is.",
+   "v": "Bepaal het tijdstip van het hoogste punt van de bal.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De helling is positief bij t = 0 en 1 en negatief bij t = 2 en 3 (1p). Het hoogste punt zit tussen t = 1 en t = 2 (1p). De helling is 0 bij t = 1,5, dus daar is de bal het hoogst (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling benadert de helling van f(x) = x³ in x = 2 met de gemiddelde verandering op het interval [2; 2,1] en op het interval [2; 2,01]. Hij schrijft de berekeningen op en trekt daarna een conclusie over de helling in x = 2.",
+   "v": "Benader de helling in x = 2 met beide intervallen en trek een conclusie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(9,261 − 8)/0,1 = 12,61 (1p). (8,120601 − 8)/0,01 ≈ 12,06 (1p). De helling in x = 2 is ongeveer 12 (1p)."
+  }
+ ]
+}

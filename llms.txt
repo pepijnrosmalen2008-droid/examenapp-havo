@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 29.326 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 29.353 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -306,6 +306,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Directe en recursieve formules van rijen opstellen en gebruiken (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/directe-en-recursieve-formules-van-rijen-opstellen-en-gebruiken.html): Je beschrijft een rij met een directe en een recursieve formule, zet de ene vorm om in de andere, let op de nummering en rekent met termen in een context.
 - [Somrijen en het sigma-teken (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/somrijen-en-het-sigma-teken.html): Je berekent de som van de eerste termen van een rekenkundige of meetkundige rij met een formule, leest en schrijft het sigma-teken en lost sommen in een…
 - [Toenamediagram, gemiddelde verandering en veranderingsgedrag van functies (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/toenamediagram-gemiddelde-verandering-en-veranderingsgedrag-van-functi.html): Je berekent toenames en de gemiddelde verandering op een interval, leest een toenamediagram en beschrijft of een functie stijgt of daalt en hoe snel.
+- [Helling in een punt en de hellinggrafiek (Wiskunde A VWO)](https://slagio.nl/leren/vwo/wiskunde-a/helling-in-een-punt-en-de-hellinggrafiek.html): Je bepaalt de helling in een punt met de raaklijn en met steeds kleinere stappen, tekent en leest een hellinggrafiek en gebruikt het teken van de helling om…
 - [Feit en mening onderscheiden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/feit-en-mening-onderscheiden.html): Je hoort of ziet een tekst en weet of een uitspraak een feit of een mening is. Je let op woorden die een oordeel geven en je controleert wat te controleren is.
 - [De hoofdzaak en de kernboodschap vinden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/de-hoofdzaak-en-de-kernboodschap-vinden.html): Je luistert naar een gesproken tekst en vindt de hoofdzaak, de bijzaken en de kernboodschap, zodat je die kort en volledig kunt samenvatten.
 - [Het doel van de spreker herkennen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/het-doel-van-de-spreker-herkennen.html): Je hoort of ziet een tekst en herkent wat de spreker wil: informeren, overtuigen of amuseren. Je let op signalen zoals oproepen, meningen en grapjes.
