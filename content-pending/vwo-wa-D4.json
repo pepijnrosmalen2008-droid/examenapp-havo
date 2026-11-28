@@ -1,0 +1,682 @@
+{
+ "id": "D4",
+ "lo": "wa.D.4",
+ "gs": 2,
+ "naam": "Toenamediagram, gemiddelde verandering en veranderingsgedrag van functies",
+ "beschrijving": "Je berekent toenames en de gemiddelde verandering op een interval, leest een toenamediagram en beschrijft of een functie stijgt of daalt en hoe snel.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Toename en stapgrootte",
+  "Gemiddelde verandering op een interval",
+  "Het toenamediagram lezen",
+  "Veranderingsgedrag beschrijven",
+  "Veranderingen in een context"
+ ],
+ "sam": "De toename van een functie is eindwaarde min beginwaarde. De gemiddelde verandering op [a, b] is die toename gedeeld door de stapgrootte b − a. In een toenamediagram laten de tekens zien of een functie stijgt of daalt en de grootte laat zien hoe snel. Beschrijf het veranderingsgedrag met stijgend of dalend en toenemend of afnemend. Trek altijd af in de volgorde eind min begin, deel door de stapgrootte van hetzelfde interval en schrijf het antwoord met eenheid per tijdseenheid. Controleer of het teken bij de situatie past.",
+ "begrippen": [
+  {
+   "t": "Toename",
+   "d": "Het verschil f(b) − f(a): eindwaarde min beginwaarde op een stap of interval."
+  },
+  {
+   "t": "Stapgrootte",
+   "d": "Het verschil b − a tussen twee x-waarden; ook Δx genoemd."
+  },
+  {
+   "t": "Toenamediagram",
+   "d": "Een diagram met de toenames per stap, bijvoorbeeld als staafjes."
+  },
+  {
+   "t": "Gemiddelde verandering",
+   "d": "De toename gedeeld door de stapgrootte: (f(b) − f(a))/(b − a)."
+  },
+  {
+   "t": "Interval",
+   "d": "Het gebied tussen twee x-waarden, geschreven als [a, b]."
+  },
+  {
+   "t": "Δ (delta)",
+   "d": "Het teken voor een verschil: Δx is de stap en Δf de toename."
+  },
+  {
+   "t": "Stijgend",
+   "d": "De functiewaarde wordt groter; alle toenames zijn positief."
+  },
+  {
+   "t": "Dalend",
+   "d": "De functiewaarde wordt kleiner; alle toenames zijn negatief."
+  },
+  {
+   "t": "Toenemend stijgend",
+   "d": "Stijgend met toenames die steeds groter worden."
+  },
+  {
+   "t": "Afnemend stijgend",
+   "d": "Stijgend met toenames die steeds kleiner worden."
+  },
+  {
+   "t": "Differentiequotiënt",
+   "d": "Δf/Δx: de gemiddelde verandering op een interval."
+  },
+  {
+   "t": "Veranderingsgedrag",
+   "d": "Hoe een functie verandert: stijgend of dalend, snel of langzaam."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Bereken de toename van f van x = 2 tot x = 3 als f(2) = 7 en f(3) = 12.",
+   "o": [
+    "\"19 (7 + 12)\"",
+    "\"5\"",
+    "\"−5 (7 − 12)\"",
+    "\"1 (3 − 2)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"19 (7 + 12)\"\"? Dan tel je de waarden op. De toename is eindwaarde min beginwaarde, dus 5. Het goede antwoord is 5.",
+    "Klopt: 12 − 7 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−5 (7 − 12)\"\"? Dan trek je in de verkeerde volgorde af. Neem eindwaarde min beginwaarde, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Koos je \"\"1 (3 − 2)\"\"? Dan neem je de stapgrootte. De toename gaat over de functiewaarden, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Bereken de toename van f van x = 2 tot x = 3 als f(2) = 7 en f(3) = 12."
+  },
+  {
+   "v": "Bereken de gemiddelde verandering van f op [1, 5] als f(1) = 3 en f(5) = 19.",
+   "o": [
+    "\"16 (alleen de toename)\"",
+    "\"5,5 (22 : 4)\"",
+    "\"3,2 (16 : 5)\"",
+    "\"4\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"16 (alleen de toename)\"\"? Dan vergeet je te delen door de stapgrootte. Deel 16 door 4, dus 4. Het goede antwoord is 4.",
+    "Koos je \"\"5,5 (22 : 4)\"\"? Dan tel je de waarden op. Trek ze van elkaar af, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+    "Koos je \"\"3,2 (16 : 5)\"\"? Dan deel je door het einde van het interval. Deel door 5 − 1, dus 4. Controleer je stap: de juiste uitkomst is 4.",
+    "Klopt: (19 − 3)/(5 − 1) = 16/4 = 4. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken de gemiddelde verandering van f op [1, 5] als f(1) = 3 en f(5) = 19."
+  },
+  {
+   "v": "Wat betekent een negatieve toename in een toenamediagram?",
+   "o": [
+    "\"de functiewaarde daalt op die stap\"",
+    "\"de functiewaarde is negatief\"",
+    "\"de functie is niet gedefinieerd\"",
+    "\"de stap is te klein\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een negatieve toename is een daling. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de functiewaarde is negatief\"\"? Dan verwar je de toename met de waarde. De waarde kan positief blijven, dus de functiewaarde daalt op die stap.",
+    "Koos je \"\"de functie is niet gedefinieerd\"\"? Dan denk je dat een min een fout is. Een negatieve toename kan gewoon, dus de functiewaarde daalt op die stap.",
+    "Koos je \"\"de stap is te klein\"\"? Dan koppel je het teken aan de stapgrootte. Het teken zegt of de waarde daalt, dus de functiewaarde daalt op die stap."
+   ],
+   "uh": "Wat betekent een negatieve toename in een toenamediagram?"
+  },
+  {
+   "v": "Een functie stijgt steeds sneller. Hoe noem je dat?",
+   "o": [
+    "\"afnemend stijgend\"",
+    "\"toenemend dalend\"",
+    "\"toenemend stijgend\"",
+    "\"constant stijgend\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"afnemend stijgend\"\"? Dan draai je het om. Bij afnemend stijgen worden de toenames kleiner, dus toenemend stijgend.",
+    "Koos je \"\"toenemend dalend\"\"? Dan neem je dalen in plaats van stijgen. De functie stijgt, dus toenemend stijgend. Door de stappen goed na te lopen kom je uit op toenemend stijgend.",
+    "Klopt: de toenames worden steeds groter. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"constant stijgend\"\"? Dan denk je aan gelijke toenames. Hier worden ze groter, dus toenemend stijgend. Controleer je stap: de juiste uitkomst is toenemend stijgend."
+   ],
+   "uh": "Een functie stijgt steeds sneller. Hoe noem je dat?"
+  },
+  {
+   "v": "De toenames zijn 5, 3, 2, 1. Hoe verandert de functie?",
+   "o": [
+    "\"dalend en toenemend (de toenames worden groter)\"",
+    "\"stijgend en afnemend (de toenames worden kleiner)\"",
+    "\"stijgend en toenemend (de toenames worden groter)\"",
+    "\"dalend en afnemend (de functie wordt kleiner)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"dalend en toenemend (de toenames worden groter)\"\"? Dan lees je de getallen als negatief. Ze zijn positief, dus stijgend en afnemend (de toenames worden kleiner).",
+    "Klopt: alle toenames zijn positief en nemen af. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"stijgend en toenemend (de toenames worden groter)\"\"? Dan zie je de toenames als groeiend. Ze worden juist kleiner, dus stijgend en afnemend (de toenames worden kleiner).",
+    "Koos je \"\"dalend en afnemend (de functie wordt kleiner)\"\"? Dan denk je dat de waarde daalt. De toenames zijn positief, dus stijgend en afnemend (de toenames worden kleiner)."
+   ],
+   "uh": "De toenames zijn 5, 3, 2, 1. Hoe verandert de functie?"
+  },
+  {
+   "v": "Een bedrag stijgt in 4 jaar van €200 naar €280. Wat is de gemiddelde verandering per jaar?",
+   "o": [
+    "\"€80 (de totale toename)\"",
+    "\"€70 (280 : 4)\"",
+    "\"€50 (200 : 4)\"",
+    "\"€20\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€80 (de totale toename)\"\"? Dan vergeet je te delen door 4 jaar. De verandering is per jaar, dus €20. Het goede antwoord is €20.",
+    "Koos je \"\"€70 (280 : 4)\"\"? Dan deel je alleen de eindwaarde. Neem eerst de toename, dus €20. Door de stappen goed na te lopen kom je uit op €20.",
+    "Koos je \"\"€50 (200 : 4)\"\"? Dan deel je de beginwaarde. Neem de toename 80 en deel door 4, dus €20. Controleer je stap: de juiste uitkomst is €20.",
+    "Klopt: (280 − 200) : 4 = 20. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een bedrag stijgt in 4 jaar van €200 naar €280. Wat is de gemiddelde verandering per jaar?"
+  },
+  {
+   "v": "Welke toenames horen bij de waarden 4, 9, 15, 22?",
+   "o": [
+    "\"5, 6, 7\"",
+    "\"9, 15, 22 (de waarden zelf)\"",
+    "\"13, 24, 37 (sommen van twee)\"",
+    "\"4, 5, 6 (te laag)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 9 − 4 = 5, 15 − 9 = 6 en 22 − 15 = 7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"9, 15, 22 (de waarden zelf)\"\"? Dan neem je de waarden over. De toename is het verschil, dus 5, 6, 7. Het goede antwoord is 5, 6, 7.",
+    "Koos je \"\"13, 24, 37 (sommen van twee)\"\"? Dan tel je buurwaarden op. Trek ze af, dus 5, 6, 7. Door de stappen goed na te lopen kom je uit op 5, 6, 7.",
+    "Koos je \"\"4, 5, 6 (te laag)\"\"? Dan begin je bij de verkeerde waarde. 9 − 4 is 5, dus 5, 6, 7. Controleer je stap: de juiste uitkomst is 5, 6, 7."
+   ],
+   "uh": "Welke toenames horen bij de waarden 4, 9, 15, 22?"
+  },
+  {
+   "v": "Welke toenames per stap horen bij de tabel?",
+   "o": [
+    "\"2, 5, 11, 20, 32 (de waarden)\"",
+    "\"3, 6, 9 (te weinig stappen)\"",
+    "\"3, 6, 9, 12\"",
+    "\"3, 3, 3, 3 (steeds gelijk)\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2, 5, 11, 20, 32 (de waarden)\"\"? Dan neem je de waarden over. De toename is het verschil, dus 3, 6, 9, 12. Het goede antwoord is 3, 6, 9, 12.",
+    "Koos je \"\"3, 6, 9 (te weinig stappen)\"\"? Dan laat je de laatste stap weg. Er zijn vier stappen, dus 3, 6, 9, 12. Door de stappen goed na te lopen kom je uit op 3, 6, 9, 12.",
+    "Klopt: 5 − 2, 11 − 5, 20 − 11 en 32 − 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3, 3, 3, 3 (steeds gelijk)\"\"? Dan neem je de eerste toename voor alle stappen. De toenames groeien, dus 3, 6, 9, 12."
+   ],
+   "uh": "Welke toenames per stap horen bij de tabel?",
+   "ctx": "Een tabel geeft f(0) = 2, f(1) = 5, f(2) = 11, f(3) = 20 en f(4) = 32. Een leerling berekent de toenames per stap, bekijkt het toenamediagram en bepaalt de gemiddelde verandering over een interval. Daarna beschrijft hij het veranderingsgedrag."
+  },
+  {
+   "v": "Hoe verandert deze functie volgens het toenamediagram?",
+   "o": [
+    "\"stijgend en afnemend (de toenames worden kleiner)\"",
+    "\"stijgend en toenemend (de toenames worden groter)\"",
+    "\"dalend en toenemend (de waarde wordt kleiner)\"",
+    "\"stijgend met constante toename (steeds gelijk)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"stijgend en afnemend (de toenames worden kleiner)\"\"? Dan draai je het om. De toenames worden groter, dus stijgend en toenemend (de toenames worden groter).",
+    "Klopt: de toenames 3, 6, 9, 12 zijn positief en groeien.",
+    "Koos je \"\"dalend en toenemend (de waarde wordt kleiner)\"\"? Dan lees je de toename als dalen. Alle toenames zijn positief, dus stijgend en toenemend (de toenames worden groter).",
+    "Koos je \"\"stijgend met constante toename (steeds gelijk)\"\"? Dan zie je geen verandering in de toename. De toenames groeien, dus stijgend en toenemend (de toenames worden groter)."
+   ],
+   "uh": "Hoe verandert deze functie volgens het toenamediagram?",
+   "ctx": "Een tabel geeft f(0) = 2, f(1) = 5, f(2) = 11, f(3) = 20 en f(4) = 32. Een leerling berekent de toenames per stap, bekijkt het toenamediagram en bepaalt de gemiddelde verandering over een interval. Daarna beschrijft hij het veranderingsgedrag."
+  },
+  {
+   "v": "Bereken de gemiddelde verandering van f op [0, 4].",
+   "o": [
+    "\"30 (de totale toename)\"",
+    "\"8 (32 : 4)\"",
+    "\"9 (de laatste toename)\"",
+    "\"7,5\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"30 (de totale toename)\"\"? Dan vergeet je te delen door 4. De verandering is per stap, dus 7,5. Het goede antwoord is 7,5.",
+    "Koos je \"\"8 (32 : 4)\"\"? Dan deel je alleen de eindwaarde. Neem eerst de toename 30, dus 7,5. Door de stappen goed na te lopen kom je uit op 7,5.",
+    "Koos je \"\"9 (de laatste toename)\"\"? Dan neem je de laatste toename. De gemiddelde verandering gebruikt het hele interval, dus 7,5.",
+    "Klopt: (32 − 2)/4 = 7,5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken de gemiddelde verandering van f op [0, 4].",
+   "ctx": "Een tabel geeft f(0) = 2, f(1) = 5, f(2) = 11, f(3) = 20 en f(4) = 32. Een leerling berekent de toenames per stap, bekijkt het toenamediagram en bepaalt de gemiddelde verandering over een interval. Daarna beschrijft hij het veranderingsgedrag."
+  },
+  {
+   "v": "Hoeveel °C verandert de temperatuur gemiddeld per minuut tussen 0 en 10 minuten?",
+   "o": [
+    "\"−3,4 °C\"",
+    "\"−34 °C (alleen het verschil)\"",
+    "\"3,4 °C (zonder min)\"",
+    "\"−6,8 °C (−34 : 5)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (56 − 90)/10 = −3,4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−34 °C (alleen het verschil)\"\"? Dan vergeet je te delen door 10 minuten. De verandering is per minuut, dus −3,4 °C.",
+    "Koos je \"\"3,4 °C (zonder min)\"\"? Dan laat je het teken weg. De temperatuur daalt, dus −3,4 °C. Door de stappen goed na te lopen kom je uit op −3,4 °C.",
+    "Koos je \"\"−6,8 °C (−34 : 5)\"\"? Dan deel je door 5 in plaats van 10. Het interval is 10 minuten, dus −3,4 °C. Controleer je stap: de juiste uitkomst is −3,4 °C."
+   ],
+   "uh": "Hoeveel °C verandert de temperatuur gemiddeld per minuut tussen 0 en 10 minuten?",
+   "ctx": "De temperatuur van een kop koffie is 90 °C na 0 minuten, 70 °C na 5 minuten, 56 °C na 10 minuten, 46 °C na 15 minuten en 39 °C na 20 minuten. Een leerling berekent de toenames per 5 minuten en de gemiddelde verandering op verschillende intervallen."
+  },
+  {
+   "v": "Welke beschrijving past bij de temperatuur van de koffie?",
+   "o": [
+    "\"dalend en steeds sneller\"",
+    "\"stijgend en steeds langzamer\"",
+    "\"dalend, maar steeds langzamer\"",
+    "\"constant dalend\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"dalend en steeds sneller\"\"? Dan denk je dat de toenames groter in absolute waarde worden. Ze worden kleiner, dus dalend, maar steeds langzamer.",
+    "Koos je \"\"stijgend en steeds langzamer\"\"? Dan lees je de min niet. De toenames zijn negatief, dus dalend, maar steeds langzamer.",
+    "Klopt: de toenames −20, −14, −10, −7 zijn negatief en komen dichter bij nul.",
+    "Koos je \"\"constant dalend\"\"? Dan zie je gelijke toenames. De toenames verschillen, dus dalend, maar steeds langzamer. Controleer je stap: de juiste uitkomst is dalend, maar steeds langzamer."
+   ],
+   "uh": "Welke beschrijving past bij de temperatuur van de koffie?",
+   "ctx": "De temperatuur van een kop koffie is 90 °C na 0 minuten, 70 °C na 5 minuten, 56 °C na 10 minuten, 46 °C na 15 minuten en 39 °C na 20 minuten. Een leerling berekent de toenames per 5 minuten en de gemiddelde verandering op verschillende intervallen."
+  },
+  {
+   "v": "Welke toenames per week horen bij de hoogte van de plant?",
+   "o": [
+    "\"12, 20, 25, 28 (de waarden)\"",
+    "\"12, 8, 5, 3\"",
+    "\"12, 8, 5 (te weinig stappen)\"",
+    "\"−12, −8, −5, −3 (met een min)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12, 20, 25, 28 (de waarden)\"\"? Dan neem je de waarden over. De toename is het verschil, dus 12, 8, 5, 3. Het goede antwoord is 12, 8, 5, 3.",
+    "Klopt: 12 − 0, 20 − 12, 25 − 20 en 28 − 25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12, 8, 5 (te weinig stappen)\"\"? Dan laat je de laatste week weg. Er zijn vier weken, dus 12, 8, 5, 3. Door de stappen goed na te lopen kom je uit op 12, 8, 5, 3.",
+    "Koos je \"\"−12, −8, −5, −3 (met een min)\"\"? Dan trek je in de verkeerde volgorde af. De plant groeit, dus 12, 8, 5, 3. Controleer je stap: de juiste uitkomst is 12, 8, 5, 3."
+   ],
+   "uh": "Welke toenames per week horen bij de hoogte van de plant?",
+   "ctx": "Een plant is 0 cm hoog bij week 0, 12 cm bij week 1, 20 cm bij week 2, 25 cm bij week 3 en 28 cm bij week 4. Een leerling berekent de toenames per week en de gemiddelde groei op verschillende intervallen. Hij zoekt ook de week met de grootste groei."
+  },
+  {
+   "v": "Wanneer groeit de plant het snelst?",
+   "o": [
+    "\"in de laatste week\"",
+    "\"van week 2 tot week 3\"",
+    "\"de groei is overal gelijk\"",
+    "\"in de eerste week\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"in de laatste week\"\"? Dan denk je dat de groei toeneemt. De toenames worden kleiner, dus in de eerste week. Het goede antwoord is in de eerste week.",
+    "Koos je \"\"van week 2 tot week 3\"\"? Dan kijk je naar een middelste toename. De eerste toename is 12, dus in de eerste week.",
+    "Koos je \"\"de groei is overal gelijk\"\"? Dan zie je geen verschil. De toenames zijn 12, 8, 5 en 3, dus in de eerste week. Controleer je stap: de juiste uitkomst is in de eerste week.",
+    "Klopt: de toename 12 cm is de grootste. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wanneer groeit de plant het snelst?",
+   "ctx": "Een plant is 0 cm hoog bij week 0, 12 cm bij week 1, 20 cm bij week 2, 25 cm bij week 3 en 28 cm bij week 4. Een leerling berekent de toenames per week en de gemiddelde groei op verschillende intervallen. Hij zoekt ook de week met de grootste groei."
+  },
+  {
+   "v": "Bereken de gemiddelde snelheid van de auto op [2, 4].",
+   "o": [
+    "\"10 m/s\"",
+    "\"20 m/s (alleen het verschil)\"",
+    "\"14 m/s (gemiddelde over [0, 4])\"",
+    "\"28 m/s (56 : 2)\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (56 − 36)/2 = 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"20 m/s (alleen het verschil)\"\"? Dan vergeet je te delen door 2 seconden. Snelheid is per seconde, dus 10 m/s. Het goede antwoord is 10 m/s.",
+    "Koos je \"\"14 m/s (gemiddelde over [0, 4])\"\"? Dan neem je een ander interval. Gebruik [2, 4], dus 10 m/s. Door de stappen goed na te lopen kom je uit op 10 m/s.",
+    "Koos je \"\"28 m/s (56 : 2)\"\"? Dan deel je alleen de eindafstand. Neem eerst de toename 20, dus 10 m/s. Controleer je stap: de juiste uitkomst is 10 m/s."
+   ],
+   "uh": "Bereken de gemiddelde snelheid van de auto op [2, 4].",
+   "ctx": "Een auto remt af. De afgelegde afstand is 0 m na 0 s, 20 m na 1 s, 36 m na 2 s, 48 m na 3 s en 56 m na 4 s. Een leerling berekent de toename per seconde en de gemiddelde snelheid over verschillende intervallen. Hij vergelijkt die met elkaar."
+  },
+  {
+   "v": "In welk jaar is de winst het hoogst volgens de tabel?",
+   "o": [
+    "\"jaar 0\"",
+    "\"jaar 5\"",
+    "\"jaar 2\"",
+    "\"jaar 3\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"jaar 0\"\"? Dan kijk je naar het begin. De winst is dan 10, dus jaar 2. Het goede antwoord is jaar 2.",
+    "Koos je \"\"jaar 5\"\"? Dan kijk je naar het eind. De winst is dan 5, dus jaar 2. Door de stappen goed na te lopen kom je uit op jaar 2.",
+    "Klopt: de winst is dan 16 duizend euro. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"jaar 3\"\"? Dan neem je het jaar na het hoogste punt. De winst is dan 15, dus jaar 2. Controleer je stap: de juiste uitkomst is jaar 2."
+   ],
+   "uh": "In welk jaar is de winst het hoogst volgens de tabel?",
+   "ctx": "Een bedrijf noteert de winst in duizend euro aan het eind van jaar 0 tot en met jaar 5: 10, 14, 16, 15, 11 en 5. Een leerling berekent de toenames per jaar, zoekt het jaar met de hoogste winst en bepaalt de gemiddelde verandering op verschillende intervallen."
+  },
+  {
+   "v": "Welke toenames horen bij de winst per jaar?",
+   "o": [
+    "\"10, 14, 16, 15, 11, 5 (de waarden)\"",
+    "\"+4, +2, −1, −4, −6\"",
+    "\"+4, +2, +1, +4, +6 (zonder tekens)\"",
+    "\"+4, +2, −1, −4 (te weinig stappen)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10, 14, 16, 15, 11, 5 (de waarden)\"\"? Dan neem je de waarden over. De toename is het verschil, dus +4, +2, −1, −4, −6.",
+    "Klopt: 14 − 10, 16 − 14, 15 − 16, 11 − 15 en 5 − 11. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"+4, +2, +1, +4, +6 (zonder tekens)\"\"? Dan laat je de min weg. Daling is een negatieve toename, dus +4, +2, −1, −4, −6.",
+    "Koos je \"\"+4, +2, −1, −4 (te weinig stappen)\"\"? Dan laat je de laatste stap weg. Er zijn vijf stappen, dus +4, +2, −1, −4, −6."
+   ],
+   "uh": "Welke toenames horen bij de winst per jaar?",
+   "ctx": "Een bedrijf noteert de winst in duizend euro aan het eind van jaar 0 tot en met jaar 5: 10, 14, 16, 15, 11 en 5. Een leerling berekent de toenames per jaar, zoekt het jaar met de hoogste winst en bepaalt de gemiddelde verandering op verschillende intervallen."
+  },
+  {
+   "v": "Op welk interval daalt de temperatuur gemiddeld het snelst: [0, 10] of [10, 20]?",
+   "o": [
+    "\"[10, 20] met −1,7 tegenover −3,4 °C per minuut\"",
+    "\"op beide hetzelfde, want 10 minuten is 10 minuten\"",
+    "\"[0, 10] met −34 tegenover −17 °C\"",
+    "\"[0, 10] met −3,4 tegenover −1,7 °C per minuut\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"[10, 20] met −1,7 tegenover −3,4 °C per minuut\"\"? Dan draai je de intervallen om. De koffie koelt eerst het snelst af, dus [0, 10] met −3,4 tegenover −1,7 °C per minuut.",
+    "Koos je \"\"op beide hetzelfde, want 10 minuten is 10 minuten\"\"? Dan kijk je alleen naar de lengte. Vergelijk de toenames, dus [0, 10] met −3,4 tegenover −1,7 °C per minuut.",
+    "Koos je \"\"[0, 10] met −34 tegenover −17 °C\"\"? Dan vergeet je te delen door 10. Gebruik de gemiddelde verandering, dus [0, 10] met −3,4 tegenover −1,7 °C per minuut.",
+    "Klopt: (56 − 90)/10 = −3,4 en (39 − 56)/10 = −1,7. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Op welk interval daalt de temperatuur gemiddeld het snelst: [0, 10] of [10, 20]?",
+   "ctx": "De temperatuur van een kop koffie is 90 °C na 0 minuten, 70 °C na 5 minuten, 56 °C na 10 minuten, 46 °C na 15 minuten en 39 °C na 20 minuten. Een leerling berekent de toenames per 5 minuten en de gemiddelde verandering op verschillende intervallen."
+  },
+  {
+   "v": "Hoeveel cm groeit de plant gemiddeld per week van week 2 tot week 4?",
+   "o": [
+    "\"4 cm\"",
+    "\"8 cm (alleen het verschil)\"",
+    "\"7 cm (gemiddelde over [0, 4])\"",
+    "\"5 cm (25 − 20)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (28 − 20)/2 = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8 cm (alleen het verschil)\"\"? Dan vergeet je te delen door 2 weken. De groei is per week, dus 4 cm. Het goede antwoord is 4 cm.",
+    "Koos je \"\"7 cm (gemiddelde over [0, 4])\"\"? Dan neem je een ander interval. Gebruik [2, 4], dus 4 cm. Door de stappen goed na te lopen kom je uit op 4 cm.",
+    "Koos je \"\"5 cm (25 − 20)\"\"? Dan neem je alleen de toename van week 2 tot 3. Gebruik het hele interval, dus 4 cm. Controleer je stap: de juiste uitkomst is 4 cm."
+   ],
+   "uh": "Hoeveel cm groeit de plant gemiddeld per week van week 2 tot week 4?",
+   "ctx": "Een plant is 0 cm hoog bij week 0, 12 cm bij week 1, 20 cm bij week 2, 25 cm bij week 3 en 28 cm bij week 4. Een leerling berekent de toenames per week en de gemiddelde groei op verschillende intervallen. Hij zoekt ook de week met de grootste groei."
+  },
+  {
+   "v": "Bereken de toenames van f(x) = x² − 4x voor x = 0 tot 4.",
+   "o": [
+    "\"0, −3, −4, −3, 0 (de waarden)\"",
+    "\"−3, −1, −1, −3 (verkeerd teken)\"",
+    "\"−3, −1, 1, 3\"",
+    "\"3, 1, −1, −3 (omgekeerd)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0, −3, −4, −3, 0 (de waarden)\"\"? Dan neem je de functiewaarden over. De toename is het verschil, dus −3, −1, 1, 3.",
+    "Koos je \"\"−3, −1, −1, −3 (verkeerd teken)\"\"? Dan maak je een tekenfout bij de tweede helft. Van −4 naar −3 is +1, dus −3, −1, 1, 3.",
+    "Klopt: f is 0, −3, −4, −3, 0, dus de toenames zijn −3, −1, 1 en 3.",
+    "Koos je \"\"3, 1, −1, −3 (omgekeerd)\"\"? Dan draai je de volgorde om. De toenames beginnen bij −3, dus −3, −1, 1, 3. Controleer je stap: de juiste uitkomst is −3, −1, 1, 3."
+   ],
+   "uh": "Bereken de toenames van f(x) = x² − 4x voor x = 0 tot 4.",
+   "ctx": "De functie f(x) = x² − 4x krijgt de waarden bij x = 0, 1, 2, 3 en 4. Een leerling berekent de functiewaarden, de toenames met stapgrootte 1 en de gemiddelde verandering op [1, 4]. Daarna beschrijft hij het veranderingsgedrag van de functie."
+  },
+  {
+   "v": "Hoe verandert f(x) = x² − 4x tussen x = 0 en x = 4?",
+   "o": [
+    "\"steeds stijgend\"",
+    "\"eerst dalend, daarna stijgend; de toenames nemen steeds toe\"",
+    "\"steeds dalend\"",
+    "\"eerst stijgend, daarna dalend\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"steeds stijgend\"\"? Dan zie je de positieve toenames 1 en 3 en vergeet je de eerste twee. Die zijn negatief, dus eerst dalend, daarna stijgend; de toenames nemen steeds toe.",
+    "Klopt: de toenames −3, −1, 1, 3 groeien en wisselen van teken.",
+    "Koos je \"\"steeds dalend\"\"? Dan kijk je alleen naar de waarden −3 en −4. Daarna wordt de waarde weer groter, dus eerst dalend, daarna stijgend; de toenames nemen steeds toe.",
+    "Koos je \"\"eerst stijgend, daarna dalend\"\"? Dan draai je het om. Het laagste punt zit bij x = 2, dus eerst dalend, daarna stijgend; de toenames nemen steeds toe."
+   ],
+   "uh": "Hoe verandert f(x) = x² − 4x tussen x = 0 en x = 4?",
+   "ctx": "De functie f(x) = x² − 4x krijgt de waarden bij x = 0, 1, 2, 3 en 4. Een leerling berekent de functiewaarden, de toenames met stapgrootte 1 en de gemiddelde verandering op [1, 4]. Daarna beschrijft hij het veranderingsgedrag van de functie."
+  },
+  {
+   "v": "Wat is Δf/Δx op het interval [1, 4] voor deze functie?",
+   "o": [
+    "\"3 (alleen de toename)\"",
+    "\"−1 (verkeerde volgorde)\"",
+    "\"0 (alleen f(4))\"",
+    "\"1\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3 (alleen de toename)\"\"? Dan vergeet je te delen door 3. Δx = 4 − 1, dus 1. Het goede antwoord is 1.",
+    "Koos je \"\"−1 (verkeerde volgorde)\"\"? Dan trek je in de verkeerde volgorde af. Neem f(4) − f(1), dus 1. Door de stappen goed na te lopen kom je uit op 1.",
+    "Koos je \"\"0 (alleen f(4))\"\"? Dan neem je alleen de eindwaarde. Gebruik het verschil van de waarden, dus 1. Controleer je stap: de juiste uitkomst is 1.",
+    "Klopt: (f(4) − f(1))/(4 − 1) = (0 + 3)/3 = 1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat is Δf/Δx op het interval [1, 4] voor deze functie?",
+   "ctx": "De functie f(x) = x² − 4x krijgt de waarden bij x = 0, 1, 2, 3 en 4. Een leerling berekent de functiewaarden, de toenames met stapgrootte 1 en de gemiddelde verandering op [1, 4]. Daarna beschrijft hij het veranderingsgedrag van de functie."
+  },
+  {
+   "v": "Waarom is de gemiddelde snelheid op [0, 4] groter dan op [2, 4]?",
+   "o": [
+    "\"omdat de auto afremt: de toenames worden kleiner\"",
+    "\"omdat het interval langer is\"",
+    "\"omdat de auto versnelt\"",
+    "\"omdat de afstand groter is\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de snelheid is 14 m/s op [0, 4] en 10 m/s op [2, 4].",
+    "Koos je \"\"omdat het interval langer is\"\"? Dan koppel je de snelheid aan de lengte van het interval. De snelheid is per seconde, dus omdat de auto afremt: de toenames worden kleiner.",
+    "Koos je \"\"omdat de auto versnelt\"\"? Dan draai je het om. De toenames 20, 16, 12, 8 worden kleiner, dus omdat de auto afremt: de toenames worden kleiner.",
+    "Koos je \"\"omdat de afstand groter is\"\"? Dan kijk je naar de afstand. De snelheid is per seconde, dus omdat de auto afremt: de toenames worden kleiner."
+   ],
+   "uh": "Waarom is de gemiddelde snelheid op [0, 4] groter dan op [2, 4]?",
+   "ctx": "Een auto remt af. De afgelegde afstand is 0 m na 0 s, 20 m na 1 s, 36 m na 2 s, 48 m na 3 s en 56 m na 4 s. Een leerling berekent de toename per seconde en de gemiddelde snelheid over verschillende intervallen. Hij vergelijkt die met elkaar."
+  },
+  {
+   "v": "Hoeveel meter legt de auto af in de laatste seconde?",
+   "o": [
+    "\"56 m (de totale afstand)\"",
+    "\"12 m (de derde seconde)\"",
+    "\"8 m\"",
+    "\"14 m (de gemiddelde snelheid)\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"56 m (de totale afstand)\"\"? Dan neem je de totale afstand. Neem de toename van de laatste seconde, dus 8 m. Het goede antwoord is 8 m.",
+    "Koos je \"\"12 m (de derde seconde)\"\"? Dan neem je de derde seconde. De laatste is de vierde, dus 8 m. Door de stappen goed na te lopen kom je uit op 8 m.",
+    "Klopt: 56 − 48 = 8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"14 m (de gemiddelde snelheid)\"\"? Dan neem je de gemiddelde snelheid. Neem de laatste toename, dus 8 m. Controleer je stap: de juiste uitkomst is 8 m."
+   ],
+   "uh": "Hoeveel meter legt de auto af in de laatste seconde?",
+   "ctx": "Een auto remt af. De afgelegde afstand is 0 m na 0 s, 20 m na 1 s, 36 m na 2 s, 48 m na 3 s en 56 m na 4 s. Een leerling berekent de toename per seconde en de gemiddelde snelheid over verschillende intervallen. Hij vergelijkt die met elkaar."
+  },
+  {
+   "v": "Wat zie je in het toenamediagram van de winst van jaar 2 tot jaar 3?",
+   "o": [
+    "\"de toename is 15 (de winst)\"",
+    "\"de toename is negatief: de winst daalt\"",
+    "\"de toename is positief: de winst stijgt\"",
+    "\"de toename is 0: de winst is gelijk\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de toename is 15 (de winst)\"\"? Dan neem je de waarde in jaar 3. De toename is het verschil, dus de toename is negatief: de winst daalt.",
+    "Klopt: 15 − 16 = −1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de toename is positief: de winst stijgt\"\"? Dan zie je de winst als stijgend. De waarde gaat van 16 naar 15, dus de toename is negatief: de winst daalt.",
+    "Koos je \"\"de toename is 0: de winst is gelijk\"\"? Dan denk je dat het hoogste punt geen verandering heeft. Er is 1 daling, dus de toename is negatief: de winst daalt."
+   ],
+   "uh": "Wat zie je in het toenamediagram van de winst van jaar 2 tot jaar 3?",
+   "ctx": "Een bedrijf noteert de winst in duizend euro aan het eind van jaar 0 tot en met jaar 5: 10, 14, 16, 15, 11 en 5. Een leerling berekent de toenames per jaar, zoekt het jaar met de hoogste winst en bepaalt de gemiddelde verandering op verschillende intervallen."
+  },
+  {
+   "v": "Hoe groot is de gemiddelde verandering van de winst tussen jaar 1 en jaar 3 in duizend euro per jaar?",
+   "o": [
+    "\"1 (15 − 14)\"",
+    "\"−1 (op [0, 5])\"",
+    "\"2 (de toename 4 − 2)\"",
+    "\"0,5\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1 (15 − 14)\"\"? Dan vergeet je te delen door 2 jaar. De verandering is per jaar, dus 0,5. Het goede antwoord is 0,5.",
+    "Koos je \"\"−1 (op [0, 5])\"\"? Dan neem je een ander interval. Gebruik [1, 3], dus 0,5. Door de stappen goed na te lopen kom je uit op 0,5.",
+    "Koos je \"\"2 (de toename 4 − 2)\"\"? Dan neem je twee toenames. Gebruik de waarden van jaar 1 en jaar 3, dus 0,5. Controleer je stap: de juiste uitkomst is 0,5.",
+    "Klopt: (15 − 14)/2 = 0,5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe groot is de gemiddelde verandering van de winst tussen jaar 1 en jaar 3 in duizend euro per jaar?",
+   "ctx": "Een bedrijf noteert de winst in duizend euro aan het eind van jaar 0 tot en met jaar 5: 10, 14, 16, 15, 11 en 5. Een leerling berekent de toenames per jaar, zoekt het jaar met de hoogste winst en bepaalt de gemiddelde verandering op verschillende intervallen."
+  },
+  {
+   "v": "Hoe verandert de winst na jaar 2?",
+   "o": [
+    "\"dalend en steeds sneller dalend\"",
+    "\"dalend en steeds langzamer dalend\"",
+    "\"stijgend en steeds sneller\"",
+    "\"constant dalend\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bereken de toename als eindwaarde min beginwaarde en deel door de stapgrootte voor de gemiddelde verandering. Het teken van de toename zegt of de functie stijgt of daalt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de toenames −1, −4 en −6 zijn negatief en worden kleiner.",
+    "Koos je \"\"dalend en steeds langzamer dalend\"\"? Dan draai je het om. De dalingen worden groter, dus dalend en steeds sneller dalend.",
+    "Koos je \"\"stijgend en steeds sneller\"\"? Dan lees je de min niet. De toenames zijn negatief, dus dalend en steeds sneller dalend.",
+    "Koos je \"\"constant dalend\"\"? Dan zie je gelijke toenames. De toenames verschillen, dus dalend en steeds sneller dalend. Controleer je stap: de juiste uitkomst is dalend en steeds sneller dalend."
+   ],
+   "uh": "Hoe verandert de winst na jaar 2?",
+   "ctx": "Een bedrijf noteert de winst in duizend euro aan het eind van jaar 0 tot en met jaar 5: 10, 14, 16, 15, 11 en 5. Een leerling berekent de toenames per jaar, zoekt het jaar met de hoogste winst en bepaalt de gemiddelde verandering op verschillende intervallen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een functie f heeft f(0) = 4, f(1) = 7, f(2) = 12 en f(3) = 19. Een leerling berekent de toenames per stap, beschrijft het veranderingsgedrag en berekent de gemiddelde verandering op het interval [0, 3].",
+   "v": "Bereken de toenames, beschrijf het gedrag en bereken de gemiddelde verandering op [0, 3].",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Toenames 3, 5, 7 (1p). Stijgend en toenemend, want de toenames worden groter (1p). (19 − 4)/3 = 5 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een kopje thee is 80 °C na 0 minuten, 64 °C na 2 minuten, 52 °C na 4 minuten en 44 °C na 6 minuten. Een leerling berekent de toenames per 2 minuten en de gemiddelde verandering op het interval [0, 6]. Hij beschrijft ook hoe de temperatuur verandert.",
+   "v": "Bereken de toenames, de gemiddelde verandering op [0, 6] en beschrijf de daling.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Toenames −16, −12, −8 (1p). Dalend en steeds langzamer dalend (1p). (44 − 80)/6 = −6 °C per minuut (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bedrijf noteert de winst in duizend euro in jaar 0 tot en met jaar 4: 5, 11, 15, 17 en 17. Een leerling berekent de toenames, geeft de gemiddelde verandering op het interval [0, 4] en beschrijft hoe de winst groeit.",
+   "v": "Bereken de toenames, de gemiddelde verandering op [0, 4] en beschrijf de groei.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Toenames 6, 4, 2, 0 (1p). Stijgend en afnemend; de winst stopt met stijgen (1p). (17 − 5)/4 = 3 duizend euro per jaar (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling berekent de gemiddelde verandering van f(x) = x² − 2x op het interval [1, 3] en op het interval [0, 1] en vergelijkt beide uitkomsten. Hij schrijft de functiewaarden op en legt uit wat het teken van de uitkomst betekent.",
+   "v": "Bereken de gemiddelde verandering op [1, 3] en op [0, 1] en vergelijk.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "f(1) = −1 en f(3) = 3 (1p). Op [1, 3]: (3 + 1)/2 = 2 (1p). Op [0, 1]: (−1 − 0)/1 = −1, dus de functie daalt eerst en stijgt daarna (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een auto legt na 0, 1, 2 en 3 seconden 0 m, 5 m, 20 m en 45 m af. Een leerling berekent de toenames per seconde en de gemiddelde snelheid op het interval [0, 3] en op [2, 3]. Daarna beschrijft hij hoe de snelheid verandert.",
+   "v": "Bereken de toenames en de gemiddelde snelheid op [0, 3] en op [2, 3].",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Toenames 5, 15, 25 (1p). Op [0, 3]: 45/3 = 15 m/s (1p). Op [2, 3]: 25/1 = 25 m/s, dus de auto versnelt (1p)."
+  }
+ ]
+}
