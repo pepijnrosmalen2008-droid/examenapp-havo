@@ -1,0 +1,682 @@
+{
+ "id": "D8",
+ "lo": "wa.D.8",
+ "gs": 2,
+ "naam": "Optimaliseren en de betekenis van de afgeleide in een probleemsituatie",
+ "beschrijving": "Je vertaalt een probleem naar een formule met één variabele, vindt het maximum of minimum met de afgeleide en het tekenschema, let op het domein en legt de afgeleide uit als snelheid of verandering per eenheid.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Probleem vertalen naar een formule",
+  "Afgeleide gelijk aan nul en tekenschema",
+  "Domein controleren",
+  "Betekenis van de afgeleide",
+  "Antwoord met eenheid"
+ ],
+ "sam": "Bij optimaliseren kies je één variabele, stel je een formule op, bepaal je de afgeleide en los je f′(x) = 0 op. Met een tekenschema van f′ zie je of het een maximum of minimum is. Controleer of de oplossing binnen het domein ligt en bereken de maximale waarde met de oorspronkelijke formule. De afgeleide is de verandering per eenheid: bij een afstand is het de snelheid in m/s, bij een hoeveelheid medicijn de groeisnelheid in mg per uur. Schrijf het antwoord als een zin met de x-waarde, de waarde en de eenheid.",
+ "begrippen": [
+  {
+   "t": "Optimaliseren",
+   "d": "Het zoeken naar de grootste of kleinste waarde van een grootheid in een situatie."
+  },
+  {
+   "t": "Variabele kiezen",
+   "d": "Eén onbekende x kiezen waarmee je de hele situatie in een formule uitdrukt."
+  },
+  {
+   "t": "Formule met één variabele",
+   "d": "Een formule zoals A(x) = x(20 − x) waarin alles van x afhangt."
+  },
+  {
+   "t": "Domein",
+   "d": "De waarden van x die in de situatie mogelijk zijn, zoals 0 < x < 12."
+  },
+  {
+   "t": "Afgeleide gelijk aan nul",
+   "d": "De voorwaarde f′(x) = 0 voor een mogelijk maximum of minimum."
+  },
+  {
+   "t": "Tekenschema",
+   "d": "Een schema met de tekens van f′ om te zien of het een maximum of minimum is."
+  },
+  {
+   "t": "Maximale waarde",
+   "d": "De grootste functiewaarde, bijvoorbeeld de grootste oppervlakte of winst."
+  },
+  {
+   "t": "Winstfunctie",
+   "d": "De opbrengst min de kosten als functie van het aantal eenheden q."
+  },
+  {
+   "t": "Snelheid",
+   "d": "De afgeleide van de afstand naar de tijd: v(t) = s′(t)."
+  },
+  {
+   "t": "Groeisnelheid",
+   "d": "De afgeleide van een hoeveelheid naar de tijd, bijvoorbeeld mg per uur."
+  },
+  {
+   "t": "Eenheid van de afgeleide",
+   "d": "De eenheid van de uitkomst gedeeld door de eenheid van de variabele."
+  },
+  {
+   "t": "Antwoordzin",
+   "d": "Een zin met de x-waarde, de waarde en de eenheid die bij de vraag past."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een rechthoek heeft omtrek 40 m en breedte x. Welke lengte hoort daarbij?",
+   "o": [
+    "\"40 − x\"",
+    "\"20 − x\"",
+    "\"20 + x\"",
+    "\"40 − 2x\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 − x\"\"? Dan trek je de breedte van de hele omtrek af. Eerst delen door 2, dus 20 − x. Het goede antwoord is 20 − x.",
+    "Klopt: de halve omtrek is 20 en daar gaat de breedte af.",
+    "Koos je \"\"20 + x\"\"? Dan tel je de breedte op. De lengte wordt kleiner als x groter wordt, dus 20 − x. Door de stappen goed na te lopen kom je uit op 20 − x.",
+    "Koos je \"\"40 − 2x\"\"? Dan trek je de breedte twee keer af van de hele omtrek. De halve omtrek is 20, dus 20 − x. Controleer je stap: de juiste uitkomst is 20 − x."
+   ],
+   "uh": "Een rechthoek heeft omtrek 40 m en breedte x. Welke lengte hoort daarbij?"
+  },
+  {
+   "v": "Hoe vind je het maximum van een functie met de afgeleide?",
+   "o": [
+    "\"los f(x) = 0 op en kijk waar de grafiek de x-as snijdt\"",
+    "\"kies de grootste x uit het hele domein van de functie\"",
+    "\"bereken f′ voor x = 0 en lees het teken af\"",
+    "\"los f′(x) = 0 op en controleer met een tekenschema\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"los f(x) = 0 op en kijk waar de grafiek de x-as snijdt\"\"? Dan zoek je de nulpunten van f. Een top hoort bij f′(x) = 0, dus los f′(x) = 0 op en controleer met een tekenschema.",
+    "Koos je \"\"kies de grootste x uit het hele domein van de functie\"\"? Dan denk je dat het maximum bij de grootste x ligt. Dat hoeft niet, dus los f′(x) = 0 op en controleer met een tekenschema.",
+    "Koos je \"\"bereken f′ voor x = 0 en lees het teken af\"\"? Dan vul je alleen x = 0 in. De top ligt bij f′(x) = 0, dus los f′(x) = 0 op en controleer met een tekenschema.",
+    "Klopt: in een top is de helling 0 en het teken wisselt. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe vind je het maximum van een functie met de afgeleide?"
+  },
+  {
+   "v": "Wat betekent een positieve afgeleide van de hoeveelheid medicijn M?",
+   "o": [
+    "\"de hoeveelheid neemt toe\"",
+    "\"de hoeveelheid is positief\"",
+    "\"de hoeveelheid is maximaal\"",
+    "\"de hoeveelheid daalt\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een positieve helling is stijgen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de hoeveelheid is positief\"\"? Dan verwar je de afgeleide met de hoeveelheid zelf. M′ is een verandering, dus de hoeveelheid neemt toe.",
+    "Koos je \"\"de hoeveelheid is maximaal\"\"? Dan denk je aan een top. Daar is de afgeleide 0, dus de hoeveelheid neemt toe. Door de stappen goed na te lopen kom je uit op de hoeveelheid neemt toe.",
+    "Koos je \"\"de hoeveelheid daalt\"\"? Dan draai je het om. Een positieve afgeleide is stijgen, dus de hoeveelheid neemt toe."
+   ],
+   "uh": "Wat betekent een positieve afgeleide van de hoeveelheid medicijn M?"
+  },
+  {
+   "v": "Welke eenheid heeft de afgeleide van de afstand s in meter naar de tijd t in seconden?",
+   "o": [
+    "\"m\"",
+    "\"s/m\"",
+    "\"m/s\"",
+    "\"m·s\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"m\"\"? Dan neem je de eenheid van s. De afgeleide is een verandering per seconde, dus m/s. Het goede antwoord is m/s.",
+    "Koos je \"\"s/m\"\"? Dan draai je de eenheden om. De afstand staat boven, dus m/s. Door de stappen goed na te lopen kom je uit op m/s.",
+    "Klopt: meter per seconde, de snelheid. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"m·s\"\"? Dan vermenigvuldig je de eenheden. De afgeleide is een quotiënt, dus m/s. Controleer je stap: de juiste uitkomst is m/s."
+   ],
+   "uh": "Welke eenheid heeft de afgeleide van de afstand s in meter naar de tijd t in seconden?"
+  },
+  {
+   "v": "Waarom controleer je bij optimaliseren het domein van de variabele?",
+   "o": [
+    "\"omdat de afgeleide buiten het domein altijd gelijk is aan 0 en dus niet telt\"",
+    "\"omdat een oplossing buiten het domein niet bij de situatie past\"",
+    "\"omdat het maximum altijd op de rand van het domein ligt en nooit binnenin\"",
+    "\"omdat het domein bepaalt welke formule je mag gebruiken voor de afgeleide\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat de afgeleide buiten het domein altijd gelijk is aan 0 en dus niet telt\"\"? Dan denk je dat het domein de waarde van de afgeleide vastlegt. Het domein volgt uit de situatie, dus omdat een oplossing buiten het domein niet bij de situatie past.",
+    "Klopt: een lengte kan niet negatief zijn. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat het maximum altijd op de rand van het domein ligt en nooit binnenin\"\"? Dan ga je uit van een maximum op de rand. Bij een bergparabool ligt het maximum binnen het domein, dus omdat een oplossing buiten het domein niet bij de situatie past.",
+    "Koos je \"\"omdat het domein bepaalt welke formule je mag gebruiken voor de afgeleide\"\"? Dan verwar je domein en formule. Het domein zegt alleen welke x-waarden mogen, dus omdat een oplossing buiten het domein niet bij de situatie past."
+   ],
+   "uh": "Waarom controleer je bij optimaliseren het domein van de variabele?"
+  },
+  {
+   "v": "Een maximum van 100 m² hoort bij x = 10 m. Welke gegevens noem je in het antwoord?",
+   "o": [
+    "\"alleen de maximale waarde 100 m² zonder de x-waarde\"",
+    "\"alleen de breedte 10 m zonder de maximale oppervlakte\"",
+    "\"de afgeleide A′(x) = 20 − 2x en het domein van x\"",
+    "\"de x-waarde 10 m en de maximale waarde 100 m²\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen de maximale waarde 100 m² zonder de x-waarde\"\"? Dan vergeet je te zeggen waar het maximum zit. De vraag wil ook de x-waarde, dus de x-waarde 10 m en de maximale waarde 100 m².",
+    "Koos je \"\"alleen de breedte 10 m zonder de maximale oppervlakte\"\"? Dan geef je alleen de plek en niet de grootte. Een antwoord noemt ook de waarde met eenheid, dus de x-waarde 10 m en de maximale waarde 100 m².",
+    "Koos je \"\"de afgeleide A′(x) = 20 − 2x en het domein van x\"\"? Dan schrijf je tussenstappen op in plaats van het antwoord. Het antwoord is de x-waarde met de waarde, dus de x-waarde 10 m en de maximale waarde 100 m².",
+    "Klopt: zeg waar het maximum zit en hoe groot het is. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een maximum van 100 m² hoort bij x = 10 m. Welke gegevens noem je in het antwoord?"
+  },
+  {
+   "v": "Een tekenschema van A′ gaat van plus naar min bij x = 10. Wat is dat voor A?",
+   "o": [
+    "\"een maximum\"",
+    "\"een minimum\"",
+    "\"geen extreme waarde\"",
+    "\"een nulpunt\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: A stijgt eerst en daalt daarna. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"een minimum\"\"? Dan draai je het om. Van plus naar min is een maximum, dus een maximum. Het goede antwoord is een maximum.",
+    "Koos je \"\"geen extreme waarde\"\"? Dan denk je dat een tekenwisseling niets zegt. Het geeft een top, dus een maximum. Door de stappen goed na te lopen kom je uit op een maximum.",
+    "Koos je \"\"een nulpunt\"\"? Dan verwar je A′ met A. Het teken van A′ zegt iets over stijgen en dalen, dus een maximum. Controleer je stap: de juiste uitkomst is een maximum."
+   ],
+   "uh": "Een tekenschema van A′ gaat van plus naar min bij x = 10. Wat is dat voor A?"
+  },
+  {
+   "v": "Welke formule geeft de oppervlakte A(x) van de wei?",
+   "o": [
+    "\"A(x) = x(40 − x)\"",
+    "\"A(x) = 20 − x²\"",
+    "\"A(x) = x(20 − x) = 20x − x²\"",
+    "\"A(x) = 2x + 2(20 − x) = 40\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A(x) = x(40 − x)\"\"? Dan gebruik je de hele omtrek voor de lengte. De lengte is 20 − x, dus A(x) = x(20 − x) = 20x − x².",
+    "Koos je \"\"A(x) = 20 − x²\"\"? Dan vergeet je de x als factor. De oppervlakte is breedte keer lengte, dus A(x) = x(20 − x) = 20x − x².",
+    "Klopt: breedte x en lengte 20 − x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"A(x) = 2x + 2(20 − x) = 40\"\"? Dan bereken je de omtrek. Je zoekt de oppervlakte, dus A(x) = x(20 − x) = 20x − x²."
+   ],
+   "uh": "Welke formule geeft de oppervlakte A(x) van de wei?",
+   "ctx": "Een boer zet een rechthoekige wei af met 40 m hekwerk rondom. Hij noemt de breedte x meter. Een leerling stelt de formule voor de oppervlakte A(x) op, bepaalt A′(x), lost A′(x) = 0 op en berekent de maximale oppervlakte."
+  },
+  {
+   "v": "Bepaal A′(x).",
+   "o": [
+    "\"20 − x\"",
+    "\"20 − 2x\"",
+    "\"20x − 2x\"",
+    "\"−2x\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 − x\"\"? Dan verlaag je x² niet met de factor 2. De afgeleide van x² is 2x, dus 20 − 2x. Het goede antwoord is 20 − 2x.",
+    "Klopt: 20 − 2x. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"20x − 2x\"\"? Dan laat je de x van de eerste term staan. De afgeleide van 20x is 20, dus 20 − 2x. Door de stappen goed na te lopen kom je uit op 20 − 2x.",
+    "Koos je \"\"−2x\"\"? Dan laat je de constante term 20 weg. De afgeleide van 20x is 20, dus 20 − 2x. Controleer je stap: de juiste uitkomst is 20 − 2x."
+   ],
+   "uh": "Bepaal A′(x).",
+   "ctx": "Een boer zet een rechthoekige wei af met 40 m hekwerk rondom. Hij noemt de breedte x meter. Een leerling stelt de formule voor de oppervlakte A(x) op, bepaalt A′(x), lost A′(x) = 0 op en berekent de maximale oppervlakte."
+  },
+  {
+   "v": "Voor welke x is de oppervlakte maximaal?",
+   "o": [
+    "\"20\"",
+    "\"100 (de maximale oppervlakte)\"",
+    "\"5 (de helft van 10)\"",
+    "\"10\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20\"\"? Dan neem je de halve omtrek. Los 20 − 2x = 0 op, dus 10. Het goede antwoord is 10.",
+    "Koos je \"\"100 (de maximale oppervlakte)\"\"? Dan noem je de maximale oppervlakte. Je zoekt de breedte, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+    "Koos je \"\"5 (de helft van 10)\"\"? Dan neem je de helft van de oplossing. Los 20 − 2x = 0 op, dus 10. Controleer je stap: de juiste uitkomst is 10.",
+    "Klopt: 20 − 2x = 0 geeft x = 10. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Voor welke x is de oppervlakte maximaal?",
+   "ctx": "Een boer zet een rechthoekige wei af met 40 m hekwerk rondom. Hij noemt de breedte x meter. Een leerling stelt de formule voor de oppervlakte A(x) op, bepaalt A′(x), lost A′(x) = 0 op en berekent de maximale oppervlakte."
+  },
+  {
+   "v": "Welke formule geeft het volume V(x) van de doos?",
+   "o": [
+    "\"V(x) = x(12 − 2x)²\"",
+    "\"V(x) = x(12 − x)²\"",
+    "\"V(x) = x(12 − 2x)\"",
+    "\"V(x) = (12 − 2x)²\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: hoogte x en een grondvlak van (12 − 2x) bij (12 − 2x).",
+    "Koos je \"\"V(x) = x(12 − x)²\"\"? Dan trek je maar één keer x af. Aan elke kant wordt x geknipt, dus 2x, dus V(x) = x(12 − 2x)².",
+    "Koos je \"\"V(x) = x(12 − 2x)\"\"? Dan vergeet je het kwadraat. Het grondvlak is een vierkant, dus V(x) = x(12 − 2x)². Door de stappen goed na te lopen kom je uit op V(x) = x(12 − 2x)².",
+    "Koos je \"\"V(x) = (12 − 2x)²\"\"? Dan vergeet je de hoogte. Het volume is grondvlak keer hoogte, dus V(x) = x(12 − 2x)². Controleer je stap: de juiste uitkomst is V(x) = x(12 − 2x)²."
+   ],
+   "uh": "Welke formule geeft het volume V(x) van de doos?",
+   "ctx": "Uit een vierkant stuk karton van 12 cm bij 12 cm worden in de hoeken vierkantjes met zijde x cm geknipt. Daarna wordt een doos zonder deksel gevouwen. Het volume is V(x) = x(12 − 2x)² voor 0 < x < 6. Een leerling zoekt het grootste volume."
+  },
+  {
+   "v": "Welke x-waarden volgen uit V′(x) = 0 voor V(x) = 4x³ − 48x² + 144x?",
+   "o": [
+    "\"x = 4\"",
+    "\"x = 6 of x = 12\"",
+    "\"x = 2 of x = 6\"",
+    "\"x = 3 of x = 4\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 4\"\"? Dan neem je het midden van 2 en 6. Beide nulpunten tellen mee, dus x = 2 of x = 6. Het goede antwoord is x = 2 of x = 6.",
+    "Koos je \"\"x = 6 of x = 12\"\"? Dan maak je een rekenfout bij de factoren. De nulpunten zijn 2 en 6, dus x = 2 of x = 6. Door de stappen goed na te lopen kom je uit op x = 2 of x = 6.",
+    "Klopt: V′(x) = 12(x − 2)(x − 6). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 3 of x = 4\"\"? Dan kies je willekeurige waarden. Los 12x² − 96x + 144 = 0 op, dus x = 2 of x = 6. Controleer je stap: de juiste uitkomst is x = 2 of x = 6."
+   ],
+   "uh": "Welke x-waarden volgen uit V′(x) = 0 voor V(x) = 4x³ − 48x² + 144x?",
+   "ctx": "Uit een vierkant stuk karton van 12 cm bij 12 cm worden in de hoeken vierkantjes met zijde x cm geknipt. Daarna wordt een doos zonder deksel gevouwen. Het volume is V(x) = x(12 − 2x)² voor 0 < x < 6. Een leerling zoekt het grootste volume."
+  },
+  {
+   "v": "Welke oplossing van V′(x) = 0 past bij de doos?",
+   "o": [
+    "\"x = 6, want dat is de grootste\"",
+    "\"x = 2, want het domein is 0 < x < 6\"",
+    "\"beide, want ze zijn allebei nul\"",
+    "\"geen van beide, want x moet groter zijn\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 6, want dat is de grootste\"\"? Dan kies je de grootste waarde. Het domein is 0 < x < 6, dus x = 2, want het domein is 0 < x < 6.",
+    "Klopt: x = 6 valt buiten het domein. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"beide, want ze zijn allebei nul\"\"? Dan let je niet op het domein. x = 6 geeft volume 0, dus x = 2, want het domein is 0 < x < 6.",
+    "Koos je \"\"geen van beide, want x moet groter zijn\"\"? Dan denk je dat het domein bij 6 begint. Het domein is 0 < x < 6, dus x = 2, want het domein is 0 < x < 6."
+   ],
+   "uh": "Welke oplossing van V′(x) = 0 past bij de doos?",
+   "ctx": "Uit een vierkant stuk karton van 12 cm bij 12 cm worden in de hoeken vierkantjes met zijde x cm geknipt. Daarna wordt een doos zonder deksel gevouwen. Het volume is V(x) = x(12 − 2x)² voor 0 < x < 6. Een leerling zoekt het grootste volume."
+  },
+  {
+   "v": "Hoe groot is het maximale volume van de doos?",
+   "o": [
+    "\"2 cm (de x-waarde)\"",
+    "\"64 cm³ (alleen (12 − 4)²)\"",
+    "\"144 cm³ (12 · 12)\"",
+    "\"128 cm³\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2 cm (de x-waarde)\"\"? Dan noem je de x-waarde. Je zoekt het volume V(2), dus 128 cm³. Het goede antwoord is 128 cm³.",
+    "Koos je \"\"64 cm³ (alleen (12 − 4)²)\"\"? Dan vergeet je de hoogte x = 2. Vermenigvuldig met 2, dus 128 cm³. Door de stappen goed na te lopen kom je uit op 128 cm³.",
+    "Koos je \"\"144 cm³ (12 · 12)\"\"? Dan neem je het hele vierkant. Het grondvlak is 8 bij 8, dus 128 cm³. Controleer je stap: de juiste uitkomst is 128 cm³.",
+    "Klopt: V(2) = 2 · 8² = 128. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe groot is het maximale volume van de doos?",
+   "ctx": "Uit een vierkant stuk karton van 12 cm bij 12 cm worden in de hoeken vierkantjes met zijde x cm geknipt. Daarna wordt een doos zonder deksel gevouwen. Het volume is V(x) = x(12 − 2x)² voor 0 < x < 6. Een leerling zoekt het grootste volume."
+  },
+  {
+   "v": "Hoe lees je M′(1) = 12 in de context?",
+   "o": [
+    "\"na 1 uur neemt de hoeveelheid met ongeveer 12 mg per uur toe\"",
+    "\"na 1 uur is er in totaal 12 mg medicijn in het bloed aanwezig\"",
+    "\"na 12 uur is er nog maar 1 mg medicijn in het bloed over\"",
+    "\"de hoeveelheid neemt na 1 uur af met ongeveer 12 mg per uur\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de afgeleide is de verandering per uur. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"na 1 uur is er in totaal 12 mg medicijn in het bloed aanwezig\"\"? Dan verwar je de afgeleide met de hoeveelheid. M′ is een verandering, dus na 1 uur neemt de hoeveelheid met ongeveer 12 mg per uur toe.",
+    "Koos je \"\"na 12 uur is er nog maar 1 mg medicijn in het bloed over\"\"? Dan wissel je de getallen om. Het gaat om t = 1, dus na 1 uur neemt de hoeveelheid met ongeveer 12 mg per uur toe.",
+    "Koos je \"\"de hoeveelheid neemt na 1 uur af met ongeveer 12 mg per uur\"\"? Dan lees je een positief getal als afname. Positief is toename, dus na 1 uur neemt de hoeveelheid met ongeveer 12 mg per uur toe."
+   ],
+   "uh": "Hoe lees je M′(1) = 12 in de context?",
+   "ctx": "De hoeveelheid medicijn in het bloed is M(t) = −2t² + 16t milligram, met t in uren van 0 tot 8. Een leerling bepaalt M′(t) en legt uit wat M′(1) = 12, M′(4) = 0 en M′(6) = −8 betekenen voor de hoeveelheid medicijn."
+  },
+  {
+   "v": "Wat zegt het teken van M′(6) = −8 over het medicijn?",
+   "o": [
+    "\"de hoeveelheid is −8 mg\"",
+    "\"de hoeveelheid neemt dan toe\"",
+    "\"de hoeveelheid neemt dan af\"",
+    "\"na 8 uur is er 6 mg\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de hoeveelheid is −8 mg\"\"? Dan verwar je de afgeleide met de hoeveelheid. Een hoeveelheid is niet negatief, dus de hoeveelheid neemt dan af.",
+    "Koos je \"\"de hoeveelheid neemt dan toe\"\"? Dan lees je de min niet. Negatief is dalen, dus de hoeveelheid neemt dan af. Door de stappen goed na te lopen kom je uit op de hoeveelheid neemt dan af.",
+    "Klopt: een negatieve afgeleide is dalen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"na 8 uur is er 6 mg\"\"? Dan wissel je de getallen om. Het gaat om t = 6 en de verandering −8, dus de hoeveelheid neemt dan af."
+   ],
+   "uh": "Wat zegt het teken van M′(6) = −8 over het medicijn?",
+   "ctx": "De hoeveelheid medicijn in het bloed is M(t) = −2t² + 16t milligram, met t in uren van 0 tot 8. Een leerling bepaalt M′(t) en legt uit wat M′(1) = 12, M′(4) = 0 en M′(6) = −8 betekenen voor de hoeveelheid medicijn."
+  },
+  {
+   "v": "Bepaal de snelheid v(t) = s′(t).",
+   "o": [
+    "\"3t² − 12t (de 9 weggelaten)\"",
+    "\"3t² − 12t + 9\"",
+    "\"3t² − 12t − 9 (teken fout)\"",
+    "\"t³ − 6t² + 9 (alleen de laatste term afgeleid)\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3t² − 12t (de 9 weggelaten)\"\"? Dan laat je de term 9t weg. De afgeleide van 9t is 9, dus 3t² − 12t + 9. Het goede antwoord is 3t² − 12t + 9.",
+    "Klopt: 3t² − 12t + 9. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3t² − 12t − 9 (teken fout)\"\"? Dan maak je een tekenfout. De afgeleide van +9t is +9, dus 3t² − 12t + 9. Door de stappen goed na te lopen kom je uit op 3t² − 12t + 9.",
+    "Koos je \"\"t³ − 6t² + 9 (alleen de laatste term afgeleid)\"\"? Dan leid je alleen de laatste term af. Alle termen worden afgeleid, dus 3t² − 12t + 9."
+   ],
+   "uh": "Bepaal de snelheid v(t) = s′(t).",
+   "ctx": "De afstand van een voorwerp tot het beginpunt is s(t) = t³ − 6t² + 9t meter, met t in seconden. Een leerling bepaalt de snelheid v(t) = s′(t), onderzoekt wanneer de snelheid 0 is en wanneer het voorwerp terugloopt."
+  },
+  {
+   "v": "Wanneer is de snelheid van het voorwerp 0?",
+   "o": [
+    "\"alleen bij t = 1\"",
+    "\"bij t = 2\"",
+    "\"bij t = 0 en t = 3\"",
+    "\"bij t = 1 en t = 3\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen bij t = 1\"\"? Dan vergeet je de tweede oplossing. Er zijn twee nulpunten, dus bij t = 1 en t = 3. Het goede antwoord is bij t = 1 en t = 3.",
+    "Koos je \"\"bij t = 2\"\"? Dan neem je het midden. Los 3t² − 12t + 9 = 0 op, dus bij t = 1 en t = 3. Door de stappen goed na te lopen kom je uit op bij t = 1 en t = 3.",
+    "Koos je \"\"bij t = 0 en t = 3\"\"? Dan kies je t = 0 als nulpunt. v(0) = 9, dus bij t = 1 en t = 3. Controleer je stap: de juiste uitkomst is bij t = 1 en t = 3.",
+    "Klopt: 3t² − 12t + 9 = 3(t − 1)(t − 3). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wanneer is de snelheid van het voorwerp 0?",
+   "ctx": "De afstand van een voorwerp tot het beginpunt is s(t) = t³ − 6t² + 9t meter, met t in seconden. Een leerling bepaalt de snelheid v(t) = s′(t), onderzoekt wanneer de snelheid 0 is en wanneer het voorwerp terugloopt."
+  },
+  {
+   "v": "Wanneer loopt het voorwerp terug?",
+   "o": [
+    "\"tussen t = 1 en t = 3, want v is dan negatief\"",
+    "\"voor t > 3, want daar ligt de afstand het verst weg\"",
+    "\"voor t < 1, want daar is de afstand het kleinst\"",
+    "\"alleen op t = 2, want daar is v = −3 het laagst\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: v(2) = −3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"voor t > 3, want daar ligt de afstand het verst weg\"\"? Dan koppel je een grote afstand aan teruglopen. Na t = 3 is v positief, dus tussen t = 1 en t = 3, want v is dan negatief.",
+    "Koos je \"\"voor t < 1, want daar is de afstand het kleinst\"\"? Dan koppel je een kleine afstand aan teruglopen. Teruglopen hangt af van het teken van v, dus tussen t = 1 en t = 3, want v is dan negatief.",
+    "Koos je \"\"alleen op t = 2, want daar is v = −3 het laagst\"\"? Dan kies je één moment. Het voorwerp loopt terug in een heel tijdvak, dus tussen t = 1 en t = 3, want v is dan negatief."
+   ],
+   "uh": "Wanneer loopt het voorwerp terug?",
+   "ctx": "De afstand van een voorwerp tot het beginpunt is s(t) = t³ − 6t² + 9t meter, met t in seconden. Een leerling bepaalt de snelheid v(t) = s′(t), onderzoekt wanneer de snelheid 0 is en wanneer het voorwerp terugloopt."
+  },
+  {
+   "v": "Hoeveel meter ligt het voorwerp op t = 3 van het beginpunt?",
+   "o": [
+    "\"27 m\"",
+    "\"9 m (snelheid bij t = 0)\"",
+    "\"0 m\"",
+    "\"4 m (s(1))\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"27 m\"\"? Dan neem je alleen de term t³. Vul alle termen in, dus 0 m. Het goede antwoord is 0 m.",
+    "Koos je \"\"9 m (snelheid bij t = 0)\"\"? Dan neem je de snelheid bij t = 0. Je zoekt de afstand s(3), dus 0 m. Door de stappen goed na te lopen kom je uit op 0 m.",
+    "Klopt: s(3) = 27 − 54 + 27 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"4 m (s(1))\"\"? Dan neem je de afstand bij t = 1. Vul t = 3 in, dus 0 m. Controleer je stap: de juiste uitkomst is 0 m."
+   ],
+   "uh": "Hoeveel meter ligt het voorwerp op t = 3 van het beginpunt?",
+   "ctx": "De afstand van een voorwerp tot het beginpunt is s(t) = t³ − 6t² + 9t meter, met t in seconden. Een leerling bepaalt de snelheid v(t) = s′(t), onderzoekt wanneer de snelheid 0 is en wanneer het voorwerp terugloopt."
+  },
+  {
+   "v": "Welke winstfunctie hoort bij O(q) en K(q)?",
+   "o": [
+    "\"W(q) = 100q − q² + 300\"",
+    "\"W(q) = 80q − q² − 300\"",
+    "\"W(q) = 80q − q²\"",
+    "\"W(q) = 90q − q² − 10q\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"W(q) = 100q − q² + 300\"\"? Dan tel je de kosten op. Winst is opbrengst min kosten, dus W(q) = 80q − q² − 300. Het goede antwoord is W(q) = 80q − q² − 300.",
+    "Klopt: winst is opbrengst min kosten. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"W(q) = 80q − q²\"\"? Dan vergeet je de vaste kosten 300. Trek die af, dus W(q) = 80q − q² − 300. Door de stappen goed na te lopen kom je uit op W(q) = 80q − q² − 300.",
+    "Koos je \"\"W(q) = 90q − q² − 10q\"\"? Dan vergeet je de vaste kosten. Trek 10q en 300 af, dus W(q) = 80q − q² − 300. Controleer je stap: de juiste uitkomst is W(q) = 80q − q² − 300."
+   ],
+   "uh": "Welke winstfunctie hoort bij O(q) en K(q)?",
+   "ctx": "De opbrengst is O(q) = 90q − q² euro en de kosten zijn K(q) = 10q + 300 euro bij q eenheden. Een leerling stelt de winstfunctie op, bepaalt de afgeleide, zoekt het aantal eenheden met de grootste winst en berekent die winst."
+  },
+  {
+   "v": "Bij welk aantal eenheden q is de winst maximaal?",
+   "o": [
+    "\"80\"",
+    "\"20\"",
+    "\"45\"",
+    "\"40\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"80\"\"? Dan neem je de coëfficiënt van q. Los 80 − 2q = 0 op, dus 40. Het goede antwoord is 40.",
+    "Koos je \"\"20\"\"? Dan deel je 40 door 2 nog eens. Los 80 − 2q = 0 op, dus 40. Door de stappen goed na te lopen kom je uit op 40.",
+    "Koos je \"\"45\"\"? Dan neem je het midden van 90 en 0. Los W′(q) = 0 op, dus 40. Controleer je stap: de juiste uitkomst is 40.",
+    "Klopt: W′(q) = 80 − 2q = 0 geeft q = 40. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bij welk aantal eenheden q is de winst maximaal?",
+   "ctx": "De opbrengst is O(q) = 90q − q² euro en de kosten zijn K(q) = 10q + 300 euro bij q eenheden. Een leerling stelt de winstfunctie op, bepaalt de afgeleide, zoekt het aantal eenheden met de grootste winst en berekent die winst."
+  },
+  {
+   "v": "Hoe groot is de maximale winst in euro?",
+   "o": [
+    "\"€1300\"",
+    "\"€1600 (zonder de vaste kosten)\"",
+    "\"€40 (het aantal eenheden)\"",
+    "\"€2900 (3200 − 300)\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: W(40) = 3200 − 1600 − 300 = 1300. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€1600 (zonder de vaste kosten)\"\"? Dan vergeet je de vaste kosten 300. Trek die af, dus €1300. Het goede antwoord is €1300.",
+    "Koos je \"\"€40 (het aantal eenheden)\"\"? Dan neem je het aantal eenheden. Je zoekt de winst W(40), dus €1300. Door de stappen goed na te lopen kom je uit op €1300.",
+    "Koos je \"\"€2900 (3200 − 300)\"\"? Dan vergeet je de term −q². Trek 1600 af, dus €1300. Controleer je stap: de juiste uitkomst is €1300."
+   ],
+   "uh": "Hoe groot is de maximale winst in euro?",
+   "ctx": "De opbrengst is O(q) = 90q − q² euro en de kosten zijn K(q) = 10q + 300 euro bij q eenheden. Een leerling stelt de winstfunctie op, bepaalt de afgeleide, zoekt het aantal eenheden met de grootste winst en berekent die winst."
+  },
+  {
+   "v": "Welk domein hoort bij de breedte x van de rechthoek tegen de muur?",
+   "o": [
+    "\"0 < x < 24\"",
+    "\"x > 0\"",
+    "\"0 < x < 12\"",
+    "\"0 < x < 6\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0 < x < 24\"\"? Dan gebruik je de hele lengte van het hekwerk. De lengte 24 − 2x moet positief zijn, dus 0 < x < 12.",
+    "Koos je \"\"x > 0\"\"? Dan let je alleen op de breedte. De lengte moet ook positief zijn, dus 0 < x < 12. Door de stappen goed na te lopen kom je uit op 0 < x < 12.",
+    "Klopt: de lengte 24 − 2x moet positief zijn. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0 < x < 6\"\"? Dan neem je de optimale x als rand. Het domein is groter, dus 0 < x < 12. Controleer je stap: de juiste uitkomst is 0 < x < 12."
+   ],
+   "uh": "Welk domein hoort bij de breedte x van de rechthoek tegen de muur?",
+   "ctx": "Een boer zet een rechthoekige wei af tegen een muur met 24 m hekwerk voor de drie andere zijden. De breedte is x meter en de lengte 24 − 2x meter. Een leerling stelt A(x) op, let op het domein, bepaalt A′(x) en berekent de grootste oppervlakte."
+  },
+  {
+   "v": "Bepaal A′(x) en los A′(x) = 0 op voor A(x) = 24x − 2x².",
+   "o": [
+    "\"A′(x) = 24 − 2x en x = 12\"",
+    "\"A′(x) = 24 − 4x en x = 6\"",
+    "\"A′(x) = 24 − 4x en x = 24\"",
+    "\"A′(x) = −4x en x = 0\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A′(x) = 24 − 2x en x = 12\"\"? Dan verlaag je x² niet met de factor 2. De afgeleide van 2x² is 4x, dus A′(x) = 24 − 4x en x = 6.",
+    "Klopt: 24 − 4x = 0 geeft x = 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"A′(x) = 24 − 4x en x = 24\"\"? Dan deel je niet door 4. Los 24 − 4x = 0 op, dus A′(x) = 24 − 4x en x = 6. Door de stappen goed na te lopen kom je uit op A′(x) = 24 − 4x en x = 6.",
+    "Koos je \"\"A′(x) = −4x en x = 0\"\"? Dan laat je de term 24x weg. De afgeleide van 24x is 24, dus A′(x) = 24 − 4x en x = 6."
+   ],
+   "uh": "Bepaal A′(x) en los A′(x) = 0 op voor A(x) = 24x − 2x².",
+   "ctx": "Een boer zet een rechthoekige wei af tegen een muur met 24 m hekwerk voor de drie andere zijden. De breedte is x meter en de lengte 24 − 2x meter. Een leerling stelt A(x) op, let op het domein, bepaalt A′(x) en berekent de grootste oppervlakte."
+  },
+  {
+   "v": "Wat zijn de afmetingen en de oppervlakte bij het maximum?",
+   "o": [
+    "\"breedte 6 m, lengte 6 m en oppervlakte 36 m²\"",
+    "\"breedte 12 m, lengte 6 m en oppervlakte 72 m² (verwisseld)\"",
+    "\"breedte 6 m, lengte 18 m en oppervlakte 108 m²\"",
+    "\"breedte 6 m, lengte 12 m en oppervlakte 72 m²\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"breedte 6 m, lengte 6 m en oppervlakte 36 m²\"\"? Dan neem je de lengte gelijk aan de breedte. De lengte is 24 − 2x, dus breedte 6 m, lengte 12 m en oppervlakte 72 m².",
+    "Koos je \"\"breedte 12 m, lengte 6 m en oppervlakte 72 m² (verwisseld)\"\"? Dan verwissel je breedte en lengte. De breedte is x = 6, dus breedte 6 m, lengte 12 m en oppervlakte 72 m².",
+    "Koos je \"\"breedte 6 m, lengte 18 m en oppervlakte 108 m²\"\"? Dan trek je maar één keer x af. De lengte is 24 − 2x, dus breedte 6 m, lengte 12 m en oppervlakte 72 m².",
+    "Klopt: x = 6, lengte 24 − 12 = 12 en 6 · 12 = 72. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wat zijn de afmetingen en de oppervlakte bij het maximum?",
+   "ctx": "Een boer zet een rechthoekige wei af tegen een muur met 24 m hekwerk voor de drie andere zijden. De breedte is x meter en de lengte 24 − 2x meter. Een leerling stelt A(x) op, let op het domein, bepaalt A′(x) en berekent de grootste oppervlakte."
+  },
+  {
+   "v": "Waarom is x = 12 geen goede oplossing voor de rechthoek?",
+   "o": [
+    "\"omdat de lengte dan 0 is en er geen oppervlakte overblijft\"",
+    "\"omdat de afgeleide bij x = 12 negatief is en dat niet mag in een situatie\"",
+    "\"omdat het benodigde hekwerk bij x = 12 groter is dan de 24 m die er is\"",
+    "\"omdat 12 een decimaal getal zou zijn en afmetingen geheel moeten zijn\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Kies één variabele, stel een formule op, bepaal de afgeleide en los f′(x) = 0 op. Controleer het domein en het tekenschema en schrijf het antwoord met eenheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 24 − 2 · 12 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat de afgeleide bij x = 12 negatief is en dat niet mag in een situatie\"\"? Dan denk je dat een negatieve afgeleide verboden is. Het gaat om de lengte, dus omdat de lengte dan 0 is en er geen oppervlakte overblijft.",
+    "Koos je \"\"omdat het benodigde hekwerk bij x = 12 groter is dan de 24 m die er is\"\"? Dan denk je dat het hekwerk niet genoeg is. De lengte wordt 0, dus omdat de lengte dan 0 is en er geen oppervlakte overblijft.",
+    "Koos je \"\"omdat 12 een decimaal getal zou zijn en afmetingen geheel moeten zijn\"\"? Dan denk je dat decimalen niet mogen. Het gaat om de lengte 0, dus omdat de lengte dan 0 is en er geen oppervlakte overblijft."
+   ],
+   "uh": "Waarom is x = 12 geen goede oplossing voor de rechthoek?",
+   "ctx": "Een boer zet een rechthoekige wei af tegen een muur met 24 m hekwerk voor de drie andere zijden. De breedte is x meter en de lengte 24 − 2x meter. Een leerling stelt A(x) op, let op het domein, bepaalt A′(x) en berekent de grootste oppervlakte."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rechthoek heeft omtrek 60 m. Een leerling noemt de breedte x, stelt de formule voor de oppervlakte A(x) op, bepaalt A′(x), lost A′(x) = 0 op en berekent de maximale oppervlakte. Hij schrijft het antwoord met eenheid op.",
+   "v": "Bepaal de maximale oppervlakte van de rechthoek.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "A(x) = x(30 − x) = 30x − x² (1p). A′(x) = 30 − 2x = 0 geeft x = 15 (1p). Maximale oppervlakte 15 · 15 = 225 m² (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Uit een vierkant karton van 18 cm bij 18 cm worden in de hoeken vierkantjes met zijde x cm geknipt om een doos zonder deksel te vouwen. Het volume is V(x) = x(18 − 2x)² voor 0 < x < 9. Een leerling zoekt het grootste volume en let op het domein.",
+   "v": "Bepaal het maximale volume van de doos.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "V(x) = 4x³ − 72x² + 324x (1p). V′(x) = 12(x − 3)(x − 9) = 0 geeft x = 3, want x = 9 valt buiten het domein (1p). Maximaal volume V(3) = 432 cm³ (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De winst is W(q) = −q² + 60q − 200 euro bij q eenheden. Een leerling bepaalt W′(q), lost W′(q) = 0 op, controleert met een tekenschema dat het een maximum is en berekent de maximale winst. Hij schrijft het antwoord met eenheid op.",
+   "v": "Bepaal het aantal eenheden met maximale winst en de maximale winst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "W′(q) = −2q + 60 = 0 geeft q = 30 (1p). Tekenschema: W′ gaat van plus naar min, dus een maximum (1p). W(30) = 700 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De hoeveelheid van een stof in het bloed is M(t) = −3t² + 18t milligram, met t in uren. Een leerling bepaalt M′(t), berekent M′(1) en M′(4) en legt uit wat die getallen betekenen voor de hoeveelheid van de stof in het bloed.",
+   "v": "Bepaal M′(t) en leg M′(1) en M′(4) uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "M′(t) = −6t + 18 (1p). M′(1) = 12: de hoeveelheid neemt na 1 uur toe met 12 mg per uur (1p). M′(4) = −6: de hoeveelheid neemt na 4 uur af met 6 mg per uur (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De afstand van een voorwerp tot het beginpunt is s(t) = t³ − 9t² + 24t meter, met t in seconden. Een leerling bepaalt de snelheid v(t) = s′(t), onderzoekt wanneer de snelheid 0 is en wanneer het voorwerp teruggaat. Hij schrijft de tijdvakken op.",
+   "v": "Bepaal v(t), de tijdstippen met snelheid 0 en wanneer het voorwerp teruggaat.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "v(t) = 3t² − 18t + 24 = 3(t − 2)(t − 4) (1p). v = 0 bij t = 2 en t = 4 (1p). Tussen t = 2 en t = 4 is v negatief, dus gaat het voorwerp dan terug (1p)."
+  }
+ ]
+}
